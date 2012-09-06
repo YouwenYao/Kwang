@@ -1,0 +1,477 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{1FFD7331-E52E-41B1-9446-E46F5C1A94B9}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>NformTester</RootNamespace>
+    <AssemblyName>NformTester</AssemblyName>
+    <RanorexVersion>3</RanorexVersion>
+    <DocumentationFile>bin\Debug\NformTester.xml</DocumentationFile>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="Ranorex.Core, Version=$(RanorexVersion)">
+      <id>2c24eb42-f169-4e49-b1b3-754d98ddda3b</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex, Version=$(RanorexVersion)">
+      <id>b4fa2ef9-66b6-4498-959a-3f3aa3e833ba</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java, Version=$(RanorexVersion)">
+      <id>78cbcc83-58a0-473f-8354-cccbceca8c33</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.MozillaWeb, Version=$(RanorexVersion)">
+      <id>8b51d8ab-b738-414a-9402-c3305fb67aac</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa, Version=$(RanorexVersion)">
+      <id>14969df1-ce4a-4236-a01a-d62b6d012c7a</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office, Version=$(RanorexVersion)">
+      <id>b240fdc4-6fc6-4053-a37f-779f00249dec</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText, Version=$(RanorexVersion)">
+      <id>5283bef8-6972-4098-aa64-b8a4c6cd2a2e</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web, Version=$(RanorexVersion)">
+      <id>71800f31-3be3-49b9-ba20-8f3a9b748eac</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32, Version=$(RanorexVersion)">
+      <id>dbe534d0-ed60-4e64-b994-a1b189816485</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms, Version=$(RanorexVersion)">
+      <id>e37188fd-351e-46f0-b76f-12caeb8e1785</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf, Version=$(RanorexVersion)">
+      <id>3b9d33ea-609d-47a1-aac1-f57e8deb24a7</id>
+    </Reference>
+    <Reference Include="System">
+      <id>f339e608-d9ba-4816-9295-b46a243fbf89</id>
+    </Reference>
+    <Reference Include="System.Data">
+      <id>b15974b1-f744-471f-98d7-d13bc81d85cd</id>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <id>b563d85f-100d-4e26-b646-85d5eb308380</id>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <id>9ca90f8b-3e20-4394-893c-604922c1bb1c</id>
+    </Reference>
+    <Reference Include="System.Xml">
+      <id>9b3d8b62-76e8-4c0b-ad58-5026e73977cc</id>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>b73cf1ec-8887-404a-beb9-9d0d3f20288e</id>
+    </Compile>
+    <Compile Include="driver\TestCaseDriver.cs">
+      <id>63aeabcc-fde4-468f-8e8b-434bd082b130</id>
+    </Compile>
+    <Compile Include="lib\LxErrorHandler.cs">
+      <id>264972d9-22f7-4c29-b4c0-5e1fa6e02f85</id>
+    </Compile>
+    <Compile Include="lib\LxGenericAction.cs">
+      <id>52d2a21d-30c6-4478-a59b-ca9c33831eb2</id>
+    </Compile>
+    <Compile Include="lib\LxIniFile.cs">
+      <id>77c043b9-d56f-4a8a-bf5c-45fe93ce2b77</id>
+    </Compile>
+    <Compile Include="lib\LxLog.cs">
+      <id>bd4b6aeb-3798-4a0b-ae85-89fafeb5911c</id>
+    </Compile>
+    <Compile Include="lib\LxParse.cs">
+      <id>d8af69bf-0351-4761-b3f2-485fd97e7b82</id>
+    </Compile>
+    <Compile Include="lib\LxScriptItem.cs">
+      <id>91335fcd-8be9-4d80-bd35-9a5a1669d5b8</id>
+    </Compile>
+    <Compile Include="lib\LxSetup.cs">
+      <id>ff389c82-b281-4f3d-90bd-0a4069d9b3a1</id>
+    </Compile>
+    <Compile Include="lib\LxTearDown.cs">
+      <id>8826ff9e-a2d1-4cad-aa13-397e6db93944</id>
+    </Compile>
+    <Compile Include="lib\LxXlsOper.cs">
+      <id>df779d0d-86e5-46e0-aeaf-ebe3ee2d4966</id>
+    </Compile>
+    <Compile Include="myTest.cs">
+      <id>6649f3a6-3e25-46be-91cb-44c7d305203f</id>
+    </Compile>
+    <Compile Include="NformRepository.cs">
+      <id>be55ff5e-522d-4087-a441-30853af41aaa</id>
+      <DependentUpon>NformRepository.rxrep</DependentUpon>
+      <BoundTo>cd2e6476-08de-4490-bccc-a5ee732b8f1b</BoundTo>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>fdb4287b-720b-41a3-9e42-9234d869400e</id>
+    </Compile>
+    <Compile Include="GenerateAllForms.cs">
+      <id>487bbc89-1531-4597-bfda-4fd3bcead51f</id>
+    </Compile>
+    <None Include="app.config">
+      <id>788f223d-99d6-44c9-b193-94ff211120c7</id>
+    </None>
+    <None Include="Devices.ini">
+      <id>ce0d6910-b470-4d36-b5a6-42a413c3d0ad</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TestScripts.xlsx">
+      <id>dc3efe77-47b9-49ba-baaa-19c2af620d18</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST1000_UserCannotChangePassword.xlsx">
+      <id>58228dcc-b42a-4bb0-8d06-d3ccc62eefff</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST1033_ExportLoggedData.xlsx">
+      <id>dd26b6a3-67a0-4cde-8d7b-c1c5f05285c9</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST1042_DataLogging.xlsx">
+      <id>52d2a1da-2b5f-4b79-a092-4f5af1c4da25</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST1049_ConfigureEmailAction.xlsx">
+      <id>2942dcb6-3e64-4bba-b619-0b7b593c5cca</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST1053_ConfigureWriteFileAction.xlsx">
+      <id>d866457c-b432-4e73-a3ae-690358b5715d</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST1057_Login.xlsx">
+      <id>204aafc1-f904-4bd4-b370-383fcae2c2c8</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST1071_NformToolsServiceControl.xlsx">
+      <id>f5169116-8127-4447-849a-4c7f0a25c6f2</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST1120_CopyDeviceFeature.xlsx">
+      <id>1627e4b1-48b5-4420-b18d-6c77e0fb1116</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST1123_DataLoggingforOneDeviceDataPoints.xlsx">
+      <id>d9846858-7497-440b-be15-073b3c697dd5</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST1125_DataLoggingWithMinAndMaxSampleInterval.xlsx">
+      <id>f6be7518-347c-43a3-958a-9ea0b78ca72b</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST1129_DataLoggingForDeviceDataPoints.xlsx">
+      <id>c0f3e6a8-c762-402e-86ad-1d086ef835e1</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST1134_DataLoggingOnDevicePropertiesAndTrends.xlsx">
+      <id>0a4581d9-fe76-48fc-aa9f-e434dd7b515e</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST1138_DataLoggingSettingsForMulti-moduleDevices.xlsx">
+      <id>ea5931b2-4f24-4e53-8502-131b63a3c978</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST1172_EditDeviceAlarmName.xlsx">
+      <id>3913c813-3ca3-4c5e-b1c9-6b9967dcb3fe</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST1173_ChangeAlarmSeverity.xlsx">
+      <id>27a5b119-4d57-4e2c-abc6-2f5c679c2ed9</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST1174_DataPointsNameIsEditableOrNot.xlsx">
+      <id>8b00705d-a02f-4e7b-a658-ca1f485d2a6a</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST1175_NformG2SupportVelocityDevices.xlsx">
+      <id>3b63a697-e13a-469c-b822-4aca567d9b4a</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST1177_AlarmDescriptionIsEditable.xlsx">
+      <id>520838ff-4cd9-4300-9b25-cf219a292e8c</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST1179_DataPointsDescriptionIsEditable.xlsx">
+      <id>241dc65a-37c0-4851-8023-314dc5afd1e5</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST1328_ImportDeviceUsingDialogEnterPathnameOfFlatFile.xlsx">
+      <id>bdff3b0f-f6c5-49fd-a4f0-5ecc982ebf6b</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST1329_ImportDevicesFromFiles.xlsx">
+      <id>87b6c425-da73-48a2-b909-61c6915e8935</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST1332_ImportDeviceFromFlatFileWithTheSpecifiedSeparator.xlsx">
+      <id>f6556755-48f9-436d-9a77-2974081fd059</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST1333_AddDevicesFromFlatFile.xlsx">
+      <id>a3dca2b9-44c3-429c-aeee-26fad7d4b359</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST1335_ExportOptionForExportingDevicesInFlatFile.xlsx">
+      <id>fc64c889-d117-40fb-a766-3c76d134bcb4</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST1336_ShowExpandedTopFrameAndShowExpendedBottomFrame.xlsx">
+      <id>43ec73fd-bad4-4093-bcbd-d2164ae95d5b</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST1353_UninstallationProcess.xlsx">
+      <id>04a1930e-2fb4-4b4e-8ea7-41499b8ea516</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST2748_DeviceStatusPollingAndGolbalStatusPolling.xlsx">
+      <id>b11d8a1e-94da-4d3a-af9a-bfea7cc46713</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST2751_DeviceStatusPriorityPolling.xlsx">
+      <id>4a165c5e-f517-4ef3-ae7b-ef1e0008721e</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST2753_DisabledForGlobalStatusPolling.xlsx">
+      <id>7ea85178-f373-4515-a69e-bee9b97ec2cf</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST2754_DailyForGlobalStatusPolling.xlsx">
+      <id>6f959118-bfe4-4afc-8126-9f9fd11cb5a9</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST2755_IntervalForGlobalStatusPolling.xlsx">
+      <id>5aa963d4-c18d-45e2-a13a-8281ccda95bc</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST2768_TwoCheckboxesInTrendDataSelection.xlsx">
+      <id>a12783e9-d7a7-4785-a488-780327b870f5</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST2798_ConfigurationOnDeviceMaintenanceWindow.xlsx">
+      <id>dea4bd97-9694-42c2-b6cc-557385d0719b</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST2800_ManualMaitenanceAndScheduledMaintenance.xlsx">
+      <id>65e7e896-ff14-4be4-8b17-dad4e4d5840b</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST2801_AlarmUnderMaintenanceMode.xlsx">
+      <id>89cd5d82-62b4-4f9e-8100-449b36e12863</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST425_SetActionForAlarmOrEvent.xlsx">
+      <id>beb51f93-280a-4821-b9b5-6c84abcce21f</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST465_ConfigureTrendingGraph.xlsx">
+      <id>fc24ac76-695e-4be1-bcc5-71e1a31a1b3d</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST483_SelectOneOrMoreThanOneDeviceParameters.xlsx">
+      <id>0c03a4bd-269d-4131-9dae-becc04b7edb5</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST487_SamplingIntervalConfiguration.xlsx">
+      <id>0541e86c-2cac-4074-b568-219ea9fd11cc</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST489_CheckGUIFunctionalityConfigureTrendingScreen.xlsx">
+      <id>b0727378-8011-456f-84c8-88fa1e6d1a12</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST498_CheckConfigureDisplayTrendLineInPlotting.xlsx">
+      <id>fb3235a4-8ad3-45b3-95d7-6c4fef6dab8c</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST540_CheckFunctionalityForGraphType.xlsx">
+      <id>00e18283-2edf-4a0b-b00e-1f612f55ea3f</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST541_SelectInvalidDurationDateForPlottingGraphAndViewGraph.xlsx">
+      <id>6d8f7ffc-2594-42eb-9371-70f9436cc4fd</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST542_CheckDefaultStartDate_timeAndEndDate_timeInGraphedLoggedData.xlsx">
+      <id>7b0f5504-aee1-40b3-9686-718688dacee1</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST543_PrintingOfAGraph.xlsx">
+      <id>87904c1e-6407-45b0-a2f9-cc7dadf18ae3</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST551_CopyDataOfAGraph.xlsx">
+      <id>ac2e350a-d019-4841-b92d-cf377dd9aac1</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST555_ShowTimeRangeSelction.xlsx">
+      <id>83f60574-9352-420b-a2ef-bd5e5b556983</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST570_UncheckShowTheTimeRangeSelection.xlsx">
+      <id>33486fd0-c795-4fd0-acab-01230db3e43c</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST572_DurationBoxesInShowTheTimeRangeSelection.xlsx">
+      <id>c2a7aa20-47ea-4931-9234-ad717facd965</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST575_ExecuteTrapAlarmForward.xlsx">
+      <id>88f2d6dc-c554-4461-8e96-54277e1905e2</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST594_ActionSet_DeletewithRightsToAllActionTypes.xlsx">
+      <id>f530bbe5-29a0-4255-b3ed-2c5bb572a5f4</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST618_DeviceParametersOnConfigureTrendingScreen.xlsx">
+      <id>ba4a2050-177e-4bd6-af4f-16c454ea0de8</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST623_CheckConfigureSamplingIntervalTime.xlsx">
+      <id>7fd32d74-b789-4f53-ba29-02430fee9029</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST710_CheckSelectingNinthDeviceParameters.xlsx">
+      <id>b3572eb8-8c81-403d-ae8f-bfcdcab223eb</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST716_SaveImageInTrendGraph.xlsx">
+      <id>91758626-a6fc-4e3e-ae40-9b1456765c60</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST717_SaveImageAsInTrendGraph.xlsx">
+      <id>dcc1d8db-4707-4c27-85ba-c879a551339c</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST762_CheckGUIOfPeriodComboBoxes.xlsx">
+      <id>e15d246d-8e87-4c8f-829a-d7d9f7bdda63</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST763_ConfigureTrendingDataPointsGridShowsWhichOne.xlsx">
+      <id>c3f2321d-f459-4de8-98ae-c1a841ed78e6</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST769_VerfiyDeviceParametersNamesAndUnits.xlsx">
+      <id>7e20d3f8-afa9-4c64-bcf8-f481ecfcfc06</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST780_TrendGraphRefreshFunctionality.xlsx">
+      <id>1a01f0f0-6acc-48db-a1a2-f378614b4f94</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST808_NinthDeviceParametersSelectionFromBottomToTop.xlsx">
+      <id>c8c82198-869a-4484-9ab4-f4a0fff674f2</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST931_InstallViewerOnly.xlsx">
+      <id>6274e3e2-80d7-4392-b318-94cec1d69233</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST932_InstallNformFullPackage.xlsx">
+      <id>2a5862fd-5105-402c-adb2-072aeed3c678</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST936_DevicesSupportedByNformG2Product.xlsx">
+      <id>78fc3ac7-2d1f-4bfe-8f79-59f931419ac7</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST938_ConfigurationOnDevice_properties.xlsx">
+      <id>c53c9c2a-a803-4108-b6e0-8223885de9db</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST939_SNMPSettings.xlsx">
+      <id>e486fec9-f79c-482d-9c4e-204a8a2885e4</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST962_AddDevice.xlsx">
+      <id>6aaa442e-9946-43f9-8f3c-163758fd39c9</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST963_EditDevice.xlsx">
+      <id>e9c2389b-dc8c-49a8-b84f-7ed5e45eda10</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST964_DeleteDevice.xlsx">
+      <id>e88ad42b-6847-4f18-89c7-7e3b31a24e24</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST966_SNMPGloblSetting.xlsx">
+      <id>be7fe44c-9606-432d-b31b-ddb56c8b29fb</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST969_AddAndCopyView.xlsx">
+      <id>257a09b4-1e49-45c1-9e60-477e9188aca5</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST970_EditDeleteNavigationView.xlsx">
+      <id>f87d1525-7d79-404a-b448-717f405e3728</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST976_ViewAllDevices.xlsx">
+      <id>03e18365-42dc-4e0e-bbb1-4ee538826538</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST986_AddCustomGroup.xlsx">
+      <id>26312dbc-0fa9-4f25-83bd-3bd4de247dda</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="keywordscripts\TST990_CreateNewUser.xlsx">
+      <id>550b342e-f276-496b-9ec0-de308eebb3f9</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="NformRepository.rxrep">
+      <id>cd2e6476-08de-4490-bccc-a5ee732b8f1b</id>
+      <repoid>3e0c5f65-9093-49fd-9a9c-13a3b13623fb</repoid>
+      <reporootid>6a87c9de-ee82-4df6-9a1d-880f145582e5</reporootid>
+      <projectdefaultrepository>true</projectdefaultrepository>
+    </None>
+    <Content Include="NformTester.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>e173405b-e144-4cf5-9707-935f976643c9</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="lib">
+      <id>317cdd34-c7b2-4e20-9717-0ae4887581c3</id>
+    </Folder>
+    <Folder Include="driver">
+      <id>36c3976c-7029-4a8e-9a3f-ad4c7a1653fd</id>
+    </Folder>
+    <Folder Include="keywordscripts">
+      <id>c22c281b-c0e4-4e26-974e-373f008226e1</id>
+    </Folder>
+    <Folder Include="Reports">
+      <ReportsDir>true</ReportsDir>
+      <id>5bad65ff-54b4-4b55-b5fa-e13e6e3e4a33</id>
+    </Folder>
+  </ItemGroup>
+</Project>
