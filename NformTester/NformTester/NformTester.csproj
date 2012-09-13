@@ -454,6 +454,55 @@
       <reporootid>6a87c9de-ee82-4df6-9a1d-880f145582e5</reporootid>
       <projectdefaultrepository>true</projectdefaultrepository>
     </None>
+    <None Include="Reports\NformTester_20120911_100843.rxlog">
+      <id>57a36339-b276-4168-b4da-0cb5a2c87b30</id>
+    </None>
+    <None Include="Reports\NformTester_20120911_101333.rxlog">
+      <id>90c103d7-5ef6-463e-9c32-512ba3758dce</id>
+    </None>
+    <None Include="Reports\NformTester_20120912_102428.rxlog">
+      <id>350237ba-39ce-4c59-a741-557b868bdab7</id>
+    </None>
+    <None Include="Reports\NformTester_20120912_102858.rxlog">
+      <id>769f8bb7-2dbe-4755-8957-fdaaf812faa9</id>
+    </None>
+    <None Include="Reports\NformTester_20120912_142534.rxlog">
+      <id>b834a39d-6729-4d82-aaa7-3e53bbd35ee2</id>
+    </None>
+    <None Include="Reports\NformTester_20120912_151459.rxlog">
+      <id>5d20ccf4-4037-4770-adef-f8a231b14739</id>
+    </None>
+    <None Include="Reports\NformTester_20120912_154407.rxlog">
+      <id>42781e83-475f-4ccf-8cd0-592116791e1a</id>
+    </None>
+    <None Include="Reports\NformTester_20120912_154858.rxlog">
+      <id>a98c1b1e-a895-4c6d-86be-1ea73e38a33a</id>
+    </None>
+    <None Include="Reports\NformTester_20120912_155034.rxlog">
+      <id>5755c62c-2cea-4fc9-8360-bdbed2fa47a2</id>
+    </None>
+    <None Include="Reports\NformTester_20120912_155705.rxlog">
+      <id>608edb59-77d5-466f-9f33-0fef0b860c1d</id>
+    </None>
+    <None Include="Reports\NformTester_20120912_161655.rxlog">
+      <id>ce9483f3-69ba-4418-b77d-5ab20f3ef02f</id>
+    </None>
+    <None Include="Reports\NformTester_20120912_162811.rxlog">
+      <id>0898c271-9d3b-4d15-9096-a61af69a0bc6</id>
+    </None>
+    <None Include="Reports\NformTester_20120912_164814.rxlog">
+      <id>f65d096a-226e-4519-b8d4-75d9c75a71e2</id>
+    </None>
+    <None Include="Reports\NformTester_20120912_165910.rxlog">
+      <id>4641964d-4190-44d6-8caf-96fb88f50988</id>
+    </None>
+    <None Include="Reports\NformTester_20120912_170737.rxlog">
+      <id>d5b1fd05-041d-4188-9c11-7368b39b4398</id>
+    </None>
+    <None Include="Reports\NformTester_20120912_172102.rxlog">
+      <id>193f46c0-eae1-41a5-84e7-cf9358555ac1</id>
+    </None>
+    <None Include="Reports\NformTester_20120912_172856.rxlog" />
     <Content Include="NformTester.rxtst">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>e173405b-e144-4cf5-9707-935f976643c9</id>
