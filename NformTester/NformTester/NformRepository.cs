@@ -9841,7 +9841,6 @@ namespace NformTester
             RepoItemInfo _groupcomboInfo;
             RepoItemInfo _navviewcomboInfo;
             RepoItemInfo _user_mustchgpswdInfo;
-            RepoItemInfo _user_cannotchgpswdInfo;
             RepoItemInfo _account_is_disabledInfo;
             RepoItemInfo _user_cannotchgalertsInfo;
             RepoItemInfo _autologoutInfo;
@@ -9855,6 +9854,14 @@ namespace NformTester
             RepoItemInfo _autologouttime_downInfo;
             RepoItemInfo _autologouttime_txtInfo;
             RepoItemInfo _autologouttime_comboInfo;
+            RepoItemInfo _user_cannotchgpswdInfo;
+            RepoItemInfo _containerupdownbuttonsInfo;
+            RepoItemInfo _rawtextn5Info;
+            RepoItemInfo _rawimagewmxlapubInfo;
+            RepoItemInfo _rawtextblock_5Info;
+            RepoItemInfo _containern5Info;
+            RepoItemInfo _textm_autologoutintervallblInfo;
+            RepoItemInfo _containerm_flagsgrpInfo;
 
             /// <summary>
             /// Creates a new FormUserProperties  folder.
@@ -9876,7 +9883,6 @@ namespace NformTester
                 _groupcomboInfo = new RepoItemInfo(this, "GroupCombo", "container[@controlname='m_tableLayoutPnl']/combobox[@controlname='m_groupCombo']", 30000, null, "fb6282d2-d958-4622-8f91-f4d1fc51ba4a");
                 _navviewcomboInfo = new RepoItemInfo(this, "NavViewCombo", "container[@controlname='m_tableLayoutPnl']/combobox[@controlname='m_navViewCombo']", 30000, null, "245d86df-0734-4493-b681-b1a24108d006");
                 _user_mustchgpswdInfo = new RepoItemInfo(this, "User_mustChgPswd", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_flagsGrp']/checkbox[@controlname='m_mustChgPswdChk']", 30000, null, "0cf68589-4c52-4c7e-b100-72b6c01d66f9");
-                _user_cannotchgpswdInfo = new RepoItemInfo(this, "User_cannotChgPswd", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_flagsGrp']/checkbox[@controlname='m_cannotChgPswdChk']", 30000, null, "33290b8e-77d4-4fd7-a2cf-5c202f1e731a");
                 _account_is_disabledInfo = new RepoItemInfo(this, "Account_is_disabled", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_flagsGrp']/checkbox[@controlname='m_acctDisabledChk']", 30000, null, "78650bc6-20c5-46e5-8061-a409ffc42bbd");
                 _user_cannotchgalertsInfo = new RepoItemInfo(this, "User_cannotChgAlerts", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_flagsGrp']/checkbox[@controlname='m_cannotChgAlertsChk']", 30000, null, "83c019b3-1738-408c-b6ad-a5eb1cc446da");
                 _autologoutInfo = new RepoItemInfo(this, "AutoLogout", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_flagsGrp']/checkbox[@controlname='m_autoLogoutChk']", 30000, null, "efbe2742-65a4-4945-866d-26e1d51b6dc0");
@@ -9890,6 +9896,14 @@ namespace NformTester
                 _autologouttime_downInfo = new RepoItemInfo(this, "AutoLogoutTime_down", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_flagsGrp']/container/container/button[@accessiblename='Down']", 30000, null, "5225c71d-2fc5-49f1-96a6-34159e78606e");
                 _autologouttime_txtInfo = new RepoItemInfo(this, "AutoLogoutTime_txt", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_flagsGrp']/container/text[@controlname='upDownEdit']", 30000, null, "4ec31d11-42dd-415a-9ee4-7e3cacf3e77a");
                 _autologouttime_comboInfo = new RepoItemInfo(this, "AutoLogoutTime_combo", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_flagsGrp']/container/combobox[@accessiblerole='ComboBox']", 30000, null, "98e5c36d-bb1e-497f-941c-fa08ca415e2a");
+                _user_cannotchgpswdInfo = new RepoItemInfo(this, "User_cannotChgPswd", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_flagsGrp']/checkbox[@controlname='m_cannotChgPswdChk']", 30000, null, "5215cbb6-4e3c-4185-bdd1-a09850465d0b");
+                _containerupdownbuttonsInfo = new RepoItemInfo(this, "ContainerUpDownButtons", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_flagsGrp']/container/container[@controlname='upDownButtons']", 30000, null, "b60e4ac7-98f5-4c30-8912-a05375acb99d");
+                _rawtextn5Info = new RepoItemInfo(this, "RawTextN5", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_flagsGrp']/container/text/rawtext[@rawtext='5']", 30000, null, "33cc585d-b609-4ade-8f8e-ffab79c143fb");
+                _rawimagewmxlapubInfo = new RepoItemInfo(this, "RawImageWMXLAPUB", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_flagsGrp']/container/text/rawimage[@id='WMXLAPUB']", 30000, null, "3ec412a3-8ea8-4eeb-a2ad-b8650b19dccf");
+                _rawtextblock_5Info = new RepoItemInfo(this, "RawTextBlock_5", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_flagsGrp']/container/text/rawtextblock[@caption='5']", 30000, null, "d74ec194-f9e8-4b6f-9b6b-721049ed271a");
+                _containern5Info = new RepoItemInfo(this, "ContainerN5", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_flagsGrp']/container[@controlname='m_autoLogoutIntervalNbx']", 30000, null, "44cbf90c-0341-495e-af1b-81b5336dce1a");
+                _textm_autologoutintervallblInfo = new RepoItemInfo(this, "TextM_autoLogoutIntervalLbl", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_flagsGrp']/text[@controlname='m_autoLogoutIntervalLbl']", 30000, null, "dedc9643-030c-4261-bbe3-c9a92f533a0a");
+                _containerm_flagsgrpInfo = new RepoItemInfo(this, "ContainerM_flagsGrp", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_flagsGrp']", 30000, null, "fbab57ba-f20d-4ee7-bd55-d87d224159e8");
             }
 
             /// <summary>
@@ -10229,30 +10243,6 @@ namespace NformTester
             }
 
             /// <summary>
-            /// The User_cannotChgPswd item.
-            /// </summary>
-            [RepositoryItem("33290b8e-77d4-4fd7-a2cf-5c202f1e731a")]
-            public virtual Ranorex.CheckBox User_cannotChgPswd
-            {
-                get
-                {
-                    return _user_cannotchgpswdInfo.CreateAdapter<Ranorex.CheckBox>(true);
-                }
-            }
-
-            /// <summary>
-            /// The User_cannotChgPswd item info.
-            /// </summary>
-            [RepositoryItemInfo("33290b8e-77d4-4fd7-a2cf-5c202f1e731a")]
-            public virtual RepoItemInfo User_cannotChgPswdInfo
-            {
-                get
-                {
-                    return _user_cannotchgpswdInfo;
-                }
-            }
-
-            /// <summary>
             /// The Account_is_disabled item.
             /// </summary>
             [RepositoryItem("78650bc6-20c5-46e5-8061-a409ffc42bbd")]
@@ -10561,6 +10551,198 @@ namespace NformTester
                 get
                 {
                     return _autologouttime_comboInfo;
+                }
+            }
+
+            /// <summary>
+            /// The User_cannotChgPswd item.
+            /// </summary>
+            [RepositoryItem("5215cbb6-4e3c-4185-bdd1-a09850465d0b")]
+            public virtual Ranorex.CheckBox User_cannotChgPswd
+            {
+                get
+                {
+                    return _user_cannotchgpswdInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The User_cannotChgPswd item info.
+            /// </summary>
+            [RepositoryItemInfo("5215cbb6-4e3c-4185-bdd1-a09850465d0b")]
+            public virtual RepoItemInfo User_cannotChgPswdInfo
+            {
+                get
+                {
+                    return _user_cannotchgpswdInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ContainerUpDownButtons item.
+            /// </summary>
+            [RepositoryItem("b60e4ac7-98f5-4c30-8912-a05375acb99d")]
+            public virtual Ranorex.Container ContainerUpDownButtons
+            {
+                get
+                {
+                    return _containerupdownbuttonsInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ContainerUpDownButtons item info.
+            /// </summary>
+            [RepositoryItemInfo("b60e4ac7-98f5-4c30-8912-a05375acb99d")]
+            public virtual RepoItemInfo ContainerUpDownButtonsInfo
+            {
+                get
+                {
+                    return _containerupdownbuttonsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RawTextN5 item.
+            /// </summary>
+            [RepositoryItem("33cc585d-b609-4ade-8f8e-ffab79c143fb")]
+            public virtual Ranorex.RawText RawTextN5
+            {
+                get
+                {
+                    return _rawtextn5Info.CreateAdapter<Ranorex.RawText>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RawTextN5 item info.
+            /// </summary>
+            [RepositoryItemInfo("33cc585d-b609-4ade-8f8e-ffab79c143fb")]
+            public virtual RepoItemInfo RawTextN5Info
+            {
+                get
+                {
+                    return _rawtextn5Info;
+                }
+            }
+
+            /// <summary>
+            /// The RawImageWMXLAPUB item.
+            /// </summary>
+            [RepositoryItem("3ec412a3-8ea8-4eeb-a2ad-b8650b19dccf")]
+            public virtual Ranorex.RawImage RawImageWMXLAPUB
+            {
+                get
+                {
+                    return _rawimagewmxlapubInfo.CreateAdapter<Ranorex.RawImage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RawImageWMXLAPUB item info.
+            /// </summary>
+            [RepositoryItemInfo("3ec412a3-8ea8-4eeb-a2ad-b8650b19dccf")]
+            public virtual RepoItemInfo RawImageWMXLAPUBInfo
+            {
+                get
+                {
+                    return _rawimagewmxlapubInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RawTextBlock_5 item.
+            /// </summary>
+            [RepositoryItem("d74ec194-f9e8-4b6f-9b6b-721049ed271a")]
+            public virtual Ranorex.RawTextBlock RawTextBlock_5
+            {
+                get
+                {
+                    return _rawtextblock_5Info.CreateAdapter<Ranorex.RawTextBlock>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RawTextBlock_5 item info.
+            /// </summary>
+            [RepositoryItemInfo("d74ec194-f9e8-4b6f-9b6b-721049ed271a")]
+            public virtual RepoItemInfo RawTextBlock_5Info
+            {
+                get
+                {
+                    return _rawtextblock_5Info;
+                }
+            }
+
+            /// <summary>
+            /// The ContainerN5 item.
+            /// </summary>
+            [RepositoryItem("44cbf90c-0341-495e-af1b-81b5336dce1a")]
+            public virtual Ranorex.Container ContainerN5
+            {
+                get
+                {
+                    return _containern5Info.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ContainerN5 item info.
+            /// </summary>
+            [RepositoryItemInfo("44cbf90c-0341-495e-af1b-81b5336dce1a")]
+            public virtual RepoItemInfo ContainerN5Info
+            {
+                get
+                {
+                    return _containern5Info;
+                }
+            }
+
+            /// <summary>
+            /// The TextM_autoLogoutIntervalLbl item.
+            /// </summary>
+            [RepositoryItem("dedc9643-030c-4261-bbe3-c9a92f533a0a")]
+            public virtual Ranorex.Text TextM_autoLogoutIntervalLbl
+            {
+                get
+                {
+                    return _textm_autologoutintervallblInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TextM_autoLogoutIntervalLbl item info.
+            /// </summary>
+            [RepositoryItemInfo("dedc9643-030c-4261-bbe3-c9a92f533a0a")]
+            public virtual RepoItemInfo TextM_autoLogoutIntervalLblInfo
+            {
+                get
+                {
+                    return _textm_autologoutintervallblInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ContainerM_flagsGrp item.
+            /// </summary>
+            [RepositoryItem("fbab57ba-f20d-4ee7-bd55-d87d224159e8")]
+            public virtual Ranorex.Container ContainerM_flagsGrp
+            {
+                get
+                {
+                    return _containerm_flagsgrpInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ContainerM_flagsGrp item info.
+            /// </summary>
+            [RepositoryItemInfo("fbab57ba-f20d-4ee7-bd55-d87d224159e8")]
+            public virtual RepoItemInfo ContainerM_flagsGrpInfo
+            {
+                get
+                {
+                    return _containerm_flagsgrpInfo;
                 }
             }
         }

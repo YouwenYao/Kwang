@@ -1407,9 +1407,6 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
           <item name="User_mustChgPswd" id="0cf68589-4c52-4c7e-b100-72b6c01d66f9" searchtimeout="30000ms" capname="checkbox" addcaps="checkbox,control,nativewindow">
             <![CDATA[/form[@controlname='LxUserDlg']/container[@controlname='m_tableLayoutPnl']/container[@controlname='m_flagsGrp']/checkbox[@controlname='m_mustChgPswdChk']]]>
           </item>
-          <item name="User_cannotChgPswd" id="33290b8e-77d4-4fd7-a2cf-5c202f1e731a" searchtimeout="30000ms" capname="checkbox" addcaps="checkbox,control,nativewindow">
-            <![CDATA[/form[@controlname='LxUserDlg']/container[@controlname='m_tableLayoutPnl']/container[@controlname='m_flagsGrp']/checkbox[@controlname='m_cannotChgPswdChk']]]>
-          </item>
           <item name="Account_is_disabled" id="78650bc6-20c5-46e5-8061-a409ffc42bbd" searchtimeout="30000ms" capname="checkbox" addcaps="checkbox,control,nativewindow">
             <![CDATA[/form[@controlname='LxUserDlg']/container[@controlname='m_tableLayoutPnl']/container[@controlname='m_flagsGrp']/checkbox[@controlname='m_acctDisabledChk']]]>
           </item>
@@ -1448,6 +1445,30 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
           </item>
           <item name="AutoLogoutTime_combo" id="98e5c36d-bb1e-497f-941c-fa08ca415e2a" searchtimeout="30000ms" capname="combobox" addcaps="combobox,accessible">
             <![CDATA[/form[@controlname='LxUserDlg']/container[@controlname='m_tableLayoutPnl']/container[@controlname='m_flagsGrp']/container/combobox[@accessiblerole='ComboBox']]]>
+          </item>
+          <item name="User_cannotChgPswd" id="5215cbb6-4e3c-4185-bdd1-a09850465d0b" searchtimeout="30000ms" capname="checkbox" addcaps="checkbox,control,nativewindow">
+            <![CDATA[/form[@controlname='LxUserDlg']/container[@controlname='m_tableLayoutPnl']/container[@controlname='m_flagsGrp']/checkbox[@controlname='m_cannotChgPswdChk']]]>
+          </item>
+          <item name="ContainerUpDownButtons" id="b60e4ac7-98f5-4c30-8912-a05375acb99d" searchtimeout="30000ms" capname="container" addcaps="container,control,nativewindow">
+            <![CDATA[/form[@controlname='LxUserDlg']/container[@controlname='m_tableLayoutPnl']/container[@controlname='m_flagsGrp']/container/container[@controlname='upDownButtons']]]>
+          </item>
+          <item name="RawTextN5" id="33cc585d-b609-4ade-8f8e-ffab79c143fb" searchtimeout="30000ms" capname="rawtext" addcaps="unknown,rawtext">
+            <![CDATA[/form[@controlname='LxUserDlg']/container[@controlname='m_tableLayoutPnl']/container[@controlname='m_flagsGrp']/container/text/rawtext[@rawtext='5']]]>
+          </item>
+          <item name="RawImageWMXLAPUB" id="3ec412a3-8ea8-4eeb-a2ad-b8650b19dccf" searchtimeout="30000ms" capname="rawimage" addcaps="picture,rawimage">
+            <![CDATA[/form[@controlname='LxUserDlg']/container[@controlname='m_tableLayoutPnl']/container[@controlname='m_flagsGrp']/container/text/rawimage[@id='WMXLAPUB']]]>
+          </item>
+          <item name="RawTextBlock_5" id="d74ec194-f9e8-4b6f-9b6b-721049ed271a" searchtimeout="30000ms" capname="rawtextblock" addcaps="text,rawtextblock">
+            <![CDATA[/form[@controlname='LxUserDlg']/container[@controlname='m_tableLayoutPnl']/container[@controlname='m_flagsGrp']/container/text/rawtextblock[@caption='5']]]>
+          </item>
+          <item name="ContainerN5" id="44cbf90c-0341-495e-af1b-81b5336dce1a" searchtimeout="30000ms" capname="container" addcaps="container,control,nativewindow">
+            <![CDATA[/form[@controlname='LxUserDlg']/container[@controlname='m_tableLayoutPnl']/container[@controlname='m_flagsGrp']/container[@controlname='m_autoLogoutIntervalNbx']]]>
+          </item>
+          <item name="TextM_autoLogoutIntervalLbl" id="dedc9643-030c-4261-bbe3-c9a92f533a0a" searchtimeout="30000ms" capname="text" addcaps="text,control,nativewindow">
+            <![CDATA[/form[@controlname='LxUserDlg']/container[@controlname='m_tableLayoutPnl']/container[@controlname='m_flagsGrp']/text[@controlname='m_autoLogoutIntervalLbl']]]>
+          </item>
+          <item name="ContainerM_flagsGrp" id="fbab57ba-f20d-4ee7-bd55-d87d224159e8" searchtimeout="30000ms" capname="container" addcaps="container,control,nativewindow">
+            <![CDATA[/form[@controlname='LxUserDlg']/container[@controlname='m_tableLayoutPnl']/container[@controlname='m_flagsGrp']]]>
           </item>
           <basepath>
             <![CDATA[/form[@controlname='LxUserDlg']]]>
