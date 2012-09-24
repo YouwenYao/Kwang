@@ -235,8 +235,8 @@
   </content>
   <testconfigurations default="TestRun">
     <testconfiguration name="TestRun">
-      <testcase id="0640b21f-1d04-428f-ac2b-d5ad11313c7b"/>
       <testcase id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
+      <testcase id="296b187b-6665-439e-b566-3d918d941989"/>
     </testconfiguration>
   </testconfigurations>
   <references/>

@@ -580,7 +580,139 @@
     <None Include="Reports\NformTester_20120914_152230.rxlog">
       <id>53921936-bceb-475e-80cb-32b931ac7d38</id>
     </None>
-    <None Include="Reports\NformTester_20120914_152602.rxlog" />
+    <None Include="Reports\NformTester_20120914_152602.rxlog">
+      <id>8013b692-18dc-4189-b344-c0c60097ef16</id>
+    </None>
+    <None Include="Reports\NformTester_20120920_093653.rxlog">
+      <id>01eab18f-c501-4f98-aff3-90769c8eb9e5</id>
+    </None>
+    <None Include="Reports\NformTester_20120920_094146.rxlog">
+      <id>b6016e00-ab23-489f-99f3-d278a664477d</id>
+    </None>
+    <None Include="Reports\NformTester_20120920_100010.rxlog">
+      <id>5336589c-43fe-4f31-b126-d0b15fcd6297</id>
+    </None>
+    <None Include="Reports\NformTester_20120920_102927.rxlog">
+      <id>699a9e80-287c-4aae-8922-564472aa7fa9</id>
+    </None>
+    <None Include="Reports\NformTester_20120920_105134.rxlog">
+      <id>d0136611-40c0-4bcd-bc87-b625effba2b3</id>
+    </None>
+    <None Include="Reports\NformTester_20120920_105740.rxlog">
+      <id>bc5dd9ae-543b-4b49-aac2-5a10318a05ea</id>
+    </None>
+    <None Include="Reports\NformTester_20120920_110134.rxlog">
+      <id>02485767-e424-4ee3-907b-2ff7d674fc60</id>
+    </None>
+    <None Include="Reports\NformTester_20120920_135731.rxlog">
+      <id>85fcca78-d8d1-45e9-9805-10744277c255</id>
+    </None>
+    <None Include="Reports\NformTester_20120920_140556.rxlog">
+      <id>38eb347c-ad2f-4966-9200-1c9fc46eea26</id>
+    </None>
+    <None Include="Reports\NformTester_20120920_142742.rxlog">
+      <id>35eeb814-5f6b-46ba-a043-51edd9838e41</id>
+    </None>
+    <None Include="Reports\NformTester_20120920_143357.rxlog">
+      <id>571ba21f-6976-4a06-b527-dbfa48f9edd4</id>
+    </None>
+    <None Include="Reports\NformTester_20120920_144051.rxlog">
+      <id>95c4b9f8-a166-493c-a44a-f1e7f424b747</id>
+    </None>
+    <None Include="Reports\NformTester_20120920_145239.rxlog">
+      <id>d9157bcd-91b4-4d42-9548-edfd18b8a81b</id>
+    </None>
+    <None Include="Reports\NformTester_20120920_150200.rxlog">
+      <id>5a453214-e463-4a89-b097-fd56ebaa7438</id>
+    </None>
+    <None Include="Reports\NformTester_20120920_151810.rxlog">
+      <id>23ac97ae-f846-48af-9a68-5d2e2f0e154a</id>
+    </None>
+    <None Include="Reports\NformTester_20120920_152135.rxlog">
+      <id>26f152a7-5572-4085-b9f3-897400ab2852</id>
+    </None>
+    <None Include="Reports\NformTester_20120920_153744.rxlog">
+      <id>88169593-494b-46a8-a07f-e11d5f256529</id>
+    </None>
+    <None Include="Reports\NformTester_20120920_155138.rxlog">
+      <id>6129bb9b-d9a3-4f4a-ab87-3a8ee63e5301</id>
+    </None>
+    <None Include="Reports\NformTester_20120920_155952.rxlog">
+      <id>34006ead-89a0-4af4-8bd4-c2f5e5c69a67</id>
+    </None>
+    <None Include="Reports\NformTester_20120920_160307.rxlog">
+      <id>7ab86a4b-68be-4670-8323-d27ff6924d4f</id>
+    </None>
+    <None Include="Reports\NformTester_20120920_172113.rxlog">
+      <id>9bfc6edc-c25f-4b52-9971-235075c21e40</id>
+    </None>
+    <None Include="Reports\NformTester_20120920_172750.rxlog">
+      <id>01531c53-b175-4051-83ea-162fb5618722</id>
+    </None>
+    <None Include="Reports\NformTester_20120921_092738.rxlog">
+      <id>01abd481-39c0-4c08-8d33-d290d7a251dc</id>
+    </None>
+    <None Include="Reports\NformTester_20120921_093417.rxlog">
+      <id>7958f371-18cd-46d7-9975-effe69902063</id>
+    </None>
+    <None Include="Reports\NformTester_20120921_094216.rxlog">
+      <id>90a78466-7ee5-472a-9ecf-4f9a7fc2ec57</id>
+    </None>
+    <None Include="Reports\NformTester_20120921_111738.rxlog">
+      <id>d2d2b179-79c1-4949-aa86-11115a91c051</id>
+    </None>
+    <None Include="Reports\NformTester_20120921_114413.rxlog">
+      <id>116536e1-1ba6-4065-a77e-303753034de2</id>
+    </None>
+    <None Include="Reports\NformTester_20120921_131432.rxlog">
+      <id>cd51983e-79f5-4159-8142-465b15bbb733</id>
+    </None>
+    <None Include="Reports\NformTester_20120921_131928.rxlog">
+      <id>510116e8-115b-499e-921e-ef3d3d7398f7</id>
+    </None>
+    <None Include="Reports\NformTester_20120921_132559.rxlog">
+      <id>670c8550-ac31-4945-891d-667442ac6918</id>
+    </None>
+    <None Include="Reports\NformTester_20120921_134643.rxlog">
+      <id>46209460-e35e-4dca-984d-48cd5b224ab4</id>
+    </None>
+    <None Include="Reports\NformTester_20120921_135825.rxlog">
+      <id>bb7a91d7-30f8-49a9-9062-fd7e7067394a</id>
+    </None>
+    <None Include="Reports\NformTester_20120921_140205.rxlog">
+      <id>31c05808-5957-493f-aada-0751a62c9723</id>
+    </None>
+    <None Include="Reports\NformTester_20120921_140847.rxlog">
+      <id>a3622bcf-4a24-44fe-9e64-9c6073959e01</id>
+    </None>
+    <None Include="Reports\NformTester_20120921_141555.rxlog">
+      <id>5135de17-0671-4b84-b732-80fc62b11a09</id>
+    </None>
+    <None Include="Reports\NformTester_20120921_142114.rxlog">
+      <id>770624b8-d42d-4bfd-b821-385f538979c0</id>
+    </None>
+    <None Include="Reports\NformTester_20120921_142409.rxlog">
+      <id>8d967c76-9d0c-4c97-bdc6-2c3affbb26d5</id>
+    </None>
+    <None Include="Reports\NformTester_20120921_150543.rxlog">
+      <id>5a1a2f36-c008-4c9f-8c83-c2097ca6dec0</id>
+    </None>
+    <None Include="Reports\NformTester_20120921_165751.rxlog">
+      <id>88f8588a-fe32-46e3-83d2-c6ec86ce3c7d</id>
+    </None>
+    <None Include="Reports\NformTester_20120921_170215.rxlog">
+      <id>e2abb28d-4168-4fec-8fe7-7c03f2c2fc70</id>
+    </None>
+    <None Include="Reports\NformTester_20120921_171854.rxlog">
+      <id>781b2286-c788-4b23-9446-61611b967e5d</id>
+    </None>
+    <None Include="Reports\NformTester_20120921_172100.rxlog">
+      <id>9d9f9ac3-3c9a-40cd-a8a3-9035af3a0cdb</id>
+    </None>
+    <None Include="Reports\NformTester_20120921_172622.rxlog">
+      <id>dacd5d86-1351-46fc-a582-09e1dae438cf</id>
+    </None>
+    <None Include="Reports\NformTester_20120921_173225.rxlog" />
     <Content Include="NformTester.rxtst">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>e173405b-e144-4cf5-9707-935f976643c9</id>
