@@ -234,58 +234,7 @@
     </testcase>
   </content>
   <testconfigurations default="TestRun">
-    <testconfiguration name="TestRun">
-      <testcase id="0640b21f-1d04-428f-ac2b-d5ad11313c7b"/>
-      <testcase id="0707e9b9-180c-4f86-ae0a-596096a9b83e"/>
-      <testcase id="096db69b-fe8e-4b4e-9a3e-0703528bf5cb"/>
-      <testcase id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
-      <testcase id="0e90a512-836d-4d31-84f9-31bbedc38461"/>
-      <testcase id="12a24cfe-d186-4306-963f-bade62bc8d6e"/>
-      <testcase id="15aefa23-6cae-4ddb-a0a4-f5cacd83b4f0"/>
-      <testcase id="16486114-5d25-4942-bac2-1dbf0b706dd7"/>
-      <testcase id="20fefad2-30ec-43bc-adb2-9c4a25a5f3a7"/>
-      <testcase id="23a770c7-4023-4976-b0da-b27cc209ba38"/>
-      <testcase id="296b187b-6665-439e-b566-3d918d941989"/>
-      <testcase id="2ca6765a-0e52-4e8d-a5a2-e968fbc840b0"/>
-      <testcase id="32240224-40d5-41e2-a2ba-cfecea80b06e"/>
-      <testcase id="3d809fc2-976f-4a9c-b674-ea225ac34831"/>
-      <testcase id="3f75511c-1c31-4769-8815-31305324d062"/>
-      <testcase id="40500e1d-c118-413d-8a0d-11c10ca24c55"/>
-      <testcase id="4ab35b39-e021-49d3-9c57-f03f3f5ef22d"/>
-      <testcase id="559d2520-d6e3-4707-a518-10afea117923"/>
-      <testcase id="5dd72bf9-a7f6-4675-bd0a-e32647264006"/>
-      <testcase id="6b0bbfe3-6585-42e5-a84b-6b41a6590290"/>
-      <testcase id="6ec6134b-c2c5-42aa-be66-f62703b5d91c"/>
-      <testcase id="7363a957-2fd8-43ba-aead-33ed67aa42d8"/>
-      <testcase id="762c77ee-7d39-43d3-a60e-478c364b113d"/>
-      <testcase id="7e90aa22-e889-47eb-9b80-c7f2a8617c20"/>
-      <testcase id="80f7fd2a-423e-439b-8aba-0a5b90298585"/>
-      <testcase id="81d901e3-4170-440b-9bce-8fd626bc5324"/>
-      <testcase id="8463e29e-ae7b-4aae-9eeb-815dd72fa907"/>
-      <testcase id="849dfe54-29ee-4d11-bb8d-99eb0c86fa24"/>
-      <testcase id="888fac11-98f4-46a4-a919-96d419859aa4"/>
-      <testcase id="9265cfa4-2cfa-47a0-bf93-1d3cc277e6e2"/>
-      <testcase id="96a5c750-2d4c-4fa5-8fd7-1c3549147254"/>
-      <testcase id="997d4ff8-b9be-428c-8753-7d8a8442e11d"/>
-      <testcase id="9b8e124b-243d-4b59-b059-ca6ebfa4a86a"/>
-      <testcase id="a3f806fe-7236-46b0-bab4-9dee4363c517"/>
-      <testcase id="a48366dc-e083-4ec0-984e-607260d6a93f"/>
-      <testcase id="a6744b73-5aac-420a-9b72-2a291fe299ff"/>
-      <testcase id="abe1fdbf-4c2a-4971-b8e2-93b8e6f1ae54"/>
-      <testcase id="aec23701-fc9b-4cd4-96b9-0b57a91fa5db"/>
-      <testcase id="afe7c6b5-f22a-491a-8b65-f5ad7c82ec88"/>
-      <testcase id="b54fde07-b9a0-483b-997f-2a1e09f96c5f"/>
-      <testcase id="c5e7edcd-1e74-4d3a-9199-b8233b9e79dd"/>
-      <testcase id="cc18aa9e-b5e3-4fc0-858c-41a8fd4997ff"/>
-      <testcase id="d05f2f90-1164-4364-9e6c-1664c5a3c3e5"/>
-      <testcase id="d5411adb-3b8f-4c72-b521-1c29041e50b7"/>
-      <testcase id="d75515d3-ed01-4aee-962a-46d5e69f0084"/>
-      <testcase id="e006412a-d952-458b-afd7-7804cb9b0407"/>
-      <testcase id="e62b133a-907b-4a7e-894c-63be8623b45d"/>
-      <testcase id="eb05ebbc-01a0-41dc-a302-6db630fe0cd8"/>
-      <testcase id="f7022673-4fb6-4065-b585-4e5d5e258c31"/>
-      <testcase id="f8f9ccd1-3351-45e5-9d8b-0d0989d5eb5d"/>
-    </testconfiguration>
+    <testconfiguration name="TestRun"/>
   </testconfigurations>
   <references/>
 </testsuite>
