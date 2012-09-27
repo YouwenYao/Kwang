@@ -7,6 +7,9 @@
     <testcase name="TestScripts" id="15542ef7-bf90-431d-8e26-f8eb1c05a42e">
       <testmodule name="TestCaseDriver" id="047cc82b-ce0d-4b2a-83ce-5e91475749a7" ref="78CE2FBF-D204-4698-98BF-68118D374E9F" type="UserCode"/>
     </testcase>
+    <testcase name="TST932_InstallNformFullPackage" id="11ce54d4-ddca-4bca-9177-fc528198fa58">
+      <testmodule name="TestCaseDriver" id="b3d54874-198f-4842-8956-5cf7c391b8c2" ref="78CE2FBF-D204-4698-98BF-68118D374E9F" type="UserCode"/>
+    </testcase>
     <testcase name="TST425_SetActionForAlarmOrEvent" id="ba7f3483-ca86-4113-9784-af01aaa94c68">
       <testmodule name="TestCaseDriver" id="3d912de0-1d29-4eae-b830-10c09150f9bd" ref="78CE2FBF-D204-4698-98BF-68118D374E9F" type="UserCode"/>
     </testcase>
@@ -87,9 +90,6 @@
     </testcase>
     <testcase name="TST931_InstallViewerOnly" id="c135c466-1094-446b-9be0-cb60cf77662c">
       <testmodule name="TestCaseDriver" id="860e432b-e399-40ca-9200-59da8555d778" ref="78CE2FBF-D204-4698-98BF-68118D374E9F" type="UserCode"/>
-    </testcase>
-    <testcase name="TST932_InstallNformFullPackage" id="11ce54d4-ddca-4bca-9177-fc528198fa58">
-      <testmodule name="TestCaseDriver" id="b3d54874-198f-4842-8956-5cf7c391b8c2" ref="78CE2FBF-D204-4698-98BF-68118D374E9F" type="UserCode"/>
     </testcase>
     <testcase name="TST936_DevicesSupportedByNformG2Product" id="559d2520-d6e3-4707-a518-10afea117923">
       <testmodule name="TestCaseDriver" id="5cbecd4a-0ec9-4298-83e7-e9fa4727a9d7" ref="78CE2FBF-D204-4698-98BF-68118D374E9F" type="UserCode"/>
@@ -202,9 +202,6 @@
     <testcase name="TST1336_ShowExpandedTopFrameAndShowExpendedBottomFrame" id="296b187b-6665-439e-b566-3d918d941989">
       <testmodule name="TestCaseDriver" id="d64fac4f-fbc3-4150-8575-d84d59f42f75" ref="78CE2FBF-D204-4698-98BF-68118D374E9F" type="UserCode"/>
     </testcase>
-    <testcase name="TST1353_UninstallationProcess" id="3c28c83b-fa60-4e46-9186-32e1d140d39e">
-      <testmodule name="TestCaseDriver" id="835bcc93-1fc4-4259-9f8e-a0448f51537e" ref="78CE2FBF-D204-4698-98BF-68118D374E9F" type="UserCode"/>
-    </testcase>
     <testcase name="TST2748_DeviceStatusPollingAndGolbalStatusPolling" id="f7022673-4fb6-4065-b585-4e5d5e258c31">
       <testmodule name="TestCaseDriver" id="2771b110-77f8-4be9-bd5d-8d2b30c3b9e3" ref="78CE2FBF-D204-4698-98BF-68118D374E9F" type="UserCode"/>
     </testcase>
@@ -232,6 +229,9 @@
     <testcase name="TST2801_AlarmUnderMaintenanceMode" id="a3f806fe-7236-46b0-bab4-9dee4363c517">
       <testmodule name="TestCaseDriver" id="fa08389d-2796-41bb-8345-651c7c5bd913" ref="78CE2FBF-D204-4698-98BF-68118D374E9F" type="UserCode"/>
     </testcase>
+    <testcase name="TST1353_UninstallationProcess" id="3c28c83b-fa60-4e46-9186-32e1d140d39e">
+      <testmodule name="TestCaseDriver" id="835bcc93-1fc4-4259-9f8e-a0448f51537e" ref="78CE2FBF-D204-4698-98BF-68118D374E9F" type="UserCode"/>
+    </testcase>
   </content>
   <testconfigurations default="TestRun">
     <testconfiguration name="TestRun">
@@ -241,6 +241,7 @@
       <testcase id="096db69b-fe8e-4b4e-9a3e-0703528bf5cb"/>
       <testcase id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
       <testcase id="0e90a512-836d-4d31-84f9-31bbedc38461"/>
+      <testcase id="11ce54d4-ddca-4bca-9177-fc528198fa58"/>
       <testcase id="12a24cfe-d186-4306-963f-bade62bc8d6e"/>
       <testcase id="15aefa23-6cae-4ddb-a0a4-f5cacd83b4f0"/>
       <testcase id="16486114-5d25-4942-bac2-1dbf0b706dd7"/>
@@ -249,6 +250,7 @@
       <testcase id="296b187b-6665-439e-b566-3d918d941989"/>
       <testcase id="2ca6765a-0e52-4e8d-a5a2-e968fbc840b0"/>
       <testcase id="32240224-40d5-41e2-a2ba-cfecea80b06e"/>
+      <testcase id="3c28c83b-fa60-4e46-9186-32e1d140d39e"/>
       <testcase id="3ca727b2-f8d5-4613-be82-21ab245fb35d"/>
       <testcase id="3d809fc2-976f-4a9c-b674-ea225ac34831"/>
       <testcase id="3f75511c-1c31-4769-8815-31305324d062"/>
@@ -256,7 +258,6 @@
       <testcase id="4ab35b39-e021-49d3-9c57-f03f3f5ef22d"/>
       <testcase id="4e3370f8-abe1-47b6-b77f-76562361057c"/>
       <testcase id="52f81911-2ea2-41cf-bf30-2837d35dfb61"/>
-      <testcase id="54144590-bbf2-419f-8635-0ed086790303"/>
       <testcase id="559d2520-d6e3-4707-a518-10afea117923"/>
       <testcase id="5dd72bf9-a7f6-4675-bd0a-e32647264006"/>
       <testcase id="69670d57-8729-4f8e-92f0-2eb4e706a0b3"/>
@@ -284,6 +285,7 @@
       <testcase id="abe1fdbf-4c2a-4971-b8e2-93b8e6f1ae54"/>
       <testcase id="aec23701-fc9b-4cd4-96b9-0b57a91fa5db"/>
       <testcase id="b54fde07-b9a0-483b-997f-2a1e09f96c5f"/>
+      <testcase id="c135c466-1094-446b-9be0-cb60cf77662c"/>
       <testcase id="c5e7edcd-1e74-4d3a-9199-b8233b9e79dd"/>
       <testcase id="cbcf2c4f-a86d-4cf7-8ab8-c180026d0323"/>
       <testcase id="cc18aa9e-b5e3-4fc0-858c-41a8fd4997ff"/>
