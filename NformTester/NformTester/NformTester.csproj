@@ -192,6 +192,10 @@
       <id>c0f3e6a8-c762-402e-86ad-1d086ef835e1</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="keywordscripts\TST1133_UnacknowledgedAlarmColor.xlsx">
+      <id>f320ddfb-3d49-47b8-94bf-d95037bff63a</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST1134_DataLoggingOnDevicePropertiesAndTrends.xlsx">
       <id>0a4581d9-fe76-48fc-aa9f-e434dd7b515e</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -454,6 +458,13 @@
       <reporootid>6a87c9de-ee82-4df6-9a1d-880f145582e5</reporootid>
       <projectdefaultrepository>true</projectdefaultrepository>
     </None>
+    <None Include="Reports\NformTester_20121019_111904.rxlog">
+      <id>929674ca-60f0-44eb-8e66-d4171ffcf8d3</id>
+    </None>
+    <None Include="Reports\NformTester_20121019_112410.rxlog">
+      <id>aaf836ac-87bf-4b81-a524-06bff28987cf</id>
+    </None>
+    <None Include="Reports\NformTester_20121022_102551.rxlog" />
     <Content Include="NformTester.rxtst">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>e173405b-e144-4cf5-9707-935f976643c9</id>

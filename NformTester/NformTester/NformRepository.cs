@@ -751,6 +751,7 @@ namespace NformTester
         {
             NformRepositoryFolders.FormMainAppFolder _formmain;
             NformRepositoryFolders.FormGadgetAppFolder _formgadget;
+            NformRepositoryFolders.FormConfigure_Global_Gadget_DisplayAppFolder _formconfigure_global_gadget_display;
             NformRepositoryFolders.FormColorAppFolder _formcolor;
             NformRepositoryFolders.FormNform_System_StartupAppFolder _formnform_system_startup;
             NformRepositoryFolders.FormCreated_UserAppFolder _formcreated_user;
@@ -768,6 +769,7 @@ namespace NformTester
             {
                 _formmain = new NformRepositoryFolders.FormMainAppFolder(parentFolder);
                 _formgadget = new NformRepositoryFolders.FormGadgetAppFolder(parentFolder);
+                _formconfigure_global_gadget_display = new NformRepositoryFolders.FormConfigure_Global_Gadget_DisplayAppFolder(parentFolder);
                 _formcolor = new NformRepositoryFolders.FormColorAppFolder(parentFolder);
                 _formnform_system_startup = new NformRepositoryFolders.FormNform_System_StartupAppFolder(parentFolder);
                 _formcreated_user = new NformRepositoryFolders.FormCreated_UserAppFolder(parentFolder);
@@ -794,6 +796,15 @@ namespace NformTester
             public virtual NformRepositoryFolders.FormGadgetAppFolder FormGadget
             {
                 get { return _formgadget; }
+            }
+
+            /// <summary>
+            /// The FormConfigure_Global_Gadget_Display folder.
+            /// </summary>
+            [RepositoryFolder("e7918683-6517-4971-a6ca-d2b5906a49d1")]
+            public virtual NformRepositoryFolders.FormConfigure_Global_Gadget_DisplayAppFolder FormConfigure_Global_Gadget_Display
+            {
+                get { return _formconfigure_global_gadget_display; }
             }
 
             /// <summary>
@@ -3980,32 +3991,6 @@ namespace NformTester
             RepoItemInfo _specificcomboInfo;
             RepoItemInfo _showaddressInfo;
             RepoItemInfo _shownameInfo;
-            RepoItemInfo _tabalarmsInfo;
-            RepoItemInfo _tabcommunicationInfo;
-            RepoItemInfo _tabalarm_severityInfo;
-            RepoItemInfo _tabalarm_statusInfo;
-            RepoItemInfo _unacknowledged_colorInfo;
-            RepoItemInfo _useracknowledged_colorInfo;
-            RepoItemInfo _sysacknowledged_colorInfo;
-            RepoItemInfo _fit_chartInfo;
-            RepoItemInfo _turn_labels_onInfo;
-            RepoItemInfo _show_zero_sliceInfo;
-            RepoItemInfo _unacknowledged_offsetInfo;
-            RepoItemInfo _unacknowledged_offset_downInfo;
-            RepoItemInfo _unacknowledged_offset_upInfo;
-            RepoItemInfo _unacknowledged_offset_txtInfo;
-            RepoItemInfo _useracknowledged_offsetInfo;
-            RepoItemInfo _useracknowledged_offset_downInfo;
-            RepoItemInfo _useracknowledged_offset_upInfo;
-            RepoItemInfo _useracknowledged_offset_txtInfo;
-            RepoItemInfo _sysacknowledged_offsetInfo;
-            RepoItemInfo _sysacknowledged_offset_downInfo;
-            RepoItemInfo _sysacknowledged_offset_upInfo;
-            RepoItemInfo _sysacknowledged_offset_txtInfo;
-            RepoItemInfo _pie_height_offsetInfo;
-            RepoItemInfo _pie_height_offset_downInfo;
-            RepoItemInfo _pie_height_offset_upInfo;
-            RepoItemInfo _pie_height_offset_txtInfo;
 
             /// <summary>
             /// Creates a new FormGadget  folder.
@@ -4034,32 +4019,6 @@ namespace NformTester
                 _specificcomboInfo = new RepoItemInfo(this, "SpecificCombo", "tabpagelist/tabpage[@controlname='m_tabPageSetup']/container/container[@controlname='m_gadgetGrpBx']/container[@controlname='m_specificDevGrpBx']/combobox[@controlname='m_devicesCombo']", 30000, null, "ec7d74fb-8910-4d77-a00d-16042eb504f3");
                 _showaddressInfo = new RepoItemInfo(this, "ShowAddress", "tabpagelist/tabpage[@controlname='m_tabPageSetup']/container/container[@controlname='m_gadgetGrpBx']/container[@controlname='m_specificDevGrpBx']/radiobutton[@controlname='m_showAddrRbtn']", 30000, null, "c7e44038-ff9f-4128-8437-67246dfed107");
                 _shownameInfo = new RepoItemInfo(this, "ShowName", "tabpagelist/tabpage[@controlname='m_tabPageSetup']/container/container[@controlname='m_gadgetGrpBx']/container[@controlname='m_specificDevGrpBx']/radiobutton[@controlname='m_showNameRbtn']", 30000, null, "4e141dac-f92a-4190-8088-85f7d38c1814");
-                _tabalarmsInfo = new RepoItemInfo(this, "TabAlarms", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@accessiblename='Alarms']", 30000, null, "82d3e661-708a-4121-bc3b-90c2086a3aa7");
-                _tabcommunicationInfo = new RepoItemInfo(this, "TabCommunication", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@accessiblename='Communication']", 30000, null, "a3c6d9e1-d290-4f48-b743-f93806bdb484");
-                _tabalarm_severityInfo = new RepoItemInfo(this, "TabAlarm_Severity", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@accessiblename='Alarm Severity']", 30000, null, "d1cdb3e3-7286-4b26-8c9a-475055e1f7f7");
-                _tabalarm_statusInfo = new RepoItemInfo(this, "TabAlarm_Status", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@accessiblename='Alarm Status']", 30000, null, "444d81d7-2d00-4004-86bd-9b3927089818");
-                _unacknowledged_colorInfo = new RepoItemInfo(this, "Unacknowledged_color", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/button[@controltypename='LxButton' and @instance='0']", 30000, null, "caceb2e7-6b71-410b-9898-e96a008d1da9");
-                _useracknowledged_colorInfo = new RepoItemInfo(this, "UserAcknowledged_color", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/button[@controltypename='LxButton' and @instance='1']", 30000, null, "d756a310-5291-453d-9d10-e5c582920426");
-                _sysacknowledged_colorInfo = new RepoItemInfo(this, "SysAcknowledged_color", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/button[@controltypename='LxButton' and @instance='2']", 30000, null, "b958a260-2087-4263-b90c-e6fc01db912e");
-                _fit_chartInfo = new RepoItemInfo(this, "Fit_chart", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/checkbox[@controlname='m_fitChartCheckBox']", 30000, null, "7016c61a-cbfa-42a1-8a90-30d954f19024");
-                _turn_labels_onInfo = new RepoItemInfo(this, "Turn_labels_on", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/checkbox[@controlname='m_labelsOnOffCheckBox']", 30000, null, "9bf37811-cfa1-4291-8fb5-081686addb4c");
-                _show_zero_sliceInfo = new RepoItemInfo(this, "Show_zero_slice", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/checkbox[@controlname='m_showZeroSliceCheckBox']", 30000, null, "3681a70e-325f-4d1d-aba2-5312424e0315");
-                _unacknowledged_offsetInfo = new RepoItemInfo(this, "Unacknowledged_offset", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='0']/combobox[@accessiblerole='ComboBox']", 30000, null, "9a9d7e21-3487-455a-ae30-423e0117ea65");
-                _unacknowledged_offset_downInfo = new RepoItemInfo(this, "Unacknowledged_offset_down", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='0']/container/button[@accessiblename='Down']", 30000, null, "4203a2d8-51dd-403d-a091-2c1eeda7e8d0");
-                _unacknowledged_offset_upInfo = new RepoItemInfo(this, "Unacknowledged_offset_up", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='0']/container/button[@accessiblename='Up']", 30000, null, "b4038c6c-7e55-42f7-a69a-100f63e80386");
-                _unacknowledged_offset_txtInfo = new RepoItemInfo(this, "Unacknowledged_offset_txt", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='0']/text[@controlname='upDownEdit']", 30000, null, "d94ad6eb-a2d4-4115-892c-6fb3efde72a2");
-                _useracknowledged_offsetInfo = new RepoItemInfo(this, "Useracknowledged_offset", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='1']/combobox[@accessiblerole='ComboBox']", 30000, null, "27c3cb6b-075f-401b-a175-d1afa4837ee6");
-                _useracknowledged_offset_downInfo = new RepoItemInfo(this, "Useracknowledged_offset_down", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='1']/container/button[@accessiblename='Down']", 30000, null, "7b3c2e5e-db80-48ac-8c05-26c059953e4f");
-                _useracknowledged_offset_upInfo = new RepoItemInfo(this, "Useracknowledged_offset_up", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='1']/container/button[@accessiblename='Up']", 30000, null, "36ed0494-85e6-4c5c-858a-d462dc7b639d");
-                _useracknowledged_offset_txtInfo = new RepoItemInfo(this, "Useracknowledged_offset_txt", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='1']/text[@controlname='upDownEdit']", 30000, null, "c1ce7945-4d13-46a3-95ab-b35f2734759a");
-                _sysacknowledged_offsetInfo = new RepoItemInfo(this, "Sysacknowledged_offset", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='2']/combobox[@accessiblerole='ComboBox']", 30000, null, "80a15a0c-3e97-49a9-9909-ed366a757c5e");
-                _sysacknowledged_offset_downInfo = new RepoItemInfo(this, "Sysacknowledged_offset_down", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='2']/container/button[@accessiblename='Down']", 30000, null, "dd61c72c-99ae-4870-805f-511f6772658c");
-                _sysacknowledged_offset_upInfo = new RepoItemInfo(this, "Sysacknowledged_offset_up", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='2']/container/button[@accessiblename='Up']", 30000, null, "3734298f-0668-40c0-8413-5ea1feb1e2a9");
-                _sysacknowledged_offset_txtInfo = new RepoItemInfo(this, "Sysacknowledged_offset_txt", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='2']/text[@controlname='upDownEdit']", 30000, null, "99a81cb8-ac0d-4371-b132-3243449713a5");
-                _pie_height_offsetInfo = new RepoItemInfo(this, "Pie_height_offset", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controlname='m_pieHeightNbx']/combobox[@accessiblerole='ComboBox']", 30000, null, "eeaee424-28a5-405c-b7a2-6e8c395c680a");
-                _pie_height_offset_downInfo = new RepoItemInfo(this, "Pie_height_offset_down", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controlname='m_pieHeightNbx']/container/button[@accessiblename='Down']", 30000, null, "fc1eee76-d570-41c9-81aa-2487e11236b3");
-                _pie_height_offset_upInfo = new RepoItemInfo(this, "Pie_height_offset_up", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controlname='m_pieHeightNbx']/container/button[@accessiblename='Up']", 30000, null, "645d53be-8e71-4fc5-b149-6e3e2d783b80");
-                _pie_height_offset_txtInfo = new RepoItemInfo(this, "Pie_height_offset_txt", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controlname='m_pieHeightNbx']/text[@controlname='upDownEdit']", 30000, null, "5fc7c374-c7a7-4148-bfca-99a054f338cd");
             }
 
             /// <summary>
@@ -4565,6 +4524,220 @@ namespace NformTester
                     return _shownameInfo;
                 }
             }
+        }
+
+        /// <summary>
+        /// The FormConfigure_Global_Gadget_DisplayAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("e7918683-6517-4971-a6ca-d2b5906a49d1")]
+        public partial class FormConfigure_Global_Gadget_DisplayAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _helpInfo;
+            RepoItemInfo _okInfo;
+            RepoItemInfo _majorInfo;
+            RepoItemInfo _criticalInfo;
+            RepoItemInfo _tabalarmsInfo;
+            RepoItemInfo _warningInfo;
+            RepoItemInfo _commnormalInfo;
+            RepoItemInfo _tabalarm_severityInfo;
+            RepoItemInfo _informationInfo;
+            RepoItemInfo _commalarmInfo;
+            RepoItemInfo _commnocommunicationInfo;
+            RepoItemInfo _tabcommunicationInfo;
+            RepoItemInfo _tabalarm_statusInfo;
+            RepoItemInfo _unacknowledged_colorInfo;
+            RepoItemInfo _useracknowledged_colorInfo;
+            RepoItemInfo _sysacknowledged_colorInfo;
+            RepoItemInfo _fit_chartInfo;
+            RepoItemInfo _turn_labels_onInfo;
+            RepoItemInfo _show_zero_sliceInfo;
+            RepoItemInfo _unacknowledged_offsetInfo;
+            RepoItemInfo _unacknowledged_offset_downInfo;
+            RepoItemInfo _unacknowledged_offset_upInfo;
+            RepoItemInfo _unacknowledged_offset_txtInfo;
+            RepoItemInfo _useracknowledged_offsetInfo;
+            RepoItemInfo _useracknowledged_offset_downInfo;
+            RepoItemInfo _useracknowledged_offset_upInfo;
+            RepoItemInfo _useracknowledged_offset_txtInfo;
+            RepoItemInfo _sysacknowledged_offsetInfo;
+            RepoItemInfo _sysacknowledged_offset_downInfo;
+            RepoItemInfo _sysacknowledged_offset_upInfo;
+            RepoItemInfo _sysacknowledged_offset_txtInfo;
+            RepoItemInfo _pie_height_offsetInfo;
+            RepoItemInfo _pie_height_offset_downInfo;
+            RepoItemInfo _minorInfo;
+            RepoItemInfo _pie_height_offset_upInfo;
+            RepoItemInfo _pie_height_offset_txtInfo;
+            RepoItemInfo _closeInfo;
+            RepoItemInfo _applyInfo;
+
+            /// <summary>
+            /// Creates a new FormConfigure_Global_Gadget_Display  folder.
+            /// </summary>
+            public FormConfigure_Global_Gadget_DisplayAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("FormConfigure_Global_Gadget_Display", "/form[@controlname='LxCfgGadgetDlg']", parentFolder, 30000, true, "e7918683-6517-4971-a6ca-d2b5906a49d1")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "e7918683-6517-4971-a6ca-d2b5906a49d1");
+                _helpInfo = new RepoItemInfo(this, "Help", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']", 30000, null, "2cd3669f-6045-4b90-9dea-564d30735109");
+                _okInfo = new RepoItemInfo(this, "OK", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button1']", 30000, null, "4dfac86c-a379-461a-8074-280712ec68ec");
+                _majorInfo = new RepoItemInfo(this, "Major", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/button[@controltypename='LxButton' and @instance='3']", 30000, null, "cbb74b5f-b38e-4476-829a-5a52191db07c");
+                _criticalInfo = new RepoItemInfo(this, "Critical", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/button[@controltypename='LxButton' and @instance='4']", 30000, null, "3537e955-caaf-4c0f-acee-f94fcfc136b0");
+                _tabalarmsInfo = new RepoItemInfo(this, "TabAlarms", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@accessiblename='Alarms']", 30000, null, "82d3e661-708a-4121-bc3b-90c2086a3aa7");
+                _warningInfo = new RepoItemInfo(this, "Warning", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/button[@controltypename='LxButton' and @instance='1']", 30000, null, "464e1a28-0bb1-4f83-885b-0357863916c2");
+                _commnormalInfo = new RepoItemInfo(this, "CommNormal", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/button[@controltypename='LxButton' and @instance='0']", 30000, null, "c85c4bed-9533-44d1-956b-091a84da7909");
+                _tabalarm_severityInfo = new RepoItemInfo(this, "TabAlarm_Severity", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@accessiblename='Alarm Severity']", 30000, null, "d1cdb3e3-7286-4b26-8c9a-475055e1f7f7");
+                _informationInfo = new RepoItemInfo(this, "Information", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/button[@controltypename='LxButton' and @instance='0']", 30000, null, "33d04263-680b-4256-a446-4fc0d7b0aa98");
+                _commalarmInfo = new RepoItemInfo(this, "CommAlarm", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/button[@controltypename='LxButton' and @instance='1']", 30000, null, "40894017-01cd-4463-a606-ef6f5b4239c6");
+                _commnocommunicationInfo = new RepoItemInfo(this, "CommNocommunication", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/button[@controltypename='LxButton' and @instance='2']", 30000, null, "06871c25-89fd-486b-9c68-a88cf1bd2f0f");
+                _tabcommunicationInfo = new RepoItemInfo(this, "TabCommunication", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@accessiblename='Communication']", 30000, null, "a3c6d9e1-d290-4f48-b743-f93806bdb484");
+                _tabalarm_statusInfo = new RepoItemInfo(this, "TabAlarm_Status", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@accessiblename='Alarm Status']", 30000, null, "444d81d7-2d00-4004-86bd-9b3927089818");
+                _unacknowledged_colorInfo = new RepoItemInfo(this, "Unacknowledged_color", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/button[@controltypename='LxButton' and @instance='0']", 30000, null, "caceb2e7-6b71-410b-9898-e96a008d1da9");
+                _useracknowledged_colorInfo = new RepoItemInfo(this, "UserAcknowledged_color", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/button[@controltypename='LxButton' and @instance='1']", 30000, null, "d756a310-5291-453d-9d10-e5c582920426");
+                _sysacknowledged_colorInfo = new RepoItemInfo(this, "SysAcknowledged_color", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/button[@controltypename='LxButton' and @instance='2']", 30000, null, "b958a260-2087-4263-b90c-e6fc01db912e");
+                _fit_chartInfo = new RepoItemInfo(this, "Fit_chart", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/checkbox[@controlname='m_fitChartCheckBox']", 30000, null, "7016c61a-cbfa-42a1-8a90-30d954f19024");
+                _turn_labels_onInfo = new RepoItemInfo(this, "Turn_labels_on", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/checkbox[@controlname='m_labelsOnOffCheckBox']", 30000, null, "9bf37811-cfa1-4291-8fb5-081686addb4c");
+                _show_zero_sliceInfo = new RepoItemInfo(this, "Show_zero_slice", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/checkbox[@controlname='m_showZeroSliceCheckBox']", 30000, null, "3681a70e-325f-4d1d-aba2-5312424e0315");
+                _unacknowledged_offsetInfo = new RepoItemInfo(this, "Unacknowledged_offset", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='0']/combobox[@accessiblerole='ComboBox']", 30000, null, "9a9d7e21-3487-455a-ae30-423e0117ea65");
+                _unacknowledged_offset_downInfo = new RepoItemInfo(this, "Unacknowledged_offset_down", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='0']/container/button[@accessiblename='Down']", 30000, null, "4203a2d8-51dd-403d-a091-2c1eeda7e8d0");
+                _unacknowledged_offset_upInfo = new RepoItemInfo(this, "Unacknowledged_offset_up", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='0']/container/button[@accessiblename='Up']", 30000, null, "b4038c6c-7e55-42f7-a69a-100f63e80386");
+                _unacknowledged_offset_txtInfo = new RepoItemInfo(this, "Unacknowledged_offset_txt", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='0']/text[@controlname='upDownEdit']", 30000, null, "d94ad6eb-a2d4-4115-892c-6fb3efde72a2");
+                _useracknowledged_offsetInfo = new RepoItemInfo(this, "Useracknowledged_offset", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='1']/combobox[@accessiblerole='ComboBox']", 30000, null, "27c3cb6b-075f-401b-a175-d1afa4837ee6");
+                _useracknowledged_offset_downInfo = new RepoItemInfo(this, "Useracknowledged_offset_down", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='1']/container/button[@accessiblename='Down']", 30000, null, "7b3c2e5e-db80-48ac-8c05-26c059953e4f");
+                _useracknowledged_offset_upInfo = new RepoItemInfo(this, "Useracknowledged_offset_up", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='1']/container/button[@accessiblename='Up']", 30000, null, "36ed0494-85e6-4c5c-858a-d462dc7b639d");
+                _useracknowledged_offset_txtInfo = new RepoItemInfo(this, "Useracknowledged_offset_txt", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='1']/text[@controlname='upDownEdit']", 30000, null, "c1ce7945-4d13-46a3-95ab-b35f2734759a");
+                _sysacknowledged_offsetInfo = new RepoItemInfo(this, "Sysacknowledged_offset", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='2']/combobox[@accessiblerole='ComboBox']", 30000, null, "80a15a0c-3e97-49a9-9909-ed366a757c5e");
+                _sysacknowledged_offset_downInfo = new RepoItemInfo(this, "Sysacknowledged_offset_down", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='2']/container/button[@accessiblename='Down']", 30000, null, "dd61c72c-99ae-4870-805f-511f6772658c");
+                _sysacknowledged_offset_upInfo = new RepoItemInfo(this, "Sysacknowledged_offset_up", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='2']/container/button[@accessiblename='Up']", 30000, null, "3734298f-0668-40c0-8413-5ea1feb1e2a9");
+                _sysacknowledged_offset_txtInfo = new RepoItemInfo(this, "Sysacknowledged_offset_txt", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='2']/text[@controlname='upDownEdit']", 30000, null, "99a81cb8-ac0d-4371-b132-3243449713a5");
+                _pie_height_offsetInfo = new RepoItemInfo(this, "Pie_height_offset", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controlname='m_pieHeightNbx']/combobox[@accessiblerole='ComboBox']", 30000, null, "eeaee424-28a5-405c-b7a2-6e8c395c680a");
+                _pie_height_offset_downInfo = new RepoItemInfo(this, "Pie_height_offset_down", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controlname='m_pieHeightNbx']/container/button[@accessiblename='Down']", 30000, null, "fc1eee76-d570-41c9-81aa-2487e11236b3");
+                _minorInfo = new RepoItemInfo(this, "Minor", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/button[@controltypename='LxButton' and @instance='2']", 30000, null, "df4b738b-4f1a-4e23-ab17-b6a268f7ba1f");
+                _pie_height_offset_upInfo = new RepoItemInfo(this, "Pie_height_offset_up", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controlname='m_pieHeightNbx']/container/button[@accessiblename='Up']", 30000, null, "645d53be-8e71-4fc5-b149-6e3e2d783b80");
+                _pie_height_offset_txtInfo = new RepoItemInfo(this, "Pie_height_offset_txt", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controlname='m_pieHeightNbx']/text[@controlname='upDownEdit']", 30000, null, "5fc7c374-c7a7-4148-bfca-99a054f338cd");
+                _closeInfo = new RepoItemInfo(this, "Close", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']", 30000, null, "e74806b8-b712-455d-9e08-f816bea7d19a");
+                _applyInfo = new RepoItemInfo(this, "Apply", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "4e8cae77-a931-4a25-a6a2-77bf1e4fb500");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("e7918683-6517-4971-a6ca-d2b5906a49d1")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("e7918683-6517-4971-a6ca-d2b5906a49d1")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Help item.
+            /// </summary>
+            [RepositoryItem("2cd3669f-6045-4b90-9dea-564d30735109")]
+            public virtual Ranorex.Button Help
+            {
+                get
+                {
+                    return _helpInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Help item info.
+            /// </summary>
+            [RepositoryItemInfo("2cd3669f-6045-4b90-9dea-564d30735109")]
+            public virtual RepoItemInfo HelpInfo
+            {
+                get
+                {
+                    return _helpInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OK item.
+            /// </summary>
+            [RepositoryItem("4dfac86c-a379-461a-8074-280712ec68ec")]
+            public virtual Ranorex.Button OK
+            {
+                get
+                {
+                    return _okInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OK item info.
+            /// </summary>
+            [RepositoryItemInfo("4dfac86c-a379-461a-8074-280712ec68ec")]
+            public virtual RepoItemInfo OKInfo
+            {
+                get
+                {
+                    return _okInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Major item.
+            /// </summary>
+            [RepositoryItem("cbb74b5f-b38e-4476-829a-5a52191db07c")]
+            public virtual Ranorex.Button Major
+            {
+                get
+                {
+                    return _majorInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Major item info.
+            /// </summary>
+            [RepositoryItemInfo("cbb74b5f-b38e-4476-829a-5a52191db07c")]
+            public virtual RepoItemInfo MajorInfo
+            {
+                get
+                {
+                    return _majorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Critical item.
+            /// </summary>
+            [RepositoryItem("3537e955-caaf-4c0f-acee-f94fcfc136b0")]
+            public virtual Ranorex.Button Critical
+            {
+                get
+                {
+                    return _criticalInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Critical item info.
+            /// </summary>
+            [RepositoryItemInfo("3537e955-caaf-4c0f-acee-f94fcfc136b0")]
+            public virtual RepoItemInfo CriticalInfo
+            {
+                get
+                {
+                    return _criticalInfo;
+                }
+            }
 
             /// <summary>
             /// The TabAlarms item.
@@ -4591,26 +4764,50 @@ namespace NformTester
             }
 
             /// <summary>
-            /// The TabCommunication item.
+            /// The Warning item.
             /// </summary>
-            [RepositoryItem("a3c6d9e1-d290-4f48-b743-f93806bdb484")]
-            public virtual Ranorex.TabPage TabCommunication
+            [RepositoryItem("464e1a28-0bb1-4f83-885b-0357863916c2")]
+            public virtual Ranorex.Button Warning
             {
                 get
                 {
-                    return _tabcommunicationInfo.CreateAdapter<Ranorex.TabPage>(true);
+                    return _warningInfo.CreateAdapter<Ranorex.Button>(true);
                 }
             }
 
             /// <summary>
-            /// The TabCommunication item info.
+            /// The Warning item info.
             /// </summary>
-            [RepositoryItemInfo("a3c6d9e1-d290-4f48-b743-f93806bdb484")]
-            public virtual RepoItemInfo TabCommunicationInfo
+            [RepositoryItemInfo("464e1a28-0bb1-4f83-885b-0357863916c2")]
+            public virtual RepoItemInfo WarningInfo
             {
                 get
                 {
-                    return _tabcommunicationInfo;
+                    return _warningInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CommNormal item.
+            /// </summary>
+            [RepositoryItem("c85c4bed-9533-44d1-956b-091a84da7909")]
+            public virtual Ranorex.Button CommNormal
+            {
+                get
+                {
+                    return _commnormalInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CommNormal item info.
+            /// </summary>
+            [RepositoryItemInfo("c85c4bed-9533-44d1-956b-091a84da7909")]
+            public virtual RepoItemInfo CommNormalInfo
+            {
+                get
+                {
+                    return _commnormalInfo;
                 }
             }
 
@@ -4635,6 +4832,102 @@ namespace NformTester
                 get
                 {
                     return _tabalarm_severityInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Information item.
+            /// </summary>
+            [RepositoryItem("33d04263-680b-4256-a446-4fc0d7b0aa98")]
+            public virtual Ranorex.Button Information
+            {
+                get
+                {
+                    return _informationInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Information item info.
+            /// </summary>
+            [RepositoryItemInfo("33d04263-680b-4256-a446-4fc0d7b0aa98")]
+            public virtual RepoItemInfo InformationInfo
+            {
+                get
+                {
+                    return _informationInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CommAlarm item.
+            /// </summary>
+            [RepositoryItem("40894017-01cd-4463-a606-ef6f5b4239c6")]
+            public virtual Ranorex.Button CommAlarm
+            {
+                get
+                {
+                    return _commalarmInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CommAlarm item info.
+            /// </summary>
+            [RepositoryItemInfo("40894017-01cd-4463-a606-ef6f5b4239c6")]
+            public virtual RepoItemInfo CommAlarmInfo
+            {
+                get
+                {
+                    return _commalarmInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CommNocommunication item.
+            /// </summary>
+            [RepositoryItem("06871c25-89fd-486b-9c68-a88cf1bd2f0f")]
+            public virtual Ranorex.Button CommNocommunication
+            {
+                get
+                {
+                    return _commnocommunicationInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CommNocommunication item info.
+            /// </summary>
+            [RepositoryItemInfo("06871c25-89fd-486b-9c68-a88cf1bd2f0f")]
+            public virtual RepoItemInfo CommNocommunicationInfo
+            {
+                get
+                {
+                    return _commnocommunicationInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TabCommunication item.
+            /// </summary>
+            [RepositoryItem("a3c6d9e1-d290-4f48-b743-f93806bdb484")]
+            public virtual Ranorex.TabPage TabCommunication
+            {
+                get
+                {
+                    return _tabcommunicationInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TabCommunication item info.
+            /// </summary>
+            [RepositoryItemInfo("a3c6d9e1-d290-4f48-b743-f93806bdb484")]
+            public virtual RepoItemInfo TabCommunicationInfo
+            {
+                get
+                {
+                    return _tabcommunicationInfo;
                 }
             }
 
@@ -5143,6 +5436,30 @@ namespace NformTester
             }
 
             /// <summary>
+            /// The Minor item.
+            /// </summary>
+            [RepositoryItem("df4b738b-4f1a-4e23-ab17-b6a268f7ba1f")]
+            public virtual Ranorex.Button Minor
+            {
+                get
+                {
+                    return _minorInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Minor item info.
+            /// </summary>
+            [RepositoryItemInfo("df4b738b-4f1a-4e23-ab17-b6a268f7ba1f")]
+            public virtual RepoItemInfo MinorInfo
+            {
+                get
+                {
+                    return _minorInfo;
+                }
+            }
+
+            /// <summary>
             /// The Pie_height_offset_up item.
             /// </summary>
             [RepositoryItem("645d53be-8e71-4fc5-b149-6e3e2d783b80")]
@@ -5189,6 +5506,54 @@ namespace NformTester
                     return _pie_height_offset_txtInfo;
                 }
             }
+
+            /// <summary>
+            /// The Close item.
+            /// </summary>
+            [RepositoryItem("e74806b8-b712-455d-9e08-f816bea7d19a")]
+            public virtual Ranorex.Button Close
+            {
+                get
+                {
+                    return _closeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Close item info.
+            /// </summary>
+            [RepositoryItemInfo("e74806b8-b712-455d-9e08-f816bea7d19a")]
+            public virtual RepoItemInfo CloseInfo
+            {
+                get
+                {
+                    return _closeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Apply item.
+            /// </summary>
+            [RepositoryItem("4e8cae77-a931-4a25-a6a2-77bf1e4fb500")]
+            public virtual Ranorex.Button Apply
+            {
+                get
+                {
+                    return _applyInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Apply item info.
+            /// </summary>
+            [RepositoryItemInfo("4e8cae77-a931-4a25-a6a2-77bf1e4fb500")]
+            public virtual RepoItemInfo ApplyInfo
+            {
+                get
+                {
+                    return _applyInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -5200,6 +5565,21 @@ namespace NformTester
             RepoItemInfo _selfInfo;
             RepoItemInfo _okInfo;
             RepoItemInfo _cancleInfo;
+            RepoItemInfo _basecolortableInfo;
+            RepoItemInfo _customercolortableInfo;
+            RepoItemInfo _customercolorInfo;
+            RepoItemInfo _colorpanInfo;
+            RepoItemInfo _colorbarInfo;
+            RepoItemInfo _colordisplaypanInfo;
+            RepoItemInfo _redInfo;
+            RepoItemInfo _rInfo;
+            RepoItemInfo _greenInfo;
+            RepoItemInfo _gInfo;
+            RepoItemInfo _buleInfo;
+            RepoItemInfo _bInfo;
+            RepoItemInfo _addcustomercolorInfo;
+            RepoItemInfo _helpInfo;
+            RepoItemInfo _closeInfo;
 
             /// <summary>
             /// Creates a new FormColor  folder.
@@ -5210,6 +5590,21 @@ namespace NformTester
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "19d1a804-7a24-4b93-80f8-e0b0a3b77425");
                 _okInfo = new RepoItemInfo(this, "OK", "button[@text='确定' or @text='OK']", 30000, null, "6be39cf4-c658-4f52-8e07-bb0bd8a44db9");
                 _cancleInfo = new RepoItemInfo(this, "Cancle", "button[@text='取消' or @text='Cancle']", 30000, null, "50192774-150e-4c7c-9daf-d185f098a9ea");
+                _basecolortableInfo = new RepoItemInfo(this, "BaseColorTable", "text[@controlid='720']", 30000, null, "40b0ed3e-fa1e-40bb-9505-cc517f81b741");
+                _customercolortableInfo = new RepoItemInfo(this, "CustomerColorTable", "text[@controlid='721']", 30000, null, "e7bcbef8-4b93-4e25-8933-dcd080d48399");
+                _customercolorInfo = new RepoItemInfo(this, "CustomerColor", "button[@text='规定自定义颜色(&D) >>']", 30000, null, "d99cc699-cf35-4bff-92ad-4b0f3455501a");
+                _colorpanInfo = new RepoItemInfo(this, "Colorpan", "text[@controlid='710']", 30000, null, "4947bd3d-7f8e-4ab5-8ae2-4b58fac82ed9");
+                _colorbarInfo = new RepoItemInfo(this, "Colorbar", "text[@controlid='702']", 30000, null, "d4c64ea7-c870-4c31-9207-2c8987da33df");
+                _colordisplaypanInfo = new RepoItemInfo(this, "ColorDisplaypan", "text[@controlid='709']", 30000, null, "397f9dc4-9cc0-4585-b4b8-50391dcd7026");
+                _redInfo = new RepoItemInfo(this, "Red", "text[@controlid='726']", 30000, null, "c0f3adb1-f250-4130-96b9-246f87ab8b16");
+                _rInfo = new RepoItemInfo(this, "R", "text[@controlid='706']", 30000, null, "8fda17e8-b6ff-471a-8393-a8ad3e498730");
+                _greenInfo = new RepoItemInfo(this, "Green", "text[@controlid='727']", 30000, null, "c83db24f-c520-4c9b-90d9-88b90a6d1c98");
+                _gInfo = new RepoItemInfo(this, "G", "text[@controlid='707']", 30000, null, "95076705-f8a0-40c5-9bd4-9b25d8b847aa");
+                _buleInfo = new RepoItemInfo(this, "Bule", "text[@controlid='728']", 30000, null, "5b93021b-88dd-47e5-af0a-3ad32349b11f");
+                _bInfo = new RepoItemInfo(this, "B", "text[@controlid='708']", 30000, null, "9df18282-c621-4a1e-bc9e-e2d9df7216ef");
+                _addcustomercolorInfo = new RepoItemInfo(this, "AddCustomerColor", "button[@text='添加到自定义颜色(&A)']", 30000, null, "fd45d1df-05f3-40f4-859d-7e349e220f86");
+                _helpInfo = new RepoItemInfo(this, "Help", "titlebar/button[@accessiblename='上下文帮助']", 30000, null, "bbcecf5a-f66f-4f17-a4bb-be90169bb62d");
+                _closeInfo = new RepoItemInfo(this, "Close", "titlebar/button[@accessiblename='关闭']", 30000, null, "45ad0326-8bdc-4d90-9d3a-b75db509b8a4");
             }
 
             /// <summary>
@@ -5281,6 +5676,366 @@ namespace NformTester
                 get
                 {
                     return _cancleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BaseColorTable item.
+            /// </summary>
+            [RepositoryItem("40b0ed3e-fa1e-40bb-9505-cc517f81b741")]
+            public virtual Ranorex.Text BaseColorTable
+            {
+                get
+                {
+                    return _basecolortableInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BaseColorTable item info.
+            /// </summary>
+            [RepositoryItemInfo("40b0ed3e-fa1e-40bb-9505-cc517f81b741")]
+            public virtual RepoItemInfo BaseColorTableInfo
+            {
+                get
+                {
+                    return _basecolortableInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CustomerColorTable item.
+            /// </summary>
+            [RepositoryItem("e7bcbef8-4b93-4e25-8933-dcd080d48399")]
+            public virtual Ranorex.Text CustomerColorTable
+            {
+                get
+                {
+                    return _customercolortableInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CustomerColorTable item info.
+            /// </summary>
+            [RepositoryItemInfo("e7bcbef8-4b93-4e25-8933-dcd080d48399")]
+            public virtual RepoItemInfo CustomerColorTableInfo
+            {
+                get
+                {
+                    return _customercolortableInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CustomerColor item.
+            /// </summary>
+            [RepositoryItem("d99cc699-cf35-4bff-92ad-4b0f3455501a")]
+            public virtual Ranorex.Button CustomerColor
+            {
+                get
+                {
+                    return _customercolorInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CustomerColor item info.
+            /// </summary>
+            [RepositoryItemInfo("d99cc699-cf35-4bff-92ad-4b0f3455501a")]
+            public virtual RepoItemInfo CustomerColorInfo
+            {
+                get
+                {
+                    return _customercolorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Colorpan item.
+            /// </summary>
+            [RepositoryItem("4947bd3d-7f8e-4ab5-8ae2-4b58fac82ed9")]
+            public virtual Ranorex.Text Colorpan
+            {
+                get
+                {
+                    return _colorpanInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Colorpan item info.
+            /// </summary>
+            [RepositoryItemInfo("4947bd3d-7f8e-4ab5-8ae2-4b58fac82ed9")]
+            public virtual RepoItemInfo ColorpanInfo
+            {
+                get
+                {
+                    return _colorpanInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Colorbar item.
+            /// </summary>
+            [RepositoryItem("d4c64ea7-c870-4c31-9207-2c8987da33df")]
+            public virtual Ranorex.Text Colorbar
+            {
+                get
+                {
+                    return _colorbarInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Colorbar item info.
+            /// </summary>
+            [RepositoryItemInfo("d4c64ea7-c870-4c31-9207-2c8987da33df")]
+            public virtual RepoItemInfo ColorbarInfo
+            {
+                get
+                {
+                    return _colorbarInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ColorDisplaypan item.
+            /// </summary>
+            [RepositoryItem("397f9dc4-9cc0-4585-b4b8-50391dcd7026")]
+            public virtual Ranorex.Text ColorDisplaypan
+            {
+                get
+                {
+                    return _colordisplaypanInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColorDisplaypan item info.
+            /// </summary>
+            [RepositoryItemInfo("397f9dc4-9cc0-4585-b4b8-50391dcd7026")]
+            public virtual RepoItemInfo ColorDisplaypanInfo
+            {
+                get
+                {
+                    return _colordisplaypanInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Red item.
+            /// </summary>
+            [RepositoryItem("c0f3adb1-f250-4130-96b9-246f87ab8b16")]
+            public virtual Ranorex.Text Red
+            {
+                get
+                {
+                    return _redInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Red item info.
+            /// </summary>
+            [RepositoryItemInfo("c0f3adb1-f250-4130-96b9-246f87ab8b16")]
+            public virtual RepoItemInfo RedInfo
+            {
+                get
+                {
+                    return _redInfo;
+                }
+            }
+
+            /// <summary>
+            /// The R item.
+            /// </summary>
+            [RepositoryItem("8fda17e8-b6ff-471a-8393-a8ad3e498730")]
+            public virtual Ranorex.Text R
+            {
+                get
+                {
+                    return _rInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The R item info.
+            /// </summary>
+            [RepositoryItemInfo("8fda17e8-b6ff-471a-8393-a8ad3e498730")]
+            public virtual RepoItemInfo RInfo
+            {
+                get
+                {
+                    return _rInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Green item.
+            /// </summary>
+            [RepositoryItem("c83db24f-c520-4c9b-90d9-88b90a6d1c98")]
+            public virtual Ranorex.Text Green
+            {
+                get
+                {
+                    return _greenInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Green item info.
+            /// </summary>
+            [RepositoryItemInfo("c83db24f-c520-4c9b-90d9-88b90a6d1c98")]
+            public virtual RepoItemInfo GreenInfo
+            {
+                get
+                {
+                    return _greenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The G item.
+            /// </summary>
+            [RepositoryItem("95076705-f8a0-40c5-9bd4-9b25d8b847aa")]
+            public virtual Ranorex.Text G
+            {
+                get
+                {
+                    return _gInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The G item info.
+            /// </summary>
+            [RepositoryItemInfo("95076705-f8a0-40c5-9bd4-9b25d8b847aa")]
+            public virtual RepoItemInfo GInfo
+            {
+                get
+                {
+                    return _gInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Bule item.
+            /// </summary>
+            [RepositoryItem("5b93021b-88dd-47e5-af0a-3ad32349b11f")]
+            public virtual Ranorex.Text Bule
+            {
+                get
+                {
+                    return _buleInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Bule item info.
+            /// </summary>
+            [RepositoryItemInfo("5b93021b-88dd-47e5-af0a-3ad32349b11f")]
+            public virtual RepoItemInfo BuleInfo
+            {
+                get
+                {
+                    return _buleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The B item.
+            /// </summary>
+            [RepositoryItem("9df18282-c621-4a1e-bc9e-e2d9df7216ef")]
+            public virtual Ranorex.Text B
+            {
+                get
+                {
+                    return _bInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The B item info.
+            /// </summary>
+            [RepositoryItemInfo("9df18282-c621-4a1e-bc9e-e2d9df7216ef")]
+            public virtual RepoItemInfo BInfo
+            {
+                get
+                {
+                    return _bInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AddCustomerColor item.
+            /// </summary>
+            [RepositoryItem("fd45d1df-05f3-40f4-859d-7e349e220f86")]
+            public virtual Ranorex.Button AddCustomerColor
+            {
+                get
+                {
+                    return _addcustomercolorInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AddCustomerColor item info.
+            /// </summary>
+            [RepositoryItemInfo("fd45d1df-05f3-40f4-859d-7e349e220f86")]
+            public virtual RepoItemInfo AddCustomerColorInfo
+            {
+                get
+                {
+                    return _addcustomercolorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Help item.
+            /// </summary>
+            [RepositoryItem("bbcecf5a-f66f-4f17-a4bb-be90169bb62d")]
+            public virtual Ranorex.Button Help
+            {
+                get
+                {
+                    return _helpInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Help item info.
+            /// </summary>
+            [RepositoryItemInfo("bbcecf5a-f66f-4f17-a4bb-be90169bb62d")]
+            public virtual RepoItemInfo HelpInfo
+            {
+                get
+                {
+                    return _helpInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Close item.
+            /// </summary>
+            [RepositoryItem("45ad0326-8bdc-4d90-9d3a-b75db509b8a4")]
+            public virtual Ranorex.Button Close
+            {
+                get
+                {
+                    return _closeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Close item info.
+            /// </summary>
+            [RepositoryItemInfo("45ad0326-8bdc-4d90-9d3a-b75db509b8a4")]
+            public virtual RepoItemInfo CloseInfo
+            {
+                get
+                {
+                    return _closeInfo;
                 }
             }
         }

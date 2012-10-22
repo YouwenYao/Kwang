@@ -513,14 +513,61 @@ DACduRMvQgFofQAAAABJRU5ErkJggg==
           <item name="ShowName" id="4e141dac-f92a-4190-8088-85f7d38c1814" searchtimeout="30000ms" capname="radiobutton" addcaps="radiobutton,control,nativewindow">
             <![CDATA[/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageSetup']/container/container[@controlname='m_gadgetGrpBx']/container[@controlname='m_specificDevGrpBx']/radiobutton[@controlname='m_showNameRbtn']]]>
           </item>
+          <basepath>
+            <![CDATA[/form[@controlname='LxCfgGadgetDlg']]]>
+          </basepath>
+          <icon>
+            iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAklJREFUOE+tk1tI02EUwP+VdoGIHuqty0u9FHR5CEoQhBACQcyoyCQJ
+tDl38ZYZiWVmZhfzssymczHWnE5zNmU6lM2pYRcXKmhomZZZrtQ27UL08MuZtGWEPfjBge8c+H6/
+88E5grAYp8Vmb7Hb7Bm+4ak9rJbSViXFXinBppfQrIvDohXToBHTZCzit9vzcH4jntpQWyTfnEq+
+vrnC5/4kpruO4+4IxmXdiUkduzDgZXMYXwbTme4VMdUZhrstgE+WrUyY1mNUibyAf32hvz5o1jo1
+Z500b2DcuAZnpR/VylNeQFdqNM6kCEZlRxkWhTMQFYLttIi+qh24W/fNWdfxsXolYxVLeacVMBT7
+AB6dicFluMdE2R3GcnMYSU+lPlFMj3YTk+aNs9YPBj/e65bwViPwWi2gL4rxdmBNFuEsuM5oRhpD
+cjEDkUeokEtwlK6dsa5iTP/LOnJXYFglMFgioFP4AEwJYoaTpLyIiqAv9ADdgXspk8povLaa9vwV
+tNxYTlOOPw1Z/tRd9MN4fhnagmhvB+UztucHQ+gJCsCxezuPt2xGERePuqF7NlTmLpSmZ9yueUqh
+oYNcXTvlta1eQG1RMaUSGcVxchRiOfmx8VTcUnLT4kJjB5UVChvh8gM4qweJGi4pm/6eA9+B8tyz
+asfJM0NmDaToIFYFJxQ/OHzVzbm8uoUBMvUoiVqIKYHI/O8cyp4gJO0V+xMcJGffXxgQnvmE0Au9
+BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
+          </icon>
+        </appfolder>
+        <appfolder name="FormConfigure_Global_Gadget_Display" id="e7918683-6517-4971-a6ca-d2b5906a49d1" searchtimeout="30000ms" capname="form" addcaps="form,control,nativewindow" isrooted="True" usecache="True">
+          <item name="Help" id="2cd3669f-6045-4b90-9dea-564d30735109" searchtimeout="30000ms" capname="button" addcaps="button,control,nativewindow">
+            <![CDATA[/form[@controlname='LxCfgGadgetDlg']/container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']]]>
+          </item>
+          <item name="OK" id="4dfac86c-a379-461a-8074-280712ec68ec" searchtimeout="30000ms" capname="button" addcaps="button,control,nativewindow">
+            <![CDATA[/form[@controlname='LxCfgGadgetDlg']/container[@controlname='m_dialogBtns']/container/button[@controlname='m_button1']]]>
+          </item>
+          <item name="Major" id="cbb74b5f-b38e-4476-829a-5a52191db07c" searchtimeout="30000ms" capname="button" addcaps="button,control,nativewindow">
+            <![CDATA[/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/button[@controltypename='LxButton' and @instance='3']]]>
+          </item>
+          <item name="Critical" id="3537e955-caaf-4c0f-acee-f94fcfc136b0" searchtimeout="30000ms" capname="button" addcaps="button,control,nativewindow">
+            <![CDATA[/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/button[@controltypename='LxButton' and @instance='4']]]>
+          </item>
           <item name="TabAlarms" id="82d3e661-708a-4121-bc3b-90c2086a3aa7" searchtimeout="30000ms" capname="tabpage" addcaps="tabpage,accessible">
             <![CDATA[/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@accessiblename='Alarms']]]>
           </item>
-          <item name="TabCommunication" id="a3c6d9e1-d290-4f48-b743-f93806bdb484" searchtimeout="30000ms" capname="tabpage" addcaps="tabpage,accessible">
-            <![CDATA[/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@accessiblename='Communication']]]>
+          <item name="Warning" id="464e1a28-0bb1-4f83-885b-0357863916c2" searchtimeout="30000ms" capname="button" addcaps="button,control,nativewindow">
+            <![CDATA[/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/button[@controltypename='LxButton' and @instance='1']]]>
+          </item>
+          <item name="CommNormal" id="c85c4bed-9533-44d1-956b-091a84da7909" searchtimeout="30000ms" capname="button" addcaps="button,control,nativewindow">
+            <![CDATA[/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/button[@controltypename='LxButton' and @instance='0']]]>
           </item>
           <item name="TabAlarm_Severity" id="d1cdb3e3-7286-4b26-8c9a-475055e1f7f7" searchtimeout="30000ms" capname="tabpage" addcaps="tabpage,accessible">
             <![CDATA[/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@accessiblename='Alarm Severity']]]>
+          </item>
+          <item name="Information" id="33d04263-680b-4256-a446-4fc0d7b0aa98" searchtimeout="30000ms" capname="button" addcaps="button,control,nativewindow">
+            <![CDATA[/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/button[@controltypename='LxButton' and @instance='0']]]>
+          </item>
+          <item name="CommAlarm" id="40894017-01cd-4463-a606-ef6f5b4239c6" searchtimeout="30000ms" capname="button" addcaps="button,control,nativewindow">
+            <![CDATA[/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/button[@controltypename='LxButton' and @instance='1']]]>
+          </item>
+          <item name="CommNocommunication" id="06871c25-89fd-486b-9c68-a88cf1bd2f0f" searchtimeout="30000ms" capname="button" addcaps="button,control,nativewindow">
+            <![CDATA[/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/button[@controltypename='LxButton' and @instance='2']]]>
+          </item>
+          <item name="TabCommunication" id="a3c6d9e1-d290-4f48-b743-f93806bdb484" searchtimeout="30000ms" capname="tabpage" addcaps="tabpage,accessible">
+            <![CDATA[/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@accessiblename='Communication']]]>
           </item>
           <item name="TabAlarm_Status" id="444d81d7-2d00-4004-86bd-9b3927089818" searchtimeout="30000ms" capname="tabpage" addcaps="tabpage,accessible">
             <![CDATA[/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@accessiblename='Alarm Status']]]>
@@ -585,11 +632,20 @@ DACduRMvQgFofQAAAABJRU5ErkJggg==
           <item name="Pie_height_offset_down" id="fc1eee76-d570-41c9-81aa-2487e11236b3" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
             <![CDATA[/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controlname='m_pieHeightNbx']/container/button[@accessiblename='Down']]]>
           </item>
+          <item name="Minor" id="df4b738b-4f1a-4e23-ab17-b6a268f7ba1f" searchtimeout="30000ms" capname="button" addcaps="button,control,nativewindow">
+            <![CDATA[/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/button[@controltypename='LxButton' and @instance='2']]]>
+          </item>
           <item name="Pie_height_offset_up" id="645d53be-8e71-4fc5-b149-6e3e2d783b80" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
             <![CDATA[/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controlname='m_pieHeightNbx']/container/button[@accessiblename='Up']]]>
           </item>
           <item name="Pie_height_offset_txt" id="5fc7c374-c7a7-4148-bfca-99a054f338cd" searchtimeout="30000ms" capname="text" addcaps="text,control,nativewindow">
             <![CDATA[/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controlname='m_pieHeightNbx']/text[@controlname='upDownEdit']]]>
+          </item>
+          <item name="Close" id="e74806b8-b712-455d-9e08-f816bea7d19a" searchtimeout="30000ms" capname="button" addcaps="button,control,nativewindow">
+            <![CDATA[/form[@controlname='LxCfgGadgetDlg']/container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']]]>
+          </item>
+          <item name="Apply" id="4e8cae77-a931-4a25-a6a2-77bf1e4fb500" searchtimeout="30000ms" capname="button" addcaps="button,control,nativewindow">
+            <![CDATA[/form[@controlname='LxCfgGadgetDlg']/container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']]]>
           </item>
           <basepath>
             <![CDATA[/form[@controlname='LxCfgGadgetDlg']]]>
@@ -616,6 +672,51 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
           </item>
           <item name="Cancle" id="50192774-150e-4c7c-9daf-d185f098a9ea" searchtimeout="30000ms" capname="button" addcaps="button,nativewindow">
             <![CDATA[/form[@title='颜色' or @title='Color']/button[@text='取消' or @text='Cancle']]]>
+          </item>
+          <item name="BaseColorTable" id="40b0ed3e-fa1e-40bb-9505-cc517f81b741" searchtimeout="30000ms" capname="text" addcaps="text,nativewindow">
+            <![CDATA[/form[@title='颜色' or @title='Color']/text[@controlid='720']]]>
+          </item>
+          <item name="CustomerColorTable" id="e7bcbef8-4b93-4e25-8933-dcd080d48399" searchtimeout="30000ms" capname="text" addcaps="text,nativewindow">
+            <![CDATA[/form[@title='颜色' or @title='Color']/text[@controlid='721']]]>
+          </item>
+          <item name="CustomerColor" id="d99cc699-cf35-4bff-92ad-4b0f3455501a" searchtimeout="30000ms" capname="button" addcaps="button,nativewindow">
+            <![CDATA[/form[@title='颜色' or @title='Color']/button[@text='规定自定义颜色(&D) >>']]]>
+          </item>
+          <item name="Colorpan" id="4947bd3d-7f8e-4ab5-8ae2-4b58fac82ed9" searchtimeout="30000ms" capname="text" addcaps="text,nativewindow">
+            <![CDATA[/form[@title='颜色' or @title='Color']/text[@controlid='710']]]>
+          </item>
+          <item name="Colorbar" id="d4c64ea7-c870-4c31-9207-2c8987da33df" searchtimeout="30000ms" capname="text" addcaps="text,nativewindow">
+            <![CDATA[/form[@title='颜色' or @title='Color']/text[@controlid='702']]]>
+          </item>
+          <item name="ColorDisplaypan" id="397f9dc4-9cc0-4585-b4b8-50391dcd7026" searchtimeout="30000ms" capname="text" addcaps="text,nativewindow">
+            <![CDATA[/form[@title='颜色' or @title='Color']/text[@controlid='709']]]>
+          </item>
+          <item name="Red" id="c0f3adb1-f250-4130-96b9-246f87ab8b16" searchtimeout="30000ms" capname="text" addcaps="text,nativewindow">
+            <![CDATA[/form[@title='颜色' or @title='Color']/text[@controlid='726']]]>
+          </item>
+          <item name="R" id="8fda17e8-b6ff-471a-8393-a8ad3e498730" searchtimeout="30000ms" capname="text" addcaps="text,nativewindow">
+            <![CDATA[/form[@title='颜色' or @title='Color']/text[@controlid='706']]]>
+          </item>
+          <item name="Green" id="c83db24f-c520-4c9b-90d9-88b90a6d1c98" searchtimeout="30000ms" capname="text" addcaps="text,nativewindow">
+            <![CDATA[/form[@title='颜色' or @title='Color']/text[@controlid='727']]]>
+          </item>
+          <item name="G" id="95076705-f8a0-40c5-9bd4-9b25d8b847aa" searchtimeout="30000ms" capname="text" addcaps="text,nativewindow">
+            <![CDATA[/form[@title='颜色' or @title='Color']/text[@controlid='707']]]>
+          </item>
+          <item name="Bule" id="5b93021b-88dd-47e5-af0a-3ad32349b11f" searchtimeout="30000ms" capname="text" addcaps="text,nativewindow">
+            <![CDATA[/form[@title='颜色' or @title='Color']/text[@controlid='728']]]>
+          </item>
+          <item name="B" id="9df18282-c621-4a1e-bc9e-e2d9df7216ef" searchtimeout="30000ms" capname="text" addcaps="text,nativewindow">
+            <![CDATA[/form[@title='颜色' or @title='Color']/text[@controlid='708']]]>
+          </item>
+          <item name="AddCustomerColor" id="fd45d1df-05f3-40f4-859d-7e349e220f86" searchtimeout="30000ms" capname="button" addcaps="button,nativewindow">
+            <![CDATA[/form[@title='颜色' or @title='Color']/button[@text='添加到自定义颜色(&A)']]]>
+          </item>
+          <item name="Help" id="bbcecf5a-f66f-4f17-a4bb-be90169bb62d" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
+            <![CDATA[/form[@title='颜色' or @title='Color']/titlebar/button[@accessiblename='上下文帮助']]]>
+          </item>
+          <item name="Close" id="45ad0326-8bdc-4d90-9d3a-b75db509b8a4" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
+            <![CDATA[/form[@title='颜色' or @title='Color']/titlebar/button[@accessiblename='关闭']]]>
           </item>
           <basepath>
             <![CDATA[/form[@title='颜色' or @title='Color']]]>
