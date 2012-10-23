@@ -453,10 +453,7 @@ DACduRMvQgFofQAAAABJRU5ErkJggg==
           </icon>
         </appfolder>
         <appfolder name="FormGadget" id="0a1e95ea-fb94-4ffd-acae-2bb8eb4962b2" searchtimeout="30000ms" capname="form" addcaps="form,control,nativewindow" isrooted="True" usecache="True">
-          <item name="OK" id="8c26cfbc-c7ab-4776-a4ce-dc965f97253c" searchtimeout="30000ms" capname="button" addcaps="button,control,nativewindow">
-            <![CDATA[/form[@controlname='LxCfgGadgetDlg']/container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']]]>
-          </item>
-          <item name="Cancel" id="7106ae3e-43c0-4562-a30d-92e756c32cd8" searchtimeout="30000ms" capname="button" addcaps="button,control,nativewindow">
+          <item name="Apply" id="7106ae3e-43c0-4562-a30d-92e756c32cd8" searchtimeout="30000ms" capname="button" addcaps="button,control,nativewindow">
             <![CDATA[/form[@controlname='LxCfgGadgetDlg']/container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']]]>
           </item>
           <item name="Help" id="350b2108-26f7-4390-85cf-c26369bb4f25" searchtimeout="30000ms" capname="button" addcaps="button,control,nativewindow">
@@ -512,6 +509,12 @@ DACduRMvQgFofQAAAABJRU5ErkJggg==
           </item>
           <item name="ShowName" id="4e141dac-f92a-4190-8088-85f7d38c1814" searchtimeout="30000ms" capname="radiobutton" addcaps="radiobutton,control,nativewindow">
             <![CDATA[/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageSetup']/container/container[@controlname='m_gadgetGrpBx']/container[@controlname='m_specificDevGrpBx']/radiobutton[@controlname='m_showNameRbtn']]]>
+          </item>
+          <item name="Close" id="01cce42a-edec-4525-960e-28487c9c1cec" searchtimeout="30000ms" capname="button" addcaps="button,control,nativewindow">
+            <![CDATA[/form[@controlname='LxCfgGadgetDlg']/container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']]]>
+          </item>
+          <item name="OK" id="88e2312a-1205-425d-9ca3-4a9336f77bb6" searchtimeout="30000ms" capname="button" addcaps="button,control,nativewindow">
+            <![CDATA[/form[@controlname='LxCfgGadgetDlg']/container[@controlname='m_dialogBtns']/container/button[@controlname='m_button1']]]>
           </item>
           <basepath>
             <![CDATA[/form[@controlname='LxCfgGadgetDlg']]]>

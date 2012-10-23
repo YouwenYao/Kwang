@@ -3971,8 +3971,7 @@ namespace NformTester
         public partial class FormGadgetAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _selfInfo;
-            RepoItemInfo _okInfo;
-            RepoItemInfo _cancelInfo;
+            RepoItemInfo _applyInfo;
             RepoItemInfo _helpInfo;
             RepoItemInfo _alarmlistitemInfo;
             RepoItemInfo _nocommlistitemInfo;
@@ -3991,6 +3990,8 @@ namespace NformTester
             RepoItemInfo _specificcomboInfo;
             RepoItemInfo _showaddressInfo;
             RepoItemInfo _shownameInfo;
+            RepoItemInfo _closeInfo;
+            RepoItemInfo _okInfo;
 
             /// <summary>
             /// Creates a new FormGadget  folder.
@@ -3999,8 +4000,7 @@ namespace NformTester
                     base("FormGadget", "/form[@controlname='LxCfgGadgetDlg']", parentFolder, 30000, true, "0a1e95ea-fb94-4ffd-acae-2bb8eb4962b2")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "0a1e95ea-fb94-4ffd-acae-2bb8eb4962b2");
-                _okInfo = new RepoItemInfo(this, "OK", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']", 30000, null, "8c26cfbc-c7ab-4776-a4ce-dc965f97253c");
-                _cancelInfo = new RepoItemInfo(this, "Cancel", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "7106ae3e-43c0-4562-a30d-92e756c32cd8");
+                _applyInfo = new RepoItemInfo(this, "Apply", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "7106ae3e-43c0-4562-a30d-92e756c32cd8");
                 _helpInfo = new RepoItemInfo(this, "Help", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']", 30000, null, "350b2108-26f7-4390-85cf-c26369bb4f25");
                 _alarmlistitemInfo = new RepoItemInfo(this, "AlarmListItem", "tabpagelist/tabpage[@controlname='m_tabPageSetup']/container/container[@controlname='m_displayGrpBx']/container[@controlname='m_sliceColorsGrpBx']/list/list/listitem[@accessiblename='Alarm']", 30000, null, "46a8de18-c70c-45a6-9255-81a4ca7249d9");
                 _nocommlistitemInfo = new RepoItemInfo(this, "NoCommListItem", "tabpagelist/tabpage[@controlname='m_tabPageSetup']/container/container[@controlname='m_displayGrpBx']/container[@controlname='m_sliceColorsGrpBx']/list/list/listitem[@accessiblename='No communication']", 30000, null, "f324adfd-96d3-4d07-a0d0-e0c379b2b7ea");
@@ -4019,6 +4019,8 @@ namespace NformTester
                 _specificcomboInfo = new RepoItemInfo(this, "SpecificCombo", "tabpagelist/tabpage[@controlname='m_tabPageSetup']/container/container[@controlname='m_gadgetGrpBx']/container[@controlname='m_specificDevGrpBx']/combobox[@controlname='m_devicesCombo']", 30000, null, "ec7d74fb-8910-4d77-a00d-16042eb504f3");
                 _showaddressInfo = new RepoItemInfo(this, "ShowAddress", "tabpagelist/tabpage[@controlname='m_tabPageSetup']/container/container[@controlname='m_gadgetGrpBx']/container[@controlname='m_specificDevGrpBx']/radiobutton[@controlname='m_showAddrRbtn']", 30000, null, "c7e44038-ff9f-4128-8437-67246dfed107");
                 _shownameInfo = new RepoItemInfo(this, "ShowName", "tabpagelist/tabpage[@controlname='m_tabPageSetup']/container/container[@controlname='m_gadgetGrpBx']/container[@controlname='m_specificDevGrpBx']/radiobutton[@controlname='m_showNameRbtn']", 30000, null, "4e141dac-f92a-4190-8088-85f7d38c1814");
+                _closeInfo = new RepoItemInfo(this, "Close", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']", 30000, null, "01cce42a-edec-4525-960e-28487c9c1cec");
+                _okInfo = new RepoItemInfo(this, "OK", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button1']", 30000, null, "88e2312a-1205-425d-9ca3-4a9336f77bb6");
             }
 
             /// <summary>
@@ -4046,50 +4048,26 @@ namespace NformTester
             }
 
             /// <summary>
-            /// The OK item.
-            /// </summary>
-            [RepositoryItem("8c26cfbc-c7ab-4776-a4ce-dc965f97253c")]
-            public virtual Ranorex.Button OK
-            {
-                get
-                {
-                    return _okInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The OK item info.
-            /// </summary>
-            [RepositoryItemInfo("8c26cfbc-c7ab-4776-a4ce-dc965f97253c")]
-            public virtual RepoItemInfo OKInfo
-            {
-                get
-                {
-                    return _okInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Cancel item.
+            /// The Apply item.
             /// </summary>
             [RepositoryItem("7106ae3e-43c0-4562-a30d-92e756c32cd8")]
-            public virtual Ranorex.Button Cancel
+            public virtual Ranorex.Button Apply
             {
                 get
                 {
-                    return _cancelInfo.CreateAdapter<Ranorex.Button>(true);
+                    return _applyInfo.CreateAdapter<Ranorex.Button>(true);
                 }
             }
 
             /// <summary>
-            /// The Cancel item info.
+            /// The Apply item info.
             /// </summary>
             [RepositoryItemInfo("7106ae3e-43c0-4562-a30d-92e756c32cd8")]
-            public virtual RepoItemInfo CancelInfo
+            public virtual RepoItemInfo ApplyInfo
             {
                 get
                 {
-                    return _cancelInfo;
+                    return _applyInfo;
                 }
             }
 
@@ -4522,6 +4500,54 @@ namespace NformTester
                 get
                 {
                     return _shownameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Close item.
+            /// </summary>
+            [RepositoryItem("01cce42a-edec-4525-960e-28487c9c1cec")]
+            public virtual Ranorex.Button Close
+            {
+                get
+                {
+                    return _closeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Close item info.
+            /// </summary>
+            [RepositoryItemInfo("01cce42a-edec-4525-960e-28487c9c1cec")]
+            public virtual RepoItemInfo CloseInfo
+            {
+                get
+                {
+                    return _closeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OK item.
+            /// </summary>
+            [RepositoryItem("88e2312a-1205-425d-9ca3-4a9336f77bb6")]
+            public virtual Ranorex.Button OK
+            {
+                get
+                {
+                    return _okInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OK item info.
+            /// </summary>
+            [RepositoryItemInfo("88e2312a-1205-425d-9ca3-4a9336f77bb6")]
+            public virtual RepoItemInfo OKInfo
+            {
+                get
+                {
+                    return _okInfo;
                 }
             }
         }
