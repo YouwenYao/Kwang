@@ -252,6 +252,10 @@
       <id>43ec73fd-bad4-4093-bcbd-d2164ae95d5b</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="keywordscripts\TST1339_DisplayInDashboardView.xlsx">
+      <id>57dbd6f1-1ac7-46c5-8675-177a2e6a40a9</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST1353_UninstallationProcess.xlsx">
       <id>04a1930e-2fb4-4b4e-8ea7-41499b8ea516</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -506,7 +510,37 @@
     <None Include="Reports\NformTester_20121023_093838.rxlog">
       <id>913add0e-4497-4483-bef3-732b8002f29e</id>
     </None>
-    <None Include="Reports\NformTester_20121023_094321.rxlog" />
+    <None Include="Reports\NformTester_20121023_094321.rxlog">
+      <id>0e666d8c-174c-4f57-9286-7c12ea18097b</id>
+    </None>
+    <None Include="Reports\NformTester_20121026_120141.rxlog">
+      <id>a4e009b9-c8cd-41cc-85d1-9033c1c59717</id>
+    </None>
+    <None Include="Reports\NformTester_20121026_132032.rxlog">
+      <id>c8cbcc4e-1da2-4155-bb3a-57206f849d6c</id>
+    </None>
+    <None Include="Reports\NformTester_20121026_135931.rxlog">
+      <id>b4759fe7-5a75-4af3-8c0d-6829cb509a08</id>
+    </None>
+    <None Include="Reports\NformTester_20121026_140203.rxlog">
+      <id>a9bb13d1-db90-430c-be8d-63d1e5b74160</id>
+    </None>
+    <None Include="Reports\NformTester_20121026_140555.rxlog">
+      <id>1d0fa890-5bd1-4084-9722-16a4591d330c</id>
+    </None>
+    <None Include="Reports\NformTester_20121026_141041.rxlog">
+      <id>6cab3896-4176-4272-805e-7081f590da19</id>
+    </None>
+    <None Include="Reports\NformTester_20121026_142234.rxlog">
+      <id>9a7064c8-84fa-4e89-9bae-d1c7d31cb49c</id>
+    </None>
+    <None Include="Reports\NformTester_20121026_143122.rxlog">
+      <id>325460a5-70c9-47d7-bd88-cfb2a8964a12</id>
+    </None>
+    <None Include="Reports\NformTester_20121026_144635.rxlog">
+      <id>3cd78bd1-50f2-46d4-964d-407f269f8aab</id>
+    </None>
+    <None Include="Reports\NformTester_20121026_145250.rxlog" />
     <None Include="Reports\NformTester_XmlReport_20121022_134519.rxlog">
       <id>7c066e41-9ce0-48ae-8033-4c5db7e7d8c6</id>
     </None>

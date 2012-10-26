@@ -298,3 +298,4 @@ D:\lmg_test\private\peter\NformTester\NformTester\obj\x86\Debug\ResolveAssemblyR
 D:\lmg_test\private\peter\NformTester\NformTester\obj\x86\Debug\NformTester.exe
 D:\lmg_test\private\peter\NformTester\NformTester\obj\x86\Debug\NformTester.pdb
 E:\lmg_test\Sashimi\NformTester\NformTester\bin\Debug\keywordscripts\TST1133_UnacknowledgedAlarmColor.xlsx
+E:\lmg_test\Sashimi\NformTester\NformTester\bin\Debug\keywordscripts\TST1339_DisplayInDashboardView.xlsx

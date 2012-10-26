@@ -235,11 +235,14 @@
     <testcase name="TST1133_UnacknowledgedAlarmColor" id="caf441fa-20ba-479d-9808-cf5cb3c52806">
       <testmodule name="TestCaseDriver" id="d9ede7b6-f7e4-4225-89a5-0f74d7ae00aa" ref="78CE2FBF-D204-4698-98BF-68118D374E9F" type="UserCode"/>
     </testcase>
+    <testcase name="TST1339_DisplayInDashboardView" id="c69d749f-d321-44f5-81a1-82c967f497cc">
+      <testmodule name="TestCaseDriver" id="33cfc6ff-b4ea-4b16-b19e-060d6b5907b0" ref="78CE2FBF-D204-4698-98BF-68118D374E9F" type="UserCode"/>
+    </testcase>
   </content>
   <testconfigurations default="TestRun">
     <testconfiguration name="TestRun">
       <testcase id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
-      <testcase id="caf441fa-20ba-479d-9808-cf5cb3c52806"/>
+      <testcase id="c69d749f-d321-44f5-81a1-82c967f497cc"/>
     </testconfiguration>
   </testconfigurations>
   <references/>
