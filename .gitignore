@@ -1,0 +1,8 @@
+# Ingore all files in Reports
+/NformTester/NformTest/Reports
+
+# Ingore all temp files in bin
+/NformTester/NformTester/bin
+
+# Ingore temp file
+ResolveAssemblyReference.cache
