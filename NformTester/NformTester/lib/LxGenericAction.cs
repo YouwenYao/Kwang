@@ -78,28 +78,34 @@ namespace NformTester.lib
 			m_ActionMap.Add("RightClick", new object[] {"RightClick","S11"});
 
 			// Run the item in stepList
-			foreach( LxScriptItem item in stepList)
-			{
-				bool resultFlag = true;
-				try 
-				{
-					resultFlag = executeCommand(item);
-				}
-				catch(Exception e) 
-				{
-					resultFlag = false;
-					LxLog.Error("Error",e.Message.ToString());
-				}
+			// If wrongCount =3, it means that the command fails three times continuously.
+			int wrongCount = 0;
+			bool finalResult = true;
+				foreach(LxScriptItem item in stepList)
+					{
+						bool resultFlag = true;
+						try 
+						{
+							resultFlag = executeCommand(item);
+							wrongCount = 0;
+						}
+						catch(Exception e) 
+						{
+							wrongCount++;
+							resultFlag = false;
+							finalResult = false;
+							LxLog.Error("Error",e.Message.ToString());
+						}
+						
+						// Log each step is pass or not
+						mainOp.opXls.writeCell(Convert.ToInt32(item.m_Index)+1,14,resultFlag==true?"Pass":"Fail");
+						LxLog.Info("Info",item.m_Index+" "+item.m_Component+" "+item.m_Action+" "+ (resultFlag==true?"Success":"Failure"));
+						
+		           //If this script fails three times continuously, break this execution.
+			           if(wrongCount==3) break;
+					}
 				
-				// Log each step is pass or not
-				mainOp.opXls.writeCell(Convert.ToInt32(item.m_Index)+1,14,resultFlag==true?"Pass":"Fail");
-				LxLog.Info("Info",item.m_Index+" "+item.m_Component+" "+item.m_Action+" "+ (resultFlag==true?"Success":"Failure"));
-//				if(resultFlag == false)
-//				{
-//					return false;
-//				}
-			}
-			return true;
+			return finalResult;
 		}
 		
 		//**********************************************************************
@@ -778,6 +784,10 @@ namespace NformTester.lib
 				Ranorex.Table tb = (Ranorex.Table)objComponet;
 				tb.Rows[Convert.ToInt32(item.getArgText())].Cells[Convert.ToInt32(item.getArg2Text())].Click();
 			}									
+		}
+		
+		public static void IsFailThreeTimes(){
+			
 		}
 		
 	}

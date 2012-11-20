@@ -540,7 +540,22 @@
     <None Include="Reports\NformTester_20121026_144635.rxlog">
       <id>3cd78bd1-50f2-46d4-964d-407f269f8aab</id>
     </None>
-    <None Include="Reports\NformTester_20121026_145250.rxlog" />
+    <None Include="Reports\NformTester_20121026_145250.rxlog">
+      <id>eb171e9b-ff3b-4fa3-aaf9-5848ae80b6f5</id>
+    </None>
+    <None Include="Reports\NformTester_20121119_135700.rxlog">
+      <id>36c4ca93-c614-4009-a9ea-551d2ae39d29</id>
+    </None>
+    <None Include="Reports\NformTester_20121119_140212.rxlog">
+      <id>a7e4b956-2c56-4eee-b0f0-05e181e41f60</id>
+    </None>
+    <None Include="Reports\NformTester_20121119_142036.rxlog">
+      <id>acd44e98-0003-4158-9cd9-8797945259e1</id>
+    </None>
+    <None Include="Reports\NformTester_20121119_144206.rxlog">
+      <id>5d366275-7bdf-4b19-bb95-49bab39f6436</id>
+    </None>
+    <None Include="Reports\NformTester_20121119_144701.rxlog" />
     <None Include="Reports\NformTester_XmlReport_20121022_134519.rxlog">
       <id>7c066e41-9ce0-48ae-8033-4c5db7e7d8c6</id>
     </None>
