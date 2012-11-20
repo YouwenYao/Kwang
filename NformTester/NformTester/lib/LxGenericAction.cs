@@ -12,6 +12,8 @@ using System.Reflection;
 using System.Text.RegularExpressions;
 using System.Net;
 using System.Net.Sockets;
+using Microsoft.Win32;
+using System.IO;
 
 using Ranorex;
 using Ranorex.Core;
@@ -786,9 +788,199 @@ namespace NformTester.lib
 			}									
 		}
 		
-		public static void IsFailThreeTimes(){
+		// This method is used to get database type, 
+		// DbType = 1, bundled database;
+		// DbType = 2, SQL Server database;
+		public static int GetDataBaseType(int DbType){
+  /*      
+		// The name of the key must include a valid root.
+        const string s_subkey = @"Software\Liebert\Nform\Database";
+        const string keyName = "DbType"; 
+       
+        RegistryKey basekey = RegistryKey.OpenBaseKey(Microsoft.Win32.RegistryHive.LocalMachine,
+                                                      Microsoft.Win32.RegistryView.Default);
+        RegistryKey subkey = basekey.OpenSubKey(s_subkey,false);
+        int value = (int)subkey.GetValue(keyName,null);
+        
+        Console.WriteLine("(Default): {0}", value);
+		     foreach (string s in subkey.GetValueNames()) 
+			{ 
+			    MessageBox.Show(s); 
+			}
+ 
+		     if(basekey != null) basekey.Close();
+		     if(subkey != null) subkey.Close();
+
+        //有可能找不到key，如果nform没有安装的话。
+*/        
+        return DbType;
+		
+		}
+		
+		//This method is used to back up the database.
+		//Two type of database need to consider to be backup.
+		// DbType = 1, bundled database;
+		// DbType = 2, SQL Server database;
+		public static bool BackUpDataBase(int DbType){
+			switch(DbType)
+        	{
+        		case 1:
+					BackUpBundledDataBase();
+        			break;
+        		case 2:
+        			BackUpSQLServerDataBase();
+        			break;
+        		default:
+        			MessageBox.Show("Wrong database type!");
+        			break;
+        	}
+			
+			return true;
+		}
+		
+		//Back up for bundled database;
+		public static void BackUpBundledDataBase(){
+/*	          
+        const string s_subkey = "Software"+"\\"+"Liebert"+"\\"+"Nform";
+        const string keyName = "InstallDir";        
+        
+        RegistryKey basekey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry32);
+        RegistryKey subkey = basekey.OpenSubKey(s_subkey,false);
+        string value = (string)subkey.GetValue(keyName,null);
+ 
+        basekey.Dispose();
+        subkey.Dispose(); 
+        basekey.Close();
+        subkey.Close();
+        basekey = null;
+        subkey = null;
+ */     
+ /*
+       string oldPath = @"C:\Nform\db";
+       string newPath = @"C:\Nform\backup";
+       
+        String OldDBFileName_1 = "NformLog.sdf"; 
+        String OldDBFileName_2 = "NformAlm.sdf"; 
+        String OldDBFileName_3 = "Nform.sdf";
+        String OldDBFilePath_4 = @"C:\Nform\db\persist";
+     
+       if (!Directory.Exists(newPath))
+        {
+            // Create a file to write to. 
+            Directory.CreateDirectory(newPath);
+        }
+       
+       string sourceFile = System.IO.Path.Combine(oldPath, OldDBFileName_1);
+       string destFile = System.IO.Path.Combine(newPath, OldDBFileName_1);     
+       System.IO.File.Copy(sourceFile, destFile, true);  
+       sourceFile = System.IO.Path.Combine(oldPath, OldDBFileName_2);
+       destFile = System.IO.Path.Combine(newPath, OldDBFileName_2);
+       System.IO.File.Copy(sourceFile, destFile, true);
+       sourceFile = System.IO.Path.Combine(oldPath, OldDBFileName_3);
+       destFile = System.IO.Path.Combine(newPath, OldDBFileName_3);
+       System.IO.File.Copy(sourceFile, destFile, true);
+       
+       string newPersistPath = @"C:\Nform\backup\persist";
+       if (!Directory.Exists(newPersistPath))
+        {
+            // Create a file to write to. 
+            Directory.CreateDirectory(newPersistPath);
+        }
+       */
+      
+          string sourceDBPath = @"C:\Nform\db";     
+          string targetDBPath = @"C:\Nform\backup";
+	       //First delete the exsited directory.
+		   if (Directory.Exists(targetDBPath))
+	       {
+	       	Directory.Delete(targetDBPath,true);
+	       }
+		   //Then create new directory with the same name.
+	       Directory.CreateDirectory(targetDBPath);
+	       //Restore the files.
+	       CopyDir(sourceDBPath,targetDBPath); 
+	
+		}
+		
+	   public static void CopyDir(string srcPath, string aimPath)
+      {
+        try
+        {
+            if (aimPath[aimPath.Length - 1] != System.IO.Path.DirectorySeparatorChar)
+            {
+                aimPath += System.IO.Path.DirectorySeparatorChar;
+            }
+            if (!System.IO.Directory.Exists(aimPath))
+            {
+                System.IO.Directory.CreateDirectory(aimPath);
+            }
+         
+            string[] fileList = System.IO.Directory.GetFileSystemEntries(srcPath);
+
+            foreach (string file in fileList)
+            {
+
+                if (System.IO.Directory.Exists(file))
+                {
+                    CopyDir(file, aimPath + System.IO.Path.GetFileName(file));
+                } 
+                else
+                {
+                    System.IO.File.Copy(file, aimPath + System.IO.Path.GetFileName(file), true);
+                }
+            }
+        }
+
+        catch (Exception e)
+        {
+        	MessageBox.Show(e.StackTrace);
+        	throw;
+        }
+    }
+		
+		//Back up for SQL Server database;
+		public static void BackUpSQLServerDataBase(){
 			
 		}
 		
+		//Restore the database, consider the type of database.
+		// DbType = 1, bundled database;
+		// DbType = 2, SQL Server database;
+		public static bool RestoreDataBase(int DbType){
+			switch(DbType)
+        	{
+        		case 1:
+					RestoreBundledDataBase();
+        			break;
+        		case 2:
+        			RestoreSQLServerDataBase();
+        			break;
+        		default:
+        			MessageBox.Show("Wrong database type!");
+        			break;
+        	}
+			
+			return true;
+		}
+		
+		//Restore bundled database;
+		public static void RestoreBundledDataBase(){
+			
+		   string sourcePath = @"C:\Nform\backup";
+		   string targetDBPath = @"C:\Nform\db";
+	       //First delete the exsited directory.
+		   if (Directory.Exists(targetDBPath))
+	       {
+	       	Directory.Delete(targetDBPath,true);
+	       }
+		   //Then create new directory with the same name.
+	       Directory.CreateDirectory(targetDBPath);
+	       //Restore the files.
+	       CopyDir(sourcePath,targetDBPath);  
+		}
+		
+		//Restore SQL Server database;
+		public static void RestoreSQLServerDataBase(){
+		}
 	}
 }

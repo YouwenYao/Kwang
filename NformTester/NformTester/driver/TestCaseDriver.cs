@@ -14,6 +14,7 @@ using System.Drawing;
 using System.Threading;
 using System.Collections;
 using WinForms = System.Windows.Forms;
+using Microsoft.Win32;
 
 using Ranorex;
 using Ranorex.Core;
@@ -51,6 +52,16 @@ namespace NformTester.driver
         /// that will in turn invoke this method.</remarks>
         void ITestModule.Run()
         {
+        	
+        	
+        	int DdType = LxGenericAction.GetDataBaseType(1);
+        	
+        	bool BackupResult = LxGenericAction.BackUpDataBase(DdType);
+        	
+        	// Need to stop nform server.
+        	bool RestoreResult = LxGenericAction.RestoreDataBase(DdType);
+
+/*        	
         	Mouse.DefaultMoveTime = 300;
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
@@ -75,7 +86,7 @@ namespace NformTester.driver
             mainOp.opXls.close();
             LxTearDown.closeApp(mainOp.ProcessId);		//  ********* 4. clean up for next running *********
           	
-            
+   */         
         }
     }
 }
