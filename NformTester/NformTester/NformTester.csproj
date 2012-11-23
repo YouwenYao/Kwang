@@ -658,7 +658,46 @@
     <None Include="Reports\NformTester_20121120_154459.rxlog">
       <id>35577dce-aa2e-4ae9-b2b3-a3997ab3c768</id>
     </None>
-    <None Include="Reports\NformTester_20121120_154539.rxlog" />
+    <None Include="Reports\NformTester_20121120_154539.rxlog">
+      <id>43f126ac-dbe8-4ceb-969d-e066a5b4ecad</id>
+    </None>
+    <None Include="Reports\NformTester_20121123_153353.rxlog">
+      <id>94b87d7c-4f06-4ede-9ad1-30233b92c02c</id>
+    </None>
+    <None Include="Reports\NformTester_20121123_153702.rxlog">
+      <id>aff001bd-1aad-4c1b-97e5-f034b164b45f</id>
+    </None>
+    <None Include="Reports\NformTester_20121123_154535.rxlog">
+      <id>9ca19ca9-809b-4af6-ae6e-7280ab145769</id>
+    </None>
+    <None Include="Reports\NformTester_20121123_155143.rxlog">
+      <id>bde3e42d-528e-4560-a516-e4898d46d6d6</id>
+    </None>
+    <None Include="Reports\NformTester_20121123_160040.rxlog">
+      <id>6d726c7d-8b80-460f-a0bf-9f91a572b087</id>
+    </None>
+    <None Include="Reports\NformTester_20121123_161459.rxlog">
+      <id>3308563f-46b9-4ba7-8470-1b64c242fa3c</id>
+    </None>
+    <None Include="Reports\NformTester_20121123_161855.rxlog">
+      <id>5b13da38-94ab-4b56-8483-9b4ab1434cb5</id>
+    </None>
+    <None Include="Reports\NformTester_20121123_172428.rxlog">
+      <id>b54a90f6-31a5-4879-92be-681d7322a4a9</id>
+    </None>
+    <None Include="Reports\NformTester_20121123_172530.rxlog">
+      <id>71abf415-f0a2-47dd-9518-c655d5677f3f</id>
+    </None>
+    <None Include="Reports\NformTester_20121123_172636.rxlog">
+      <id>4c911f40-496b-47b0-b141-4ec970402ac3</id>
+    </None>
+    <None Include="Reports\NformTester_20121123_173138.rxlog">
+      <id>155aa87c-e55b-48a8-a54c-09f537f98192</id>
+    </None>
+    <None Include="Reports\NformTester_20121123_173527.rxlog">
+      <id>bb010d3d-5a3f-4c93-a6b3-59a7e942766b</id>
+    </None>
+    <None Include="Reports\NformTester_20121123_173638.rxlog" />
     <None Include="Reports\NformTester_XmlReport_20121022_134519.rxlog">
       <id>7c066e41-9ce0-48ae-8033-4c5db7e7d8c6</id>
     </None>

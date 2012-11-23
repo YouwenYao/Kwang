@@ -20,6 +20,7 @@ using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
 using NformTester.lib;
+using System.Windows.Forms;
 
 namespace NformTester.driver
 {
@@ -53,15 +54,37 @@ namespace NformTester.driver
         void ITestModule.Run()
         {
         	
-        	
-        	int DdType = LxGenericAction.GetDataBaseType(1);
-        	
-        	bool BackupResult = LxGenericAction.BackUpDataBase(DdType);
-        	
-        	// Need to stop nform server.
-        	bool RestoreResult = LxGenericAction.RestoreDataBase(DdType);
+   //      	LxGenericAction.GetDBConnString();
+            
+            //Get database type from Device.ini, 
+            //DbType=1,bundled database;
+            //DbType=2,SQL Server database;
+            int DbType = 1;
+            bool BackupResult = false;
+            try
+            {
+	            DbType = LxGenericAction.GetDataBaseType();
+	        	
+	        	//First, back up the database.
+	        	BackupResult = LxGenericAction.BackUpDataBase(DbType);
+	     //       MessageBox.Show("BackupResult is"+BackupResult);
+            }
+            catch(Exception ex)
+            {
+     //       	MessageBox.Show("Error when back up database!" + ex.StackTrace.ToString());
+              Console.WriteLine("Error when back up database!"+ex.StackTrace.ToString());
+            }
+            
+            if(BackupResult == false)
+            {
+               Console.WriteLine("Back up database is faild!");
+            }
+            else
+            {
+            	Console.WriteLine("Back up database is successful!");
+            }
 
-/*        	
+        	
         	Mouse.DefaultMoveTime = 300;
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
@@ -85,8 +108,22 @@ namespace NformTester.driver
             mainOp.runOverOneCase(tsName);
             mainOp.opXls.close();
             LxTearDown.closeApp(mainOp.ProcessId);		//  ********* 4. clean up for next running *********
-          	
-   */         
+   //       MessageBox.Show("result=" + result);
+                          
+            // If there is any error when perform Scripts, execute the restore DB operation. 
+            if(result == false)
+            {
+   //         	MessageBox.Show("We need to restore database, because there is wrong when this script is running.");
+            	bool RestoreResult = LxGenericAction.RestoreDataBase(DbType);
+//	        	MessageBox.Show("RestoreResult is:"+RestoreResult);
+	        	if(RestoreResult == false)
+	        	{
+	//        		MessageBox.Show("Restore database is failed, you shoud handle this question manually!");
+	                Console.WriteLine("Restore database is failed, you shoud handle this question manually!");
+	        	}
+            }
+            
+           
         }
     }
 }

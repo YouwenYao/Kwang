@@ -14,6 +14,9 @@ using System.Net;
 using System.Net.Sockets;
 using Microsoft.Win32;
 using System.IO;
+using System.Data.SqlClient;
+using System.Data;
+using System.Diagnostics;
 
 using Ranorex;
 using Ranorex.Core;
@@ -81,7 +84,14 @@ namespace NformTester.lib
 
 			// Run the item in stepList
 			// If wrongCount =3, it means that the command fails three times continuously.
+			int wrongTime = 3;
 			int wrongCount = 0;
+			string groupName="TryToRunTimes";
+            string key="TryTimes";
+            wrongTime = int.Parse(myparseToValue(groupName,key));
+    //        MessageBox.Show("wrong Time ="+wrongTime);
+			
+            
 			bool finalResult = true;
 				foreach(LxScriptItem item in stepList)
 					{
@@ -104,7 +114,7 @@ namespace NformTester.lib
 						LxLog.Info("Info",item.m_Index+" "+item.m_Component+" "+item.m_Action+" "+ (resultFlag==true?"Success":"Failure"));
 						
 		           //If this script fails three times continuously, break this execution.
-			           if(wrongCount==3) break;
+			           if(wrongCount==wrongTime) break;
 					}
 				
 			return finalResult;
@@ -788,108 +798,58 @@ namespace NformTester.lib
 			}									
 		}
 		
-		// This method is used to get database type, 
-		// DbType = 1, bundled database;
-		// DbType = 2, SQL Server database;
-		public static int GetDataBaseType(int DbType){
-  /*      
-		// The name of the key must include a valid root.
-        const string s_subkey = @"Software\Liebert\Nform\Database";
-        const string keyName = "DbType"; 
-       
-        RegistryKey basekey = RegistryKey.OpenBaseKey(Microsoft.Win32.RegistryHive.LocalMachine,
-                                                      Microsoft.Win32.RegistryView.Default);
-        RegistryKey subkey = basekey.OpenSubKey(s_subkey,false);
-        int value = (int)subkey.GetValue(keyName,null);
-        
-        Console.WriteLine("(Default): {0}", value);
-		     foreach (string s in subkey.GetValueNames()) 
-			{ 
-			    MessageBox.Show(s); 
-			}
- 
-		     if(basekey != null) basekey.Close();
-		     if(subkey != null) subkey.Close();
-
-        //有可能找不到key，如果nform没有安装的话。
-*/        
-        return DbType;
-		
+		//**********************************************************************
+		/// <summary>
+		/// Get database type from device.ini.DbType = 1, 
+		/// bundled database;DbType = 2, SQL Server database;
+		/// Author: Sashimi.
+		/// </summary>
+		public static int GetDataBaseType(){
+        string groupName="Database";
+        string key="DbType";
+        string DbType = myparseToValue(groupName,key);
+  //    MessageBox.Show("Dbtype="+DbType);
+        return (int.Parse(DbType));
 		}
-		
-		//This method is used to back up the database.
-		//Two type of database need to consider to be backup.
-		// DbType = 1, bundled database;
-		// DbType = 2, SQL Server database;
+
+		//**********************************************************************
+		/// <summary>
+		/// This method is used to back up the database.
+		/// Two type of database need to consider to be backup.
+		/// DbType = 1, bundled database; DbType = 2, SQL Server database;
+		/// Author: Sashimi.
+		/// </summary>
 		public static bool BackUpDataBase(int DbType){
+			bool result= false;
 			switch(DbType)
         	{
         		case 1:
-					BackUpBundledDataBase();
+					result = BackUpBundledDataBase();
         			break;
         		case 2:
-        			BackUpSQLServerDataBase();
+        			result = BackUpSQLServerDataBase();
         			break;
         		default:
-        			MessageBox.Show("Wrong database type!");
+        //			MessageBox.Show("Wrong database type!");
         			break;
         	}
 			
-			return true;
+			return result;
 		}
 		
-		//Back up for bundled database;
-		public static void BackUpBundledDataBase(){
-/*	          
-        const string s_subkey = "Software"+"\\"+"Liebert"+"\\"+"Nform";
-        const string keyName = "InstallDir";        
-        
-        RegistryKey basekey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry32);
-        RegistryKey subkey = basekey.OpenSubKey(s_subkey,false);
-        string value = (string)subkey.GetValue(keyName,null);
- 
-        basekey.Dispose();
-        subkey.Dispose(); 
-        basekey.Close();
-        subkey.Close();
-        basekey = null;
-        subkey = null;
- */     
- /*
-       string oldPath = @"C:\Nform\db";
-       string newPath = @"C:\Nform\backup";
-       
-        String OldDBFileName_1 = "NformLog.sdf"; 
-        String OldDBFileName_2 = "NformAlm.sdf"; 
-        String OldDBFileName_3 = "Nform.sdf";
-        String OldDBFilePath_4 = @"C:\Nform\db\persist";
-     
-       if (!Directory.Exists(newPath))
-        {
-            // Create a file to write to. 
-            Directory.CreateDirectory(newPath);
-        }
-       
-       string sourceFile = System.IO.Path.Combine(oldPath, OldDBFileName_1);
-       string destFile = System.IO.Path.Combine(newPath, OldDBFileName_1);     
-       System.IO.File.Copy(sourceFile, destFile, true);  
-       sourceFile = System.IO.Path.Combine(oldPath, OldDBFileName_2);
-       destFile = System.IO.Path.Combine(newPath, OldDBFileName_2);
-       System.IO.File.Copy(sourceFile, destFile, true);
-       sourceFile = System.IO.Path.Combine(oldPath, OldDBFileName_3);
-       destFile = System.IO.Path.Combine(newPath, OldDBFileName_3);
-       System.IO.File.Copy(sourceFile, destFile, true);
-       
-       string newPersistPath = @"C:\Nform\backup\persist";
-       if (!Directory.Exists(newPersistPath))
-        {
-            // Create a file to write to. 
-            Directory.CreateDirectory(newPersistPath);
-        }
-       */
-      
-          string sourceDBPath = @"C:\Nform\db";     
-          string targetDBPath = @"C:\Nform\backup";
+		//**********************************************************************
+		/// <summary>
+		/// Back up for bundled database;
+		/// Author: Sashimi.
+		/// </summary>
+		public static bool BackUpBundledDataBase(){
+		  bool result = false;
+		  Console.WriteLine("*****Start to back up bundled Database*****");
+		  string groupName="Database";
+          string keyOne="Bundled_Path";
+          string keyTwo="Bundled_Backup_Path";
+		  string sourceDBPath = myparseToValue(groupName,keyOne);
+          string targetDBPath = myparseToValue(groupName,keyTwo);
 	       //First delete the exsited directory.
 		   if (Directory.Exists(targetDBPath))
 	       {
@@ -898,10 +858,26 @@ namespace NformTester.lib
 		   //Then create new directory with the same name.
 	       Directory.CreateDirectory(targetDBPath);
 	       //Restore the files.
-	       CopyDir(sourceDBPath,targetDBPath); 
-	
+	       
+	       try{
+	       	CopyDir(sourceDBPath,targetDBPath);
+	       	result = true;
+	       }
+	       catch(Exception ex)
+	       {
+//	       	MessageBox.Show("When BackUpBundledDataBase, the CopyDir is failed!" + ex.StackTrace.ToString());
+	       	result = false;
+	       }
+	       Console.WriteLine("*****Finish to back up bundled Database*****");
+//	       MessageBox.Show("the end!");
+	       return result;
 		}
 		
+		//**********************************************************************
+		/// <summary>
+		/// Copy file.
+		/// Author: Sashimi.
+		/// </summary>
 	   public static void CopyDir(string srcPath, string aimPath)
       {
         try
@@ -933,54 +909,398 @@ namespace NformTester.lib
 
         catch (Exception e)
         {
-        	MessageBox.Show(e.StackTrace);
+ //       	MessageBox.Show(e.StackTrace);
         	throw;
         }
     }
 		
-		//Back up for SQL Server database;
-		public static void BackUpSQLServerDataBase(){
-			
+		//**********************************************************************
+		/// <summary>
+		/// Back up for SQL Server database;
+		/// Author: Sashimi.
+		/// </summary>
+		public static bool BackUpSQLServerDataBase(){
+			bool result=false;
+			Console.WriteLine("*****Start to back up SQL Server Database*****");
+			SqlConnection conn = new SqlConnection();
+			conn.ConnectionString = @"Data Source=NFORMTES-6FD309\SQLEXPRESS;Initial Catalog=master;
+		    User ID=sa;Password=liebert;"; 
+			try{
+				OpenConnection(conn);
+			}
+			catch(Exception ex){
+	//			MessageBox.Show("Fail to open sql connection!"+(ex.StackTrace.ToString()));
+				result=false;
+				return result;
+			}
+			try{
+				BackpUpDB(conn);
+				result = true;
+			}
+			catch(Exception ex){
+				CloseConnection(conn);
+//				MessageBox.Show("Fail to back up SQL SERVER database!"+(ex.StackTrace.ToString()));
+				result=false;
+				return result;
+			}
+			CloseConnection(conn);
+			Console.WriteLine("****Finish to back up SQL Server Database*****");
+//			MessageBox.Show("the end!");
+			return result;
 		}
 		
-		//Restore the database, consider the type of database.
-		// DbType = 1, bundled database;
-		// DbType = 2, SQL Server database;
+		//**********************************************************************
+		/// <summary>
+		/// Restore the database, consider the type of database.
+		/// DbType = 1, bundled database;DbType = 2, SQL Server database;
+		/// Author: Sashimi.
+		/// </summary>
 		public static bool RestoreDataBase(int DbType){
+			bool result = false;
 			switch(DbType)
         	{
         		case 1:
-					RestoreBundledDataBase();
+					result = RestoreBundledDataBase();
         			break;
         		case 2:
-        			RestoreSQLServerDataBase();
+        			result = RestoreSQLServerDataBase();
         			break;
         		default:
-        			MessageBox.Show("Wrong database type!");
+ //       			MessageBox.Show("Wrong database type!");
         			break;
         	}
 			
-			return true;
+			return result;
 		}
 		
-		//Restore bundled database;
-		public static void RestoreBundledDataBase(){
-			
-		   string sourcePath = @"C:\Nform\backup";
-		   string targetDBPath = @"C:\Nform\db";
+		//**********************************************************************
+		/// <summary>
+		/// Restore bundled database;
+		/// Author: Sashimi.
+		/// </summary>
+		public static bool RestoreBundledDataBase(){
+		  bool result = false;
+		  Console.WriteLine("*****Start to restore bundled Database*****");
+		  string groupName="Database";
+          string keyOne="Bundled_Backup_Path";
+		  string keyTwo="Bundled_Path";
+		  string sourceDBPath = myparseToValue(groupName,keyOne);
+          string targetDBPath = myparseToValue(groupName,keyTwo);
 	       //First delete the exsited directory.
-		   if (Directory.Exists(targetDBPath))
+		   if (!Directory.Exists(targetDBPath))
 	       {
-	       	Directory.Delete(targetDBPath,true);
-	       }
-		   //Then create new directory with the same name.
+	       	//Then create new directory with the same name.
 	       Directory.CreateDirectory(targetDBPath);
+	       }
+		   
 	       //Restore the files.
-	       CopyDir(sourcePath,targetDBPath);  
+	       try{
+	       	CopyDir(sourceDBPath,targetDBPath);
+	       	result = true;
+	       }
+	       catch(Exception ex)
+	       {
+	//       	MessageBox.Show("When RestoreBundledDataBase, the CopyDir is failed!" + ex.StackTrace.ToString());
+	       	result = false;
+	       }
+	       Console.WriteLine("*****Finish to restore bundled Database*****");
+//	       MessageBox.Show("the end!");
+	       return result;
 		}
 		
-		//Restore SQL Server database;
-		public static void RestoreSQLServerDataBase(){
+		//**********************************************************************
+		/// <summary>
+		/// Restore SQL Server database;
+		/// Author: Sashimi.
+		/// </summary>
+		public static bool RestoreSQLServerDataBase(){
+			bool result=false;
+			Console.WriteLine("*****Start to restore SQL Server Database*****");	        
+	        SqlConnection conn = new SqlConnection();
+	        conn.ConnectionString = GetDBConnString();
+			
+			try{
+				OpenConnection(conn);
+			}
+			catch(Exception ex){
+	//			MessageBox.Show("Fail to open sql connection!"+(ex.StackTrace.ToString()));
+				result=false;
+				return result;
+			}
+			
+	        result = RestoreDB(conn);
+	        
+	        if (result == false){
+//				MessageBox.Show("Fail to restore SQL SERVER database!");
+				CloseConnection(conn);
+				return result;
+			}
+	        
+			CloseConnection(conn);
+			Console.WriteLine("*****Finish to restore SQL Server Database*****");
+	//		MessageBox.Show("the end!");
+			return result;
+			
 		}
+		
+		//**********************************************************************
+		/// <summary>
+		/// Open the SQL server connection.
+		/// Author: Sashimi.
+		/// </summary>
+		public static void OpenConnection(SqlConnection conn){	    
+		    try
+          {
+            conn.Open();
+            if (conn.State == System.Data.ConnectionState.Open)
+            {
+   //         	MessageBox.Show("open!");
+
+            }
+            if (conn.State == System.Data.ConnectionState.Closed)
+            {
+  //              MessageBox.Show("close!");
+            }
+          }
+        catch(Exception ex)
+        {
+ //       	MessageBox.Show("SQL Server Connection Error!"+ex.StackTrace.ToString());
+        }
+       }
+		//**********************************************************************
+		/// <summary>
+		/// Close the SQL server connection.
+		/// Author: Sashimi.
+		/// </summary>
+		public static void CloseConnection(SqlConnection conn){	    
+		    try
+          {
+		    conn.Close();
+            if (conn.State == System.Data.ConnectionState.Open)
+            {
+   //         	MessageBox.Show("open!");
+
+            }
+            if (conn.State == System.Data.ConnectionState.Closed)
+            {
+ //               MessageBox.Show("close!");
+            }
+          }
+        catch(Exception ex)
+        {
+  //      	MessageBox.Show("Error!" + ex.StackTrace.ToString());
+        }
+       }
+		
+		//**********************************************************************
+		/// <summary>
+		/// Backpup database.
+		/// Author: Sashimi.
+		/// </summary>
+		public static void BackpUpDB(SqlConnection conn)
+        {	
+			string backupPath = @"C:\Nform\SqlBackup";
+			if (!System.IO.Directory.Exists(backupPath))
+            {
+				System.IO.Directory.CreateDirectory(backupPath);
+            }
+			
+			
+			if (conn.State == ConnectionState.Closed)
+				conn.Open();
+			
+		   try
+          {    
+		   	    string backupDB = @"Backup Database Nform To disk= 'C:\Nform\SqlBackup\Nform.bak';";
+	            SqlCommand cmd = new SqlCommand(backupDB, conn);
+	            cmd.ExecuteNonQuery();
+	            backupDB =  @"Backup Database Nform To disk= 'C:\Nform\SqlBackup\NformAlm.bak';";
+	            cmd.CommandText = backupDB;
+	            cmd.ExecuteNonQuery();
+	            backupDB =  @"Backup Database Nform To disk= 'C:\Nform\SqlBackup\NformLog.bak';";
+	            cmd.CommandText = backupDB;
+	            cmd.ExecuteNonQuery();
+           }
+	        catch(Exception ex)
+	        {
+	//        	MessageBox.Show("Back up SQL Server DATABASE is Error!" + ex.StackTrace.ToString());
+	             throw;
+	        }       
+       }
+		
+		//**********************************************************************
+		/// <summary>
+		/// Resotre database.
+		/// Author: Sashimi.
+		/// </summary>
+		public static bool RestoreDB(SqlConnection conn)
+        {	
+			bool result = false;
+			string backupPath = @"C:\Nform\SqlBackup";
+			string Nformbackup = @"C:\Nform\SqlBackup\Nform.bak";
+			string NformAlmbackup = @"C:\Nform\SqlBackup\NformAlm.bak";
+			string NformLogbackup = @"C:\Nform\SqlBackup\NformLog.bak";
+			string movetoPath = @"C:\Nform\Moveto";
+			
+			if (!System.IO.Directory.Exists(backupPath))
+            {
+//				MessageBox.Show("back up path is not existed!");
+				return false;
+            }
+			
+			if(!File.Exists(Nformbackup))
+			{
+			//	MessageBox.Show("Nform back up file is not existed!");
+				return false;
+			}
+			
+			if(!File.Exists(NformAlmbackup))
+			{
+			//	MessageBox.Show("NformAlm back up file is not existed!");
+				return false;
+			}
+			
+			if(!File.Exists(NformLogbackup))
+			{
+		//		MessageBox.Show("NformLog back up file is not existed!");
+				return false;
+			}
+			
+			if (!System.IO.Directory.Exists(movetoPath))
+            {
+				System.IO.Directory.CreateDirectory(movetoPath);
+            }
+			
+			
+			if (conn.State == ConnectionState.Closed) 
+				conn.Open();
+			try
+			{
+	            // Drop the three databases.
+				string dropDB = @"drop database NformAlm;";
+	            SqlCommand cmd = new SqlCommand(dropDB, conn);
+	            try{
+	            	cmd.ExecuteNonQuery();
+	            }
+	            catch(SqlException ex)
+	            {
+	         //   	MessageBox.Show("drop NformAlm failure!" +ex.StackTrace.ToString());
+	            	return result;
+	            }
+	            
+	            dropDB = @"drop database NformLog;";
+	            cmd.CommandText = dropDB;
+	            try{
+	            	cmd.ExecuteNonQuery();
+	            }
+	            catch(SqlException ex){
+	            //	MessageBox.Show("drop NformLog failure!" +ex.StackTrace.ToString());
+	            	return result;
+	            }
+	            
+	            dropDB = @"drop database Nform;";
+	            cmd.CommandText = dropDB;
+	            try{
+	            	cmd.ExecuteNonQuery();
+	            }
+	            catch(SqlException ex){
+	         //   	MessageBox.Show("drop Nform failure!" +ex.StackTrace.ToString());
+	            	return result;
+	            }
+	            // Create 3 new database: Nform, NformAlm, NformLog.
+	            
+	            string createDB=@"create database Nform;create database NformAlm;create database NformLog;";
+			    cmd.CommandText = createDB;
+			   
+	            try{
+	            	cmd.ExecuteNonQuery();
+	            }
+	            catch(SqlException ex){
+			 //   	MessageBox.Show("Create Nform and NformAlm and NformLog failure!" + ex.StackTrace.ToString());
+	            	return result;
+	            }
+			    
+			    //Restore the existed database from backup files.
+			    
+	            string restoreDB = @"restore database Nform from DISK = 'C:\Nform\SqlBackup\Nform.bak' with replace,
+                MOVE 'Nform_data' TO 'C:\Nform\Moveto\data1.mdf',
+                MOVE 'Nform_log' TO 'C:\Nform\Moveto\log1.ldf';";
+				cmd.CommandText = restoreDB;
+				
+	            try{
+	            	cmd.ExecuteNonQuery();
+	            }
+	            catch(SqlException ex){
+	            //	MessageBox.Show("restore Nform failure!"+ ex.StackTrace.ToString());
+	            	return result;
+	            }
+	            
+	            restoreDB =  @"restore database NformLog from DISK = 'C:\Nform\SqlBackup\NformLog.bak' with replace,
+                MOVE 'Nform_data' TO 'C:\Nform\Moveto\data2.mdf',
+                MOVE 'Nform_log' TO 'C:\Nform\Moveto\log2.ldf';";
+	            cmd.CommandText = restoreDB;
+	            
+	            try{
+	            	cmd.ExecuteNonQuery();
+	            }
+	            catch(SqlException ex){
+	         //   	MessageBox.Show("restore NformLog failure!"+ ex.StackTrace.ToString());
+	            	return result;
+	            } 
+            
+	            restoreDB =   @"restore database NformAlm from DISK = 'C:\Nform\SqlBackup\NformAlm.bak' with replace,
+                MOVE 'Nform_data' TO 'C:\Nform\Moveto\data3.mdf',
+                MOVE 'Nform_log' TO 'C:\Nform\Moveto\log3.ldf';";
+	            cmd.CommandText = restoreDB;
+	            
+	            try{
+	            	cmd.ExecuteNonQuery();
+	            }
+	            catch(SqlException ex){
+	      //      	MessageBox.Show("restore NformAlm failure!"+ ex.StackTrace.ToString());
+	            	return result;
+	            }  
+           }
+	        catch(Exception ex)
+	        {
+	    //       MessageBox.Show("Restore SQL Server DATABASE is Error!"+ ex.StackTrace.ToString());
+	             return result;
+	        } 
+	        result = true;
+	        return result;
+       }
+		
+		//**********************************************************************
+		/// <summary>
+		/// Parse the value from Devices.ini.
+		/// Author: Sashimi.
+		/// </summary>
+		public static string myparseToValue(string GroupName, string key)
+        {
+		  LxIniFile confFile = new LxIniFile(System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(),
+                                                 "Devices.ini"));
+          string def = confFile.GetString(GroupName, "Default", "null");
+          string result = confFile.GetString(GroupName, key, def);
+          return result;
+        }
+
+		//**********************************************************************
+		/// <summary>
+		/// Get the database connection strin from Devices.ini.
+		/// Author: Sashimi.
+		/// </summary>
+		public static string GetDBConnString(){
+		    string groupName="Database";
+	        string DataSource="SQL_Server_Name";
+			string UserName="SQL_User_Name";
+			string Password="SQL_Password";
+			string DS = myparseToValue(groupName,DataSource);
+	        string UN = myparseToValue(groupName,UserName);
+	        string PWD = myparseToValue(groupName,Password);
+	        string connString = "Data Source="+DS+";"+"Initial Catalog=master;"+"User ID="+UN+";"+"Password="+PWD+";";
+	 //     MessageBox.Show("connString:" + connString);
+	        return connString;
 	}
+	}
+	
 }
