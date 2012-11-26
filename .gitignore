@@ -4,5 +4,8 @@
 # Ingore all temp files in bin
 /NformTester/NformTester/bin
 
+# Ingore all temp files in obj
+/NformTester/NformTester/obj
+
 # Ingore temp file
 ResolveAssemblyReference.cache
