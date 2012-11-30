@@ -697,7 +697,13 @@
     <None Include="Reports\NformTester_20121123_173527.rxlog">
       <id>bb010d3d-5a3f-4c93-a6b3-59a7e942766b</id>
     </None>
-    <None Include="Reports\NformTester_20121123_173638.rxlog" />
+    <None Include="Reports\NformTester_20121123_173638.rxlog">
+      <id>61d9d9f7-44a5-40b7-a890-07a51abfdccf</id>
+    </None>
+    <None Include="Reports\NformTester_20121130_102016.rxlog">
+      <id>035adac7-89af-4c63-bb8f-217c6a2e6fab</id>
+    </None>
+    <None Include="Reports\NformTester_20121130_103109.rxlog" />
     <None Include="Reports\NformTester_XmlReport_20121022_134519.rxlog">
       <id>7c066e41-9ce0-48ae-8033-4c5db7e7d8c6</id>
     </None>
