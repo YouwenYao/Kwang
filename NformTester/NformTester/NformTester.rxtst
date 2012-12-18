@@ -245,5 +245,12 @@
       <testcase id="9265cfa4-2cfa-47a0-bf93-1d3cc277e6e2"/>
     </testconfiguration>
   </testconfigurations>
-  <references/>
+  <references>
+    <reference>
+      SharpSnmpLib.dll
+    </reference>
+    <reference>
+      Velocity_x86.dll
+    </reference>
+  </references>
 </testsuite>

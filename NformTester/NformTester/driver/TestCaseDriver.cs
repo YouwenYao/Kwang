@@ -52,13 +52,12 @@ namespace NformTester.driver
         /// instance to the <see cref="TestModuleRunner.Run(ITestModule)"/> method
         /// that will in turn invoke this method.</remarks>
         void ITestModule.Run()
-        {
-        	
-   //      	LxGenericAction.GetDBConnString();
-            
+        {           
+        	           
             //Get database type from Device.ini, 
             //DbType=1,bundled database;
             //DbType=2,SQL Server database;
+ 
             int DbType = 1;
             bool BackupResult = false;
             try
@@ -67,11 +66,9 @@ namespace NformTester.driver
 	        	
 	        	//First, back up the database.
 	        	BackupResult = LxGenericAction.BackUpDataBase(DbType);
-	     //       MessageBox.Show("BackupResult is"+BackupResult);
             }
             catch(Exception ex)
             {
-     //       	MessageBox.Show("Error when back up database!" + ex.StackTrace.ToString());
               Console.WriteLine("Error when back up database!"+ex.StackTrace.ToString());
             }
             
@@ -108,21 +105,17 @@ namespace NformTester.driver
             mainOp.runOverOneCase(tsName);
             mainOp.opXls.close();
             LxTearDown.closeApp(mainOp.ProcessId);		//  ********* 4. clean up for next running *********
-   //       MessageBox.Show("result=" + result);
                           
             // If there is any error when perform Scripts, execute the restore DB operation. 
             if(result == false)
             {
-   //         	MessageBox.Show("We need to restore database, because there is wrong when this script is running.");
+            	Console.WriteLine("We need to restore database, because there is wrong when this script is running.");
             	bool RestoreResult = LxGenericAction.RestoreDataBase(DbType);
-//	        	MessageBox.Show("RestoreResult is:"+RestoreResult);
 	        	if(RestoreResult == false)
 	        	{
-	//        		MessageBox.Show("Restore database is failed, you shoud handle this question manually!");
 	                Console.WriteLine("Restore database is failed, you shoud handle this question manually!");
 	        	}
             }
-            
            
         }
     }

@@ -7,6 +7,7 @@
  */
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Reflection;
 using System.Text.RegularExpressions;
@@ -17,6 +18,8 @@ using System.IO;
 using System.Data.SqlClient;
 using System.Data;
 using System.Diagnostics;
+using Lextm.SharpSnmpLib;
+using Lextm.SharpSnmpLib.Messaging;
 
 using Ranorex;
 using Ranorex.Core;
@@ -301,7 +304,7 @@ namespace NformTester.lib
 				SendCommandToSimulator(item);
 				return true;
 			}
-			
+					
 			if(item.m_Type.Substring(0,1) == ";")
 			{
 				return true;
@@ -1300,7 +1303,6 @@ namespace NformTester.lib
 	        string connString = "Data Source="+DS+";"+"Initial Catalog=master;"+"User ID="+UN+";"+"Password="+PWD+";";
 	 //     MessageBox.Show("connString:" + connString);
 	        return connString;
+	}	
 	}
-	}
-	
-}
+}	
