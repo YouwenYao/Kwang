@@ -865,7 +865,7 @@ namespace NformTester.lib
 	       }
 	       catch(Exception ex)
 	       {
-	       	Console.WriteLine("When BackUpBundledDataBase, the CopyDir is failed!" + ex.StackTrace.ToString());
+//	       	MessageBox.Show("When BackUpBundledDataBase, the CopyDir is failed!" + ex.StackTrace.ToString());
 	       	result = false;
 	       }
 	       Console.WriteLine("*****Finish to back up bundled Database*****");
@@ -907,9 +907,9 @@ namespace NformTester.lib
             }
         }
 
-        catch (Exception ex)
+        catch (Exception e)
         {
-        	Console.WriteLine(ex.StackTrace);
+ //       	MessageBox.Show(e.StackTrace);
         	throw;
         }
     }
@@ -929,7 +929,7 @@ namespace NformTester.lib
 				OpenConnection(conn);
 			}
 			catch(Exception ex){
-				Console.WriteLine("Fail to open sql connection!"+(ex.StackTrace.ToString()));
+	//			MessageBox.Show("Fail to open sql connection!"+(ex.StackTrace.ToString()));
 				result=false;
 				return result;
 			}
@@ -939,7 +939,7 @@ namespace NformTester.lib
 			}
 			catch(Exception ex){
 				CloseConnection(conn);
-				Console.WriteLine("Fail to back up SQL SERVER database!"+(ex.StackTrace.ToString()));
+//				MessageBox.Show("Fail to back up SQL SERVER database!"+(ex.StackTrace.ToString()));
 				result=false;
 				return result;
 			}
@@ -1000,7 +1000,7 @@ namespace NformTester.lib
 	       }
 	       catch(Exception ex)
 	       {
-	       	Console.WriteLine("When RestoreBundledDataBase, the CopyDir is failed!" + ex.StackTrace.ToString());
+	//       	MessageBox.Show("When RestoreBundledDataBase, the CopyDir is failed!" + ex.StackTrace.ToString());
 	       	result = false;
 	       }
 	       Console.WriteLine("*****Finish to restore bundled Database*****");
@@ -1023,7 +1023,7 @@ namespace NformTester.lib
 				OpenConnection(conn);
 			}
 			catch(Exception ex){
-				Console.WriteLine("Fail to open sql connection!"+(ex.StackTrace.ToString()));
+	//			MessageBox.Show("Fail to open sql connection!"+(ex.StackTrace.ToString()));
 				result=false;
 				return result;
 			}
@@ -1064,7 +1064,7 @@ namespace NformTester.lib
           }
         catch(Exception ex)
         {
-        	Console.WriteLine("SQL Server Connection Error!"+ex.StackTrace.ToString());
+ //       	MessageBox.Show("SQL Server Connection Error!"+ex.StackTrace.ToString());
         }
        }
 		//**********************************************************************
@@ -1088,7 +1088,7 @@ namespace NformTester.lib
           }
         catch(Exception ex)
         {
-        	Console.WriteLine("Error!" + ex.StackTrace.ToString());
+  //      	MessageBox.Show("Error!" + ex.StackTrace.ToString());
         }
        }
 		
@@ -1123,7 +1123,7 @@ namespace NformTester.lib
            }
 	        catch(Exception ex)
 	        {
-	        	Console.WriteLine("Back up SQL Server DATABASE is Error!" + ex.StackTrace.ToString());
+	//        	MessageBox.Show("Back up SQL Server DATABASE is Error!" + ex.StackTrace.ToString());
 	             throw;
 	        }       
        }
@@ -1184,7 +1184,7 @@ namespace NformTester.lib
 	            }
 	            catch(SqlException ex)
 	            {
-	            	Console.WriteLine("drop NformAlm failure!" +ex.StackTrace.ToString());
+	         //   	MessageBox.Show("drop NformAlm failure!" +ex.StackTrace.ToString());
 	            	return result;
 	            }
 	            
@@ -1194,7 +1194,7 @@ namespace NformTester.lib
 	            	cmd.ExecuteNonQuery();
 	            }
 	            catch(SqlException ex){
-	            	Console.WriteLine("drop NformLog failure!" +ex.StackTrace.ToString());
+	            //	MessageBox.Show("drop NformLog failure!" +ex.StackTrace.ToString());
 	            	return result;
 	            }
 	            
@@ -1204,7 +1204,7 @@ namespace NformTester.lib
 	            	cmd.ExecuteNonQuery();
 	            }
 	            catch(SqlException ex){
-	            	Console.WriteLine("drop Nform failure!" +ex.StackTrace.ToString());
+	         //   	MessageBox.Show("drop Nform failure!" +ex.StackTrace.ToString());
 	            	return result;
 	            }
 	            // Create 3 new database: Nform, NformAlm, NformLog.
@@ -1216,7 +1216,7 @@ namespace NformTester.lib
 	            	cmd.ExecuteNonQuery();
 	            }
 	            catch(SqlException ex){
-			    	Console.WriteLine("Create Nform and NformAlm and NformLog failure!" + ex.StackTrace.ToString());
+			 //   	MessageBox.Show("Create Nform and NformAlm and NformLog failure!" + ex.StackTrace.ToString());
 	            	return result;
 	            }
 			    
@@ -1231,7 +1231,7 @@ namespace NformTester.lib
 	            	cmd.ExecuteNonQuery();
 	            }
 	            catch(SqlException ex){
-	            	Console.WriteLine("restore Nform failure!"+ ex.StackTrace.ToString());
+	            //	MessageBox.Show("restore Nform failure!"+ ex.StackTrace.ToString());
 	            	return result;
 	            }
 	            
@@ -1244,7 +1244,7 @@ namespace NformTester.lib
 	            	cmd.ExecuteNonQuery();
 	            }
 	            catch(SqlException ex){
-	            	Console.WriteLine("restore NformLog failure!"+ ex.StackTrace.ToString());
+	         //   	MessageBox.Show("restore NformLog failure!"+ ex.StackTrace.ToString());
 	            	return result;
 	            } 
             
@@ -1257,13 +1257,13 @@ namespace NformTester.lib
 	            	cmd.ExecuteNonQuery();
 	            }
 	            catch(SqlException ex){
-	            	Console.WriteLine("restore NformAlm failure!"+ ex.StackTrace.ToString());
+	      //      	MessageBox.Show("restore NformAlm failure!"+ ex.StackTrace.ToString());
 	            	return result;
 	            }  
            }
 	        catch(Exception ex)
 	        {
-	           Console.WriteLine("Restore SQL Server DATABASE is Error!"+ ex.StackTrace.ToString());
+	    //       MessageBox.Show("Restore SQL Server DATABASE is Error!"+ ex.StackTrace.ToString());
 	             return result;
 	        } 
 	        result = true;

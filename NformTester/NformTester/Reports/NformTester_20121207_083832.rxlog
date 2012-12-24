@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="RanorexReport3.xsl"?><report>
+  <activity user="nformtest" host="NFORMTES-6FD309" rxversion="3.1.1.14266" osversion="Windows XP Service Pack 3 32bit" runtimeversion="4.0.30319.1" procarch="32bit" language="en-US" screenresolution="1024x768" timestamp="12/7/2012 8:38:32 AM" timeoutfactor="1" result="Failed" duration="0ms" type="root" rid="ce29cebe0e089a">
+    <detail>
+      Ranorex Testscript
+    </detail>
+    <activity testsuitename="NformTester" runconfigname="TestRun" runlabel="" maxchildren="81" result="Failed" duration="10.06s" type="test suite" rid="d1fb00cec28cdde">
+      <params/>
+      <detail/>
+      <activity testcasename="TST983_UsersGroupManagement" testcaseid="d871fe4e457b4ccda7d569b6727ced6a" maxchildren="0" result="Failed" duration="10.03s" type="test case" rid="9d93e8b29dff1f0">
+        <params/>
+        <detail/>
+        <activity modulename="TestCaseDriver" moduleid="78CE2FBF-D204-4698-98BF-68118D374E9F" instanceid="1195236834" moduletype="UserCode" result="Failed" duration="9906ms" type="test module" rid="182aa7113752df9b">
+          <detail/>
+          <errmsg>
+            Value was either too large or too small for an Int16.
+          </errmsg>
+          <item time="00:01.546" level="Info" category="INfo" errimg="NformTester_20121207_083832_fd4c75ab_trace.jpg" errthumb="NformTester_20121207_083832_fd4c75ab_trace_thumb.jpg">
+            <message>
+              keywordscripts/TST983_UsersGroupManagement.xlsx
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\driver\TestCaseDriver.cs" codeline="95"/>
+          </item>
+          <item time="00:10.234" level="Error" category="Module" errimg="NformTester_20121207_083832_d1e54c88_trace.jpg" errthumb="NformTester_20121207_083832_d1e54c88_trace_thumb.jpg">
+            <message>
+              Value was either too large or too small for an Int16.
+            </message>
+            <metainfo stacktrace="   at System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt16(String value)
+   at NformTester.lib.LxSetup.runApp() in c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxSetup.cs:line 119
+   at NformTester.driver.TestCaseDriver.Ranorex.Core.Testing.ITestModule.Run() in c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\driver\TestCaseDriver.cs:line 99
+   at Ranorex.Core.Testing.TestSuiteModule.RunInternal(DataContext parentDataContext)" codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxSetup.cs" codeline="119"/>
+          </item>
+        </activity>
+      </activity>
+    </activity>
+  </activity>
+</report>

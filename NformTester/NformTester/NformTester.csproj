@@ -153,6 +153,10 @@
       <id>58228dcc-b42a-4bb0-8d06-d3ccc62eefff</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST1009_Configuredatapointsforadevice.xlsx">
+      <id>103be776-11b6-4ccf-b809-d4b624c9fce1</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST1033_ExportLoggedData.xlsx">
       <id>dd26b6a3-67a0-4cde-8d7b-c1c5f05285c9</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -449,6 +453,10 @@
       <id>03e18365-42dc-4e0e-bbb1-4ee538826538</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST983_UsersGroupManagement.xlsx">
+      <id>6523db6d-bc38-46bc-b2d3-c3d1f4ae7e6b</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST986_AddCustomGroup.xlsx">
       <id>26312dbc-0fa9-4f25-83bd-3bd4de247dda</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -698,12 +706,174 @@
       <id>bb010d3d-5a3f-4c93-a6b3-59a7e942766b</id>
     </None>
     <None Include="Reports\NformTester_20121123_173638.rxlog">
-      <id>61d9d9f7-44a5-40b7-a890-07a51abfdccf</id>
+      <id>707493a5-bfaa-4855-94fb-0c004d1d5641</id>
     </None>
-    <None Include="Reports\NformTester_20121130_102016.rxlog">
-      <id>035adac7-89af-4c63-bb8f-217c6a2e6fab</id>
+    <None Include="Reports\NformTester_20121204_134917.rxlog">
+      <id>8b561d7d-62b9-49df-9a4b-ba58bd5b3c31</id>
     </None>
-    <None Include="Reports\NformTester_20121130_103109.rxlog" />
+    <None Include="Reports\NformTester_20121204_135635.rxlog">
+      <id>41cedd47-6f09-4a73-abeb-601a96d9f219</id>
+    </None>
+    <None Include="Reports\NformTester_20121204_162241.rxlog">
+      <id>584ca6b9-5cb1-450f-891a-af17fb22982e</id>
+    </None>
+    <None Include="Reports\NformTester_20121205_092254.rxlog">
+      <id>e4d7c08b-7c5d-45f9-84b7-5bcbd128e794</id>
+    </None>
+    <None Include="Reports\NformTester_20121205_094023.rxlog">
+      <id>04da69ee-2841-40ac-b472-07e55fe9ede0</id>
+    </None>
+    <None Include="Reports\NformTester_20121205_094555.rxlog">
+      <id>b34e9d08-093c-46a2-8751-bdde8e33dae9</id>
+    </None>
+    <None Include="Reports\NformTester_20121205_101105.rxlog">
+      <id>cb3e75c9-e232-4036-bb7f-71b68b4ab8df</id>
+    </None>
+    <None Include="Reports\NformTester_20121205_141649.rxlog">
+      <id>e69106d0-b1fb-4bdc-b926-ae738f5caee9</id>
+    </None>
+    <None Include="Reports\NformTester_20121205_143148.rxlog">
+      <id>b25ef773-66bc-4eee-a1c5-43f10c86f3f1</id>
+    </None>
+    <None Include="Reports\NformTester_20121205_145302.rxlog">
+      <id>701b1803-541e-47e4-9522-859c1448c31d</id>
+    </None>
+    <None Include="Reports\NformTester_20121205_153218.rxlog">
+      <id>b62414ab-a5ce-4f50-a267-38a5a4e6c049</id>
+    </None>
+    <None Include="Reports\NformTester_20121205_155604.rxlog">
+      <id>749a28b7-632c-4cff-b422-d93f4c155696</id>
+    </None>
+    <None Include="Reports\NformTester_20121205_162654.rxlog">
+      <id>52c93e38-8f16-4b9c-a8bf-d24a62576398</id>
+    </None>
+    <None Include="Reports\NformTester_20121205_163224.rxlog">
+      <id>4d520131-23d6-4eea-839b-9abd75493934</id>
+    </None>
+    <None Include="Reports\NformTester_20121206_080254.rxlog">
+      <id>4f6ff3bc-d6fc-4d92-9a03-cddbd0a00a31</id>
+    </None>
+    <None Include="Reports\NformTester_20121206_081014.rxlog">
+      <id>6fa368d5-c575-49f2-a527-a529dc870204</id>
+    </None>
+    <None Include="Reports\NformTester_20121206_103917.rxlog">
+      <id>866b724a-e453-47a9-8b0e-91da3494446e</id>
+    </None>
+    <None Include="Reports\NformTester_20121206_104712.rxlog">
+      <id>fc327a14-7e1d-4e11-b78e-9ae366a231c7</id>
+    </None>
+    <None Include="Reports\NformTester_20121206_124420.rxlog">
+      <id>80a6141c-e291-4f0f-9f54-6baa8a2d2966</id>
+    </None>
+    <None Include="Reports\NformTester_20121206_125410.rxlog">
+      <id>f4d788b0-3ce3-4abf-b03b-84926f813c32</id>
+    </None>
+    <None Include="Reports\NformTester_20121206_130858.rxlog">
+      <id>639dad18-e86b-4bfb-9e89-07d762c21917</id>
+    </None>
+    <None Include="Reports\NformTester_20121206_131751.rxlog">
+      <id>c740439e-80a5-4430-b581-b2194acd63aa</id>
+    </None>
+    <None Include="Reports\NformTester_20121206_133127.rxlog">
+      <id>fc1c1bec-3304-4426-b12f-f0fb8e097bfa</id>
+    </None>
+    <None Include="Reports\NformTester_20121206_134131.rxlog">
+      <id>067b7383-7477-4cfe-9a9b-44082c9440d3</id>
+    </None>
+    <None Include="Reports\NformTester_20121206_141659.rxlog">
+      <id>6a9ccb1d-2d56-4c83-a481-dd2bf0f5813e</id>
+    </None>
+    <None Include="Reports\NformTester_20121206_143120.rxlog">
+      <id>aa962164-70f2-4faf-8aa6-01f9091c705d</id>
+    </None>
+    <None Include="Reports\NformTester_20121206_144446.rxlog">
+      <id>44611c2f-445b-465f-b8c1-9a603a9e03de</id>
+    </None>
+    <None Include="Reports\NformTester_20121206_145234.rxlog">
+      <id>04260b2d-8eb6-480c-8e73-cdb124b91a4e</id>
+    </None>
+    <None Include="Reports\NformTester_20121206_151330.rxlog">
+      <id>f921f137-ef6c-472a-a80d-52ccad222e5e</id>
+    </None>
+    <None Include="Reports\NformTester_20121206_152032.rxlog">
+      <id>e8b09d5b-879b-4eab-a921-4cbd3b593763</id>
+    </None>
+    <None Include="Reports\NformTester_20121206_152725.rxlog">
+      <id>ef2ed04d-6a32-4bcf-8819-ba60ef7c9d9a</id>
+    </None>
+    <None Include="Reports\NformTester_20121206_162706.rxlog">
+      <id>1634fc06-ca8b-45d8-9bb2-fcd2888e6207</id>
+    </None>
+    <None Include="Reports\NformTester_20121207_083643.rxlog">
+      <id>778fb9aa-8643-437d-9710-2b5d2a2c3e57</id>
+    </None>
+    <None Include="Reports\NformTester_20121207_083832.rxlog">
+      <id>64606412-646c-47af-8980-e627858092d2</id>
+    </None>
+    <None Include="Reports\NformTester_20121207_084351.rxlog">
+      <id>cddd97ac-9db1-42ee-bc31-2e74571a6a48</id>
+    </None>
+    <None Include="Reports\NformTester_20121207_085016.rxlog">
+      <id>7c99a97a-4adb-4008-9118-018653e9ca47</id>
+    </None>
+    <None Include="Reports\NformTester_20121207_085717.rxlog">
+      <id>faef96bc-8998-4cf1-8d0b-acda6cf751e3</id>
+    </None>
+    <None Include="Reports\NformTester_20121207_090959.rxlog">
+      <id>0938d9b9-331b-405b-8b70-7f106f3eb381</id>
+    </None>
+    <None Include="Reports\NformTester_20121207_094226.rxlog">
+      <id>b955ce39-6d99-49c4-8934-d73e16db1ac2</id>
+    </None>
+    <None Include="Reports\NformTester_20121207_094836.rxlog">
+      <id>1e9a472f-428f-44eb-a33c-33d75352b35e</id>
+    </None>
+    <None Include="Reports\NformTester_20121207_095517.rxlog">
+      <id>d0f4cbc4-25f9-4d54-a74a-c88b1b347b7c</id>
+    </None>
+    <None Include="Reports\NformTester_20121207_101622.rxlog">
+      <id>16b995b6-a102-4d45-b008-1086fec5166e</id>
+    </None>
+    <None Include="Reports\NformTester_20121207_102956.rxlog">
+      <id>0d7b38df-1345-49b3-9c81-c61908436620</id>
+    </None>
+    <None Include="Reports\NformTester_20121207_103842.rxlog">
+      <id>d007ac2a-7a97-4e63-acd4-e8c41b076196</id>
+    </None>
+    <None Include="Reports\NformTester_20121207_104858.rxlog">
+      <id>0491dcc5-06a5-4c3d-8fae-1f9787259ff6</id>
+    </None>
+    <None Include="Reports\NformTester_20121207_123124.rxlog">
+      <id>66d6e3a0-c257-4597-a7e2-5fed1e7ebbe6</id>
+    </None>
+    <None Include="Reports\NformTester_20121207_123848.rxlog">
+      <id>40801f74-8336-4682-bec1-1c54bb898ceb</id>
+    </None>
+    <None Include="Reports\NformTester_20121207_130708.rxlog">
+      <id>ac02e5dd-aeb5-415d-ae94-50a512f4a0da</id>
+    </None>
+    <None Include="Reports\NformTester_20121207_133334.rxlog">
+      <id>5f8bdf81-7cf0-42f0-99ce-8657fc0fa4c8</id>
+    </None>
+    <None Include="Reports\NformTester_20121207_134259.rxlog">
+      <id>07701159-eaf7-49b5-864b-bf0308d00c0d</id>
+    </None>
+    <None Include="Reports\NformTester_20121207_145054.rxlog">
+      <id>cef50796-d81f-41bd-a750-3fcdfd41b27f</id>
+    </None>
+    <None Include="Reports\NformTester_20121207_150231.rxlog">
+      <id>12b1efad-f16f-4aa9-bc04-82300cc1d88e</id>
+    </None>
+    <None Include="Reports\NformTester_20121207_154746.rxlog">
+      <id>cbc56c4b-c30d-4667-8bda-6dbae6a13ed2</id>
+    </None>
+    <None Include="Reports\NformTester_20121207_160249.rxlog">
+      <id>640f92df-be87-4439-8632-6441ba4cdb9a</id>
+    </None>
+    <None Include="Reports\NformTester_20121207_161252.rxlog">
+      <id>4b3feddb-27fb-4b69-a063-505075675cfa</id>
+    </None>
+    <None Include="Reports\NformTester_20121207_162236.rxlog" />
     <None Include="Reports\NformTester_XmlReport_20121022_134519.rxlog">
       <id>7c066e41-9ce0-48ae-8033-4c5db7e7d8c6</id>
     </None>

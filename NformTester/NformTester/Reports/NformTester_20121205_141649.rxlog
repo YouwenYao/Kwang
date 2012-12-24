@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="RanorexReport3.xsl"?><report>
+  <activity user="nformtest" host="NFORMTES-6FD309" rxversion="3.1.1.14266" osversion="Windows XP Service Pack 3 32bit" runtimeversion="4.0.30319.1" procarch="32bit" language="en-US" screenresolution="1024x768" timestamp="12/5/2012 2:16:49 PM" timeoutfactor="1" result="Failed" duration="0ms" type="root" rid="741aee2e6d117b0">
+    <detail>
+      Ranorex Testscript
+    </detail>
+    <activity testsuitename="NformTester" runconfigname="TestRun" runlabel="" maxchildren="80" result="Failed" duration="3.1m" type="test suite" rid="73a43d9ec0f61f">
+      <params/>
+      <detail/>
+      <activity testcasename="TST1009_Configuredatapointsforadevice" testcaseid="ffde563332874e1a9a93fb7f636582fc" maxchildren="0" result="Failed" duration="3.1m" type="test case" rid="19f4814cdfedbe1b">
+        <params/>
+        <detail/>
+        <activity modulename="TestCaseDriver" moduleid="78CE2FBF-D204-4698-98BF-68118D374E9F" instanceid="-1853383499" moduletype="UserCode" result="Failed" duration="3.1m" type="test module" rid="c25ee6d7c0c1267">
+          <detail/>
+          <item time="00:01.078" level="Info" category="INfo">
+            <message>
+              keywordscripts/TST1009_Configuredatapointsforadevice.xlsx
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\driver\TestCaseDriver.cs" codeline="95"/>
+          </item>
+          <item time="00:15.734" level="Info" category="Info">
+            <message>
+              1   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="00:39.250" level="Info" category="Info">
+            <message>
+              2 NformLogin  Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="00:39.500" level="Info" category="Info">
+            <message>
+              3 OK Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:39.625" level="Info" category="Info">
+            <message>
+              4 60  Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:39.734" level="Info" category="Info">
+            <message>
+              5   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:17.890" level="Info" category="Info">
+            <message>
+              6 Add_Device  Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:17.953" level="Info" category="Info">
+            <message>
+              7   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:22.968" level="Info" category="Info">
+            <message>
+              8 5  Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:23.906" level="Info" category="Info">
+            <message>
+              9 Navigate Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:25.453" level="Info" category="Info">
+            <message>
+              10 Device_tree ClickItem Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:31.015" level="Info" category="Info">
+            <message>
+              11 Parametrics Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:48.578" level="Failure" category="Validation">
+            <message>
+              Objects are not equal (actual='False', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="612"/>
+          </item>
+          <item time="02:48.796" level="Error" category="Error">
+            <message>
+              Objects are not equal (actual='False', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="76"/>
+          </item>
+          <item time="02:48.921" level="Info" category="Info" errimg="NformTester_20121205_141649_ffd8309a_trace.jpg" errthumb="NformTester_20121205_141649_ffd8309a_trace_thumb.jpg">
+            <message>
+              12 Parametrics_table VerifyContains Failure
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:06.031" level="Info" category="Error" errimg="NformTester_20121205_141649_c1618238_trace.jpg" errthumb="NformTester_20121205_141649_c1618238_trace_thumb.jpg">
+            <message>
+              Action 'close' failed on element '{Form:LxViewerFrame}'.
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:06.609" level="Error" category="Module" errimg="NformTester_20121205_141649_14efc20f_trace.jpg" errthumb="NformTester_20121205_141649_14efc20f_trace_thumb.jpg">
+            <message>
+              The module has failed because one or more actions have failed.
+            </message>
+          </item>
+        </activity>
+      </activity>
+    </activity>
+  </activity>
+</report>

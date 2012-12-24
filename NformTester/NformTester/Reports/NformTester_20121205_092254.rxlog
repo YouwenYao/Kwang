@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="RanorexReport3.xsl"?><report>
+  <activity user="nformtest" host="NFORMTES-6FD309" rxversion="3.1.1.14266" osversion="Windows XP Service Pack 3 32bit" runtimeversion="4.0.30319.1" procarch="32bit" language="en-US" screenresolution="1024x768" timestamp="12/5/2012 9:22:53 AM" timeoutfactor="1" result="Failed" duration="0ms" type="root" rid="30c98e0eda07825a">
+    <detail>
+      Ranorex Testscript
+    </detail>
+    <activity testsuitename="NformTester" runconfigname="TestRun" runlabel="" maxchildren="80" result="Failed" duration="27.31s" type="test suite" rid="81b501893bb4300">
+      <params/>
+      <detail/>
+      <activity testcasename="TST1009_Configuredatapointsforadevice" testcaseid="ffde563332874e1a9a93fb7f636582fc" maxchildren="0" result="Failed" duration="26.84s" type="test case" rid="f8158ba6d643541">
+        <params/>
+        <detail/>
+        <activity modulename="TestCaseDriver" moduleid="78CE2FBF-D204-4698-98BF-68118D374E9F" instanceid="-1532886924" moduletype="UserCode" result="Failed" duration="26.63s" type="test module" rid="52a852fff15f964">
+          <detail/>
+          <errmsg>
+            'C:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\bin\Debug\keywordscripts/TST1009_Configuredatapointsforadevice.xlsx' could not be found. Check the spelling of the file name, and verify that the file location is correct.
+
+If you are trying to open the file from your list of most recently used files, make sure that the file has not been renamed, moved, or deleted.
+          </errmsg>
+          <item time="00:03.921" level="Info" category="INfo" errimg="NformTester_20121205_092254_5804190a_trace.jpg" errthumb="NformTester_20121205_092254_5804190a_trace_thumb.jpg">
+            <message>
+              keywordscripts/TST1009_Configuredatapointsforadevice.xlsx
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\driver\TestCaseDriver.cs" codeline="95"/>
+          </item>
+          <item time="00:28.015" level="Error" category="Module" errimg="NformTester_20121205_092254_26132778_trace.jpg" errthumb="NformTester_20121205_092254_26132778_trace_thumb.jpg">
+            <message>
+              'C:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\bin\Debug\keywordscripts/TST1009_Configuredatapointsforadevice.xlsx' could not be found. Check the spelling of the file name, and verify that the file location is correct.
+
+If you are trying to open the file from your list of most recently used files, make sure that the file has not been renamed, moved, or deleted.
+            </message>
+            <metainfo stacktrace="   at Excel.Workbooks.Open(String Filename, Object UpdateLinks, Object ReadOnly, Object Format, Object Password, Object WriteResPassword, Object IgnoreReadOnlyRecommended, Object Origin, Object Delimiter, Object Editable, Object Notify, Object Converter, Object AddToMru)
+   at NformTester.lib.LxXlsOper.open(String strPath) in c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxXlsOper.cs:line 54
+   at NformTester.lib.LxSetup.runApp() in c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxSetup.cs:line 116
+   at NformTester.driver.TestCaseDriver.Ranorex.Core.Testing.ITestModule.Run() in c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\driver\TestCaseDriver.cs:line 99
+   at Ranorex.Core.Testing.TestSuiteModule.RunInternal(DataContext parentDataContext)" codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxXlsOper.cs" codeline="54"/>
+          </item>
+        </activity>
+      </activity>
+    </activity>
+  </activity>
+</report>
