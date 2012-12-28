@@ -6,6 +6,8 @@
 
 # Ingore all temp files in obj
 /NformTester/NformTester/obj
+/NformTester/NformTester/obj/x86
+/NformTester/NformTester/obj/x86/Debug
 
 # Ingore temp file
 ResolveAssemblyReference.cache
