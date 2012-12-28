@@ -1,5 +1,6 @@
 # Ingore all files in Reports
 /NformTester/NformTest/Reports
+/NformTester/NformTest/NformTester.rxtst
 
 # Ingore all temp files in bin
 /NformTester/NformTester/bin

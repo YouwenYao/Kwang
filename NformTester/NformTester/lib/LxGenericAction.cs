@@ -304,6 +304,12 @@ namespace NformTester.lib
 				SendCommandToSimulator(item);
 				return true;
 			}
+			
+			if(item.m_Type == "C" && item.m_WindowName == "CopyDataToFile") 
+			{				
+				CopyDataToFile(item);
+				return true;
+			}
 					
 			if(item.m_Type.Substring(0,1) == ";")
 			{
@@ -540,6 +546,41 @@ namespace NformTester.lib
             System.Text.UTF8Encoding encoding = new System.Text.UTF8Encoding();
             return encoding.GetBytes(str);
         }
+		
+		//**********************************************************************
+		/// <summary>
+		/// Copy Copydata from Trends graph to one txt file.
+		/// </summary>
+		public static void CopyDataToFile(LxScriptItem item)
+		{
+			string strFilePath = item.getArgText();
+			IDataObject iData = Clipboard.GetDataObject();
+			if(iData.GetDataPresent(DataFormats.StringFormat))
+			{
+				string s_value = (string)iData.GetData(DataFormats.StringFormat);
+				Console.WriteLine("Clipboard is:" + s_value);
+				Write_text(@strFilePath, s_value);
+			}
+			else
+			{
+				Console.WriteLine("Clipboard can not convert to text string!");
+			}
+        }
+		
+		private static void Write_text(string file_path, string copydata)
+		{
+			if(System.IO.File.Exists(file_path))
+			{
+				System.IO.File.WriteAllText(file_path,copydata);
+			}
+			else
+			{
+				System.IO.StreamWriter sr;
+				sr = System.IO.File.CreateText(file_path);
+				sr.WriteLine(copydata);
+				sr.Close();
+			}
+		}
 		
 		//**********************************************************************
 		/// <summary>

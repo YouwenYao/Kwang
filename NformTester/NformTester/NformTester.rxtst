@@ -248,12 +248,48 @@
   <testconfigurations default="TestRun">
     <testconfiguration name="TestRun">
       <testcase id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
-      <testcase id="d871fe4e-457b-4ccd-a7d5-69b6727ced6a"/>
+      <testcase id="15542ef7-bf90-431d-8e26-f8eb1c05a42e"/>
     </testconfiguration>
   </testconfigurations>
   <references>
     <reference>
+      Ranorex.Core, Version=3
+    </reference>
+    <reference>
+      Ranorex.Plugin.Flex, Version=3
+    </reference>
+    <reference>
+      Ranorex.Plugin.Java, Version=3
+    </reference>
+    <reference>
+      Ranorex.Plugin.MozillaWeb, Version=3
+    </reference>
+    <reference>
+      Ranorex.Plugin.Msaa, Version=3
+    </reference>
+    <reference>
+      Ranorex.Plugin.Office, Version=3
+    </reference>
+    <reference>
+      Ranorex.Plugin.RawText, Version=3
+    </reference>
+    <reference>
+      Ranorex.Plugin.Web, Version=3
+    </reference>
+    <reference>
+      Ranorex.Plugin.Win32, Version=3
+    </reference>
+    <reference>
+      Ranorex.Plugin.WinForms, Version=3
+    </reference>
+    <reference>
+      Ranorex.Plugin.Wpf, Version=3
+    </reference>
+    <reference>
       SharpSnmpLib.dll
+    </reference>
+    <reference>
+      System
     </reference>
     <reference>
       Velocity_x86.dll
