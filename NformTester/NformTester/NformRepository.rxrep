@@ -434,6 +434,15 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
           <item name="TreeItemUPS_10_146_87_2" id="1e47e2cd-ebe9-4114-91c2-0ac9acc35e99" searchtimeout="30000ms" capname="treeitem" addcaps="treeitem,accessible,accessibletreeitem">
             <![CDATA[/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel1']/tree/tree/treeitem/treeitem[@accessiblename='UPS_10.146.87.2']]]>
           </item>
+          <item name="TreeItemDevice_Information" id="d5afbe4f-879a-4030-8654-d3bec9c0b1db" searchtimeout="30000ms" capname="treeitem" addcaps="treeitem,accessible,accessibletreeitem">
+            <![CDATA[/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxViewerRhsMgr']/tabpagelist[@controlname='m_devTabCtl']/tabpage[@controlname='m_devDataPage']/container[@controlname='m_devDataDisplay']/container[@controlname='m_dataSplitterCtl']/container[@controlname='panel1']/tree/tree/treeitem/treeitem[@accessiblename='Device Information']]]>
+          </item>
+          <item name="CellName_Row_0" id="44aeea8d-8585-42a9-a01e-ecbcd085c4d8" searchtimeout="30000ms" capname="cell" addcaps="cell,accessible">
+            <![CDATA[/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxViewerRhsMgr']/tabpagelist[@controlname='m_devTabCtl']/tabpage[@controlname='m_devDataPage']/container[@controlname='m_devDataDisplay']/container[@controlname='m_dataSplitterCtl']/container[@controlname='panel2']/table/row[@accessiblename='Row 0']/cell[@accessiblename='Name Row 0']]]>
+          </item>
+          <item name="CellNew_Row_0" id="b9d43e8c-76f2-41e9-8009-014cdf625e53" searchtimeout="30000ms" capname="cell" addcaps="cell,accessible">
+            <![CDATA[/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxViewerRhsMgr']/tabpagelist[@controlname='m_devTabCtl']/tabpage[@controlname='m_devDataPage']/container[@controlname='m_devDataDisplay']/container[@controlname='m_dataSplitterCtl']/container[@controlname='panel2']/table/row[@accessiblename='Row 0']/cell[@accessiblename='New Row 0']]]>
+          </item>
           <basepath>
             <![CDATA[/form[@controlname='LxViewerFrame']]]>
           </basepath>
@@ -886,6 +895,15 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
           </item>
           <item name="Value" id="3bd62cb8-4d30-4da2-b712-b3516a631e52" searchtimeout="30000ms" capname="text" addcaps="text,accessible">
             <![CDATA[/form[@controlname='LxDataPointDlg']/container[@controlname='m_mainGroupBox']/container[@controlname='m_valueTbx']/text[@controlname='m_valueTbx-Ctl']/text[@accessiblename='Value:']]]>
+          </item>
+          <item name="TextM_nameTbx_Lbl" id="4a0e1bb8-b30d-4295-8b40-ffe136649098" searchtimeout="30000ms" capname="text" addcaps="text,control,nativewindow">
+            <![CDATA[/form[@controlname='LxDataPointDlg']/container[@controlname='m_mainGroupBox']/container[@controlname='m_nameTbx']/text[@controlname='m_nameTbx-Lbl']]]>
+          </item>
+          <item name="TextM_descriptionTbx_Lbl" id="3619964d-c75a-494d-a7d1-3c4cdd59d07c" searchtimeout="30000ms" capname="text" addcaps="text,control,nativewindow">
+            <![CDATA[/form[@controlname='LxDataPointDlg']/container[@controlname='m_mainGroupBox']/container[@controlname='m_descriptionTbx']/text[@controlname='m_descriptionTbx-Lbl']]]>
+          </item>
+          <item name="TextM_valueTbx_Lbl" id="b8b1db77-9976-48e8-bb0b-2251502d7965" searchtimeout="30000ms" capname="text" addcaps="text,control,nativewindow">
+            <![CDATA[/form[@controlname='LxDataPointDlg']/container[@controlname='m_mainGroupBox']/container[@controlname='m_valueTbx']/text[@controlname='m_valueTbx-Lbl']]]>
           </item>
           <basepath>
             <![CDATA[/form[@controlname='LxDataPointDlg']]]>

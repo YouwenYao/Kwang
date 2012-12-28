@@ -1004,6 +1004,9 @@ namespace NformTester
             RepoItemInfo _todateInfo;
             RepoItemInfo _refresh_trends_durationInfo;
             RepoItemInfo _treeitemups_10_146_87_2Info;
+            RepoItemInfo _treeitemdevice_informationInfo;
+            RepoItemInfo _cellname_row_0Info;
+            RepoItemInfo _cellnew_row_0Info;
 
             /// <summary>
             /// Creates a new FormMain  folder.
@@ -1129,6 +1132,9 @@ namespace NformTester
                 _todateInfo = new RepoItemInfo(this, "ToDate", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxViewerRhsMgr']/tabpagelist[@controlname='m_devTabCtl']/tabpage[@controlname='m_devTrendsPage']/container[@controlname='m_devTrendsDisplay']/container/container[@controlname='m_durationGrpBx']/container[@controlname='m_toGrpBx']/datetime[@controlname='m_toDateDtp']", 30000, null, "384da461-334f-42a9-8722-e66c1a8d1588");
                 _refresh_trends_durationInfo = new RepoItemInfo(this, "Refresh_trends_duration", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxViewerRhsMgr']/tabpagelist[@controlname='m_devTabCtl']/tabpage[@controlname='m_devTrendsPage']/container[@controlname='m_devTrendsDisplay']/container/container[@controlname='m_durationGrpBx']/button[@controlname='m_refreshBtn']", 30000, null, "28cef319-4cc2-4aa8-9e50-26ce75ffc47d");
                 _treeitemups_10_146_87_2Info = new RepoItemInfo(this, "TreeItemUPS_10_146_87_2", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel1']/tree/tree/treeitem/treeitem[@accessiblename='UPS_10.146.87.2']", 30000, null, "1e47e2cd-ebe9-4114-91c2-0ac9acc35e99");
+                _treeitemdevice_informationInfo = new RepoItemInfo(this, "TreeItemDevice_Information", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxViewerRhsMgr']/tabpagelist[@controlname='m_devTabCtl']/tabpage[@controlname='m_devDataPage']/container[@controlname='m_devDataDisplay']/container[@controlname='m_dataSplitterCtl']/container[@controlname='panel1']/tree/tree/treeitem/treeitem[@accessiblename='Device Information']", 30000, null, "d5afbe4f-879a-4030-8654-d3bec9c0b1db");
+                _cellname_row_0Info = new RepoItemInfo(this, "CellName_Row_0", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxViewerRhsMgr']/tabpagelist[@controlname='m_devTabCtl']/tabpage[@controlname='m_devDataPage']/container[@controlname='m_devDataDisplay']/container[@controlname='m_dataSplitterCtl']/container[@controlname='panel2']/table/row[@accessiblename='Row 0']/cell[@accessiblename='Name Row 0']", 30000, null, "44aeea8d-8585-42a9-a01e-ecbcd085c4d8");
+                _cellnew_row_0Info = new RepoItemInfo(this, "CellNew_Row_0", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxViewerRhsMgr']/tabpagelist[@controlname='m_devTabCtl']/tabpage[@controlname='m_devDataPage']/container[@controlname='m_devDataDisplay']/container[@controlname='m_dataSplitterCtl']/container[@controlname='panel2']/table/row[@accessiblename='Row 0']/cell[@accessiblename='New Row 0']", 30000, null, "b9d43e8c-76f2-41e9-8009-014cdf625e53");
             }
 
             /// <summary>
@@ -3960,6 +3966,78 @@ namespace NformTester
                 get
                 {
                     return _treeitemups_10_146_87_2Info;
+                }
+            }
+
+            /// <summary>
+            /// The TreeItemDevice_Information item.
+            /// </summary>
+            [RepositoryItem("d5afbe4f-879a-4030-8654-d3bec9c0b1db")]
+            public virtual Ranorex.TreeItem TreeItemDevice_Information
+            {
+                get
+                {
+                    return _treeitemdevice_informationInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TreeItemDevice_Information item info.
+            /// </summary>
+            [RepositoryItemInfo("d5afbe4f-879a-4030-8654-d3bec9c0b1db")]
+            public virtual RepoItemInfo TreeItemDevice_InformationInfo
+            {
+                get
+                {
+                    return _treeitemdevice_informationInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CellName_Row_0 item.
+            /// </summary>
+            [RepositoryItem("44aeea8d-8585-42a9-a01e-ecbcd085c4d8")]
+            public virtual Ranorex.Cell CellName_Row_0
+            {
+                get
+                {
+                    return _cellname_row_0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellName_Row_0 item info.
+            /// </summary>
+            [RepositoryItemInfo("44aeea8d-8585-42a9-a01e-ecbcd085c4d8")]
+            public virtual RepoItemInfo CellName_Row_0Info
+            {
+                get
+                {
+                    return _cellname_row_0Info;
+                }
+            }
+
+            /// <summary>
+            /// The CellNew_Row_0 item.
+            /// </summary>
+            [RepositoryItem("b9d43e8c-76f2-41e9-8009-014cdf625e53")]
+            public virtual Ranorex.Cell CellNew_Row_0
+            {
+                get
+                {
+                    return _cellnew_row_0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellNew_Row_0 item info.
+            /// </summary>
+            [RepositoryItemInfo("b9d43e8c-76f2-41e9-8009-014cdf625e53")]
+            public virtual RepoItemInfo CellNew_Row_0Info
+            {
+                get
+                {
+                    return _cellnew_row_0Info;
                 }
             }
         }
@@ -6983,6 +7061,9 @@ namespace NformTester
             RepoItemInfo _descriptionInfo;
             RepoItemInfo _nameInfo;
             RepoItemInfo _valueInfo;
+            RepoItemInfo _textm_nametbx_lblInfo;
+            RepoItemInfo _textm_descriptiontbx_lblInfo;
+            RepoItemInfo _textm_valuetbx_lblInfo;
 
             /// <summary>
             /// Creates a new FormData_Point_Details  folder.
@@ -6995,6 +7076,9 @@ namespace NformTester
                 _descriptionInfo = new RepoItemInfo(this, "Description", "container[@controlname='m_mainGroupBox']/container[@controlname='m_descriptionTbx']/text[@controlname='m_descriptionTbx-Ctl']/text[@accessiblename='Description:']", 30000, null, "c0c34b3a-5a04-4c18-a9fc-ae47e99eb3cc");
                 _nameInfo = new RepoItemInfo(this, "Name", "container[@controlname='m_mainGroupBox']/container[@controlname='m_nameTbx']/text[@controlname='m_nameTbx-Ctl']/text[@accessiblename='Name:']", 30000, null, "768e9aa6-d004-415a-bfb4-07b1bf7a5d8a");
                 _valueInfo = new RepoItemInfo(this, "Value", "container[@controlname='m_mainGroupBox']/container[@controlname='m_valueTbx']/text[@controlname='m_valueTbx-Ctl']/text[@accessiblename='Value:']", 30000, null, "3bd62cb8-4d30-4da2-b712-b3516a631e52");
+                _textm_nametbx_lblInfo = new RepoItemInfo(this, "TextM_nameTbx_Lbl", "container[@controlname='m_mainGroupBox']/container[@controlname='m_nameTbx']/text[@controlname='m_nameTbx-Lbl']", 30000, null, "4a0e1bb8-b30d-4295-8b40-ffe136649098");
+                _textm_descriptiontbx_lblInfo = new RepoItemInfo(this, "TextM_descriptionTbx_Lbl", "container[@controlname='m_mainGroupBox']/container[@controlname='m_descriptionTbx']/text[@controlname='m_descriptionTbx-Lbl']", 30000, null, "3619964d-c75a-494d-a7d1-3c4cdd59d07c");
+                _textm_valuetbx_lblInfo = new RepoItemInfo(this, "TextM_valueTbx_Lbl", "container[@controlname='m_mainGroupBox']/container[@controlname='m_valueTbx']/text[@controlname='m_valueTbx-Lbl']", 30000, null, "b8b1db77-9976-48e8-bb0b-2251502d7965");
             }
 
             /// <summary>
@@ -7114,6 +7198,78 @@ namespace NformTester
                 get
                 {
                     return _valueInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TextM_nameTbx_Lbl item.
+            /// </summary>
+            [RepositoryItem("4a0e1bb8-b30d-4295-8b40-ffe136649098")]
+            public virtual Ranorex.Text TextM_nameTbx_Lbl
+            {
+                get
+                {
+                    return _textm_nametbx_lblInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TextM_nameTbx_Lbl item info.
+            /// </summary>
+            [RepositoryItemInfo("4a0e1bb8-b30d-4295-8b40-ffe136649098")]
+            public virtual RepoItemInfo TextM_nameTbx_LblInfo
+            {
+                get
+                {
+                    return _textm_nametbx_lblInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TextM_descriptionTbx_Lbl item.
+            /// </summary>
+            [RepositoryItem("3619964d-c75a-494d-a7d1-3c4cdd59d07c")]
+            public virtual Ranorex.Text TextM_descriptionTbx_Lbl
+            {
+                get
+                {
+                    return _textm_descriptiontbx_lblInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TextM_descriptionTbx_Lbl item info.
+            /// </summary>
+            [RepositoryItemInfo("3619964d-c75a-494d-a7d1-3c4cdd59d07c")]
+            public virtual RepoItemInfo TextM_descriptionTbx_LblInfo
+            {
+                get
+                {
+                    return _textm_descriptiontbx_lblInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TextM_valueTbx_Lbl item.
+            /// </summary>
+            [RepositoryItem("b8b1db77-9976-48e8-bb0b-2251502d7965")]
+            public virtual Ranorex.Text TextM_valueTbx_Lbl
+            {
+                get
+                {
+                    return _textm_valuetbx_lblInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TextM_valueTbx_Lbl item info.
+            /// </summary>
+            [RepositoryItemInfo("b8b1db77-9976-48e8-bb0b-2251502d7965")]
+            public virtual RepoItemInfo TextM_valueTbx_LblInfo
+            {
+                get
+                {
+                    return _textm_valuetbx_lblInfo;
                 }
             }
         }

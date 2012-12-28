@@ -1,8 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <projectusersettings>
   <changestatecache>
+<<<<<<< HEAD
     <codegenfilechangeinfo fileitemid="cd2e6476-08de-4490-bccc-a5ee732b8f1b" changehash="18446744072606170305" lastcodegentimestamp="130011338653075680" filelength="514919">
       <codegenfilechangeinfo fileitemid="be55ff5e-522d-4087-a441-30853af41aaa" changehash="2034371435" lastcodegentimestamp="130011338653075680" filelength="1412288"/>
+=======
+    <codegenfilechangeinfo fileitemid="cd2e6476-08de-4490-bccc-a5ee732b8f1b" changehash="1041630446" lastcodegentimestamp="129993730045312500" filelength="518066">
+      <codegenfilechangeinfo fileitemid="be55ff5e-522d-4087-a441-30853af41aaa" changehash="18446744072761639692" lastcodegentimestamp="129993730045312500" filelength="1419987"/>
+>>>>>>> dc41a04627fe8096576e27255b0694591d9a2efd
     </codegenfilechangeinfo>
   </changestatecache>
 </projectusersettings>
