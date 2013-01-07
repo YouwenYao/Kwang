@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="RanorexReport3.xsl"?><report>
+  <activity user="nformtest" host="NFORMTES-6FD309" rxversion="3.1.1.14266" osversion="Windows XP Service Pack 3 32bit" runtimeversion="4.0.30319.1" procarch="32bit" language="en-US" screenresolution="1024x768" timestamp="2012-12-25 4:39:50 PM" timeoutfactor="1" result="Failed" duration="0ms" type="root" rid="31b7f17beb38cdc">
+    <detail>
+      Ranorex Testscript
+    </detail>
+    <activity testsuitename="NformTester" runconfigname="TestRun" runlabel="" maxchildren="82" result="Failed" duration="2.7m" type="test suite" rid="c23915ad39e4681">
+      <params/>
+      <detail/>
+      <activity testcasename="TST997_UerAccountProperties" testcaseid="3c901840ee1045a0b3ee53115919682a" maxchildren="0" result="Failed" duration="2.7m" type="test case" rid="a1ab40f86cea40d">
+        <params/>
+        <detail/>
+        <activity modulename="TestCaseDriver" moduleid="78CE2FBF-D204-4698-98BF-68118D374E9F" instanceid="1086044672" moduletype="UserCode" result="Failed" duration="2.7m" type="test module" rid="13e60389e32d5db5">
+          <detail/>
+          <errmsg>
+            Input string was not in a correct format.
+          </errmsg>
+          <item time="00:01.859" level="Info" category="INfo">
+            <message>
+              keywordscripts/TST997_UerAccountProperties.xlsx
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\driver\TestCaseDriver.cs" codeline="95"/>
+          </item>
+          <item time="00:14.062" level="Info" category="Info">
+            <message>
+              1   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="00:38.046" level="Info" category="Info">
+            <message>
+              2 NformLogin  Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:38.765" level="Info" category="Info">
+            <message>
+              3 60  Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:38.843" level="Info" category="Info">
+            <message>
+              3   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:39.859" level="Info" category="Info">
+            <message>
+              4 Configure Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:40.671" level="Info" category="Info">
+            <message>
+              5 Users_and_Groups Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:42.546" level="Info" category="Info">
+            <message>
+              6 UsersAdd Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:44.406" level="Info" category="Info">
+            <message>
+              7 Name SetTextValue Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:45.609" level="Info" category="Info">
+            <message>
+              8 Fullname SetTextValue Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:46.796" level="Info" category="Info">
+            <message>
+              9 Description SetTextValue Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:47.781" level="Info" category="Info">
+            <message>
+              10 Password SetTextValue Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:48.750" level="Info" category="Info">
+            <message>
+              11 ConfirmPassword SetTextValue Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:51.281" level="Info" category="Info">
+            <message>
+              12 EmailAddrPri SetTextValue Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:53.828" level="Info" category="Info">
+            <message>
+              13 EmailAddrAlt SetTextValue Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:54.484" level="Info" category="Info">
+            <message>
+              14 EmailAddrSms SetTextValue Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:55.140" level="Info" category="Info">
+            <message>
+              15 Phone SetTextValue Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:56.656" level="Info" category="Info">
+            <message>
+              16 Mobile SetTextValue Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:56.875" level="Info" category="Info">
+            <message>
+              17 GroupCombo Select Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:57.031" level="Info" category="Info">
+            <message>
+              18 NavViewCombo Select Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:57.375" level="Info" category="Info">
+            <message>
+              19 User_mustChgPswd Clear Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:57.578" level="Info" category="Info">
+            <message>
+              20 User_cannotChgPswd Clear Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:57.765" level="Info" category="Info">
+            <message>
+              21 Account_is_disabled Clear Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:57.968" level="Info" category="Info">
+            <message>
+              22 User_cannotChgAlerts Clear Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:58.156" level="Info" category="Info">
+            <message>
+              23 AutoLogout Clear Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:58.984" level="Info" category="Info">
+            <message>
+              24 OK Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:59.125" level="Info" category="Info">
+            <message>
+              25   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:00.015" level="Info" category="Info">
+            <message>
+              26 Application Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:00.703" level="Info" category="Info">
+            <message>
+              27 Login_As Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:33.812" level="Info" category="Info">
+            <message>
+              28 NformLogin  Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:34.500" level="Info" category="Info">
+            <message>
+              29 Configure Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:35.218" level="Info" category="Info">
+            <message>
+              30 Users_and_Groups Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:36.421" level="Info" category="Info">
+            <message>
+              31 UsersList ClickItem Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:37.156" level="Info" category="Info">
+            <message>
+              32 UsersDelete Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:39.921" level="Info" category="Info" errimg="NformTester_20121225_163950_5564a3e3_trace.jpg" errthumb="NformTester_20121225_163950_5564a3e3_trace_thumb.jpg">
+            <message>
+              33 Close Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:41.203" level="Error" category="Error" errimg="NformTester_20121225_163950_f636f306_trace.jpg" errthumb="NformTester_20121225_163950_f636f306_trace_thumb.jpg">
+            <message>
+              Index and length must refer to a location within the string.<br/>Parameter name: length
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="76"/>
+          </item>
+          <item time="02:41.562" level="Error" category="Module" errimg="NformTester_20121225_163950_35eb1953_trace.jpg" errthumb="NformTester_20121225_163950_35eb1953_trace_thumb.jpg">
+            <message>
+              Input string was not in a correct format.
+            </message>
+            <metainfo stacktrace="   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)&#13;&#10;   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)&#13;&#10;   at System.Convert.ToInt32(String value)&#13;&#10;   at NformTester.lib.LxGenericAction.performScripts(ArrayList stepList) in c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs:line 113&#13;&#10;   at NformTester.driver.TestCaseDriver.Ranorex.Core.Testing.ITestModule.Run() in c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\driver\TestCaseDriver.cs:line 105&#13;&#10;   at Ranorex.Core.Testing.TestSuiteModule.RunInternal(DataContext parentDataContext)" codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="113"/>
+          </item>
+        </activity>
+      </activity>
+    </activity>
+  </activity>
+</report>

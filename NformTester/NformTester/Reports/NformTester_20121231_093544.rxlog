@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="RanorexReport3.xsl"?><report>
+  <activity user="nformtest" host="NFORMTES-6FD309" rxversion="3.1.1.14266" osversion="Windows XP Service Pack 3 32bit" runtimeversion="4.0.30319.1" procarch="32bit" language="en-US" screenresolution="1024x768" timestamp="2012-12-31 9:35:44 AM" timeoutfactor="1" result="Success" duration="0ms" type="root" rid="139047d8a62fc38">
+    <detail>
+      Ranorex Testscript
+    </detail>
+    <activity testsuitename="NformTester" runconfigname="TestRun" runlabel="" maxchildren="83" result="Success" duration="4m" type="test suite" rid="3bf3761a6f105fa">
+      <params/>
+      <detail/>
+      <activity testcasename="TST958_AlarmAndEventManagement" testcaseid="4718e4c1f61847d4bc737a043f250e59" maxchildren="0" result="Success" duration="4m" type="test case" rid="1ff0385b085fd8aa">
+        <params/>
+        <detail/>
+        <activity modulename="TestCaseDriver" moduleid="78CE2FBF-D204-4698-98BF-68118D374E9F" instanceid="-767604397" moduletype="UserCode" result="Success" duration="4m" type="test module" rid="15c6d93f106991f4">
+          <detail/>
+          <item time="00:01.890" level="Info" category="INfo">
+            <message>
+              keywordscripts/TST958_AlarmAndEventManagement.xlsx
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\driver\TestCaseDriver.cs" codeline="95"/>
+          </item>
+          <item time="00:16.843" level="Info" category="Info">
+            <message>
+              1   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="00:44.156" level="Info" category="Info">
+            <message>
+              2 NformLogin  Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:44.640" level="Info" category="Info">
+            <message>
+              3 60  Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:44.750" level="Info" category="Info">
+            <message>
+              4   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:07.796" level="Info" category="Info">
+            <message>
+              5 Add_Device  Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:07.843" level="Info" category="Info">
+            <message>
+              6   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:08.703" level="Info" category="Info">
+            <message>
+              7 Navigate Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:09.453" level="Info" category="Info">
+            <message>
+              8 Alarms Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:10.359" level="Info" category="Info">
+            <message>
+              9 All_alarms_table Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:10.828" level="Info" category="Info">
+            <message>
+              10 All_alarms_table InputKeys Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:11.687" level="Info" category="Info">
+            <message>
+              11 Close_alarms Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:13.796" level="Info" category="Info">
+            <message>
+              12 2  Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:13.843" level="Info" category="Info">
+            <message>
+              13   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:14.062" level="Info" category="Info">
+            <message>
+              14   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:24.140" level="Info" category="Info">
+            <message>
+              15 10  Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:25.000" level="Info" category="Info">
+            <message>
+              16 CellSource_Row_0 Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:28.046" level="Success" category="Validation">
+            <message>
+              Element for item 'Web' does exist.
+            </message>
+            <metainfo type="repoitem" path="form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxViewerRhsMgr']/tabpagelist[@controlname='m_devTabCtl']/tabpage[@accessiblename='Web']" fullname="NformRepository.FormMain.Web" id="54be3e8647804b26bb2b5a9a63f18a3f" timeout="60000" codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="312"/>
+          </item>
+          <item time="02:28.140" level="Info" category="Info">
+            <message>
+              17 Web Exists Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:29.015" level="Info" category="Info">
+            <message>
+              18 Alarms Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:29.937" level="Info" category="Info">
+            <message>
+              19 Details Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:33.843" level="Info" category="Info">
+            <message>
+              20 Close Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:34.578" level="Info" category="Info">
+            <message>
+              21 All_alarms_table Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:35.062" level="Info" category="Info">
+            <message>
+              22 All_alarms_table InputKeys Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:35.843" level="Info" category="Info">
+            <message>
+              23 Close_alarms Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:37.890" level="Info" category="Info">
+            <message>
+              24 2  Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:37.937" level="Info" category="Info">
+            <message>
+              25   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:38.031" level="Info" category="Info">
+            <message>
+              26   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:48.093" level="Info" category="Info">
+            <message>
+              27 10  Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:48.921" level="Info" category="Info">
+            <message>
+              28 Acknowledge Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:49.765" level="Info" category="Info">
+            <message>
+              29 Details Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:49.859" level="Info" category="Info">
+            <message>
+              30 Alarmstatus_Acknowledge VerifyProperty Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:50.812" level="Info" category="Info">
+            <message>
+              31 Close Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:51.328" level="Info" category="Info">
+            <message>
+              32 All_alarms_table InputKeys Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:54.140" level="Info" category="Info">
+            <message>
+              33 Close_alarms Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:54.187" level="Info" category="Info">
+            <message>
+              34   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:54.250" level="Info" category="Info">
+            <message>
+              35   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:54.312" level="Info" category="Info">
+            <message>
+              36   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:04.328" level="Info" category="Info">
+            <message>
+              37 10  Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:04.843" level="Info" category="Info">
+            <message>
+              38 All_alarms_table InputKeys Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:05.671" level="Info" category="Info">
+            <message>
+              39 Acknowledge Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:06.203" level="Info" category="Info">
+            <message>
+              40 All_alarms_table InputKeys Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:07.015" level="Info" category="Info">
+            <message>
+              41 Close_alarms Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:07.062" level="Info" category="Info">
+            <message>
+              42   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:07.109" level="Info" category="Info">
+            <message>
+              43   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:07.171" level="Info" category="Info">
+            <message>
+              44   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:07.234" level="Info" category="Info">
+            <message>
+              45   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:17.250" level="Info" category="Info">
+            <message>
+              46 10  Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:17.812" level="Info" category="Info">
+            <message>
+              47 All_alarms_table InputKeys Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:18.625" level="Info" category="Info">
+            <message>
+              48 Acknowledge Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:19.125" level="Info" category="Info">
+            <message>
+              49 All_alarms_table InputKeys Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:19.921" level="Info" category="Info">
+            <message>
+              50 Close_alarms Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:19.968" level="Info" category="Info">
+            <message>
+              51   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:20.015" level="Info" category="Info">
+            <message>
+              52   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:20.812" level="Info" category="Info">
+            <message>
+              53 Details Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:51.125" level="Error" category="Error">
+            <message>
+              Exception has been thrown by the target of an invocation.
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="76"/>
+          </item>
+          <item time="03:51.171" level="Info" category="Info">
+            <message>
+              54 Comment SetTextValue Failure
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+        </activity>
+      </activity>
+    </activity>
+  </activity>
+</report>

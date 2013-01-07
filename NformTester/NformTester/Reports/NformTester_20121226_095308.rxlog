@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="RanorexReport3.xsl"?><report>
+  <activity user="nformtest" host="NFORMTES-6FD309" rxversion="3.1.1.14266" osversion="Windows XP Service Pack 3 32bit" runtimeversion="4.0.30319.1" procarch="32bit" language="en-US" screenresolution="1024x768" timestamp="2012-12-26 9:53:08 AM" timeoutfactor="1" result="Success" duration="0ms" type="root" rid="723e61cfc4024bc">
+    <detail>
+      Ranorex Testscript
+    </detail>
+    <activity testsuitename="NformTester" runconfigname="TestRun" runlabel="" maxchildren="82" result="Success" duration="2.3m" type="test suite" rid="59f4121e0ffd50">
+      <params/>
+      <detail/>
+      <activity testcasename="TST997_UerAccountProperties" testcaseid="3c901840ee1045a0b3ee53115919682a" maxchildren="0" result="Success" duration="2.3m" type="test case" rid="1742f6cb97416000">
+        <params/>
+        <detail/>
+        <activity modulename="TestCaseDriver" moduleid="78CE2FBF-D204-4698-98BF-68118D374E9F" instanceid="1971313602" moduletype="UserCode" result="Success" duration="2.3m" type="test module" rid="e399608d07e5420">
+          <detail/>
+          <item time="00:00.828" level="Info" category="INfo">
+            <message>
+              keywordscripts/TST997_UerAccountProperties.xlsx
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\driver\TestCaseDriver.cs" codeline="95"/>
+          </item>
+          <item time="00:12.375" level="Info" category="Info">
+            <message>
+              1   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="00:36.328" level="Info" category="Info">
+            <message>
+              2 NformLogin  Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:36.406" level="Info" category="Info">
+            <message>
+              3 60  Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:36.468" level="Info" category="Info">
+            <message>
+              3   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="02:07.703" level="Error" category="Error">
+            <message>
+              Exception has been thrown by the target of an invocation.
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="76"/>
+          </item>
+          <item time="02:07.765" level="Info" category="Info">
+            <message>
+              4 Configure Click Failure
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+        </activity>
+      </activity>
+    </activity>
+  </activity>
+</report>

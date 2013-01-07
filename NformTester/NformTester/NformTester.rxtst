@@ -244,11 +244,20 @@
     <testcase name="TST983_UsersGroupManagement" id="d871fe4e-457b-4ccd-a7d5-69b6727ced6a">
       <testmodule name="TestCaseDriver" id="3b966bb4-bf3b-44e5-8675-b50cfe2c7c07" ref="78CE2FBF-D204-4698-98BF-68118D374E9F" type="UserCode"/>
     </testcase>
+    <testcase name="TST997_UerAccountProperties" id="3c901840-ee10-45a0-b3ee-53115919682a">
+      <testmodule name="TestCaseDriver" id="02b7d807-8289-440f-902f-fdc1e507f957" ref="78CE2FBF-D204-4698-98BF-68118D374E9F" type="UserCode"/>
+    </testcase>
+    <testcase name="TST958_AlarmAndEventManagement" id="4718e4c1-f618-47d4-bc73-7a043f250e59">
+      <testmodule name="TestCaseDriver" id="80882f87-5e5a-4e91-936f-981281225cb5" ref="78CE2FBF-D204-4698-98BF-68118D374E9F" type="UserCode"/>
+    </testcase>
+    <testcase name="TST1037_ExportAlarms" id="1cfc0ee1-40e3-43cc-b6d4-9fa1f87a392e">
+      <testmodule name="TestCaseDriver" id="d92d905c-13a0-45e5-8988-eaf2c2d1ef09" ref="78CE2FBF-D204-4698-98BF-68118D374E9F" type="UserCode"/>
+    </testcase>
   </content>
   <testconfigurations default="TestRun">
     <testconfiguration name="TestRun">
       <testcase id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
-      <testcase id="d871fe4e-457b-4ccd-a7d5-69b6727ced6a"/>
+      <testcase id="1cfc0ee1-40e3-43cc-b6d4-9fa1f87a392e"/>
     </testconfiguration>
   </testconfigurations>
   <references/>

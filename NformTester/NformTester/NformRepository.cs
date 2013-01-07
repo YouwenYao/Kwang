@@ -1007,6 +1007,8 @@ namespace NformTester
             RepoItemInfo _treeitemdevice_informationInfo;
             RepoItemInfo _cellname_row_0Info;
             RepoItemInfo _cellnew_row_0Info;
+            RepoItemInfo _cellsource_row_0Info;
+            RepoItemInfo _cellalarm_row_0Info;
 
             /// <summary>
             /// Creates a new FormMain  folder.
@@ -1135,6 +1137,8 @@ namespace NformTester
                 _treeitemdevice_informationInfo = new RepoItemInfo(this, "TreeItemDevice_Information", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxViewerRhsMgr']/tabpagelist[@controlname='m_devTabCtl']/tabpage[@controlname='m_devDataPage']/container[@controlname='m_devDataDisplay']/container[@controlname='m_dataSplitterCtl']/container[@controlname='panel1']/tree/tree/treeitem/treeitem[@accessiblename='Device Information']", 30000, null, "d5afbe4f-879a-4030-8654-d3bec9c0b1db");
                 _cellname_row_0Info = new RepoItemInfo(this, "CellName_Row_0", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxViewerRhsMgr']/tabpagelist[@controlname='m_devTabCtl']/tabpage[@controlname='m_devDataPage']/container[@controlname='m_devDataDisplay']/container[@controlname='m_dataSplitterCtl']/container[@controlname='panel2']/table/row[@accessiblename='Row 0']/cell[@accessiblename='Name Row 0']", 30000, null, "44aeea8d-8585-42a9-a01e-ecbcd085c4d8");
                 _cellnew_row_0Info = new RepoItemInfo(this, "CellNew_Row_0", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxViewerRhsMgr']/tabpagelist[@controlname='m_devTabCtl']/tabpage[@controlname='m_devDataPage']/container[@controlname='m_devDataDisplay']/container[@controlname='m_dataSplitterCtl']/container[@controlname='panel2']/table/row[@accessiblename='Row 0']/cell[@accessiblename='New Row 0']", 30000, null, "b9d43e8c-76f2-41e9-8009-014cdf625e53");
+                _cellsource_row_0Info = new RepoItemInfo(this, "CellSource_Row_0", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/table/row[@accessiblename='Row 0']/cell[@accessiblename='Source Row 0']", 30000, null, "6f92f659-c301-42ba-a715-424136713414");
+                _cellalarm_row_0Info = new RepoItemInfo(this, "CellAlarm_Row_0", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/table/row[@accessiblename='Row 0']/cell[@accessiblename='Alarm Row 0']", 30000, null, "342394db-4159-45ab-9b2a-727031c8ac35");
             }
 
             /// <summary>
@@ -4038,6 +4042,54 @@ namespace NformTester
                 get
                 {
                     return _cellnew_row_0Info;
+                }
+            }
+
+            /// <summary>
+            /// The CellSource_Row_0 item.
+            /// </summary>
+            [RepositoryItem("6f92f659-c301-42ba-a715-424136713414")]
+            public virtual Ranorex.Cell CellSource_Row_0
+            {
+                get
+                {
+                    return _cellsource_row_0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellSource_Row_0 item info.
+            /// </summary>
+            [RepositoryItemInfo("6f92f659-c301-42ba-a715-424136713414")]
+            public virtual RepoItemInfo CellSource_Row_0Info
+            {
+                get
+                {
+                    return _cellsource_row_0Info;
+                }
+            }
+
+            /// <summary>
+            /// The CellAlarm_Row_0 item.
+            /// </summary>
+            [RepositoryItem("342394db-4159-45ab-9b2a-727031c8ac35")]
+            public virtual Ranorex.Cell CellAlarm_Row_0
+            {
+                get
+                {
+                    return _cellalarm_row_0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellAlarm_Row_0 item info.
+            /// </summary>
+            [RepositoryItemInfo("342394db-4159-45ab-9b2a-727031c8ac35")]
+            public virtual RepoItemInfo CellAlarm_Row_0Info
+            {
+                get
+                {
+                    return _cellalarm_row_0Info;
                 }
             }
         }

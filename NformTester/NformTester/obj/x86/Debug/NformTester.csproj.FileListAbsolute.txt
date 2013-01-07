@@ -388,3 +388,6 @@ C:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\obj\x86
 C:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\obj\x86\Debug\NformTester.pdb
 C:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\bin\Debug\Keywordscripts\TST1009_Configuredatapointsforadevice.xlsx
 C:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\bin\Debug\Keywordscripts\TST983_UsersGroupManagement.xlsx
+C:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\bin\Debug\Keywordscripts\TST997_UerAccountProperties.xlsx
+C:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\bin\Debug\Keywordscripts\TST958_AlarmAndEventManagement.xlsx
+C:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\bin\Debug\Keywordscripts\TST1037_ExportAlarms.xlsx

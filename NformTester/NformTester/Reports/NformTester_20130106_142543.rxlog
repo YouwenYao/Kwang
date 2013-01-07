@@ -1,0 +1,1242 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="RanorexReport3.xsl"?><report>
+  <activity user="nformtest" host="NFORMTES-6FD309" rxversion="3.1.1.14266" osversion="Windows XP Service Pack 3 32bit" runtimeversion="4.0.30319.1" procarch="32bit" language="en-US" screenresolution="1024x768" timestamp="2013-01-06 2:25:42 PM" timeoutfactor="1" result="Success" duration="0ms" type="root" rid="d7512a7142d7f00">
+    <detail>
+      Ranorex Testscript
+    </detail>
+    <activity testsuitename="NformTester" runconfigname="TestRun" runlabel="" maxchildren="83" result="Success" duration="10.8m" type="test suite" rid="5d202c9b66fecbc">
+      <params/>
+      <detail/>
+      <activity testcasename="TestScripts" testcaseid="15542ef7bf90431d8e26f8eb1c05a42e" maxchildren="0" result="Success" duration="10.8m" type="test case" rid="171d31d6e566bae4">
+        <params/>
+        <detail/>
+        <activity modulename="TestCaseDriver" moduleid="78CE2FBF-D204-4698-98BF-68118D374E9F" instanceid="1665211568" moduletype="UserCode" result="Success" duration="10.7m" type="test module" rid="952eb6c1b38c17">
+          <detail/>
+          <item time="00:02.218" level="Info" category="INfo">
+            <message>
+              keywordscripts/TestScripts.xlsx
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\driver\TestCaseDriver.cs" codeline="95"/>
+          </item>
+          <item time="00:17.671" level="Info" category="Info">
+            <message>
+              1   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="00:46.718" level="Info" category="Info">
+            <message>
+              2 NformLogin  Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:47.234" level="Info" category="Info">
+            <message>
+              3 60  Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:47.390" level="Info" category="Info">
+            <message>
+              4   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:47.531" level="Info" category="Info">
+            <message>
+              5   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="01:47.593" level="Info" category="Info">
+            <message>
+              6   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:07.765" level="Info" category="Info">
+            <message>
+              7 Add_Device  Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:07.906" level="Info" category="Info">
+            <message>
+              8   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:08.703" level="Info" category="Info">
+            <message>
+              9 Configure Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:09.421" level="Info" category="Info">
+            <message>
+              10 Devices Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:09.531" level="Info" category="Info">
+            <message>
+              11 Export VerifyProperty Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:10.828" level="Info" category="Info">
+            <message>
+              12 Managed_device_table ClickCell Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:11.468" level="Info" category="Info">
+            <message>
+              13 Export Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:15.906" level="Info" category="Info">
+            <message>
+              14 File SetTextValue Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:15.984" level="Info" category="Info">
+            <message>
+              15 Comma VerifyProperty Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:16.843" level="Info" category="Info">
+            <message>
+              16 Comma Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:17.500" level="Info" category="Info">
+            <message>
+              17 Export Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:24.343" level="Success" category="Validation">
+            <message>
+              Element for item 'OK' does exist.
+            </message>
+            <metainfo type="repoitem" path="form[@title='Managed Devices' and @processname='NformViewer' and @class='#32770']/button[@text='确定' or @text='OK']" fullname="NformRepository.FormManaged_Devices_OK.OK" id="4a0b79f9699e44ac9398563d7b2e92b9" timeout="60000" codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="312"/>
+          </item>
+          <item time="03:24.437" level="Info" category="Info">
+            <message>
+              18 OK Exists Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:25.015" level="Info" category="Info">
+            <message>
+              19 OK Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:25.781" level="Info" category="Info">
+            <message>
+              20 Close Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:25.921" level="Info" category="Info">
+            <message>
+              21   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:35.703" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="03:35.859" level="Info" category="Info">
+            <message>
+              22   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:42.203" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="03:42.265" level="Info" category="Info">
+            <message>
+              23   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:49.500" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="03:49.578" level="Info" category="Info">
+            <message>
+              24   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="03:56.218" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="03:56.296" level="Info" category="Info">
+            <message>
+              25   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="04:02.593" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="04:02.640" level="Info" category="Info">
+            <message>
+              26   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="04:08.968" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="04:09.046" level="Info" category="Info">
+            <message>
+              27   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="04:15.453" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="04:15.531" level="Info" category="Info">
+            <message>
+              28   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="04:21.875" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="04:21.937" level="Info" category="Info">
+            <message>
+              29   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="04:28.203" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="04:28.328" level="Info" category="Info">
+            <message>
+              30   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="04:34.546" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="04:34.671" level="Info" category="Info">
+            <message>
+              31   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="04:40.937" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="04:41.062" level="Info" category="Info">
+            <message>
+              32   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="04:47.453" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="04:47.500" level="Info" category="Info">
+            <message>
+              33   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="04:53.796" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="04:53.890" level="Info" category="Info">
+            <message>
+              34   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:00.203" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="05:00.328" level="Info" category="Info">
+            <message>
+              35   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:00.390" level="Info" category="Info">
+            <message>
+              36   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:00.437" level="Info" category="Info">
+            <message>
+              37   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:00.515" level="Info" category="Info">
+            <message>
+              38   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:00.593" level="Info" category="Info">
+            <message>
+              39   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:01.421" level="Info" category="Info">
+            <message>
+              40 Configure Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:02.156" level="Info" category="Info">
+            <message>
+              41 Devices Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:02.859" level="Info" category="Info">
+            <message>
+              42 Managed_device_table InputKeys Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:03.515" level="Info" category="Info">
+            <message>
+              43 Export Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:09.046" level="Info" category="Info">
+            <message>
+              44 File SetTextValue Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:09.343" level="Info" category="Info">
+            <message>
+              45 Comma VerifyProperty Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:10.546" level="Info" category="Info">
+            <message>
+              46 Comma Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:11.156" level="Info" category="Info">
+            <message>
+              47 Export Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:14.187" level="Success" category="Validation">
+            <message>
+              Element for item 'OK' does exist.
+            </message>
+            <metainfo type="repoitem" path="form[@title='Managed Devices' and @processname='NformViewer' and @class='#32770']/button[@text='确定' or @text='OK']" fullname="NformRepository.FormManaged_Devices_OK.OK" id="4a0b79f9699e44ac9398563d7b2e92b9" timeout="60000" codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="312"/>
+          </item>
+          <item time="05:14.234" level="Info" category="Info">
+            <message>
+              48 OK Exists Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:14.781" level="Info" category="Info">
+            <message>
+              49 OK Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:15.500" level="Info" category="Info">
+            <message>
+              50 Close Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:15.546" level="Info" category="Info">
+            <message>
+              51   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:16.203" level="Info" category="Info">
+            <message>
+              52 Configure Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:16.906" level="Info" category="Info">
+            <message>
+              53 Devices Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:16.968" level="Info" category="Info">
+            <message>
+              54 Export VerifyProperty Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:17.906" level="Info" category="Info">
+            <message>
+              55 Managed_device_table ClickCell Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:18.546" level="Info" category="Info">
+            <message>
+              56 Export Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:23.734" level="Info" category="Info">
+            <message>
+              57 File SetTextValue Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:23.781" level="Info" category="Info">
+            <message>
+              58 Comma VerifyProperty Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:24.500" level="Info" category="Info">
+            <message>
+              59 Semicolon Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:25.171" level="Info" category="Info">
+            <message>
+              60 Export Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:28.250" level="Success" category="Validation">
+            <message>
+              Element for item 'OK' does exist.
+            </message>
+            <metainfo type="repoitem" path="form[@title='Managed Devices' and @processname='NformViewer' and @class='#32770']/button[@text='确定' or @text='OK']" fullname="NformRepository.FormManaged_Devices_OK.OK" id="4a0b79f9699e44ac9398563d7b2e92b9" timeout="60000" codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="312"/>
+          </item>
+          <item time="05:28.312" level="Info" category="Info">
+            <message>
+              61 OK Exists Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:28.859" level="Info" category="Info">
+            <message>
+              62 OK Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:29.546" level="Info" category="Info">
+            <message>
+              63 Close Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:29.625" level="Info" category="Info">
+            <message>
+              64   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:36.453" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="05:36.515" level="Info" category="Info">
+            <message>
+              65   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:42.812" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="05:42.906" level="Info" category="Info">
+            <message>
+              66   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:49.218" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="05:49.265" level="Info" category="Info">
+            <message>
+              67   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="05:55.593" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="05:55.671" level="Info" category="Info">
+            <message>
+              68   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="06:01.906" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="06:02.015" level="Info" category="Info">
+            <message>
+              69   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="06:08.359" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="06:08.453" level="Info" category="Info">
+            <message>
+              70   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="06:14.843" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="06:14.921" level="Info" category="Info">
+            <message>
+              71   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="06:21.218" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="06:21.296" level="Info" category="Info">
+            <message>
+              72   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="06:27.625" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="06:27.671" level="Info" category="Info">
+            <message>
+              73   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="06:33.953" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="06:34.000" level="Info" category="Info">
+            <message>
+              74   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="06:40.296" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="06:40.484" level="Info" category="Info">
+            <message>
+              75   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="06:46.781" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="06:46.843" level="Info" category="Info">
+            <message>
+              76   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="06:53.203" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="06:53.250" level="Info" category="Info">
+            <message>
+              77   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="06:59.578" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="06:59.640" level="Info" category="Info">
+            <message>
+              78   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="06:59.703" level="Info" category="Info">
+            <message>
+              79   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="07:00.375" level="Info" category="Info">
+            <message>
+              80 Configure Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="07:01.109" level="Info" category="Info">
+            <message>
+              81 Devices Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="07:01.156" level="Info" category="Info">
+            <message>
+              82 Export VerifyProperty Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="07:02.093" level="Info" category="Info">
+            <message>
+              83 Managed_device_table ClickCell Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="07:02.765" level="Info" category="Info">
+            <message>
+              84 Export Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="07:07.265" level="Info" category="Info">
+            <message>
+              85 File SetTextValue Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="07:07.312" level="Info" category="Info">
+            <message>
+              86 Semicolon VerifyProperty Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="07:08.031" level="Info" category="Info">
+            <message>
+              87 Tab Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="07:08.640" level="Info" category="Info">
+            <message>
+              88 Export Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="07:11.703" level="Success" category="Validation">
+            <message>
+              Element for item 'OK' does exist.
+            </message>
+            <metainfo type="repoitem" path="form[@title='Managed Devices' and @processname='NformViewer' and @class='#32770']/button[@text='确定' or @text='OK']" fullname="NformRepository.FormManaged_Devices_OK.OK" id="4a0b79f9699e44ac9398563d7b2e92b9" timeout="60000" codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="312"/>
+          </item>
+          <item time="07:11.750" level="Info" category="Info">
+            <message>
+              89 OK Exists Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="07:12.359" level="Info" category="Info">
+            <message>
+              90 OK Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="07:13.062" level="Info" category="Info">
+            <message>
+              91 Close Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="07:13.125" level="Info" category="Info">
+            <message>
+              92   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="07:19.453" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="07:19.500" level="Info" category="Info">
+            <message>
+              93   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="07:25.750" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="07:25.875" level="Info" category="Info">
+            <message>
+              94   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="07:32.203" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="07:32.250" level="Info" category="Info">
+            <message>
+              95   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="07:38.500" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="07:38.640" level="Info" category="Info">
+            <message>
+              96   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="07:44.984" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="07:45.062" level="Info" category="Info">
+            <message>
+              97   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="07:51.328" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="07:51.421" level="Info" category="Info">
+            <message>
+              98   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="07:57.703" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="07:57.796" level="Info" category="Info">
+            <message>
+              99   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="08:04.125" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="08:04.171" level="Info" category="Info">
+            <message>
+              100   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="08:10.437" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="08:10.531" level="Info" category="Info">
+            <message>
+              101   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="08:16.875" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="08:16.921" level="Info" category="Info">
+            <message>
+              102   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="08:23.203" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="08:23.218" level="Info" category="Info">
+            <message>
+              103   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="08:29.500" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="08:29.593" level="Info" category="Info">
+            <message>
+              104   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="08:35.953" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="08:36.015" level="Info" category="Info">
+            <message>
+              105   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="08:42.296" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="08:42.359" level="Info" category="Info">
+            <message>
+              106   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="08:42.406" level="Info" category="Info">
+            <message>
+              107   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="08:43.078" level="Info" category="Info">
+            <message>
+              108 Configure Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="08:43.796" level="Info" category="Info">
+            <message>
+              109 Devices Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="08:43.859" level="Info" category="Info">
+            <message>
+              110 Export VerifyProperty Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="08:44.812" level="Info" category="Info">
+            <message>
+              111 Managed_device_table ClickCell Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="08:45.484" level="Info" category="Info">
+            <message>
+              112 Export Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="08:50.203" level="Info" category="Info">
+            <message>
+              113 File SetTextValue Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="08:50.265" level="Info" category="Info">
+            <message>
+              114 Tab VerifyProperty Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="08:50.984" level="Info" category="Info">
+            <message>
+              115 Tilde Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="08:51.593" level="Info" category="Info">
+            <message>
+              116 Export Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="08:54.656" level="Success" category="Validation">
+            <message>
+              Element for item 'OK' does exist.
+            </message>
+            <metainfo type="repoitem" path="form[@title='Managed Devices' and @processname='NformViewer' and @class='#32770']/button[@text='确定' or @text='OK']" fullname="NformRepository.FormManaged_Devices_OK.OK" id="4a0b79f9699e44ac9398563d7b2e92b9" timeout="60000" codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="312"/>
+          </item>
+          <item time="08:54.703" level="Info" category="Info">
+            <message>
+              117 OK Exists Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="08:55.250" level="Info" category="Info">
+            <message>
+              118 OK Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="08:56.000" level="Info" category="Info">
+            <message>
+              119 Close Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="08:56.062" level="Info" category="Info">
+            <message>
+              120   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="09:02.359" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="09:02.453" level="Info" category="Info">
+            <message>
+              121   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="09:08.734" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="09:08.812" level="Info" category="Info">
+            <message>
+              122   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="09:15.046" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="09:15.171" level="Info" category="Info">
+            <message>
+              123   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="09:21.484" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="09:21.546" level="Info" category="Info">
+            <message>
+              124   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="09:27.890" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="09:27.937" level="Info" category="Info">
+            <message>
+              125   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="09:34.187" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="09:34.312" level="Info" category="Info">
+            <message>
+              126   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="09:40.640" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="09:40.687" level="Info" category="Info">
+            <message>
+              127   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="09:47.000" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="09:47.078" level="Info" category="Info">
+            <message>
+              128   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="09:53.359" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="09:53.421" level="Info" category="Info">
+            <message>
+              129   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="09:59.687" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="09:59.812" level="Info" category="Info">
+            <message>
+              130   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="10:06.078" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="10:06.203" level="Info" category="Info">
+            <message>
+              131   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="10:12.453" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="10:12.546" level="Info" category="Info">
+            <message>
+              132   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="10:18.921" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="10:18.953" level="Info" category="Info">
+            <message>
+              133   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="10:25.250" level="Success" category="Validation">
+            <message>
+              Objects are equal (actual='True', expected='True').
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxGenericAction.cs" codeline="561"/>
+          </item>
+          <item time="10:25.296" level="Info" category="Info">
+            <message>
+              134   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="10:25.406" level="Info" category="Info">
+            <message>
+              135   Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="10:27.437" level="Info" category="Info">
+            <message>
+              136 2  Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="10:28.093" level="Info" category="Info">
+            <message>
+              137 Configure Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="10:28.796" level="Info" category="Info">
+            <message>
+              138 Devices Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="10:29.375" level="Info" category="Info">
+            <message>
+              139 Managed_device_table InputKeys Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="10:30.125" level="Info" category="Info">
+            <message>
+              140 Delete Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="10:30.859" level="Info" category="Info">
+            <message>
+              141 Yes Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+          <item time="10:31.843" level="Info" category="Info">
+            <message>
+              142 Close Click Success
+            </message>
+            <metainfo codefile="c:\Documents and Settings\nformtest\Desktop\Alex\NformTester\NformTester\lib\LxLog.cs" codeline="62"/>
+          </item>
+        </activity>
+      </activity>
+    </activity>
+  </activity>
+</report>
