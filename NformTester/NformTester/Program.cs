@@ -34,6 +34,7 @@ namespace NformTester
         [STAThread]
         public static int Main(string[] args)
         {
+ 
         	if(!CheckDeviceAvailable())
         	{
         		DialogResult dr = MessageBox.Show("Do you want to continue? Click Ok button to continue.", "Warning" , MessageBoxButtons.YesNo,MessageBoxIcon.Warning,MessageBoxDefaultButton.Button2);
@@ -45,13 +46,17 @@ namespace NformTester
             
         	Keyboard.AbortKey = System.Windows.Forms.Keys.Pause;
             int error = 0;
+           
             try
             {
+ //               MessageBox.Show("TestSuiteRunner.Run");
                 error = TestSuiteRunner.Run(typeof(Program), Environment.CommandLine);
+            	
             }
             catch (Exception e)
             {
-                Report.Error("Unexpected exception occurred: " + e.ToString());
+               MessageBox.Show("Unexpected exception occurred:");
+            	Report.Error("Unexpected exception occurred: " + e.ToString());
                 error = -1;
             }
             return error;
@@ -270,5 +275,6 @@ namespace NformTester
           string result = confFile.GetString(GroupName, key, def);
           return result;
         }
+        
     }
 }

@@ -6,7 +6,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>NformTester</RootNamespace>
     <AssemblyName>NformTester</AssemblyName>
-    <RanorexVersion>3</RanorexVersion>
+    <RanorexVersion>4</RanorexVersion>
     <DocumentationFile>bin\Debug\NformTester.xml</DocumentationFile>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
@@ -15,8 +15,8 @@
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
-    <PlatformTarget>x86</PlatformTarget>
-    <RegisterForComInterop>False</RegisterForComInterop>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <RegisterForComInterop>True</RegisterForComInterop>
     <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
     <BaseAddress>4194304</BaseAddress>
     <FileAlignment>4096</FileAlignment>
@@ -40,61 +40,46 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
   <ItemGroup>
     <Reference Include="Ranorex.Core, Version=$(RanorexVersion)">
-      <id>2c24eb42-f169-4e49-b1b3-754d98ddda3b</id>
     </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb, Version=$(RanorexVersion)" />
     <Reference Include="Ranorex.Plugin.Flex, Version=$(RanorexVersion)">
-      <id>b4fa2ef9-66b6-4498-959a-3f3aa3e833ba</id>
     </Reference>
     <Reference Include="Ranorex.Plugin.Java, Version=$(RanorexVersion)">
-      <id>78cbcc83-58a0-473f-8354-cccbceca8c33</id>
     </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile, Version=$(RanorexVersion)" />
     <Reference Include="Ranorex.Plugin.MozillaWeb, Version=$(RanorexVersion)">
-      <id>8b51d8ab-b738-414a-9402-c3305fb67aac</id>
     </Reference>
     <Reference Include="Ranorex.Plugin.Msaa, Version=$(RanorexVersion)">
-      <id>14969df1-ce4a-4236-a01a-d62b6d012c7a</id>
     </Reference>
     <Reference Include="Ranorex.Plugin.Office, Version=$(RanorexVersion)">
-      <id>b240fdc4-6fc6-4053-a37f-779f00249dec</id>
     </Reference>
     <Reference Include="Ranorex.Plugin.RawText, Version=$(RanorexVersion)">
-      <id>5283bef8-6972-4098-aa64-b8a4c6cd2a2e</id>
     </Reference>
+    <Reference Include="Ranorex.Plugin.Sap, Version=$(RanorexVersion)" />
     <Reference Include="Ranorex.Plugin.Web, Version=$(RanorexVersion)">
-      <id>71800f31-3be3-49b9-ba20-8f3a9b748eac</id>
     </Reference>
     <Reference Include="Ranorex.Plugin.Win32, Version=$(RanorexVersion)">
-      <id>dbe534d0-ed60-4e64-b994-a1b189816485</id>
     </Reference>
     <Reference Include="Ranorex.Plugin.WinForms, Version=$(RanorexVersion)">
-      <id>e37188fd-351e-46f0-b76f-12caeb8e1785</id>
     </Reference>
     <Reference Include="Ranorex.Plugin.Wpf, Version=$(RanorexVersion)">
-      <id>3b9d33ea-609d-47a1-aac1-f57e8deb24a7</id>
     </Reference>
     <Reference Include="SharpSnmpLib">
       <HintPath>lib\SharpSnmpLib.dll</HintPath>
-      <id>2b92a8e9-d3e6-4252-846b-7f036eb1500d</id>
     </Reference>
     <Reference Include="System">
-      <id>f339e608-d9ba-4816-9295-b46a243fbf89</id>
       <Private>False</Private>
     </Reference>
     <Reference Include="System.Data">
-      <id>b15974b1-f744-471f-98d7-d13bc81d85cd</id>
     </Reference>
     <Reference Include="System.Drawing">
-      <id>b563d85f-100d-4e26-b646-85d5eb308380</id>
     </Reference>
     <Reference Include="System.Windows.Forms">
-      <id>9ca90f8b-3e20-4394-893c-604922c1bb1c</id>
     </Reference>
     <Reference Include="System.Xml">
-      <id>9b3d8b62-76e8-4c0b-ad58-5026e73977cc</id>
     </Reference>
-    <Reference Include="Velocity_x86">
-      <HintPath>lib\Velocity_x86.dll</HintPath>
-      <id>394a13d0-2695-4f1a-b81e-e452d3d38533</id>
+    <Reference Include="Velocity_x64">
+      <HintPath>lib\Velocity_x64.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -509,9 +494,6 @@
     <Folder Include="mds">
       <id>8829cb64-4a9f-47b8-8ea5-f5d8eaefe72b</id>
     </Folder>
-    <Folder Include="Reports">
-      <ReportsDir>true</ReportsDir>
-      <id>5bad65ff-54b4-4b55-b5fa-e13e6e3e4a33</id>
-    </Folder>
   </ItemGroup>
+  <Import Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" />
 </Project>
