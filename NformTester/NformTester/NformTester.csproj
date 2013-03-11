@@ -6,7 +6,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>NformTester</RootNamespace>
     <AssemblyName>NformTester</AssemblyName>
-    <RanorexVersion>3</RanorexVersion>
+    <RanorexVersion>4</RanorexVersion>
     <DocumentationFile>bin\Debug\NformTester.xml</DocumentationFile>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
@@ -42,12 +42,14 @@
     <Reference Include="Ranorex.Core, Version=$(RanorexVersion)">
       <id>2c24eb42-f169-4e49-b1b3-754d98ddda3b</id>
     </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb, Version=$(RanorexVersion)" />
     <Reference Include="Ranorex.Plugin.Flex, Version=$(RanorexVersion)">
       <id>b4fa2ef9-66b6-4498-959a-3f3aa3e833ba</id>
     </Reference>
     <Reference Include="Ranorex.Plugin.Java, Version=$(RanorexVersion)">
       <id>78cbcc83-58a0-473f-8354-cccbceca8c33</id>
     </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile, Version=$(RanorexVersion)" />
     <Reference Include="Ranorex.Plugin.MozillaWeb, Version=$(RanorexVersion)">
       <id>8b51d8ab-b738-414a-9402-c3305fb67aac</id>
     </Reference>
@@ -60,6 +62,7 @@
     <Reference Include="Ranorex.Plugin.RawText, Version=$(RanorexVersion)">
       <id>5283bef8-6972-4098-aa64-b8a4c6cd2a2e</id>
     </Reference>
+    <Reference Include="Ranorex.Plugin.Sap, Version=$(RanorexVersion)" />
     <Reference Include="Ranorex.Plugin.Web, Version=$(RanorexVersion)">
       <id>71800f31-3be3-49b9-ba20-8f3a9b748eac</id>
     </Reference>
@@ -167,6 +170,10 @@
     </None>
     <None Include="keywordscripts\TST1033_ExportLoggedData.xlsx">
       <id>dd26b6a3-67a0-4cde-8d7b-c1c5f05285c9</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST1037_ExportAlarms.xlsx">
+      <id>94f538a5-fb43-4d34-bf7f-dec298ab5331</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="keywordscripts\TST1042_DataLogging.xlsx">
@@ -433,6 +440,10 @@
       <id>e486fec9-f79c-482d-9c4e-204a8a2885e4</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST958_AlarmAndEventManagement.xlsx">
+      <id>6c03716c-143e-4f6f-87ee-d92c164edce5</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST962_AddDevice.xlsx">
       <id>6aaa442e-9946-43f9-8f3c-163758fd39c9</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -485,6 +496,10 @@
       <id>8bbca685-98dc-428c-a999-2432f866dce1</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST997_UerAccountProperties.xlsx">
+      <id>8201be43-29e7-4922-87c7-bebc408a2864</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="NformRepository.rxrep">
       <id>cd2e6476-08de-4490-bccc-a5ee732b8f1b</id>
       <repoid>3e0c5f65-9093-49fd-9a9c-13a3b13623fb</repoid>
@@ -509,9 +524,6 @@
     <Folder Include="mds">
       <id>8829cb64-4a9f-47b8-8ea5-f5d8eaefe72b</id>
     </Folder>
-    <Folder Include="Reports">
-      <ReportsDir>true</ReportsDir>
-      <id>5bad65ff-54b4-4b55-b5fa-e13e6e3e4a33</id>
-    </Folder>
   </ItemGroup>
+  <Import Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" />
 </Project>
