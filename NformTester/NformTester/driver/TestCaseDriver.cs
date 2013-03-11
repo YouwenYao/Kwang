@@ -53,16 +53,21 @@ namespace NformTester.driver
         /// that will in turn invoke this method.</remarks>
         void ITestModule.Run()
         {           
-        	           
+        	
+        	
+        	
             //Get database type from Device.ini, 
             //DbType=1,bundled database;
             //DbType=2,SQL Server database;
  
             int DbType = 1;
+            MessageBox.Show("DbType:"+DbType);
+
             bool BackupResult = false;
             try
             {
 	            DbType = LxGenericAction.GetDataBaseType();
+	             MessageBox.Show("DbType:"+DbType);
 	        	
 	        	//First, back up the database.
 	        	BackupResult = LxGenericAction.BackUpDataBase(DbType);
@@ -70,6 +75,7 @@ namespace NformTester.driver
             catch(Exception ex)
             {
               Console.WriteLine("Error when back up database!"+ex.StackTrace.ToString());
+              MessageBox.Show(ex.StackTrace.ToString());
             }
             
             if(BackupResult == false)
@@ -84,8 +90,7 @@ namespace NformTester.driver
         	
         	Mouse.DefaultMoveTime = 300;
             Keyboard.DefaultKeyPressTime = 100;
-            Delay.SpeedFactor = 1.0;
-            
+            Delay.SpeedFactor = 1.0;  
             LxSetup mainOp = LxSetup.getInstance();                                             
             string tsName = mainOp.getTestCaseName();
             string excelPath = "keywordscripts/" + tsName + ".xlsx";                                           
@@ -110,7 +115,15 @@ namespace NformTester.driver
             if(result == false)
             {
             	Console.WriteLine("We need to restore database, because there is wrong when this script is running.");
-            	bool RestoreResult = LxGenericAction.RestoreDataBase(DbType);
+            	bool RestoreResult = false;
+            	try
+            	{
+            		RestoreResult = LxGenericAction.RestoreDataBase(DbType);
+            	}
+            	catch(Exception ex)
+	            {
+	                Console.WriteLine("Error when Restore database!"+ex.StackTrace.ToString());
+	            }
 	        	if(RestoreResult == false)
 	        	{
 	                Console.WriteLine("Restore database is failed, you shoud handle this question manually!");
@@ -118,5 +131,6 @@ namespace NformTester.driver
             }
            
         }
+        
     }
 }

@@ -304,6 +304,12 @@ namespace NformTester.lib
 				SendCommandToSimulator(item);
 				return true;
 			}
+			
+			if(item.m_Type == "C" && item.m_WindowName == "CopyDataToFile") 
+			{				
+				CopyDataToFile(item);
+				return true;
+			}
 					
 			if(item.m_Type.Substring(0,1) == ";")
 			{
@@ -540,6 +546,41 @@ namespace NformTester.lib
             System.Text.UTF8Encoding encoding = new System.Text.UTF8Encoding();
             return encoding.GetBytes(str);
         }
+		
+		//**********************************************************************
+		/// <summary>
+		/// Copy Copydata from Trends graph to one txt file.
+		/// </summary>
+		public static void CopyDataToFile(LxScriptItem item)
+		{
+			string strFilePath = item.getArgText();
+			IDataObject iData = Clipboard.GetDataObject();
+			if(iData.GetDataPresent(DataFormats.StringFormat))
+			{
+				string s_value = (string)iData.GetData(DataFormats.StringFormat);
+				Console.WriteLine("Clipboard is:" + s_value);
+				Write_text(@strFilePath, s_value);
+			}
+			else
+			{
+				Console.WriteLine("Clipboard can not convert to text string!");
+			}
+        }
+		
+		private static void Write_text(string file_path, string copydata)
+		{
+			if(System.IO.File.Exists(file_path))
+			{
+				System.IO.File.WriteAllText(file_path,copydata);
+			}
+			else
+			{
+				System.IO.StreamWriter sr;
+				sr = System.IO.File.CreateText(file_path);
+				sr.WriteLine(copydata);
+				sr.Close();
+			}
+		}
 		
 		//**********************************************************************
 		/// <summary>
@@ -823,6 +864,7 @@ namespace NformTester.lib
 		/// Author: Sashimi.
 		/// </summary>
 		public static bool BackUpDataBase(int DbType){
+			 MessageBox.Show("BackUpDataBase:");
 			bool result= false;
 			switch(DbType)
         	{
@@ -847,6 +889,7 @@ namespace NformTester.lib
 		/// </summary>
 		public static bool BackUpBundledDataBase(){
 		  bool result = false;
+		   MessageBox.Show("BackUpBundledDataBase:");
 		  Console.WriteLine("*****Start to back up bundled Database*****");
 		  string groupName="Database";
           string keyOne="Bundled_Path";
@@ -862,17 +905,9 @@ namespace NformTester.lib
 	       Directory.CreateDirectory(targetDBPath);
 	       //Restore the files.
 	       
-	       try{
-	       	CopyDir(sourceDBPath,targetDBPath);
-	       	result = true;
-	       }
-	       catch(Exception ex)
-	       {
-//	       	MessageBox.Show("When BackUpBundledDataBase, the CopyDir is failed!" + ex.StackTrace.ToString());
-	       	result = false;
-	       }
+	       CopyDir(sourceDBPath,targetDBPath);
+	       result = true;
 	       Console.WriteLine("*****Finish to back up bundled Database*****");
-//	       MessageBox.Show("the end!");
 	       return result;
 		}
 		
@@ -913,7 +948,7 @@ namespace NformTester.lib
         catch (Exception e)
         {
  //       	MessageBox.Show(e.StackTrace);
-        	throw;
+        	throw e;
         }
     }
 		
@@ -928,27 +963,14 @@ namespace NformTester.lib
 			SqlConnection conn = new SqlConnection();
 			conn.ConnectionString = @"Data Source=NFORMTES-6FD309\SQLEXPRESS;Initial Catalog=master;
 		    User ID=sa;Password=liebert;"; 
-			try{
-				OpenConnection(conn);
-			}
-			catch(Exception ex){
-	//			MessageBox.Show("Fail to open sql connection!"+(ex.StackTrace.ToString()));
-				result=false;
-				return result;
-			}
-			try{
-				BackpUpDB(conn);
-				result = true;
-			}
-			catch(Exception ex){
-				CloseConnection(conn);
-//				MessageBox.Show("Fail to back up SQL SERVER database!"+(ex.StackTrace.ToString()));
-				result=false;
-				return result;
-			}
+			OpenConnection(conn);
+			
+			BackpUpDB(conn);
+			result = true;
+			
 			CloseConnection(conn);
+			
 			Console.WriteLine("****Finish to back up SQL Server Database*****");
-//			MessageBox.Show("the end!");
 			return result;
 		}
 		
@@ -997,17 +1019,10 @@ namespace NformTester.lib
 	       }
 		   
 	       //Restore the files.
-	       try{
 	       	CopyDir(sourceDBPath,targetDBPath);
 	       	result = true;
-	       }
-	       catch(Exception ex)
-	       {
-	//       	MessageBox.Show("When RestoreBundledDataBase, the CopyDir is failed!" + ex.StackTrace.ToString());
-	       	result = false;
-	       }
+	       	
 	       Console.WriteLine("*****Finish to restore bundled Database*****");
-//	       MessageBox.Show("the end!");
 	       return result;
 		}
 		
@@ -1021,27 +1036,17 @@ namespace NformTester.lib
 			Console.WriteLine("*****Start to restore SQL Server Database*****");	        
 	        SqlConnection conn = new SqlConnection();
 	        conn.ConnectionString = GetDBConnString();
-			
-			try{
-				OpenConnection(conn);
-			}
-			catch(Exception ex){
-	//			MessageBox.Show("Fail to open sql connection!"+(ex.StackTrace.ToString()));
-				result=false;
-				return result;
-			}
+			OpenConnection(conn);
 			
 	        result = RestoreDB(conn);
 	        
 	        if (result == false){
-//				MessageBox.Show("Fail to restore SQL SERVER database!");
 				CloseConnection(conn);
 				return result;
 			}
 	        
 			CloseConnection(conn);
 			Console.WriteLine("*****Finish to restore SQL Server Database*****");
-	//		MessageBox.Show("the end!");
 			return result;
 			
 		}
@@ -1067,7 +1072,7 @@ namespace NformTester.lib
           }
         catch(Exception ex)
         {
- //       	MessageBox.Show("SQL Server Connection Error!"+ex.StackTrace.ToString());
+        	string log = ex.ToString();
         }
        }
 		//**********************************************************************
@@ -1091,7 +1096,7 @@ namespace NformTester.lib
           }
         catch(Exception ex)
         {
-  //      	MessageBox.Show("Error!" + ex.StackTrace.ToString());
+        	string log = ex.ToString();
         }
        }
 		
@@ -1111,9 +1116,7 @@ namespace NformTester.lib
 			
 			if (conn.State == ConnectionState.Closed)
 				conn.Open();
-			
-		   try
-          {    
+			    
 		   	    string backupDB = @"Backup Database Nform To disk= 'C:\Nform\SqlBackup\Nform.bak';";
 	            SqlCommand cmd = new SqlCommand(backupDB, conn);
 	            cmd.ExecuteNonQuery();
@@ -1122,13 +1125,7 @@ namespace NformTester.lib
 	            cmd.ExecuteNonQuery();
 	            backupDB =  @"Backup Database Nform To disk= 'C:\Nform\SqlBackup\NformLog.bak';";
 	            cmd.CommandText = backupDB;
-	            cmd.ExecuteNonQuery();
-           }
-	        catch(Exception ex)
-	        {
-	//        	MessageBox.Show("Back up SQL Server DATABASE is Error!" + ex.StackTrace.ToString());
-	             throw;
-	        }       
+	            cmd.ExecuteNonQuery();     
        }
 		
 		//**********************************************************************
@@ -1177,51 +1174,28 @@ namespace NformTester.lib
 			
 			if (conn.State == ConnectionState.Closed) 
 				conn.Open();
-			try
-			{
+
 	            // Drop the three databases.
 				string dropDB = @"drop database NformAlm;";
 	            SqlCommand cmd = new SqlCommand(dropDB, conn);
-	            try{
-	            	cmd.ExecuteNonQuery();
-	            }
-	            catch(SqlException ex)
-	            {
-	         //   	MessageBox.Show("drop NformAlm failure!" +ex.StackTrace.ToString());
-	            	return result;
-	            }
+	            cmd.ExecuteNonQuery();
+	          
 	            
 	            dropDB = @"drop database NformLog;";
 	            cmd.CommandText = dropDB;
-	            try{
-	            	cmd.ExecuteNonQuery();
-	            }
-	            catch(SqlException ex){
-	            //	MessageBox.Show("drop NformLog failure!" +ex.StackTrace.ToString());
-	            	return result;
-	            }
+	            cmd.ExecuteNonQuery();
+	           
 	            
 	            dropDB = @"drop database Nform;";
 	            cmd.CommandText = dropDB;
-	            try{
-	            	cmd.ExecuteNonQuery();
-	            }
-	            catch(SqlException ex){
-	         //   	MessageBox.Show("drop Nform failure!" +ex.StackTrace.ToString());
-	            	return result;
-	            }
+	            cmd.ExecuteNonQuery();
+	           
 	            // Create 3 new database: Nform, NformAlm, NformLog.
 	            
 	            string createDB=@"create database Nform;create database NformAlm;create database NformLog;";
 			    cmd.CommandText = createDB;
-			   
-	            try{
-	            	cmd.ExecuteNonQuery();
-	            }
-	            catch(SqlException ex){
-			 //   	MessageBox.Show("Create Nform and NformAlm and NformLog failure!" + ex.StackTrace.ToString());
-	            	return result;
-	            }
+			    cmd.ExecuteNonQuery();
+	           
 			    
 			    //Restore the existed database from backup files.
 			    
@@ -1229,47 +1203,22 @@ namespace NformTester.lib
                 MOVE 'Nform_data' TO 'C:\Nform\Moveto\data1.mdf',
                 MOVE 'Nform_log' TO 'C:\Nform\Moveto\log1.ldf';";
 				cmd.CommandText = restoreDB;
-				
-	            try{
-	            	cmd.ExecuteNonQuery();
-	            }
-	            catch(SqlException ex){
-	            //	MessageBox.Show("restore Nform failure!"+ ex.StackTrace.ToString());
-	            	return result;
-	            }
-	            
+				cmd.ExecuteNonQuery();
+          
 	            restoreDB =  @"restore database NformLog from DISK = 'C:\Nform\SqlBackup\NformLog.bak' with replace,
                 MOVE 'Nform_data' TO 'C:\Nform\Moveto\data2.mdf',
                 MOVE 'Nform_log' TO 'C:\Nform\Moveto\log2.ldf';";
 	            cmd.CommandText = restoreDB;
-	            
-	            try{
-	            	cmd.ExecuteNonQuery();
-	            }
-	            catch(SqlException ex){
-	         //   	MessageBox.Show("restore NformLog failure!"+ ex.StackTrace.ToString());
-	            	return result;
-	            } 
+                cmd.ExecuteNonQuery();
+	           
             
 	            restoreDB =   @"restore database NformAlm from DISK = 'C:\Nform\SqlBackup\NformAlm.bak' with replace,
                 MOVE 'Nform_data' TO 'C:\Nform\Moveto\data3.mdf',
                 MOVE 'Nform_log' TO 'C:\Nform\Moveto\log3.ldf';";
-	            cmd.CommandText = restoreDB;
+	            cmd.CommandText = restoreDB; 
+	            cmd.ExecuteNonQuery();
+	            result = true;
 	            
-	            try{
-	            	cmd.ExecuteNonQuery();
-	            }
-	            catch(SqlException ex){
-	      //      	MessageBox.Show("restore NformAlm failure!"+ ex.StackTrace.ToString());
-	            	return result;
-	            }  
-           }
-	        catch(Exception ex)
-	        {
-	    //       MessageBox.Show("Restore SQL Server DATABASE is Error!"+ ex.StackTrace.ToString());
-	             return result;
-	        } 
-	        result = true;
 	        return result;
        }
 		
