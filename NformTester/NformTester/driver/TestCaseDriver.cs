@@ -59,8 +59,9 @@ namespace NformTester.driver
             //Get database type from Device.ini, 
             //DbType=1,bundled database;
             //DbType=2,SQL Server database;
- 
-            int DbType = 1;
+ 			
+           
+            int DbType = 1; /*
             MessageBox.Show("DbType:"+DbType);
 
             bool BackupResult = false;
@@ -86,7 +87,7 @@ namespace NformTester.driver
             {
             	Console.WriteLine("Back up database is successful!");
             }
-
+			*/
         	
         	Mouse.DefaultMoveTime = 300;
             Keyboard.DefaultKeyPressTime = 100;

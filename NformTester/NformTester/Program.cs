@@ -34,7 +34,7 @@ namespace NformTester
         [STAThread]
         public static int Main(string[] args)
         {
- 
+ 			/*
         	if(!CheckDeviceAvailable())
         	{
         		DialogResult dr = MessageBox.Show("Do you want to continue? Click Ok button to continue.", "Warning" , MessageBoxButtons.YesNo,MessageBoxIcon.Warning,MessageBoxDefaultButton.Button2);
@@ -43,7 +43,7 @@ namespace NformTester
             		return 0;
             	}
         	}                    
-            
+            */
         	Keyboard.AbortKey = System.Windows.Forms.Keys.Pause;
             int error = 0;
            

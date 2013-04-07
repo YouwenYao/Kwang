@@ -61,6 +61,16 @@ namespace NformTester.lib
 		public int m_iRowNum = 0;
 		
 		/// <summary>
+		/// Start line of commands
+		/// </summary>
+		public int m_iRowStart = 0;
+		
+		/// <summary>
+		/// End line of commands
+		/// </summary>
+		public int m_iRowEnd = 0;
+		
+		/// <summary>
 		/// Get method for ProcessId
 		/// </summary>
 		public int ProcessId {
@@ -117,8 +127,27 @@ namespace NformTester.lib
         	m_strApplicationName = opXls.readCell(2,2);
         	Console.WriteLine(m_strApplicationName);
 			m_iRowNum = Convert.ToInt16(opXls.readCell(7,2));
-        	m_iProcessId = Host.Local.RunApplication(m_strApplicationName);
-
+			string runningRange = opXls.readCell(8,2);
+			
+			if(runningRange == "")
+			{
+				m_iRowStart = 1;
+				m_iRowEnd = m_iRowNum;
+			}
+			else{
+				string[] range = runningRange.Split('-');
+				m_iRowStart = Convert.ToInt16(range[0]);
+				if(runningRange.IndexOf("-") == -1)
+				{
+					m_iRowEnd = m_iRowNum;
+				}
+				else
+				{
+					m_iRowEnd = Convert.ToInt16(range[1]);
+				}
+			}
+			if(m_iRowStart == 1)
+        		m_iProcessId = Host.Local.RunApplication(m_strApplicationName);
 		}
 		
 		//**********************************************************************
@@ -128,7 +157,7 @@ namespace NformTester.lib
 		public LxParse getSteps()
 		{
 			LxParse parse = new LxParse();
-        	for( int i = 1; i <= m_iRowNum; i++)
+        	for( int i = m_iRowStart; i <= m_iRowEnd; i++)
         	{
         		LxScriptItem item = new LxScriptItem();
 //        		item.m_Index = opXls.readCell(i+1,3).Trim();
@@ -165,7 +194,7 @@ namespace NformTester.lib
 		public void setResult()
 		{
 			int i = 1;
-			for( i = 1; i <= m_iRowNum; i++)
+			for( i = m_iRowStart; i <= m_iRowEnd; i++)
         	{
         		string commandResult = opXls.readCell(i+1,14).Trim();
         		if(commandResult == "Fail")
@@ -173,8 +202,8 @@ namespace NformTester.lib
         			break;
         		}	
         	}		
-			//writeInfo();
-			opXls.writeCell(8,2,i <= m_iRowNum?"Fail":"Pass");
+			writeInfo();
+			opXls.writeCell(9,2,i <= m_iRowEnd?"Fail":"Pass");
 		}
 		
 		//**********************************************************************
@@ -183,9 +212,9 @@ namespace NformTester.lib
 		/// </summary>
 		public void writeInfo()
 		{			
-			opXls.writeCell(11,2,Ranorex.Host.Local.RanorexVersion);
-			opXls.writeCell(20,2,Ranorex.Host.Local.OSEdition + "  " + Ranorex.Host.Local.OSVersion);
-			opXls.writeCell(21,2,Ranorex.Host.Local.RuntimeVersion);
+			opXls.writeCell(12,2,Ranorex.Host.Local.RanorexVersion);
+			opXls.writeCell(21,2,Ranorex.Host.Local.OSEdition + "  " + Ranorex.Host.Local.OSVersion);
+			opXls.writeCell(22,2,Ranorex.Host.Local.RuntimeVersion);
 			
 			
 			NformRepository repo = NformRepository.Instance;
@@ -197,23 +226,29 @@ namespace NformTester.lib
 						
 			repo.NFormApp.NformG2Window.FormMain.Help.Click();
 			repo.NFormApp.NformG2Window.FormMain.About_Liebert_Nform.Click();
-			string viewVer = repo.NFormApp.Help.FormAbout_LiebertR_Nform.ViewerVer.TextValue;
-			repo.NFormApp.Help.FormAbout_LiebertR_Nform.TabServer.Click();
-			string severVer = repo.NFormApp.Help.FormAbout_LiebertR_Nform.ServerVer.TextValue;
+			Ranorex.NativeWindow nativeWnd = repo.NFormApp.Help.FormAbout_LiebertR_Nform.ViewerVerInfo.CreateAdapter<Ranorex.NativeWindow>(false);
+			string viewVer = nativeWnd.WindowText;
+			repo.NFormApp.Help.FormAbout_LiebertR_Nform.TabServer.Click();		
+			nativeWnd = repo.NFormApp.Help.FormAbout_LiebertR_Nform.ServerVerInfo.CreateAdapter<Ranorex.NativeWindow>(false);
+			string severVer = nativeWnd.WindowText;
 			repo.NFormApp.Help.FormAbout_LiebertR_Nform.TabDatabase.Click();
-			string dbVer = repo.NFormApp.Help.FormAbout_LiebertR_Nform.DbVersion.TextValue;
-			string dbEdition = repo.NFormApp.Help.FormAbout_LiebertR_Nform.DbEdition.TextValue;
+			nativeWnd = repo.NFormApp.Help.FormAbout_LiebertR_Nform.DbVersionInfo.CreateAdapter<Ranorex.NativeWindow>(false);
+			string dbVer = nativeWnd.WindowText;
+			nativeWnd = repo.NFormApp.Help.FormAbout_LiebertR_Nform.DbEditionInfo.CreateAdapter<Ranorex.NativeWindow>(false);
+			string dbEdition = nativeWnd.WindowText;
 			repo.NFormApp.Help.FormAbout_LiebertR_Nform.TabLicense.Click();
-			string licenseDetail = repo.NFormApp.Help.FormAbout_LiebertR_Nform.LicenseDetail.TextValue;
+			// nativeWnd = repo.NFormApp.Help.FormAbout_LiebertR_Nform.LicenseDetailInfo.CreateAdapter<Ranorex.NativeWindow>(false);
+			string licenseDetail = repo.NFormApp.Help.FormAbout_LiebertR_Nform.LicenseDetail.TextValue;//nativeWnd.WindowText;
 			repo.NFormApp.Help.FormAbout_LiebertR_Nform.TabRegistration.Click();
-			string regist = repo.NFormApp.Help.FormAbout_LiebertR_Nform.RegistInfoDscr.TextValue;
+			nativeWnd = repo.NFormApp.Help.FormAbout_LiebertR_Nform.RegistInfoDscrInfo.CreateAdapter<Ranorex.NativeWindow>(false);
+			string regist = nativeWnd.WindowText;
 			repo.NFormApp.Help.FormAbout_LiebertR_Nform.OK.Click();
 			
-			opXls.writeCell(12,2,viewVer);
-			opXls.writeCell(13,2,severVer);
-			opXls.writeCell(14,2,dbEdition);
-			opXls.writeCell(15,2,dbVer);
-			opXls.writeCell(22,2,regist);
+			opXls.writeCell(13,2,viewVer);
+			opXls.writeCell(14,2,severVer);
+			opXls.writeCell(15,2,dbEdition);
+			opXls.writeCell(16,2,dbVer);
+			opXls.writeCell(20,2,regist);
 		}
 		
 		//**********************************************************************
