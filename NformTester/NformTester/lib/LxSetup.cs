@@ -298,6 +298,37 @@ namespace NformTester.lib
 
 		//**********************************************************************
 		/// <summary>
+		/// Recursion to browse all rxtst test cases tree to generate running list.
+		/// </summary>
+		public void generateRunningList(XmlNode xnf, Hashtable htAllCaseName, ref int iNum)
+		{
+			if(xnf.HasChildNodes)
+        	{
+				//XmlNodeList childnodes = xnf.ChildNodes;    
+				foreach(XmlNode childnode in xnf.ChildNodes)
+				{
+					generateRunningList(childnode,htAllCaseName,ref iNum);
+				}
+			}
+			else
+       		{        	   
+				if(xnf.Name.Equals("testmodule"))
+				{					
+					XmlElement xeCurrentNode = (XmlElement)xnf;
+					if(!xeCurrentNode.GetAttribute("name").Equals("TestCaseDriver"))
+						return;
+					XmlElement xe=(XmlElement)xnf.ParentNode;
+       				htAllCaseName.Add(xe.GetAttribute("id"),
+       		                  new object[] {xe.GetAttribute("name"), iNum} );
+       				iNum ++;		
+				}	
+       		}        	
+        	        			
+		}
+		
+		
+		//**********************************************************************
+		/// <summary>
 		/// Load the rxtst file, and get the runlist of testcase name
 		/// </summary>
 		public ArrayList getRunlist()
@@ -314,13 +345,16 @@ namespace NformTester.lib
         	Hashtable htAllCaseName = new Hashtable();
         	nodes = xmldoc.SelectNodes("/testsuite/content/testcase");
         	int iNum = 0;
+        	
+        	int abcddd = nodes.Count;
+        	
         	foreach(XmlNode xnf in nodes)
-        	{
-        		xe=(XmlElement)xnf;
-        		htAllCaseName.Add(xe.GetAttribute("id"),
-        		                  new object[] {xe.GetAttribute("name"), iNum} );
-        		iNum ++;			
+        	{	
+        		generateRunningList(xnf,htAllCaseName, ref iNum);        		        			
         	}
+        	
+        	
+        	int abc = htAllCaseName.Count;
         	
         	nodes = xmldoc.SelectNodes("/testsuite/testconfigurations/testconfiguration/testcase");
         	for(int i=0; i< nodes.Count; i++)
@@ -335,6 +369,15 @@ namespace NformTester.lib
         	        	
         	IComparer myComparer = new myRunlistCompareClass();
         	runlist.Sort(myComparer);
+        	
+//        	MessageBox.Show(runlist.Count.ToString());
+//        	
+//        	for(int testNum = 0; testNum < runlist.Count; testNum++)
+//        	{
+//        		object[] arg = (object[])runlist[testNum];
+//        		MessageBox.Show((string)arg[0] +"      "+arg[1].ToString());
+//        	}
+        	
         	return runlist;
 
 		}
