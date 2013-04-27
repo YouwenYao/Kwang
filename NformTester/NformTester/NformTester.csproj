@@ -290,6 +290,10 @@
       <id>dea4bd97-9694-42c2-b6cc-557385d0719b</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST2799_VerifyMaintenanceModeCanBeSetted.xlsx">
+      <id>1c8a5fdf-efeb-4467-b027-61b5392ddf40</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST2800_ManualMaitenanceAndScheduledMaintenance.xlsx">
       <id>65e7e896-ff14-4be4-8b17-dad4e4d5840b</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
