@@ -808,6 +808,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST494_UserCanNotConfigureWriteDataActionWithoutPermission"
+					id="cfd83ac6-38b0-4b60-8608-a419a11a1680">
+						<testmodule
+						name="TestCaseDriver"
+						id="fee0633c-72d1-4420-a3b2-b130f693e4ba"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.030._Views2"
@@ -965,9 +974,9 @@ reportlevel="Info;20">
 			<testcase
 			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
 			<testcase
-			id="bf8d89e3-a747-4a38-bac2-d669014b54a6"/>
+			id="cfd83ac6-38b0-4b60-8608-a419a11a1680"/>
 			<testcase
-			id="f6a68ffa-68bb-42c1-b23b-afb85299c177"/>
+			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

@@ -322,6 +322,10 @@
       <id>b0727378-8011-456f-84c8-88fa1e6d1a12</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST494_UserCanNotConfigureWriteDataActionWithoutPermission.xlsx">
+      <id>5fcf3a0f-32db-471f-b13c-d95a73134f3f</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST498_CheckConfigureDisplayTrendLineInPlotting.xlsx">
       <id>fb3235a4-8ad3-45b3-95d7-6c4fef6dab8c</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
