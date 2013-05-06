@@ -84,6 +84,7 @@ namespace NformTester.lib
 			m_ActionMap.Add("ClickCell", new object[] {"Click","S9"});
 			m_ActionMap.Add("DoubleClickItem", new object[] {"DoubleClick","S10"});
 			m_ActionMap.Add("RightClick", new object[] {"RightClick","S11"});
+			m_ActionMap.Add("InputCell", new object[] {"Click","S12"});
 
 			// Run the item in stepList
 			// If wrongCount =3, it means that the command fails three times continuously.
@@ -270,6 +271,8 @@ namespace NformTester.lib
 			}
 		}
 		
+
+		
 		//**********************************************************************
 		/// <summary>
 		/// Execute one command, parse the command.
@@ -432,6 +435,12 @@ namespace NformTester.lib
 			if(arg[1].ToString() == "S11")
 			{
 				RightClick_Item(item);
+				return true;
+			}
+			
+			if(arg[1].ToString() == "S12")
+			{
+				Input_Cell(item);
 				return true;
 			}
 			
@@ -850,6 +859,25 @@ namespace NformTester.lib
 				tb.Rows[Convert.ToInt32(item.getArgText())].Cells[Convert.ToInt32(item.getArg2Text())].Click();
 			}									
 		}
+		
+		//**********************************************************************
+		/// <summary>
+		/// Input Cell by given index in the Table.
+		/// </summary>
+		public static void Input_Cell(LxScriptItem item)
+		{
+			object objComponet = item.getComponent();
+			RepoItemInfo objComponetInfo = item.getComponentInfo();
+			Type objType = objComponet.GetType();
+							
+			if(objType.Name.ToString() == "Table")
+			{
+				Ranorex.Table tb = (Ranorex.Table)objComponet;
+				tb.Rows[Convert.ToInt32(item.getArgText())].Cells[Convert.ToInt32(item.getArg2Text())].Click();
+				Keyboard.Press("{"+item.getArg3Text()+"}");
+			}									
+		}
+		
 		
 		//**********************************************************************
 		/// <summary>
