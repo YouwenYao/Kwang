@@ -366,6 +366,10 @@
       <id>88f2d6dc-c554-4461-8e96-54277e1905e2</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST581_UsersWithoutAllRightsCanNotEditOnActionSets.xlsx">
+      <id>7a05c35e-ac09-48c8-bdaf-ec1356c72454</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST594_ActionSet_DeletewithRightsToAllActionTypes.xlsx">
       <id>f530bbe5-29a0-4255-b3ed-2c5bb572a5f4</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
