@@ -817,6 +817,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST581_UsersWithoutAllRightsCanNotEditOnActionSets"
+					id="a83ee278-0434-410a-af5a-cfe292857674">
+						<testmodule
+						name="TestCaseDriver"
+						id="662aad27-d80f-4d1b-a961-83c656ec73f6"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.030._Views2"
@@ -974,7 +983,7 @@ reportlevel="Info;20">
 			<testcase
 			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
 			<testcase
-			id="cfd83ac6-38b0-4b60-8608-a419a11a1680"/>
+			id="a83ee278-0434-410a-af5a-cfe292857674"/>
 			<testcase
 			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
 		</testconfiguration>
