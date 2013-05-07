@@ -167,9 +167,45 @@ namespace NformTester.lib
                 string key = name.Substring(1, name.Length - 2);
                 LxIniFile confFile = new LxIniFile(System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(),
                                                  "Devices.ini"));
-                string def = confFile.GetString("AvailableDevices", "Default", "10.146.83.50");
-
-                string result = confFile.GetString("AvailableDevices", key, def);
+                string def= null;
+                string result = null;
+                
+                if(key.IndexOf("SNMP")!=-1)
+                {
+                	def = confFile.GetString("SNMPDevices","Default","10.146.83.50");
+                	result = confFile.GetString("SNMPDevices",key,def);
+                }
+                
+                else if(key.IndexOf("Velocity")!=-1)
+                {
+                	def = confFile.GetString("VelocityDevices","Default","126.4.200.116");
+                	result = confFile.GetString("VelocityDevices",key,def);
+                }	
+                
+                else if(key.IndexOf("Trap")!=-1)
+                {
+                	def = confFile.GetString("TrapInfo","Default","-1:2:1:1.3.6.1.4.1.476.1.42.3.2.1.38.4");
+                	result = confFile.GetString("TrapInfo",key,def);
+                }
+                
+                 else if(key.IndexOf("Sys")!=-1)
+                {
+                	def = confFile.GetString("NformSysInfo","Default","Nform");
+                	result = confFile.GetString("NformSysInfo",key,def);
+                }
+                 
+                 else if(key.IndexOf("DB")!=-1)
+                {
+                	def = confFile.GetString("Database","Default","Nform");
+                	result = confFile.GetString("Database",key,def);
+                }
+                 
+                 else if(key.IndexOf("Try")!=-1)
+                {
+                	def = confFile.GetString("TryToRunTimes","Default","3");
+                	result = confFile.GetString("TryToRunTimes",key,def);
+                }
+                
                 addr = result;
             }
 

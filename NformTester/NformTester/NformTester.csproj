@@ -290,6 +290,10 @@
       <id>dea4bd97-9694-42c2-b6cc-557385d0719b</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST2799_VerifyMaintenanceModeCanBeSetted.xlsx">
+      <id>1c8a5fdf-efeb-4467-b027-61b5392ddf40</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST2800_ManualMaitenanceAndScheduledMaintenance.xlsx">
       <id>65e7e896-ff14-4be4-8b17-dad4e4d5840b</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -318,8 +322,16 @@
       <id>b0727378-8011-456f-84c8-88fa1e6d1a12</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST494_UserCanNotConfigureWriteDataActionWithoutPermission.xlsx">
+      <id>5fcf3a0f-32db-471f-b13c-d95a73134f3f</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST498_CheckConfigureDisplayTrendLineInPlotting.xlsx">
       <id>fb3235a4-8ad3-45b3-95d7-6c4fef6dab8c</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST514_CheckDefaultRightsForActionsFeaturesOfPowerUsersGroup.xlsx">
+      <id>562f6b35-e42c-484b-8368-8c94ed651b96</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="keywordscripts\TST540_CheckFunctionalityForGraphType.xlsx">
@@ -356,6 +368,10 @@
     </None>
     <None Include="keywordscripts\TST575_ExecuteTrapAlarmForward.xlsx">
       <id>88f2d6dc-c554-4461-8e96-54277e1905e2</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST581_UsersWithoutAllRightsCanNotEditOnActionSets.xlsx">
+      <id>7a05c35e-ac09-48c8-bdaf-ec1356c72454</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="keywordscripts\TST594_ActionSet_DeletewithRightsToAllActionTypes.xlsx">

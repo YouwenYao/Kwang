@@ -777,6 +777,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST2799_VerifyMaintenanceModeCanBeSetted"
+					id="f6a68ffa-68bb-42c1-b23b-afb85299c177">
+						<testmodule
+						name="TestCaseDriver"
+						id="b5d9a77d-a2bc-477f-a2e7-87e12b172449"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.020._Actions2"
@@ -796,6 +805,24 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="4eb28720-e8d0-44f2-be2c-169c28d09222"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST494_UserCanNotConfigureWriteDataActionWithoutPermission"
+					id="cfd83ac6-38b0-4b60-8608-a419a11a1680">
+						<testmodule
+						name="TestCaseDriver"
+						id="fee0633c-72d1-4420-a3b2-b130f693e4ba"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST581_UsersWithoutAllRightsCanNotEditOnActionSets"
+					id="a83ee278-0434-410a-af5a-cfe292857674">
+						<testmodule
+						name="TestCaseDriver"
+						id="662aad27-d80f-4d1b-a961-83c656ec73f6"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -830,6 +857,15 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="b6468595-0c4b-4eef-85c7-ce99af89420b"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST514_CheckDefaultRightsForActionsFeaturesOfPowerUsersGroup"
+					id="803b3d64-171f-4343-8989-06351d392213">
+						<testmodule
+						name="TestCaseDriver"
+						id="af10a949-ea9f-42a9-9b70-5848ea91f816"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -957,6 +993,15 @@ reportlevel="Info;20">
 			id="5ae57d1d-408c-4120-b1b0-aaca22ffc46a"/>
 			<testcase
 			id="80f7fd2a-423e-439b-8aba-0a5b90298585"/>
+			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
+			<testcase
+			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
+			<testcase
+			id="64d6f7ed-643a-4648-9121-b2dc1ea70268"/>
+			<testcase
+			id="803b3d64-171f-4343-8989-06351d392213"/>
+			<testcase
+			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

@@ -84,6 +84,7 @@ namespace NformTester.lib
 			m_ActionMap.Add("ClickCell", new object[] {"Click","S9"});
 			m_ActionMap.Add("DoubleClickItem", new object[] {"DoubleClick","S10"});
 			m_ActionMap.Add("RightClick", new object[] {"RightClick","S11"});
+			m_ActionMap.Add("InputCell", new object[] {"Click","S12"});
 
 			// Run the item in stepList
 			// If wrongCount =3, it means that the command fails three times continuously.
@@ -270,6 +271,8 @@ namespace NformTester.lib
 			}
 		}
 		
+
+		
 		//**********************************************************************
 		/// <summary>
 		/// Execute one command, parse the command.
@@ -435,6 +438,12 @@ namespace NformTester.lib
 				return true;
 			}
 			
+			if(arg[1].ToString() == "S12")
+			{
+				Input_Cell(item);
+				return true;
+			}
+			
 			
            	method.Invoke(objComponet,parameters);
            	return true;
@@ -584,13 +593,14 @@ namespace NformTester.lib
 		
 		//**********************************************************************
 		/// <summary>
-		/// Open txt file, verify content contains given string.
+		/// Open txt file, verify content contains or not contains given string.
 		/// </summary>
 		public static void VerifyTxtfileValues(LxScriptItem item)
 		{
 			string strPath = item.getArgText();
 			string strFileName = strPath.Substring(strPath.LastIndexOf("/") + 1,strPath.Length - strPath.LastIndexOf("/") -1);
-				
+			string flag = item.getArg3Text();  // flag=true, contains; flag=false, not contains.
+			
 			System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
    			//startInfo.CreateNoWindow = true;
    			startInfo.FileName = "notepad.exe";
@@ -600,21 +610,26 @@ namespace NformTester.lib
    			startInfo.Arguments = " " + strPath;
    			System.Diagnostics.Process process = System.Diagnostics.Process.Start(startInfo);   			
    			bool bContains = repo.ExternalApp.NotePad.MainContext.TextValue.IndexOf(item.getArg2Text())==-1?false:true;
+
    			Delay.Milliseconds(6000);
 			process.Kill();
-			Validate.AreEqual(bContains,true);
+			if(flag.Equals("True"))
+				Validate.AreEqual(bContains,true);
+			else
+				Validate.AreEqual(bContains,false);
 			
 		}
 		
 		//**********************************************************************
 		/// <summary>
-		/// Open excel file, verify content contains given string.
+		/// Open excel file, verify content contains or not contains given string.
 		/// </summary>
 		public static void VerifyExcelfileValues(LxScriptItem item)
 		{
 			string strPath = item.getArgText();
 			string strFileName = strPath.Substring(strPath.LastIndexOf("/") + 1,strPath.Length - strPath.LastIndexOf("/") -1);
-				
+			string mark = item.getArg3Text();  // flag=true, contains; flag=false, not contains.
+			
 			System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
    			startInfo.FileName = "excel.exe";
    			startInfo.Arguments = " " + strPath;
@@ -622,12 +637,15 @@ namespace NformTester.lib
    			RepoItemInfo targetCellInfo = new RepoItemInfo(repo.ExternalApp.FormExcel.TableEntityInfo.ParentFolder, "variableCell", 
 				                                                   repo.ExternalApp.FormExcel.TableEntityInfo.Path + "/row/cell[@text='"+ item.getArg2Text() +"']", 
 				                                                   10000, null, System.Guid.NewGuid().ToString());                         
-           
+            
    			
    			Delay.Milliseconds(6000);
    			bool bExists = targetCellInfo.Exists();   			
-			process.Kill();	
-			Validate.AreEqual(bExists,true); 
+			process.Kill();
+			if(mark.Equals("True"))
+				Validate.AreEqual(bExists,true);
+			else
+				Validate.AreEqual(bExists,false);
 		}
 		
 		//**********************************************************************
@@ -841,6 +859,25 @@ namespace NformTester.lib
 				tb.Rows[Convert.ToInt32(item.getArgText())].Cells[Convert.ToInt32(item.getArg2Text())].Click();
 			}									
 		}
+		
+		//**********************************************************************
+		/// <summary>
+		/// Input Cell by given index in the Table.
+		/// </summary>
+		public static void Input_Cell(LxScriptItem item)
+		{
+			object objComponet = item.getComponent();
+			RepoItemInfo objComponetInfo = item.getComponentInfo();
+			Type objType = objComponet.GetType();
+							
+			if(objType.Name.ToString() == "Table")
+			{
+				Ranorex.Table tb = (Ranorex.Table)objComponet;
+				tb.Rows[Convert.ToInt32(item.getArgText())].Cells[Convert.ToInt32(item.getArg2Text())].Click();
+				Keyboard.Press("{"+item.getArg3Text()+"}");
+			}									
+		}
+		
 		
 		//**********************************************************************
 		/// <summary>
