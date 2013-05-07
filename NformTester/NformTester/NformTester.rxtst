@@ -948,7 +948,16 @@ reportlevel="Info;20">
 	<testconfigurations
 	default="TestRun">
 		<testconfiguration
-		name="TestRun"/>
+		name="TestRun">
+			<testcase
+			id="090eaee5-7b98-4900-aa6b-503ccd324ffc"/>
+			<testcase
+			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
+			<testcase
+			id="5ae57d1d-408c-4120-b1b0-aaca22ffc46a"/>
+			<testcase
+			id="80f7fd2a-423e-439b-8aba-0a5b90298585"/>
+		</testconfiguration>
 	</testconfigurations>
 	<references>
 		<reference>

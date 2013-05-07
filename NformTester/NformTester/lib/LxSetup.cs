@@ -126,7 +126,9 @@ namespace NformTester.lib
         	opXls.open(m_strExcelDirve);
         	m_strApplicationName = opXls.readCell(2,2);
         	Console.WriteLine(m_strApplicationName);
+
 			m_iRowNum = Convert.ToInt16(opXls.readCell(7,2));
+
 			string runningRange = opXls.readCell(8,2);
 			
 			if(runningRange == "")

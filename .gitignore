@@ -14,3 +14,4 @@
 
 # Ingore temp file
 ResolveAssemblyReference.cache
+/NformTester/NformTester/NformTester.csproj.rxuser
