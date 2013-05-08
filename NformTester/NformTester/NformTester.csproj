@@ -89,6 +89,9 @@
     <Compile Include="driver\TestCaseDriver.cs">
       <id>63aeabcc-fde4-468f-8e8b-434bd082b130</id>
     </Compile>
+    <Compile Include="lib\LxDeviceAvailable.cs">
+      <id>4a064780-b23a-4890-beea-076e8c454d73</id>
+    </Compile>
     <Compile Include="lib\LxErrorHandler.cs">
       <id>264972d9-22f7-4c29-b4c0-5e1fa6e02f85</id>
     </Compile>
@@ -136,10 +139,6 @@
     </None>
     <None Include="Devices.ini">
       <id>ce0d6910-b470-4d36-b5a6-42a413c3d0ad</id>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Keywordscripts\Myfirsttest.xlsx">
-      <id>0f5f86cb-13b5-423e-aa93-0e4b63f6406d</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="keywordscripts\TestScripts.xlsx">
