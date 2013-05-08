@@ -257,6 +257,7 @@ namespace NformTester.lib
 		/// </summary>
 		public static void VerifyProperty(LxScriptItem item)
 		{	
+	
 			if(item.getArg2Text() == "Equal")
 			{
 				Validate.Attribute(item.getComponentInfo(), item.getArgText(), item.getArg3Text());
@@ -268,6 +269,25 @@ namespace NformTester.lib
 			if(item.getArg2Text() == "NotContains")
 			{
 				Validate.Attribute(item.getComponentInfo(), item.getArgText(), new Regex("^((?!("+Regex.Escape(item.getArg3Text())+")).)*$"));
+			}
+			
+			if(item.getArg2Text() == "ListContains")
+			{
+				bool Resultflag = false; 
+				object objComponet = item.getComponent();
+			    Ranorex.ComboBox myComboBox = (Ranorex.ComboBox)(objComponet);
+			    Ranorex.Button btn = myComboBox.FindSingle("./button");  
+			    btn.Click();  
+			    List lst = "/list"; 
+			    foreach (ListItem lst_item in lst.FindChildren<ListItem>())  
+			    {
+			    	if((lst_item.Text).Equals(item.getArg3Text()))
+			    	{
+			    		Resultflag = true;
+			        	break;
+			    	}
+			    }
+		        Validate.AreEqual(Resultflag,true);	
 			}
 		}
 		

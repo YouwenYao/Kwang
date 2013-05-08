@@ -138,6 +138,10 @@
       <id>ce0d6910-b470-4d36-b5a6-42a413c3d0ad</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\Myfirsttest.xlsx">
+      <id>0f5f86cb-13b5-423e-aa93-0e4b63f6406d</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TestScripts.xlsx">
       <id>dc3efe77-47b9-49ba-baaa-19c2af620d18</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

@@ -869,6 +869,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="Myfirsttest"
+					id="3b09c971-1a70-4128-adf2-bc7f958209da">
+						<testmodule
+						name="TestCaseDriver"
+						id="61c3a939-199a-4083-b267-6803b6c7b42a"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.050._Licenses2"
@@ -986,20 +995,13 @@ reportlevel="Info;20">
 		<testconfiguration
 		name="TestRun">
 			<testcase
-			id="090eaee5-7b98-4900-aa6b-503ccd324ffc"/>
-			<testcase
-			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
-			<testcase
-			id="5ae57d1d-408c-4120-b1b0-aaca22ffc46a"/>
-			<testcase
-			id="80f7fd2a-423e-439b-8aba-0a5b90298585"/>
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
 			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
 			<testcase
-			id="64d6f7ed-643a-4648-9121-b2dc1ea70268"/>
+			id="3b09c971-1a70-4128-adf2-bc7f958209da"/>
 			<testcase
-			id="803b3d64-171f-4343-8989-06351d392213"/>
+			id="64d6f7ed-643a-4648-9121-b2dc1ea70268"/>
 			<testcase
 			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
 		</testconfiguration>
