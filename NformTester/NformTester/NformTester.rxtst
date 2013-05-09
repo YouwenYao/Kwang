@@ -826,10 +826,29 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST592_DeleteAnActionSetWithUsersRight"
+					id="39c785d2-450b-40a6-9cf5-5433f6356def">
+						<testmodule
+						name="TestCaseDriver"
+						id="e930aad2-10ed-4804-83a5-48396ce70628"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.030._Views2"
-				id="16b2d828-575c-4faf-8f7d-74b92c41fc12"/>
+				id="16b2d828-575c-4faf-8f7d-74b92c41fc12">
+					<testcase
+					name="TST1098_ConfigureViewNoDuplicateGroupNameAccepted"
+					id="204704d6-6eb0-4cc4-8ae2-e58671e22066">
+						<testmodule
+						name="TestCaseDriver"
+						id="e36d528f-3b10-4d9f-90dc-2f3e69ecac9b"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+				</testcase>
 				<testcase
 				name="600.040._Users_and_Groups2"
 				id="64d6f7ed-643a-4648-9121-b2dc1ea70268">
@@ -869,15 +888,6 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
-					<testcase
-					name="Myfirsttest"
-					id="3b09c971-1a70-4128-adf2-bc7f958209da">
-						<testmodule
-						name="TestCaseDriver"
-						id="61c3a939-199a-4083-b267-6803b6c7b42a"
-						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
-						type="UserCode"/>
-					</testcase>
 				</testcase>
 				<testcase
 				name="600.050._Licenses2"
@@ -891,6 +901,15 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="f8330cce-55b2-444d-bc37-61c72f2765af"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST2831_RSDSupportCheckBox"
+					id="6477784c-d169-4ced-9899-fef9a13f56f2">
+						<testmodule
+						name="TestCaseDriver"
+						id="0d399db0-cb1f-4f47-a170-8691a3da9128"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -997,13 +1016,21 @@ reportlevel="Info;20">
 			<testcase
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
+			id="16b2d828-575c-4faf-8f7d-74b92c41fc12"/>
+			<testcase
 			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
 			<testcase
-			id="3b09c971-1a70-4128-adf2-bc7f958209da"/>
+			id="204704d6-6eb0-4cc4-8ae2-e58671e22066"/>
 			<testcase
-			id="64d6f7ed-643a-4648-9121-b2dc1ea70268"/>
+			id="39c785d2-450b-40a6-9cf5-5433f6356def"/>
+			<testcase
+			id="6477784c-d169-4ced-9899-fef9a13f56f2"/>
 			<testcase
 			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
+			<testcase
+			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
+			<testcase
+			id="df7edb2b-860c-49dc-9078-ff2dac2f7734"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
