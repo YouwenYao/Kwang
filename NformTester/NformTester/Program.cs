@@ -31,7 +31,7 @@ namespace NformTester
 {
     class Program
     {
-        [STAThread]
+    	[STAThread]
         public static int Main(string[] args)
         {
  			/*
@@ -42,18 +42,24 @@ namespace NformTester
             	{
             		return 0;
             	}
-        	}                    
+        	}                   
             */
-           
-           //Be used to check devices are avalibale or not, which are configured in Device.ini
-           /*
+          
+            //stop Nform service
+			Console.WriteLine("Stop Nform service...");
+			string strRst = RunCommand("sc stop Nform");
+          
+		//Be used to check devices are avalibale or not, which are configured in Device.ini
            LxDeviceAvailable myDeviceAvailable = new LxDeviceAvailable();
            myDeviceAvailable.CheckSnmpDevice();
            myDeviceAvailable.CheckVelDevice();
-           */
+           
+            //start Nform service
+            Console.WriteLine("Start Nform service...");
+			strRst = RunCommand("sc start Nform");	
+           
         	Keyboard.AbortKey = System.Windows.Forms.Keys.Pause;
             int error = 0;
-            
             try
             {
                 error = TestSuiteRunner.Run(typeof(Program), Environment.CommandLine);            	

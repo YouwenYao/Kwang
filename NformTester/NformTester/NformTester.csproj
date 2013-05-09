@@ -89,6 +89,9 @@
     <Compile Include="driver\TestCaseDriver.cs">
       <id>63aeabcc-fde4-468f-8e8b-434bd082b130</id>
     </Compile>
+    <Compile Include="lib\LxDBOper.cs">
+      <id>edf34f91-171b-4480-95e2-fb0bcb49a6f1</id>
+    </Compile>
     <Compile Include="lib\LxDeviceAvailable.cs">
       <id>4a064780-b23a-4890-beea-076e8c454d73</id>
     </Compile>
