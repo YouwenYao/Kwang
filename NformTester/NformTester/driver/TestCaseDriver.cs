@@ -53,28 +53,6 @@ namespace NformTester.driver
         /// that will in turn invoke this method.</remarks>
         void ITestModule.Run()
         {           
-
-        	
-        	//stop Nform service
-			Console.WriteLine("Stop Nform service...");
-			Program.RunCommand("sc stop Nform");
-        	//Backup Database operation.
-            LxDBOper myLxDBOper = new LxDBOper();
-            myLxDBOper.SetDbType();
-            myLxDBOper.BackUpDataBase();
-            if(myLxDBOper.GetBackUpResult() == false)
-            {
-               Console.WriteLine("Back up database is faild!");
-            }
-            else
-            {
-            	Console.WriteLine("Back up database is successful!");
-            }       
-            //start Nform service
-            Console.WriteLine("Start Nform service...");
-			Program.RunCommand("sc start Nform");	       
-              
-            
         	Mouse.DefaultMoveTime = 300;
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;  
@@ -90,22 +68,22 @@ namespace NformTester.driver
             // stepsRepository.doValidate();  				//  ********* 2. check scripts  syntax *********
             ArrayList stepList = stepsRepository.getStepsList();
             bool result = LxGenericAction.performScripts(stepList);	//  ********* 3. run scripts with reflection *********
-            mainOp.setResult();            
+            
+            mainOp.setResult();
             mainOp.runOverOneCase(tsName);
             mainOp.opXls.close();
+            Delay.Seconds(5);
             LxTearDown.closeApp(mainOp.ProcessId);		//  ********* 4. clean up for next running *********
-
-
 
             //stop Nform service
 			Console.WriteLine("Stop Nform service...");
 			Program.RunCommand("sc stop Nform");
             // Restore Database operation.
             // If there is any error when perform Scripts, execute the restore DB operation.
-            myLxDBOper.RestoreDataBase();
-            if(myLxDBOper.GetRestoreResult() == false)
+            Program.myLxDBOper.RestoreDataBase();
+            if(Program.myLxDBOper.GetRestoreResult() == false)
             {
-               Console.WriteLine("Restore database is faild!");
+               Console.WriteLine("Restore database is faild! You need to restore database manually");
             }
             else
             {

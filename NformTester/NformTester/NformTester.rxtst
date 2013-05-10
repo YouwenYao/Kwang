@@ -995,6 +995,10 @@ reportlevel="Info;20">
 			id="803b3d64-171f-4343-8989-06351d392213"/>
 			<testcase
 			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
+			<testcase
+			id="a83ee278-0434-410a-af5a-cfe292857674"/>
+			<testcase
+			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

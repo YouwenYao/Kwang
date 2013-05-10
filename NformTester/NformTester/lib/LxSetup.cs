@@ -204,7 +204,7 @@ namespace NformTester.lib
         			break;
         		}	
         	}		
-			writeInfo();
+			// writeInfo();
 			opXls.writeCell(9,2,i <= m_iRowEnd?"Fail":"Pass");
 		}
 		

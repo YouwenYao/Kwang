@@ -31,6 +31,16 @@ namespace NformTester
 {
     class Program
     {
+    	/// <summary>
+        /// Result of backup database. Used by restore database of every script.
+        /// </summary>
+    	public static bool BackupResult = false;
+    	
+    	/// <summary>
+        /// Result of backup database. Used by restore database of every script.
+        /// </summary>
+    	public static LxDBOper myLxDBOper = new LxDBOper();
+    	
     	[STAThread]
         public static int Main(string[] args)
         {
@@ -49,11 +59,23 @@ namespace NformTester
 			Console.WriteLine("Stop Nform service...");
 			string strRst = RunCommand("sc stop Nform");
           
-		//Be used to check devices are avalibale or not, which are configured in Device.ini
+		   //Be used to check devices are avalibale or not, which are configured in Device.ini
            LxDeviceAvailable myDeviceAvailable = new LxDeviceAvailable();
            myDeviceAvailable.CheckSnmpDevice();
            myDeviceAvailable.CheckVelDevice();
            
+           //Backup Database operation. Just do once before run all scripts.
+            myLxDBOper.SetDbType();
+            myLxDBOper.BackUpDataBase();
+            if(myLxDBOper.GetBackUpResult() == false)
+            {
+               Console.WriteLine("Back up database is faild!");
+            }
+            else
+            {
+            	Console.WriteLine("Back up database is successful!");
+            }
+    
             //start Nform service
             Console.WriteLine("Start Nform service...");
 			strRst = RunCommand("sc start Nform");	

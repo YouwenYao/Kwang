@@ -91,7 +91,7 @@ namespace NformTester.lib
 			int wrongTime = 3;
 			int wrongCount = 0;
 			string groupName="TryToRunTimes";
-            string key="TryTimes";
+            string key="Try_Times";
             wrongTime = int.Parse(myparseToValue(groupName,key));
     //        MessageBox.Show("wrong Time ="+wrongTime);
 			
