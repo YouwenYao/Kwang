@@ -62,7 +62,7 @@ namespace NformTester
 		   //Be used to check devices are avalibale or not, which are configured in Device.ini
            LxDeviceAvailable myDeviceAvailable = new LxDeviceAvailable();
            myDeviceAvailable.CheckSnmpDevice();
-           myDeviceAvailable.CheckVelDevice();
+           // myDeviceAvailable.CheckVelDevice();
            
            //Backup Database operation. Just do once before run all scripts.
             myLxDBOper.SetDbType();
