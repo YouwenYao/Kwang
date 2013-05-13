@@ -54,11 +54,10 @@ namespace NformTester
             	}
         	}                   
             */
-          
+  /*comment for test         
             //stop Nform service
 			Console.WriteLine("Stop Nform service...");
 			string strRst = RunCommand("sc stop Nform");
-          
 		   //Be used to check devices are avalibale or not, which are configured in Device.ini
            LxDeviceAvailable myDeviceAvailable = new LxDeviceAvailable();
            myDeviceAvailable.CheckSnmpDevice();
@@ -78,8 +77,8 @@ namespace NformTester
     
             //start Nform service
             Console.WriteLine("Start Nform service...");
-			strRst = RunCommand("sc start Nform");	
-           
+			RunCommand("sc start Nform");	
+       */    
         	Keyboard.AbortKey = System.Windows.Forms.Keys.Pause;
             int error = 0;
             try
