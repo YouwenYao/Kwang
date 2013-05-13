@@ -829,7 +829,17 @@ reportlevel="Info;20">
 				</testcase>
 				<testcase
 				name="600.030._Views2"
-				id="16b2d828-575c-4faf-8f7d-74b92c41fc12"/>
+				id="16b2d828-575c-4faf-8f7d-74b92c41fc12">
+					<testcase
+					name="TST1114_ToDeleteAnAreaFromTheTreeInViews"
+					id="3970b372-40d8-4d37-a59a-52a62f74f204">
+						<testmodule
+						name="TestCaseDriver"
+						id="9abcd014-e18a-416e-a21b-e2df274463da"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+				</testcase>
 				<testcase
 				name="600.040._Users_and_Groups2"
 				id="64d6f7ed-643a-4648-9121-b2dc1ea70268">
@@ -988,11 +998,11 @@ reportlevel="Info;20">
 			<testcase
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
+			id="16b2d828-575c-4faf-8f7d-74b92c41fc12"/>
+			<testcase
 			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
 			<testcase
-			id="64d6f7ed-643a-4648-9121-b2dc1ea70268"/>
-			<testcase
-			id="803b3d64-171f-4343-8989-06351d392213"/>
+			id="3970b372-40d8-4d37-a59a-52a62f74f204"/>
 			<testcase
 			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
 		</testconfiguration>

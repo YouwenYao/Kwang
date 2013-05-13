@@ -184,6 +184,10 @@
       <id>f5169116-8127-4447-849a-4c7f0a25c6f2</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST1114_ToDeleteAnAreaFromTheTreeInViews.xlsx">
+      <id>d69f45a3-e78b-4381-a4ca-4c4754429cd7</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST1120_CopyDeviceFeature.xlsx">
       <id>1627e4b1-48b5-4420-b18d-6c77e0fb1116</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
