@@ -839,6 +839,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST1113_CopyAnExistingAreaAndCreateNewAreaInTheTreeOfView"
+					id="421c0901-e94e-4fd4-b332-329cd154dc11">
+						<testmodule
+						name="TestCaseDriver"
+						id="ea1d53e1-895a-4b44-80ef-cdfc9e8a28c9"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.040._Users_and_Groups2"
@@ -1002,7 +1011,7 @@ reportlevel="Info;20">
 			<testcase
 			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
 			<testcase
-			id="3970b372-40d8-4d37-a59a-52a62f74f204"/>
+			id="421c0901-e94e-4fd4-b332-329cd154dc11"/>
 			<testcase
 			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
 		</testconfiguration>
