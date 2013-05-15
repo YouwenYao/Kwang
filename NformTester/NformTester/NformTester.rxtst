@@ -826,6 +826,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST732_MapActionsDialogWindowWithStateDefined"
+					id="a7edec62-5890-49e0-807f-a58bacc0b7e7">
+						<testmodule
+						name="TestCaseDriver"
+						id="72e9c3eb-a3de-46cb-8b2e-06e2f87c6a6d"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.030._Views2"
@@ -1007,13 +1016,13 @@ reportlevel="Info;20">
 			<testcase
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
-			id="16b2d828-575c-4faf-8f7d-74b92c41fc12"/>
-			<testcase
 			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
 			<testcase
-			id="421c0901-e94e-4fd4-b332-329cd154dc11"/>
-			<testcase
 			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
+			<testcase
+			id="a7edec62-5890-49e0-807f-a58bacc0b7e7"/>
+			<testcase
+			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

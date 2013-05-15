@@ -412,6 +412,10 @@
       <id>dcc1d8db-4707-4c27-85ba-c879a551339c</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST732_MapActionsDialogWindowWithStateDefined.xlsx">
+      <id>b373b527-c112-40ee-a297-2d2e1b232cab</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST762_CheckGUIOfPeriodComboBoxes.xlsx">
       <id>e15d246d-8e87-4c8f-829a-d7d9f7bdda63</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
