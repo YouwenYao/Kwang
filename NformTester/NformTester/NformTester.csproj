@@ -186,6 +186,8 @@
     </None>
     <None Include="Keywordscripts\TST1113_CopyAnExistingAreaAndCreateNewAreaInTheTreeOfView.xlsx">
       <id>ce6530e6-fd86-44a2-aafe-93d3fe283fa5</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\TST1077_VerifyThatNoUnhandledExceptionInReadDataActionPropertiesWindow.xlsx">
       <id>2729206f-1dc3-4487-bbac-05b8176ca6a5</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

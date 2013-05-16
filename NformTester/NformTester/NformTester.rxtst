@@ -827,19 +827,20 @@ reportlevel="Info;20">
 						type="UserCode"/>
 					</testcase>
 					<testcase
-
 					name="TST732_MapActionsDialogWindowWithStateDefined"
 					id="a7edec62-5890-49e0-807f-a58bacc0b7e7">
 						<testmodule
 						name="TestCaseDriver"
 						id="72e9c3eb-a3de-46cb-8b2e-06e2f87c6a6d"
-						
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
 					name="TST1077_VerifyThatNoUnhandledExceptionInReadDataActionPropertiesWindow"
 					id="f5c70d34-7390-4f17-9a14-808d23779f52">
 						<testmodule
 						name="TestCaseDriver"
 						id="040cccaf-0d51-49e5-9d7d-9aabd47a19b9"
-
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -1020,21 +1021,7 @@ reportlevel="Info;20">
 	<testconfigurations
 	default="TestRun">
 		<testconfiguration
-		name="TestRun">
-			<testcase
-			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
-			<testcase
-			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
-			<testcase
-			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
-			<testcase
-			id="a7edec62-5890-49e0-807f-a58bacc0b7e7"/>
-			<testcase
-			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
-			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
-			<testcase
-			id="f5c70d34-7390-4f17-9a14-808d23779f52"/>
-		</testconfiguration>
+		name="TestRun"/>
 	</testconfigurations>
 	<references>
 		<reference>
