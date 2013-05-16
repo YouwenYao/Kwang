@@ -827,11 +827,19 @@ reportlevel="Info;20">
 						type="UserCode"/>
 					</testcase>
 					<testcase
+
 					name="TST732_MapActionsDialogWindowWithStateDefined"
 					id="a7edec62-5890-49e0-807f-a58bacc0b7e7">
 						<testmodule
 						name="TestCaseDriver"
 						id="72e9c3eb-a3de-46cb-8b2e-06e2f87c6a6d"
+						
+					name="TST1077_VerifyThatNoUnhandledExceptionInReadDataActionPropertiesWindow"
+					id="f5c70d34-7390-4f17-9a14-808d23779f52">
+						<testmodule
+						name="TestCaseDriver"
+						id="040cccaf-0d51-49e5-9d7d-9aabd47a19b9"
+
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -1023,6 +1031,9 @@ reportlevel="Info;20">
 			id="a7edec62-5890-49e0-807f-a58bacc0b7e7"/>
 			<testcase
 			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
+			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
+			<testcase
+			id="f5c70d34-7390-4f17-9a14-808d23779f52"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
