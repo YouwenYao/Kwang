@@ -238,9 +238,6 @@ namespace NformTester
        	   						xSheetActions.Cells[11,iActionsCol] = "VerifyContains";
        	   						xSheetActions.Cells[12,iActionsCol] = "VerifyNotContains";
        	   						xSheetActions.Cells[12,iActionsCol] = "InputCell";
-       	   						/// <summary>
-       	   						/// /////////////////////////////////////////////////////////////
-       	   						/// </summary>
        	   					}
        	   					else if (strComponentType == "tree")
        	   					{
