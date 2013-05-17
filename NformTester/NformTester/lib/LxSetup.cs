@@ -13,6 +13,7 @@ using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
 using System.Xml;
+using System.Text.RegularExpressions;
 
 using System.Windows.Forms;
 
@@ -130,8 +131,10 @@ namespace NformTester.lib
 			m_iRowNum = Convert.ToInt16(opXls.readCell(7,2));
 
 			string runningRange = opXls.readCell(8,2);
+			Regex rex = new Regex("[0-9]+");
 			
-			if(runningRange == "")
+			
+			if(runningRange == "" || runningRange.IndexOf("a") != -1)
 			{
 				m_iRowStart = 1;
 				m_iRowEnd = m_iRowNum;
