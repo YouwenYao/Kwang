@@ -1031,6 +1031,20 @@ reportlevel="Info;20">
 			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
 			<testcase
 			id="df7edb2b-860c-49dc-9078-ff2dac2f7734"/>
+			<testcase
+                        id="23a770c7-4023-4976-b0da-b27cc209ba38"/>
+			<testcase
+			id="2879a82f-643e-4fc5-b047-df6434a6e45d"/>
+			<testcase
+			id="402f8845-9c99-4944-86bb-cd38ff268fc2"/>
+			<testcase
+			id="5ae57d1d-408c-4120-b1b0-aaca22ffc46a"/>
+			<testcase
+			id="8e1a7dd5-143b-4931-811d-41f3f8a09914"/>
+			<testcase
+			id="a6744b73-5aac-420a-9b72-2a291fe299ff"/>
+			<testcase
+			id="d05f2f90-1164-4364-9e6c-1664c5a3c3e5"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

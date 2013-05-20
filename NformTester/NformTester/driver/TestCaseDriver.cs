@@ -53,83 +53,45 @@ namespace NformTester.driver
         /// that will in turn invoke this method.</remarks>
         void ITestModule.Run()
         {           
-        	
-        	
-        	
-            //Get database type from Device.ini, 
-            //DbType=1,bundled database;
-            //DbType=2,SQL Server database;
- 			
-           
-            int DbType = 1; /*
-            MessageBox.Show("DbType:"+DbType);
-
-            bool BackupResult = false;
-            try
-            {
-	            DbType = LxGenericAction.GetDataBaseType();
-	             MessageBox.Show("DbType:"+DbType);
-	        	
-	        	//First, back up the database.
-	        	BackupResult = LxGenericAction.BackUpDataBase(DbType);
-            }
-            catch(Exception ex)
-            {
-              Console.WriteLine("Error when back up database!"+ex.StackTrace.ToString());
-              MessageBox.Show(ex.StackTrace.ToString());
-            }
-            
-            if(BackupResult == false)
-            {
-               Console.WriteLine("Back up database is faild!");
-            }
-            else
-            {
-            	Console.WriteLine("Back up database is successful!");
-            }
-			*/
-        	
         	Mouse.DefaultMoveTime = 300;
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;  
             LxSetup mainOp = LxSetup.getInstance();                                             
             string tsName = mainOp.getTestCaseName();
             string excelPath = "keywordscripts/" + tsName + ".xlsx";                                           
-            Report.Info("INfo",excelPath);
-            	
+            Report.Info("INfo",excelPath);	
             mainOp.StrExcelDirve = System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(),
                                                  excelPath);
             mainOp.runApp();							//  ********* 1. run Application *********
             
             LxParse stepsRepository = mainOp.getSteps();
             // stepsRepository.doValidate();  				//  ********* 2. check scripts  syntax *********
-            
             ArrayList stepList = stepsRepository.getStepsList();
             bool result = LxGenericAction.performScripts(stepList);	//  ********* 3. run scripts with reflection *********
-            mainOp.setResult();            
             
+            mainOp.setResult();
             mainOp.runOverOneCase(tsName);
             mainOp.opXls.close();
+            Delay.Seconds(5);
             LxTearDown.closeApp(mainOp.ProcessId);		//  ********* 4. clean up for next running *********
-                          
-            // If there is any error when perform Scripts, execute the restore DB operation. 
-            if(result == false)
+
+            //stop Nform service
+			Console.WriteLine("Stop Nform service...");
+			Program.RunCommand("sc stop Nform");
+            // Restore Database operation.
+            // If there is any error when perform Scripts, execute the restore DB operation.
+            Program.myLxDBOper.RestoreDataBase();
+            if(Program.myLxDBOper.GetRestoreResult() == false)
             {
-            	Console.WriteLine("We need to restore database, because there is wrong when this script is running.");
-            	bool RestoreResult = false;
-            	try
-            	{
-            		RestoreResult = LxGenericAction.RestoreDataBase(DbType);
-            	}
-            	catch(Exception ex)
-	            {
-	                Console.WriteLine("Error when Restore database!"+ex.StackTrace.ToString());
-	            }
-	        	if(RestoreResult == false)
-	        	{
-	                Console.WriteLine("Restore database is failed, you shoud handle this question manually!");
-	        	}
+               Console.WriteLine("Restore database is faild! You need to restore database manually");
             }
+            else
+            {
+            	Console.WriteLine("Restore database is successful!");
+            }
+            //start Nform service
+            Console.WriteLine("Start Nform service...");
+			Program.RunCommand("sc start Nform");	
            
         }
         

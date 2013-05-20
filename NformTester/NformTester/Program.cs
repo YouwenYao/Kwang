@@ -31,7 +31,17 @@ namespace NformTester
 {
     class Program
     {
-        [STAThread]
+    	/// <summary>
+        /// Result of backup database. Used by restore database of every script.
+        /// </summary>
+    	public static bool BackupResult = false;
+    	
+    	/// <summary>
+        /// Result of backup database. Used by restore database of every script.
+        /// </summary>
+    	public static LxDBOper myLxDBOper = new LxDBOper();
+    	
+    	[STAThread]
         public static int Main(string[] args)
         {
  			/*
@@ -42,16 +52,39 @@ namespace NformTester
             	{
             		return 0;
             	}
-        	}                    
+        	}                   
             */
+          
+            //stop Nform service
+			Console.WriteLine("Stop Nform service...");
+			string strRst = RunCommand("sc stop Nform");
+          
+		   //Be used to check devices are avalibale or not, which are configured in Device.ini
+           LxDeviceAvailable myDeviceAvailable = new LxDeviceAvailable();
+           myDeviceAvailable.CheckSnmpDevice();
+           // myDeviceAvailable.CheckVelDevice();
+           
+           //Backup Database operation. Just do once before run all scripts.
+            myLxDBOper.SetDbType();
+            myLxDBOper.BackUpDataBase();
+            if(myLxDBOper.GetBackUpResult() == false)
+            {
+               Console.WriteLine("Back up database is faild!");
+            }
+            else
+            {
+            	Console.WriteLine("Back up database is successful!");
+            }
+    
+            //start Nform service
+            Console.WriteLine("Start Nform service...");
+			strRst = RunCommand("sc start Nform");	
+           
         	Keyboard.AbortKey = System.Windows.Forms.Keys.Pause;
             int error = 0;
-           
             try
             {
- //               MessageBox.Show("TestSuiteRunner.Run");
-                error = TestSuiteRunner.Run(typeof(Program), Environment.CommandLine);
-            	
+                error = TestSuiteRunner.Run(typeof(Program), Environment.CommandLine);            	
             }
             catch (Exception e)
             {
@@ -82,199 +115,6 @@ namespace NformTester
 			Delay.Duration(10000);
 			return  "";
 		}
-        
-        //**********************************************************************
-		/// <summary>
-		/// Check the device is available or not
-		/// </summary>
-		public static bool CheckDeviceAvailable()
-		{		
-			//stop Nform service
-			Console.WriteLine("Stop Nform service...");
-			string strRst = RunCommand("sc stop Nform");				
-			//string strRst = "";
-			//Check SNMP device configured in device.ini is available.
-			bool result = true;
-        	List<string> NotAvailableSNMPDevice = CheckSNMPDeviceAvailable();
-        	if(NotAvailableSNMPDevice!= null && NotAvailableSNMPDevice.Count>0)
-        	{
-        		Console.WriteLine("These devices are not available!");
-        		foreach(string s_IP in NotAvailableSNMPDevice)
-        		{
-        			Console.WriteLine("Unavailable SNMP device is:" + s_IP);
-        			result = false;
-        		}
-        		//MessageBox.Show("Do you want to continue? Click Ok button to continue.");
-        	}
-        	
-        	//Check velocity device configured in device.ini is available.
-        	List<string> NotAvailableVelocityDevice = CheckVelocityDeviceAvailable();
-            if(NotAvailableVelocityDevice!= null && NotAvailableVelocityDevice.Count>0)
-        	{
-        		Console.WriteLine("These devices are not available!");
-        		foreach(string s_IP in NotAvailableVelocityDevice)
-        		{
-        			Console.WriteLine("Unavailable Velocity devices :" + s_IP);
-        			result = false;
-        		}
-        		//MessageBox.Show("Do you want to continue? Click Ok button to continue.");
-        	}
-            
-            //start Nform service
-            Console.WriteLine("Start Nform service...");
-			strRst = RunCommand("sc start Nform");		
-			
-            return result;
-		}
-        
-        //**********************************************************************
-		/// <summary>
-		/// Check the SNMP devices in the Devices.ini are available or not.
-		/// If some devices are unavailable, the Devices.ini should be changed to give
-		/// tester all available devices.
-		/// Author: Sashimi.
-		/// </summary>
-		public static List<String> CheckSNMPDeviceAvailable(){			
-			List<string> notAvailable = new List<string>();
-		    // There are all devices in Device.ini.
-			string groupName="SNMPDevices";
-		    string[] keyName={
-		    	"GXT_1",
-		    	"GXT_2",
-		    	"GXT_3",
-		    	"GXT_4",
-		    	"GXT_5",
-		    	"SNMPdevice_0",
-		    	"SNMPdevice_1",
-		    	"SNMPdevice_2",
-		    	"Velocitydevice_1",
-		    	"Velocitydevice_2",
-		    	"SearchStart",
-		    	"SearchEnd",
-		    	"Default",
-		    	"SingleAuto_0",
-		    	"SinAuto_0",
-		    	"SingleAuto_1",
-		    	"SingleManual_1",
-		    	"SwitchedPDU_0",
-		    	"GXT_Ip_Port"
-		    };
-		    
-		    //GXT_Ip_Port=10.146.88.10:163
-		    string keyName_IpPort = "GXT_Ip_Port";
-		    string ipPort = myparseToValue(groupName,keyName_IpPort);
-		    string IP_Port = "";
-			if(ipPort.IndexOf(":") != -1)
-			{
-				string[] spilt = ipPort.Split(':');
-				//IP = strDestination.Substring(0,strDestination.IndexOf(":"));
-				IP_Port = spilt[0];
-			}
-		    
-			int timeout = 3;
-			VersionCode version = VersionCode.V1;
-			IPEndPoint endpoint = new IPEndPoint(IPAddress.Parse("1.1.1.1"),161);
-			OctetString community = new OctetString("public");
-            
-            ObjectIdentifier objectId = new ObjectIdentifier("1.3.6.1.2.1.11.1.0");
-            Variable var = new Variable(objectId);   
-            IList<Variable> varlist = new System.Collections.Generic.List<Variable>();
-            varlist.Add(var);
-            Variable data;
-            IList<Variable> resultdata;
-            
-            foreach(string deviceIP in keyName){
-            	string strIP = myparseToValue(groupName,deviceIP);
-	            try
-	            {	            	
-	            	if(!deviceIP.Equals("GXT_Ip_Port"))
-	            		endpoint.Address = IPAddress.Parse(strIP);
-	            	else
-	            		endpoint.Address = IPAddress.Parse(IP_Port);
-	            	 resultdata = Messenger.Get(version,endpoint,community,varlist,timeout);
-	            	 data = resultdata[0];	            
-	            	 Console.WriteLine("The device:" + deviceIP + "("+ strIP +")"+ " is availabe");
-	            }
-	            catch(Exception ex)
-	            {
-	            	notAvailable.Add(deviceIP);
-	            	Console.WriteLine("There is no device in this ip address."+ deviceIP + "("+ strIP +")!" );
-	            	string log = ex.ToString();
-	            	continue;
-	            }
-            }
-   
-		    return notAvailable;
-	   }
-		
-		
-         //**********************************************************************
-		/// <summary>
-		/// Check the velocity devices in the Devices.ini are available or not.
-		/// If some devices are unavailable, the Devices.ini should be changed to give
-		/// tester all available devices.
-		/// Author: Sashimi.
-		/// </summary>
-		public static List<String> CheckVelocityDeviceAvailable(){
-			// There are all devices in Device.ini.
-			List<string> notAvailable = new List<string>();		
-			string groupName="VelocityDevices";
-		    string[] keyName={				
-				"Velocitydevice_1",
-		    	"Velocitydevice_2",
-		    	"VelocitySearchStart",
-		    	"VelocitySearchEnd",
-		    	"VelocityDefault",
-		    	"VelocitySingleAuto_0",
-		    	"VelocitySingleAuto_1",
-		    	"VelocitySingleManual_1",
-		    };
-			
-         ClientEngine ve = ClientEngine.GetClientEngine();                                                  
-            	
-         string GDDpath = System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(),
-                                                 "mds");
-         int startupflag = ve.Startup(GDDpath);
-         Console.WriteLine("GDDPath:" + startupflag);
-	     CommsChannel channel = ve.OpenChannel(CommStack.BACnetIp);
-	     
-	     foreach(string deviceIP in keyName){
-		     if(channel != null)
-		     {
-		     	string strIP = myparseToValue(groupName,deviceIP);
-		     	DeviceNode node = channel.StrToEntity(strIP);
-		     	if(node != null)
-		     	{
-		     		Console.WriteLine("The device:" + deviceIP + "("+ strIP +")"+ " is availabe");
-		     	}
-		     	else
-		     	{
-		     		notAvailable.Add(deviceIP);
-		     		Console.WriteLine("There is no device in this ip address."+ deviceIP + "("+ strIP +")!" );
-		     	}
-		     }
-		     else
-		     {
-		     	Console.WriteLine("This channel is not available!");
-		     }
-	     }
-	     channel.Dispose();
-	     return notAvailable;
-		}
-		
-		//**********************************************************************
-		/// <summary>
-		/// Parse the value from Devices.ini.
-		/// Author: Sashimi.
-		/// </summary>
-		public static string myparseToValue(string GroupName, string key)
-        {
-		  LxIniFile confFile = new LxIniFile(System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(),
-                                                 "Devices.ini"));
-          string def = confFile.GetString(GroupName, "Default", "null");
-          string result = confFile.GetString(GroupName, key, def);
-          return result;
-        }
         
     }
 }
