@@ -986,6 +986,15 @@ reportlevel="Info;20">
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
+				<testcase
+				name="TST923_CheckFunctionalityOfGadgetSetupDialogFilterByDeviceType"
+				id="eac8f16f-fa5c-4336-8889-f1324453ca5c">
+					<testmodule
+					name="TestCaseDriver"
+					id="316d8556-4f29-4704-8f46-f16a2a7b9d6c"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
 			</testcase>
 			<testcase
 			name="1000._Database2"
@@ -1025,21 +1034,12 @@ reportlevel="Info;20">
 			<testcase
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
-			id="23a770c7-4023-4976-b0da-b27cc209ba38"/>
+			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
 			<testcase
-			id="2879a82f-643e-4fc5-b047-df6434a6e45d"/>
+			id="a5e9adfd-9aee-44b1-a5b7-3963bd48c29d"/>
 			<testcase
-			id="402f8845-9c99-4944-86bb-cd38ff268fc2"/>
-			<testcase
-			id="5ae57d1d-408c-4120-b1b0-aaca22ffc46a"/>
-			<testcase
-			id="8e1a7dd5-143b-4931-811d-41f3f8a09914"/>
-			<testcase
-			id="a6744b73-5aac-420a-9b72-2a291fe299ff"/>
-			<testcase
-			id="d05f2f90-1164-4364-9e6c-1664c5a3c3e5"/>
+			id="eac8f16f-fa5c-4336-8889-f1324453ca5c"/>
 		</testconfiguration>
-		
 	</testconfigurations>
 	<references>
 		<reference>

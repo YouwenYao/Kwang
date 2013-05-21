@@ -440,6 +440,10 @@
       <id>c8c82198-869a-4484-9ab4-f4a0fff674f2</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST923_CheckFunctionalityOfGadgetSetupDialogFilterByDeviceType.xlsx">
+      <id>6e252692-4c8c-45bd-9be6-13f3d3f00e14</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST931_InstallViewerOnly.xlsx">
       <id>6274e3e2-80d7-4392-b318-94cec1d69233</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

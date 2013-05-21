@@ -429,14 +429,6 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: All']/container[@controlname='m_statusPnl']/container/text[@controlname='m_filterTbx-Ctl']/text[@accessiblename='Filter:']
 					</item>
 					<item
-					name="Alarm_status_setup"
-					id="e472524d-b53a-4a9b-8eb7-3a72f6671a1c"
-					searchtimeout="30000ms"
-					capname="button"
-					addcaps="button,control,nativewindow">
-						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: All']/container[@controlname='m_statusPnl']/button[@controlname='m_setupBtn']
-					</item>
-					<item
 					name="Alarm_status_minimum"
 					id="344c93dd-c523-4396-a49a-61ab7f00f661"
 					searchtimeout="30000ms"
@@ -1109,52 +1101,60 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxViewerRhsMgr']/tabpagelist[@controlname='m_devTabCtl']/tabpage[@controlname='m_devTrendsPage']/container[@controlname='m_devTrendsDisplay']/container/container[@controlname='m_durationGrpBx']/button[@controlname='m_refreshBtn']
 					</item>
 					<item
-					name="TreeItemUPS_10_146_87_2"
-					id="1e47e2cd-ebe9-4114-91c2-0ac9acc35e99"
+					name="AlarmStatusList"
+					id="408a71d9-37b8-42d0-9618-3c339ee5140e"
 					searchtimeout="30000ms"
-					capname="treeitem"
-					addcaps="treeitem,accessible,accessibletreeitem">
-						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel1']/tree/tree/treeitem/treeitem[@accessiblename='UPS_10.146.87.2']
+					capname="list"
+					addcaps="list,accessible">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: Rack PDU']/container[@controlname='LxGadgetListView']/table/list[@accessiblerole='List']
 					</item>
 					<item
-					name="TreeItemDevice_Information"
-					id="d5afbe4f-879a-4030-8654-d3bec9c0b1db"
+					name="AlarmStatusTable_PDU"
+					id="a721f41c-d590-4f25-b365-ed2b7de3ddd0"
 					searchtimeout="30000ms"
-					capname="treeitem"
-					addcaps="treeitem,accessible,accessibletreeitem">
-						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxViewerRhsMgr']/tabpagelist[@controlname='m_devTabCtl']/tabpage[@controlname='m_devDataPage']/container[@controlname='m_devDataDisplay']/container[@controlname='m_dataSplitterCtl']/container[@controlname='panel1']/tree/tree/treeitem/treeitem[@accessiblename='Device Information']
+					capname="table"
+					addcaps="table,control,nativewindow">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: Rack PDU']/container[@controlname='LxGadgetListView']/table[@controlname='m_lvListView']
 					</item>
 					<item
-					name="CellName_Row_0"
-					id="44aeea8d-8585-42a9-a01e-ecbcd085c4d8"
+					name="Alarm_status_setup"
+					id="9aefa2d8-7b11-4581-b423-ca89d68b2472"
 					searchtimeout="30000ms"
-					capname="cell"
-					addcaps="cell,accessible">
-						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxViewerRhsMgr']/tabpagelist[@controlname='m_devTabCtl']/tabpage[@controlname='m_devDataPage']/container[@controlname='m_devDataDisplay']/container[@controlname='m_dataSplitterCtl']/container[@controlname='panel2']/table/row[@accessiblename='Row 0']/cell[@accessiblename='Name Row 0']
+					capname="button"
+					addcaps="button,control,nativewindow">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: All']/container[@controlname='m_statusPnl']/button[@controlname='m_setupBtn']
 					</item>
 					<item
-					name="CellNew_Row_0"
-					id="b9d43e8c-76f2-41e9-8009-014cdf625e53"
+					name="AlarmStatusTable_UPS"
+					id="487260cb-63ea-4419-bfa2-bcd5104d8a5a"
 					searchtimeout="30000ms"
-					capname="cell"
-					addcaps="cell,accessible">
-						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxViewerRhsMgr']/tabpagelist[@controlname='m_devTabCtl']/tabpage[@controlname='m_devDataPage']/container[@controlname='m_devDataDisplay']/container[@controlname='m_dataSplitterCtl']/container[@controlname='panel2']/table/row[@accessiblename='Row 0']/cell[@accessiblename='New Row 0']
+					capname="table"
+					addcaps="table,control,nativewindow">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: UPS']/container[@controlname='LxGadgetListView']/table[@controlname='m_lvListView']
 					</item>
 					<item
-					name="CellSource_Row_0"
-					id="6f92f659-c301-42ba-a715-424136713414"
+					name="Alarm_status_setup_PDU"
+					id="b2e2409c-5c19-4a2a-b8dd-6d77cf0edb13"
 					searchtimeout="30000ms"
-					capname="cell"
-					addcaps="cell,accessible">
-						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/table/row[@accessiblename='Row 0']/cell[@accessiblename='Source Row 0']
+					capname="button"
+					addcaps="button,control,nativewindow">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: Rack PDU']/container[@controlname='m_statusPnl']/button[@controlname='m_setupBtn']
 					</item>
 					<item
-					name="CellAlarm_Row_0"
-					id="342394db-4159-45ab-9b2a-727031c8ac35"
+					name="Alarm_status_setup_UPS"
+					id="6ebb1da3-33a0-4a01-bc5c-74207e7ef17c"
 					searchtimeout="30000ms"
-					capname="cell"
-					addcaps="cell,accessible">
-						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/table/row[@accessiblename='Row 0']/cell[@accessiblename='Alarm Row 0']
+					capname="button"
+					addcaps="button,control,nativewindow">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: UPS']/container[@controlname='m_statusPnl']/button[@controlname='m_setupBtn']
+					</item>
+					<item
+					name="AlarmStatusTable"
+					id="f33c85e4-03be-4fca-bd2d-6deedb3b0712"
+					searchtimeout="30000ms"
+					capname="table"
+					addcaps="table,control,nativewindow">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: All']/container[@controlname='LxGadgetListView']/table[@controlname='m_lvListView']
 					</item>
 					<basepath>
 						/form[@controlname='LxViewerFrame']
