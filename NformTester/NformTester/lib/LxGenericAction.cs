@@ -271,7 +271,7 @@ namespace NformTester.lib
 				Validate.Attribute(item.getComponentInfo(), item.getArgText(), new Regex("^((?!("+Regex.Escape(item.getArg3Text())+")).)*$"));
 			}
 			
-			if(item.getArg2Text() == "ComboBoxEqual")
+			if(item.getArg2Text() == "ListContains")
 			{
 				bool Resultflag = false; 
 				object objComponet = item.getComponent();
@@ -282,24 +282,6 @@ namespace NformTester.lib
 			    foreach (ListItem lst_item in lst.FindChildren<ListItem>())  
 			    {
 			    	if((lst_item.Text).Equals(item.getArg3Text()))
-			    	{
-			    		Resultflag = true;
-			        	break;
-			    	}
-			    }
-		        Validate.AreEqual(Resultflag,true);	
-			}
-			
-				if(item.getArg2Text() == "ListContains")
-			{
-				bool Resultflag = false; 
-				object objComponet = item.getComponent();
-			    Ranorex.List myList = (Ranorex.List)(objComponet);
-			    
-			    foreach (ListItem lst_item in myList.FindChildren<ListItem>())  
-			    {
-			    	
-			    	if((lst_item.Text).Contains(item.getArg3Text()))
 			    	{
 			    		Resultflag = true;
 			        	break;
