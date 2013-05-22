@@ -961,6 +961,15 @@ reportlevel="Info;20">
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
+				<testcase
+				name="TST1095_ExportAllLoggedDataPoint"
+				id="a771d192-834d-46b6-ab00-4015df176978">
+					<testmodule
+					name="TestCaseDriver"
+					id="d153758b-d95d-4130-b822-4ea626a2d754"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
 			</testcase>
 			<testcase
 			name="800._Help2"
@@ -1027,11 +1036,9 @@ reportlevel="Info;20">
 			<testcase
 			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
 			<testcase
-			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
+			id="97d8e90e-39f2-4c80-b3df-7ff4e4941dfa"/>
 			<testcase
-			id="debfb4b1-6ccd-4f66-a359-c463979f4399"/>
-			<testcase
-			id="df7edb2b-860c-49dc-9078-ff2dac2f7734"/>
+			id="a771d192-834d-46b6-ab00-4015df176978"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

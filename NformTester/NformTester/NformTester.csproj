@@ -184,6 +184,10 @@
       <id>f5169116-8127-4447-849a-4c7f0a25c6f2</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST1095_ExportAllLoggedDataPoint.xlsx">
+      <id>a46827a2-b4d0-4e1b-868b-33921c7c9de8</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\TST1098_ConfigureViewNoDuplicateGroupNameAccepted.xlsx">
       <id>9c7552b4-1cab-43a1-95c8-12b0d4c0302e</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
