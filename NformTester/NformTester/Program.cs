@@ -54,7 +54,8 @@ namespace NformTester
             	}
         	}                   
             */
-  /*comment for test         
+         
+           /*comment for test         
             //stop Nform service
 			Console.WriteLine("Stop Nform service...");
 			string strRst = RunCommand("sc stop Nform");
@@ -78,7 +79,8 @@ namespace NformTester
             //start Nform service
             Console.WriteLine("Start Nform service...");
 			RunCommand("sc start Nform");	
-       */    
+       */
+          
         	Keyboard.AbortKey = System.Windows.Forms.Keys.Pause;
             int error = 0;
             try

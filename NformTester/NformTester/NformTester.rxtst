@@ -866,6 +866,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST1547_VerifyNoDatabaseErrorOccuredInNavigationView"
+					id="c50aa380-877e-4371-a6ff-8b77c205bd63">
+						<testmodule
+						name="TestCaseDriver"
+						id="e4fdfa4d-9744-4430-81e2-992fee8f629e"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.040._Users_and_Groups2"
@@ -1034,11 +1043,13 @@ reportlevel="Info;20">
 			<testcase
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
+			id="16b2d828-575c-4faf-8f7d-74b92c41fc12"/>
+			<testcase
 			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
 			<testcase
-			id="a5e9adfd-9aee-44b1-a5b7-3963bd48c29d"/>
+			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
 			<testcase
-			id="eac8f16f-fa5c-4336-8889-f1324453ca5c"/>
+			id="c50aa380-877e-4371-a6ff-8b77c205bd63"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

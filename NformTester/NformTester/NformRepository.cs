@@ -1012,6 +1012,9 @@ namespace NformTester
             RepoItemInfo _alarm_status_setup_pduInfo;
             RepoItemInfo _alarm_status_setup_upsInfo;
             RepoItemInfo _alarmstatustableInfo;
+            RepoItemInfo _configuredgroupsInfo;
+            RepoItemInfo _newgroupInfo;
+            RepoItemInfo _receptaclesInfo;
 
             /// <summary>
             /// Creates a new FormMain  folder.
@@ -1142,6 +1145,9 @@ namespace NformTester
                 _alarm_status_setup_pduInfo = new RepoItemInfo(this, "Alarm_status_setup_PDU", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: Rack PDU']/container[@controlname='m_statusPnl']/button[@controlname='m_setupBtn']", 30000, null, "b2e2409c-5c19-4a2a-b8dd-6d77cf0edb13");
                 _alarm_status_setup_upsInfo = new RepoItemInfo(this, "Alarm_status_setup_UPS", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: UPS']/container[@controlname='m_statusPnl']/button[@controlname='m_setupBtn']", 30000, null, "6ebb1da3-33a0-4a01-bc5c-74207e7ef17c");
                 _alarmstatustableInfo = new RepoItemInfo(this, "AlarmStatusTable", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: All']/container[@controlname='LxGadgetListView']/table[@controlname='m_lvListView']", 30000, null, "f33c85e4-03be-4fca-bd2d-6deedb3b0712");
+                _configuredgroupsInfo = new RepoItemInfo(this, "ConfiguredGroups", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxVgViewerRhsMgr']/tabpagelist/tabpage[@controlname='m_parametricDataTab']/container[@controlname='LxVgGenericGrpDisplay']/container/link[@text='Configured groups']/text/link[@accessiblename='Configured groups']", 30000, null, "44280458-d24a-4a38-812a-73957ab3205b");
+                _newgroupInfo = new RepoItemInfo(this, "NewGroup", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxVgViewerRhsMgr']/tabpagelist/tabpage[@controlname='m_parametricDataTab']/container[@controlname='LxVgGenericGrpDisplay']/container/link/text/link[@accessiblename='New Group']", 30000, null, "9cf60843-2396-4327-8f8f-379d5b2284ab");
+                _receptaclesInfo = new RepoItemInfo(this, "Receptacles", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxVgViewerRhsMgr']/tabpagelist/tabpage[@controlname='m_parametricDataTab']/container[@controlname='LxVgRcpGrpDisplay']/container[@controlname='m_rcpGrid']/table[@controlname='m_receptaclesGridView']", 30000, null, "39474286-765e-4858-a3b4-cef51c93ee95");
             }
 
             /// <summary>
@@ -4093,6 +4099,78 @@ namespace NformTester
                 get
                 {
                     return _alarmstatustableInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ConfiguredGroups item.
+            /// </summary>
+            [RepositoryItem("44280458-d24a-4a38-812a-73957ab3205b")]
+            public virtual Ranorex.Link ConfiguredGroups
+            {
+                get
+                {
+                    return _configuredgroupsInfo.CreateAdapter<Ranorex.Link>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ConfiguredGroups item info.
+            /// </summary>
+            [RepositoryItemInfo("44280458-d24a-4a38-812a-73957ab3205b")]
+            public virtual RepoItemInfo ConfiguredGroupsInfo
+            {
+                get
+                {
+                    return _configuredgroupsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The NewGroup item.
+            /// </summary>
+            [RepositoryItem("9cf60843-2396-4327-8f8f-379d5b2284ab")]
+            public virtual Ranorex.Link NewGroup
+            {
+                get
+                {
+                    return _newgroupInfo.CreateAdapter<Ranorex.Link>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NewGroup item info.
+            /// </summary>
+            [RepositoryItemInfo("9cf60843-2396-4327-8f8f-379d5b2284ab")]
+            public virtual RepoItemInfo NewGroupInfo
+            {
+                get
+                {
+                    return _newgroupInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Receptacles item.
+            /// </summary>
+            [RepositoryItem("39474286-765e-4858-a3b4-cef51c93ee95")]
+            public virtual Ranorex.Table Receptacles
+            {
+                get
+                {
+                    return _receptaclesInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Receptacles item info.
+            /// </summary>
+            [RepositoryItemInfo("39474286-765e-4858-a3b4-cef51c93ee95")]
+            public virtual RepoItemInfo ReceptaclesInfo
+            {
+                get
+                {
+                    return _receptaclesInfo;
                 }
             }
         }
