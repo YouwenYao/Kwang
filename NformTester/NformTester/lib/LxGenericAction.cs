@@ -288,6 +288,7 @@ namespace NformTester.lib
 			        	break;
 			    	}
 			    }
+			    btn.Click();
 		        Validate.AreEqual(Resultflag,true);	
 			}
 		}
