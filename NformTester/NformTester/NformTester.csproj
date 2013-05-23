@@ -280,6 +280,10 @@
       <id>04a1930e-2fb4-4b4e-8ea7-41499b8ea516</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST1548_ExceptionInOnCellMouseDownInViewerLogWhenScrollsInALARMStabWith5000Alarms.xlsx">
+      <id>0ba90384-cede-42b4-b1fc-80bf8569a98b</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST2748_DeviceStatusPollingAndGolbalStatusPolling.xlsx">
       <id>b11d8a1e-94da-4d3a-af9a-bfea7cc46713</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

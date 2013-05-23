@@ -1156,6 +1156,30 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					addcaps="table,control,nativewindow">
 						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: All']/container[@controlname='LxGadgetListView']/table[@controlname='m_lvListView']
 					</item>
+					<item
+					name="AlarmLineUp"
+					id="899004f1-9750-4d41-95a1-ac60be20ca79"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/table/scrollbar[@accessiblename='Vertical Scroll Bar' and @accessiblerole='ScrollBar']/button[@accessiblename='Line up']
+					</item>
+					<item
+					name="AlarmPosition"
+					id="ab10ec0f-8405-414e-9e53-58461e59bebe"
+					searchtimeout="30000ms"
+					capname="indicator"
+					addcaps="indicator,accessible">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/table/scrollbar[@accessiblename='Vertical Scroll Bar' and @accessiblerole='ScrollBar']/indicator[@accessiblename='Position']
+					</item>
+					<item
+					name="AlarmLineDown"
+					id="9c64ca54-f2da-4c59-a62d-4f0d3eb1ebd5"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/table/scrollbar[@accessiblename='Vertical Scroll Bar' and @accessiblerole='ScrollBar']/button[@accessiblename='Line down']
+					</item>
 					<basepath>
 						/form[@controlname='LxViewerFrame']
 					</basepath>

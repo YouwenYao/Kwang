@@ -1012,6 +1012,9 @@ namespace NformTester
             RepoItemInfo _alarm_status_setup_pduInfo;
             RepoItemInfo _alarm_status_setup_upsInfo;
             RepoItemInfo _alarmstatustableInfo;
+            RepoItemInfo _alarmlineupInfo;
+            RepoItemInfo _alarmpositionInfo;
+            RepoItemInfo _alarmlinedownInfo;
 
             /// <summary>
             /// Creates a new FormMain  folder.
@@ -1142,6 +1145,9 @@ namespace NformTester
                 _alarm_status_setup_pduInfo = new RepoItemInfo(this, "Alarm_status_setup_PDU", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: Rack PDU']/container[@controlname='m_statusPnl']/button[@controlname='m_setupBtn']", 30000, null, "b2e2409c-5c19-4a2a-b8dd-6d77cf0edb13");
                 _alarm_status_setup_upsInfo = new RepoItemInfo(this, "Alarm_status_setup_UPS", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: UPS']/container[@controlname='m_statusPnl']/button[@controlname='m_setupBtn']", 30000, null, "6ebb1da3-33a0-4a01-bc5c-74207e7ef17c");
                 _alarmstatustableInfo = new RepoItemInfo(this, "AlarmStatusTable", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: All']/container[@controlname='LxGadgetListView']/table[@controlname='m_lvListView']", 30000, null, "f33c85e4-03be-4fca-bd2d-6deedb3b0712");
+                _alarmlineupInfo = new RepoItemInfo(this, "AlarmLineUp", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/table/scrollbar[@accessiblename='Vertical Scroll Bar' and @accessiblerole='ScrollBar']/button[@accessiblename='Line up']", 30000, null, "899004f1-9750-4d41-95a1-ac60be20ca79");
+                _alarmpositionInfo = new RepoItemInfo(this, "AlarmPosition", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/table/scrollbar[@accessiblename='Vertical Scroll Bar' and @accessiblerole='ScrollBar']/indicator[@accessiblename='Position']", 30000, null, "ab10ec0f-8405-414e-9e53-58461e59bebe");
+                _alarmlinedownInfo = new RepoItemInfo(this, "AlarmLineDown", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/table/scrollbar[@accessiblename='Vertical Scroll Bar' and @accessiblerole='ScrollBar']/button[@accessiblename='Line down']", 30000, null, "9c64ca54-f2da-4c59-a62d-4f0d3eb1ebd5");
             }
 
             /// <summary>
@@ -4093,6 +4099,78 @@ namespace NformTester
                 get
                 {
                     return _alarmstatustableInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AlarmLineUp item.
+            /// </summary>
+            [RepositoryItem("899004f1-9750-4d41-95a1-ac60be20ca79")]
+            public virtual Ranorex.Button AlarmLineUp
+            {
+                get
+                {
+                    return _alarmlineupInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AlarmLineUp item info.
+            /// </summary>
+            [RepositoryItemInfo("899004f1-9750-4d41-95a1-ac60be20ca79")]
+            public virtual RepoItemInfo AlarmLineUpInfo
+            {
+                get
+                {
+                    return _alarmlineupInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AlarmPosition item.
+            /// </summary>
+            [RepositoryItem("ab10ec0f-8405-414e-9e53-58461e59bebe")]
+            public virtual Ranorex.Indicator AlarmPosition
+            {
+                get
+                {
+                    return _alarmpositionInfo.CreateAdapter<Ranorex.Indicator>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AlarmPosition item info.
+            /// </summary>
+            [RepositoryItemInfo("ab10ec0f-8405-414e-9e53-58461e59bebe")]
+            public virtual RepoItemInfo AlarmPositionInfo
+            {
+                get
+                {
+                    return _alarmpositionInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AlarmLineDown item.
+            /// </summary>
+            [RepositoryItem("9c64ca54-f2da-4c59-a62d-4f0d3eb1ebd5")]
+            public virtual Ranorex.Button AlarmLineDown
+            {
+                get
+                {
+                    return _alarmlinedownInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AlarmLineDown item info.
+            /// </summary>
+            [RepositoryItemInfo("9c64ca54-f2da-4c59-a62d-4f0d3eb1ebd5")]
+            public virtual RepoItemInfo AlarmLineDownInfo
+            {
+                get
+                {
+                    return _alarmlinedownInfo;
                 }
             }
         }
