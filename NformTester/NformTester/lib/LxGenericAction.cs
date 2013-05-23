@@ -271,7 +271,7 @@ namespace NformTester.lib
 				Validate.Attribute(item.getComponentInfo(), item.getArgText(), new Regex("^((?!("+Regex.Escape(item.getArg3Text())+")).)*$"));
 			}
 			
-			if(item.getArg2Text() == "ComboBoxEqual")
+			if(item.getArg2Text() == "ListContains")
 			{
 				bool Resultflag = false; 
 				object objComponet = item.getComponent();
@@ -287,24 +287,7 @@ namespace NformTester.lib
 			        	break;
 			    	}
 			    }
-		        Validate.AreEqual(Resultflag,true);	
-			}
-			
-				if(item.getArg2Text() == "ListContains")
-			{
-				bool Resultflag = false; 
-				object objComponet = item.getComponent();
-			    Ranorex.List myList = (Ranorex.List)(objComponet);
-			    
-			    foreach (ListItem lst_item in myList.FindChildren<ListItem>())  
-			    {
-			    	
-			    	if((lst_item.Text).Contains(item.getArg3Text()))
-			    	{
-			    		Resultflag = true;
-			        	break;
-			    	}
-			    }
+			    btn.Click();
 		        Validate.AreEqual(Resultflag,true);	
 			}
 		}
@@ -584,6 +567,7 @@ namespace NformTester.lib
             {
             	byte[] bytes = StrToByteArray(message);
             	sender.Send(bytes, bytes.Length, groupEP);
+            	Delay.Milliseconds(50);
             }
             sender.Close();
         }
