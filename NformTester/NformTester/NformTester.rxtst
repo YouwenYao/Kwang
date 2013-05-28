@@ -876,19 +876,20 @@ reportlevel="Info;20">
 						type="UserCode"/>
 					</testcase>
 					<testcase
-
 					name="TST1548_ExceptionInOnCellMouseDownInViewerLogWhenScrollsInALARMStabWith5000Alarms"
 					id="b29a4875-f030-49d1-a974-17271522ab66">
 						<testmodule
 						name="TestCaseDriver"
 						id="56c421ec-0517-4708-ba53-efddbdcae498"
-
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
 					name="TST1547_VerifyNoDatabaseErrorOccuredInNavigationView"
 					id="c50aa380-877e-4371-a6ff-8b77c205bd63">
 						<testmodule
 						name="TestCaseDriver"
 						id="e4fdfa4d-9744-4430-81e2-992fee8f629e"
-
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -1056,26 +1057,7 @@ reportlevel="Info;20">
 	<testconfigurations
 	default="TestRun">
 		<testconfiguration
-		name="TestRun">
-			<testcase
-			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
-			<testcase
-			id="16b2d828-575c-4faf-8f7d-74b92c41fc12"/>
-			<testcase
-			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
-			<testcase
-			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
-
-			<testcase
-			id="bf8d89e3-a747-4a38-bac2-d669014b54a6"/>
-			
-			<testcase
-			id="f357009c-1faa-48cb-9611-2645dc489405"/>
-
-			<testcase
-			id="c50aa380-877e-4371-a6ff-8b77c205bd63"/>
-			
-		</testconfiguration>
+		name="TestRun"/>
 	</testconfigurations>
 	<references>
 		<reference>
