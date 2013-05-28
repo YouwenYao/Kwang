@@ -909,8 +909,8 @@ namespace NformTester.lib
 			if(objType.Name.ToString() == "Table")
 			{
 				Ranorex.Table tb = (Ranorex.Table)objComponet;
-				tb.Rows[Convert.ToInt32(item.getArgText())].Cells[Convert.ToInt32(item.getArg2Text())].Click();
-				Keyboard.Press("{"+item.getArg3Text()+"}");
+				tb.Rows[Convert.ToInt32(item.getArgText())].Cells[Convert.ToInt32(item.getArg2Text())].DoubleClick();
+				Keyboard.Press("{CONTROL down}{Akey}{CONTROL up}"+item.getArg3Text());
 			}									
 		}
 			
