@@ -1,27 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <projectusersettings>
-	<changestatecache>
-		<codegenfilechangeinfo
-		fileitemid="cd2e6476-08de-4490-bccc-a5ee732b8f1b"
-<<<<<<< HEAD
-		changehash="18446744071752825771"
-		lastcodegentimestamp="130141852992178380"
-		filelength="521892">
-			<codegenfilechangeinfo
-			fileitemid="be55ff5e-522d-4087-a441-30853af41aaa"
-			changehash="18446744073310423275"
-			lastcodegentimestamp="130141852992178380"
-			filelength="1426199"/>
-=======
-		changehash="18446744071709884683"
-		lastcodegentimestamp="130135941325407293"
-		filelength="520502">
-			<codegenfilechangeinfo
-			fileitemid="be55ff5e-522d-4087-a441-30853af41aaa"
-			changehash="1776256791"
-			lastcodegentimestamp="130135941325407293"
-			filelength="1422665"/>
->>>>>>> REQ9448_TST1547
-		</codegenfilechangeinfo>
-	</changestatecache>
+	<changestatecache/>
 </projectusersettings>
