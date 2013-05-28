@@ -1157,7 +1157,6 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: All']/container[@controlname='LxGadgetListView']/table[@controlname='m_lvListView']
 					</item>
 					<item
-
 					name="AlarmLineUp"
 					id="899004f1-9750-4d41-95a1-ac60be20ca79"
 					searchtimeout="30000ms"
@@ -1180,7 +1179,8 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					capname="button"
 					addcaps="button,accessible">
 						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/table/scrollbar[@accessiblename='Vertical Scroll Bar' and @accessiblerole='ScrollBar']/button[@accessiblename='Line down']
-
+					</item>
+					<item
 					name="ConfiguredGroups"
 					id="44280458-d24a-4a38-812a-73957ab3205b"
 					searchtimeout="30000ms"
@@ -1203,7 +1203,6 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					capname="table"
 					addcaps="table,control,nativewindow">
 						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxVgViewerRhsMgr']/tabpagelist/tabpage[@controlname='m_parametricDataTab']/container[@controlname='LxVgRcpGrpDisplay']/container[@controlname='m_rcpGrid']/table[@controlname='m_receptaclesGridView']
-
 					</item>
 					<basepath>
 						/form[@controlname='LxViewerFrame']
