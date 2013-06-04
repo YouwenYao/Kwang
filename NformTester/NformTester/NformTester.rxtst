@@ -826,10 +826,29 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST592_DeleteAnActionSetWithUsersRight"
+					id="39c785d2-450b-40a6-9cf5-5433f6356def">
+						<testmodule
+						name="TestCaseDriver"
+						id="e930aad2-10ed-4804-83a5-48396ce70628"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.030._Views2"
-				id="16b2d828-575c-4faf-8f7d-74b92c41fc12"/>
+				id="16b2d828-575c-4faf-8f7d-74b92c41fc12">
+					<testcase
+					name="TST1098_ConfigureViewNoDuplicateGroupNameAccepted"
+					id="204704d6-6eb0-4cc4-8ae2-e58671e22066">
+						<testmodule
+						name="TestCaseDriver"
+						id="e36d528f-3b10-4d9f-90dc-2f3e69ecac9b"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+				</testcase>
 				<testcase
 				name="600.040._Users_and_Groups2"
 				id="64d6f7ed-643a-4648-9121-b2dc1ea70268">
@@ -885,6 +904,24 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST2831_RSDSupportCheckBox"
+					id="6477784c-d169-4ced-9899-fef9a13f56f2">
+						<testmodule
+						name="TestCaseDriver"
+						id="0d399db0-cb1f-4f47-a170-8691a3da9128"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST1200_EnableLiebertProtocolOn"
+					id="debfb4b1-6ccd-4f66-a359-c463979f4399">
+						<testmodule
+						name="TestCaseDriver"
+						id="e257872b-cebd-49d7-bfd0-6e775c84a72f"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.070._Change_Password2"
@@ -921,6 +958,15 @@ reportlevel="Info;20">
 					<testmodule
 					name="TestCaseDriver"
 					id="4db9f24b-0d13-423b-b705-3e2bfd313f8d"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="TST1095_ExportAllLoggedDataPoint"
+				id="a771d192-834d-46b6-ab00-4015df176978">
+					<testmodule
+					name="TestCaseDriver"
+					id="d153758b-d95d-4130-b822-4ea626a2d754"
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
@@ -989,6 +1035,12 @@ reportlevel="Info;20">
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
 			id="15542ef7-bf90-431d-8e26-f8eb1c05a42e"/>
+			<testcase 
+			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
+			<testcase
+			id="97d8e90e-39f2-4c80-b3df-7ff4e4941dfa"/>
+			<testcase
+			id="a771d192-834d-46b6-ab00-4015df176978"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
