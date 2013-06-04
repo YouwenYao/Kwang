@@ -74,7 +74,7 @@ namespace NformTester.driver
             mainOp.opXls.close();
             Delay.Seconds(5);
             LxTearDown.closeApp(mainOp.ProcessId);		//  ********* 4. clean up for next running *********
-/*
+
             //stop Nform service
 			Console.WriteLine("Stop Nform service...");
 			Program.RunCommand("sc stop Nform");
@@ -92,9 +92,7 @@ namespace NformTester.driver
             //start Nform service
             Console.WriteLine("Start Nform service...");
 			Program.RunCommand("sc start Nform");	
-			
-			*/
-           
+
         }
         
     }

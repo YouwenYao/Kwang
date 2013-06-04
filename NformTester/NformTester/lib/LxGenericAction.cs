@@ -20,6 +20,7 @@ using System.Data;
 using System.Diagnostics;
 using Lextm.SharpSnmpLib;
 using Lextm.SharpSnmpLib.Messaging;
+using System.Drawing;
 
 using Ranorex;
 using Ranorex.Core;
@@ -531,7 +532,19 @@ namespace NformTester.lib
 				                                                   objComponetInfo.Path + strTreelevel +"[@accessiblename='"+ item.getArg2Text() +"']", 
 				                                                   10000, null, System.Guid.NewGuid().ToString());                     
             	Ranorex.TreeItem targetTreeItem = targetTreeItemInfo.CreateAdapter<Ranorex.TreeItem>(true);            	
-            	targetTreeItem.DoubleClick();
+        //    	targetTreeItem.DoubleClick();
+            	
+            	Ranorex.Control treeViewControl = targetTreeItem.Element.As<Ranorex.Control>();
+				System.Windows.Forms.TreeNode node = treeViewControl.InvokeMethod(
+                                "GetNodeAt",
+                                new object[] { targetTreeItem.Element.ClientRectangle.Location + new Size(1, 1) })
+                                    as System.Windows.Forms.TreeNode;
+            	object mynode = node.GetLifetimeService();
+            	Ranorex.CheckBox mycheckbox = (Ranorex.CheckBox)mynode;
+            	mycheckbox.Check();
+
+            	
+            	
 			}			
 		}		
 
@@ -567,7 +580,9 @@ namespace NformTester.lib
             {
             	byte[] bytes = StrToByteArray(message);
             	sender.Send(bytes, bytes.Length, groupEP);
+            	Delay.Milliseconds(50);
             }
+            
             sender.Close();
         }
 
@@ -894,8 +909,8 @@ namespace NformTester.lib
 			if(objType.Name.ToString() == "Table")
 			{
 				Ranorex.Table tb = (Ranorex.Table)objComponet;
-				tb.Rows[Convert.ToInt32(item.getArgText())].Cells[Convert.ToInt32(item.getArg2Text())].Click();
-				Keyboard.Press("{"+item.getArg3Text()+"}");
+				tb.Rows[Convert.ToInt32(item.getArgText())].Cells[Convert.ToInt32(item.getArg2Text())].DoubleClick();
+				Keyboard.Press("{CONTROL down}{Akey}{CONTROL up}"+item.getArg3Text());
 			}									
 		}
 			

@@ -786,6 +786,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST960_NformDiscoveringSupportedDevices"
+					id="f357009c-1faa-48cb-9611-2645dc489405">
+						<testmodule
+						name="TestCaseDriver"
+						id="ae3337c1-5dfa-4f33-9af8-0699fe1912cf"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.020._Actions2"
@@ -835,6 +844,24 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST732_MapActionsDialogWindowWithStateDefined"
+					id="a7edec62-5890-49e0-807f-a58bacc0b7e7">
+						<testmodule
+						name="TestCaseDriver"
+						id="72e9c3eb-a3de-46cb-8b2e-06e2f87c6a6d"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST1077_VerifyThatNoUnhandledExceptionInReadDataActionPropertiesWindow"
+					id="f5c70d34-7390-4f17-9a14-808d23779f52">
+						<testmodule
+						name="TestCaseDriver"
+						id="040cccaf-0d51-49e5-9d7d-9aabd47a19b9"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.030._Views2"
@@ -845,6 +872,42 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="e36d528f-3b10-4d9f-90dc-2f3e69ecac9b"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST1114_ToDeleteAnAreaFromTheTreeInViews"
+					id="3970b372-40d8-4d37-a59a-52a62f74f204">
+						<testmodule
+						name="TestCaseDriver"
+						id="9abcd014-e18a-416e-a21b-e2df274463da"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST1113_CopyAnExistingAreaAndCreateNewAreaInTheTreeOfView"
+					id="421c0901-e94e-4fd4-b332-329cd154dc11">
+						<testmodule
+						name="TestCaseDriver"
+						id="ea1d53e1-895a-4b44-80ef-cdfc9e8a28c9"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST1548_ExceptionInOnCellMouseDownInViewerLogWhenScrollsInALARMStabWith5000Alarms"
+					id="b29a4875-f030-49d1-a974-17271522ab66">
+						<testmodule
+						name="TestCaseDriver"
+						id="56c421ec-0517-4708-ba53-efddbdcae498"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST1547_VerifyNoDatabaseErrorOccuredInNavigationView"
+					id="c50aa380-877e-4371-a6ff-8b77c205bd63">
+						<testmodule
+						name="TestCaseDriver"
+						id="e4fdfa4d-9744-4430-81e2-992fee8f629e"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -992,6 +1055,15 @@ reportlevel="Info;20">
 					<testmodule
 					name="TestCaseDriver"
 					id="33cfc6ff-b4ea-4b16-b19e-060d6b5907b0"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="TST923_CheckFunctionalityOfGadgetSetupDialogFilterByDeviceType"
+				id="eac8f16f-fa5c-4336-8889-f1324453ca5c">
+					<testmodule
+					name="TestCaseDriver"
+					id="316d8556-4f29-4704-8f46-f16a2a7b9d6c"
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
