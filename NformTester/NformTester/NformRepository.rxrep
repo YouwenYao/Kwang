@@ -1204,6 +1204,14 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					addcaps="table,control,nativewindow">
 						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxVgViewerRhsMgr']/tabpagelist/tabpage[@controlname='m_parametricDataTab']/container[@controlname='LxVgRcpGrpDisplay']/container[@controlname='m_rcpGrid']/table[@controlname='m_receptaclesGridView']
 					</item>
+					<item
+					name="ShutdownClients"
+					id="62af92bc-2348-4aba-af42-c84365c7a245"
+					searchtimeout="30000ms"
+					capname="menuitem"
+					addcaps="menuitem,accessible">
+						/form[@controlname='LxViewerFrame']/menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Configure']/menuitem[@accessiblename='Shutdown Clients...']
+					</item>
 					<basepath>
 						/form[@controlname='LxViewerFrame']
 					</basepath>

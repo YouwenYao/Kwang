@@ -853,6 +853,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST549_VerifyFunctionalityOfTimeoutOnShutdownActionPropertiesWindow"
+					id="8fe1383a-9d2a-417f-9b02-6ad7b84766e2">
+						<testmodule
+						name="TestCaseDriver"
+						id="d0224bdc-db26-49f9-b7a0-b23a8f3fd352"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.030._Views2"
@@ -1057,7 +1066,18 @@ reportlevel="Info;20">
 	<testconfigurations
 	default="TestRun">
 		<testconfiguration
-		name="TestRun"/>
+		name="TestRun">
+			<testcase
+			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
+			<testcase
+			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
+			<testcase
+			id="8fe1383a-9d2a-417f-9b02-6ad7b84766e2"/>
+			<testcase
+			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
+			<testcase
+			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
+		</testconfiguration>
 	</testconfigurations>
 	<references>
 		<reference>

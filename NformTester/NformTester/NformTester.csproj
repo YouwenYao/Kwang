@@ -280,7 +280,6 @@
       <id>04a1930e-2fb4-4b4e-8ea7-41499b8ea516</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-
     <None Include="Keywordscripts\TST1548_ExceptionInOnCellMouseDownInViewerLogWhenScrollsInALARMStabWith5000Alarms.xlsx">
       <id>0ba90384-cede-42b4-b1fc-80bf8569a98b</id>
     </None>
@@ -374,6 +373,10 @@
     </None>
     <None Include="keywordscripts\TST543_PrintingOfAGraph.xlsx">
       <id>87904c1e-6407-45b0-a2f9-cc7dadf18ae3</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST549_VerifyFunctionalityOfTimeoutOnShutdownActionPropertiesWindow.xlsx">
+      <id>85228637-ce2a-459e-b804-7684dff96b4e</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="keywordscripts\TST551_CopyDataOfAGraph.xlsx">

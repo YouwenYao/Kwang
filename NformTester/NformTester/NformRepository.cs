@@ -1018,6 +1018,7 @@ namespace NformTester
             RepoItemInfo _configuredgroupsInfo;
             RepoItemInfo _newgroupInfo;
             RepoItemInfo _receptaclesInfo;
+            RepoItemInfo _shutdownclientsInfo;
 
             /// <summary>
             /// Creates a new FormMain  folder.
@@ -1154,6 +1155,7 @@ namespace NformTester
                 _configuredgroupsInfo = new RepoItemInfo(this, "ConfiguredGroups", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxVgViewerRhsMgr']/tabpagelist/tabpage[@controlname='m_parametricDataTab']/container[@controlname='LxVgGenericGrpDisplay']/container/link[@text='Configured groups']/text/link[@accessiblename='Configured groups']", 30000, null, "44280458-d24a-4a38-812a-73957ab3205b");
                 _newgroupInfo = new RepoItemInfo(this, "NewGroup", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxVgViewerRhsMgr']/tabpagelist/tabpage[@controlname='m_parametricDataTab']/container[@controlname='LxVgGenericGrpDisplay']/container/link/text/link[@accessiblename='New Group']", 30000, null, "9cf60843-2396-4327-8f8f-379d5b2284ab");
                 _receptaclesInfo = new RepoItemInfo(this, "Receptacles", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxVgViewerRhsMgr']/tabpagelist/tabpage[@controlname='m_parametricDataTab']/container[@controlname='LxVgRcpGrpDisplay']/container[@controlname='m_rcpGrid']/table[@controlname='m_receptaclesGridView']", 30000, null, "39474286-765e-4858-a3b4-cef51c93ee95");
+                _shutdownclientsInfo = new RepoItemInfo(this, "ShutdownClients", "menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Configure']/menuitem[@accessiblename='Shutdown Clients...']", 30000, null, "62af92bc-2348-4aba-af42-c84365c7a245");
             }
 
             /// <summary>
@@ -4249,6 +4251,30 @@ namespace NformTester
                 get
                 {
                     return _receptaclesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ShutdownClients item.
+            /// </summary>
+            [RepositoryItem("62af92bc-2348-4aba-af42-c84365c7a245")]
+            public virtual Ranorex.MenuItem ShutdownClients
+            {
+                get
+                {
+                    return _shutdownclientsInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ShutdownClients item info.
+            /// </summary>
+            [RepositoryItemInfo("62af92bc-2348-4aba-af42-c84365c7a245")]
+            public virtual RepoItemInfo ShutdownClientsInfo
+            {
+                get
+                {
+                    return _shutdownclientsInfo;
                 }
             }
         }
