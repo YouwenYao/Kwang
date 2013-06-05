@@ -184,6 +184,10 @@
       <id>f5169116-8127-4447-849a-4c7f0a25c6f2</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST1109_AddAnAreaInTheTreeForNewView.xlsx">
+      <id>d99c60eb-0830-4d07-b6c6-90c3901800c3</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\TST1113_CopyAnExistingAreaAndCreateNewAreaInTheTreeOfView.xlsx">
       <id>ce6530e6-fd86-44a2-aafe-93d3fe283fa5</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -280,7 +284,6 @@
       <id>04a1930e-2fb4-4b4e-8ea7-41499b8ea516</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-
     <None Include="Keywordscripts\TST1548_ExceptionInOnCellMouseDownInViewerLogWhenScrollsInALARMStabWith5000Alarms.xlsx">
       <id>0ba90384-cede-42b4-b1fc-80bf8569a98b</id>
     </None>
