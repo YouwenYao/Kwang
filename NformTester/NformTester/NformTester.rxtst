@@ -902,6 +902,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST1109_AddAnAreaInTheTreeForNewView"
+					id="9e769f8d-12fe-4795-bef1-d824a7dc621b">
+						<testmodule
+						name="TestCaseDriver"
+						id="12ef7dfd-f7b3-4ab1-acb1-9c9447c144ce"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.040._Users_and_Groups2"
@@ -1077,6 +1086,14 @@ reportlevel="Info;20">
 			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
 			<testcase
 			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
+			<testcase
+			id="16b2d828-575c-4faf-8f7d-74b92c41fc12"/>
+			<testcase
+			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
+			<testcase
+			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
+			<testcase
+			id="9e769f8d-12fe-4795-bef1-d824a7dc621b"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
