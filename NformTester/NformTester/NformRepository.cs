@@ -10608,7 +10608,7 @@ namespace NformTester
             /// <summary>
             /// The FormGroup_Properties folder.
             /// </summary>
-            [RepositoryFolder("b9fab5fb-35ff-40f7-9895-6cfde14b9124")]
+            [RepositoryFolder("8a24fbb5-8a7a-45d4-a6f8-7050724add59")]
             public virtual NformRepositoryFolders.FormGroup_PropertiesAppFolder FormGroup_Properties
             {
                 get { return _formgroup_properties; }
@@ -11992,7 +11992,7 @@ namespace NformTester
         /// <summary>
         /// The FormGroup_PropertiesAppFolder folder.
         /// </summary>
-        [RepositoryFolder("b9fab5fb-35ff-40f7-9895-6cfde14b9124")]
+        [RepositoryFolder("8a24fbb5-8a7a-45d4-a6f8-7050724add59")]
         public partial class FormGroup_PropertiesAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _selfInfo;
@@ -12026,56 +12026,64 @@ namespace NformTester
             RepoItemInfo _configure_usersInfo;
             RepoItemInfo _descriptionInfo;
             RepoItemInfo _nameInfo;
-            RepoItemInfo _info_linksInfo;
-            RepoItemInfo _logicgroup_nameInfo;
-            RepoItemInfo _logicgroup_descriptionInfo;
+            RepoItemInfo _closeInfo;
+            RepoItemInfo _view_okInfo;
+            RepoItemInfo _view_closeInfo;
+            RepoItemInfo _view_helpInfo;
+            RepoItemInfo _view_infolinksInfo;
+            RepoItemInfo _view_descriptionInfo;
+            RepoItemInfo _view_nameInfo;
 
             /// <summary>
             /// Creates a new FormGroup_Properties  folder.
             /// </summary>
             public FormGroup_PropertiesAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormGroup_Properties", "/form[@controlname='LxGroupDlg']", parentFolder, 30000, true, "b9fab5fb-35ff-40f7-9895-6cfde14b9124", "")
+                    base("FormGroup_Properties", "/form[@controlname='LxGroupDlg']", parentFolder, 30000, true, "8a24fbb5-8a7a-45d4-a6f8-7050724add59", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "b9fab5fb-35ff-40f7-9895-6cfde14b9124");
-                _okInfo = new RepoItemInfo(this, "OK", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']", 30000, null, "beb16ea3-807d-45f6-b628-15732e8c4c8e");
-                _cancelInfo = new RepoItemInfo(this, "Cancel", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "7ce05d23-2011-4c38-ad44-34174bfa42ef");
-                _helpInfo = new RepoItemInfo(this, "Help", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']", 30000, null, "b93e33de-329d-4056-b73a-f5a9354f041e");
-                _assign_actionsInfo = new RepoItemInfo(this, "Assign_Actions", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageActionsGrp']/checkbox[@controlname='m_assignActionsChk']", 30000, null, "8e591f15-4631-4a68-bcad-da423d1bb2df");
-                _e_mailInfo = new RepoItemInfo(this, "E_mail", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageActionsGrp']/container/checkbox[@controlname='m_actionEmailChk']", 30000, null, "68e1145a-72ba-47bf-af92-a4d6dd86c6bd");
-                _forward_trapInfo = new RepoItemInfo(this, "Forward_trap", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageActionsGrp']/container/checkbox[@controlname='m_actionFwdTrapChk']", 30000, null, "c1e63504-4855-4faf-a354-cd9916f3f853");
-                _read_dataInfo = new RepoItemInfo(this, "Read_data", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageActionsGrp']/container/checkbox[@controlname='m_actionReadDataChk']", 30000, null, "10f8b127-9cdf-4bc2-9a56-3840dd9af3ef");
-                _run_commandInfo = new RepoItemInfo(this, "Run_command", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageActionsGrp']/container/checkbox[@controlname='m_actionRunCmdChk']", 30000, null, "4af230e4-c2e1-4af3-a63a-c6c49a6ed4a4");
-                _shutdownInfo = new RepoItemInfo(this, "Shutdown", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageActionsGrp']/container/checkbox[@controlname='m_actionShutdownChk']", 30000, null, "709de1f6-8b85-43f8-9517-188e7f38bf73");
-                _write_dataInfo = new RepoItemInfo(this, "Write_data", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageActionsGrp']/container/checkbox[@controlname='m_actionWriteDataChk']", 30000, null, "8394b7bd-ad8e-4933-a058-546be9e355b0");
-                _write_fileInfo = new RepoItemInfo(this, "Write_file", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageActionsGrp']/container/checkbox[@controlname='m_actionWriteFileChk']", 30000, null, "5ba17500-3f71-4545-b551-6c78156660ab");
-                _acknowledge_and_close_alarmsInfo = new RepoItemInfo(this, "Acknowledge_and_close_alarms", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageAlarmsGrp']/checkbox[@controlname='m_updateAlarmsChk']", 30000, null, "ff85d03e-3bd6-4f71-8673-dd4927f99416");
-                _configure_data_loggingInfo = new RepoItemInfo(this, "Configure_data_logging", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageDevicesGrp']/checkbox[@controlname='m_cfgDataLogChk']", 30000, null, "d91c74fe-bbbb-43dd-a897-2f7a7021b66c");
-                _configure_deviceaInfo = new RepoItemInfo(this, "Configure_devicea", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageDevicesGrp']/checkbox[@controlname='m_cfgDevicesChk']", 30000, null, "4dfe76ef-937b-4a74-88e6-73375c8bdc52");
-                _configure_navigation_viewsInfo = new RepoItemInfo(this, "Configure_navigation_views", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageDevicesGrp']/checkbox[@controlname='m_cfgNavViewsChk']", 30000, null, "feccace5-7abd-4200-8840-d243374660c4");
-                _discover_new_devicesInfo = new RepoItemInfo(this, "Discover_new_devices", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageDevicesGrp']/checkbox[@controlname='m_discoverDevicesChk']", 30000, null, "7f8061dd-5202-4a30-99b3-fea4d9054b32");
-                _edit_device_definitionsInfo = new RepoItemInfo(this, "Edit_device_definitions", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageDevicesGrp']/checkbox[@controlname='m_editDeviceDefnsChk']", 30000, null, "1543edd5-edaa-41ec-9474-cd51dde7c0fd");
-                _set_device_dataInfo = new RepoItemInfo(this, "Set_device_data", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageDevicesGrp']/checkbox[@controlname='m_setDevDataChk']", 30000, null, "c55dabb8-1ace-437d-adf7-5483526de130");
-                _server_parametersInfo = new RepoItemInfo(this, "Server_parameters", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageSystemGrp']/checkbox[@controlname='m_sysCfgServerChk']", 30000, null, "8d142816-a68d-4e68-8db7-c13c81f251b1");
-                _start_stop_serverInfo = new RepoItemInfo(this, "Start_stop_server", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageSystemGrp']/checkbox[@controlname='m_sysCtlServerChk']", 30000, null, "764a0569-4125-4530-ab8e-d6be1914bb96");
-                _e_mail_parametersInfo = new RepoItemInfo(this, "E_mail_parameters", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageSystemGrp']/checkbox[@controlname='m_sysEmailChk']", 30000, null, "e169109c-71fb-41bc-a707-29f4598f17cc");
-                _global_device_parametersInfo = new RepoItemInfo(this, "Global_device_parameters", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageSystemGrp']/checkbox[@controlname='m_sysGblDevChk']", 30000, null, "320308f2-d25f-40ba-b3e4-b7419d9bb676");
-                _licensesInfo = new RepoItemInfo(this, "Licenses", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageSystemGrp']/checkbox[@controlname='m_sysLicensesChk']", 30000, null, "c2ac9424-891a-47e8-9fbd-ebbdce9eeedf");
-                _logging_parametersInfo = new RepoItemInfo(this, "Logging_parameters", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageSystemGrp']/checkbox[@controlname='m_sysLoggingChk']", 30000, null, "a8856445-e81f-4ae9-8e0b-40f0888c6753");
-                _shutdown_clientsInfo = new RepoItemInfo(this, "Shutdown_clients", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageSystemGrp']/checkbox[@controlname='m_sysSdClientsChk']", 30000, null, "d42b5688-5120-4725-a4ea-bf6f0205677c");
-                _snmp_trap_forwardingInfo = new RepoItemInfo(this, "Snmp_trap_forwarding", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageSystemGrp']/checkbox[@controlname='m_sysTrapFwdChk']", 30000, null, "34bf65f3-392d-453f-9d36-1f410220817b");
-                _configure_groupsInfo = new RepoItemInfo(this, "Configure_groups", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageUsersGrp']/checkbox[@controlname='m_cfgGroupsChk']", 30000, null, "d3afc863-4016-46fa-8c8d-7215fd7e76ab");
-                _configure_usersInfo = new RepoItemInfo(this, "Configure_users", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageUsersGrp']/checkbox[@controlname='m_cfgUsersChk']", 30000, null, "c60d7f5e-2917-466d-88de-99e32357a145");
-                _descriptionInfo = new RepoItemInfo(this, "Description", "container[@controlname='m_tableLayoutPnl']/text[@controlname='m_descriptionTbx']/text[@accessiblename='Name:']", 30000, null, "3d7afb61-75c2-44d4-8cb4-500a47617962");
-                _nameInfo = new RepoItemInfo(this, "Name", "container[@controlname='m_tableLayoutPnl']/text[@controlname='m_groupNameTbx']/text[@accessiblerole='Text']", 30000, null, "eb2d443d-4546-4d1f-889f-11d927fb53b2");
-                _info_linksInfo = new RepoItemInfo(this, "Info_links", "button[@controlname='m_infoLinksBtn']", 30000, null, "8ec9ab84-4f2a-46f8-84f6-9586ee8360c2");
-                _logicgroup_nameInfo = new RepoItemInfo(this, "LogicGroup_name", "container[@controlname='m_groupNameTbx']/text[@controlname='m_groupNameTbx-Ctl']/text[@accessiblename='Name:']", 30000, null, "bffd819d-7991-4e6d-b2d1-f079f2aeeb98");
-                _logicgroup_descriptionInfo = new RepoItemInfo(this, "LogicGroup_Description", "container[@controlname='m_groupDscrTbx']/text[@controlname='m_groupDscrTbx-Ctl']/text[@accessiblename='Description:']", 30000, null, "846ecce3-453c-40f3-9682-e2f419d96423");
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "8a24fbb5-8a7a-45d4-a6f8-7050724add59");
+                _okInfo = new RepoItemInfo(this, "OK", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']", 30000, null, "c175d0a9-44e1-4498-84f4-cae6c7249999");
+                _cancelInfo = new RepoItemInfo(this, "Cancel", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "f560fd1f-5038-485d-8a13-9f1ccc03d002");
+                _helpInfo = new RepoItemInfo(this, "Help", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']", 30000, null, "d6628dd2-cced-4b3b-9895-06faaebedf98");
+                _assign_actionsInfo = new RepoItemInfo(this, "Assign_Actions", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageActionsGrp']/checkbox[@controlname='m_assignActionsChk']", 30000, null, "d3e7997f-5b2b-41e7-80a6-b383a6411ba6");
+                _e_mailInfo = new RepoItemInfo(this, "E_mail", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageActionsGrp']/container/checkbox[@controlname='m_actionEmailChk']", 30000, null, "d0943d14-1534-4493-b421-71d7e294be61");
+                _forward_trapInfo = new RepoItemInfo(this, "Forward_trap", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageActionsGrp']/container/checkbox[@controlname='m_actionFwdTrapChk']", 30000, null, "9156ecb2-bb74-4832-bf99-c185d10002b1");
+                _read_dataInfo = new RepoItemInfo(this, "Read_data", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageActionsGrp']/container/checkbox[@controlname='m_actionReadDataChk']", 30000, null, "1b6ba9bd-4448-4130-8670-9747c28da8de");
+                _run_commandInfo = new RepoItemInfo(this, "Run_command", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageActionsGrp']/container/checkbox[@controlname='m_actionRunCmdChk']", 30000, null, "dbb0e214-b71c-4fc4-b743-a606b83082cf");
+                _shutdownInfo = new RepoItemInfo(this, "Shutdown", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageActionsGrp']/container/checkbox[@controlname='m_actionShutdownChk']", 30000, null, "a913de24-fc96-4334-9394-7943ddce7eb2");
+                _write_dataInfo = new RepoItemInfo(this, "Write_data", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageActionsGrp']/container/checkbox[@controlname='m_actionWriteDataChk']", 30000, null, "48cf2e16-5feb-4a7f-8457-0551eea96742");
+                _write_fileInfo = new RepoItemInfo(this, "Write_file", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageActionsGrp']/container/checkbox[@controlname='m_actionWriteFileChk']", 30000, null, "f2b79f3f-eb32-4293-ac55-6843e95d8c2d");
+                _acknowledge_and_close_alarmsInfo = new RepoItemInfo(this, "Acknowledge_and_close_alarms", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageAlarmsGrp']/checkbox[@controlname='m_updateAlarmsChk']", 30000, null, "3872f10f-cfd6-4332-a57b-88ac3df88f5e");
+                _configure_data_loggingInfo = new RepoItemInfo(this, "Configure_data_logging", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageDevicesGrp']/checkbox[@controlname='m_cfgDataLogChk']", 30000, null, "d25fbd6b-40bc-4f5c-ae4a-7ad7b586cdda");
+                _configure_deviceaInfo = new RepoItemInfo(this, "Configure_devicea", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageDevicesGrp']/checkbox[@controlname='m_cfgDevicesChk']", 30000, null, "3efd8ce4-c70f-40f0-9b50-90894ed8de48");
+                _configure_navigation_viewsInfo = new RepoItemInfo(this, "Configure_navigation_views", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageDevicesGrp']/checkbox[@controlname='m_cfgNavViewsChk']", 30000, null, "90fd9515-14ae-40b6-a986-85cf2f28d7ee");
+                _discover_new_devicesInfo = new RepoItemInfo(this, "Discover_new_devices", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageDevicesGrp']/checkbox[@controlname='m_discoverDevicesChk']", 30000, null, "2d653539-9550-4c2c-b338-7b9a059c9cb6");
+                _edit_device_definitionsInfo = new RepoItemInfo(this, "Edit_device_definitions", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageDevicesGrp']/checkbox[@controlname='m_editDeviceDefnsChk']", 30000, null, "7700ff69-2301-485e-a5df-4bb83fadd020");
+                _set_device_dataInfo = new RepoItemInfo(this, "Set_device_data", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageDevicesGrp']/checkbox[@controlname='m_setDevDataChk']", 30000, null, "31b2fb59-f2f1-4271-a8f6-59b2dde7ec62");
+                _server_parametersInfo = new RepoItemInfo(this, "Server_parameters", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageSystemGrp']/checkbox[@controlname='m_sysCfgServerChk']", 30000, null, "358f6aa2-90c1-43e7-b952-e44edf65556b");
+                _start_stop_serverInfo = new RepoItemInfo(this, "Start_stop_server", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageSystemGrp']/checkbox[@controlname='m_sysCtlServerChk']", 30000, null, "1355fea6-911e-4557-b5ad-734e99797a4c");
+                _e_mail_parametersInfo = new RepoItemInfo(this, "E_mail_parameters", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageSystemGrp']/checkbox[@controlname='m_sysEmailChk']", 30000, null, "a1b282d3-06f1-44a4-9e1f-5c35a2d5e370");
+                _global_device_parametersInfo = new RepoItemInfo(this, "Global_device_parameters", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageSystemGrp']/checkbox[@controlname='m_sysGblDevChk']", 30000, null, "a9c64ef6-527c-46a7-85d5-349627324fca");
+                _licensesInfo = new RepoItemInfo(this, "Licenses", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageSystemGrp']/checkbox[@controlname='m_sysLicensesChk']", 30000, null, "ceb28df1-c7dd-4865-8002-dfcec5efeb55");
+                _logging_parametersInfo = new RepoItemInfo(this, "Logging_parameters", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageSystemGrp']/checkbox[@controlname='m_sysLoggingChk']", 30000, null, "5dcf449d-a2ff-4ea1-b9db-8214454b2df7");
+                _shutdown_clientsInfo = new RepoItemInfo(this, "Shutdown_clients", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageSystemGrp']/checkbox[@controlname='m_sysSdClientsChk']", 30000, null, "328a506f-7a26-4ccb-8622-0ed4206fb410");
+                _snmp_trap_forwardingInfo = new RepoItemInfo(this, "Snmp_trap_forwarding", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageSystemGrp']/checkbox[@controlname='m_sysTrapFwdChk']", 30000, null, "0c1d2c8a-7fc6-41f2-a570-5f16413ee293");
+                _configure_groupsInfo = new RepoItemInfo(this, "Configure_groups", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageUsersGrp']/checkbox[@controlname='m_cfgGroupsChk']", 30000, null, "d439ac5f-e7c5-4b4c-8dde-b1b9fa628bc6");
+                _configure_usersInfo = new RepoItemInfo(this, "Configure_users", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageUsersGrp']/checkbox[@controlname='m_cfgUsersChk']", 30000, null, "7e7ddc47-0295-4a00-a683-9b07925b43d1");
+                _descriptionInfo = new RepoItemInfo(this, "Description", "container[@controlname='m_tableLayoutPnl']/text[@controlname='m_descriptionTbx']/text[@accessiblename='Name:']", 30000, null, "984417e0-33bd-44a7-84d2-eeb146719ce1");
+                _nameInfo = new RepoItemInfo(this, "Name", "container[@controlname='m_tableLayoutPnl']/text[@controlname='m_groupNameTbx']/text[@accessiblerole='Text']", 30000, null, "ebca183e-c816-453d-bb5d-e757798ed0de");
+                _closeInfo = new RepoItemInfo(this, "Close", "titlebar/button[@accessiblename='Close']", 30000, null, "ac5149f9-bcea-4a49-9616-58aa517196ce");
+                _view_okInfo = new RepoItemInfo(this, "View_OK", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']", 30000, null, "1726ffb7-e487-4401-95c5-4d4434c974d3");
+                _view_closeInfo = new RepoItemInfo(this, "View_Close", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "705120ae-e13c-4802-a97c-89e886835820");
+                _view_helpInfo = new RepoItemInfo(this, "View_Help", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']", 30000, null, "8b4dc401-bf27-46dd-9a0d-38e6e96fa754");
+                _view_infolinksInfo = new RepoItemInfo(this, "View_InfoLinks", "button[@controlname='m_infoLinksBtn']", 30000, null, "90d17fa9-9fca-4d6c-ab0d-48d41df4c0c1");
+                _view_descriptionInfo = new RepoItemInfo(this, "View_Description", "container[@controlname='m_groupDscrTbx']/text[@controlname='m_groupDscrTbx-Ctl']/text[@accessiblename='Description:']", 30000, null, "2b994e82-8c18-43f6-bccb-d39ce5baa106");
+                _view_nameInfo = new RepoItemInfo(this, "View_Name", "container[@controlname='m_groupNameTbx']/text[@controlname='m_groupNameTbx-Ctl']/text[@accessiblename='Name:']", 30000, null, "84488223-7772-4689-9fe2-c76c578102db");
             }
 
             /// <summary>
             /// The Self item.
             /// </summary>
-            [RepositoryItem("b9fab5fb-35ff-40f7-9895-6cfde14b9124")]
+            [RepositoryItem("8a24fbb5-8a7a-45d4-a6f8-7050724add59")]
             public virtual Ranorex.Form Self
             {
                 get
@@ -12087,7 +12095,7 @@ namespace NformTester
             /// <summary>
             /// The Self item info.
             /// </summary>
-            [RepositoryItemInfo("b9fab5fb-35ff-40f7-9895-6cfde14b9124")]
+            [RepositoryItemInfo("8a24fbb5-8a7a-45d4-a6f8-7050724add59")]
             public virtual RepoItemInfo SelfInfo
             {
                 get
@@ -12099,7 +12107,7 @@ namespace NformTester
             /// <summary>
             /// The OK item.
             /// </summary>
-            [RepositoryItem("beb16ea3-807d-45f6-b628-15732e8c4c8e")]
+            [RepositoryItem("c175d0a9-44e1-4498-84f4-cae6c7249999")]
             public virtual Ranorex.Button OK
             {
                 get
@@ -12111,7 +12119,7 @@ namespace NformTester
             /// <summary>
             /// The OK item info.
             /// </summary>
-            [RepositoryItemInfo("beb16ea3-807d-45f6-b628-15732e8c4c8e")]
+            [RepositoryItemInfo("c175d0a9-44e1-4498-84f4-cae6c7249999")]
             public virtual RepoItemInfo OKInfo
             {
                 get
@@ -12123,7 +12131,7 @@ namespace NformTester
             /// <summary>
             /// The Cancel item.
             /// </summary>
-            [RepositoryItem("7ce05d23-2011-4c38-ad44-34174bfa42ef")]
+            [RepositoryItem("f560fd1f-5038-485d-8a13-9f1ccc03d002")]
             public virtual Ranorex.Button Cancel
             {
                 get
@@ -12135,7 +12143,7 @@ namespace NformTester
             /// <summary>
             /// The Cancel item info.
             /// </summary>
-            [RepositoryItemInfo("7ce05d23-2011-4c38-ad44-34174bfa42ef")]
+            [RepositoryItemInfo("f560fd1f-5038-485d-8a13-9f1ccc03d002")]
             public virtual RepoItemInfo CancelInfo
             {
                 get
@@ -12147,7 +12155,7 @@ namespace NformTester
             /// <summary>
             /// The Help item.
             /// </summary>
-            [RepositoryItem("b93e33de-329d-4056-b73a-f5a9354f041e")]
+            [RepositoryItem("d6628dd2-cced-4b3b-9895-06faaebedf98")]
             public virtual Ranorex.Button Help
             {
                 get
@@ -12159,7 +12167,7 @@ namespace NformTester
             /// <summary>
             /// The Help item info.
             /// </summary>
-            [RepositoryItemInfo("b93e33de-329d-4056-b73a-f5a9354f041e")]
+            [RepositoryItemInfo("d6628dd2-cced-4b3b-9895-06faaebedf98")]
             public virtual RepoItemInfo HelpInfo
             {
                 get
@@ -12171,7 +12179,7 @@ namespace NformTester
             /// <summary>
             /// The Assign_Actions item.
             /// </summary>
-            [RepositoryItem("8e591f15-4631-4a68-bcad-da423d1bb2df")]
+            [RepositoryItem("d3e7997f-5b2b-41e7-80a6-b383a6411ba6")]
             public virtual Ranorex.CheckBox Assign_Actions
             {
                 get
@@ -12183,7 +12191,7 @@ namespace NformTester
             /// <summary>
             /// The Assign_Actions item info.
             /// </summary>
-            [RepositoryItemInfo("8e591f15-4631-4a68-bcad-da423d1bb2df")]
+            [RepositoryItemInfo("d3e7997f-5b2b-41e7-80a6-b383a6411ba6")]
             public virtual RepoItemInfo Assign_ActionsInfo
             {
                 get
@@ -12195,7 +12203,7 @@ namespace NformTester
             /// <summary>
             /// The E_mail item.
             /// </summary>
-            [RepositoryItem("68e1145a-72ba-47bf-af92-a4d6dd86c6bd")]
+            [RepositoryItem("d0943d14-1534-4493-b421-71d7e294be61")]
             public virtual Ranorex.CheckBox E_mail
             {
                 get
@@ -12207,7 +12215,7 @@ namespace NformTester
             /// <summary>
             /// The E_mail item info.
             /// </summary>
-            [RepositoryItemInfo("68e1145a-72ba-47bf-af92-a4d6dd86c6bd")]
+            [RepositoryItemInfo("d0943d14-1534-4493-b421-71d7e294be61")]
             public virtual RepoItemInfo E_mailInfo
             {
                 get
@@ -12219,7 +12227,7 @@ namespace NformTester
             /// <summary>
             /// The Forward_trap item.
             /// </summary>
-            [RepositoryItem("c1e63504-4855-4faf-a354-cd9916f3f853")]
+            [RepositoryItem("9156ecb2-bb74-4832-bf99-c185d10002b1")]
             public virtual Ranorex.CheckBox Forward_trap
             {
                 get
@@ -12231,7 +12239,7 @@ namespace NformTester
             /// <summary>
             /// The Forward_trap item info.
             /// </summary>
-            [RepositoryItemInfo("c1e63504-4855-4faf-a354-cd9916f3f853")]
+            [RepositoryItemInfo("9156ecb2-bb74-4832-bf99-c185d10002b1")]
             public virtual RepoItemInfo Forward_trapInfo
             {
                 get
@@ -12243,7 +12251,7 @@ namespace NformTester
             /// <summary>
             /// The Read_data item.
             /// </summary>
-            [RepositoryItem("10f8b127-9cdf-4bc2-9a56-3840dd9af3ef")]
+            [RepositoryItem("1b6ba9bd-4448-4130-8670-9747c28da8de")]
             public virtual Ranorex.CheckBox Read_data
             {
                 get
@@ -12255,7 +12263,7 @@ namespace NformTester
             /// <summary>
             /// The Read_data item info.
             /// </summary>
-            [RepositoryItemInfo("10f8b127-9cdf-4bc2-9a56-3840dd9af3ef")]
+            [RepositoryItemInfo("1b6ba9bd-4448-4130-8670-9747c28da8de")]
             public virtual RepoItemInfo Read_dataInfo
             {
                 get
@@ -12267,7 +12275,7 @@ namespace NformTester
             /// <summary>
             /// The Run_command item.
             /// </summary>
-            [RepositoryItem("4af230e4-c2e1-4af3-a63a-c6c49a6ed4a4")]
+            [RepositoryItem("dbb0e214-b71c-4fc4-b743-a606b83082cf")]
             public virtual Ranorex.CheckBox Run_command
             {
                 get
@@ -12279,7 +12287,7 @@ namespace NformTester
             /// <summary>
             /// The Run_command item info.
             /// </summary>
-            [RepositoryItemInfo("4af230e4-c2e1-4af3-a63a-c6c49a6ed4a4")]
+            [RepositoryItemInfo("dbb0e214-b71c-4fc4-b743-a606b83082cf")]
             public virtual RepoItemInfo Run_commandInfo
             {
                 get
@@ -12291,7 +12299,7 @@ namespace NformTester
             /// <summary>
             /// The Shutdown item.
             /// </summary>
-            [RepositoryItem("709de1f6-8b85-43f8-9517-188e7f38bf73")]
+            [RepositoryItem("a913de24-fc96-4334-9394-7943ddce7eb2")]
             public virtual Ranorex.CheckBox Shutdown
             {
                 get
@@ -12303,7 +12311,7 @@ namespace NformTester
             /// <summary>
             /// The Shutdown item info.
             /// </summary>
-            [RepositoryItemInfo("709de1f6-8b85-43f8-9517-188e7f38bf73")]
+            [RepositoryItemInfo("a913de24-fc96-4334-9394-7943ddce7eb2")]
             public virtual RepoItemInfo ShutdownInfo
             {
                 get
@@ -12315,7 +12323,7 @@ namespace NformTester
             /// <summary>
             /// The Write_data item.
             /// </summary>
-            [RepositoryItem("8394b7bd-ad8e-4933-a058-546be9e355b0")]
+            [RepositoryItem("48cf2e16-5feb-4a7f-8457-0551eea96742")]
             public virtual Ranorex.CheckBox Write_data
             {
                 get
@@ -12327,7 +12335,7 @@ namespace NformTester
             /// <summary>
             /// The Write_data item info.
             /// </summary>
-            [RepositoryItemInfo("8394b7bd-ad8e-4933-a058-546be9e355b0")]
+            [RepositoryItemInfo("48cf2e16-5feb-4a7f-8457-0551eea96742")]
             public virtual RepoItemInfo Write_dataInfo
             {
                 get
@@ -12339,7 +12347,7 @@ namespace NformTester
             /// <summary>
             /// The Write_file item.
             /// </summary>
-            [RepositoryItem("5ba17500-3f71-4545-b551-6c78156660ab")]
+            [RepositoryItem("f2b79f3f-eb32-4293-ac55-6843e95d8c2d")]
             public virtual Ranorex.CheckBox Write_file
             {
                 get
@@ -12351,7 +12359,7 @@ namespace NformTester
             /// <summary>
             /// The Write_file item info.
             /// </summary>
-            [RepositoryItemInfo("5ba17500-3f71-4545-b551-6c78156660ab")]
+            [RepositoryItemInfo("f2b79f3f-eb32-4293-ac55-6843e95d8c2d")]
             public virtual RepoItemInfo Write_fileInfo
             {
                 get
@@ -12363,7 +12371,7 @@ namespace NformTester
             /// <summary>
             /// The Acknowledge_and_close_alarms item.
             /// </summary>
-            [RepositoryItem("ff85d03e-3bd6-4f71-8673-dd4927f99416")]
+            [RepositoryItem("3872f10f-cfd6-4332-a57b-88ac3df88f5e")]
             public virtual Ranorex.CheckBox Acknowledge_and_close_alarms
             {
                 get
@@ -12375,7 +12383,7 @@ namespace NformTester
             /// <summary>
             /// The Acknowledge_and_close_alarms item info.
             /// </summary>
-            [RepositoryItemInfo("ff85d03e-3bd6-4f71-8673-dd4927f99416")]
+            [RepositoryItemInfo("3872f10f-cfd6-4332-a57b-88ac3df88f5e")]
             public virtual RepoItemInfo Acknowledge_and_close_alarmsInfo
             {
                 get
@@ -12387,7 +12395,7 @@ namespace NformTester
             /// <summary>
             /// The Configure_data_logging item.
             /// </summary>
-            [RepositoryItem("d91c74fe-bbbb-43dd-a897-2f7a7021b66c")]
+            [RepositoryItem("d25fbd6b-40bc-4f5c-ae4a-7ad7b586cdda")]
             public virtual Ranorex.CheckBox Configure_data_logging
             {
                 get
@@ -12399,7 +12407,7 @@ namespace NformTester
             /// <summary>
             /// The Configure_data_logging item info.
             /// </summary>
-            [RepositoryItemInfo("d91c74fe-bbbb-43dd-a897-2f7a7021b66c")]
+            [RepositoryItemInfo("d25fbd6b-40bc-4f5c-ae4a-7ad7b586cdda")]
             public virtual RepoItemInfo Configure_data_loggingInfo
             {
                 get
@@ -12411,7 +12419,7 @@ namespace NformTester
             /// <summary>
             /// The Configure_devicea item.
             /// </summary>
-            [RepositoryItem("4dfe76ef-937b-4a74-88e6-73375c8bdc52")]
+            [RepositoryItem("3efd8ce4-c70f-40f0-9b50-90894ed8de48")]
             public virtual Ranorex.CheckBox Configure_devicea
             {
                 get
@@ -12423,7 +12431,7 @@ namespace NformTester
             /// <summary>
             /// The Configure_devicea item info.
             /// </summary>
-            [RepositoryItemInfo("4dfe76ef-937b-4a74-88e6-73375c8bdc52")]
+            [RepositoryItemInfo("3efd8ce4-c70f-40f0-9b50-90894ed8de48")]
             public virtual RepoItemInfo Configure_deviceaInfo
             {
                 get
@@ -12435,7 +12443,7 @@ namespace NformTester
             /// <summary>
             /// The Configure_navigation_views item.
             /// </summary>
-            [RepositoryItem("feccace5-7abd-4200-8840-d243374660c4")]
+            [RepositoryItem("90fd9515-14ae-40b6-a986-85cf2f28d7ee")]
             public virtual Ranorex.CheckBox Configure_navigation_views
             {
                 get
@@ -12447,7 +12455,7 @@ namespace NformTester
             /// <summary>
             /// The Configure_navigation_views item info.
             /// </summary>
-            [RepositoryItemInfo("feccace5-7abd-4200-8840-d243374660c4")]
+            [RepositoryItemInfo("90fd9515-14ae-40b6-a986-85cf2f28d7ee")]
             public virtual RepoItemInfo Configure_navigation_viewsInfo
             {
                 get
@@ -12459,7 +12467,7 @@ namespace NformTester
             /// <summary>
             /// The Discover_new_devices item.
             /// </summary>
-            [RepositoryItem("7f8061dd-5202-4a30-99b3-fea4d9054b32")]
+            [RepositoryItem("2d653539-9550-4c2c-b338-7b9a059c9cb6")]
             public virtual Ranorex.CheckBox Discover_new_devices
             {
                 get
@@ -12471,7 +12479,7 @@ namespace NformTester
             /// <summary>
             /// The Discover_new_devices item info.
             /// </summary>
-            [RepositoryItemInfo("7f8061dd-5202-4a30-99b3-fea4d9054b32")]
+            [RepositoryItemInfo("2d653539-9550-4c2c-b338-7b9a059c9cb6")]
             public virtual RepoItemInfo Discover_new_devicesInfo
             {
                 get
@@ -12483,7 +12491,7 @@ namespace NformTester
             /// <summary>
             /// The Edit_device_definitions item.
             /// </summary>
-            [RepositoryItem("1543edd5-edaa-41ec-9474-cd51dde7c0fd")]
+            [RepositoryItem("7700ff69-2301-485e-a5df-4bb83fadd020")]
             public virtual Ranorex.CheckBox Edit_device_definitions
             {
                 get
@@ -12495,7 +12503,7 @@ namespace NformTester
             /// <summary>
             /// The Edit_device_definitions item info.
             /// </summary>
-            [RepositoryItemInfo("1543edd5-edaa-41ec-9474-cd51dde7c0fd")]
+            [RepositoryItemInfo("7700ff69-2301-485e-a5df-4bb83fadd020")]
             public virtual RepoItemInfo Edit_device_definitionsInfo
             {
                 get
@@ -12507,7 +12515,7 @@ namespace NformTester
             /// <summary>
             /// The Set_device_data item.
             /// </summary>
-            [RepositoryItem("c55dabb8-1ace-437d-adf7-5483526de130")]
+            [RepositoryItem("31b2fb59-f2f1-4271-a8f6-59b2dde7ec62")]
             public virtual Ranorex.CheckBox Set_device_data
             {
                 get
@@ -12519,7 +12527,7 @@ namespace NformTester
             /// <summary>
             /// The Set_device_data item info.
             /// </summary>
-            [RepositoryItemInfo("c55dabb8-1ace-437d-adf7-5483526de130")]
+            [RepositoryItemInfo("31b2fb59-f2f1-4271-a8f6-59b2dde7ec62")]
             public virtual RepoItemInfo Set_device_dataInfo
             {
                 get
@@ -12531,7 +12539,7 @@ namespace NformTester
             /// <summary>
             /// The Server_parameters item.
             /// </summary>
-            [RepositoryItem("8d142816-a68d-4e68-8db7-c13c81f251b1")]
+            [RepositoryItem("358f6aa2-90c1-43e7-b952-e44edf65556b")]
             public virtual Ranorex.CheckBox Server_parameters
             {
                 get
@@ -12543,7 +12551,7 @@ namespace NformTester
             /// <summary>
             /// The Server_parameters item info.
             /// </summary>
-            [RepositoryItemInfo("8d142816-a68d-4e68-8db7-c13c81f251b1")]
+            [RepositoryItemInfo("358f6aa2-90c1-43e7-b952-e44edf65556b")]
             public virtual RepoItemInfo Server_parametersInfo
             {
                 get
@@ -12555,7 +12563,7 @@ namespace NformTester
             /// <summary>
             /// The Start_stop_server item.
             /// </summary>
-            [RepositoryItem("764a0569-4125-4530-ab8e-d6be1914bb96")]
+            [RepositoryItem("1355fea6-911e-4557-b5ad-734e99797a4c")]
             public virtual Ranorex.CheckBox Start_stop_server
             {
                 get
@@ -12567,7 +12575,7 @@ namespace NformTester
             /// <summary>
             /// The Start_stop_server item info.
             /// </summary>
-            [RepositoryItemInfo("764a0569-4125-4530-ab8e-d6be1914bb96")]
+            [RepositoryItemInfo("1355fea6-911e-4557-b5ad-734e99797a4c")]
             public virtual RepoItemInfo Start_stop_serverInfo
             {
                 get
@@ -12579,7 +12587,7 @@ namespace NformTester
             /// <summary>
             /// The E_mail_parameters item.
             /// </summary>
-            [RepositoryItem("e169109c-71fb-41bc-a707-29f4598f17cc")]
+            [RepositoryItem("a1b282d3-06f1-44a4-9e1f-5c35a2d5e370")]
             public virtual Ranorex.CheckBox E_mail_parameters
             {
                 get
@@ -12591,7 +12599,7 @@ namespace NformTester
             /// <summary>
             /// The E_mail_parameters item info.
             /// </summary>
-            [RepositoryItemInfo("e169109c-71fb-41bc-a707-29f4598f17cc")]
+            [RepositoryItemInfo("a1b282d3-06f1-44a4-9e1f-5c35a2d5e370")]
             public virtual RepoItemInfo E_mail_parametersInfo
             {
                 get
@@ -12603,7 +12611,7 @@ namespace NformTester
             /// <summary>
             /// The Global_device_parameters item.
             /// </summary>
-            [RepositoryItem("320308f2-d25f-40ba-b3e4-b7419d9bb676")]
+            [RepositoryItem("a9c64ef6-527c-46a7-85d5-349627324fca")]
             public virtual Ranorex.CheckBox Global_device_parameters
             {
                 get
@@ -12615,7 +12623,7 @@ namespace NformTester
             /// <summary>
             /// The Global_device_parameters item info.
             /// </summary>
-            [RepositoryItemInfo("320308f2-d25f-40ba-b3e4-b7419d9bb676")]
+            [RepositoryItemInfo("a9c64ef6-527c-46a7-85d5-349627324fca")]
             public virtual RepoItemInfo Global_device_parametersInfo
             {
                 get
@@ -12627,7 +12635,7 @@ namespace NformTester
             /// <summary>
             /// The Licenses item.
             /// </summary>
-            [RepositoryItem("c2ac9424-891a-47e8-9fbd-ebbdce9eeedf")]
+            [RepositoryItem("ceb28df1-c7dd-4865-8002-dfcec5efeb55")]
             public virtual Ranorex.CheckBox Licenses
             {
                 get
@@ -12639,7 +12647,7 @@ namespace NformTester
             /// <summary>
             /// The Licenses item info.
             /// </summary>
-            [RepositoryItemInfo("c2ac9424-891a-47e8-9fbd-ebbdce9eeedf")]
+            [RepositoryItemInfo("ceb28df1-c7dd-4865-8002-dfcec5efeb55")]
             public virtual RepoItemInfo LicensesInfo
             {
                 get
@@ -12651,7 +12659,7 @@ namespace NformTester
             /// <summary>
             /// The Logging_parameters item.
             /// </summary>
-            [RepositoryItem("a8856445-e81f-4ae9-8e0b-40f0888c6753")]
+            [RepositoryItem("5dcf449d-a2ff-4ea1-b9db-8214454b2df7")]
             public virtual Ranorex.CheckBox Logging_parameters
             {
                 get
@@ -12663,7 +12671,7 @@ namespace NformTester
             /// <summary>
             /// The Logging_parameters item info.
             /// </summary>
-            [RepositoryItemInfo("a8856445-e81f-4ae9-8e0b-40f0888c6753")]
+            [RepositoryItemInfo("5dcf449d-a2ff-4ea1-b9db-8214454b2df7")]
             public virtual RepoItemInfo Logging_parametersInfo
             {
                 get
@@ -12675,7 +12683,7 @@ namespace NformTester
             /// <summary>
             /// The Shutdown_clients item.
             /// </summary>
-            [RepositoryItem("d42b5688-5120-4725-a4ea-bf6f0205677c")]
+            [RepositoryItem("328a506f-7a26-4ccb-8622-0ed4206fb410")]
             public virtual Ranorex.CheckBox Shutdown_clients
             {
                 get
@@ -12687,7 +12695,7 @@ namespace NformTester
             /// <summary>
             /// The Shutdown_clients item info.
             /// </summary>
-            [RepositoryItemInfo("d42b5688-5120-4725-a4ea-bf6f0205677c")]
+            [RepositoryItemInfo("328a506f-7a26-4ccb-8622-0ed4206fb410")]
             public virtual RepoItemInfo Shutdown_clientsInfo
             {
                 get
@@ -12699,7 +12707,7 @@ namespace NformTester
             /// <summary>
             /// The Snmp_trap_forwarding item.
             /// </summary>
-            [RepositoryItem("34bf65f3-392d-453f-9d36-1f410220817b")]
+            [RepositoryItem("0c1d2c8a-7fc6-41f2-a570-5f16413ee293")]
             public virtual Ranorex.CheckBox Snmp_trap_forwarding
             {
                 get
@@ -12711,7 +12719,7 @@ namespace NformTester
             /// <summary>
             /// The Snmp_trap_forwarding item info.
             /// </summary>
-            [RepositoryItemInfo("34bf65f3-392d-453f-9d36-1f410220817b")]
+            [RepositoryItemInfo("0c1d2c8a-7fc6-41f2-a570-5f16413ee293")]
             public virtual RepoItemInfo Snmp_trap_forwardingInfo
             {
                 get
@@ -12723,7 +12731,7 @@ namespace NformTester
             /// <summary>
             /// The Configure_groups item.
             /// </summary>
-            [RepositoryItem("d3afc863-4016-46fa-8c8d-7215fd7e76ab")]
+            [RepositoryItem("d439ac5f-e7c5-4b4c-8dde-b1b9fa628bc6")]
             public virtual Ranorex.CheckBox Configure_groups
             {
                 get
@@ -12735,7 +12743,7 @@ namespace NformTester
             /// <summary>
             /// The Configure_groups item info.
             /// </summary>
-            [RepositoryItemInfo("d3afc863-4016-46fa-8c8d-7215fd7e76ab")]
+            [RepositoryItemInfo("d439ac5f-e7c5-4b4c-8dde-b1b9fa628bc6")]
             public virtual RepoItemInfo Configure_groupsInfo
             {
                 get
@@ -12747,7 +12755,7 @@ namespace NformTester
             /// <summary>
             /// The Configure_users item.
             /// </summary>
-            [RepositoryItem("c60d7f5e-2917-466d-88de-99e32357a145")]
+            [RepositoryItem("7e7ddc47-0295-4a00-a683-9b07925b43d1")]
             public virtual Ranorex.CheckBox Configure_users
             {
                 get
@@ -12759,7 +12767,7 @@ namespace NformTester
             /// <summary>
             /// The Configure_users item info.
             /// </summary>
-            [RepositoryItemInfo("c60d7f5e-2917-466d-88de-99e32357a145")]
+            [RepositoryItemInfo("7e7ddc47-0295-4a00-a683-9b07925b43d1")]
             public virtual RepoItemInfo Configure_usersInfo
             {
                 get
@@ -12771,7 +12779,7 @@ namespace NformTester
             /// <summary>
             /// The Description item.
             /// </summary>
-            [RepositoryItem("3d7afb61-75c2-44d4-8cb4-500a47617962")]
+            [RepositoryItem("984417e0-33bd-44a7-84d2-eeb146719ce1")]
             public virtual Ranorex.Text Description
             {
                 get
@@ -12783,7 +12791,7 @@ namespace NformTester
             /// <summary>
             /// The Description item info.
             /// </summary>
-            [RepositoryItemInfo("3d7afb61-75c2-44d4-8cb4-500a47617962")]
+            [RepositoryItemInfo("984417e0-33bd-44a7-84d2-eeb146719ce1")]
             public virtual RepoItemInfo DescriptionInfo
             {
                 get
@@ -12795,7 +12803,7 @@ namespace NformTester
             /// <summary>
             /// The Name item.
             /// </summary>
-            [RepositoryItem("eb2d443d-4546-4d1f-889f-11d927fb53b2")]
+            [RepositoryItem("ebca183e-c816-453d-bb5d-e757798ed0de")]
             public virtual Ranorex.Text Name
             {
                 get
@@ -12807,7 +12815,7 @@ namespace NformTester
             /// <summary>
             /// The Name item info.
             /// </summary>
-            [RepositoryItemInfo("eb2d443d-4546-4d1f-889f-11d927fb53b2")]
+            [RepositoryItemInfo("ebca183e-c816-453d-bb5d-e757798ed0de")]
             public virtual RepoItemInfo NameInfo
             {
                 get
@@ -12817,74 +12825,170 @@ namespace NformTester
             }
 
             /// <summary>
-            /// The Info_links item.
+            /// The Close item.
             /// </summary>
-            [RepositoryItem("8ec9ab84-4f2a-46f8-84f6-9586ee8360c2")]
-            public virtual Ranorex.Button Info_links
+            [RepositoryItem("ac5149f9-bcea-4a49-9616-58aa517196ce")]
+            public virtual Ranorex.Button Close
             {
                 get
                 {
-                    return _info_linksInfo.CreateAdapter<Ranorex.Button>(true);
+                    return _closeInfo.CreateAdapter<Ranorex.Button>(true);
                 }
             }
 
             /// <summary>
-            /// The Info_links item info.
+            /// The Close item info.
             /// </summary>
-            [RepositoryItemInfo("8ec9ab84-4f2a-46f8-84f6-9586ee8360c2")]
-            public virtual RepoItemInfo Info_linksInfo
+            [RepositoryItemInfo("ac5149f9-bcea-4a49-9616-58aa517196ce")]
+            public virtual RepoItemInfo CloseInfo
             {
                 get
                 {
-                    return _info_linksInfo;
+                    return _closeInfo;
                 }
             }
 
             /// <summary>
-            /// The LogicGroup_name item.
+            /// The View_OK item.
             /// </summary>
-            [RepositoryItem("bffd819d-7991-4e6d-b2d1-f079f2aeeb98")]
-            public virtual Ranorex.Text LogicGroup_name
+            [RepositoryItem("1726ffb7-e487-4401-95c5-4d4434c974d3")]
+            public virtual Ranorex.Button View_OK
             {
                 get
                 {
-                    return _logicgroup_nameInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _view_okInfo.CreateAdapter<Ranorex.Button>(true);
                 }
             }
 
             /// <summary>
-            /// The LogicGroup_name item info.
+            /// The View_OK item info.
             /// </summary>
-            [RepositoryItemInfo("bffd819d-7991-4e6d-b2d1-f079f2aeeb98")]
-            public virtual RepoItemInfo LogicGroup_nameInfo
+            [RepositoryItemInfo("1726ffb7-e487-4401-95c5-4d4434c974d3")]
+            public virtual RepoItemInfo View_OKInfo
             {
                 get
                 {
-                    return _logicgroup_nameInfo;
+                    return _view_okInfo;
                 }
             }
 
             /// <summary>
-            /// The LogicGroup_Description item.
+            /// The View_Close item.
             /// </summary>
-            [RepositoryItem("846ecce3-453c-40f3-9682-e2f419d96423")]
-            public virtual Ranorex.Text LogicGroup_Description
+            [RepositoryItem("705120ae-e13c-4802-a97c-89e886835820")]
+            public virtual Ranorex.Button View_Close
             {
                 get
                 {
-                    return _logicgroup_descriptionInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _view_closeInfo.CreateAdapter<Ranorex.Button>(true);
                 }
             }
 
             /// <summary>
-            /// The LogicGroup_Description item info.
+            /// The View_Close item info.
             /// </summary>
-            [RepositoryItemInfo("846ecce3-453c-40f3-9682-e2f419d96423")]
-            public virtual RepoItemInfo LogicGroup_DescriptionInfo
+            [RepositoryItemInfo("705120ae-e13c-4802-a97c-89e886835820")]
+            public virtual RepoItemInfo View_CloseInfo
             {
                 get
                 {
-                    return _logicgroup_descriptionInfo;
+                    return _view_closeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The View_Help item.
+            /// </summary>
+            [RepositoryItem("8b4dc401-bf27-46dd-9a0d-38e6e96fa754")]
+            public virtual Ranorex.Button View_Help
+            {
+                get
+                {
+                    return _view_helpInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The View_Help item info.
+            /// </summary>
+            [RepositoryItemInfo("8b4dc401-bf27-46dd-9a0d-38e6e96fa754")]
+            public virtual RepoItemInfo View_HelpInfo
+            {
+                get
+                {
+                    return _view_helpInfo;
+                }
+            }
+
+            /// <summary>
+            /// The View_InfoLinks item.
+            /// </summary>
+            [RepositoryItem("90d17fa9-9fca-4d6c-ab0d-48d41df4c0c1")]
+            public virtual Ranorex.Button View_InfoLinks
+            {
+                get
+                {
+                    return _view_infolinksInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The View_InfoLinks item info.
+            /// </summary>
+            [RepositoryItemInfo("90d17fa9-9fca-4d6c-ab0d-48d41df4c0c1")]
+            public virtual RepoItemInfo View_InfoLinksInfo
+            {
+                get
+                {
+                    return _view_infolinksInfo;
+                }
+            }
+
+            /// <summary>
+            /// The View_Description item.
+            /// </summary>
+            [RepositoryItem("2b994e82-8c18-43f6-bccb-d39ce5baa106")]
+            public virtual Ranorex.Text View_Description
+            {
+                get
+                {
+                    return _view_descriptionInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The View_Description item info.
+            /// </summary>
+            [RepositoryItemInfo("2b994e82-8c18-43f6-bccb-d39ce5baa106")]
+            public virtual RepoItemInfo View_DescriptionInfo
+            {
+                get
+                {
+                    return _view_descriptionInfo;
+                }
+            }
+
+            /// <summary>
+            /// The View_Name item.
+            /// </summary>
+            [RepositoryItem("84488223-7772-4689-9fe2-c76c578102db")]
+            public virtual Ranorex.Text View_Name
+            {
+                get
+                {
+                    return _view_nameInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The View_Name item info.
+            /// </summary>
+            [RepositoryItemInfo("84488223-7772-4689-9fe2-c76c578102db")]
+            public virtual RepoItemInfo View_NameInfo
+            {
+                get
+                {
+                    return _view_nameInfo;
                 }
             }
         }

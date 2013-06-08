@@ -911,6 +911,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST1549_GroupsUnderLogicalGroupForAViewAreNotVisibleIfAnyVelocityDeviceRemoved"
+					id="f992c82d-08db-4b5c-ba6c-d17773e75e1b">
+						<testmodule
+						name="TestCaseDriver"
+						id="18e7e48e-e900-4df9-b37b-66e0ea0b596e"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.040._Users_and_Groups2"
@@ -1079,21 +1088,13 @@ reportlevel="Info;20">
 			<testcase
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
-			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
-			<testcase
-			id="8fe1383a-9d2a-417f-9b02-6ad7b84766e2"/>
-			<testcase
-			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
-			<testcase
-			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
-			<testcase
 			id="16b2d828-575c-4faf-8f7d-74b92c41fc12"/>
 			<testcase
 			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
 			<testcase
 			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
 			<testcase
-			id="9e769f8d-12fe-4795-bef1-d824a7dc621b"/>
+			id="f992c82d-08db-4b5c-ba6c-d17773e75e1b"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

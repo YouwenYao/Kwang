@@ -291,6 +291,10 @@
       <id>d3758c3f-2088-45fa-85cd-53c0ce4909e6</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST1549_GroupsUnderLogicalGroupForAViewAreNotVisibleIfAnyVelocityDeviceRemoved.xlsx">
+      <id>5d51f110-0003-4069-a345-da83cca04ab1</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST2748_DeviceStatusPollingAndGolbalStatusPolling.xlsx">
       <id>b11d8a1e-94da-4d3a-af9a-bfea7cc46713</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
