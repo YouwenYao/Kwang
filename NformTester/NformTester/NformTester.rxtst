@@ -835,6 +835,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST503_TabOrderOnReadDateActionProperties"
+					id="5b45ea66-73cd-4081-a627-91266dd2eeff">
+						<testmodule
+						name="TestCaseDriver"
+						id="0b1c3630-25df-4e9a-85b4-eb56ccc3aefa"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.030._Views2"
@@ -1036,9 +1045,11 @@ reportlevel="Info;20">
 			<testcase
 			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
 			<testcase
-			id="97d8e90e-39f2-4c80-b3df-7ff4e4941dfa"/>
+			id="5b45ea66-73cd-4081-a627-91266dd2eeff"/>
 			<testcase
-			id="a771d192-834d-46b6-ab00-4015df176978"/>
+			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
+			<testcase
+			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
