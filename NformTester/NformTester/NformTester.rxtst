@@ -1049,6 +1049,15 @@ reportlevel="Info;20">
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
+				<testcase
+				name="TST2771_NFormCanResetCustomSliceColorSettingToGlobalSettingForOneGadget"
+				id="97aaff45-075e-4bf1-b068-9a179151dddc">
+					<testmodule
+					name="TestCaseDriver"
+					id="891ffa6c-6d94-40f6-b870-3e46abbbaa3a"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
 			</testcase>
 			<testcase
 			name="1000._Database2"
@@ -1088,13 +1097,11 @@ reportlevel="Info;20">
 			<testcase
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
-			id="16b2d828-575c-4faf-8f7d-74b92c41fc12"/>
-			<testcase
 			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
 			<testcase
-			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
+			id="97aaff45-075e-4bf1-b068-9a179151dddc"/>
 			<testcase
-			id="f992c82d-08db-4b5c-ba6c-d17773e75e1b"/>
+			id="a5e9adfd-9aee-44b1-a5b7-3963bd48c29d"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

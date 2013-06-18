@@ -319,6 +319,10 @@
       <id>a12783e9-d7a7-4785-a488-780327b870f5</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST2771_NFormCanResetCustomSliceColorSettingToGlobalSettingForOneGadget.xlsx">
+      <id>5a35d4ee-6472-4c6b-9158-caa4e70f3393</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST2798_ConfigurationOnDeviceMaintenanceWindow.xlsx">
       <id>dea4bd97-9694-42c2-b6cc-557385d0719b</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

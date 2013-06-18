@@ -1060,7 +1060,7 @@ namespace NformTester
                 _alarm_status_filterInfo = new RepoItemInfo(this, "Alarm_status_filter", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: All']/container[@controlname='m_statusPnl']/container/text[@controlname='m_filterTbx-Ctl']/text[@accessiblename='Filter:']", 30000, null, "c5058f67-4446-45c0-b041-b3e7c9f68b96");
                 _alarm_status_minimumInfo = new RepoItemInfo(this, "Alarm_status_minimum", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: All']/titlebar/button[@accessiblename='最小化']", 30000, null, "344c93dd-c523-4396-a49a-61ab7f00f661");
                 _alarm_status_maximumInfo = new RepoItemInfo(this, "Alarm_status_maximum", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: All']/titlebar/button[@accessiblename='最大化']", 30000, null, "706624b7-07e2-4e01-8b93-d386b8c63bb2");
-                _alarm_status_closeInfo = new RepoItemInfo(this, "Alarm_status_close", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: All']/titlebar/button[@accessiblename='关闭']", 30000, null, "b4bf5f8e-39e3-4685-9b84-110d10321518");
+                _alarm_status_closeInfo = new RepoItemInfo(this, "Alarm_status_close", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: All' and @controltypename='LxGadgetAlarmsByStatus' and @instance='0']/titlebar/button[@accessiblename='Close']", 30000, null, "b4bf5f8e-39e3-4685-9b84-110d10321518");
                 _device_tableInfo = new RepoItemInfo(this, "Device_table", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Device Status: All']/container[@controlname='LxGadgetListView']/table[@controlname='m_lvListView']", 30000, null, "d6ca1d51-a232-440c-beba-e2d9f5ed77ea");
                 _device_status_filterInfo = new RepoItemInfo(this, "Device_status_filter", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Device Status: All']/container[@controlname='m_statusPnl']/container/text[@controlname='m_filterTbx-Ctl']/text[@accessiblename='Filter:']", 30000, null, "c4a2d7ff-1b9d-40e9-88b8-004fbd5410f2");
                 _device_status_setupInfo = new RepoItemInfo(this, "Device_status_setup", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Device Status: All']/container[@controlname='m_statusPnl']/button[@controlname='m_setupBtn']", 30000, null, "ea55f35c-3296-475e-b56d-0d3f881ad796");
@@ -4305,7 +4305,7 @@ namespace NformTester
             RepoItemInfo _specificcomboInfo;
             RepoItemInfo _showaddressInfo;
             RepoItemInfo _shownameInfo;
-            RepoItemInfo _closeInfo;
+            RepoItemInfo _aokInfo;
             RepoItemInfo _okInfo;
 
             /// <summary>
@@ -4334,7 +4334,7 @@ namespace NformTester
                 _specificcomboInfo = new RepoItemInfo(this, "SpecificCombo", "tabpagelist/tabpage[@controlname='m_tabPageSetup']/container/container[@controlname='m_gadgetGrpBx']/container[@controlname='m_specificDevGrpBx']/combobox[@controlname='m_devicesCombo']", 30000, null, "ec7d74fb-8910-4d77-a00d-16042eb504f3");
                 _showaddressInfo = new RepoItemInfo(this, "ShowAddress", "tabpagelist/tabpage[@controlname='m_tabPageSetup']/container/container[@controlname='m_gadgetGrpBx']/container[@controlname='m_specificDevGrpBx']/radiobutton[@controlname='m_showAddrRbtn']", 30000, null, "c7e44038-ff9f-4128-8437-67246dfed107");
                 _shownameInfo = new RepoItemInfo(this, "ShowName", "tabpagelist/tabpage[@controlname='m_tabPageSetup']/container/container[@controlname='m_gadgetGrpBx']/container[@controlname='m_specificDevGrpBx']/radiobutton[@controlname='m_showNameRbtn']", 30000, null, "4e141dac-f92a-4190-8088-85f7d38c1814");
-                _closeInfo = new RepoItemInfo(this, "Close", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']", 30000, null, "01cce42a-edec-4525-960e-28487c9c1cec");
+                _aokInfo = new RepoItemInfo(this, "AOK", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']", 30000, null, "01cce42a-edec-4525-960e-28487c9c1cec");
                 _okInfo = new RepoItemInfo(this, "OK", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button1']", 30000, null, "88e2312a-1205-425d-9ca3-4a9336f77bb6");
             }
 
@@ -4819,26 +4819,26 @@ namespace NformTester
             }
 
             /// <summary>
-            /// The Close item.
+            /// The AOK item.
             /// </summary>
             [RepositoryItem("01cce42a-edec-4525-960e-28487c9c1cec")]
-            public virtual Ranorex.Button Close
+            public virtual Ranorex.Button AOK
             {
                 get
                 {
-                    return _closeInfo.CreateAdapter<Ranorex.Button>(true);
+                    return _aokInfo.CreateAdapter<Ranorex.Button>(true);
                 }
             }
 
             /// <summary>
-            /// The Close item info.
+            /// The AOK item info.
             /// </summary>
             [RepositoryItemInfo("01cce42a-edec-4525-960e-28487c9c1cec")]
-            public virtual RepoItemInfo CloseInfo
+            public virtual RepoItemInfo AOKInfo
             {
                 get
                 {
-                    return _closeInfo;
+                    return _aokInfo;
                 }
             }
 
@@ -5908,7 +5908,6 @@ namespace NformTester
             RepoItemInfo _cancleInfo;
             RepoItemInfo _basecolortableInfo;
             RepoItemInfo _customercolortableInfo;
-            RepoItemInfo _customercolorInfo;
             RepoItemInfo _colorpanInfo;
             RepoItemInfo _colorbarInfo;
             RepoItemInfo _colordisplaypanInfo;
@@ -5918,9 +5917,10 @@ namespace NformTester
             RepoItemInfo _gInfo;
             RepoItemInfo _buleInfo;
             RepoItemInfo _bInfo;
-            RepoItemInfo _addcustomercolorInfo;
             RepoItemInfo _helpInfo;
             RepoItemInfo _closeInfo;
+            RepoItemInfo _customercolorInfo;
+            RepoItemInfo _addcustomercolorInfo;
 
             /// <summary>
             /// Creates a new FormColor  folder.
@@ -5929,11 +5929,10 @@ namespace NformTester
                     base("FormColor", "/form[@title='颜色' or @title='Color']", parentFolder, 30000, true, "19d1a804-7a24-4b93-80f8-e0b0a3b77425", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "19d1a804-7a24-4b93-80f8-e0b0a3b77425");
-                _okInfo = new RepoItemInfo(this, "OK", "button[@text='确定' or @text='OK']", 30000, null, "6be39cf4-c658-4f52-8e07-bb0bd8a44db9");
-                _cancleInfo = new RepoItemInfo(this, "Cancle", "button[@text='取消' or @text='Cancle']", 30000, null, "50192774-150e-4c7c-9daf-d185f098a9ea");
+                _okInfo = new RepoItemInfo(this, "OK", "button[@text='OK']", 30000, null, "6be39cf4-c658-4f52-8e07-bb0bd8a44db9");
+                _cancleInfo = new RepoItemInfo(this, "Cancle", "button[@text='Cancel']", 30000, null, "50192774-150e-4c7c-9daf-d185f098a9ea");
                 _basecolortableInfo = new RepoItemInfo(this, "BaseColorTable", "text[@controlid='720']", 30000, null, "40b0ed3e-fa1e-40bb-9505-cc517f81b741");
                 _customercolortableInfo = new RepoItemInfo(this, "CustomerColorTable", "text[@controlid='721']", 30000, null, "e7bcbef8-4b93-4e25-8933-dcd080d48399");
-                _customercolorInfo = new RepoItemInfo(this, "CustomerColor", "button[@text='规定自定义颜色(&D) >>']", 30000, null, "d99cc699-cf35-4bff-92ad-4b0f3455501a");
                 _colorpanInfo = new RepoItemInfo(this, "Colorpan", "text[@controlid='710']", 30000, null, "4947bd3d-7f8e-4ab5-8ae2-4b58fac82ed9");
                 _colorbarInfo = new RepoItemInfo(this, "Colorbar", "text[@controlid='702']", 30000, null, "d4c64ea7-c870-4c31-9207-2c8987da33df");
                 _colordisplaypanInfo = new RepoItemInfo(this, "ColorDisplaypan", "text[@controlid='709']", 30000, null, "397f9dc4-9cc0-4585-b4b8-50391dcd7026");
@@ -5943,9 +5942,10 @@ namespace NformTester
                 _gInfo = new RepoItemInfo(this, "G", "text[@controlid='707']", 30000, null, "95076705-f8a0-40c5-9bd4-9b25d8b847aa");
                 _buleInfo = new RepoItemInfo(this, "Bule", "text[@controlid='728']", 30000, null, "5b93021b-88dd-47e5-af0a-3ad32349b11f");
                 _bInfo = new RepoItemInfo(this, "B", "text[@controlid='708']", 30000, null, "9df18282-c621-4a1e-bc9e-e2d9df7216ef");
-                _addcustomercolorInfo = new RepoItemInfo(this, "AddCustomerColor", "button[@text='添加到自定义颜色(&A)']", 30000, null, "fd45d1df-05f3-40f4-859d-7e349e220f86");
                 _helpInfo = new RepoItemInfo(this, "Help", "titlebar/button[@accessiblename='上下文帮助']", 30000, null, "bbcecf5a-f66f-4f17-a4bb-be90169bb62d");
                 _closeInfo = new RepoItemInfo(this, "Close", "titlebar/button[@accessiblename='关闭']", 30000, null, "45ad0326-8bdc-4d90-9d3a-b75db509b8a4");
+                _customercolorInfo = new RepoItemInfo(this, "CustomerColor", "button[@text='&Define Custom Colors >>']", 30000, null, "4c5cc63b-614f-4029-b8bb-effc1f01d944");
+                _addcustomercolorInfo = new RepoItemInfo(this, "AddCustomerColor", "button[@text='&Add to Custom Colors']", 30000, null, "1265ed46-28dd-49d0-a3ee-0a1946216ace");
             }
 
             /// <summary>
@@ -6065,30 +6065,6 @@ namespace NformTester
                 get
                 {
                     return _customercolortableInfo;
-                }
-            }
-
-            /// <summary>
-            /// The CustomerColor item.
-            /// </summary>
-            [RepositoryItem("d99cc699-cf35-4bff-92ad-4b0f3455501a")]
-            public virtual Ranorex.Button CustomerColor
-            {
-                get
-                {
-                    return _customercolorInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The CustomerColor item info.
-            /// </summary>
-            [RepositoryItemInfo("d99cc699-cf35-4bff-92ad-4b0f3455501a")]
-            public virtual RepoItemInfo CustomerColorInfo
-            {
-                get
-                {
-                    return _customercolorInfo;
                 }
             }
 
@@ -6309,30 +6285,6 @@ namespace NformTester
             }
 
             /// <summary>
-            /// The AddCustomerColor item.
-            /// </summary>
-            [RepositoryItem("fd45d1df-05f3-40f4-859d-7e349e220f86")]
-            public virtual Ranorex.Button AddCustomerColor
-            {
-                get
-                {
-                    return _addcustomercolorInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The AddCustomerColor item info.
-            /// </summary>
-            [RepositoryItemInfo("fd45d1df-05f3-40f4-859d-7e349e220f86")]
-            public virtual RepoItemInfo AddCustomerColorInfo
-            {
-                get
-                {
-                    return _addcustomercolorInfo;
-                }
-            }
-
-            /// <summary>
             /// The Help item.
             /// </summary>
             [RepositoryItem("bbcecf5a-f66f-4f17-a4bb-be90169bb62d")]
@@ -6377,6 +6329,54 @@ namespace NformTester
                 get
                 {
                     return _closeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CustomerColor item.
+            /// </summary>
+            [RepositoryItem("4c5cc63b-614f-4029-b8bb-effc1f01d944")]
+            public virtual Ranorex.Button CustomerColor
+            {
+                get
+                {
+                    return _customercolorInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CustomerColor item info.
+            /// </summary>
+            [RepositoryItemInfo("4c5cc63b-614f-4029-b8bb-effc1f01d944")]
+            public virtual RepoItemInfo CustomerColorInfo
+            {
+                get
+                {
+                    return _customercolorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AddCustomerColor item.
+            /// </summary>
+            [RepositoryItem("1265ed46-28dd-49d0-a3ee-0a1946216ace")]
+            public virtual Ranorex.Button AddCustomerColor
+            {
+                get
+                {
+                    return _addcustomercolorInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AddCustomerColor item info.
+            /// </summary>
+            [RepositoryItemInfo("1265ed46-28dd-49d0-a3ee-0a1946216ace")]
+            public virtual RepoItemInfo AddCustomerColorInfo
+            {
+                get
+                {
+                    return _addcustomercolorInfo;
                 }
             }
         }

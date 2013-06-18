@@ -450,7 +450,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,accessible">
-						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: All']/titlebar/button[@accessiblename='&#20851;&#38381;']
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: All' and @controltypename='LxGadgetAlarmsByStatus' and @instance='0']/titlebar/button[@accessiblename='Close']
 					</item>
 					<item
 					name="Device_table"
@@ -1391,7 +1391,7 @@ DACduRMvQgFofQAAAABJRU5ErkJggg==
 						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageSetup']/container/container[@controlname='m_gadgetGrpBx']/container[@controlname='m_specificDevGrpBx']/radiobutton[@controlname='m_showNameRbtn']
 					</item>
 					<item
-					name="Close"
+					name="AOK"
 					id="01cce42a-edec-4525-960e-28487c9c1cec"
 					searchtimeout="30000ms"
 					capname="button"
@@ -1770,7 +1770,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,nativewindow">
-						/form[@title='&#39068;&#33394;' or @title='Color']/button[@text='&#30830;&#23450;' or @text='OK']
+						/form[@title='&#39068;&#33394;' or @title='Color']/button[@text='OK']
 					</item>
 					<item
 					name="Cancle"
@@ -1778,7 +1778,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,nativewindow">
-						/form[@title='&#39068;&#33394;' or @title='Color']/button[@text='&#21462;&#28040;' or @text='Cancle']
+						/form[@title='&#39068;&#33394;' or @title='Color']/button[@text='Cancel']
 					</item>
 					<item
 					name="BaseColorTable"
@@ -1795,14 +1795,6 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					capname="text"
 					addcaps="text,nativewindow">
 						/form[@title='&#39068;&#33394;' or @title='Color']/text[@controlid='721']
-					</item>
-					<item
-					name="CustomerColor"
-					id="d99cc699-cf35-4bff-92ad-4b0f3455501a"
-					searchtimeout="30000ms"
-					capname="button"
-					addcaps="button,nativewindow">
-						/form[@title='&#39068;&#33394;' or @title='Color']/button[@text='&#35268;&#23450;&#33258;&#23450;&#20041;&#39068;&#33394;(&amp;D) &gt;&gt;']
 					</item>
 					<item
 					name="Colorpan"
@@ -1877,14 +1869,6 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 						/form[@title='&#39068;&#33394;' or @title='Color']/text[@controlid='708']
 					</item>
 					<item
-					name="AddCustomerColor"
-					id="fd45d1df-05f3-40f4-859d-7e349e220f86"
-					searchtimeout="30000ms"
-					capname="button"
-					addcaps="button,nativewindow">
-						/form[@title='&#39068;&#33394;' or @title='Color']/button[@text='&#28155;&#21152;&#21040;&#33258;&#23450;&#20041;&#39068;&#33394;(&amp;A)']
-					</item>
-					<item
 					name="Help"
 					id="bbcecf5a-f66f-4f17-a4bb-be90169bb62d"
 					searchtimeout="30000ms"
@@ -1899,6 +1883,22 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					capname="button"
 					addcaps="button,accessible">
 						/form[@title='&#39068;&#33394;' or @title='Color']/titlebar/button[@accessiblename='&#20851;&#38381;']
+					</item>
+					<item
+					name="CustomerColor"
+					id="4c5cc63b-614f-4029-b8bb-effc1f01d944"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,nativewindow">
+						/form[@title='&#39068;&#33394;' or @title='Color']/button[@text='&amp;Define Custom Colors &gt;&gt;']
+					</item>
+					<item
+					name="AddCustomerColor"
+					id="1265ed46-28dd-49d0-a3ee-0a1946216ace"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,nativewindow">
+						/form[@title='&#39068;&#33394;' or @title='Color']/button[@text='&amp;Add to Custom Colors']
 					</item>
 					<basepath>
 						/form[@title='&#39068;&#33394;' or @title='Color']
