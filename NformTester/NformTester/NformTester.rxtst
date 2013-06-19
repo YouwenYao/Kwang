@@ -844,6 +844,24 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST734_MapActionsWithALLSeverities"
+					id="36ef0772-d348-4eb5-bfd6-fde8ce807738">
+						<testmodule
+						name="TestCaseDriver"
+						id="0ad8567f-5ce5-44ff-b402-d2e69e2e838f"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST788_MultipulActionsWithShutDownClient"
+					id="c650723f-4bf6-4bf5-957c-595b5aa7f9c0">
+						<testmodule
+						name="TestCaseDriver"
+						id="3f82fd50-e920-46b3-9fde-470b483f5573"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.030._Views2"
@@ -1045,9 +1063,9 @@ reportlevel="Info;20">
 			<testcase
 			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
 			<testcase
-			id="5b45ea66-73cd-4081-a627-91266dd2eeff"/>
-			<testcase
 			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
+			<testcase
+			id="c650723f-4bf6-4bf5-957c-595b5aa7f9c0"/>
 			<testcase
 			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
 		</testconfiguration>
