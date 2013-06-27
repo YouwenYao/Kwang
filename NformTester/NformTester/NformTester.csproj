@@ -144,6 +144,10 @@
       <id>ce0d6910-b470-4d36-b5a6-42a413c3d0ad</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\AddLogdata.xlsx">
+      <id>e05ab173-30a7-4368-930c-afd9e4a5c15e</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TestScripts.xlsx">
       <id>dc3efe77-47b9-49ba-baaa-19c2af620d18</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

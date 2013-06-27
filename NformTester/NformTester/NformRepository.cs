@@ -1035,7 +1035,7 @@ namespace NformTester
                 _dashboardInfo = new RepoItemInfo(this, "Dashboard", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@accessiblename='DASHBOARD']", 30000, null, "8e159454-0b63-4ee5-91f4-cc52ac2fe951");
                 _navigateInfo = new RepoItemInfo(this, "Navigate", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@accessiblename='NAVIGATE']", 30000, null, "75a22599-7fe1-4996-b0d5-d773f0936cea");
                 _alarmsInfo = new RepoItemInfo(this, "Alarms", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@accessiblename='ALARMS']", 30000, null, "b4d55ae7-f755-4379-a041-7a9e8d3e567b");
-                _view1Info = new RepoItemInfo(this, "View1", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel1']/tree/tree/treeitem[@accessiblename='View1']", 30000, null, "4eb701a6-baac-4b98-8993-82f99a26243e");
+                _view1Info = new RepoItemInfo(this, "View1", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel1']/tree/tree/treeitem[@accessiblename='view1']", 30000, null, "4eb701a6-baac-4b98-8993-82f99a26243e");
                 _hr_deptInfo = new RepoItemInfo(this, "HR_Dept", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel1']/tree/tree/treeitem/treeitem[@accessiblename='HR Dept']", 30000, null, "f255abf1-2470-4ee6-94fe-99cc5471bee6");
                 _viewbInfo = new RepoItemInfo(this, "Viewb", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel1']/tree/tree/treeitem[@accessiblename='Viewb']", 30000, null, "f3cda1a6-f6b8-42fe-ab8a-78e92b5fa25c");
                 _payrol_deptInfo = new RepoItemInfo(this, "Payrol_Dept", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel1']/tree/tree/treeitem/treeitem[@accessiblename='HR Dept']/treeitem[@accessiblename='Payrol Dept']", 30000, null, "e8eeccfb-7a9f-4732-9475-5d9346d7a8ee");
@@ -15315,8 +15315,8 @@ namespace NformTester
                     base("FormMissing_Information", "/form[@title='Missing Information']", parentFolder, 30000, true, "85682565-1525-4d68-9159-c4969e344782", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "85682565-1525-4d68-9159-c4969e344782");
-                _yesInfo = new RepoItemInfo(this, "Yes", "button[@text='是(&Y)' or @text='Yes']", 30000, null, "d6c677dd-101d-46b9-a066-21027e8a9467");
-                _noInfo = new RepoItemInfo(this, "No", "button[@text='否(&N)' or @text='No']", 30000, null, "425dcf0a-2067-4bd7-9d35-be85469d2179");
+                _yesInfo = new RepoItemInfo(this, "Yes", "button[@text='&Yes']", 30000, null, "c9f859a6-6333-468c-93f3-4b7724fcfe9a");
+                _noInfo = new RepoItemInfo(this, "No", "button[@text='&No']", 30000, null, "8301632a-2265-4680-82ce-9de9a2d6cd29");
             }
 
             /// <summary>
@@ -15346,7 +15346,7 @@ namespace NformTester
             /// <summary>
             /// The Yes item.
             /// </summary>
-            [RepositoryItem("d6c677dd-101d-46b9-a066-21027e8a9467")]
+            [RepositoryItem("c9f859a6-6333-468c-93f3-4b7724fcfe9a")]
             public virtual Ranorex.Button Yes
             {
                 get
@@ -15358,7 +15358,7 @@ namespace NformTester
             /// <summary>
             /// The Yes item info.
             /// </summary>
-            [RepositoryItemInfo("d6c677dd-101d-46b9-a066-21027e8a9467")]
+            [RepositoryItemInfo("c9f859a6-6333-468c-93f3-4b7724fcfe9a")]
             public virtual RepoItemInfo YesInfo
             {
                 get
@@ -15370,7 +15370,7 @@ namespace NformTester
             /// <summary>
             /// The No item.
             /// </summary>
-            [RepositoryItem("425dcf0a-2067-4bd7-9d35-be85469d2179")]
+            [RepositoryItem("8301632a-2265-4680-82ce-9de9a2d6cd29")]
             public virtual Ranorex.Button No
             {
                 get
@@ -15382,7 +15382,7 @@ namespace NformTester
             /// <summary>
             /// The No item info.
             /// </summary>
-            [RepositoryItemInfo("425dcf0a-2067-4bd7-9d35-be85469d2179")]
+            [RepositoryItemInfo("8301632a-2265-4680-82ce-9de9a2d6cd29")]
             public virtual RepoItemInfo NoInfo
             {
                 get
@@ -27524,7 +27524,7 @@ namespace NformTester
                 _closeInfo = new RepoItemInfo(this, "Close", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "08395d73-578e-4df2-9406-bb4f73e47053");
                 _helpInfo = new RepoItemInfo(this, "Help", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']", 30000, null, "f2bbdf80-4edf-4b33-90e2-0ef8827dff67");
                 _views_tableInfo = new RepoItemInfo(this, "Views_table", "container[@controlname='m_navViewGrp']/table[@controlname='m_navViewLstvw']", 30000, null, "d8545d2b-b5e6-4354-9f8a-a62173a636ef");
-                _cellview1Info = new RepoItemInfo(this, "CellView1", "container[@controlname='m_navViewGrp']/table/row[@index='1']/cell[@text='View1' and @columnindex='0']", 30000, null, "d037f146-29b1-4cd4-8455-fcfa71d7c953");
+                _cellview1Info = new RepoItemInfo(this, "CellView1", "container[@controlname='m_navViewGrp']/table/row[@index='1']/cell[@text='view1' and @columnindex='0']", 30000, null, "d037f146-29b1-4cd4-8455-fcfa71d7c953");
             }
 
             /// <summary>
