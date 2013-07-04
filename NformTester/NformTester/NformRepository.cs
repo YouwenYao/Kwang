@@ -28,6 +28,7 @@ namespace NformTester
         static NformRepository instance = new NformRepository();
         NformRepositoryFolders.NFormAppFolder _nformapp;
         NformRepositoryFolders.ExternalAppFolder _externalapp;
+        NformRepositoryFolders.ExplorerAppFolder _explorer;
 
         /// <summary>
         /// Gets the singleton class instance representing the NformRepository element repository.
@@ -46,6 +47,7 @@ namespace NformTester
         {
             _nformapp = new NformRepositoryFolders.NFormAppFolder(this);
             _externalapp = new NformRepositoryFolders.ExternalAppFolder(this);
+            _explorer = new NformRepositoryFolders.ExplorerAppFolder(this);
         }
 
 #region Variables
@@ -92,6 +94,15 @@ namespace NformTester
         public virtual NformRepositoryFolders.ExternalAppFolder ExternalApp
         {
             get { return _externalapp; }
+        }
+
+        /// <summary>
+        /// The Explorer folder.
+        /// </summary>
+        [RepositoryFolder("a1e1116d-fb6b-4fd9-88ea-f6ef896eb0b5")]
+        public virtual NformRepositoryFolders.ExplorerAppFolder Explorer
+        {
+            get { return _explorer; }
         }
     }
 
@@ -1018,6 +1029,7 @@ namespace NformTester
             RepoItemInfo _configuredgroupsInfo;
             RepoItemInfo _newgroupInfo;
             RepoItemInfo _receptaclesInfo;
+            RepoItemInfo _shutdownclientsInfo;
 
             /// <summary>
             /// Creates a new FormMain  folder.
@@ -1154,6 +1166,7 @@ namespace NformTester
                 _configuredgroupsInfo = new RepoItemInfo(this, "ConfiguredGroups", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxVgViewerRhsMgr']/tabpagelist/tabpage[@controlname='m_parametricDataTab']/container[@controlname='LxVgGenericGrpDisplay']/container/link[@text='Configured groups']/text/link[@accessiblename='Configured groups']", 30000, null, "44280458-d24a-4a38-812a-73957ab3205b");
                 _newgroupInfo = new RepoItemInfo(this, "NewGroup", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxVgViewerRhsMgr']/tabpagelist/tabpage[@controlname='m_parametricDataTab']/container[@controlname='LxVgGenericGrpDisplay']/container/link/text/link[@accessiblename='New Group']", 30000, null, "9cf60843-2396-4327-8f8f-379d5b2284ab");
                 _receptaclesInfo = new RepoItemInfo(this, "Receptacles", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxVgViewerRhsMgr']/tabpagelist/tabpage[@controlname='m_parametricDataTab']/container[@controlname='LxVgRcpGrpDisplay']/container[@controlname='m_rcpGrid']/table[@controlname='m_receptaclesGridView']", 30000, null, "39474286-765e-4858-a3b4-cef51c93ee95");
+                _shutdownclientsInfo = new RepoItemInfo(this, "ShutdownClients", "menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Configure']/menuitem[@accessiblename='Shutdown Clients...']", 30000, null, "29c24860-83c1-49f0-90b4-a941ba2986ff");
             }
 
             /// <summary>
@@ -4249,6 +4262,30 @@ namespace NformTester
                 get
                 {
                     return _receptaclesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ShutdownClients item.
+            /// </summary>
+            [RepositoryItem("29c24860-83c1-49f0-90b4-a941ba2986ff")]
+            public virtual Ranorex.MenuItem ShutdownClients
+            {
+                get
+                {
+                    return _shutdownclientsInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ShutdownClients item info.
+            /// </summary>
+            [RepositoryItemInfo("29c24860-83c1-49f0-90b4-a941ba2986ff")]
+            public virtual RepoItemInfo ShutdownClientsInfo
+            {
+                get
+                {
+                    return _shutdownclientsInfo;
                 }
             }
         }
@@ -34920,6 +34957,100 @@ namespace NformTester
                 get
                 {
                     return _tableentityInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ExplorerAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("a1e1116d-fb6b-4fd9-88ea-f6ef896eb0b5")]
+        public partial class ExplorerAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _administratorliebertrnformInfo;
+            RepoItemInfo _administratorliebertrnformunregistInfo;
+
+            /// <summary>
+            /// Creates a new Explorer  folder.
+            /// </summary>
+            public ExplorerAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Explorer", "/menubar[@processname='explorer']", parentFolder, 30000, true, "a1e1116d-fb6b-4fd9-88ea-f6ef896eb0b5", "")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "a1e1116d-fb6b-4fd9-88ea-f6ef896eb0b5");
+                _administratorliebertrnformInfo = new RepoItemInfo(this, "AdministratorLiebertRNform", "container[@caption='' and @controlid='40965']/container/toolbar/button[@text~'^Administrator\\ -\\ Liebert®\\ ' and @commandid='11']", 30000, null, "78852d45-6aee-41e7-94c4-c7e4e6d7a169");
+                _administratorliebertrnformunregistInfo = new RepoItemInfo(this, "AdministratorLiebertRNformUNREGIST", "container[@caption='' and @controlid='40965']/container/toolbar/button[@text~'^Administrator\\ -\\ Liebert®\\ ']", 30000, null, "62053ade-52f0-478d-ac6c-844e23dec664");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("a1e1116d-fb6b-4fd9-88ea-f6ef896eb0b5")]
+            public virtual Ranorex.MenuBar Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.MenuBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("a1e1116d-fb6b-4fd9-88ea-f6ef896eb0b5")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AdministratorLiebertRNform item.
+            /// </summary>
+            [RepositoryItem("78852d45-6aee-41e7-94c4-c7e4e6d7a169")]
+            public virtual Ranorex.Button AdministratorLiebertRNform
+            {
+                get
+                {
+                    return _administratorliebertrnformInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AdministratorLiebertRNform item info.
+            /// </summary>
+            [RepositoryItemInfo("78852d45-6aee-41e7-94c4-c7e4e6d7a169")]
+            public virtual RepoItemInfo AdministratorLiebertRNformInfo
+            {
+                get
+                {
+                    return _administratorliebertrnformInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AdministratorLiebertRNformUNREGIST item.
+            /// </summary>
+            [RepositoryItem("62053ade-52f0-478d-ac6c-844e23dec664")]
+            public virtual Ranorex.Button AdministratorLiebertRNformUNREGIST
+            {
+                get
+                {
+                    return _administratorliebertrnformunregistInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AdministratorLiebertRNformUNREGIST item info.
+            /// </summary>
+            [RepositoryItemInfo("62053ade-52f0-478d-ac6c-844e23dec664")]
+            public virtual RepoItemInfo AdministratorLiebertRNformUNREGISTInfo
+            {
+                get
+                {
+                    return _administratorliebertrnformunregistInfo;
                 }
             }
         }

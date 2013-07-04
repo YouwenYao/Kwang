@@ -1204,6 +1204,14 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					addcaps="table,control,nativewindow">
 						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxVgViewerRhsMgr']/tabpagelist/tabpage[@controlname='m_parametricDataTab']/container[@controlname='LxVgRcpGrpDisplay']/container[@controlname='m_rcpGrid']/table[@controlname='m_receptaclesGridView']
 					</item>
+					<item
+					name="ShutdownClients"
+					id="29c24860-83c1-49f0-90b4-a941ba2986ff"
+					searchtimeout="30000ms"
+					capname="menuitem"
+					addcaps="menuitem,accessible">
+						/form[@controlname='LxViewerFrame']/menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Configure']/menuitem[@accessiblename='Shutdown Clients...']
+					</item>
 					<basepath>
 						/form[@controlname='LxViewerFrame']
 					</basepath>
@@ -11490,6 +11498,42 @@ KMIpwiGC42/CR0s+FAM82wAAAABJRU5ErkJggg==
 				</icon>
 			</appfolder>
 		</folder>
+		<appfolder
+		name="Explorer"
+		id="a1e1116d-fb6b-4fd9-88ea-f6ef896eb0b5"
+		searchtimeout="30000ms"
+		capname="menubar"
+		addcaps="menubar,nativewindow"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="AdministratorLiebertRNform"
+			id="78852d45-6aee-41e7-94c4-c7e4e6d7a169"
+			searchtimeout="30000ms"
+			capname="button"
+			addcaps="button,nativeitem,checkable">
+				/menubar[@processname='explorer']/container[@caption='' and @controlid='40965']/container/toolbar/button[@text~'^Administrator\ -\ Liebert&#174;\ ' and @commandid='11']
+			</item>
+			<item
+			name="AdministratorLiebertRNformUNREGIST"
+			id="62053ade-52f0-478d-ac6c-844e23dec664"
+			searchtimeout="30000ms"
+			capname="button"
+			addcaps="button,nativeitem,checkable">
+				/menubar[@processname='explorer']/container[@caption='' and @controlid='40965']/container/toolbar/button[@text~'^Administrator\ -\ Liebert&#174;\ ']
+			</item>
+			<basepath>
+				/menubar[@processname='explorer']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAALBJREFUOE9j/P//PwNFAGQAJZgizWDXr1899z8lmOHE0a3/v3x6RhC/
+eXnjPzoG6QO7oK4qG0MSpPjp4ytYxWEGvX55/z/YBTCBqRMawIaBcWX2/56OSuxyQPkVS6aA5VBc
+0NJQhDAAqKihOuf/y2cQV6DLwQxnOHNyJ15nYvM7shjcBR/fP/gPwuga3r6+g9MCcBiAXEBMLOBS
+A3cBPPBggUgkTXlKpCQfgJPygBsAABEv9phGO1VMAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
 		<basepath/>
 	</rootfolder>
 	<variables>

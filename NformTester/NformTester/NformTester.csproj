@@ -372,6 +372,10 @@
       <id>fb3235a4-8ad3-45b3-95d7-6c4fef6dab8c</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST503_TabOrderOnReadDateActionProperties.xlsx">
+      <id>24e7f5a3-73ff-4efb-b8d9-f5eae52b08ef</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\TST514_CheckDefaultRightsForActionsFeaturesOfPowerUsersGroup.xlsx">
       <id>562f6b35-e42c-484b-8368-8c94ed651b96</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -448,6 +452,10 @@
       <id>b373b527-c112-40ee-a297-2d2e1b232cab</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST734_MapActionsWithALLSeverities.xlsx">
+      <id>f3e29d7e-bcee-4e75-b4b1-425a3a8fb238</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST762_CheckGUIOfPeriodComboBoxes.xlsx">
       <id>e15d246d-8e87-4c8f-829a-d7d9f7bdda63</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -462,6 +470,10 @@
     </None>
     <None Include="keywordscripts\TST780_TrendGraphRefreshFunctionality.xlsx">
       <id>1a01f0f0-6acc-48db-a1a2-f378614b4f94</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST788_MultipulActionsWithShutDownClient.xlsx">
+      <id>2e7808b6-d9f1-4746-95f6-a3ac38541e50</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="keywordscripts\TST808_NinthDeviceParametersSelectionFromBottomToTop.xlsx">

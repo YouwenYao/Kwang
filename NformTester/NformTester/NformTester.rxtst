@@ -854,11 +854,38 @@ reportlevel="Info;20">
 						type="UserCode"/>
 					</testcase>
 					<testcase
+					name="TST503_TabOrderOnReadDateActionProperties"
+					id="5b45ea66-73cd-4081-a627-91266dd2eeff">
+						<testmodule
+						name="TestCaseDriver"
+						id="0b1c3630-25df-4e9a-85b4-eb56ccc3aefa"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
 					name="TST1077_VerifyThatNoUnhandledExceptionInReadDataActionPropertiesWindow"
 					id="f5c70d34-7390-4f17-9a14-808d23779f52">
 						<testmodule
 						name="TestCaseDriver"
 						id="040cccaf-0d51-49e5-9d7d-9aabd47a19b9"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST734_MapActionsWithALLSeverities"
+					id="36ef0772-d348-4eb5-bfd6-fde8ce807738">
+						<testmodule
+						name="TestCaseDriver"
+						id="0ad8567f-5ce5-44ff-b402-d2e69e2e838f"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST788_MultipulActionsWithShutDownClient"
+					id="c650723f-4bf6-4bf5-957c-595b5aa7f9c0">
+						<testmodule
+						name="TestCaseDriver"
+						id="3f82fd50-e920-46b3-9fde-470b483f5573"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -1107,6 +1134,14 @@ reportlevel="Info;20">
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
 			id="15542ef7-bf90-431d-8e26-f8eb1c05a42e"/>
+			<testcase
+                        id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
+			<testcase
+			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
+			<testcase
+			id="c650723f-4bf6-4bf5-957c-595b5aa7f9c0"/>
+			<testcase
+			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
