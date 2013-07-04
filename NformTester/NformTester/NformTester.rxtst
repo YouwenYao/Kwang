@@ -1107,12 +1107,6 @@ reportlevel="Info;20">
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
 			id="15542ef7-bf90-431d-8e26-f8eb1c05a42e"/>
-			<testcase 
-			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
-			<testcase
-			id="97d8e90e-39f2-4c80-b3df-7ff4e4941dfa"/>
-			<testcase
-			id="a771d192-834d-46b6-ab00-4015df176978"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
