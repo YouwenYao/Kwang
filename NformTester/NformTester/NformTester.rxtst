@@ -881,11 +881,11 @@ reportlevel="Info;20">
 						type="UserCode"/>
 					</testcase>
 					<testcase
-					name="TST788_MultipulActionsWithShutDownClient"
-					id="c650723f-4bf6-4bf5-957c-595b5aa7f9c0">
+					name="TST549_VerifyFunctionalityOfTimeoutOnShutdownActionPropertiesWindow"
+					id="8fe1383a-9d2a-417f-9b02-6ad7b84766e2">
 						<testmodule
 						name="TestCaseDriver"
-						id="3f82fd50-e920-46b3-9fde-470b483f5573"
+						id="d0224bdc-db26-49f9-b7a0-b23a8f3fd352"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -935,6 +935,24 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="e4fdfa4d-9744-4430-81e2-992fee8f629e"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST1109_AddAnAreaInTheTreeForNewView"
+					id="9e769f8d-12fe-4795-bef1-d824a7dc621b">
+						<testmodule
+						name="TestCaseDriver"
+						id="12ef7dfd-f7b3-4ab1-acb1-9c9447c144ce"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST1549_GroupsUnderLogicalGroupForAViewAreNotVisibleIfAnyVelocityDeviceRemoved"
+					id="f992c82d-08db-4b5c-ba6c-d17773e75e1b">
+						<testmodule
+						name="TestCaseDriver"
+						id="18e7e48e-e900-4df9-b37b-66e0ea0b596e"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -1094,6 +1112,15 @@ reportlevel="Info;20">
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
+				<testcase
+				name="TST2771_NFormCanResetCustomSliceColorSettingToGlobalSettingForOneGadget"
+				id="97aaff45-075e-4bf1-b068-9a179151dddc">
+					<testmodule
+					name="TestCaseDriver"
+					id="891ffa6c-6d94-40f6-b870-3e46abbbaa3a"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
 			</testcase>
 			<testcase
 			name="1000._Database2"
@@ -1125,6 +1152,15 @@ reportlevel="Info;20">
 			ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 			type="UserCode"/>
 		</testcase>
+		<testcase
+		name="AddLogdata"
+		id="6fe8fc22-ca3a-4ccf-bb4d-1b10e573005c">
+			<testmodule
+			name="TestCaseDriver"
+			id="5a696593-42e8-4d87-9847-073164b273cc"
+			ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+			type="UserCode"/>
+		</testcase>
 	</content>
 	<testconfigurations
 	default="TestRun">
@@ -1135,7 +1171,7 @@ reportlevel="Info;20">
 			<testcase
 			id="15542ef7-bf90-431d-8e26-f8eb1c05a42e"/>
 			<testcase
-                        id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
+            id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
 			<testcase
 			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
 			<testcase

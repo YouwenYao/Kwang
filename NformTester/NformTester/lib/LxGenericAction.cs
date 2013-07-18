@@ -532,8 +532,8 @@ namespace NformTester.lib
 				                                                   objComponetInfo.Path + strTreelevel +"[@accessiblename='"+ item.getArg2Text() +"']", 
 				                                                   10000, null, System.Guid.NewGuid().ToString());                     
             	Ranorex.TreeItem targetTreeItem = targetTreeItemInfo.CreateAdapter<Ranorex.TreeItem>(true);            	
-        //    	targetTreeItem.DoubleClick();
-            	
+            	targetTreeItem.DoubleClick();
+   /*         	
             	Ranorex.Control treeViewControl = targetTreeItem.Element.As<Ranorex.Control>();
 				System.Windows.Forms.TreeNode node = treeViewControl.InvokeMethod(
                                 "GetNodeAt",
@@ -542,7 +542,7 @@ namespace NformTester.lib
             	object mynode = node.GetLifetimeService();
             	Ranorex.CheckBox mycheckbox = (Ranorex.CheckBox)mynode;
             	mycheckbox.Check();
-
+*/
             	
             	
 			}			
