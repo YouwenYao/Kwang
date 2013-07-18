@@ -250,7 +250,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="treeitem"
 					addcaps="treeitem,accessible,accessibletreeitem">
-						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel1']/tree/tree/treeitem[@accessiblename='view1']
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel1']/tree/tree/treeitem[@accessiblename='View1']
 					</item>
 					<item
 					name="HR_Dept"
@@ -450,7 +450,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,accessible">
-						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: All' and @controltypename='LxGadgetAlarmsByStatus' and @instance='0']/titlebar/button[@accessiblename='Close']
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: All']/titlebar/button[@accessiblename='&#20851;&#38381;']
 					</item>
 					<item
 					name="Device_table"
@@ -1206,11 +1206,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					</item>
 					<item
 					name="ShutdownClients"
-<<<<<<< HEAD
 					id="29c24860-83c1-49f0-90b4-a941ba2986ff"
-=======
-					id="62af92bc-2348-4aba-af42-c84365c7a245"
->>>>>>> ce9e51f20cde6d46428150cf39965fc74d05f3cc
 					searchtimeout="30000ms"
 					capname="menuitem"
 					addcaps="menuitem,accessible">
@@ -1395,7 +1391,7 @@ DACduRMvQgFofQAAAABJRU5ErkJggg==
 						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageSetup']/container/container[@controlname='m_gadgetGrpBx']/container[@controlname='m_specificDevGrpBx']/radiobutton[@controlname='m_showNameRbtn']
 					</item>
 					<item
-					name="AOK"
+					name="Close"
 					id="01cce42a-edec-4525-960e-28487c9c1cec"
 					searchtimeout="30000ms"
 					capname="button"
@@ -1774,7 +1770,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,nativewindow">
-						/form[@title='&#39068;&#33394;' or @title='Color']/button[@text='OK']
+						/form[@title='&#39068;&#33394;' or @title='Color']/button[@text='&#30830;&#23450;' or @text='OK']
 					</item>
 					<item
 					name="Cancle"
@@ -1782,7 +1778,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,nativewindow">
-						/form[@title='&#39068;&#33394;' or @title='Color']/button[@text='Cancel']
+						/form[@title='&#39068;&#33394;' or @title='Color']/button[@text='&#21462;&#28040;' or @text='Cancle']
 					</item>
 					<item
 					name="BaseColorTable"
@@ -1799,6 +1795,14 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					capname="text"
 					addcaps="text,nativewindow">
 						/form[@title='&#39068;&#33394;' or @title='Color']/text[@controlid='721']
+					</item>
+					<item
+					name="CustomerColor"
+					id="d99cc699-cf35-4bff-92ad-4b0f3455501a"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,nativewindow">
+						/form[@title='&#39068;&#33394;' or @title='Color']/button[@text='&#35268;&#23450;&#33258;&#23450;&#20041;&#39068;&#33394;(&amp;D) &gt;&gt;']
 					</item>
 					<item
 					name="Colorpan"
@@ -1873,6 +1877,14 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 						/form[@title='&#39068;&#33394;' or @title='Color']/text[@controlid='708']
 					</item>
 					<item
+					name="AddCustomerColor"
+					id="fd45d1df-05f3-40f4-859d-7e349e220f86"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,nativewindow">
+						/form[@title='&#39068;&#33394;' or @title='Color']/button[@text='&#28155;&#21152;&#21040;&#33258;&#23450;&#20041;&#39068;&#33394;(&amp;A)']
+					</item>
+					<item
 					name="Help"
 					id="bbcecf5a-f66f-4f17-a4bb-be90169bb62d"
 					searchtimeout="30000ms"
@@ -1887,22 +1899,6 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					capname="button"
 					addcaps="button,accessible">
 						/form[@title='&#39068;&#33394;' or @title='Color']/titlebar/button[@accessiblename='&#20851;&#38381;']
-					</item>
-					<item
-					name="CustomerColor"
-					id="4c5cc63b-614f-4029-b8bb-effc1f01d944"
-					searchtimeout="30000ms"
-					capname="button"
-					addcaps="button,nativewindow">
-						/form[@title='&#39068;&#33394;' or @title='Color']/button[@text='&amp;Define Custom Colors &gt;&gt;']
-					</item>
-					<item
-					name="AddCustomerColor"
-					id="1265ed46-28dd-49d0-a3ee-0a1946216ace"
-					searchtimeout="30000ms"
-					capname="button"
-					addcaps="button,nativewindow">
-						/form[@title='&#39068;&#33394;' or @title='Color']/button[@text='&amp;Add to Custom Colors']
 					</item>
 					<basepath>
 						/form[@title='&#39068;&#33394;' or @title='Color']
@@ -3839,7 +3835,7 @@ bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
 				</appfolder>
 				<appfolder
 				name="FormGroup_Properties"
-				id="8a24fbb5-8a7a-45d4-a6f8-7050724add59"
+				id="b9fab5fb-35ff-40f7-9895-6cfde14b9124"
 				searchtimeout="30000ms"
 				capname="form"
 				addcaps="form,control,nativewindow"
@@ -3847,7 +3843,7 @@ bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
 				usecache="True">
 					<item
 					name="OK"
-					id="c175d0a9-44e1-4498-84f4-cae6c7249999"
+					id="beb16ea3-807d-45f6-b628-15732e8c4c8e"
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,control,nativewindow">
@@ -3855,7 +3851,7 @@ bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
 					</item>
 					<item
 					name="Cancel"
-					id="f560fd1f-5038-485d-8a13-9f1ccc03d002"
+					id="7ce05d23-2011-4c38-ad44-34174bfa42ef"
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,control,nativewindow">
@@ -3863,7 +3859,7 @@ bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
 					</item>
 					<item
 					name="Help"
-					id="d6628dd2-cced-4b3b-9895-06faaebedf98"
+					id="b93e33de-329d-4056-b73a-f5a9354f041e"
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,control,nativewindow">
@@ -3871,7 +3867,7 @@ bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
 					</item>
 					<item
 					name="Assign_Actions"
-					id="d3e7997f-5b2b-41e7-80a6-b383a6411ba6"
+					id="8e591f15-4631-4a68-bcad-da423d1bb2df"
 					searchtimeout="30000ms"
 					capname="checkbox"
 					addcaps="checkbox,control,nativewindow">
@@ -3879,7 +3875,7 @@ bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
 					</item>
 					<item
 					name="E_mail"
-					id="d0943d14-1534-4493-b421-71d7e294be61"
+					id="68e1145a-72ba-47bf-af92-a4d6dd86c6bd"
 					searchtimeout="30000ms"
 					capname="checkbox"
 					addcaps="checkbox,control,nativewindow">
@@ -3887,7 +3883,7 @@ bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
 					</item>
 					<item
 					name="Forward_trap"
-					id="9156ecb2-bb74-4832-bf99-c185d10002b1"
+					id="c1e63504-4855-4faf-a354-cd9916f3f853"
 					searchtimeout="30000ms"
 					capname="checkbox"
 					addcaps="checkbox,control,nativewindow">
@@ -3895,7 +3891,7 @@ bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
 					</item>
 					<item
 					name="Read_data"
-					id="1b6ba9bd-4448-4130-8670-9747c28da8de"
+					id="10f8b127-9cdf-4bc2-9a56-3840dd9af3ef"
 					searchtimeout="30000ms"
 					capname="checkbox"
 					addcaps="checkbox,control,nativewindow">
@@ -3903,7 +3899,7 @@ bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
 					</item>
 					<item
 					name="Run_command"
-					id="dbb0e214-b71c-4fc4-b743-a606b83082cf"
+					id="4af230e4-c2e1-4af3-a63a-c6c49a6ed4a4"
 					searchtimeout="30000ms"
 					capname="checkbox"
 					addcaps="checkbox,control,nativewindow">
@@ -3911,7 +3907,7 @@ bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
 					</item>
 					<item
 					name="Shutdown"
-					id="a913de24-fc96-4334-9394-7943ddce7eb2"
+					id="709de1f6-8b85-43f8-9517-188e7f38bf73"
 					searchtimeout="30000ms"
 					capname="checkbox"
 					addcaps="checkbox,control,nativewindow">
@@ -3919,7 +3915,7 @@ bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
 					</item>
 					<item
 					name="Write_data"
-					id="48cf2e16-5feb-4a7f-8457-0551eea96742"
+					id="8394b7bd-ad8e-4933-a058-546be9e355b0"
 					searchtimeout="30000ms"
 					capname="checkbox"
 					addcaps="checkbox,control,nativewindow">
@@ -3927,7 +3923,7 @@ bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
 					</item>
 					<item
 					name="Write_file"
-					id="f2b79f3f-eb32-4293-ac55-6843e95d8c2d"
+					id="5ba17500-3f71-4545-b551-6c78156660ab"
 					searchtimeout="30000ms"
 					capname="checkbox"
 					addcaps="checkbox,control,nativewindow">
@@ -3935,7 +3931,7 @@ bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
 					</item>
 					<item
 					name="Acknowledge_and_close_alarms"
-					id="3872f10f-cfd6-4332-a57b-88ac3df88f5e"
+					id="ff85d03e-3bd6-4f71-8673-dd4927f99416"
 					searchtimeout="30000ms"
 					capname="checkbox"
 					addcaps="checkbox,control,nativewindow">
@@ -3943,7 +3939,7 @@ bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
 					</item>
 					<item
 					name="Configure_data_logging"
-					id="d25fbd6b-40bc-4f5c-ae4a-7ad7b586cdda"
+					id="d91c74fe-bbbb-43dd-a897-2f7a7021b66c"
 					searchtimeout="30000ms"
 					capname="checkbox"
 					addcaps="checkbox,control,nativewindow">
@@ -3951,7 +3947,7 @@ bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
 					</item>
 					<item
 					name="Configure_devicea"
-					id="3efd8ce4-c70f-40f0-9b50-90894ed8de48"
+					id="4dfe76ef-937b-4a74-88e6-73375c8bdc52"
 					searchtimeout="30000ms"
 					capname="checkbox"
 					addcaps="checkbox,control,nativewindow">
@@ -3959,7 +3955,7 @@ bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
 					</item>
 					<item
 					name="Configure_navigation_views"
-					id="90fd9515-14ae-40b6-a986-85cf2f28d7ee"
+					id="feccace5-7abd-4200-8840-d243374660c4"
 					searchtimeout="30000ms"
 					capname="checkbox"
 					addcaps="checkbox,control,nativewindow">
@@ -3967,7 +3963,7 @@ bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
 					</item>
 					<item
 					name="Discover_new_devices"
-					id="2d653539-9550-4c2c-b338-7b9a059c9cb6"
+					id="7f8061dd-5202-4a30-99b3-fea4d9054b32"
 					searchtimeout="30000ms"
 					capname="checkbox"
 					addcaps="checkbox,control,nativewindow">
@@ -3975,7 +3971,7 @@ bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
 					</item>
 					<item
 					name="Edit_device_definitions"
-					id="7700ff69-2301-485e-a5df-4bb83fadd020"
+					id="1543edd5-edaa-41ec-9474-cd51dde7c0fd"
 					searchtimeout="30000ms"
 					capname="checkbox"
 					addcaps="checkbox,control,nativewindow">
@@ -3983,7 +3979,7 @@ bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
 					</item>
 					<item
 					name="Set_device_data"
-					id="31b2fb59-f2f1-4271-a8f6-59b2dde7ec62"
+					id="c55dabb8-1ace-437d-adf7-5483526de130"
 					searchtimeout="30000ms"
 					capname="checkbox"
 					addcaps="checkbox,control,nativewindow">
@@ -3991,7 +3987,7 @@ bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
 					</item>
 					<item
 					name="Server_parameters"
-					id="358f6aa2-90c1-43e7-b952-e44edf65556b"
+					id="8d142816-a68d-4e68-8db7-c13c81f251b1"
 					searchtimeout="30000ms"
 					capname="checkbox"
 					addcaps="checkbox,control,nativewindow">
@@ -3999,7 +3995,7 @@ bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
 					</item>
 					<item
 					name="Start_stop_server"
-					id="1355fea6-911e-4557-b5ad-734e99797a4c"
+					id="764a0569-4125-4530-ab8e-d6be1914bb96"
 					searchtimeout="30000ms"
 					capname="checkbox"
 					addcaps="checkbox,control,nativewindow">
@@ -4007,7 +4003,7 @@ bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
 					</item>
 					<item
 					name="E_mail_parameters"
-					id="a1b282d3-06f1-44a4-9e1f-5c35a2d5e370"
+					id="e169109c-71fb-41bc-a707-29f4598f17cc"
 					searchtimeout="30000ms"
 					capname="checkbox"
 					addcaps="checkbox,control,nativewindow">
@@ -4015,7 +4011,7 @@ bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
 					</item>
 					<item
 					name="Global_device_parameters"
-					id="a9c64ef6-527c-46a7-85d5-349627324fca"
+					id="320308f2-d25f-40ba-b3e4-b7419d9bb676"
 					searchtimeout="30000ms"
 					capname="checkbox"
 					addcaps="checkbox,control,nativewindow">
@@ -4023,7 +4019,7 @@ bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
 					</item>
 					<item
 					name="Licenses"
-					id="ceb28df1-c7dd-4865-8002-dfcec5efeb55"
+					id="c2ac9424-891a-47e8-9fbd-ebbdce9eeedf"
 					searchtimeout="30000ms"
 					capname="checkbox"
 					addcaps="checkbox,control,nativewindow">
@@ -4031,7 +4027,7 @@ bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
 					</item>
 					<item
 					name="Logging_parameters"
-					id="5dcf449d-a2ff-4ea1-b9db-8214454b2df7"
+					id="a8856445-e81f-4ae9-8e0b-40f0888c6753"
 					searchtimeout="30000ms"
 					capname="checkbox"
 					addcaps="checkbox,control,nativewindow">
@@ -4039,7 +4035,7 @@ bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
 					</item>
 					<item
 					name="Shutdown_clients"
-					id="328a506f-7a26-4ccb-8622-0ed4206fb410"
+					id="d42b5688-5120-4725-a4ea-bf6f0205677c"
 					searchtimeout="30000ms"
 					capname="checkbox"
 					addcaps="checkbox,control,nativewindow">
@@ -4047,7 +4043,7 @@ bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
 					</item>
 					<item
 					name="Snmp_trap_forwarding"
-					id="0c1d2c8a-7fc6-41f2-a570-5f16413ee293"
+					id="34bf65f3-392d-453f-9d36-1f410220817b"
 					searchtimeout="30000ms"
 					capname="checkbox"
 					addcaps="checkbox,control,nativewindow">
@@ -4055,7 +4051,7 @@ bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
 					</item>
 					<item
 					name="Configure_groups"
-					id="d439ac5f-e7c5-4b4c-8dde-b1b9fa628bc6"
+					id="d3afc863-4016-46fa-8c8d-7215fd7e76ab"
 					searchtimeout="30000ms"
 					capname="checkbox"
 					addcaps="checkbox,control,nativewindow">
@@ -4063,7 +4059,7 @@ bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
 					</item>
 					<item
 					name="Configure_users"
-					id="7e7ddc47-0295-4a00-a683-9b07925b43d1"
+					id="c60d7f5e-2917-466d-88de-99e32357a145"
 					searchtimeout="30000ms"
 					capname="checkbox"
 					addcaps="checkbox,control,nativewindow">
@@ -4071,7 +4067,7 @@ bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
 					</item>
 					<item
 					name="Description"
-					id="984417e0-33bd-44a7-84d2-eeb146719ce1"
+					id="3d7afb61-75c2-44d4-8cb4-500a47617962"
 					searchtimeout="30000ms"
 					capname="text"
 					addcaps="text,accessible">
@@ -4079,83 +4075,53 @@ bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
 					</item>
 					<item
 					name="Name"
-					id="ebca183e-c816-453d-bb5d-e757798ed0de"
+					id="eb2d443d-4546-4d1f-889f-11d927fb53b2"
 					searchtimeout="30000ms"
 					capname="text"
 					addcaps="text,accessible">
 						/form[@controlname='LxGroupDlg']/container[@controlname='m_tableLayoutPnl']/text[@controlname='m_groupNameTbx']/text[@accessiblerole='Text']
 					</item>
 					<item
-					name="Close"
-					id="ac5149f9-bcea-4a49-9616-58aa517196ce"
-					searchtimeout="30000ms"
-					capname="button"
-					addcaps="button,accessible">
-						/form[@controlname='LxGroupDlg']/titlebar/button[@accessiblename='Close']
-					</item>
-					<item
-					name="View_OK"
-					id="1726ffb7-e487-4401-95c5-4d4434c974d3"
-					searchtimeout="30000ms"
-					capname="button"
-					addcaps="button,control,nativewindow">
-						/form[@controlname='LxGroupDlg']/container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']
-					</item>
-					<item
-					name="View_Close"
-					id="705120ae-e13c-4802-a97c-89e886835820"
-					searchtimeout="30000ms"
-					capname="button"
-					addcaps="button,control,nativewindow">
-						/form[@controlname='LxGroupDlg']/container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']
-					</item>
-					<item
-					name="View_Help"
-					id="8b4dc401-bf27-46dd-9a0d-38e6e96fa754"
-					searchtimeout="30000ms"
-					capname="button"
-					addcaps="button,control,nativewindow">
-						/form[@controlname='LxGroupDlg']/container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']
-					</item>
-					<item
-					name="View_InfoLinks"
-					id="90d17fa9-9fca-4d6c-ab0d-48d41df4c0c1"
+					name="Info_links"
+					id="8ec9ab84-4f2a-46f8-84f6-9586ee8360c2"
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,control,nativewindow">
 						/form[@controlname='LxGroupDlg']/button[@controlname='m_infoLinksBtn']
 					</item>
 					<item
-					name="View_Description"
-					id="2b994e82-8c18-43f6-bccb-d39ce5baa106"
-					searchtimeout="30000ms"
-					capname="text"
-					addcaps="text,accessible">
-						/form[@controlname='LxGroupDlg']/container[@controlname='m_groupDscrTbx']/text[@controlname='m_groupDscrTbx-Ctl']/text[@accessiblename='Description:']
-					</item>
-					<item
-					name="View_Name"
-					id="84488223-7772-4689-9fe2-c76c578102db"
+					name="LogicGroup_name"
+					id="bffd819d-7991-4e6d-b2d1-f079f2aeeb98"
 					searchtimeout="30000ms"
 					capname="text"
 					addcaps="text,accessible">
 						/form[@controlname='LxGroupDlg']/container[@controlname='m_groupNameTbx']/text[@controlname='m_groupNameTbx-Ctl']/text[@accessiblename='Name:']
+					</item>
+					<item
+					name="LogicGroup_Description"
+					id="846ecce3-453c-40f3-9682-e2f419d96423"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,accessible">
+						/form[@controlname='LxGroupDlg']/container[@controlname='m_groupDscrTbx']/text[@controlname='m_groupDscrTbx-Ctl']/text[@accessiblename='Description:']
 					</item>
 					<basepath>
 						/form[@controlname='LxGroupDlg']
 					</basepath>
 					<icon>
 						iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
-jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH2SURBVDhPrdNfSJNhFMfxR1DbCmXm1DLZTdAo
-jOgiIuwiCNMIAiUoFClmWVkJYZoZJpoIaix0tF6zjGnOmiNLykGjrEkYGFGRwVbNWrUtN5t/WkU3
-3zKieqEYZA+cy/P5HXjOEeJ/vDsDDv6lfmbPNP9pkCEpiU/jHXz0thB2VzM9UszU/VwmBtdyoSru
-V8/fgEGjmrCnkQ+uMqYfFTB5L4uJWyt536+hvWJeZOB2S+JvqRmE7FrG+5IZsyqQSufKgdEV0TiX
-x/A4PZbhZQocS5XY9fOZHMoiNJNq0xDojefdpWh8XQJDiVIOTF3tIWQ2EZAMeBuOY10cR3+jitAN
-LcG+JAI9SvzdUbztFHjOC/TFCjkQPGvE31SPp7KMF3sKMWgSuFKvIvgtdcwSg88seGMSvGoXuNsE
-DbvnyIHXx47g3l+EM28LT7LXU7UgGUtNPP6LUXh/pI6eEzxvFTglQV1hrBxwFWxjZFMmDzNWMZyu
-Za86NeJuyPagPCWFA+qFFCWmsj1hEfmqNCp7X9Lh4Hu13YSTNqi9DIe6YONhW+RvLDW7kOxw4jpU
-W+FgJ+xqhfzmL6zWdUcGdhofcNQCJSbQnYY8/Wdy6gJkVzxjSc6ZyEBu7QA7TsHWpjCba3xsKH/K
-un13WaO7RlpmsxyY1THN5qK/Am2J0IFS6yHBAAAAAElFTkSuQmCC
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAklJREFUOE+tk1tI02EUwP+VdoGIHuqty0u9FHR5CEoQhBACQcyoyCQJ
+tDl38ZYZiWVmZhfzssymczHWnE5zNmU6lM2pYRcXKmhomZZZrtQ27UL08MuZtGWEPfjBge8c+H6/
+88E5grAYp8Vmb7Hb7Bm+4ak9rJbSViXFXinBppfQrIvDohXToBHTZCzit9vzcH4jntpQWyTfnEq+
+vrnC5/4kpruO4+4IxmXdiUkduzDgZXMYXwbTme4VMdUZhrstgE+WrUyY1mNUibyAf32hvz5o1jo1
+Z500b2DcuAZnpR/VylNeQFdqNM6kCEZlRxkWhTMQFYLttIi+qh24W/fNWdfxsXolYxVLeacVMBT7
+AB6dicFluMdE2R3GcnMYSU+lPlFMj3YTk+aNs9YPBj/e65bwViPwWi2gL4rxdmBNFuEsuM5oRhpD
+cjEDkUeokEtwlK6dsa5iTP/LOnJXYFglMFgioFP4AEwJYoaTpLyIiqAv9ADdgXspk8povLaa9vwV
+tNxYTlOOPw1Z/tRd9MN4fhnagmhvB+UztucHQ+gJCsCxezuPt2xGERePuqF7NlTmLpSmZ9yueUqh
+oYNcXTvlta1eQG1RMaUSGcVxchRiOfmx8VTcUnLT4kJjB5UVChvh8gM4qweJGi4pm/6eA9+B8tyz
+asfJM0NmDaToIFYFJxQ/OHzVzbm8uoUBMvUoiVqIKYHI/O8cyp4gJO0V+xMcJGffXxgQnvmE0Au9
+BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					</icon>
 				</appfolder>
 			</folder>
@@ -4913,19 +4879,19 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 				usecache="True">
 					<item
 					name="Yes"
-					id="c9f859a6-6333-468c-93f3-4b7724fcfe9a"
+					id="d6c677dd-101d-46b9-a066-21027e8a9467"
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,nativewindow">
-						/form[@title='Missing Information']/button[@text='&amp;Yes']
+						/form[@title='Missing Information']/button[@text='&#26159;(&amp;Y)' or @text='Yes']
 					</item>
 					<item
 					name="No"
-					id="8301632a-2265-4680-82ce-9de9a2d6cd29"
+					id="425dcf0a-2067-4bd7-9d35-be85469d2179"
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,nativewindow">
-						/form[@title='Missing Information']/button[@text='&amp;No']
+						/form[@title='Missing Information']/button[@text='&#21542;(&amp;N)' or @text='No']
 					</item>
 					<basepath>
 						/form[@title='Missing Information']
@@ -8994,7 +8960,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="cell"
 					addcaps="cell">
-						/form[@controlname='LxNavViewListDlg']/container[@controlname='m_navViewGrp']/table/row[@index='1']/cell[@text='view1' and @columnindex='0']
+						/form[@controlname='LxNavViewListDlg']/container[@controlname='m_navViewGrp']/table/row[@index='1']/cell[@text='View1' and @columnindex='0']
 					</item>
 					<basepath>
 						/form[@controlname='LxNavViewListDlg']
