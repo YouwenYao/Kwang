@@ -1029,6 +1029,12 @@ namespace NformTester
             RepoItemInfo _configuredgroupsInfo;
             RepoItemInfo _newgroupInfo;
             RepoItemInfo _receptaclesInfo;
+            RepoItemInfo _treeitemups_10_146_87_2Info;
+            RepoItemInfo _treeitemdevice_informationInfo;
+            RepoItemInfo _cellname_row_0Info;
+            RepoItemInfo _cellnew_row_0Info;
+            RepoItemInfo _cellsource_row_0Info;
+            RepoItemInfo _cellalarm_row_0Info;
             RepoItemInfo _shutdownclientsInfo;
 
             /// <summary>
@@ -1129,7 +1135,7 @@ namespace NformTester
                 _close_alarmsInfo = new RepoItemInfo(this, "Close_alarms", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/toolbar/button[@controlname='m_closeBtn']", 30000, null, "d970a229-167e-4b8a-9122-64c63db67702");
                 _detailsInfo = new RepoItemInfo(this, "Details", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/toolbar/button[@controlname='m_detailsBtn']", 30000, null, "4abd4f4a-6d78-44e6-becb-5ce38dc47592");
                 _treeitemups_10_146_85_6Info = new RepoItemInfo(this, "TreeItemUPS_10_146_85_6", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel1']/tree/tree/treeitem/treeitem[@accessiblename='UPS_10.146.85.6']", 30000, null, "7b922a92-eb47-43d8-ab5f-8878373f8d21");
-                _parametrics_device_treeInfo = new RepoItemInfo(this, "Parametrics_device_tree", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxViewerRhsMgr']/tabpagelist[@controlname='m_devTabCtl']/tabpage[@controlname='m_devDataPage']/container[@controlname='m_devDataDisplay']/container[@controlname='m_dataSplitterCtl']/container[@controlname='panel1']/tree/tree[@accessiblerole='Outline']", 30000, null, "040131bd-520f-4944-b84b-fa22d0bcfa8e");
+                _parametrics_device_treeInfo = new RepoItemInfo(this, "Parametrics_device_tree", ".//tree[@accessiblerole='Outline']", 30000, null, "040131bd-520f-4944-b84b-fa22d0bcfa8e");
                 _parametrics_tableInfo = new RepoItemInfo(this, "Parametrics_table", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxViewerRhsMgr']/tabpagelist[@controlname='m_devTabCtl']/tabpage[@controlname='m_devDataPage']/container[@controlname='m_devDataDisplay']/container[@controlname='m_dataSplitterCtl']/container[@controlname='panel2']/table[@controlname='m_deviceGrid']", 30000, null, "9bd8db36-ad7b-48aa-babb-50e52708b79f");
                 _details_parametricsInfo = new RepoItemInfo(this, "Details_parametrics", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxViewerRhsMgr']/tabpagelist[@controlname='m_devTabCtl']/tabpage[@controlname='m_devDataPage']/container[@controlname='m_devDataDisplay']/container[@controlname='m_topPanel']/toolbar/button[@accessiblename='Details...']", 30000, null, "58c13404-4a50-417f-a574-292863e2a43d");
                 _refresh_parametricsInfo = new RepoItemInfo(this, "Refresh_parametrics", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxViewerRhsMgr']/tabpagelist[@controlname='m_devTabCtl']/tabpage[@controlname='m_devDataPage']/container[@controlname='m_devDataDisplay']/container[@controlname='m_topPanel']/toolbar/button[@accessiblename='Refresh']", 30000, null, "1e96338a-312a-4546-93d7-080a58d1ce7d");
@@ -1166,6 +1172,12 @@ namespace NformTester
                 _configuredgroupsInfo = new RepoItemInfo(this, "ConfiguredGroups", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxVgViewerRhsMgr']/tabpagelist/tabpage[@controlname='m_parametricDataTab']/container[@controlname='LxVgGenericGrpDisplay']/container/link[@text='Configured groups']/text/link[@accessiblename='Configured groups']", 30000, null, "44280458-d24a-4a38-812a-73957ab3205b");
                 _newgroupInfo = new RepoItemInfo(this, "NewGroup", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxVgViewerRhsMgr']/tabpagelist/tabpage[@controlname='m_parametricDataTab']/container[@controlname='LxVgGenericGrpDisplay']/container/link/text/link[@accessiblename='New Group']", 30000, null, "9cf60843-2396-4327-8f8f-379d5b2284ab");
                 _receptaclesInfo = new RepoItemInfo(this, "Receptacles", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxVgViewerRhsMgr']/tabpagelist/tabpage[@controlname='m_parametricDataTab']/container[@controlname='LxVgRcpGrpDisplay']/container[@controlname='m_rcpGrid']/table[@controlname='m_receptaclesGridView']", 30000, null, "39474286-765e-4858-a3b4-cef51c93ee95");
+                _treeitemups_10_146_87_2Info = new RepoItemInfo(this, "TreeItemUPS_10_146_87_2", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel1']/tree/tree/treeitem/treeitem[@accessiblename='UPS_10.146.87.2']", 30000, null, "1e47e2cd-ebe9-4114-91c2-0ac9acc35e99");
+                _treeitemdevice_informationInfo = new RepoItemInfo(this, "TreeItemDevice_Information", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxViewerRhsMgr']/tabpagelist[@controlname='m_devTabCtl']/tabpage[@controlname='m_devDataPage']/container[@controlname='m_devDataDisplay']/container[@controlname='m_dataSplitterCtl']/container[@controlname='panel1']/tree/tree/treeitem/treeitem[@accessiblename='Device Information']", 30000, null, "d5afbe4f-879a-4030-8654-d3bec9c0b1db");
+                _cellname_row_0Info = new RepoItemInfo(this, "CellName_Row_0", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxViewerRhsMgr']/tabpagelist[@controlname='m_devTabCtl']/tabpage[@controlname='m_devDataPage']/container[@controlname='m_devDataDisplay']/container[@controlname='m_dataSplitterCtl']/container[@controlname='panel2']/table/row[@accessiblename='Row 0']/cell[@accessiblename='Name Row 0']", 30000, null, "44aeea8d-8585-42a9-a01e-ecbcd085c4d8");
+                _cellnew_row_0Info = new RepoItemInfo(this, "CellNew_Row_0", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxViewerRhsMgr']/tabpagelist[@controlname='m_devTabCtl']/tabpage[@controlname='m_devDataPage']/container[@controlname='m_devDataDisplay']/container[@controlname='m_dataSplitterCtl']/container[@controlname='panel2']/table/row[@accessiblename='Row 0']/cell[@accessiblename='New Row 0']", 30000, null, "b9d43e8c-76f2-41e9-8009-014cdf625e53");
+                _cellsource_row_0Info = new RepoItemInfo(this, "CellSource_Row_0", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/table/row[@accessiblename='Row 0']/cell[@accessiblename='Source Row 0']", 30000, null, "6f92f659-c301-42ba-a715-424136713414");
+                _cellalarm_row_0Info = new RepoItemInfo(this, "CellAlarm_Row_0", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/table/row[@accessiblename='Row 0']/cell[@accessiblename='Alarm Row 0']", 30000, null, "342394db-4159-45ab-9b2a-727031c8ac35");
                 _shutdownclientsInfo = new RepoItemInfo(this, "ShutdownClients", "menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Configure']/menuitem[@accessiblename='Shutdown Clients...']", 30000, null, "29c24860-83c1-49f0-90b4-a941ba2986ff");
             }
 
@@ -4262,6 +4274,30 @@ namespace NformTester
                 get
                 {
                     return _receptaclesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ShutdownClients item.
+            /// </summary>
+            [RepositoryItem("29c24860-83c1-49f0-90b4-a941ba2986ff")]
+            public virtual Ranorex.MenuItem ShutdownClients
+            {
+                get
+                {
+                    return _shutdownclientsInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ShutdownClients item info.
+            /// </summary>
+            [RepositoryItemInfo("29c24860-83c1-49f0-90b4-a941ba2986ff")]
+            public virtual RepoItemInfo ShutdownClientsInfo
+            {
+                get
+                {
+                    return _shutdownclientsInfo;
                 }
             }
 

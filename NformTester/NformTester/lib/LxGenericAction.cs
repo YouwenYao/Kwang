@@ -220,7 +220,7 @@ namespace NformTester.lib
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Next.Click();
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Select_all.Click();
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Finish.Click();
-				Delay.Duration(10000);
+				Delay.Duration(20000);
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device_Results.OK.Click();
 				repo.NFormApp.ManagedDevicesWindow.FormManaged_Devices.Close.Click();								
 			}			
@@ -907,7 +907,7 @@ namespace NformTester.lib
 			Type objType = objComponet.GetType();
 							
 			if(objType.Name.ToString() == "Table")
-			{
+			{            
 				Ranorex.Table tb = (Ranorex.Table)objComponet;
 				tb.Rows[Convert.ToInt32(item.getArgText())].Cells[Convert.ToInt32(item.getArg2Text())].DoubleClick();
 				Keyboard.Press("{CONTROL down}{Akey}{CONTROL up}"+item.getArg3Text());
