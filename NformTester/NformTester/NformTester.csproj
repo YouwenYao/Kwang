@@ -292,7 +292,6 @@
       <id>04a1930e-2fb4-4b4e-8ea7-41499b8ea516</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-
     <None Include="Keywordscripts\TST1548_ExceptionInOnCellMouseDownInViewerLogWhenScrollsInALARMStabWith5000Alarms.xlsx">
       <id>0ba90384-cede-42b4-b1fc-80bf8569a98b</id>
     </None>
@@ -418,6 +417,10 @@
     </None>
     <None Include="Keywordscripts\TST581_UsersWithoutAllRightsCanNotEditOnActionSets.xlsx">
       <id>7a05c35e-ac09-48c8-bdaf-ec1356c72454</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST591_DeleteActionSetsWithPowerUserRights.xlsx">
+      <id>b7171cb1-5419-4a8d-8bd4-0dd379df5085</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\TST592_DeleteAnActionSetWithUsersRight.xlsx">

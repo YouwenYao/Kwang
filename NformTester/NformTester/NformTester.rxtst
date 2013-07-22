@@ -889,6 +889,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST591_DeleteActionSetsWithPowerUserRights"
+					id="45120528-979e-42c5-941d-bd8781b5b610">
+						<testmodule
+						name="TestCaseDriver"
+						id="43cc6b48-9a16-437d-a094-0c8c71867fcd"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.030._Views2"
@@ -1133,13 +1142,11 @@ reportlevel="Info;20">
 			<testcase
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
-			id="15542ef7-bf90-431d-8e26-f8eb1c05a42e"/>
+			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
 			<testcase
-                        id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
+			id="45120528-979e-42c5-941d-bd8781b5b610"/>
 			<testcase
 			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
-			<testcase
-			id="c650723f-4bf6-4bf5-957c-595b5aa7f9c0"/>
 			<testcase
 			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
 		</testconfiguration>
