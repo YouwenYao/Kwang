@@ -268,6 +268,10 @@
       <id>87b6c425-da73-48a2-b909-61c6915e8935</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST1330_UserCanConfigurationOtherSMTPApartFromAutomatic.xlsx">
+      <id>538e59c8-4368-4734-a175-abf32984c260</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST1332_ImportDeviceFromFlatFileWithTheSpecifiedSeparator.xlsx">
       <id>f6556755-48f9-436d-9a77-2974081fd059</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

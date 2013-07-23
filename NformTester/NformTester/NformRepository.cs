@@ -12921,6 +12921,7 @@ namespace NformTester
             NformRepositoryFolders.FormShutdown_Client_PropertiesAppFolder _formshutdown_client_properties;
             NformRepositoryFolders.FormForward_Trap_Action_PropertiesAppFolder _formforward_trap_action_properties;
             NformRepositoryFolders.FormMap_ActionsAppFolder _formmap_actions;
+            NformRepositoryFolders.FormConfirmActionSetDeleteAppFolder _formconfirmactionsetdelete;
 
             /// <summary>
             /// Creates a new ActionSetsWindow  folder.
@@ -12943,6 +12944,7 @@ namespace NformTester
                 _formshutdown_client_properties = new NformRepositoryFolders.FormShutdown_Client_PropertiesAppFolder(parentFolder);
                 _formforward_trap_action_properties = new NformRepositoryFolders.FormForward_Trap_Action_PropertiesAppFolder(parentFolder);
                 _formmap_actions = new NformRepositoryFolders.FormMap_ActionsAppFolder(parentFolder);
+                _formconfirmactionsetdelete = new NformRepositoryFolders.FormConfirmActionSetDeleteAppFolder(parentFolder);
             }
 
             /// <summary>
@@ -13078,6 +13080,15 @@ namespace NformTester
             public virtual NformRepositoryFolders.FormMap_ActionsAppFolder FormMap_Actions
             {
                 get { return _formmap_actions; }
+            }
+
+            /// <summary>
+            /// The FormConfirmActionSetDelete folder.
+            /// </summary>
+            [RepositoryFolder("cf4bf6df-fa68-46e3-a2b9-4c41c33fdccb")]
+            public virtual NformRepositoryFolders.FormConfirmActionSetDeleteAppFolder FormConfirmActionSetDelete
+            {
+                get { return _formconfirmactionsetdelete; }
             }
         }
 
@@ -18101,6 +18112,126 @@ namespace NformTester
                 get
                 {
                     return _helpInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The FormConfirmActionSetDeleteAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("cf4bf6df-fa68-46e3-a2b9-4c41c33fdccb")]
+        public partial class FormConfirmActionSetDeleteAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _yesInfo;
+            RepoItemInfo _noInfo;
+            RepoItemInfo _closeInfo;
+
+            /// <summary>
+            /// Creates a new FormConfirmActionSetDelete  folder.
+            /// </summary>
+            public FormConfirmActionSetDeleteAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("FormConfirmActionSetDelete", "/form[@title='Confirm Action Set Delete']", parentFolder, 30000, true, "cf4bf6df-fa68-46e3-a2b9-4c41c33fdccb", "")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "cf4bf6df-fa68-46e3-a2b9-4c41c33fdccb");
+                _yesInfo = new RepoItemInfo(this, "Yes", "button[@text='&Yes']", 30000, null, "aca1f6fb-b714-4a71-894f-f7665271b0d8");
+                _noInfo = new RepoItemInfo(this, "No", "button[@text='&No']", 30000, null, "fa5e5d3d-b568-4800-8caf-cb6a54db1659");
+                _closeInfo = new RepoItemInfo(this, "Close", "titlebar/button[@accessiblename='Close']", 30000, null, "9902e3ae-c0ec-416a-9d2a-89841d7aa0d2");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("cf4bf6df-fa68-46e3-a2b9-4c41c33fdccb")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("cf4bf6df-fa68-46e3-a2b9-4c41c33fdccb")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Yes item.
+            /// </summary>
+            [RepositoryItem("aca1f6fb-b714-4a71-894f-f7665271b0d8")]
+            public virtual Ranorex.Button Yes
+            {
+                get
+                {
+                    return _yesInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Yes item info.
+            /// </summary>
+            [RepositoryItemInfo("aca1f6fb-b714-4a71-894f-f7665271b0d8")]
+            public virtual RepoItemInfo YesInfo
+            {
+                get
+                {
+                    return _yesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The No item.
+            /// </summary>
+            [RepositoryItem("fa5e5d3d-b568-4800-8caf-cb6a54db1659")]
+            public virtual Ranorex.Button No
+            {
+                get
+                {
+                    return _noInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The No item info.
+            /// </summary>
+            [RepositoryItemInfo("fa5e5d3d-b568-4800-8caf-cb6a54db1659")]
+            public virtual RepoItemInfo NoInfo
+            {
+                get
+                {
+                    return _noInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Close item.
+            /// </summary>
+            [RepositoryItem("9902e3ae-c0ec-416a-9d2a-89841d7aa0d2")]
+            public virtual Ranorex.Button Close
+            {
+                get
+                {
+                    return _closeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Close item info.
+            /// </summary>
+            [RepositoryItemInfo("9902e3ae-c0ec-416a-9d2a-89841d7aa0d2")]
+            public virtual RepoItemInfo CloseInfo
+            {
+                get
+                {
+                    return _closeInfo;
                 }
             }
         }

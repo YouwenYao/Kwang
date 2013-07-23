@@ -1021,6 +1021,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST1330_UserCanConfigurationOtherSMTPApartFromAutomatic"
+					id="48462907-4283-494d-b34c-b4ca6cb46da3">
+						<testmodule
+						name="TestCaseDriver"
+						id="a984d2bd-4d38-4ca3-a252-25e8b960b119"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.070._Change_Password2"
@@ -1144,11 +1153,11 @@ reportlevel="Info;20">
 			<testcase
 			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
 			<testcase
-			id="45120528-979e-42c5-941d-bd8781b5b610"/>
+			id="48462907-4283-494d-b34c-b4ca6cb46da3"/>
 			<testcase
 			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
 			<testcase
-			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
+			id="df7edb2b-860c-49dc-9078-ff2dac2f7734"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
