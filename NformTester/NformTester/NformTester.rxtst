@@ -1030,6 +1030,24 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST2832_ServerOptionUpdateLayout"
+					id="d825b684-6b55-49ee-bfd3-9d8ba2a9a958">
+						<testmodule
+						name="TestCaseDriver"
+						id="5b5ec2d8-d926-4db9-a39e-3a85c728af0e"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST1553_MakingChangesOkButtonDisabled"
+					id="316800f3-ffbf-4a76-99f2-526536a8b5ca">
+						<testmodule
+						name="TestCaseDriver"
+						id="f8445cd1-de4f-47ae-8720-59ca38b4968e"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.070._Change_Password2"
@@ -1078,6 +1096,33 @@ reportlevel="Info;20">
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
+				<testcase
+				name="TST1110_EXportHistoryWithSpecifiedDate"
+				id="df13eec3-c4e3-4a89-92e7-c4abdb426134">
+					<testmodule
+					name="TestCaseDriver"
+					id="124999d2-7b84-4317-8f1d-d5f6976efde8"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="TST767_SelectDeviceUsingSpaceBar"
+				id="d64c83f6-e660-47fa-a61b-eda6a48111aa">
+					<testmodule
+					name="TestCaseDriver"
+					id="ee54f0f6-7891-4556-bf5b-cc4a383940e1"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="TST1104_ExportActionHistoryForDeviceAlarms"
+				id="fdd4232f-46cb-450b-9836-9560cbc6ac04">
+					<testmodule
+					name="TestCaseDriver"
+					id="42222f81-84ca-40d8-894e-0e4252f4693a"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
 			</testcase>
 			<testcase
 			name="800._Help2"
@@ -1109,6 +1154,15 @@ reportlevel="Info;20">
 					<testmodule
 					name="TestCaseDriver"
 					id="316d8556-4f29-4704-8f46-f16a2a7b9d6c"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="TST1063_DeviceGroupViews"
+				id="b8f87d82-cd31-407a-8701-f817d9481ea9">
+					<testmodule
+					name="TestCaseDriver"
+					id="dc8ca51f-fda2-42eb-9358-146f2222462b"
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>

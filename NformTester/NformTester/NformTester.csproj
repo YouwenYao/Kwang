@@ -180,6 +180,10 @@
       <id>204aafc1-f904-4bd4-b370-383fcae2c2c8</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST1063_DeviceGroupViews.xlsx">
+      <id>f0704dd7-ba5f-4e01-9aeb-60dbe1daf2c1</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST1071_NformToolsServiceControl.xlsx">
       <id>f5169116-8127-4447-849a-4c7f0a25c6f2</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -202,6 +206,14 @@
     </None>
     <None Include="Keywordscripts\TST1114_ToDeleteAnAreaFromTheTreeInViews.xlsx">
       <id>d69f45a3-e78b-4381-a4ca-4c4754429cd7</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST1104_ExportActionHistoryForDeviceAlarms.xlsx">
+      <id>63f8dd2d-99ae-4829-81da-a5d2de30df58</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST1110_EXportHistoryWithSpecifiedDate.xlsx">
+      <id>2eb7e159-0551-4651-b277-594ebbe38636</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="keywordscripts\TST1120_CopyDeviceFeature.xlsx">
@@ -298,9 +310,14 @@
     </None>
     <None Include="Keywordscripts\TST1548_ExceptionInOnCellMouseDownInViewerLogWhenScrollsInALARMStabWith5000Alarms.xlsx">
       <id>0ba90384-cede-42b4-b1fc-80bf8569a98b</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\TST1547_VerifyNoDatabaseErrorOccuredInNavigationView.xlsx">
       <id>d3758c3f-2088-45fa-85cd-53c0ce4909e6</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST1553_MakingChangesOkButtonDisabled.xlsx">
+      <id>4a9b94b8-070d-4367-9a25-aa4be39de1db</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="keywordscripts\TST2748_DeviceStatusPollingAndGolbalStatusPolling.xlsx">
@@ -345,6 +362,10 @@
     </None>
     <None Include="Keywordscripts\TST2831_RSDSupportCheckBox.xlsx">
       <id>cebe5896-6597-443d-9d73-204fd2da626b</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST2832_ServerOptionUpdateLayout.xlsx">
+      <id>8e7f49fd-a77f-4dc9-9477-b061835dd79e</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="keywordscripts\TST425_SetActionForAlarmOrEvent.xlsx">
@@ -471,12 +492,20 @@
       <id>c3f2321d-f459-4de8-98ae-c1a841ed78e6</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST767_SelectDeviceUsingSpaceBar.xlsx">
+      <id>618d6a9a-769e-4cf0-b910-4b736f302103</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST769_VerfiyDeviceParametersNamesAndUnits.xlsx">
       <id>7e20d3f8-afa9-4c64-bcf8-f481ecfcfc06</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="keywordscripts\TST780_TrendGraphRefreshFunctionality.xlsx">
       <id>1a01f0f0-6acc-48db-a1a2-f378614b4f94</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST782_ChangingDatePointValues.xlsx">
+      <id>c2a999c7-fbf6-4f9b-b45d-0b259ab96f11</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\TST788_MultipulActionsWithShutDownClient.xlsx">
