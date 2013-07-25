@@ -898,6 +898,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST744_MapActionsWindowWithoutAnyDevices"
+					id="1a1fc6f3-0e23-4656-8632-a8e4632abb42">
+						<testmodule
+						name="TestCaseDriver"
+						id="efd9cd7e-4d21-477e-b5b9-82b5b50a2275"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.030._Views2"
@@ -1205,13 +1214,13 @@ reportlevel="Info;20">
 			<testcase
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
-			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
+			id="1a1fc6f3-0e23-4656-8632-a8e4632abb42"/>
 			<testcase
-			id="48462907-4283-494d-b34c-b4ca6cb46da3"/>
+			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
 			<testcase
 			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
 			<testcase
-			id="df7edb2b-860c-49dc-9078-ff2dac2f7734"/>
+			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
