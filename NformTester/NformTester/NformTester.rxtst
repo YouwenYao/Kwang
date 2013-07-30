@@ -996,6 +996,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST994_ChangesToLoggedInUser"
+					id="102ca4be-092b-47c1-a5fd-85ea86626960">
+						<testmodule
+						name="TestCaseDriver"
+						id="d038c979-0151-405b-846d-98d3cc5ecfcb"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.050._Licenses2"
@@ -1214,13 +1223,13 @@ reportlevel="Info;20">
 			<testcase
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
-			id="1a1fc6f3-0e23-4656-8632-a8e4632abb42"/>
+			id="102ca4be-092b-47c1-a5fd-85ea86626960"/>
 			<testcase
 			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
 			<testcase
-			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
+			id="64d6f7ed-643a-4648-9121-b2dc1ea70268"/>
 			<testcase
-			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
+			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
