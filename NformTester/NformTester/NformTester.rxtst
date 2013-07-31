@@ -1005,6 +1005,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST1020_NformG2AutoLogout"
+					id="be22a250-90e0-4fdc-a14f-395b5d0a5f1c">
+						<testmodule
+						name="TestCaseDriver"
+						id="5ff23d7f-1115-4d66-96e3-954384a2b557"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.050._Licenses2"
@@ -1223,13 +1232,13 @@ reportlevel="Info;20">
 			<testcase
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
-			id="102ca4be-092b-47c1-a5fd-85ea86626960"/>
-			<testcase
 			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
 			<testcase
 			id="64d6f7ed-643a-4648-9121-b2dc1ea70268"/>
 			<testcase
 			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
+			<testcase
+			id="be22a250-90e0-4fdc-a14f-395b5d0a5f1c"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

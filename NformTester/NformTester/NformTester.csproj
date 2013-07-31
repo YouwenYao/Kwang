@@ -156,6 +156,10 @@
       <id>103be776-11b6-4ccf-b809-d4b624c9fce1</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST1020_NformG2AutoLogout.xlsx">
+      <id>1271efd1-1114-4bdd-9000-b2e49c70b668</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST1033_ExportLoggedData.xlsx">
       <id>dd26b6a3-67a0-4cde-8d7b-c1c5f05285c9</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
