@@ -360,6 +360,10 @@
       <id>89cd5d82-62b4-4f9e-8100-449b36e12863</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST2829_LiebertRSDSupportCheckBoxDefault.xlsx">
+      <id>268496fd-de06-441c-8b9f-a18ab19a6957</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\TST2831_RSDSupportCheckBox.xlsx">
       <id>cebe5896-6597-443d-9d73-204fd2da626b</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
