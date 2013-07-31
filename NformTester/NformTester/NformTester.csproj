@@ -588,6 +588,10 @@
       <id>550b342e-f276-496b-9ec0-de308eebb3f9</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST992_DeleteUser.xlsx">
+      <id>f8c5a62e-6dd6-4700-bb4b-eb4073c53c29</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\TST994_ChangesToLoggedInUser.xlsx">
       <id>998f0bae-1714-45f2-ad14-cf334826d800</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
