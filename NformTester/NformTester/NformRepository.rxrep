@@ -1212,14 +1212,6 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					addcaps="menuitem,accessible">
 						/form[@controlname='LxViewerFrame']/menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Configure']/menuitem[@accessiblename='Shutdown Clients...']
 					</item>
-					<item
-					name="ShutdownClients"
-					id="29c24860-83c1-49f0-90b4-a941ba2986ff"
-					searchtimeout="30000ms"
-					capname="menuitem"
-					addcaps="menuitem,accessible">
-						/form[@controlname='LxViewerFrame']/menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Configure']/menuitem[@accessiblename='Shutdown Clients...']
-					</item>
 					<basepath>
 						/form[@controlname='LxViewerFrame']
 					</basepath>

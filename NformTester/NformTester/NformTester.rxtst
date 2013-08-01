@@ -1136,11 +1136,11 @@ reportlevel="Info;20">
 					<testmodule
 					name="TestCaseDriver"
 					id="316d8556-4f29-4704-8f46-f16a2a7b9d6c"
-          ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
-        <testcase
-        name="TST1063_DeviceGroupViews"
+				<testcase
+				name="TST1063_DeviceGroupViews"
 				id="b8f87d82-cd31-407a-8701-f817d9481ea9">
 					<testmodule
 					name="TestCaseDriver"
@@ -1187,19 +1187,7 @@ reportlevel="Info;20">
 			<testcase
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
-			id="15542ef7-bf90-431d-8e26-f8eb1c05a42e"/>
-			<testcase
-       id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
-			<testcase
-			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
-			<testcase
-			id="c650723f-4bf6-4bf5-957c-595b5aa7f9c0"/>
-			<testcase
-			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
-      <testcase
-      id="a5e9adfd-9aee-44b1-a5b7-3963bd48c29d"/>
-			<testcase
-			id="b8f87d82-cd31-407a-8701-f817d9481ea9"/>
+			id="b49c5248-5521-4369-98f1-d67f370014a2"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Drawing;
+using System.IO;
 using System.Threading;
 using System.Reflection;
 
@@ -31,6 +32,8 @@ namespace NformTester
     [TestModule("1E793A50-DA64-41A8-915C-08CBC67D8EB5", ModuleType.UserCode, 1)]
     public class GenerateAllForms : ITestModule
     {
+    	Excel._Application objExl_Source = null;
+    	
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
@@ -39,6 +42,112 @@ namespace NformTester
             // Do not delete - a parameterless constructor is required!
         }
 
+        /// <summary>
+		/// Replace all esxiting scritps depend value sheet
+		/// </summary>
+        public void replaceAllValDependList(string sourceDependFile)
+        {
+        	objExl_Source = new Excel.ApplicationClass();
+            string dir = Path.Combine(System.IO.Directory.GetCurrentDirectory(), "../../keywordscripts");
+            System.IO.DirectoryInfo sourceDir = new System.IO.DirectoryInfo(dir);
+            FileInfo[] files = sourceDir.GetFiles();
+
+            foreach (FileInfo file in files)
+            {
+                Directory.CreateDirectory(dir + "/newKeywordscripts");
+
+                File.Copy(System.IO.Directory.GetCurrentDirectory() + "/keywordscripts/" + sourceDependFile+".xlsx", dir + "/newKeywordscripts/" + "Temp" +file.Name , true);
+                DependentValReplace(dir + "/" + file.Name, dir + "/newKeywordscripts/" + "Temp" + file.Name);
+                File.Copy(dir + "/newKeywordscripts/" + "Temp" + file.Name, dir + "/newKeywordscripts/" + file.Name, true);
+            }
+
+            foreach (FileInfo file in files)
+            {
+                File.Delete(dir + "/newKeywordscripts/" + "Temp" + file.Name);
+            }
+           
+        }
+        
+        /// <summary>
+		/// Replace single scripts depend value sheet
+		/// </summary>
+        public void DependentValReplace(string source, string file)
+        {
+            string _sPath_Source = source;
+            string _sPath_Destine = file;
+            object oMissing = System.Reflection.Missing.Value;
+            System.Threading.Thread.CurrentThread.CurrentCulture = System.Globalization.CultureInfo.CreateSpecificCulture("en-US");
+            
+            objExl_Source.EnableEvents = false;
+            objExl_Source.DisplayAlerts = false;
+            objExl_Source.Visible = false;
+            
+            double[] widthOfScripts = new double[15] {84.75, 134.25, 54, 36.75, 127.5, 220.5, 80.25, 99, 103.5, 132.75, 54, 54, 54, 54, 54};
+
+            //  objExl_Source.ScreenUpdating = true;
+
+            Excel.Workbook objWBook_Source = objExl_Source.Workbooks.Open(_sPath_Source, oMissing, oMissing, oMissing, oMissing, oMissing, oMissing, oMissing, oMissing, oMissing, oMissing, oMissing, oMissing);
+
+            //ApplicationClass objExl_Destine = new ApplicationClass();
+            //objExl_Destine.EnableEvents = false;
+            //objExl_Destine.DisplayAlerts = false;
+            //objExl_Destine.Visible = false;
+            //  objExl_Destine.ScreenUpdating = true;
+
+            Excel.Workbook objWBook_Destine = objExl_Source.Workbooks.Open(_sPath_Destine,  oMissing, oMissing, oMissing, oMissing, oMissing, oMissing, oMissing, oMissing, oMissing, oMissing, oMissing, oMissing);
+
+            //Workbook objWBook_Source = objExl_Source.Workbooks.Open(_sPath_Source, 
+            //  0,false,5,oMissing,oMissing,false,XlPlatform.xlWindows, 
+            //  oMissing,true,false,0,true,false,false); 
+
+            //Workbook objWBook_Destine = objExl_Destine.Workbooks.Open(_sPath_Destine, 
+            //  0, false, 5, oMissing, oMissing, false, XlPlatform.xlWindows, 
+            //  oMissing, true, false, 0, true, false, false); 
+            string strSheetName = "Scripts";
+            Excel.Worksheet objWSheet_Source = (Excel.Worksheet)objWBook_Source.Worksheets[strSheetName];
+
+            //objWSheet_Source.Copy((Excel.Worksheet)objWBook_Destine.Sheets[objWBook_Destine.Sheets.Count], oMissing);
+
+
+            //strSheetName = "Action DataValDepend";
+            //objWSheet_Source = (Excel.Worksheet)objWBook_Source.Worksheets[strSheetName];
+
+            //objWSheet_Source.Copy((Excel.Worksheet)objWBook_Destine.Sheets[objWBook_Destine.Sheets.Count], oMissing);
+
+            Excel.Range range = objWSheet_Source.get_Range(objWSheet_Source.Cells[1, 1], objWSheet_Source.Cells[900, 20]);
+            // range.Value = "123";
+            Excel.Worksheet sheet1 = (Excel.Worksheet)objWBook_Destine.Sheets[1];
+            Excel.Range range1 = sheet1.get_Range(sheet1.Cells[1, 1], sheet1.Cells[900, 20]);
+            range.Copy(range1);
+
+            for (int i = 1; i <= 15; i++)
+            {
+                Excel.Range rmgSource = (Excel.Range)objWSheet_Source.Cells[1, i];
+                Excel.Range rmgDestine = (Excel.Range)sheet1.Cells[1, i];
+                rmgDestine.EntireColumn.ColumnWidth = rmgSource.EntireColumn.ColumnWidth;
+                //rmgDestine.EntireColumn.ColumnWidth = widthOfScripts[i - 1];
+                //rmg.EntireColumn.AutoFit();
+                //rmg.Width = widthOfScripts[i-1];
+                //MessageBox.Show(rmg.Width.ToString());
+            }
+
+            foreach (Excel.Worksheet xSheet in objWBook_Source.Worksheets)
+            {
+                if (xSheet.Name.Equals("Notes") || xSheet.Name.Equals("Note"))
+                {
+                    strSheetName = "Notes";
+                    objWSheet_Source = (Excel.Worksheet)objWBook_Source.Worksheets[strSheetName];
+                    objWSheet_Source.Copy(oMissing, (Excel.Worksheet)objWBook_Destine.Sheets[objWBook_Destine.Sheets.Count]);
+                }
+            }            
+
+            //objWBook_Source.Save(); 
+            objWBook_Destine.Save();
+            objWBook_Destine = null;
+            objExl_Source.Quit();
+            // objExl_Destine.Quit();
+        }
+        
         /// <summary>
 		/// Create excel contains all dependent values for creating select list
 		/// </summary>
@@ -57,9 +166,11 @@ namespace NformTester
         	// opXls.open("c:/test.xlsx");
         	opXls.create(excelPath);
         	
+        	object oMissing = System.Reflection.Missing.Value;
         	Excel.Workbook xBook = opXls.xBook;
        	   	Excel.Worksheet xSheet = opXls.xSheet;
-        	Excel.Worksheet xSheetActions = (Excel.Worksheet)xBook.Sheets[2];;
+       	   	Excel.Worksheet xSheetComponent = (Excel.Worksheet)xBook.Worksheets[1];
+        	Excel.Worksheet xSheetActions = (Excel.Worksheet)xBook.Worksheets[2];
         	
 			Type objType = repo.GetType();
 			int iFormRow = 1;
@@ -103,27 +214,6 @@ namespace NformTester
        	   				{
 							continue;
        	   				}       	   			     	   					
-//       	   				if(piCom.Name.Length > 8) 				
-//       	   				{
-//       	   					if(piCom.Name.Substring(piCom.Name.Length-4,4) == "Info"
-//       	   					   && piCom.Name.Substring(piCom.Name.Length-8,4) != "Info")
-//       	   					continue;
-//       	   				} else if(piCom.Name.Length > 4 && piCom.Name.Substring(piCom.Name.Length-4,4) == "Info")
-//       	   				{
-//       	   					objComponetInfo = piCom.GetValue(objWindows,null);
-//       	   					//MessageBox.Show(objComponetInfo.GetType().ToString());
-//       	   					
-//       	   					PropertyInfo rxPath = objComponetInfo.GetType().GetProperty("AbsolutePath");
-//       	   					RxPath componentRxPath = (RxPath)rxPath.GetValue(objComponetInfo,null);
-//       	   					string strComponentRxPath = componentRxPath.ToString();
-//       	   					//strComponentRxPath.LastIndexOf("[");
-//       	   					//strComponentRxPath.LastIndexOf("/");
-//       	   					string strComponentType = strComponentRxPath.Substring(
-//       	   						strComponentRxPath.LastIndexOf("/")+1,strComponentRxPath.LastIndexOf("[") - strComponentRxPath.LastIndexOf("/") - 1);
-//       	   					
-//       	   					MessageBox.Show(componentRxPath.ToString() + "     " + strComponentType);
-//       	   					continue;
-//       	   				}
        	   				
        	   				if(piCom.Name.Length > 4 && piCom.Name.Substring(piCom.Name.Length-4,4) == "Info")
        	   				{
@@ -326,6 +416,14 @@ namespace NformTester
        	   						xSheetActions.Cells[4,iActionsCol] = "VerifyProperty";
        	   						xSheetActions.Cells[5,iActionsCol] = "VerifyToolTips";
        	   					}
+       	   					else if (strComponentType == "link")
+       	   					{
+       	   						xSheetActions.Cells[1,iActionsCol] = "Click";
+       	   						xSheetActions.Cells[2,iActionsCol] = "Exists";
+       	   						xSheetActions.Cells[3,iActionsCol] = "NotExists";
+       	   						xSheetActions.Cells[4,iActionsCol] = "VerifyProperty";
+       	   						xSheetActions.Cells[5,iActionsCol] = "VerifyToolTips";
+       	   					}
        	   					else if (strComponentType == "container")
        	   					{
        	   						xSheetActions.Cells[1,iActionsCol] = "Click";
@@ -373,9 +471,11 @@ namespace NformTester
        	   	xSheet.Name = "Form DataValDepend";
        	   	xSheetActions.Name = "Action DataValDepend";
        	   	
-       	   	Excel.Range rmg = (Excel.Range)xSheet.Cells[1,1];
-			rmg.EntireColumn.Name = "Forms";
-       	   	
+       	   	//Excel.Range rmg = (Excel.Range)xSheet.Cells[1,1];
+			//rmg.EntireColumn.Name = "Forms";
+			Excel.Range rmg = xSheetComponent.get_Range(xSheetComponent.Cells[1, 1], xSheetComponent.Cells[iFormRow, 1]);
+			rmg.Name = "Forms";
+
 			int countRows = 1;   
 			string formName = opXls.readCell(countRows,1);
 			while(formName != "")
@@ -386,6 +486,11 @@ namespace NformTester
 				
 				formName = opXls.readCell(++countRows,1);
 			}
+			
+			Excel.Worksheet myScriptsSheet = (Excel.Worksheet)xBook.Sheets.Add(oMissing,oMissing,oMissing,oMissing);
+			myScriptsSheet.Name = "Scripts";
+            Excel.Worksheet extraSheet = (Excel.Worksheet)xBook.Worksheets["Sheet3"];
+            extraSheet.Delete();
 			
         	opXls.close();
         }
@@ -402,29 +507,12 @@ namespace NformTester
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
             
-            
-			
-           
-            //string viewVer = repo.NFormApp.Help.FormAbout_LiebertR_Nform.ViewerVer.TextValue.ToString();
-           // repo.NFormApp.Help.FormAbout_LiebertR_Nform.ViewerVer.Select(0,100);
-//            string viewVer = repo.NFormApp.Help.FormAbout_LiebertR_Nform.ViewerVer.TextValue;
-//           MessageBox.Show(viewVer);
-//           repo.NFormApp.Help.FormAbout_LiebertR_Nform.ViewerVer.TextValue = "abc";
-//           
-//           viewVer = repo.NFormApp.Help.FormAbout_LiebertR_Nform.ViewerVer.TextValue;
-//           MessageBox.Show(viewVer);
-//           
-//           repo.NFormApp.Help.FormAbout_LiebertR_Nform.
-			//repo.NFormApp.NformG2Window.FormAdministrator_LiebertR.TreeItemRackPDU_126_4_100_95.MoveTo();
-			//string viewVer = Ranorex.ToolTip.Current.Text;
-			//MessageBox.Show(viewVer);
 			
 			generateFormValDependList("test");
 			
-			//NformRepository repo = NformRepository.Instance;
-			//MessageBox.Show(repo.NFormApp.LogintoLiebertNformWindow.FormLogin_to_LiebertR_Nform.LoginInfo.AbsolutePath.ToString());
+			replaceAllValDependList("test");
 			
-        	
+        	MessageBox.Show("Finished!");
         }
     }
 }

@@ -180,10 +180,6 @@
       <id>204aafc1-f904-4bd4-b370-383fcae2c2c8</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Keywordscripts\TST1063_DeviceGroupViews.xlsx">
-      <id>f0704dd7-ba5f-4e01-9aeb-60dbe1daf2c1</id>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="keywordscripts\TST1071_NformToolsServiceControl.xlsx">
       <id>f5169116-8127-4447-849a-4c7f0a25c6f2</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -494,10 +490,6 @@
     </None>
     <None Include="keywordscripts\TST780_TrendGraphRefreshFunctionality.xlsx">
       <id>1a01f0f0-6acc-48db-a1a2-f378614b4f94</id>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Keywordscripts\TST782_ChangingDatePointValues.xlsx">
-      <id>c2a999c7-fbf6-4f9b-b45d-0b259ab96f11</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\TST788_MultipulActionsWithShutDownClient.xlsx">
