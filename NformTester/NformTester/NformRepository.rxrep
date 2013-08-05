@@ -922,7 +922,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="tree"
 					addcaps="tree,accessible">
-						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxViewerRhsMgr']/tabpagelist[@controlname='m_devTabCtl']/tabpage[@controlname='m_devDataPage']/container[@controlname='m_devDataDisplay']/container[@controlname='m_dataSplitterCtl']/container[@controlname='panel1']/tree/tree[@accessiblerole='Outline']
+						/form[@controlname='LxViewerFrame']/.//tree[@accessiblerole='Outline']
 					</item>
 					<item
 					name="Parametrics_table"
@@ -1155,6 +1155,14 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					capname="cell"
 					addcaps="cell,accessible">
 						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/table/row[@accessiblename='Row 0']/cell[@accessiblename='Alarm Row 0']
+					</item>
+					<item
+					name="ShutdownClients"
+					id="29c24860-83c1-49f0-90b4-a941ba2986ff"
+					searchtimeout="30000ms"
+					capname="menuitem"
+					addcaps="menuitem,accessible">
+						/form[@controlname='LxViewerFrame']/menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Configure']/menuitem[@accessiblename='Shutdown Clients...']
 					</item>
 					<basepath>
 						/form[@controlname='LxViewerFrame']
@@ -1722,7 +1730,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,nativewindow">
-						/form[@title='&#39068;&#33394;' or @title='Color']/button[@text='&#21462;&#28040;' or @text='Cancle']
+						/form[@title='&#39068;&#33394;' or @title='Color']/button[@text='Cancel']
 					</item>
 					<item
 					name="BaseColorTable"
@@ -1843,6 +1851,22 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					capname="button"
 					addcaps="button,accessible">
 						/form[@title='&#39068;&#33394;' or @title='Color']/titlebar/button[@accessiblename='&#20851;&#38381;']
+					</item>
+					<item
+					name="DefineCustomColors"
+					id="097e80d3-1e7d-42e6-a073-b03ddaaa5bf1"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,nativewindow">
+						/form[@title='&#39068;&#33394;' or @title='Color']/button[@text='&amp;Define Custom Colors &gt;&gt;']
+					</item>
+					<item
+					name="AddToCustomColors"
+					id="97c93336-0623-4be6-acde-a329b2bde145"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,nativewindow">
+						/form[@title='&#39068;&#33394;' or @title='Color']/button[@text='&amp;Add to Custom Colors']
 					</item>
 					<basepath>
 						/form[@title='&#39068;&#33394;' or @title='Color']
