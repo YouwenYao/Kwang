@@ -885,14 +885,6 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/toolbar/button[@controlname='m_acknowledgeBtn']
 					</item>
 					<item
-					name="Close_alarms"
-					id="d970a229-167e-4b8a-9122-64c63db67702"
-					searchtimeout="30000ms"
-					capname="button"
-					addcaps="button,control,nativewindow">
-						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/toolbar/button[@controlname='m_closeBtn']
-					</item>
-					<item
 					name="Details"
 					id="4abd4f4a-6d78-44e6-becb-5ce38dc47592"
 					searchtimeout="30000ms"
@@ -1211,6 +1203,14 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					capname="menuitem"
 					addcaps="menuitem,accessible">
 						/form[@controlname='LxViewerFrame']/menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Configure']/menuitem[@accessiblename='Shutdown Clients...']
+					</item>
+					<item
+					name="Close_alarms"
+					id="5315992a-4762-4c34-9c3e-f5e75196b3a5"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,control,nativewindow">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/toolbar/button[@controlname='m_closeBtn']
 					</item>
 					<basepath>
 						/form[@controlname='LxViewerFrame']

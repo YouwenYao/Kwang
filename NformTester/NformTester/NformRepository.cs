@@ -989,7 +989,6 @@ namespace NformTester
             RepoItemInfo _alarms_tableInfo;
             RepoItemInfo _all_alarms_tableInfo;
             RepoItemInfo _acknowledgeInfo;
-            RepoItemInfo _close_alarmsInfo;
             RepoItemInfo _detailsInfo;
             RepoItemInfo _treeitemups_10_146_85_6Info;
             RepoItemInfo _parametrics_device_treeInfo;
@@ -1030,6 +1029,7 @@ namespace NformTester
             RepoItemInfo _newgroupInfo;
             RepoItemInfo _receptaclesInfo;
             RepoItemInfo _shutdownclientsInfo;
+            RepoItemInfo _close_alarmsInfo;
 
             /// <summary>
             /// Creates a new FormMain  folder.
@@ -1126,7 +1126,6 @@ namespace NformTester
                 _alarms_tableInfo = new RepoItemInfo(this, "Alarms_table", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxViewerRhsMgr']/tabpagelist/tabpage[@controlname='m_areaAlarmsPage']/container[@controlname='m_areaAlarmsDisplay']/table[@controlname='m_dataGridView']", 30000, null, "381ef1c8-928f-456c-b5de-d8b3e1043d82");
                 _all_alarms_tableInfo = new RepoItemInfo(this, "All_alarms_table", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/table[@controlname='m_dataGridView']", 30000, null, "a388747f-f623-4ba7-a785-18c33f8550b4");
                 _acknowledgeInfo = new RepoItemInfo(this, "Acknowledge", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/toolbar/button[@controlname='m_acknowledgeBtn']", 30000, null, "1accbafb-387d-473d-bb41-169454e64edb");
-                _close_alarmsInfo = new RepoItemInfo(this, "Close_alarms", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/toolbar/button[@controlname='m_closeBtn']", 30000, null, "d970a229-167e-4b8a-9122-64c63db67702");
                 _detailsInfo = new RepoItemInfo(this, "Details", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/toolbar/button[@controlname='m_detailsBtn']", 30000, null, "4abd4f4a-6d78-44e6-becb-5ce38dc47592");
                 _treeitemups_10_146_85_6Info = new RepoItemInfo(this, "TreeItemUPS_10_146_85_6", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel1']/tree/tree/treeitem/treeitem[@accessiblename='UPS_10.146.85.6']", 30000, null, "7b922a92-eb47-43d8-ab5f-8878373f8d21");
                 _parametrics_device_treeInfo = new RepoItemInfo(this, "Parametrics_device_tree", ".//tree[@accessiblerole='Outline']", 30000, null, "040131bd-520f-4944-b84b-fa22d0bcfa8e");
@@ -1167,6 +1166,7 @@ namespace NformTester
                 _newgroupInfo = new RepoItemInfo(this, "NewGroup", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxVgViewerRhsMgr']/tabpagelist/tabpage[@controlname='m_parametricDataTab']/container[@controlname='LxVgGenericGrpDisplay']/container/link/text/link[@accessiblename='New Group']", 30000, null, "9cf60843-2396-4327-8f8f-379d5b2284ab");
                 _receptaclesInfo = new RepoItemInfo(this, "Receptacles", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxVgViewerRhsMgr']/tabpagelist/tabpage[@controlname='m_parametricDataTab']/container[@controlname='LxVgRcpGrpDisplay']/container[@controlname='m_rcpGrid']/table[@controlname='m_receptaclesGridView']", 30000, null, "39474286-765e-4858-a3b4-cef51c93ee95");
                 _shutdownclientsInfo = new RepoItemInfo(this, "ShutdownClients", "menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Configure']/menuitem[@accessiblename='Shutdown Clients...']", 30000, null, "29c24860-83c1-49f0-90b4-a941ba2986ff");
+                _close_alarmsInfo = new RepoItemInfo(this, "Close_alarms", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/toolbar/button[@controlname='m_closeBtn']", 30000, null, "5315992a-4762-4c34-9c3e-f5e75196b3a5");
             }
 
             /// <summary>
@@ -3306,30 +3306,6 @@ namespace NformTester
             }
 
             /// <summary>
-            /// The Close_alarms item.
-            /// </summary>
-            [RepositoryItem("d970a229-167e-4b8a-9122-64c63db67702")]
-            public virtual Ranorex.Button Close_alarms
-            {
-                get
-                {
-                    return _close_alarmsInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Close_alarms item info.
-            /// </summary>
-            [RepositoryItemInfo("d970a229-167e-4b8a-9122-64c63db67702")]
-            public virtual RepoItemInfo Close_alarmsInfo
-            {
-                get
-                {
-                    return _close_alarmsInfo;
-                }
-            }
-
-            /// <summary>
             /// The Details item.
             /// </summary>
             [RepositoryItem("4abd4f4a-6d78-44e6-becb-5ce38dc47592")]
@@ -4286,6 +4262,30 @@ namespace NformTester
                 get
                 {
                     return _shutdownclientsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Close_alarms item.
+            /// </summary>
+            [RepositoryItem("5315992a-4762-4c34-9c3e-f5e75196b3a5")]
+            public virtual Ranorex.Button Close_alarms
+            {
+                get
+                {
+                    return _close_alarmsInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Close_alarms item info.
+            /// </summary>
+            [RepositoryItemInfo("5315992a-4762-4c34-9c3e-f5e75196b3a5")]
+            public virtual RepoItemInfo Close_alarmsInfo
+            {
+                get
+                {
+                    return _close_alarmsInfo;
                 }
             }
         }

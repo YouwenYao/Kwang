@@ -1102,6 +1102,16 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+
+					<testcase
+					name="TST952_ViewableAlarms"
+					id="4d1aadb1-b371-438b-a7ff-8eb0c9067142">
+						<testmodule
+						name="TestCaseDriver"
+						id="aec67059-0ae9-4513-bca1-0f797c742159"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.070._Change_Password2"
@@ -1255,7 +1265,18 @@ reportlevel="Info;20">
 	<testconfigurations
 	default="TestRun">
 		<testconfiguration
-		name="TestRun"/>
+		name="TestRun">
+			<testcase
+			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
+			<testcase
+			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
+			<testcase
+			id="4d1aadb1-b371-438b-a7ff-8eb0c9067142"/>
+			<testcase
+			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
+			<testcase
+			id="df7edb2b-860c-49dc-9078-ff2dac2f7734"/>
+		</testconfiguration>
 	</testconfigurations>
 	<references>
 		<reference>
