@@ -544,6 +544,10 @@
       <id>e486fec9-f79c-482d-9c4e-204a8a2885e4</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST952_ViewableAlarms.xlsx">
+      <id>70abb1f4-67c1-450a-9dd7-af814368ddf0</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\TST958_AlarmAndEventManagement.xlsx">
       <id>6c03716c-143e-4f6f-87ee-d92c164edce5</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
