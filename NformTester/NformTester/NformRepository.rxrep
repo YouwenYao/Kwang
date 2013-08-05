@@ -5054,6 +5054,14 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					addcaps="text,control,nativewindow">
 						/form[@controlname='LxActionRunCmdDlg']/container[@controlname='m_timeoutNbx']/container/text[@controlname='upDownEdit']
 					</item>
+					<item
+					name="triangle"
+					id="d974c9c6-c0be-42dc-bb26-6d2d6ae0ec67"
+					searchtimeout="30000ms"
+					capname="container"
+					addcaps="container,control,nativewindow">
+						/form[@controlname='LxActionRunCmdDlg']/container[@controlname='m_argumentsTbx']/container[@controlname='m_taskMenu']
+					</item>
 					<basepath>
 						/form[@controlname='LxActionRunCmdDlg']
 					</basepath>

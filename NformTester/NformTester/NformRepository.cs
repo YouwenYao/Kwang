@@ -15401,6 +15401,7 @@ namespace NformTester
             RepoItemInfo _timeout_downInfo;
             RepoItemInfo _timeout_upInfo;
             RepoItemInfo _timeout_txtInfo;
+            RepoItemInfo _triangleInfo;
 
             /// <summary>
             /// Creates a new FormRun_Command_Action_Properties  folder.
@@ -15421,6 +15422,7 @@ namespace NformTester
                 _timeout_downInfo = new RepoItemInfo(this, "Timeout_down", "container[@controlname='m_timeoutNbx']/container/container/button[@accessiblename='Down']", 30000, null, "a3a7f8c0-5416-4f36-88e2-6f8b1daa8317");
                 _timeout_upInfo = new RepoItemInfo(this, "Timeout_up", "container[@controlname='m_timeoutNbx']/container/container/button[@accessiblename='Up']", 30000, null, "84ef89ae-814c-4ec5-99ed-43f584f79fb1");
                 _timeout_txtInfo = new RepoItemInfo(this, "Timeout_txt", "container[@controlname='m_timeoutNbx']/container/text[@controlname='upDownEdit']", 30000, null, "aa475657-3f49-403e-85cc-dccc3a570277");
+                _triangleInfo = new RepoItemInfo(this, "triangle", "container[@controlname='m_argumentsTbx']/container[@controlname='m_taskMenu']", 30000, null, "d974c9c6-c0be-42dc-bb26-6d2d6ae0ec67");
             }
 
             /// <summary>
@@ -15732,6 +15734,30 @@ namespace NformTester
                 get
                 {
                     return _timeout_txtInfo;
+                }
+            }
+
+            /// <summary>
+            /// The triangle item.
+            /// </summary>
+            [RepositoryItem("d974c9c6-c0be-42dc-bb26-6d2d6ae0ec67")]
+            public virtual Ranorex.Container triangle
+            {
+                get
+                {
+                    return _triangleInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The triangle item info.
+            /// </summary>
+            [RepositoryItemInfo("d974c9c6-c0be-42dc-bb26-6d2d6ae0ec67")]
+            public virtual RepoItemInfo triangleInfo
+            {
+                get
+                {
+                    return _triangleInfo;
                 }
             }
         }

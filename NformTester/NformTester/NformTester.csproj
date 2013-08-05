@@ -180,8 +180,20 @@
       <id>204aafc1-f904-4bd4-b370-383fcae2c2c8</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST1059_Local_Login.xlsx">
+      <id>53b4f68c-85b6-4064-8f1e-2949d808728a</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST1071_NformToolsServiceControl.xlsx">
       <id>f5169116-8127-4447-849a-4c7f0a25c6f2</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST1118_VerifyAreaNamesUnique.xlsx">
+      <id>26b6f8da-5986-4610-b5d8-dfdc8a6979f9</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST1119_ExportDataLogHistoryForDevices.xlsx">
+      <id>9c0a46ca-71f0-4965-911f-d42498a1a6d3</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="keywordscripts\TST1120_CopyDeviceFeature.xlsx">
@@ -264,8 +276,16 @@
       <id>57dbd6f1-1ac7-46c5-8675-177a2e6a40a9</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST1352_TABOrderOnEmail_Action.xlsx">
+      <id>fa18324c-49e0-4547-91c0-6830ceecc9f8</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST1353_UninstallationProcess.xlsx">
       <id>04a1930e-2fb4-4b4e-8ea7-41499b8ea516</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST1512_DefaultSettingsOfTheFloorplan.xlsx">
+      <id>623c5e02-49b5-4b0a-b037-f20ea7120545</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="keywordscripts\TST2748_DeviceStatusPollingAndGolbalStatusPolling.xlsx">
@@ -308,12 +328,20 @@
       <id>89cd5d82-62b4-4f9e-8100-449b36e12863</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST2806_VerifySiteIdUsedInRunCommandAction.xlsx">
+      <id>141516c5-851e-4d36-8397-c7a93835b27e</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST425_SetActionForAlarmOrEvent.xlsx">
       <id>beb51f93-280a-4821-b9b5-6c84abcce21f</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="keywordscripts\TST465_ConfigureTrendingGraph.xlsx">
       <id>fc24ac76-695e-4be1-bcc5-71e1a31a1b3d</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST482_DeleteTheConfiguredWriteDataAction.xlsx">
+      <id>d056a48b-f96a-4e21-85b6-a6fbb1680bb5</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="keywordscripts\TST483_SelectOneOrMoreThanOneDeviceParameters.xlsx">
@@ -364,6 +392,10 @@
       <id>83f60574-9352-420b-a2ef-bd5e5b556983</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST568_CheckNewActionsTypeInActionSetWindowForPowerUsersRights.xlsx">
+      <id>1381d5e0-16f1-4e11-82b8-deef25d93fa7</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST570_UncheckShowTheTimeRangeSelection.xlsx">
       <id>33486fd0-c795-4fd0-acab-01230db3e43c</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -378,6 +410,10 @@
     </None>
     <None Include="Keywordscripts\TST581_UsersWithoutAllRightsCanNotEditOnActionSets.xlsx">
       <id>7a05c35e-ac09-48c8-bdaf-ec1356c72454</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST589_UsersCanEditAnActionSetsIfTheyHaveRightsToAllActionTypesWithinTheSet.xlsx">
+      <id>53f8c37b-91ab-4110-acc7-cc54fc1aecb2</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="keywordscripts\TST594_ActionSet_DeletewithRightsToAllActionTypes.xlsx">
@@ -422,6 +458,10 @@
     </None>
     <None Include="keywordscripts\TST808_NinthDeviceParametersSelectionFromBottomToTop.xlsx">
       <id>c8c82198-869a-4484-9ab4-f4a0fff674f2</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST809_VerifyDeviceGadgetInformation.xlsx">
+      <id>43b03315-f525-454f-829e-07f78ddb7531</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="keywordscripts\TST931_InstallViewerOnly.xlsx">

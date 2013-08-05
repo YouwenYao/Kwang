@@ -28,7 +28,7 @@ namespace NformTester.driver
 	
     /// <summary>
     /// Description of TestCaseDriver.
-    /// </summary>
+    /// </summary>TST1059TST1059
     [TestModule("78CE2FBF-D204-4698-98BF-68118D374E9F", ModuleType.UserCode, 1)]
     public class TestCaseDriver : ITestModule
     {
@@ -75,6 +75,8 @@ namespace NformTester.driver
             Delay.Seconds(5);
             LxTearDown.closeApp(mainOp.ProcessId);		//  ********* 4. clean up for next running *********
 
+            
+            /*
             //stop Nform service
 			Console.WriteLine("Stop Nform service...");
 			Program.RunCommand("sc stop Nform");
@@ -92,7 +94,7 @@ namespace NformTester.driver
             //start Nform service
             Console.WriteLine("Start Nform service...");
 			Program.RunCommand("sc start Nform");	
-           
+           */
         }
         
     }
