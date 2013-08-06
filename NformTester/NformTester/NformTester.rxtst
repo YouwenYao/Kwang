@@ -907,6 +907,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST550_VerifyShutdownActionPropertiesWindowwithoutPrivilege"
+					id="3e3ad92c-d8af-4b51-a843-3e7bd3eec380">
+						<testmodule
+						name="TestCaseDriver"
+						id="f98e1a3d-7961-4176-b30e-ce97054204b5"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.030._Views2"
@@ -1102,7 +1111,6 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
-
 					<testcase
 					name="TST952_ViewableAlarms"
 					id="4d1aadb1-b371-438b-a7ff-8eb0c9067142">
@@ -1271,11 +1279,11 @@ reportlevel="Info;20">
 			<testcase
 			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
 			<testcase
-			id="4d1aadb1-b371-438b-a7ff-8eb0c9067142"/>
+			id="3e3ad92c-d8af-4b51-a843-3e7bd3eec380"/>
 			<testcase
 			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
 			<testcase
-			id="df7edb2b-860c-49dc-9078-ff2dac2f7734"/>
+			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
