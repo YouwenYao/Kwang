@@ -4765,7 +4765,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,control,nativewindow">
-						/form[@controlname='LxActionEmailDlg']/container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']
+						/form[@controlname='LxActionEmailDlg']/.//button[@controlname='m_button2']
 					</item>
 					<item
 					name="Cancel"
@@ -4883,7 +4883,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,nativewindow">
-						/form[@title='Missing Information']/button[@text='&#26159;(&amp;Y)' or @text='Yes']
+						/form[@title='Missing Information']/button[@text='&amp;Yes']
 					</item>
 					<item
 					name="No"
@@ -4891,7 +4891,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,nativewindow">
-						/form[@title='Missing Information']/button[@text='&#21542;(&amp;N)' or @text='No']
+						/form[@title='Missing Information']/button[@text='&amp;No']
 					</item>
 					<basepath>
 						/form[@title='Missing Information']
@@ -5917,6 +5917,36 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					</item>
 					<basepath>
 						/form[@title='Confirm Action Set Delete']
+					</basepath>
+					<icon>
+						iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAE7SURBVDhPY2AYdMAzzClAcdXz/yDcny6ugOxA
+p4qW94ptW/8bphbtx+lwxdTmBpgB2bnZ8+fMXxoAUjx37uICw7alYIMVK5fiNoCiIDFMbflvGRoF
+dGILdhxbDBYHWQL2SkzWexQLQZJBk7b+T972HCeGGwD0imEuxDA4AElmz9r7v+Xw+/9OlUv/c4RC
+sIBr9f/qXffA4jAD5KXlHbK8pAwwDGhZtvf/0svv/wdVzkExYM7x52BxmAFwjZGFke+j2qrBTgFJ
+zll37P+x+9//773+/n9U7dL/TrlTwHwYxjBAEagIFDUwA5au2/p/6aa9QI1z/gt4toCxZmTP/2xg
+FF57jMUF8lLyBiD/wAyIdJTYzxE4Be58WDiAaA0Tp/cYLkCPd3l5eQEBl+rzMNvhNDAgJY2DwIlq
+mAEArCvv3zgQncsAAAAASUVORK5CYII=
+					</icon>
+				</appfolder>
+				<appfolder
+				name="FormEMailActionPropertiesL"
+				id="d631d317-3371-4701-9738-7e778a47f129"
+				searchtimeout="30000ms"
+				capname="form"
+				addcaps="form,nativewindow"
+				isrooted="True"
+				usecache="True">
+					<item
+					name="OK"
+					id="f1bf7725-6108-47e4-a795-c96bde6deb45"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,nativewindow">
+						/form[@title='E-mail Action Properties' and @processname='NformViewer' and @class='#32770']/button[@text='OK']
+					</item>
+					<basepath>
+						/form[@title='E-mail Action Properties' and @processname='NformViewer' and @class='#32770']
 					</basepath>
 					<icon>
 						iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx

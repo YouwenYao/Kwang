@@ -12922,6 +12922,7 @@ namespace NformTester
             NformRepositoryFolders.FormForward_Trap_Action_PropertiesAppFolder _formforward_trap_action_properties;
             NformRepositoryFolders.FormMap_ActionsAppFolder _formmap_actions;
             NformRepositoryFolders.FormConfirmActionSetDeleteAppFolder _formconfirmactionsetdelete;
+            NformRepositoryFolders.FormEMailActionPropertiesLAppFolder _formemailactionpropertiesl;
 
             /// <summary>
             /// Creates a new ActionSetsWindow  folder.
@@ -12945,6 +12946,7 @@ namespace NformTester
                 _formforward_trap_action_properties = new NformRepositoryFolders.FormForward_Trap_Action_PropertiesAppFolder(parentFolder);
                 _formmap_actions = new NformRepositoryFolders.FormMap_ActionsAppFolder(parentFolder);
                 _formconfirmactionsetdelete = new NformRepositoryFolders.FormConfirmActionSetDeleteAppFolder(parentFolder);
+                _formemailactionpropertiesl = new NformRepositoryFolders.FormEMailActionPropertiesLAppFolder(parentFolder);
             }
 
             /// <summary>
@@ -13089,6 +13091,15 @@ namespace NformTester
             public virtual NformRepositoryFolders.FormConfirmActionSetDeleteAppFolder FormConfirmActionSetDelete
             {
                 get { return _formconfirmactionsetdelete; }
+            }
+
+            /// <summary>
+            /// The FormEMailActionPropertiesL folder.
+            /// </summary>
+            [RepositoryFolder("d631d317-3371-4701-9738-7e778a47f129")]
+            public virtual NformRepositoryFolders.FormEMailActionPropertiesLAppFolder FormEMailActionPropertiesL
+            {
+                get { return _formemailactionpropertiesl; }
             }
         }
 
@@ -14583,7 +14594,7 @@ namespace NformTester
                 _timeout_sec_downInfo = new RepoItemInfo(this, "Timeout_sec_down", "container[@controlname='m_timeoutNbx']/container/container/button[@accessiblename='Down']", 30000, null, "7aaa8eb7-69d5-4aad-ad29-d93621019d73");
                 _timeout_sec_upInfo = new RepoItemInfo(this, "Timeout_sec_up", "container[@controlname='m_timeoutNbx']/container/container/button[@accessiblename='Up']", 30000, null, "ce04124f-3680-4183-be58-10cb2e4d2541");
                 _timeout_sec_txtInfo = new RepoItemInfo(this, "Timeout_sec_txt", "container[@controlname='m_timeoutNbx']/container/text[@controlname='upDownEdit']", 30000, null, "6fc19ff8-ebe8-4aa7-98ff-68e1d44f2f70");
-                _okInfo = new RepoItemInfo(this, "OK", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']", 30000, null, "4b44889a-4ef0-42ce-9912-9f4592c4599e");
+                _okInfo = new RepoItemInfo(this, "OK", ".//button[@controlname='m_button2']", 30000, null, "4b44889a-4ef0-42ce-9912-9f4592c4599e");
                 _cancelInfo = new RepoItemInfo(this, "Cancel", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "eac6c3cb-0939-42c1-9f29-1ceb1263b9d2");
                 _helpInfo = new RepoItemInfo(this, "Help", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']", 30000, null, "9e81fa7c-b30b-4469-8964-0033f2f6127c");
                 _usersInfo = new RepoItemInfo(this, "Users", "container[@controlname='m_toGrp']/text[@controlname='m_toUsersTbx']/text[@accessiblename='Nform users:']", 30000, null, "a741689d-f7f3-4379-aca8-c1fbf1b1df64");
@@ -15233,8 +15244,8 @@ namespace NformTester
                     base("FormMissing_Information", "/form[@title='Missing Information']", parentFolder, 30000, true, "85682565-1525-4d68-9159-c4969e344782", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "85682565-1525-4d68-9159-c4969e344782");
-                _yesInfo = new RepoItemInfo(this, "Yes", "button[@text='是(&Y)' or @text='Yes']", 30000, null, "d6c677dd-101d-46b9-a066-21027e8a9467");
-                _noInfo = new RepoItemInfo(this, "No", "button[@text='否(&N)' or @text='No']", 30000, null, "425dcf0a-2067-4bd7-9d35-be85469d2179");
+                _yesInfo = new RepoItemInfo(this, "Yes", "button[@text='&Yes']", 30000, null, "d6c677dd-101d-46b9-a066-21027e8a9467");
+                _noInfo = new RepoItemInfo(this, "No", "button[@text='&No']", 30000, null, "425dcf0a-2067-4bd7-9d35-be85469d2179");
             }
 
             /// <summary>
@@ -18232,6 +18243,74 @@ namespace NformTester
                 get
                 {
                     return _closeInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The FormEMailActionPropertiesLAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("d631d317-3371-4701-9738-7e778a47f129")]
+        public partial class FormEMailActionPropertiesLAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _okInfo;
+
+            /// <summary>
+            /// Creates a new FormEMailActionPropertiesL  folder.
+            /// </summary>
+            public FormEMailActionPropertiesLAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("FormEMailActionPropertiesL", "/form[@title='E-mail Action Properties' and @processname='NformViewer' and @class='#32770']", parentFolder, 30000, true, "d631d317-3371-4701-9738-7e778a47f129", "")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "d631d317-3371-4701-9738-7e778a47f129");
+                _okInfo = new RepoItemInfo(this, "OK", "button[@text='OK']", 30000, null, "f1bf7725-6108-47e4-a795-c96bde6deb45");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("d631d317-3371-4701-9738-7e778a47f129")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("d631d317-3371-4701-9738-7e778a47f129")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OK item.
+            /// </summary>
+            [RepositoryItem("f1bf7725-6108-47e4-a795-c96bde6deb45")]
+            public virtual Ranorex.Button OK
+            {
+                get
+                {
+                    return _okInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OK item info.
+            /// </summary>
+            [RepositoryItemInfo("f1bf7725-6108-47e4-a795-c96bde6deb45")]
+            public virtual RepoItemInfo OKInfo
+            {
+                get
+                {
+                    return _okInfo;
                 }
             }
         }

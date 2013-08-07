@@ -292,6 +292,10 @@
       <id>a3dca2b9-44c3-429c-aeee-26fad7d4b359</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST1334_CheckTheFunctionalityOfSendTestButton.xlsx">
+      <id>1b2866bf-e28c-4244-afef-29f48ff92bfe</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST1335_ExportOptionForExportingDevicesInFlatFile.xlsx">
       <id>fc64c889-d117-40fb-a766-3c76d134bcb4</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
