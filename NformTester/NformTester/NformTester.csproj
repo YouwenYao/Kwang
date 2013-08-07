@@ -240,6 +240,10 @@
       <id>ea5931b2-4f24-4e53-8502-131b63a3c978</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST1149_DisablingUsersOwnAccount.xlsx">
+      <id>76b98dbd-c7a6-471d-90c7-1638f2f5e51d</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\TST1155_AlarmSeveritySliceColorOption.xlsx">
       <id>bfbb020b-2539-4a96-a233-aa3d89263ea3</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -408,6 +412,14 @@
       <id>87904c1e-6407-45b0-a2f9-cc7dadf18ae3</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST547_CountOnSelectedShutdownActionProperties.xlsx">
+      <id>419a70df-2023-46cd-9e6b-50da747d88d6</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST548_ShutdownActionPropertiesButtons.xlsx">
+      <id>fa5d8f70-f9e3-495b-b6b7-fd7022b802f7</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST551_CopyDataOfAGraph.xlsx">
       <id>ac2e350a-d019-4841-b92d-cf377dd9aac1</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -426,6 +438,10 @@
     </None>
     <None Include="keywordscripts\TST575_ExecuteTrapAlarmForward.xlsx">
       <id>88f2d6dc-c554-4461-8e96-54277e1905e2</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST580_EditingRightsOnActionSetsWithUsersRight.xlsx">
+      <id>595d94da-26c4-4bac-9ab6-3ffb2b50cdba</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\TST581_UsersWithoutAllRightsCanNotEditOnActionSets.xlsx">
@@ -494,6 +510,10 @@
     </None>
     <None Include="keywordscripts\TST808_NinthDeviceParametersSelectionFromBottomToTop.xlsx">
       <id>c8c82198-869a-4484-9ab4-f4a0fff674f2</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST832_InvoledAndRevokedDiscoverNewDevice.xlsx">
+      <id>4a970d50-f942-4937-a2bc-617d7f072cf2</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="keywordscripts\TST931_InstallViewerOnly.xlsx">

@@ -10461,6 +10461,7 @@ namespace NformTester
             NformRepositoryFolders.FormUserPropertiesAppFolder _formuserproperties;
             NformRepositoryFolders.FormViewChangedAppFolder _formviewchanged;
             NformRepositoryFolders.FormGroup_PropertiesAppFolder _formgroup_properties;
+            NformRepositoryFolders.FormAccountDisabledAppFolder _formaccountdisabled;
 
             /// <summary>
             /// Creates a new UsersandGroupsWindow  folder.
@@ -10472,6 +10473,7 @@ namespace NformTester
                 _formuserproperties = new NformRepositoryFolders.FormUserPropertiesAppFolder(parentFolder);
                 _formviewchanged = new NformRepositoryFolders.FormViewChangedAppFolder(parentFolder);
                 _formgroup_properties = new NformRepositoryFolders.FormGroup_PropertiesAppFolder(parentFolder);
+                _formaccountdisabled = new NformRepositoryFolders.FormAccountDisabledAppFolder(parentFolder);
             }
 
             /// <summary>
@@ -10508,6 +10510,15 @@ namespace NformTester
             public virtual NformRepositoryFolders.FormGroup_PropertiesAppFolder FormGroup_Properties
             {
                 get { return _formgroup_properties; }
+            }
+
+            /// <summary>
+            /// The FormAccountDisabled folder.
+            /// </summary>
+            [RepositoryFolder("c543090f-3bb7-4e0b-b52c-8011043267e7")]
+            public virtual NformRepositoryFolders.FormAccountDisabledAppFolder FormAccountDisabled
+            {
+                get { return _formaccountdisabled; }
             }
         }
 
@@ -11905,7 +11916,7 @@ namespace NformTester
             RepoItemInfo _write_fileInfo;
             RepoItemInfo _acknowledge_and_close_alarmsInfo;
             RepoItemInfo _configure_data_loggingInfo;
-            RepoItemInfo _configure_deviceaInfo;
+            RepoItemInfo _configure_devicesInfo;
             RepoItemInfo _configure_navigation_viewsInfo;
             RepoItemInfo _discover_new_devicesInfo;
             RepoItemInfo _edit_device_definitionsInfo;
@@ -11946,7 +11957,7 @@ namespace NformTester
                 _write_fileInfo = new RepoItemInfo(this, "Write_file", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageActionsGrp']/container/checkbox[@controlname='m_actionWriteFileChk']", 30000, null, "5ba17500-3f71-4545-b551-6c78156660ab");
                 _acknowledge_and_close_alarmsInfo = new RepoItemInfo(this, "Acknowledge_and_close_alarms", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageAlarmsGrp']/checkbox[@controlname='m_updateAlarmsChk']", 30000, null, "ff85d03e-3bd6-4f71-8673-dd4927f99416");
                 _configure_data_loggingInfo = new RepoItemInfo(this, "Configure_data_logging", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageDevicesGrp']/checkbox[@controlname='m_cfgDataLogChk']", 30000, null, "d91c74fe-bbbb-43dd-a897-2f7a7021b66c");
-                _configure_deviceaInfo = new RepoItemInfo(this, "Configure_devicea", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageDevicesGrp']/checkbox[@controlname='m_cfgDevicesChk']", 30000, null, "4dfe76ef-937b-4a74-88e6-73375c8bdc52");
+                _configure_devicesInfo = new RepoItemInfo(this, "Configure_devices", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageDevicesGrp']/checkbox[@controlname='m_cfgDevicesChk']", 30000, null, "4dfe76ef-937b-4a74-88e6-73375c8bdc52");
                 _configure_navigation_viewsInfo = new RepoItemInfo(this, "Configure_navigation_views", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageDevicesGrp']/checkbox[@controlname='m_cfgNavViewsChk']", 30000, null, "feccace5-7abd-4200-8840-d243374660c4");
                 _discover_new_devicesInfo = new RepoItemInfo(this, "Discover_new_devices", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageDevicesGrp']/checkbox[@controlname='m_discoverDevicesChk']", 30000, null, "7f8061dd-5202-4a30-99b3-fea4d9054b32");
                 _edit_device_definitionsInfo = new RepoItemInfo(this, "Edit_device_definitions", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageDevicesGrp']/checkbox[@controlname='m_editDeviceDefnsChk']", 30000, null, "1543edd5-edaa-41ec-9474-cd51dde7c0fd");
@@ -12305,26 +12316,26 @@ namespace NformTester
             }
 
             /// <summary>
-            /// The Configure_devicea item.
+            /// The Configure_devices item.
             /// </summary>
             [RepositoryItem("4dfe76ef-937b-4a74-88e6-73375c8bdc52")]
-            public virtual Ranorex.CheckBox Configure_devicea
+            public virtual Ranorex.CheckBox Configure_devices
             {
                 get
                 {
-                    return _configure_deviceaInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                    return _configure_devicesInfo.CreateAdapter<Ranorex.CheckBox>(true);
                 }
             }
 
             /// <summary>
-            /// The Configure_devicea item info.
+            /// The Configure_devices item info.
             /// </summary>
             [RepositoryItemInfo("4dfe76ef-937b-4a74-88e6-73375c8bdc52")]
-            public virtual RepoItemInfo Configure_deviceaInfo
+            public virtual RepoItemInfo Configure_devicesInfo
             {
                 get
                 {
-                    return _configure_deviceaInfo;
+                    return _configure_devicesInfo;
                 }
             }
 
@@ -12781,6 +12792,74 @@ namespace NformTester
                 get
                 {
                     return _logicgroup_descriptionInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The FormAccountDisabledAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("c543090f-3bb7-4e0b-b52c-8011043267e7")]
+        public partial class FormAccountDisabledAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _okInfo;
+
+            /// <summary>
+            /// Creates a new FormAccountDisabled  folder.
+            /// </summary>
+            public FormAccountDisabledAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("FormAccountDisabled", "/form[@title='Account Disabled']", parentFolder, 30000, true, "c543090f-3bb7-4e0b-b52c-8011043267e7", "")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "c543090f-3bb7-4e0b-b52c-8011043267e7");
+                _okInfo = new RepoItemInfo(this, "OK", "button[@text='OK']", 30000, null, "fb570ccb-3bb3-4fc1-9bf5-6d444a2d3a3b");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("c543090f-3bb7-4e0b-b52c-8011043267e7")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("c543090f-3bb7-4e0b-b52c-8011043267e7")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OK item.
+            /// </summary>
+            [RepositoryItem("fb570ccb-3bb3-4fc1-9bf5-6d444a2d3a3b")]
+            public virtual Ranorex.Button OK
+            {
+                get
+                {
+                    return _okInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OK item info.
+            /// </summary>
+            [RepositoryItemInfo("fb570ccb-3bb3-4fc1-9bf5-6d444a2d3a3b")]
+            public virtual RepoItemInfo OKInfo
+            {
+                get
+                {
+                    return _okInfo;
                 }
             }
         }

@@ -862,6 +862,33 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST548_ShutdownActionPropertiesButtons"
+					id="d6419e82-f7f6-48f0-b40f-b99c1a3821fe">
+						<testmodule
+						name="TestCaseDriver"
+						id="f59612e8-abe0-4671-a395-c97781f0cde9"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST580_EditingRightsOnActionSetsWithUsersRight"
+					id="3ee5cc77-8666-498a-bf1a-f52c6f5d36de">
+						<testmodule
+						name="TestCaseDriver"
+						id="07bfd189-ab0c-4520-afc0-d7eb4205b1a4"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST547_CountOnSelectedShutdownActionProperties"
+					id="30ef62a5-b7eb-44b1-843c-ca469d59d61b">
+						<testmodule
+						name="TestCaseDriver"
+						id="b4cc75e6-006d-4ce3-88b0-6d73c860a367"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.030._Views2"
@@ -939,6 +966,24 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="af10a949-ea9f-42a9-9b70-5848ea91f816"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST1149_DisablingUsersOwnAccount"
+					id="a7e2dea6-fb52-4c87-9220-12c6296ed8a3">
+						<testmodule
+						name="TestCaseDriver"
+						id="85ddcd29-7a3b-49bc-9178-24f193d5b597"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST832_InvoledAndRevokedDiscoverNewDevice"
+					id="ac6afc0c-e263-4f97-8565-6dbdb77bf56c">
+						<testmodule
+						name="TestCaseDriver"
+						id="5e43bc38-1923-4739-a5fa-4518dcb15235"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -1151,13 +1196,13 @@ reportlevel="Info;20">
 			<testcase
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
-			id="16b2d828-575c-4faf-8f7d-74b92c41fc12"/>
-			<testcase
 			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
+			<testcase
+			id="64d6f7ed-643a-4648-9121-b2dc1ea70268"/>
 			<testcase
 			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
 			<testcase
-			id="d578208d-998d-403e-9324-b64b1d22d5f1"/>
+			id="ac6afc0c-e263-4f97-8565-6dbdb77bf56c"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
