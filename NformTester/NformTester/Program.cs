@@ -20,6 +20,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Windows.Forms;
 using System.Diagnostics;
+using System.Configuration;
 
 using Ranorex;
 using Ranorex.Core;
@@ -41,6 +42,23 @@ namespace NformTester
         /// </summary>
     	public static LxDBOper myLxDBOper = new LxDBOper();
     	
+    	/// <summary>
+        /// Get all info from app.config.
+        /// </summary>
+//    	private static IDictionary<string, string> GetConfigs ()
+//		{
+//			var configs = new Dictionary<string, string> ();
+//			int len = ConfigurationSettings.AppSettings.Count;
+//			for (int i = 0; i < len; i++)
+//			{
+//				configs.Add (
+//					ConfigurationSettings.AppSettings.GetKey (i),
+//					ConfigurationSettings.AppSettings[i]);
+//			}
+//
+//			return configs;
+//		}
+    	
     	[STAThread]
         public static int Main(string[] args)
         {
@@ -55,6 +73,11 @@ namespace NformTester
         	}                   
             */
 
+ //          var configs = GetConfigs ();
+           
+//           string CheckDevice = configs["CheckDevice_BeforeTesting"];
+//           string RestoreDB = configs["RestoreDB_AfterEachTestCase"];
+           
             //stop Nform service
 			Console.WriteLine("Stop Nform service...");
 			string strRst = RunCommand("sc stop Nform");
