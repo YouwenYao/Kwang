@@ -73,19 +73,24 @@ namespace NformTester
         	}                   
             */
 
+
  //          var configs = GetConfigs ();
            
 //           string CheckDevice = configs["CheckDevice_BeforeTesting"];
 //           string RestoreDB = configs["RestoreDB_AfterEachTestCase"];
            
             //stop Nform service
-/*			Console.WriteLine("Stop Nform service...");
+ 		   Console.WriteLine("Stop Nform service...");
+
+           //stop Nform service
+			Console.WriteLine("Stop Nform service...");
+
 			string strRst = RunCommand("sc stop Nform");
 		   //Be used to check devices are avalibale or not, which are configured in Device.ini
            LxDeviceAvailable myDeviceAvailable = new LxDeviceAvailable();
            myDeviceAvailable.CheckSnmpDevice();
            // myDeviceAvailable.CheckVelDevice();
-           
+          
            //Backup Database operation. Just do once before run all scripts.
             myLxDBOper.SetDbType();
             myLxDBOper.BackUpDataBase();
@@ -102,8 +107,9 @@ namespace NformTester
             //start Nform service
             Console.WriteLine("Start Nform service...");
 			strRst = RunCommand("sc start Nform");	
+
 			RunCommand("sc start Nform");	
-      */
+
         	Keyboard.AbortKey = System.Windows.Forms.Keys.Pause;
             int error = 0;
             try
