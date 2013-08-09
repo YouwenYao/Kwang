@@ -1029,6 +1029,12 @@ namespace NformTester
             RepoItemInfo _configuredgroupsInfo;
             RepoItemInfo _newgroupInfo;
             RepoItemInfo _receptaclesInfo;
+            RepoItemInfo _treeitemups_10_146_87_2Info;
+            RepoItemInfo _treeitemdevice_informationInfo;
+            RepoItemInfo _cellname_row_0Info;
+            RepoItemInfo _cellnew_row_0Info;
+            RepoItemInfo _cellsource_row_0Info;
+            RepoItemInfo _cellalarm_row_0Info;
             RepoItemInfo _shutdownclientsInfo;
 
             /// <summary>
@@ -1153,6 +1159,7 @@ namespace NformTester
                 _totimeInfo = new RepoItemInfo(this, "ToTime", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxViewerRhsMgr']/tabpagelist[@controlname='m_devTabCtl']/tabpage[@controlname='m_devTrendsPage']/container[@controlname='m_devTrendsDisplay']/container/container[@controlname='m_durationGrpBx']/container[@controlname='m_toGrpBx']/datetime[@controlname='m_toTimeDtp']", 30000, null, "0d8185d8-5e0e-4f11-acad-dd401b93075b");
                 _todateInfo = new RepoItemInfo(this, "ToDate", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxViewerRhsMgr']/tabpagelist[@controlname='m_devTabCtl']/tabpage[@controlname='m_devTrendsPage']/container[@controlname='m_devTrendsDisplay']/container/container[@controlname='m_durationGrpBx']/container[@controlname='m_toGrpBx']/datetime[@controlname='m_toDateDtp']", 30000, null, "384da461-334f-42a9-8722-e66c1a8d1588");
                 _refresh_trends_durationInfo = new RepoItemInfo(this, "Refresh_trends_duration", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxViewerRhsMgr']/tabpagelist[@controlname='m_devTabCtl']/tabpage[@controlname='m_devTrendsPage']/container[@controlname='m_devTrendsDisplay']/container/container[@controlname='m_durationGrpBx']/button[@controlname='m_refreshBtn']", 30000, null, "28cef319-4cc2-4aa8-9e50-26ce75ffc47d");
+
                 _alarmstatuslistInfo = new RepoItemInfo(this, "AlarmStatusList", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: Rack PDU']/container[@controlname='LxGadgetListView']/table/list[@accessiblerole='List']", 30000, null, "408a71d9-37b8-42d0-9618-3c339ee5140e");
                 _alarmstatustable_pduInfo = new RepoItemInfo(this, "AlarmStatusTable_PDU", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: Rack PDU']/container[@controlname='LxGadgetListView']/table[@controlname='m_lvListView']", 30000, null, "a721f41c-d590-4f25-b365-ed2b7de3ddd0");
                 _alarm_status_setupInfo = new RepoItemInfo(this, "Alarm_status_setup", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: All']/container[@controlname='m_statusPnl']/button[@controlname='m_setupBtn']", 30000, null, "9aefa2d8-7b11-4581-b423-ca89d68b2472");
@@ -1166,6 +1173,13 @@ namespace NformTester
                 _configuredgroupsInfo = new RepoItemInfo(this, "ConfiguredGroups", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxVgViewerRhsMgr']/tabpagelist/tabpage[@controlname='m_parametricDataTab']/container[@controlname='LxVgGenericGrpDisplay']/container/link[@text='Configured groups']/text/link[@accessiblename='Configured groups']", 30000, null, "44280458-d24a-4a38-812a-73957ab3205b");
                 _newgroupInfo = new RepoItemInfo(this, "NewGroup", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxVgViewerRhsMgr']/tabpagelist/tabpage[@controlname='m_parametricDataTab']/container[@controlname='LxVgGenericGrpDisplay']/container/link/text/link[@accessiblename='New Group']", 30000, null, "9cf60843-2396-4327-8f8f-379d5b2284ab");
                 _receptaclesInfo = new RepoItemInfo(this, "Receptacles", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxVgViewerRhsMgr']/tabpagelist/tabpage[@controlname='m_parametricDataTab']/container[@controlname='LxVgRcpGrpDisplay']/container[@controlname='m_rcpGrid']/table[@controlname='m_receptaclesGridView']", 30000, null, "39474286-765e-4858-a3b4-cef51c93ee95");
+
+                _treeitemups_10_146_87_2Info = new RepoItemInfo(this, "TreeItemUPS_10_146_87_2", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel1']/tree/tree/treeitem/treeitem[@accessiblename='UPS_10.146.87.2']", 30000, null, "1e47e2cd-ebe9-4114-91c2-0ac9acc35e99");
+                _treeitemdevice_informationInfo = new RepoItemInfo(this, "TreeItemDevice_Information", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxViewerRhsMgr']/tabpagelist[@controlname='m_devTabCtl']/tabpage[@controlname='m_devDataPage']/container[@controlname='m_devDataDisplay']/container[@controlname='m_dataSplitterCtl']/container[@controlname='panel1']/tree/tree/treeitem/treeitem[@accessiblename='Device Information']", 30000, null, "d5afbe4f-879a-4030-8654-d3bec9c0b1db");
+                _cellname_row_0Info = new RepoItemInfo(this, "CellName_Row_0", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxViewerRhsMgr']/tabpagelist[@controlname='m_devTabCtl']/tabpage[@controlname='m_devDataPage']/container[@controlname='m_devDataDisplay']/container[@controlname='m_dataSplitterCtl']/container[@controlname='panel2']/table/row[@accessiblename='Row 0']/cell[@accessiblename='Name Row 0']", 30000, null, "44aeea8d-8585-42a9-a01e-ecbcd085c4d8");
+                _cellnew_row_0Info = new RepoItemInfo(this, "CellNew_Row_0", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxViewerRhsMgr']/tabpagelist[@controlname='m_devTabCtl']/tabpage[@controlname='m_devDataPage']/container[@controlname='m_devDataDisplay']/container[@controlname='m_dataSplitterCtl']/container[@controlname='panel2']/table/row[@accessiblename='Row 0']/cell[@accessiblename='New Row 0']", 30000, null, "b9d43e8c-76f2-41e9-8009-014cdf625e53");
+                _cellsource_row_0Info = new RepoItemInfo(this, "CellSource_Row_0", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/table/row[@accessiblename='Row 0']/cell[@accessiblename='Source Row 0']", 30000, null, "6f92f659-c301-42ba-a715-424136713414");
+                _cellalarm_row_0Info = new RepoItemInfo(this, "CellAlarm_Row_0", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/table/row[@accessiblename='Row 0']/cell[@accessiblename='Alarm Row 0']", 30000, null, "342394db-4159-45ab-9b2a-727031c8ac35");
                 _shutdownclientsInfo = new RepoItemInfo(this, "ShutdownClients", "menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Configure']/menuitem[@accessiblename='Shutdown Clients...']", 30000, null, "29c24860-83c1-49f0-90b4-a941ba2986ff");
             }
 
@@ -4288,6 +4302,30 @@ namespace NformTester
                     return _shutdownclientsInfo;
                 }
             }
+
+            /// <summary>
+            /// The ShutdownClients item.
+            /// </summary>
+            [RepositoryItem("29c24860-83c1-49f0-90b4-a941ba2986ff")]
+            public virtual Ranorex.MenuItem ShutdownClients
+            {
+                get
+                {
+                    return _shutdownclientsInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ShutdownClients item info.
+            /// </summary>
+            [RepositoryItemInfo("29c24860-83c1-49f0-90b4-a941ba2986ff")]
+            public virtual RepoItemInfo ShutdownClientsInfo
+            {
+                get
+                {
+                    return _shutdownclientsInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -5932,6 +5970,8 @@ namespace NformTester
             RepoItemInfo _addcustomercolorInfo;
             RepoItemInfo _helpInfo;
             RepoItemInfo _closeInfo;
+            RepoItemInfo _definecustomcolorsInfo;
+            RepoItemInfo _addtocustomcolorsInfo;
 
             /// <summary>
             /// Creates a new FormColor  folder.
@@ -5941,7 +5981,7 @@ namespace NformTester
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "19d1a804-7a24-4b93-80f8-e0b0a3b77425");
                 _okInfo = new RepoItemInfo(this, "OK", "button[@text='确定' or @text='OK']", 30000, null, "6be39cf4-c658-4f52-8e07-bb0bd8a44db9");
-                _cancleInfo = new RepoItemInfo(this, "Cancle", "button[@text='取消' or @text='Cancle']", 30000, null, "50192774-150e-4c7c-9daf-d185f098a9ea");
+                _cancleInfo = new RepoItemInfo(this, "Cancle", "button[@text='Cancel']", 30000, null, "50192774-150e-4c7c-9daf-d185f098a9ea");
                 _basecolortableInfo = new RepoItemInfo(this, "BaseColorTable", "text[@controlid='720']", 30000, null, "40b0ed3e-fa1e-40bb-9505-cc517f81b741");
                 _customercolortableInfo = new RepoItemInfo(this, "CustomerColorTable", "text[@controlid='721']", 30000, null, "e7bcbef8-4b93-4e25-8933-dcd080d48399");
                 _customercolorInfo = new RepoItemInfo(this, "CustomerColor", "button[@text='规定自定义颜色(&D) >>']", 30000, null, "d99cc699-cf35-4bff-92ad-4b0f3455501a");
@@ -5957,6 +5997,8 @@ namespace NformTester
                 _addcustomercolorInfo = new RepoItemInfo(this, "AddCustomerColor", "button[@text='添加到自定义颜色(&A)']", 30000, null, "fd45d1df-05f3-40f4-859d-7e349e220f86");
                 _helpInfo = new RepoItemInfo(this, "Help", "titlebar/button[@accessiblename='上下文帮助']", 30000, null, "bbcecf5a-f66f-4f17-a4bb-be90169bb62d");
                 _closeInfo = new RepoItemInfo(this, "Close", "titlebar/button[@accessiblename='关闭']", 30000, null, "45ad0326-8bdc-4d90-9d3a-b75db509b8a4");
+                _definecustomcolorsInfo = new RepoItemInfo(this, "DefineCustomColors", "button[@text='&Define Custom Colors >>']", 30000, null, "097e80d3-1e7d-42e6-a073-b03ddaaa5bf1");
+                _addtocustomcolorsInfo = new RepoItemInfo(this, "AddToCustomColors", "button[@text='&Add to Custom Colors']", 30000, null, "97c93336-0623-4be6-acde-a329b2bde145");
             }
 
             /// <summary>
@@ -6388,6 +6430,54 @@ namespace NformTester
                 get
                 {
                     return _closeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DefineCustomColors item.
+            /// </summary>
+            [RepositoryItem("097e80d3-1e7d-42e6-a073-b03ddaaa5bf1")]
+            public virtual Ranorex.Button DefineCustomColors
+            {
+                get
+                {
+                    return _definecustomcolorsInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DefineCustomColors item info.
+            /// </summary>
+            [RepositoryItemInfo("097e80d3-1e7d-42e6-a073-b03ddaaa5bf1")]
+            public virtual RepoItemInfo DefineCustomColorsInfo
+            {
+                get
+                {
+                    return _definecustomcolorsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AddToCustomColors item.
+            /// </summary>
+            [RepositoryItem("97c93336-0623-4be6-acde-a329b2bde145")]
+            public virtual Ranorex.Button AddToCustomColors
+            {
+                get
+                {
+                    return _addtocustomcolorsInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AddToCustomColors item info.
+            /// </summary>
+            [RepositoryItemInfo("97c93336-0623-4be6-acde-a329b2bde145")]
+            public virtual RepoItemInfo AddToCustomColorsInfo
+            {
+                get
+                {
+                    return _addtocustomcolorsInfo;
                 }
             }
         }
@@ -10576,6 +10666,7 @@ namespace NformTester
             NformRepositoryFolders.FormUserPropertiesAppFolder _formuserproperties;
             NformRepositoryFolders.FormViewChangedAppFolder _formviewchanged;
             NformRepositoryFolders.FormGroup_PropertiesAppFolder _formgroup_properties;
+            NformRepositoryFolders.FormAccountDisabledAppFolder _formaccountdisabled;
 
             /// <summary>
             /// Creates a new UsersandGroupsWindow  folder.
@@ -10587,6 +10678,7 @@ namespace NformTester
                 _formuserproperties = new NformRepositoryFolders.FormUserPropertiesAppFolder(parentFolder);
                 _formviewchanged = new NformRepositoryFolders.FormViewChangedAppFolder(parentFolder);
                 _formgroup_properties = new NformRepositoryFolders.FormGroup_PropertiesAppFolder(parentFolder);
+                _formaccountdisabled = new NformRepositoryFolders.FormAccountDisabledAppFolder(parentFolder);
             }
 
             /// <summary>
@@ -10623,6 +10715,15 @@ namespace NformTester
             public virtual NformRepositoryFolders.FormGroup_PropertiesAppFolder FormGroup_Properties
             {
                 get { return _formgroup_properties; }
+            }
+
+            /// <summary>
+            /// The FormAccountDisabled folder.
+            /// </summary>
+            [RepositoryFolder("c543090f-3bb7-4e0b-b52c-8011043267e7")]
+            public virtual NformRepositoryFolders.FormAccountDisabledAppFolder FormAccountDisabled
+            {
+                get { return _formaccountdisabled; }
             }
         }
 
@@ -12020,7 +12121,7 @@ namespace NformTester
             RepoItemInfo _write_fileInfo;
             RepoItemInfo _acknowledge_and_close_alarmsInfo;
             RepoItemInfo _configure_data_loggingInfo;
-            RepoItemInfo _configure_deviceaInfo;
+            RepoItemInfo _configure_devicesInfo;
             RepoItemInfo _configure_navigation_viewsInfo;
             RepoItemInfo _discover_new_devicesInfo;
             RepoItemInfo _edit_device_definitionsInfo;
@@ -12061,7 +12162,7 @@ namespace NformTester
                 _write_fileInfo = new RepoItemInfo(this, "Write_file", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageActionsGrp']/container/checkbox[@controlname='m_actionWriteFileChk']", 30000, null, "5ba17500-3f71-4545-b551-6c78156660ab");
                 _acknowledge_and_close_alarmsInfo = new RepoItemInfo(this, "Acknowledge_and_close_alarms", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageAlarmsGrp']/checkbox[@controlname='m_updateAlarmsChk']", 30000, null, "ff85d03e-3bd6-4f71-8673-dd4927f99416");
                 _configure_data_loggingInfo = new RepoItemInfo(this, "Configure_data_logging", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageDevicesGrp']/checkbox[@controlname='m_cfgDataLogChk']", 30000, null, "d91c74fe-bbbb-43dd-a897-2f7a7021b66c");
-                _configure_deviceaInfo = new RepoItemInfo(this, "Configure_devicea", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageDevicesGrp']/checkbox[@controlname='m_cfgDevicesChk']", 30000, null, "4dfe76ef-937b-4a74-88e6-73375c8bdc52");
+                _configure_devicesInfo = new RepoItemInfo(this, "Configure_devices", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageDevicesGrp']/checkbox[@controlname='m_cfgDevicesChk']", 30000, null, "4dfe76ef-937b-4a74-88e6-73375c8bdc52");
                 _configure_navigation_viewsInfo = new RepoItemInfo(this, "Configure_navigation_views", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageDevicesGrp']/checkbox[@controlname='m_cfgNavViewsChk']", 30000, null, "feccace5-7abd-4200-8840-d243374660c4");
                 _discover_new_devicesInfo = new RepoItemInfo(this, "Discover_new_devices", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageDevicesGrp']/checkbox[@controlname='m_discoverDevicesChk']", 30000, null, "7f8061dd-5202-4a30-99b3-fea4d9054b32");
                 _edit_device_definitionsInfo = new RepoItemInfo(this, "Edit_device_definitions", "container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageDevicesGrp']/checkbox[@controlname='m_editDeviceDefnsChk']", 30000, null, "1543edd5-edaa-41ec-9474-cd51dde7c0fd");
@@ -12420,26 +12521,26 @@ namespace NformTester
             }
 
             /// <summary>
-            /// The Configure_devicea item.
+            /// The Configure_devices item.
             /// </summary>
             [RepositoryItem("4dfe76ef-937b-4a74-88e6-73375c8bdc52")]
-            public virtual Ranorex.CheckBox Configure_devicea
+            public virtual Ranorex.CheckBox Configure_devices
             {
                 get
                 {
-                    return _configure_deviceaInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                    return _configure_devicesInfo.CreateAdapter<Ranorex.CheckBox>(true);
                 }
             }
 
             /// <summary>
-            /// The Configure_devicea item info.
+            /// The Configure_devices item info.
             /// </summary>
             [RepositoryItemInfo("4dfe76ef-937b-4a74-88e6-73375c8bdc52")]
-            public virtual RepoItemInfo Configure_deviceaInfo
+            public virtual RepoItemInfo Configure_devicesInfo
             {
                 get
                 {
-                    return _configure_deviceaInfo;
+                    return _configure_devicesInfo;
                 }
             }
 
@@ -12896,6 +12997,74 @@ namespace NformTester
                 get
                 {
                     return _logicgroup_descriptionInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The FormAccountDisabledAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("c543090f-3bb7-4e0b-b52c-8011043267e7")]
+        public partial class FormAccountDisabledAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _okInfo;
+
+            /// <summary>
+            /// Creates a new FormAccountDisabled  folder.
+            /// </summary>
+            public FormAccountDisabledAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("FormAccountDisabled", "/form[@title='Account Disabled']", parentFolder, 30000, true, "c543090f-3bb7-4e0b-b52c-8011043267e7", "")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "c543090f-3bb7-4e0b-b52c-8011043267e7");
+                _okInfo = new RepoItemInfo(this, "OK", "button[@text='OK']", 30000, null, "fb570ccb-3bb3-4fc1-9bf5-6d444a2d3a3b");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("c543090f-3bb7-4e0b-b52c-8011043267e7")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("c543090f-3bb7-4e0b-b52c-8011043267e7")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OK item.
+            /// </summary>
+            [RepositoryItem("fb570ccb-3bb3-4fc1-9bf5-6d444a2d3a3b")]
+            public virtual Ranorex.Button OK
+            {
+                get
+                {
+                    return _okInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OK item info.
+            /// </summary>
+            [RepositoryItemInfo("fb570ccb-3bb3-4fc1-9bf5-6d444a2d3a3b")]
+            public virtual RepoItemInfo OKInfo
+            {
+                get
+                {
+                    return _okInfo;
                 }
             }
         }

@@ -192,6 +192,7 @@
       <id>9c7552b4-1cab-43a1-95c8-12b0d4c0302e</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+<<<<<<< HEAD
     <None Include="Keywordscripts\TST1113_CopyAnExistingAreaAndCreateNewAreaInTheTreeOfView.xlsx">
       <id>ce6530e6-fd86-44a2-aafe-93d3fe283fa5</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -204,6 +205,8 @@
       <id>d69f45a3-e78b-4381-a4ca-4c4754429cd7</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+=======
+>>>>>>> 606e59a4c4204e7aa0f1809476489f8e865a3f59
     <None Include="Keywordscripts\TST1104_ExportActionHistoryForDeviceAlarms.xlsx">
       <id>63f8dd2d-99ae-4829-81da-a5d2de30df58</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -212,6 +215,13 @@
       <id>2eb7e159-0551-4651-b277-594ebbe38636</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+<<<<<<< HEAD
+=======
+    <None Include="Keywordscripts\TST1112_EditAreaInTreeUnderViews.xlsx">
+      <id>bbc0941f-d2be-421d-8a94-9bacdbe0b73e</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+>>>>>>> 606e59a4c4204e7aa0f1809476489f8e865a3f59
     <None Include="keywordscripts\TST1120_CopyDeviceFeature.xlsx">
       <id>1627e4b1-48b5-4420-b18d-6c77e0fb1116</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -228,6 +238,14 @@
       <id>c0f3e6a8-c762-402e-86ad-1d086ef835e1</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST1130_MoveDeviceFromNavigationTreetoAvailableDevices.xlsx">
+      <id>2e049f0c-2105-488b-9b4c-a8ec4ac89e92</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST1131_ViewsMoveDevicesApartFromAllDevicesView.xlsx">
+      <id>3e2361f3-3204-4d1b-8580-7d3c3f8b6f38</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST1133_UnacknowledgedAlarmColor.xlsx">
       <id>f320ddfb-3d49-47b8-94bf-d95037bff63a</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -238,6 +256,14 @@
     </None>
     <None Include="keywordscripts\TST1138_DataLoggingSettingsForMulti-moduleDevices.xlsx">
       <id>ea5931b2-4f24-4e53-8502-131b63a3c978</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST1149_DisablingUsersOwnAccount.xlsx">
+      <id>76b98dbd-c7a6-471d-90c7-1638f2f5e51d</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST1155_AlarmSeveritySliceColorOption.xlsx">
+      <id>bfbb020b-2539-4a96-a233-aa3d89263ea3</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="keywordscripts\TST1172_EditDeviceAlarmName.xlsx">
@@ -304,6 +330,7 @@
       <id>04a1930e-2fb4-4b4e-8ea7-41499b8ea516</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+<<<<<<< HEAD
     <None Include="Keywordscripts\TST1548_ExceptionInOnCellMouseDownInViewerLogWhenScrollsInALARMStabWith5000Alarms.xlsx">
       <id>0ba90384-cede-42b4-b1fc-80bf8569a98b</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -312,6 +339,8 @@
       <id>d3758c3f-2088-45fa-85cd-53c0ce4909e6</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+=======
+>>>>>>> 606e59a4c4204e7aa0f1809476489f8e865a3f59
     <None Include="Keywordscripts\TST1553_MakingChangesOkButtonDisabled.xlsx">
       <id>4a9b94b8-070d-4367-9a25-aa4be39de1db</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -416,6 +445,14 @@
       <id>87904c1e-6407-45b0-a2f9-cc7dadf18ae3</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST547_CountOnSelectedShutdownActionProperties.xlsx">
+      <id>419a70df-2023-46cd-9e6b-50da747d88d6</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST548_ShutdownActionPropertiesButtons.xlsx">
+      <id>fa5d8f70-f9e3-495b-b6b7-fd7022b802f7</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST551_CopyDataOfAGraph.xlsx">
       <id>ac2e350a-d019-4841-b92d-cf377dd9aac1</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -434,6 +471,10 @@
     </None>
     <None Include="keywordscripts\TST575_ExecuteTrapAlarmForward.xlsx">
       <id>88f2d6dc-c554-4461-8e96-54277e1905e2</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST580_EditingRightsOnActionSetsWithUsersRight.xlsx">
+      <id>595d94da-26c4-4bac-9ab6-3ffb2b50cdba</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\TST581_UsersWithoutAllRightsCanNotEditOnActionSets.xlsx">
@@ -472,18 +513,24 @@
       <id>dcc1d8db-4707-4c27-85ba-c879a551339c</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+<<<<<<< HEAD
     <None Include="Keywordscripts\TST732_MapActionsDialogWindowWithStateDefined.xlsx">
       <id>b373b527-c112-40ee-a297-2d2e1b232cab</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+=======
+>>>>>>> 606e59a4c4204e7aa0f1809476489f8e865a3f59
     <None Include="Keywordscripts\TST734_MapActionsWithALLSeverities.xlsx">
       <id>f3e29d7e-bcee-4e75-b4b1-425a3a8fb238</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+<<<<<<< HEAD
     <None Include="Keywordscripts\TST744_MapActionsWindowWithoutAnyDevices.xlsx">
       <id>38a5e1d1-b5ab-4eab-b73e-a61e16df24f0</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+=======
+>>>>>>> 606e59a4c4204e7aa0f1809476489f8e865a3f59
     <None Include="keywordscripts\TST762_CheckGUIOfPeriodComboBoxes.xlsx">
       <id>e15d246d-8e87-4c8f-829a-d7d9f7bdda63</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -504,6 +551,13 @@
       <id>1a01f0f0-6acc-48db-a1a2-f378614b4f94</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+<<<<<<< HEAD
+=======
+    <None Include="Keywordscripts\TST782_ChangingDatePointValues.xlsx">
+      <id>c2a999c7-fbf6-4f9b-b45d-0b259ab96f11</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+>>>>>>> 606e59a4c4204e7aa0f1809476489f8e865a3f59
     <None Include="Keywordscripts\TST788_MultipulActionsWithShutDownClient.xlsx">
       <id>2e7808b6-d9f1-4746-95f6-a3ac38541e50</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -512,8 +566,13 @@
       <id>c8c82198-869a-4484-9ab4-f4a0fff674f2</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+<<<<<<< HEAD
     <None Include="Keywordscripts\TST923_CheckFunctionalityOfGadgetSetupDialogFilterByDeviceType.xlsx">
       <id>6e252692-4c8c-45bd-9be6-13f3d3f00e14</id>
+=======
+    <None Include="Keywordscripts\TST832_InvoledAndRevokedDiscoverNewDevice.xlsx">
+      <id>4a970d50-f942-4937-a2bc-617d7f072cf2</id>
+>>>>>>> 606e59a4c4204e7aa0f1809476489f8e865a3f59
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="keywordscripts\TST931_InstallViewerOnly.xlsx">
