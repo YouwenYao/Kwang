@@ -276,6 +276,10 @@
       <id>87b6c425-da73-48a2-b909-61c6915e8935</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST1330_UserCanConfigurationOtherSMTPApartFromAutomatic.xlsx">
+      <id>538e59c8-4368-4734-a175-abf32984c260</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST1332_ImportDeviceFromFlatFileWithTheSpecifiedSeparator.xlsx">
       <id>f6556755-48f9-436d-9a77-2974081fd059</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -436,6 +440,10 @@
       <id>7a05c35e-ac09-48c8-bdaf-ec1356c72454</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST591_DeleteActionSetsWithPowerUserRights.xlsx">
+      <id>b7171cb1-5419-4a8d-8bd4-0dd379df5085</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\TST592_DeleteAnActionSetWithUsersRight.xlsx">
       <id>66f7a0dd-3060-448e-b45c-b95018aa285c</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -470,6 +478,10 @@
     </None>
     <None Include="Keywordscripts\TST734_MapActionsWithALLSeverities.xlsx">
       <id>f3e29d7e-bcee-4e75-b4b1-425a3a8fb238</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST744_MapActionsWindowWithoutAnyDevices.xlsx">
+      <id>38a5e1d1-b5ab-4eab-b73e-a61e16df24f0</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="keywordscripts\TST762_CheckGUIOfPeriodComboBoxes.xlsx">

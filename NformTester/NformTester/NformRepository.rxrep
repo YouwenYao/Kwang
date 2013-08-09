@@ -5883,6 +5883,52 @@ asfJM0NmDaToIFYFJxQ/OHzVzbm8uoUBMvUoiVqIKYHI/O8cyp4gJO0V+xMcJGffXxgQnvmE0Au9
 BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					</icon>
 				</appfolder>
+				<appfolder
+				name="FormConfirmActionSetDelete"
+				id="cf4bf6df-fa68-46e3-a2b9-4c41c33fdccb"
+				searchtimeout="30000ms"
+				capname="form"
+				addcaps="form,nativewindow"
+				isrooted="True"
+				usecache="True">
+					<item
+					name="Yes"
+					id="aca1f6fb-b714-4a71-894f-f7665271b0d8"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,nativewindow">
+						/form[@title='Confirm Action Set Delete']/button[@text='&amp;Yes']
+					</item>
+					<item
+					name="No"
+					id="fa5e5d3d-b568-4800-8caf-cb6a54db1659"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,nativewindow">
+						/form[@title='Confirm Action Set Delete']/button[@text='&amp;No']
+					</item>
+					<item
+					name="Close"
+					id="9902e3ae-c0ec-416a-9d2a-89841d7aa0d2"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@title='Confirm Action Set Delete']/titlebar/button[@accessiblename='Close']
+					</item>
+					<basepath>
+						/form[@title='Confirm Action Set Delete']
+					</basepath>
+					<icon>
+						iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAE7SURBVDhPY2AYdMAzzClAcdXz/yDcny6ugOxA
+p4qW94ptW/8bphbtx+lwxdTmBpgB2bnZ8+fMXxoAUjx37uICw7alYIMVK5fiNoCiIDFMbflvGRoF
+dGILdhxbDBYHWQL2SkzWexQLQZJBk7b+T972HCeGGwD0imEuxDA4AElmz9r7v+Xw+/9OlUv/c4RC
+sIBr9f/qXffA4jAD5KXlHbK8pAwwDGhZtvf/0svv/wdVzkExYM7x52BxmAFwjZGFke+j2qrBTgFJ
+zll37P+x+9//773+/n9U7dL/TrlTwHwYxjBAEagIFDUwA5au2/p/6aa9QI1z/gt4toCxZmTP/2xg
+FF57jMUF8lLyBiD/wAyIdJTYzxE4Be58WDiAaA0Tp/cYLkCPd3l5eQEBl+rzMNvhNDAgJY2DwIlq
+mAEArCvv3zgQncsAAAAASUVORK5CYII=
+					</icon>
+				</appfolder>
 			</folder>
 			<folder
 			name="ServerOptionsWindow"
