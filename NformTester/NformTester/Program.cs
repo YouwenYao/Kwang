@@ -45,19 +45,19 @@ namespace NformTester
     	/// <summary>
         /// Get all info from app.config.
         /// </summary>
-//    	private static IDictionary<string, string> GetConfigs ()
-//		{
-//			var configs = new Dictionary<string, string> ();
-//			int len = ConfigurationSettings.AppSettings.Count;
-//			for (int i = 0; i < len; i++)
-//			{
-//				configs.Add (
-//					ConfigurationSettings.AppSettings.GetKey (i),
-//					ConfigurationSettings.AppSettings[i]);
-//			}
-//
-//			return configs;
-//		}
+    	private static IDictionary<string, string> GetConfigs ()
+		{
+			var configs = new Dictionary<string, string> ();
+			int len = ConfigurationSettings.AppSettings.Count;
+			for (int i = 0; i < len; i++)
+			{
+				configs.Add (
+					ConfigurationSettings.AppSettings.GetKey (i),
+					ConfigurationSettings.AppSettings[i]);
+			}
+
+			return configs;
+		}
     	
     	[STAThread]
         public static int Main(string[] args)
@@ -73,43 +73,48 @@ namespace NformTester
         	}                   
             */
 
-
- //          var configs = GetConfigs ();
-           
-//           string CheckDevice = configs["CheckDevice_BeforeTesting"];
-//           string RestoreDB = configs["RestoreDB_AfterEachTestCase"];
-           
-            //stop Nform service
- 		   Console.WriteLine("Stop Nform service...");
-
-           //stop Nform service
-			Console.WriteLine("Stop Nform service...");
-
-			string strRst = RunCommand("sc stop Nform");
-		   //Be used to check devices are avalibale or not, which are configured in Device.ini
-           LxDeviceAvailable myDeviceAvailable = new LxDeviceAvailable();
-           myDeviceAvailable.CheckSnmpDevice();
-           // myDeviceAvailable.CheckVelDevice();
-          
-           //Backup Database operation. Just do once before run all scripts.
-            myLxDBOper.SetDbType();
-            myLxDBOper.BackUpDataBase();
- 
-           if(myLxDBOper.GetBackUpResult() == false)
-            {
-               Console.WriteLine("Back up database is faild!");
-            }
-            else
-            {
-            	Console.WriteLine("Back up database is successful!");
-            }
-    
-            //start Nform service
-            Console.WriteLine("Start Nform service...");
-			strRst = RunCommand("sc start Nform");	
-
-			RunCommand("sc start Nform");	
-
+             var configs = GetConfigs ();
+             string CheckDevice = configs["CheckDevice_BeforeTesting"];
+             string RestoreDB = configs["RestoreDB_AfterEachTestCase"];
+            
+            // If CheckDevice is Y, program will check these ip addresses are available or not.
+             if(CheckDevice.Equals("Y"))
+             {
+	           //stop Nform service
+				Console.WriteLine("Stop Nform service...");
+				string strRst = RunCommand("sc stop Nform");
+			   //Be used to check devices are avalibale or not, which are configured in Device.ini
+	           LxDeviceAvailable myDeviceAvailable = new LxDeviceAvailable();
+	           myDeviceAvailable.CheckSnmpDevice();
+	           myDeviceAvailable.CheckVelDevice();
+	           //start Nform service
+	           Console.WriteLine("Start Nform service...");
+			   strRst = RunCommand("sc start Nform");	
+             }
+             
+           // If RestoreDB is Y, program will restore Database for Nform before scripts are executed.
+           if(RestoreDB.Equals("Y"))
+           {
+           	 	//stop Nform service
+				Console.WriteLine("Stop Nform service...");
+				string strRst = RunCommand("sc stop Nform");
+				
+				//Backup Database operation. Just do once before run all scripts.
+	            myLxDBOper.SetDbType();
+	            myLxDBOper.BackUpDataBase();	
+	           if(myLxDBOper.GetBackUpResult() == false)
+	            {
+	               Console.WriteLine("Back up database is faild!");
+	            }
+	            else
+	            {
+	            	Console.WriteLine("Back up database is successful!");
+	            }
+	            //start Nform service
+	            Console.WriteLine("Start Nform service...");
+				strRst = RunCommand("sc start Nform");	     
+           }
+         
         	Keyboard.AbortKey = System.Windows.Forms.Keys.Pause;
             int error = 0;
             try
@@ -141,7 +146,6 @@ namespace NformTester
 			p.Start();
 			p.StandardInput.WriteLine(command);
 			p.StandardInput.WriteLine("exit");
-			//string strRst = p.StandardOutput.ReadToEnd();
 			Delay.Duration(10000);
 			return  "";
 		}
