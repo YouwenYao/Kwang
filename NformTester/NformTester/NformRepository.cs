@@ -16959,6 +16959,8 @@ namespace NformTester
             RepoItemInfo _copyInfo;
             RepoItemInfo _editInfo;
             RepoItemInfo _deleteInfo;
+            RepoItemInfo _countInfo;
+            RepoItemInfo _remainInfo;
 
             /// <summary>
             /// Creates a new FormShutdown_Clients  folder.
@@ -16974,6 +16976,8 @@ namespace NformTester
                 _copyInfo = new RepoItemInfo(this, "Copy", "container[@controlname='m_biListGrp']/container/container/button[@controlname='m_button4']", 30000, null, "eb0dde8e-a316-4178-88a3-64f2ab982e1a");
                 _editInfo = new RepoItemInfo(this, "Edit", "container[@controlname='m_biListGrp']/container/container/button[@controlname='m_button5']", 30000, null, "9a12b713-78b2-45c8-9498-8efaeab8a55f");
                 _deleteInfo = new RepoItemInfo(this, "Delete", "container[@controlname='m_biListGrp']/container/container/button[@controlname='m_button6']", 30000, null, "359c4a86-0de7-4472-b4e5-f916f25995e9");
+                _countInfo = new RepoItemInfo(this, "Count", "container[@controlname='m_biListGrp']/text[@controlname='m_countLbl']", 30000, null, "49d3274d-8823-4787-adf3-ab8de602279c");
+                _remainInfo = new RepoItemInfo(this, "Remain", "container[@controlname='m_biListGrp']/text[@controlname='m_remLicLbl']", 30000, null, "c691dd28-0468-4cef-9b69-6ef8274a4eb8");
             }
 
             /// <summary>
@@ -17165,6 +17169,54 @@ namespace NformTester
                 get
                 {
                     return _deleteInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Count item.
+            /// </summary>
+            [RepositoryItem("49d3274d-8823-4787-adf3-ab8de602279c")]
+            public virtual Ranorex.Text Count
+            {
+                get
+                {
+                    return _countInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Count item info.
+            /// </summary>
+            [RepositoryItemInfo("49d3274d-8823-4787-adf3-ab8de602279c")]
+            public virtual RepoItemInfo CountInfo
+            {
+                get
+                {
+                    return _countInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Remain item.
+            /// </summary>
+            [RepositoryItem("c691dd28-0468-4cef-9b69-6ef8274a4eb8")]
+            public virtual Ranorex.Text Remain
+            {
+                get
+                {
+                    return _remainInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Remain item info.
+            /// </summary>
+            [RepositoryItemInfo("c691dd28-0468-4cef-9b69-6ef8274a4eb8")]
+            public virtual RepoItemInfo RemainInfo
+            {
+                get
+                {
+                    return _remainInfo;
                 }
             }
         }

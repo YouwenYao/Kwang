@@ -1044,7 +1044,17 @@ reportlevel="Info;20">
 				</testcase>
 				<testcase
 				name="600.050._Licenses2"
-				id="9e61d856-cb7a-42ec-ae33-4de82b415f17"/>
+				id="9e61d856-cb7a-42ec-ae33-4de82b415f17">
+					<testcase
+					name="TST562_VerifyShutdownClientLicenseCount"
+					id="bafe4fe5-8fa6-451a-9a0f-00b970fd262c">
+						<testmodule
+						name="TestCaseDriver"
+						id="3b13be21-dd1a-4533-8153-721aca2aae16"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+				</testcase>
 				<testcase
 				name="600.060._Server_Options2"
 				id="df7edb2b-860c-49dc-9078-ff2dac2f7734">
@@ -1290,9 +1300,9 @@ reportlevel="Info;20">
 			<testcase
 			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
 			<testcase
-			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
+			id="9e61d856-cb7a-42ec-ae33-4de82b415f17"/>
 			<testcase
-			id="e79e643b-eddc-4131-9011-3689f0a88d08"/>
+			id="bafe4fe5-8fa6-451a-9a0f-00b970fd262c"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

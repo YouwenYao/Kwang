@@ -5527,6 +5527,22 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					addcaps="button,control,nativewindow">
 						/form[@controlname='LxSdClientListDlg']/container[@controlname='m_biListGrp']/container/container/button[@controlname='m_button6']
 					</item>
+					<item
+					name="Count"
+					id="49d3274d-8823-4787-adf3-ab8de602279c"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxSdClientListDlg']/container[@controlname='m_biListGrp']/text[@controlname='m_countLbl']
+					</item>
+					<item
+					name="Remain"
+					id="c691dd28-0468-4cef-9b69-6ef8274a4eb8"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxSdClientListDlg']/container[@controlname='m_biListGrp']/text[@controlname='m_remLicLbl']
+					</item>
 					<basepath>
 						/form[@controlname='LxSdClientListDlg']
 					</basepath>
