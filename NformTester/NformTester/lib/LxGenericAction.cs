@@ -258,7 +258,30 @@ namespace NformTester.lib
 		/// </summary>
 		public static void VerifyProperty(LxScriptItem item)
 		{	
-	
+			//MessageBox.Show(item.getComponent().ToString());
+			// The component is lable
+			if(item.getComponent().ToString().IndexOf("{Text:") != -1)
+			{
+				Ranorex.NativeWindow nativeWnd = item.getComponentInfo().CreateAdapter<Ranorex.NativeWindow>(false);
+				string lableText = nativeWnd.WindowText;
+				
+				if(item.getArg2Text() == "Equal")
+				{string abc = item.getArg3Text();
+					Validate.AreEqual(lableText, item.getArg3Text());
+				}
+				if(item.getArg2Text() == "Contains")
+				{
+					int iFlag = lableText.IndexOf(item.getArg3Text());
+					Validate.IsTrue(iFlag != -1);
+				}	
+				if(item.getArg2Text() == "NotContains")
+				{
+					int iFlag = lableText.IndexOf(item.getArg3Text());
+					Validate.IsTrue(iFlag == -1);
+				}				
+				return;
+			}
+
 			if(item.getArg2Text() == "Equal")
 			{
 				Validate.Attribute(item.getComponentInfo(), item.getArgText(), item.getArg3Text());

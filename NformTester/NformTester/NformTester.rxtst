@@ -343,6 +343,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST2806_VerifySiteIdUsedInRunCommandAction"
+					id="d81e018a-cd80-4f9e-8b3a-82b3c821d173">
+						<testmodule
+						name="TestCaseDriver"
+						id="cfd6004d-7a50-41d6-86f3-e4b35ad52708"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.030._Views1"
@@ -758,6 +767,15 @@ reportlevel="Info;20">
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
+				<testcase
+				name="TST1059_Local_Login"
+				id="db888325-01d5-48e4-bf24-648892907b50">
+					<testmodule
+					name="TestCaseDriver"
+					id="d6d4137d-a59d-4ad4-942d-f153388bd076"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
 			</testcase>
 			<testcase
 			name="500._View2"
@@ -845,6 +863,15 @@ reportlevel="Info;20">
 						type="UserCode"/>
 					</testcase>
 					<testcase
+					name="TST482_DeleteTheConfiguredWriteDataAction"
+					id="5dd9e60b-2e3a-44d9-bf30-0b9528fc6087">
+						<testmodule
+						name="TestCaseDriver"
+						id="85e8c33b-2e06-4e73-a6b6-6bb9dd26c8c5"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
 					name="TST732_MapActionsDialogWindowWithStateDefined"
 					id="a7edec62-5890-49e0-807f-a58bacc0b7e7">
 						<testmodule
@@ -854,11 +881,29 @@ reportlevel="Info;20">
 						type="UserCode"/>
 					</testcase>
 					<testcase
+					name="TST1352_TABOrderOnEmail_Action"
+					id="5fb2145f-fad4-4a6b-a587-da67121dff7b">
+						<testmodule
+						name="TestCaseDriver"
+						id="9a317b6a-1aad-4687-8370-5bc6bdee5c4d"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
 					name="TST503_TabOrderOnReadDateActionProperties"
 					id="5b45ea66-73cd-4081-a627-91266dd2eeff">
 						<testmodule
 						name="TestCaseDriver"
 						id="0b1c3630-25df-4e9a-85b4-eb56ccc3aefa"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST568_CheckNewActionsTypeInActionSetWindowForPowerUsersRights"
+					id="dfcd24ae-74e0-43f4-b533-e882e79d008f">
+						<testmodule
+						name="TestCaseDriver"
+						id="4be54c8d-8d01-479a-8823-d8e591b3f7ce"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -899,11 +944,47 @@ reportlevel="Info;20">
 						type="UserCode"/>
 					</testcase>
 					<testcase
+					name="TST548_ShutdownActionPropertiesButtons"
+					id="d6419e82-f7f6-48f0-b40f-b99c1a3821fe">
+						<testmodule
+						name="TestCaseDriver"
+						id="f59612e8-abe0-4671-a395-c97781f0cde9"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST580_EditingRightsOnActionSetsWithUsersRight"
+					id="3ee5cc77-8666-498a-bf1a-f52c6f5d36de">
+						<testmodule
+						name="TestCaseDriver"
+						id="07bfd189-ab0c-4520-afc0-d7eb4205b1a4"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
 					name="TST744_MapActionsWindowWithoutAnyDevices"
 					id="1a1fc6f3-0e23-4656-8632-a8e4632abb42">
 						<testmodule
 						name="TestCaseDriver"
 						id="efd9cd7e-4d21-477e-b5b9-82b5b50a2275"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST547_CountOnSelectedShutdownActionProperties"
+					id="30ef62a5-b7eb-44b1-843c-ca469d59d61b">
+						<testmodule
+						name="TestCaseDriver"
+						id="b4cc75e6-006d-4ce3-88b0-6d73c860a367"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST589_UsersCanEditAnActionSetsIfTheyHaveRightsToAllActionTypesWithinTheSet"
+					id="812896e9-750b-4a0e-af89-1ea254109456">
+						<testmodule
+						name="TestCaseDriver"
+						id="b9957db0-6e3b-480a-9202-d4aa84c5dc1c"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -921,6 +1002,15 @@ reportlevel="Info;20">
 						type="UserCode"/>
 					</testcase>
 					<testcase
+					name="TST1512_DefaultSettingsOfTheFloorplan"
+					id="6b3985a7-3867-4f7e-8a07-0ca7e9b7c3cf">
+						<testmodule
+						name="TestCaseDriver"
+						id="890eafa8-38b7-40b0-97e5-cdf242456cc7"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
 					name="TST1114_ToDeleteAnAreaFromTheTreeInViews"
 					id="3970b372-40d8-4d37-a59a-52a62f74f204">
 						<testmodule
@@ -930,11 +1020,29 @@ reportlevel="Info;20">
 						type="UserCode"/>
 					</testcase>
 					<testcase
+					name="TST1112_EditAreaInTreeUnderViews"
+					id="45a6b869-20a8-4bab-98c0-e0b83b481ecd">
+						<testmodule
+						name="TestCaseDriver"
+						id="5484f9f0-53da-4e2b-a0cc-4fe4cc046501"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
 					name="TST1113_CopyAnExistingAreaAndCreateNewAreaInTheTreeOfView"
 					id="421c0901-e94e-4fd4-b332-329cd154dc11">
 						<testmodule
 						name="TestCaseDriver"
 						id="ea1d53e1-895a-4b44-80ef-cdfc9e8a28c9"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST1130_MoveDeviceFromNavigationTreetoAvailableDevices"
+					id="f8165d06-627d-4941-9662-5e3f0ec317d8">
+						<testmodule
+						name="TestCaseDriver"
+						id="7524f6b9-bfba-483b-aeb6-d887c48b2c27"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -953,6 +1061,24 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="e4fdfa4d-9744-4430-81e2-992fee8f629e"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST1131_ViewsMoveDevicesApartFromAllDevicesView"
+					id="d578208d-998d-403e-9324-b64b1d22d5f1">
+						<testmodule
+						name="TestCaseDriver"
+						id="e8c8c57f-41c0-4dd2-8bf3-798f3dc95127"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST1118_VerifyAreaNamesUnique"
+					id="f0f05f8a-1054-4719-98d8-5da99a2f2e60">
+						<testmodule
+						name="TestCaseDriver"
+						id="924e949b-b554-46f0-b208-16981f7ba7be"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -1004,7 +1130,18 @@ reportlevel="Info;20">
 						id="d038c979-0151-405b-846d-98d3cc5ecfcb"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
+					</testcase>	
+					
+					<testcase
+					name="TST1149_DisablingUsersOwnAccount"
+					id="a7e2dea6-fb52-4c87-9220-12c6296ed8a3">
+						<testmodule
+						name="TestCaseDriver"
+						id="85ddcd29-7a3b-49bc-9178-24f193d5b597"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
 					</testcase>
+					
 					<testcase
 					name="TST1020_NformG2AutoLogout"
 					id="be22a250-90e0-4fdc-a14f-395b5d0a5f1c">
@@ -1020,6 +1157,15 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="809d64fc-2639-4277-bd30-d8514e9fd8c9"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase	
+					name="TST832_InvoledAndRevokedDiscoverNewDevice"
+					id="ac6afc0c-e263-4f97-8565-6dbdb77bf56c">
+						<testmodule
+						name="TestCaseDriver"
+						id="5e43bc38-1923-4739-a5fa-4518dcb15235"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -1166,6 +1312,15 @@ reportlevel="Info;20">
 					name="TestCaseDriver"
 					id="42222f81-84ca-40d8-894e-0e4252f4693a"
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+				</testcase>
+				<testcase
+				name="TST1119_ExportDataLogHistoryForDevices"
+				id="67a85e2a-8994-4a9a-82dc-7f02dd1358b7">
+					<testmodule
+					name="TestCaseDriver"
+					id="c3d59ad6-6802-4b9d-8548-b0fddf910a5d"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
 			</testcase>
@@ -1203,11 +1358,38 @@ reportlevel="Info;20">
 					type="UserCode"/>
 				</testcase>
 				<testcase
+				name="TST1155_AlarmSeveritySliceColorOption"
+				id="e6021a62-13e4-4228-88e0-62e82af1da02">
+					<testmodule
+					name="TestCaseDriver"
+					id="149ac670-013a-4a05-8e55-b0bd025a7297"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
 				name="TST1063_DeviceGroupViews"
 				id="b8f87d82-cd31-407a-8701-f817d9481ea9">
 					<testmodule
 					name="TestCaseDriver"
 					id="dc8ca51f-fda2-42eb-9358-146f2222462b"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="TST782_ChangingDatePointValues"
+				id="5788a9bb-5ad5-4160-84bd-ac16881677f8">
+					<testmodule
+					name="TestCaseDriver"
+					id="d36918cd-ae4b-437e-a390-b102ddd3cec1"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="TST809_VerifyDeviceGadgetInformation"
+				id="37c9af92-9fea-4a67-8a15-de3d4f7599a0">
+					<testmodule
+					name="TestCaseDriver"
+					id="12af2811-0852-4346-a049-7cf049793905"
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
@@ -1250,6 +1432,10 @@ reportlevel="Info;20">
 			<testcase
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
+			id="15542ef7-bf90-431d-8e26-f8eb1c05a42e"/>
+			<testcase
+			id="1a1fc6f3-0e23-4656-8632-a8e4632abb42"/>
+			<testcase
 			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
 			<testcase
 			id="7c16e946-ce78-45d9-97db-e721132f7db7"/>
@@ -1257,6 +1443,20 @@ reportlevel="Info;20">
 			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
 			<testcase
 			id="df7edb2b-860c-49dc-9078-ff2dac2f7734"/>
+			<testcase
+			id="64d6f7ed-643a-4648-9121-b2dc1ea70268"/>
+			<testcase
+			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
+			<testcase
+			id="ac6afc0c-e263-4f97-8565-6dbdb77bf56c"/>
+			<testcase
+			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
+			<testcase
+			id="812896e9-750b-4a0e-af89-1ea254109456"/>
+			<testcase
+			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
+			<testcase
+			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

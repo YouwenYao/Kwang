@@ -1778,7 +1778,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,nativewindow">
-						/form[@title='&#39068;&#33394;' or @title='Color']/button[@text='&#21462;&#28040;' or @text='Cancle']
+						/form[@title='&#39068;&#33394;' or @title='Color']/button[@text='Cancel']
 					</item>
 					<item
 					name="BaseColorTable"
@@ -1899,6 +1899,22 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					capname="button"
 					addcaps="button,accessible">
 						/form[@title='&#39068;&#33394;' or @title='Color']/titlebar/button[@accessiblename='&#20851;&#38381;']
+					</item>
+					<item
+					name="DefineCustomColors"
+					id="097e80d3-1e7d-42e6-a073-b03ddaaa5bf1"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,nativewindow">
+						/form[@title='&#39068;&#33394;' or @title='Color']/button[@text='&amp;Define Custom Colors &gt;&gt;']
+					</item>
+					<item
+					name="AddToCustomColors"
+					id="97c93336-0623-4be6-acde-a329b2bde145"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,nativewindow">
+						/form[@title='&#39068;&#33394;' or @title='Color']/button[@text='&amp;Add to Custom Colors']
 					</item>
 					<basepath>
 						/form[@title='&#39068;&#33394;' or @title='Color']
@@ -3946,7 +3962,7 @@ bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
 						/form[@controlname='LxGroupDlg']/container[@controlname='m_tableLayoutPnl']/container[@controlname='m_manageDevicesGrp']/checkbox[@controlname='m_cfgDataLogChk']
 					</item>
 					<item
-					name="Configure_devicea"
+					name="Configure_devices"
 					id="4dfe76ef-937b-4a74-88e6-73375c8bdc52"
 					searchtimeout="30000ms"
 					capname="checkbox"
@@ -4122,6 +4138,36 @@ tNxYTlOOPw1Z/tRd9MN4fhnagmhvB+UztucHQ+gJCsCxezuPt2xGERePuqF7NlTmLpSmZ9yueUqh
 oYNcXTvlta1eQG1RMaUSGcVxchRiOfmx8VTcUnLT4kJjB5UVChvh8gM4qweJGi4pm/6eA9+B8tyz
 asfJM0NmDaToIFYFJxQ/OHzVzbm8uoUBMvUoiVqIKYHI/O8cyp4gJO0V+xMcJGffXxgQnvmE0Au9
 BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
+					</icon>
+				</appfolder>
+				<appfolder
+				name="FormAccountDisabled"
+				id="c543090f-3bb7-4e0b-b52c-8011043267e7"
+				searchtimeout="30000ms"
+				capname="form"
+				addcaps="form,nativewindow"
+				isrooted="True"
+				usecache="True">
+					<item
+					name="OK"
+					id="fb570ccb-3bb3-4fc1-9bf5-6d444a2d3a3b"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,nativewindow">
+						/form[@title='Account Disabled']/button[@text='OK']
+					</item>
+					<basepath>
+						/form[@title='Account Disabled']
+					</basepath>
+					<icon>
+						iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAATpJREFU
+OE9jYBh04NjpY/8VVz0H4++vn/9HdqBXU89/xbat/7O7pqCIo3hiyqa9cAOWLlr6//ljiCHXrl/7
+b9i2FCwXNW8vbgMoChLD1Jb/lqFR/0E0VhxbDBYHWQLyimVmMapLQJJBk7b+T972HCeGGwD0imEu
+xDA4AElmz9r7v+Xw+/9OlUv/c4RCsIBr9f/qXffA4jADjh0/9v/5/WuYBrQs2/t/6eX3/4Mq56AY
+MOf4c7A4zAC4rdmV2f+j2qrBJoEk56w79v/Y/e//915//z+qdul/p9wpYD4MYxigCFQEihqYAUvX
+bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
+/g6Mnilw22GuAAXk1n3naJSAKEp9lGoGANguDmDQlTsrAAAAAElFTkSuQmCC
 					</icon>
 				</appfolder>
 			</folder>
@@ -5109,6 +5155,14 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					capname="text"
 					addcaps="text,control,nativewindow">
 						/form[@controlname='LxActionRunCmdDlg']/container[@controlname='m_timeoutNbx']/container/text[@controlname='upDownEdit']
+					</item>
+					<item
+					name="triangle"
+					id="d974c9c6-c0be-42dc-bb26-6d2d6ae0ec67"
+					searchtimeout="30000ms"
+					capname="container"
+					addcaps="container,control,nativewindow">
+						/form[@controlname='LxActionRunCmdDlg']/container[@controlname='m_argumentsTbx']/container[@controlname='m_taskMenu']
 					</item>
 					<basepath>
 						/form[@controlname='LxActionRunCmdDlg']
