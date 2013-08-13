@@ -2906,19 +2906,19 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 				usecache="True">
 					<item
 					name="Yes"
-					id="c20eee86-1b3e-446d-94c6-84f2be8d1224"
+					id="96fa039b-149e-4a7c-a649-028a768e18e3"
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,nativewindow">
-						/form[@title='Confirm License Delete']/button[@text='&#26159;(&amp;Y)' or @text='Yes']
+						/form[@title='Confirm License Delete']/button[@text='&amp;Yes']
 					</item>
 					<item
 					name="No"
-					id="907c94de-25cf-44a7-8c19-31e08034f5f5"
+					id="dbcd79b4-8dc1-4159-adf8-3fee7a8bc8aa"
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,nativewindow">
-						/form[@title='Confirm License Delete']/button[@text='&#21542;(&amp;N)' or @text='No']
+						/form[@title='Confirm License Delete']/button[@text='&amp;No']
 					</item>
 					<basepath>
 						/form[@title='Confirm License Delete']

@@ -500,6 +500,10 @@
       <id>83f60574-9352-420b-a2ef-bd5e5b556983</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST562_VerifyShutdownClientLicenseCount.xlsx">
+      <id>8c8a750f-b70c-49ef-827e-2543b6c7ee9b</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\TST568_CheckNewActionsTypeInActionSetWindowForPowerUsersRights.xlsx">
       <id>1381d5e0-16f1-4e11-82b8-deef25d93fa7</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

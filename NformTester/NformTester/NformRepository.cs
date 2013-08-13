@@ -9216,8 +9216,8 @@ namespace NformTester
                     base("FormConfirm_License_Delete", "/form[@title='Confirm License Delete']", parentFolder, 30000, true, "59e3fef5-2eac-4eda-b75b-2e1d789f8de4", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "59e3fef5-2eac-4eda-b75b-2e1d789f8de4");
-                _yesInfo = new RepoItemInfo(this, "Yes", "button[@text='是(&Y)' or @text='Yes']", 30000, null, "c20eee86-1b3e-446d-94c6-84f2be8d1224");
-                _noInfo = new RepoItemInfo(this, "No", "button[@text='否(&N)' or @text='No']", 30000, null, "907c94de-25cf-44a7-8c19-31e08034f5f5");
+                _yesInfo = new RepoItemInfo(this, "Yes", "button[@text='&Yes']", 30000, null, "96fa039b-149e-4a7c-a649-028a768e18e3");
+                _noInfo = new RepoItemInfo(this, "No", "button[@text='&No']", 30000, null, "dbcd79b4-8dc1-4159-adf8-3fee7a8bc8aa");
             }
 
             /// <summary>
@@ -9247,7 +9247,7 @@ namespace NformTester
             /// <summary>
             /// The Yes item.
             /// </summary>
-            [RepositoryItem("c20eee86-1b3e-446d-94c6-84f2be8d1224")]
+            [RepositoryItem("96fa039b-149e-4a7c-a649-028a768e18e3")]
             public virtual Ranorex.Button Yes
             {
                 get
@@ -9259,7 +9259,7 @@ namespace NformTester
             /// <summary>
             /// The Yes item info.
             /// </summary>
-            [RepositoryItemInfo("c20eee86-1b3e-446d-94c6-84f2be8d1224")]
+            [RepositoryItemInfo("96fa039b-149e-4a7c-a649-028a768e18e3")]
             public virtual RepoItemInfo YesInfo
             {
                 get
@@ -9271,7 +9271,7 @@ namespace NformTester
             /// <summary>
             /// The No item.
             /// </summary>
-            [RepositoryItem("907c94de-25cf-44a7-8c19-31e08034f5f5")]
+            [RepositoryItem("dbcd79b4-8dc1-4159-adf8-3fee7a8bc8aa")]
             public virtual Ranorex.Button No
             {
                 get
@@ -9283,7 +9283,7 @@ namespace NformTester
             /// <summary>
             /// The No item info.
             /// </summary>
-            [RepositoryItemInfo("907c94de-25cf-44a7-8c19-31e08034f5f5")]
+            [RepositoryItemInfo("dbcd79b4-8dc1-4159-adf8-3fee7a8bc8aa")]
             public virtual RepoItemInfo NoInfo
             {
                 get
