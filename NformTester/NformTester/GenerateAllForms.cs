@@ -510,7 +510,7 @@ namespace NformTester
 			
 			generateFormValDependList("test");
 			
-			replaceAllValDependList("test");
+			// replaceAllValDependList("test");
 			
         	MessageBox.Show("Finished!");
         }

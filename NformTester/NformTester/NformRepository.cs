@@ -989,7 +989,6 @@ namespace NformTester
             RepoItemInfo _alarms_tableInfo;
             RepoItemInfo _all_alarms_tableInfo;
             RepoItemInfo _acknowledgeInfo;
-            RepoItemInfo _close_alarmsInfo;
             RepoItemInfo _detailsInfo;
             RepoItemInfo _treeitemups_10_146_85_6Info;
             RepoItemInfo _parametrics_device_treeInfo;
@@ -1030,6 +1029,7 @@ namespace NformTester
             RepoItemInfo _newgroupInfo;
             RepoItemInfo _receptaclesInfo;
             RepoItemInfo _shutdownclientsInfo;
+            RepoItemInfo _close_alarmsInfo;
 
             /// <summary>
             /// Creates a new FormMain  folder.
@@ -1126,7 +1126,6 @@ namespace NformTester
                 _alarms_tableInfo = new RepoItemInfo(this, "Alarms_table", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxViewerRhsMgr']/tabpagelist/tabpage[@controlname='m_areaAlarmsPage']/container[@controlname='m_areaAlarmsDisplay']/table[@controlname='m_dataGridView']", 30000, null, "381ef1c8-928f-456c-b5de-d8b3e1043d82");
                 _all_alarms_tableInfo = new RepoItemInfo(this, "All_alarms_table", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/table[@controlname='m_dataGridView']", 30000, null, "a388747f-f623-4ba7-a785-18c33f8550b4");
                 _acknowledgeInfo = new RepoItemInfo(this, "Acknowledge", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/toolbar/button[@controlname='m_acknowledgeBtn']", 30000, null, "1accbafb-387d-473d-bb41-169454e64edb");
-                _close_alarmsInfo = new RepoItemInfo(this, "Close_alarms", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/toolbar/button[@controlname='m_closeBtn']", 30000, null, "d970a229-167e-4b8a-9122-64c63db67702");
                 _detailsInfo = new RepoItemInfo(this, "Details", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/toolbar/button[@controlname='m_detailsBtn']", 30000, null, "4abd4f4a-6d78-44e6-becb-5ce38dc47592");
                 _treeitemups_10_146_85_6Info = new RepoItemInfo(this, "TreeItemUPS_10_146_85_6", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel1']/tree/tree/treeitem/treeitem[@accessiblename='UPS_10.146.85.6']", 30000, null, "7b922a92-eb47-43d8-ab5f-8878373f8d21");
                 _parametrics_device_treeInfo = new RepoItemInfo(this, "Parametrics_device_tree", ".//tree[@accessiblerole='Outline']", 30000, null, "040131bd-520f-4944-b84b-fa22d0bcfa8e");
@@ -1167,6 +1166,7 @@ namespace NformTester
                 _newgroupInfo = new RepoItemInfo(this, "NewGroup", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxVgViewerRhsMgr']/tabpagelist/tabpage[@controlname='m_parametricDataTab']/container[@controlname='LxVgGenericGrpDisplay']/container/link/text/link[@accessiblename='New Group']", 30000, null, "9cf60843-2396-4327-8f8f-379d5b2284ab");
                 _receptaclesInfo = new RepoItemInfo(this, "Receptacles", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxVgViewerRhsMgr']/tabpagelist/tabpage[@controlname='m_parametricDataTab']/container[@controlname='LxVgRcpGrpDisplay']/container[@controlname='m_rcpGrid']/table[@controlname='m_receptaclesGridView']", 30000, null, "39474286-765e-4858-a3b4-cef51c93ee95");
                 _shutdownclientsInfo = new RepoItemInfo(this, "ShutdownClients", "menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Configure']/menuitem[@accessiblename='Shutdown Clients...']", 30000, null, "29c24860-83c1-49f0-90b4-a941ba2986ff");
+                _close_alarmsInfo = new RepoItemInfo(this, "Close_alarms", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/toolbar/button[@controlname='m_closeBtn']", 30000, null, "5315992a-4762-4c34-9c3e-f5e75196b3a5");
             }
 
             /// <summary>
@@ -3306,30 +3306,6 @@ namespace NformTester
             }
 
             /// <summary>
-            /// The Close_alarms item.
-            /// </summary>
-            [RepositoryItem("d970a229-167e-4b8a-9122-64c63db67702")]
-            public virtual Ranorex.Button Close_alarms
-            {
-                get
-                {
-                    return _close_alarmsInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Close_alarms item info.
-            /// </summary>
-            [RepositoryItemInfo("d970a229-167e-4b8a-9122-64c63db67702")]
-            public virtual RepoItemInfo Close_alarmsInfo
-            {
-                get
-                {
-                    return _close_alarmsInfo;
-                }
-            }
-
-            /// <summary>
             /// The Details item.
             /// </summary>
             [RepositoryItem("4abd4f4a-6d78-44e6-becb-5ce38dc47592")]
@@ -4286,6 +4262,30 @@ namespace NformTester
                 get
                 {
                     return _shutdownclientsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Close_alarms item.
+            /// </summary>
+            [RepositoryItem("5315992a-4762-4c34-9c3e-f5e75196b3a5")]
+            public virtual Ranorex.Button Close_alarms
+            {
+                get
+                {
+                    return _close_alarmsInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Close_alarms item info.
+            /// </summary>
+            [RepositoryItemInfo("5315992a-4762-4c34-9c3e-f5e75196b3a5")]
+            public virtual RepoItemInfo Close_alarmsInfo
+            {
+                get
+                {
+                    return _close_alarmsInfo;
                 }
             }
         }
@@ -13053,6 +13053,7 @@ namespace NformTester
             NformRepositoryFolders.FormForward_Trap_Action_PropertiesAppFolder _formforward_trap_action_properties;
             NformRepositoryFolders.FormMap_ActionsAppFolder _formmap_actions;
             NformRepositoryFolders.FormConfirmActionSetDeleteAppFolder _formconfirmactionsetdelete;
+            NformRepositoryFolders.FormEMailActionPropertiesLAppFolder _formemailactionpropertiesl;
 
             /// <summary>
             /// Creates a new ActionSetsWindow  folder.
@@ -13076,6 +13077,7 @@ namespace NformTester
                 _formforward_trap_action_properties = new NformRepositoryFolders.FormForward_Trap_Action_PropertiesAppFolder(parentFolder);
                 _formmap_actions = new NformRepositoryFolders.FormMap_ActionsAppFolder(parentFolder);
                 _formconfirmactionsetdelete = new NformRepositoryFolders.FormConfirmActionSetDeleteAppFolder(parentFolder);
+                _formemailactionpropertiesl = new NformRepositoryFolders.FormEMailActionPropertiesLAppFolder(parentFolder);
             }
 
             /// <summary>
@@ -13220,6 +13222,15 @@ namespace NformTester
             public virtual NformRepositoryFolders.FormConfirmActionSetDeleteAppFolder FormConfirmActionSetDelete
             {
                 get { return _formconfirmactionsetdelete; }
+            }
+
+            /// <summary>
+            /// The FormEMailActionPropertiesL folder.
+            /// </summary>
+            [RepositoryFolder("d631d317-3371-4701-9738-7e778a47f129")]
+            public virtual NformRepositoryFolders.FormEMailActionPropertiesLAppFolder FormEMailActionPropertiesL
+            {
+                get { return _formemailactionpropertiesl; }
             }
         }
 
@@ -14714,7 +14725,7 @@ namespace NformTester
                 _timeout_sec_downInfo = new RepoItemInfo(this, "Timeout_sec_down", "container[@controlname='m_timeoutNbx']/container/container/button[@accessiblename='Down']", 30000, null, "7aaa8eb7-69d5-4aad-ad29-d93621019d73");
                 _timeout_sec_upInfo = new RepoItemInfo(this, "Timeout_sec_up", "container[@controlname='m_timeoutNbx']/container/container/button[@accessiblename='Up']", 30000, null, "ce04124f-3680-4183-be58-10cb2e4d2541");
                 _timeout_sec_txtInfo = new RepoItemInfo(this, "Timeout_sec_txt", "container[@controlname='m_timeoutNbx']/container/text[@controlname='upDownEdit']", 30000, null, "6fc19ff8-ebe8-4aa7-98ff-68e1d44f2f70");
-                _okInfo = new RepoItemInfo(this, "OK", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']", 30000, null, "4b44889a-4ef0-42ce-9912-9f4592c4599e");
+                _okInfo = new RepoItemInfo(this, "OK", ".//button[@controlname='m_button2']", 30000, null, "4b44889a-4ef0-42ce-9912-9f4592c4599e");
                 _cancelInfo = new RepoItemInfo(this, "Cancel", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "eac6c3cb-0939-42c1-9f29-1ceb1263b9d2");
                 _helpInfo = new RepoItemInfo(this, "Help", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']", 30000, null, "9e81fa7c-b30b-4469-8964-0033f2f6127c");
                 _usersInfo = new RepoItemInfo(this, "Users", "container[@controlname='m_toGrp']/text[@controlname='m_toUsersTbx']/text[@accessiblename='Nform users:']", 30000, null, "a741689d-f7f3-4379-aca8-c1fbf1b1df64");
@@ -15364,8 +15375,8 @@ namespace NformTester
                     base("FormMissing_Information", "/form[@title='Missing Information']", parentFolder, 30000, true, "85682565-1525-4d68-9159-c4969e344782", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "85682565-1525-4d68-9159-c4969e344782");
-                _yesInfo = new RepoItemInfo(this, "Yes", "button[@text='是(&Y)' or @text='Yes']", 30000, null, "d6c677dd-101d-46b9-a066-21027e8a9467");
-                _noInfo = new RepoItemInfo(this, "No", "button[@text='否(&N)' or @text='No']", 30000, null, "425dcf0a-2067-4bd7-9d35-be85469d2179");
+                _yesInfo = new RepoItemInfo(this, "Yes", "button[@text='&Yes']", 30000, null, "d6c677dd-101d-46b9-a066-21027e8a9467");
+                _noInfo = new RepoItemInfo(this, "No", "button[@text='&No']", 30000, null, "425dcf0a-2067-4bd7-9d35-be85469d2179");
             }
 
             /// <summary>
@@ -17105,6 +17116,8 @@ namespace NformTester
             RepoItemInfo _copyInfo;
             RepoItemInfo _editInfo;
             RepoItemInfo _deleteInfo;
+            RepoItemInfo _countInfo;
+            RepoItemInfo _remainInfo;
 
             /// <summary>
             /// Creates a new FormShutdown_Clients  folder.
@@ -17120,6 +17133,8 @@ namespace NformTester
                 _copyInfo = new RepoItemInfo(this, "Copy", "container[@controlname='m_biListGrp']/container/container/button[@controlname='m_button4']", 30000, null, "eb0dde8e-a316-4178-88a3-64f2ab982e1a");
                 _editInfo = new RepoItemInfo(this, "Edit", "container[@controlname='m_biListGrp']/container/container/button[@controlname='m_button5']", 30000, null, "9a12b713-78b2-45c8-9498-8efaeab8a55f");
                 _deleteInfo = new RepoItemInfo(this, "Delete", "container[@controlname='m_biListGrp']/container/container/button[@controlname='m_button6']", 30000, null, "359c4a86-0de7-4472-b4e5-f916f25995e9");
+                _countInfo = new RepoItemInfo(this, "Count", "container[@controlname='m_biListGrp']/text[@controlname='m_countLbl']", 30000, null, "49d3274d-8823-4787-adf3-ab8de602279c");
+                _remainInfo = new RepoItemInfo(this, "Remain", "container[@controlname='m_biListGrp']/text[@controlname='m_remLicLbl']", 30000, null, "c691dd28-0468-4cef-9b69-6ef8274a4eb8");
             }
 
             /// <summary>
@@ -17311,6 +17326,54 @@ namespace NformTester
                 get
                 {
                     return _deleteInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Count item.
+            /// </summary>
+            [RepositoryItem("49d3274d-8823-4787-adf3-ab8de602279c")]
+            public virtual Ranorex.Text Count
+            {
+                get
+                {
+                    return _countInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Count item info.
+            /// </summary>
+            [RepositoryItemInfo("49d3274d-8823-4787-adf3-ab8de602279c")]
+            public virtual RepoItemInfo CountInfo
+            {
+                get
+                {
+                    return _countInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Remain item.
+            /// </summary>
+            [RepositoryItem("c691dd28-0468-4cef-9b69-6ef8274a4eb8")]
+            public virtual Ranorex.Text Remain
+            {
+                get
+                {
+                    return _remainInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Remain item info.
+            /// </summary>
+            [RepositoryItemInfo("c691dd28-0468-4cef-9b69-6ef8274a4eb8")]
+            public virtual RepoItemInfo RemainInfo
+            {
+                get
+                {
+                    return _remainInfo;
                 }
             }
         }
@@ -18389,6 +18452,74 @@ namespace NformTester
                 get
                 {
                     return _closeInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The FormEMailActionPropertiesLAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("d631d317-3371-4701-9738-7e778a47f129")]
+        public partial class FormEMailActionPropertiesLAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _okInfo;
+
+            /// <summary>
+            /// Creates a new FormEMailActionPropertiesL  folder.
+            /// </summary>
+            public FormEMailActionPropertiesLAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("FormEMailActionPropertiesL", "/form[@title='E-mail Action Properties' and @processname='NformViewer' and @class='#32770']", parentFolder, 30000, true, "d631d317-3371-4701-9738-7e778a47f129", "")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "d631d317-3371-4701-9738-7e778a47f129");
+                _okInfo = new RepoItemInfo(this, "OK", "button[@text='OK']", 30000, null, "f1bf7725-6108-47e4-a795-c96bde6deb45");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("d631d317-3371-4701-9738-7e778a47f129")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("d631d317-3371-4701-9738-7e778a47f129")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OK item.
+            /// </summary>
+            [RepositoryItem("f1bf7725-6108-47e4-a795-c96bde6deb45")]
+            public virtual Ranorex.Button OK
+            {
+                get
+                {
+                    return _okInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OK item info.
+            /// </summary>
+            [RepositoryItemInfo("f1bf7725-6108-47e4-a795-c96bde6deb45")]
+            public virtual RepoItemInfo OKInfo
+            {
+                get
+                {
+                    return _okInfo;
                 }
             }
         }
