@@ -188,7 +188,6 @@
       <id>f5169116-8127-4447-849a-4c7f0a25c6f2</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-
     <None Include="Keywordscripts\TST1095_ExportAllLoggedDataPoint.xlsx">
       <id>a46827a2-b4d0-4e1b-868b-33921c7c9de8</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -197,11 +196,10 @@
       <id>9c7552b4-1cab-43a1-95c8-12b0d4c0302e</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-
     <None Include="Keywordscripts\TST1113_CopyAnExistingAreaAndCreateNewAreaInTheTreeOfView.xlsx">
       <id>ce6530e6-fd86-44a2-aafe-93d3fe283fa5</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-  	</None>
+    </None>
     <None Include="Keywordscripts\TST1077_VerifyThatNoUnhandledExceptionInReadDataActionPropertiesWindow.xlsx">
       <id>2729206f-1dc3-4487-bbac-05b8176ca6a5</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -210,7 +208,6 @@
       <id>d69f45a3-e78b-4381-a4ca-4c4754429cd7</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-
     <None Include="Keywordscripts\TST1104_ExportActionHistoryForDeviceAlarms.xlsx">
       <id>63f8dd2d-99ae-4829-81da-a5d2de30df58</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -219,12 +216,10 @@
       <id>2eb7e159-0551-4651-b277-594ebbe38636</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-
     <None Include="Keywordscripts\TST1112_EditAreaInTreeUnderViews.xlsx">
       <id>bbc0941f-d2be-421d-8a94-9bacdbe0b73e</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-
     <None Include="Keywordscripts\TST1118_VerifyAreaNamesUnique.xlsx">
       <id>26b6f8da-5986-4610-b5d8-dfdc8a6979f9</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -355,7 +350,7 @@
     </None>
     <None Include="Keywordscripts\TST1553_MakingChangesOkButtonDisabled.xlsx">
       <id>4a9b94b8-070d-4367-9a25-aa4be39de1db</id>
- 	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\TST1512_DefaultSettingsOfTheFloorplan.xlsx">
       <id>623c5e02-49b5-4b0a-b037-f20ea7120545</id>
@@ -595,7 +590,7 @@
     </None>
     <None Include="Keywordscripts\TST832_InvoledAndRevokedDiscoverNewDevice.xlsx">
       <id>4a970d50-f942-4937-a2bc-617d7f072cf2</id>
-	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\TST809_VerifyDeviceGadgetInformation.xlsx">
       <id>43b03315-f525-454f-829e-07f78ddb7531</id>
