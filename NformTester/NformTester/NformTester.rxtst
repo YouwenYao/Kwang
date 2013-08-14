@@ -1367,6 +1367,15 @@ reportlevel="Info;20">
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
+				<testcase
+				name="TST836_ExportActionHistoryForAll_Greater50MB"
+				id="07d3bf4b-bc53-40ae-84f0-3e608a1016ed">
+					<testmodule
+					name="TestCaseDriver"
+					id="d0ba9891-1c84-4416-9088-a9b9af7bfa82"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
 			</testcase>
 			<testcase
 			name="800._Help2"
@@ -1474,15 +1483,13 @@ reportlevel="Info;20">
 		<testconfiguration
 		name="TestRun">
 			<testcase
+			id="07d3bf4b-bc53-40ae-84f0-3e608a1016ed"/>
+			<testcase
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
 			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
 			<testcase
-			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
-			<testcase
-			id="9e61d856-cb7a-42ec-ae33-4de82b415f17"/>
-			<testcase
-			id="bafe4fe5-8fa6-451a-9a0f-00b970fd262c"/>
+			id="97d8e90e-39f2-4c80-b3df-7ff4e4941dfa"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

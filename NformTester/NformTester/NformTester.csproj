@@ -608,6 +608,10 @@
       <id>c8c82198-869a-4484-9ab4-f4a0fff674f2</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST836_ExportActionHistoryForAll_Greater50MB.xlsx">
+      <id>e9802634-d4ff-45ab-a4c8-0cd52712d950</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\TST923_CheckFunctionalityOfGadgetSetupDialogFilterByDeviceType.xlsx">
       <id>6e252692-4c8c-45bd-9be6-13f3d3f00e14</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
