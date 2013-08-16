@@ -1286,7 +1286,17 @@ reportlevel="Info;20">
 				</testcase>
 				<testcase
 				name="600.070._Change_Password2"
-				id="36394186-13ed-405e-a63c-f06444713388"/>
+				id="36394186-13ed-405e-a63c-f06444713388">
+					<testcase
+					name="TST1003_ChangePassword_AdditionalInfo"
+					id="afd99791-27de-4356-81fa-dab1d2a3ba43">
+						<testmodule
+						name="TestCaseDriver"
+						id="3388d6ae-c2a0-40b3-a5b8-b6784aa876bb"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+				</testcase>
 				<testcase
 				name="600.080._User_Options2"
 				id="a9a8f852-bfa2-49a4-adef-b36a6491793d">
@@ -1483,13 +1493,15 @@ reportlevel="Info;20">
 		<testconfiguration
 		name="TestRun">
 			<testcase
-			id="07d3bf4b-bc53-40ae-84f0-3e608a1016ed"/>
-			<testcase
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
 			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
 			<testcase
-			id="97d8e90e-39f2-4c80-b3df-7ff4e4941dfa"/>
+			id="36394186-13ed-405e-a63c-f06444713388"/>
+			<testcase
+			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
+			<testcase
+			id="afd99791-27de-4356-81fa-dab1d2a3ba43"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

@@ -152,6 +152,10 @@
       <id>58228dcc-b42a-4bb0-8d06-d3ccc62eefff</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST1003_ChangePassword_AdditionalInfo.xlsx">
+      <id>6bf2a9f2-0d55-4563-8c74-e3d0fd0586f8</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\TST1009_Configuredatapointsforadevice.xlsx">
       <id>103be776-11b6-4ccf-b809-d4b624c9fce1</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
