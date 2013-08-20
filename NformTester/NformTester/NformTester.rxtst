@@ -1109,6 +1109,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST1151_CopyLogicalGroupUnderViews"
+					id="f88f8457-1fdd-4494-94b7-746a32ac3702">
+						<testmodule
+						name="TestCaseDriver"
+						id="0d74a8a2-3815-411d-90bb-90dc906d6761"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.040._Users_and_Groups2"
@@ -1508,9 +1517,9 @@ reportlevel="Info;20">
 			<testcase
 			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
 			<testcase
-			id="456fb353-f7f0-47f5-98ee-5302294e9f01"/>
-			<testcase
 			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
+			<testcase
+			id="f88f8457-1fdd-4494-94b7-746a32ac3702"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

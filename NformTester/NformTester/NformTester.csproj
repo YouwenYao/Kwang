@@ -276,6 +276,10 @@
       <id>76b98dbd-c7a6-471d-90c7-1638f2f5e51d</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST1151_CopyLogicalGroupUnderViews.xlsx">
+      <id>88770c4e-e33d-4250-82aa-288bca737092</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\TST1155_AlarmSeveritySliceColorOption.xlsx">
       <id>bfbb020b-2539-4a96-a233-aa3d89263ea3</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
