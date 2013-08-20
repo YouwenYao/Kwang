@@ -280,6 +280,10 @@
       <id>bfbb020b-2539-4a96-a233-aa3d89263ea3</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST1161_ToAddInfoLinksInLogicalGroupUnderViews.xlsx">
+      <id>bde5f74d-2dce-4fd8-8ac4-597f54822a20</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST1172_EditDeviceAlarmName.xlsx">
       <id>3913c813-3ca3-4c5e-b1c9-6b9967dcb3fe</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
