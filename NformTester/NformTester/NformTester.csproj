@@ -248,6 +248,10 @@
       <id>f6be7518-347c-43a3-958a-9ea0b78ca72b</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST1126_VerifyExternalUserOptionsWithDifferentLanguageOption.xlsx">
+      <id>af912b8c-0783-427f-8667-17e55cc9224f</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST1129_DataLoggingForDeviceDataPoints.xlsx">
       <id>c0f3e6a8-c762-402e-86ad-1d086ef835e1</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

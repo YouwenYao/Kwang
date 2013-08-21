@@ -1212,6 +1212,14 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					addcaps="button,control,nativewindow">
 						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/toolbar/button[@controlname='m_closeBtn']
 					</item>
+					<item
+					name="CloseApp"
+					id="c61f17b1-cbfc-431a-843c-a55a6b44876a"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxViewerFrame']/titlebar/button[@accessiblename='Close']
+					</item>
 					<basepath>
 						/form[@controlname='LxViewerFrame']
 					</basepath>

@@ -1336,6 +1336,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST1126_VerifyExternalUserOptionsWithDifferentLanguageOption"
+					id="e35cea2e-5fda-49a9-83a8-c2cf0648940d">
+						<testmodule
+						name="TestCaseDriver"
+						id="f19c1c80-e38c-4bab-8068-065c06488970"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 			</testcase>
 			<testcase
@@ -1513,13 +1522,13 @@ reportlevel="Info;20">
 			<testcase
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
-			id="16b2d828-575c-4faf-8f7d-74b92c41fc12"/>
-			<testcase
 			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
 			<testcase
 			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
 			<testcase
-			id="f88f8457-1fdd-4494-94b7-746a32ac3702"/>
+			id="a9a8f852-bfa2-49a4-adef-b36a6491793d"/>
+			<testcase
+			id="e35cea2e-5fda-49a9-83a8-c2cf0648940d"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

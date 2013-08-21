@@ -1030,6 +1030,7 @@ namespace NformTester
             RepoItemInfo _receptaclesInfo;
             RepoItemInfo _shutdownclientsInfo;
             RepoItemInfo _close_alarmsInfo;
+            RepoItemInfo _closeappInfo;
 
             /// <summary>
             /// Creates a new FormMain  folder.
@@ -1167,6 +1168,7 @@ namespace NformTester
                 _receptaclesInfo = new RepoItemInfo(this, "Receptacles", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxVgViewerRhsMgr']/tabpagelist/tabpage[@controlname='m_parametricDataTab']/container[@controlname='LxVgRcpGrpDisplay']/container[@controlname='m_rcpGrid']/table[@controlname='m_receptaclesGridView']", 30000, null, "39474286-765e-4858-a3b4-cef51c93ee95");
                 _shutdownclientsInfo = new RepoItemInfo(this, "ShutdownClients", "menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Configure']/menuitem[@accessiblename='Shutdown Clients...']", 30000, null, "29c24860-83c1-49f0-90b4-a941ba2986ff");
                 _close_alarmsInfo = new RepoItemInfo(this, "Close_alarms", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/toolbar/button[@controlname='m_closeBtn']", 30000, null, "5315992a-4762-4c34-9c3e-f5e75196b3a5");
+                _closeappInfo = new RepoItemInfo(this, "CloseApp", "titlebar/button[@accessiblename='Close']", 30000, null, "c61f17b1-cbfc-431a-843c-a55a6b44876a");
             }
 
             /// <summary>
@@ -4286,6 +4288,30 @@ namespace NformTester
                 get
                 {
                     return _close_alarmsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CloseApp item.
+            /// </summary>
+            [RepositoryItem("c61f17b1-cbfc-431a-843c-a55a6b44876a")]
+            public virtual Ranorex.Button CloseApp
+            {
+                get
+                {
+                    return _closeappInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CloseApp item info.
+            /// </summary>
+            [RepositoryItemInfo("c61f17b1-cbfc-431a-843c-a55a6b44876a")]
+            public virtual RepoItemInfo CloseAppInfo
+            {
+                get
+                {
+                    return _closeappInfo;
                 }
             }
         }
