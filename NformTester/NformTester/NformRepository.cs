@@ -407,7 +407,6 @@ namespace NformTester
             RepoItemInfo _usernameInfo;
             RepoItemInfo _passwordInfo;
             RepoItemInfo _loginInfo;
-            RepoItemInfo _usernamelblInfo;
             RepoItemInfo _servercomboInfo;
             RepoItemInfo _aboutInfo;
             RepoItemInfo _exitInfo;
@@ -419,10 +418,9 @@ namespace NformTester
                     base("FormLogin_to_LiebertR_Nform", "/form[@controlname='LxLoginDlg']", parentFolder, 30000, true, "4ce09782-e085-417b-9346-b537ce92655a", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "4ce09782-e085-417b-9346-b537ce92655a");
-                _usernameInfo = new RepoItemInfo(this, "Username", "text[@controlname='m_userNameTbx']/text[@accessiblename='User name:']", 30000, null, "283a1e6c-ede0-49ba-a7f7-5f7ca5a09a7d");
+                _usernameInfo = new RepoItemInfo(this, "Username", "text[@controlname='m_userNameTbx']", 30000, null, "283a1e6c-ede0-49ba-a7f7-5f7ca5a09a7d");
                 _passwordInfo = new RepoItemInfo(this, "Password", "text[@controlname='m_passwordTbx']/text[@accessiblename='Password:']", 30000, null, "0fd0d674-e40b-4dda-b51b-8b6501da7abd");
                 _loginInfo = new RepoItemInfo(this, "Login", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "b4232d74-f995-4276-9ccd-bc438afa72ad");
-                _usernamelblInfo = new RepoItemInfo(this, "UserNameLbl", "text[@controlname='m_userNameLbl']", 30000, null, "d48c4d65-da1d-48ca-9e82-dd2b10486898");
                 _servercomboInfo = new RepoItemInfo(this, "ServerCombo", "combobox[@controlname='m_serverCombo']", 30000, null, "00b76e4e-3e4a-4b48-92cc-e81982055e78");
                 _aboutInfo = new RepoItemInfo(this, "About", "button[@controlname='m_helpAboutBtn']", 30000, null, "d5c664a9-d158-4384-8c4c-c12ecefa190d");
                 _exitInfo = new RepoItemInfo(this, "Exit", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']", 30000, null, "d882145f-b1a4-412e-859e-18179cad95b1");
@@ -521,30 +519,6 @@ namespace NformTester
                 get
                 {
                     return _loginInfo;
-                }
-            }
-
-            /// <summary>
-            /// The UserNameLbl item.
-            /// </summary>
-            [RepositoryItem("d48c4d65-da1d-48ca-9e82-dd2b10486898")]
-            public virtual Ranorex.Text UserNameLbl
-            {
-                get
-                {
-                    return _usernamelblInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The UserNameLbl item info.
-            /// </summary>
-            [RepositoryItemInfo("d48c4d65-da1d-48ca-9e82-dd2b10486898")]
-            public virtual RepoItemInfo UserNameLblInfo
-            {
-                get
-                {
-                    return _usernamelblInfo;
                 }
             }
 
@@ -903,7 +877,6 @@ namespace NformTester
             RepoItemInfo _selfInfo;
             RepoItemInfo _applicationInfo;
             RepoItemInfo _viewInfo;
-            RepoItemInfo _configureInfo;
             RepoItemInfo _toolsInfo;
             RepoItemInfo _helpInfo;
             RepoItemInfo _dashboardInfo;
@@ -1031,6 +1004,9 @@ namespace NformTester
             RepoItemInfo _shutdownclientsInfo;
             RepoItemInfo _close_alarmsInfo;
             RepoItemInfo _closeappInfo;
+            RepoItemInfo _configureInfo;
+            RepoItemInfo _configure_itaInfo;
+            RepoItemInfo _useroption_itaInfo;
 
             /// <summary>
             /// Creates a new FormMain  folder.
@@ -1041,7 +1017,6 @@ namespace NformTester
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "a14fa27a-1c25-4983-9755-ae295c095173");
                 _applicationInfo = new RepoItemInfo(this, "Application", "menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Application']", 30000, null, "54764ee9-cee7-4c3f-8b50-28787768e0b7");
                 _viewInfo = new RepoItemInfo(this, "View", "menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='View']", 30000, null, "edcafbb5-ad2d-4dcc-a63e-2e8fd14fd328");
-                _configureInfo = new RepoItemInfo(this, "Configure", "menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Configure']", 30000, null, "186e2a13-a2e6-461c-b18b-8cca994adde9");
                 _toolsInfo = new RepoItemInfo(this, "Tools", "menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Tools']", 30000, null, "55e89d93-16d8-40b0-abbc-84661d5ce230");
                 _helpInfo = new RepoItemInfo(this, "Help", "menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Help']", 5000, null, "39b506e1-45fa-4b06-ad91-fe76d3e9e9fd");
                 _dashboardInfo = new RepoItemInfo(this, "Dashboard", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@accessiblename='DASHBOARD']", 30000, null, "8e159454-0b63-4ee5-91f4-cc52ac2fe951");
@@ -1169,6 +1144,9 @@ namespace NformTester
                 _shutdownclientsInfo = new RepoItemInfo(this, "ShutdownClients", "menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Configure']/menuitem[@accessiblename='Shutdown Clients...']", 30000, null, "29c24860-83c1-49f0-90b4-a941ba2986ff");
                 _close_alarmsInfo = new RepoItemInfo(this, "Close_alarms", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/toolbar/button[@controlname='m_closeBtn']", 30000, null, "5315992a-4762-4c34-9c3e-f5e75196b3a5");
                 _closeappInfo = new RepoItemInfo(this, "CloseApp", "titlebar/button[@accessiblename='Close']", 30000, null, "c61f17b1-cbfc-431a-843c-a55a6b44876a");
+                _configureInfo = new RepoItemInfo(this, "Configure", "menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Configure']", 30000, null, "10a8eb12-d4cd-4300-9c5f-10f816b31ed8");
+                _configure_itaInfo = new RepoItemInfo(this, "Configure_Ita", "menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Configura']", 30000, null, "e097dc65-e4e2-42db-9db1-9eff9f8df884");
+                _useroption_itaInfo = new RepoItemInfo(this, "UserOption_Ita", "menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Configura']/menuitem[@accessiblename='Opzioni utente...']", 30000, null, "2a759347-ec1a-4e14-ab7b-e3cc769116be");
             }
 
             /// <summary>
@@ -1240,30 +1218,6 @@ namespace NformTester
                 get
                 {
                     return _viewInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Configure item.
-            /// </summary>
-            [RepositoryItem("186e2a13-a2e6-461c-b18b-8cca994adde9")]
-            public virtual Ranorex.MenuItem Configure
-            {
-                get
-                {
-                    return _configureInfo.CreateAdapter<Ranorex.MenuItem>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Configure item info.
-            /// </summary>
-            [RepositoryItemInfo("186e2a13-a2e6-461c-b18b-8cca994adde9")]
-            public virtual RepoItemInfo ConfigureInfo
-            {
-                get
-                {
-                    return _configureInfo;
                 }
             }
 
@@ -4312,6 +4266,78 @@ namespace NformTester
                 get
                 {
                     return _closeappInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Configure item.
+            /// </summary>
+            [RepositoryItem("10a8eb12-d4cd-4300-9c5f-10f816b31ed8")]
+            public virtual Ranorex.MenuItem Configure
+            {
+                get
+                {
+                    return _configureInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Configure item info.
+            /// </summary>
+            [RepositoryItemInfo("10a8eb12-d4cd-4300-9c5f-10f816b31ed8")]
+            public virtual RepoItemInfo ConfigureInfo
+            {
+                get
+                {
+                    return _configureInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Configure_Ita item.
+            /// </summary>
+            [RepositoryItem("e097dc65-e4e2-42db-9db1-9eff9f8df884")]
+            public virtual Ranorex.MenuItem Configure_Ita
+            {
+                get
+                {
+                    return _configure_itaInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Configure_Ita item info.
+            /// </summary>
+            [RepositoryItemInfo("e097dc65-e4e2-42db-9db1-9eff9f8df884")]
+            public virtual RepoItemInfo Configure_ItaInfo
+            {
+                get
+                {
+                    return _configure_itaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UserOption_Ita item.
+            /// </summary>
+            [RepositoryItem("2a759347-ec1a-4e14-ab7b-e3cc769116be")]
+            public virtual Ranorex.MenuItem UserOption_Ita
+            {
+                get
+                {
+                    return _useroption_itaInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UserOption_Ita item info.
+            /// </summary>
+            [RepositoryItemInfo("2a759347-ec1a-4e14-ab7b-e3cc769116be")]
+            public virtual RepoItemInfo UserOption_ItaInfo
+            {
+                get
+                {
+                    return _useroption_itaInfo;
                 }
             }
         }
@@ -9454,6 +9480,8 @@ namespace NformTester
             RepoItemInfo _bring_app_to_foregroundcomboInfo;
             RepoItemInfo _flash_taskbarcomboInfo;
             RepoItemInfo _display_systray_popupcomboInfo;
+            RepoItemInfo _external_itaInfo;
+            RepoItemInfo _general_itaInfo;
 
             /// <summary>
             /// Creates a new FormUser_Options  folder.
@@ -9495,6 +9523,8 @@ namespace NformTester
                 _bring_app_to_foregroundcomboInfo = new RepoItemInfo(this, "Bring_app_to_foregroundCombo", "tabpagelist/tabpage[@controlname='m_visualTab']/combobox[@controlname='m_appToForeSevCombo']", 30000, null, "f6e2f5dd-c547-4465-9b7f-7c627fd762d4");
                 _flash_taskbarcomboInfo = new RepoItemInfo(this, "Flash_taskbarCombo", "tabpagelist/tabpage[@controlname='m_visualTab']/combobox[@controlname='m_flashTaskbarSevCombo']", 30000, null, "32392f51-e8ae-4495-8048-abb671b9b246");
                 _display_systray_popupcomboInfo = new RepoItemInfo(this, "Display_systray_popupCombo", "tabpagelist/tabpage[@controlname='m_visualTab']/combobox[@controlname='m_sysTrayPopupSevCombo']", 30000, null, "b61f2578-6843-4190-ad62-9f6b6e0100dc");
+                _external_itaInfo = new RepoItemInfo(this, "External_Ita", "tabpagelist/tabpage[@accessiblename='Esterno']", 30000, null, "56fda80f-e7b4-4d73-bb76-1bec3ce7456a");
+                _general_itaInfo = new RepoItemInfo(this, "General_Ita", "tabpagelist/tabpage[@accessiblename='Generale']", 30000, null, "4c42d047-3ab1-4eae-b500-a5ffc2247a29");
             }
 
             /// <summary>
@@ -10310,6 +10340,54 @@ namespace NformTester
                 get
                 {
                     return _display_systray_popupcomboInfo;
+                }
+            }
+
+            /// <summary>
+            /// The External_Ita item.
+            /// </summary>
+            [RepositoryItem("56fda80f-e7b4-4d73-bb76-1bec3ce7456a")]
+            public virtual Ranorex.TabPage External_Ita
+            {
+                get
+                {
+                    return _external_itaInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The External_Ita item info.
+            /// </summary>
+            [RepositoryItemInfo("56fda80f-e7b4-4d73-bb76-1bec3ce7456a")]
+            public virtual RepoItemInfo External_ItaInfo
+            {
+                get
+                {
+                    return _external_itaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The General_Ita item.
+            /// </summary>
+            [RepositoryItem("4c42d047-3ab1-4eae-b500-a5ffc2247a29")]
+            public virtual Ranorex.TabPage General_Ita
+            {
+                get
+                {
+                    return _general_itaInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The General_Ita item info.
+            /// </summary>
+            [RepositoryItemInfo("4c42d047-3ab1-4eae-b500-a5ffc2247a29")]
+            public virtual RepoItemInfo General_ItaInfo
+            {
+                get
+                {
+                    return _general_itaInfo;
                 }
             }
         }
