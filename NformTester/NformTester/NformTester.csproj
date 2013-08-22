@@ -588,6 +588,10 @@
       <id>f3e29d7e-bcee-4e75-b4b1-425a3a8fb238</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST735_UpdatedAlarmNameInMapActionsDialogWindow.xlsx">
+      <id>d6ca13cf-75de-4f50-b2c8-aa6a9ce995b6</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\TST744_MapActionsWindowWithoutAnyDevices.xlsx">
       <id>38a5e1d1-b5ab-4eab-b73e-a61e16df24f0</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

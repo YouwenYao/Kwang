@@ -1006,6 +1006,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST735_UpdatedAlarmNameInMapActionsDialogWindow"
+					id="cde3f4d9-6319-457f-9cbb-d9e4bed5b599">
+						<testmodule
+						name="TestCaseDriver"
+						id="fa83e5a9-600c-46d0-ae97-3d0c3c3817bd"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.030._Views2"
@@ -1526,9 +1535,9 @@ reportlevel="Info;20">
 			<testcase
 			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
 			<testcase
-			id="a9a8f852-bfa2-49a4-adef-b36a6491793d"/>
+			id="cde3f4d9-6319-457f-9cbb-d9e4bed5b599"/>
 			<testcase
-			id="e35cea2e-5fda-49a9-83a8-c2cf0648940d"/>
+			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
