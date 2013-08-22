@@ -4,8 +4,13 @@
 		<codegenfilechangeinfo
 		fileitemid="cd2e6476-08de-4490-bccc-a5ee732b8f1b"
 		changehash="848122649"
-		lastcodegentimestamp="130209180697349257"
+		lastcodegentimestamp="130163243235781250"
 		filelength="530755">
+			<codegenfilechangeinfo
+			fileitemid="be55ff5e-522d-4087-a441-30853af41aaa"
+			changehash="18446744072183163773"
+			lastcodegentimestamp="130163243235781250"
+			filelength="1450935"/>
 		</codegenfilechangeinfo>
 	</changestatecache>
 </projectusersettings>
