@@ -1015,6 +1015,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST709_ConfigureForwardTrapWithOtherPortNumber"
+					id="c64ca2d8-c1f8-4e9c-b79f-085b58f70f3a">
+						<testmodule
+						name="TestCaseDriver"
+						id="c04cc646-cbde-4685-a802-0a140ab199cc"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.030._Views2"
@@ -1527,18 +1536,7 @@ reportlevel="Info;20">
 	<testconfigurations
 	default="TestRun">
 		<testconfiguration
-		name="TestRun">
-			<testcase
-			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
-			<testcase
-			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
-			<testcase
-			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
-			<testcase
-			id="cde3f4d9-6319-457f-9cbb-d9e4bed5b599"/>
-			<testcase
-			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
-		</testconfiguration>
+		name="TestRun"/>
 	</testconfigurations>
 	<references>
 		<reference>

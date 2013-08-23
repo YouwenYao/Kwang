@@ -568,6 +568,10 @@
       <id>7fd32d74-b789-4f53-ba29-02430fee9029</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST709_ConfigureForwardTrapWithOtherPortNumber.xlsx">
+      <id>ac1636b7-8e8d-46e8-b23c-e51958708831</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST710_CheckSelectingNinthDeviceParameters.xlsx">
       <id>b3572eb8-8c81-403d-ae8f-bfcdcab223eb</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
