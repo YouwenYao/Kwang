@@ -156,6 +156,10 @@
       <id>6bf2a9f2-0d55-4563-8c74-e3d0fd0586f8</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST1008_DeviceDataView.xlsx">
+      <id>d8193a28-c215-4123-a26a-fb8c5b7276a2</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\TST1009_Configuredatapointsforadevice.xlsx">
       <id>103be776-11b6-4ccf-b809-d4b624c9fce1</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -248,6 +252,10 @@
       <id>f6be7518-347c-43a3-958a-9ea0b78ca72b</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST1126_VerifyExternalUserOptionsWithDifferentLanguageOption.xlsx">
+      <id>af912b8c-0783-427f-8667-17e55cc9224f</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST1129_DataLoggingForDeviceDataPoints.xlsx">
       <id>c0f3e6a8-c762-402e-86ad-1d086ef835e1</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -276,8 +284,16 @@
       <id>76b98dbd-c7a6-471d-90c7-1638f2f5e51d</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST1151_CopyLogicalGroupUnderViews.xlsx">
+      <id>88770c4e-e33d-4250-82aa-288bca737092</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\TST1155_AlarmSeveritySliceColorOption.xlsx">
       <id>bfbb020b-2539-4a96-a233-aa3d89263ea3</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST1161_ToAddInfoLinksInLogicalGroupUnderViews.xlsx">
+      <id>bde5f74d-2dce-4fd8-8ac4-597f54822a20</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="keywordscripts\TST1172_EditDeviceAlarmName.xlsx">
@@ -556,6 +572,10 @@
       <id>7fd32d74-b789-4f53-ba29-02430fee9029</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST709_ConfigureForwardTrapWithOtherPortNumber.xlsx">
+      <id>ac1636b7-8e8d-46e8-b23c-e51958708831</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST710_CheckSelectingNinthDeviceParameters.xlsx">
       <id>b3572eb8-8c81-403d-ae8f-bfcdcab223eb</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -574,6 +594,10 @@
     </None>
     <None Include="Keywordscripts\TST734_MapActionsWithALLSeverities.xlsx">
       <id>f3e29d7e-bcee-4e75-b4b1-425a3a8fb238</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST735_UpdatedAlarmNameInMapActionsDialogWindow.xlsx">
+      <id>d6ca13cf-75de-4f50-b2c8-aa6a9ce995b6</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\TST744_MapActionsWindowWithoutAnyDevices.xlsx">

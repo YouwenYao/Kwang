@@ -260,6 +260,7 @@ namespace NformTester.lib
 		{	
 			//MessageBox.Show(item.getComponent().ToString());
 			// The component is lable
+/*
 			if(item.getComponent().ToString().IndexOf("{Text:") != -1)
 			{
 				Ranorex.NativeWindow nativeWnd = item.getComponentInfo().CreateAdapter<Ranorex.NativeWindow>(false);
@@ -281,7 +282,7 @@ namespace NformTester.lib
 				}				
 				return;
 			}
-
+*/
 			if(item.getArg2Text() == "Equal")
 			{
 				Validate.Attribute(item.getComponentInfo(), item.getArgText(), item.getArg3Text());
@@ -356,6 +357,12 @@ namespace NformTester.lib
 			if(item.m_Type == "C" && item.m_WindowName == "CopyDataToFile") 
 			{				
 				CopyDataToFile(item);
+				return true;
+			}
+			
+			if(item.m_Type == "C" && item.m_WindowName == "AppStart") 
+			{				
+				AppStart(item);
 				return true;
 			}
 					
@@ -633,6 +640,16 @@ namespace NformTester.lib
 			{
 				Console.WriteLine("Clipboard can not convert to text string!");
 			}
+        }
+		
+		//**********************************************************************
+		/// <summary>
+		/// Start any application.
+		/// </summary>
+		public static void AppStart(LxScriptItem item)
+		{
+			string strApplicationName = item.getArgText();		
+			Host.Local.RunApplication(strApplicationName);
         }
 		
 		private static void Write_text(string file_path, string copydata)

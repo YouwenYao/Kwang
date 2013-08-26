@@ -38,7 +38,7 @@ rxversion="4.0.1.21107">
 					searchtimeout="30000ms"
 					capname="text"
 					addcaps="accessible">
-						/form[@controlname='LxLoginDlg']/text[@controlname='m_userNameTbx']/text[@accessiblename='User name:']
+						/form[@controlname='LxLoginDlg']/text[@controlname='m_userNameTbx']
 					</item>
 					<item
 					name="Password"
@@ -55,14 +55,6 @@ rxversion="4.0.1.21107">
 					capname="button"
 					addcaps="control,nativewindow">
 						/form[@controlname='LxLoginDlg']/container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']
-					</item>
-					<item
-					name="UserNameLbl"
-					id="d48c4d65-da1d-48ca-9e82-dd2b10486898"
-					searchtimeout="30000ms"
-					capname="text"
-					addcaps="control,nativewindow">
-						/form[@controlname='LxLoginDlg']/text[@controlname='m_userNameLbl']
 					</item>
 					<item
 					name="ServerCombo"
@@ -197,13 +189,6 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					capname="menuitem"
 					addcaps="menuitem,accessible">
 						/form[@controlname='LxViewerFrame']/menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='View']
-					</item>
-					<item
-					name="Configure"
-					id="186e2a13-a2e6-461c-b18b-8cca994adde9"
-					searchtimeout="30000ms"
-					capname="menuitem">
-						/form[@controlname='LxViewerFrame']/menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Configure']
 					</item>
 					<item
 					name="Tools"
@@ -1211,6 +1196,38 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					capname="button"
 					addcaps="button,control,nativewindow">
 						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/toolbar/button[@controlname='m_closeBtn']
+					</item>
+					<item
+					name="CloseApp"
+					id="c61f17b1-cbfc-431a-843c-a55a6b44876a"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxViewerFrame']/titlebar/button[@accessiblename='Close']
+					</item>
+					<item
+					name="Configure"
+					id="10a8eb12-d4cd-4300-9c5f-10f816b31ed8"
+					searchtimeout="30000ms"
+					capname="menuitem"
+					addcaps="menuitem,accessible">
+						/form[@controlname='LxViewerFrame']/menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Configure']
+					</item>
+					<item
+					name="Configure_Ita"
+					id="e097dc65-e4e2-42db-9db1-9eff9f8df884"
+					searchtimeout="30000ms"
+					capname="menuitem"
+					addcaps="menuitem,accessible">
+						/form[@controlname='LxViewerFrame']/menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Configura']
+					</item>
+					<item
+					name="UserOption_Ita"
+					id="2a759347-ec1a-4e14-ab7b-e3cc769116be"
+					searchtimeout="30000ms"
+					capname="menuitem"
+					addcaps="menuitem,accessible">
+						/form[@controlname='LxViewerFrame']/menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Configura']/menuitem[@accessiblename='Opzioni utente...']
 					</item>
 					<basepath>
 						/form[@controlname='LxViewerFrame']
@@ -2280,30 +2297,6 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					addcaps="text,accessible">
 						/form[@controlname='LxDataPointDlg']/container[@controlname='m_mainGroupBox']/container[@controlname='m_valueTbx']/text[@controlname='m_valueTbx-Ctl']/text[@accessiblename='Value:']
 					</item>
-					<item
-					name="TextM_nameTbx_Lbl"
-					id="4a0e1bb8-b30d-4295-8b40-ffe136649098"
-					searchtimeout="30000ms"
-					capname="text"
-					addcaps="text,control,nativewindow">
-						/form[@controlname='LxDataPointDlg']/container[@controlname='m_mainGroupBox']/container[@controlname='m_nameTbx']/text[@controlname='m_nameTbx-Lbl']
-					</item>
-					<item
-					name="TextM_descriptionTbx_Lbl"
-					id="3619964d-c75a-494d-a7d1-3c4cdd59d07c"
-					searchtimeout="30000ms"
-					capname="text"
-					addcaps="text,control,nativewindow">
-						/form[@controlname='LxDataPointDlg']/container[@controlname='m_mainGroupBox']/container[@controlname='m_descriptionTbx']/text[@controlname='m_descriptionTbx-Lbl']
-					</item>
-					<item
-					name="TextM_valueTbx_Lbl"
-					id="b8b1db77-9976-48e8-bb0b-2251502d7965"
-					searchtimeout="30000ms"
-					capname="text"
-					addcaps="text,control,nativewindow">
-						/form[@controlname='LxDataPointDlg']/container[@controlname='m_mainGroupBox']/container[@controlname='m_valueTbx']/text[@controlname='m_valueTbx-Lbl']
-					</item>
 					<basepath>
 						/form[@controlname='LxDataPointDlg']
 					</basepath>
@@ -3242,6 +3235,22 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					capname="combobox"
 					addcaps="combobox,control,nativewindow">
 						/form[@controlname='LxUserPropsDlg']/tabpagelist/tabpage[@controlname='m_visualTab']/combobox[@controlname='m_sysTrayPopupSevCombo']
+					</item>
+					<item
+					name="External_Ita"
+					id="56fda80f-e7b4-4d73-bb76-1bec3ce7456a"
+					searchtimeout="30000ms"
+					capname="tabpage"
+					addcaps="tabpage,accessible">
+						/form[@controlname='LxUserPropsDlg']/tabpagelist/tabpage[@accessiblename='Esterno']
+					</item>
+					<item
+					name="General_Ita"
+					id="4c42d047-3ab1-4eae-b500-a5ffc2247a29"
+					searchtimeout="30000ms"
+					capname="tabpage"
+					addcaps="tabpage,accessible">
+						/form[@controlname='LxUserPropsDlg']/tabpagelist/tabpage[@accessiblename='Generale']
 					</item>
 					<basepath>
 						/form[@controlname='LxUserPropsDlg']
