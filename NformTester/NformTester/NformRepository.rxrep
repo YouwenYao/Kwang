@@ -2297,30 +2297,6 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					addcaps="text,accessible">
 						/form[@controlname='LxDataPointDlg']/container[@controlname='m_mainGroupBox']/container[@controlname='m_valueTbx']/text[@controlname='m_valueTbx-Ctl']/text[@accessiblename='Value:']
 					</item>
-					<item
-					name="TextM_nameTbx_Lbl"
-					id="4a0e1bb8-b30d-4295-8b40-ffe136649098"
-					searchtimeout="30000ms"
-					capname="text"
-					addcaps="text,control,nativewindow">
-						/form[@controlname='LxDataPointDlg']/container[@controlname='m_mainGroupBox']/container[@controlname='m_nameTbx']/text[@controlname='m_nameTbx-Lbl']
-					</item>
-					<item
-					name="TextM_descriptionTbx_Lbl"
-					id="3619964d-c75a-494d-a7d1-3c4cdd59d07c"
-					searchtimeout="30000ms"
-					capname="text"
-					addcaps="text,control,nativewindow">
-						/form[@controlname='LxDataPointDlg']/container[@controlname='m_mainGroupBox']/container[@controlname='m_descriptionTbx']/text[@controlname='m_descriptionTbx-Lbl']
-					</item>
-					<item
-					name="TextM_valueTbx_Lbl"
-					id="b8b1db77-9976-48e8-bb0b-2251502d7965"
-					searchtimeout="30000ms"
-					capname="text"
-					addcaps="text,control,nativewindow">
-						/form[@controlname='LxDataPointDlg']/container[@controlname='m_mainGroupBox']/container[@controlname='m_valueTbx']/text[@controlname='m_valueTbx-Lbl']
-					</item>
 					<basepath>
 						/form[@controlname='LxDataPointDlg']
 					</basepath>

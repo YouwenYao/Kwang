@@ -1501,6 +1501,15 @@ reportlevel="Info;20">
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
+				<testcase
+				name="TST1008_DeviceDataView"
+				id="02594ab9-1d97-423b-9512-3cb131d0efbc">
+					<testmodule
+					name="TestCaseDriver"
+					id="7d2e32f1-49d8-4fea-8d98-5a615686f365"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
 			</testcase>
 			<testcase
 			name="1000._Database2"
@@ -1536,7 +1545,16 @@ reportlevel="Info;20">
 	<testconfigurations
 	default="TestRun">
 		<testconfiguration
-		name="TestRun"/>
+		name="TestRun">
+			<testcase
+			id="02594ab9-1d97-423b-9512-3cb131d0efbc"/>
+			<testcase
+			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
+			<testcase
+			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
+			<testcase
+			id="a5e9adfd-9aee-44b1-a5b7-3963bd48c29d"/>
+		</testconfiguration>
 	</testconfigurations>
 	<references>
 		<reference>

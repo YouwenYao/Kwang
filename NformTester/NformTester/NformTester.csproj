@@ -156,6 +156,10 @@
       <id>6bf2a9f2-0d55-4563-8c74-e3d0fd0586f8</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST1008_DeviceDataView.xlsx">
+      <id>d8193a28-c215-4123-a26a-fb8c5b7276a2</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\TST1009_Configuredatapointsforadevice.xlsx">
       <id>103be776-11b6-4ccf-b809-d4b624c9fce1</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

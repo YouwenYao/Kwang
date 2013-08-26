@@ -7413,9 +7413,6 @@ namespace NformTester
             RepoItemInfo _descriptionInfo;
             RepoItemInfo _nameInfo;
             RepoItemInfo _valueInfo;
-            RepoItemInfo _textm_nametbx_lblInfo;
-            RepoItemInfo _textm_descriptiontbx_lblInfo;
-            RepoItemInfo _textm_valuetbx_lblInfo;
 
             /// <summary>
             /// Creates a new FormData_Point_Details  folder.
@@ -7428,9 +7425,6 @@ namespace NformTester
                 _descriptionInfo = new RepoItemInfo(this, "Description", "container[@controlname='m_mainGroupBox']/container[@controlname='m_descriptionTbx']/text[@controlname='m_descriptionTbx-Ctl']/text[@accessiblename='Description:']", 30000, null, "c0c34b3a-5a04-4c18-a9fc-ae47e99eb3cc");
                 _nameInfo = new RepoItemInfo(this, "Name", "container[@controlname='m_mainGroupBox']/container[@controlname='m_nameTbx']/text[@controlname='m_nameTbx-Ctl']/text[@accessiblename='Name:']", 30000, null, "768e9aa6-d004-415a-bfb4-07b1bf7a5d8a");
                 _valueInfo = new RepoItemInfo(this, "Value", "container[@controlname='m_mainGroupBox']/container[@controlname='m_valueTbx']/text[@controlname='m_valueTbx-Ctl']/text[@accessiblename='Value:']", 30000, null, "3bd62cb8-4d30-4da2-b712-b3516a631e52");
-                _textm_nametbx_lblInfo = new RepoItemInfo(this, "TextM_nameTbx_Lbl", "container[@controlname='m_mainGroupBox']/container[@controlname='m_nameTbx']/text[@controlname='m_nameTbx-Lbl']", 30000, null, "4a0e1bb8-b30d-4295-8b40-ffe136649098");
-                _textm_descriptiontbx_lblInfo = new RepoItemInfo(this, "TextM_descriptionTbx_Lbl", "container[@controlname='m_mainGroupBox']/container[@controlname='m_descriptionTbx']/text[@controlname='m_descriptionTbx-Lbl']", 30000, null, "3619964d-c75a-494d-a7d1-3c4cdd59d07c");
-                _textm_valuetbx_lblInfo = new RepoItemInfo(this, "TextM_valueTbx_Lbl", "container[@controlname='m_mainGroupBox']/container[@controlname='m_valueTbx']/text[@controlname='m_valueTbx-Lbl']", 30000, null, "b8b1db77-9976-48e8-bb0b-2251502d7965");
             }
 
             /// <summary>
@@ -7550,78 +7544,6 @@ namespace NformTester
                 get
                 {
                     return _valueInfo;
-                }
-            }
-
-            /// <summary>
-            /// The TextM_nameTbx_Lbl item.
-            /// </summary>
-            [RepositoryItem("4a0e1bb8-b30d-4295-8b40-ffe136649098")]
-            public virtual Ranorex.Text TextM_nameTbx_Lbl
-            {
-                get
-                {
-                    return _textm_nametbx_lblInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TextM_nameTbx_Lbl item info.
-            /// </summary>
-            [RepositoryItemInfo("4a0e1bb8-b30d-4295-8b40-ffe136649098")]
-            public virtual RepoItemInfo TextM_nameTbx_LblInfo
-            {
-                get
-                {
-                    return _textm_nametbx_lblInfo;
-                }
-            }
-
-            /// <summary>
-            /// The TextM_descriptionTbx_Lbl item.
-            /// </summary>
-            [RepositoryItem("3619964d-c75a-494d-a7d1-3c4cdd59d07c")]
-            public virtual Ranorex.Text TextM_descriptionTbx_Lbl
-            {
-                get
-                {
-                    return _textm_descriptiontbx_lblInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TextM_descriptionTbx_Lbl item info.
-            /// </summary>
-            [RepositoryItemInfo("3619964d-c75a-494d-a7d1-3c4cdd59d07c")]
-            public virtual RepoItemInfo TextM_descriptionTbx_LblInfo
-            {
-                get
-                {
-                    return _textm_descriptiontbx_lblInfo;
-                }
-            }
-
-            /// <summary>
-            /// The TextM_valueTbx_Lbl item.
-            /// </summary>
-            [RepositoryItem("b8b1db77-9976-48e8-bb0b-2251502d7965")]
-            public virtual Ranorex.Text TextM_valueTbx_Lbl
-            {
-                get
-                {
-                    return _textm_valuetbx_lblInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TextM_valueTbx_Lbl item info.
-            /// </summary>
-            [RepositoryItemInfo("b8b1db77-9976-48e8-bb0b-2251502d7965")]
-            public virtual RepoItemInfo TextM_valueTbx_LblInfo
-            {
-                get
-                {
-                    return _textm_valuetbx_lblInfo;
                 }
             }
         }
