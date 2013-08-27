@@ -260,7 +260,8 @@ namespace NformTester.lib
 		{	
 			//MessageBox.Show(item.getComponent().ToString());
 			// The component is lable
-			if(item.getComponent().ToString().IndexOf("{Text:") != -1)
+			string testtemp = item.getComponent().ToString();
+			if(item.getComponent().ToString().IndexOf("Lbl") != -1)
 			{
 				Ranorex.NativeWindow nativeWnd = item.getComponentInfo().CreateAdapter<Ranorex.NativeWindow>(false);
 				string lableText = nativeWnd.WindowText;
