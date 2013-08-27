@@ -359,6 +359,12 @@ namespace NformTester.lib
 				CopyDataToFile(item);
 				return true;
 			}
+			
+			if(item.m_Type == "C" && item.m_WindowName == "AppStart") 
+			{				
+				AppStart(item);
+				return true;
+			}
 					
 			if(item.m_Type.Substring(0,1) == ";")
 			{
@@ -634,6 +640,16 @@ namespace NformTester.lib
 			{
 				Console.WriteLine("Clipboard can not convert to text string!");
 			}
+        }
+		
+		//**********************************************************************
+		/// <summary>
+		/// Start any application.
+		/// </summary>
+		public static void AppStart(LxScriptItem item)
+		{
+			string strApplicationName = item.getArgText();		
+			Host.Local.RunApplication(strApplicationName);
         }
 		
 		private static void Write_text(string file_path, string copydata)

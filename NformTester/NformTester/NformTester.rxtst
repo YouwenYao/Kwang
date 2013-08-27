@@ -1006,6 +1006,24 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST735_UpdatedAlarmNameInMapActionsDialogWindow"
+					id="cde3f4d9-6319-457f-9cbb-d9e4bed5b599">
+						<testmodule
+						name="TestCaseDriver"
+						id="fa83e5a9-600c-46d0-ae97-3d0c3c3817bd"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST709_ConfigureForwardTrapWithOtherPortNumber"
+					id="c64ca2d8-c1f8-4e9c-b79f-085b58f70f3a">
+						<testmodule
+						name="TestCaseDriver"
+						id="c04cc646-cbde-4685-a802-0a140ab199cc"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.030._Views2"
@@ -1097,6 +1115,24 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="924e949b-b554-46f0-b208-16981f7ba7be"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST1161_ToAddInfoLinksInLogicalGroupUnderViews"
+					id="456fb353-f7f0-47f5-98ee-5302294e9f01">
+						<testmodule
+						name="TestCaseDriver"
+						id="70c73bdb-ab8e-4405-ab25-254b265fec78"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST1151_CopyLogicalGroupUnderViews"
+					id="f88f8457-1fdd-4494-94b7-746a32ac3702">
+						<testmodule
+						name="TestCaseDriver"
+						id="0d74a8a2-3815-411d-90bb-90dc906d6761"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -1286,7 +1322,17 @@ reportlevel="Info;20">
 				</testcase>
 				<testcase
 				name="600.070._Change_Password2"
-				id="36394186-13ed-405e-a63c-f06444713388"/>
+				id="36394186-13ed-405e-a63c-f06444713388">
+					<testcase
+					name="TST1003_ChangePassword_AdditionalInfo"
+					id="afd99791-27de-4356-81fa-dab1d2a3ba43">
+						<testmodule
+						name="TestCaseDriver"
+						id="3388d6ae-c2a0-40b3-a5b8-b6784aa876bb"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+				</testcase>
 				<testcase
 				name="600.080._User_Options2"
 				id="a9a8f852-bfa2-49a4-adef-b36a6491793d">
@@ -1305,6 +1351,15 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="3b83dfa1-d0c6-4eaa-af7b-19b065901aca"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST1126_VerifyExternalUserOptionsWithDifferentLanguageOption"
+					id="e35cea2e-5fda-49a9-83a8-c2cf0648940d">
+						<testmodule
+						name="TestCaseDriver"
+						id="f19c1c80-e38c-4bab-8068-065c06488970"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -1364,6 +1419,15 @@ reportlevel="Info;20">
 					<testmodule
 					name="TestCaseDriver"
 					id="c3d59ad6-6802-4b9d-8548-b0fddf910a5d"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="TST836_ExportActionHistoryForAll_Greater50MB"
+				id="07d3bf4b-bc53-40ae-84f0-3e608a1016ed">
+					<testmodule
+					name="TestCaseDriver"
+					id="d0ba9891-1c84-4416-9088-a9b9af7bfa82"
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
@@ -1434,6 +1498,15 @@ reportlevel="Info;20">
 					<testmodule
 					name="TestCaseDriver"
 					id="12af2811-0852-4346-a049-7cf049793905"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="TST1008_DeviceDataView"
+				id="02594ab9-1d97-423b-9512-3cb131d0efbc">
+					<testmodule
+					name="TestCaseDriver"
+					id="7d2e32f1-49d8-4fea-8d98-5a615686f365"
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
