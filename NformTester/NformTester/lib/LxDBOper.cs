@@ -175,13 +175,19 @@ namespace NformTester.lib
 		/// </summary>
 		public void BackUpBundledDataBase()
 		{
-			  bool result = false;
+			   bool result = false;
 			  Console.WriteLine("*****Start to back up bundled Database*****");
 			  string groupName="Database";
 	          string keyOne="DB_Bundled_Path";
 	          string keyTwo="DB_Bundled_Backup_Path";
 			  string sourceDBPath = ParseToValue(groupName,keyOne);
 	          string targetDBPath = ParseToValue(groupName,keyTwo);
+	          
+			   if (!Directory.Exists(sourceDBPath))
+			   {
+			   		BackUpResult = false;
+			   		return;
+			   }
 		       //First delete the exsited directory.
 			   if (Directory.Exists(targetDBPath))
 			   {

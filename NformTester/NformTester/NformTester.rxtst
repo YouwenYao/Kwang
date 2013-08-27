@@ -22,15 +22,6 @@ reportlevel="Info;20">
 			name="100._Install_and_Uninstall1"
 			id="60f17151-19bc-4c5a-9b92-8826dafc4935">
 				<testcase
-				name="TST932_InstallNformFullPackage"
-				id="11ce54d4-ddca-4bca-9177-fc528198fa58">
-					<testmodule
-					name="TestCaseDriver"
-					id="b3d54874-198f-4842-8956-5cf7c391b8c2"
-					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
-					type="UserCode"/>
-				</testcase>
-				<testcase
 				name="TST931_InstallViewerOnly"
 				id="c135c466-1094-446b-9be0-cb60cf77662c">
 					<testmodule
@@ -45,6 +36,15 @@ reportlevel="Info;20">
 					<testmodule
 					name="TestCaseDriver"
 					id="835bcc93-1fc4-4259-9f8e-a0448f51537e"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="TST932_InstallNformFullPackage"
+				id="11ce54d4-ddca-4bca-9177-fc528198fa58">
+					<testmodule
+					name="TestCaseDriver"
+					id="b3d54874-198f-4842-8956-5cf7c391b8c2"
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
@@ -1007,30 +1007,33 @@ reportlevel="Info;20">
 						type="UserCode"/>
 					</testcase>
 					<testcase
-<<<<<<< HEAD
 					name="TST735_UpdatedAlarmNameInMapActionsDialogWindow"
 					id="cde3f4d9-6319-457f-9cbb-d9e4bed5b599">
 						<testmodule
 						name="TestCaseDriver"
 						id="fa83e5a9-600c-46d0-ae97-3d0c3c3817bd"
-=======
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
 					name="TST1078_VerifyDontFailAddingActionSet"
 					id="a8556878-6074-423a-8308-70397e7ad7c5">
 						<testmodule
 						name="TestCaseDriver"
 						id="1a61affe-30ed-410a-a29a-17334b13e741"
->>>>>>> 5045b090abc9e0ade6ab1a6e8ec32c49f1f065ab
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
 					<testcase
-<<<<<<< HEAD
 					name="TST709_ConfigureForwardTrapWithOtherPortNumber"
 					id="c64ca2d8-c1f8-4e9c-b79f-085b58f70f3a">
 						<testmodule
 						name="TestCaseDriver"
 						id="c04cc646-cbde-4685-a802-0a140ab199cc"
-=======
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
 					name="TST544_ConfigureShutDownAction"
 					id="f8a35f82-6c88-42a1-aa25-af328dd51c55">
 						<testmodule
@@ -1045,7 +1048,6 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="b3253527-438a-45bd-a5f9-fad2bba74e26"
->>>>>>> 5045b090abc9e0ade6ab1a6e8ec32c49f1f065ab
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -1144,7 +1146,6 @@ reportlevel="Info;20">
 						type="UserCode"/>
 					</testcase>
 					<testcase
-<<<<<<< HEAD
 					name="TST1161_ToAddInfoLinksInLogicalGroupUnderViews"
 					id="456fb353-f7f0-47f5-98ee-5302294e9f01">
 						<testmodule
@@ -1159,13 +1160,15 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="0d74a8a2-3815-411d-90bb-90dc906d6761"
-=======
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
 					name="TST1148_CreateNewLogicalGroupForAView"
 					id="bb64cf93-af23-4301-9648-5b0bd6e34bd3">
 						<testmodule
 						name="TestCaseDriver"
 						id="fd90e2c8-66c3-4d90-baa5-592b8be0c584"
->>>>>>> 5045b090abc9e0ade6ab1a6e8ec32c49f1f065ab
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -1406,19 +1409,20 @@ reportlevel="Info;20">
 						type="UserCode"/>
 					</testcase>
 					<testcase
-<<<<<<< HEAD
 					name="TST1126_VerifyExternalUserOptionsWithDifferentLanguageOption"
 					id="e35cea2e-5fda-49a9-83a8-c2cf0648940d">
 						<testmodule
 						name="TestCaseDriver"
 						id="f19c1c80-e38c-4bab-8068-065c06488970"
-=======
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
 					name="TST1124_VerifyExternalTabUserOption"
 					id="23426a82-657f-4b01-a9f8-2293170a2d39">
 						<testmodule
 						name="TestCaseDriver"
 						id="758570f2-1068-4c0c-88ad-f57cedf32e88"
->>>>>>> 5045b090abc9e0ade6ab1a6e8ec32c49f1f065ab
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -1604,7 +1608,12 @@ reportlevel="Info;20">
 	<testconfigurations
 	default="TestRun">
 		<testconfiguration
-		name="TestRun"/>
+		name="TestRun">
+			<testcase
+			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
+			<testcase
+			id="15542ef7-bf90-431d-8e26-f8eb1c05a42e"/>
+		</testconfiguration>
 	</testconfigurations>
 	<references>
 		<reference>
