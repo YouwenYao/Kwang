@@ -218,6 +218,7 @@ namespace NformTester.lib
 		/// object in repository
 		/// </summary>
 		public RepoItemInfo getComponentInfo()
+		
 		{
 			string windowsName = m_WindowName;
 			string componentName = m_Component;

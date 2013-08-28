@@ -1006,6 +1006,69 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST1078_VerifyDontFailAddingActionSet"
+					id="a8556878-6074-423a-8308-70397e7ad7c5">
+						<testmodule
+						name="TestCaseDriver"
+						id="1a61affe-30ed-410a-a29a-17334b13e741"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST544_ConfigureShutDownAction"
+					id="f8a35f82-6c88-42a1-aa25-af328dd51c55">
+						<testmodule
+						name="TestCaseDriver"
+						id="63e34877-fd79-4766-b8ff-2fab194e3a4a"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST496_EditMultilink1.5Client"
+					id="f2e8a674-05e5-4218-b7a2-8839c486cbc7">
+						<testmodule
+						name="TestCaseDriver"
+						id="b3253527-438a-45bd-a5f9-fad2bba74e26"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST786_ReadActionLogExceptionOnRestartServer"
+					id="6712e78c-7930-4072-8354-2d243f17ddc3">
+						<testmodule
+						name="TestCaseDriver"
+						id="db99c7e6-6159-4053-bf0d-6fd88c1e1347"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST495_ConfigureReadDataActionWithoutPermission"
+					id="707ace5b-fd0e-41ae-a08f-cc1507de28d7">
+						<testmodule
+						name="TestCaseDriver"
+						id="2da61a0a-9bea-412e-8d47-13f6c2faeed0"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST1327_VerifyAutomaticSendToRecipientSeverBeCheckedByDefault"
+					id="3b16f124-c160-4c63-b697-959d437accf7">
+						<testmodule
+						name="TestCaseDriver"
+						id="ed60bd91-d309-40d3-9f56-8b71ba70e54f"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST569_UserCanNotConfigureActionSetWithoutConfigureActionPermission"
+					id="b15b849a-feec-45fc-ba4d-e3cd2544559c">
+						<testmodule
+						name="TestCaseDriver"
+						id="8b412986-6ea9-4a7b-ab58-41a56634c04e"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.030._Views2"
@@ -1100,6 +1163,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST1148_CreateNewLogicalGroupForAView"
+					id="bb64cf93-af23-4301-9648-5b0bd6e34bd3">
+						<testmodule
+						name="TestCaseDriver"
+						id="fd90e2c8-66c3-4d90-baa5-592b8be0c584"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.040._Users_and_Groups2"
@@ -1182,6 +1254,15 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="5e43bc38-1923-4739-a5fa-4518dcb15235"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST556_ModifyRightsForNewActionFeaturesOfPowerUsers"
+					id="1a89833c-f60b-43f9-a390-b39cfea919b2">
+						<testmodule
+						name="TestCaseDriver"
+						id="b39fca30-0eda-44b2-90ff-b6fbeec1d70a"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -1283,6 +1364,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST2746_CheckGUIForGlobalStatusPolling"
+					id="a6c08b3f-6d09-42f5-ba80-52414a588437">
+						<testmodule
+						name="TestCaseDriver"
+						id="e557410f-faf3-4acc-b44e-ba34f5dd1f67"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.070._Change_Password2"
@@ -1305,6 +1395,15 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="3b83dfa1-d0c6-4eaa-af7b-19b065901aca"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST1124_VerifyExternalTabUserOption"
+					id="23426a82-657f-4b01-a9f8-2293170a2d39">
+						<testmodule
+						name="TestCaseDriver"
+						id="758570f2-1068-4c0c-88ad-f57cedf32e88"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -1476,7 +1575,13 @@ reportlevel="Info;20">
 			<testcase
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
-			id="15542ef7-bf90-431d-8e26-f8eb1c05a42e"/>
+			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
+			<testcase
+			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
+			<testcase
+			id="b15b849a-feec-45fc-ba4d-e3cd2544559c"/>
+			<testcase
+			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

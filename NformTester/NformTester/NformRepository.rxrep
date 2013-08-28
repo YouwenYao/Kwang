@@ -7103,6 +7103,44 @@ asfJM0NmDaToIFYFJxQ/OHzVzbm8uoUBMvUoiVqIKYHI/O8cyp4gJO0V+xMcJGffXxgQnvmE0Au9
 BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					</icon>
 				</appfolder>
+				<appfolder
+				name="FormConfirmDeleteSendE_mail"
+				id="ee4fea69-43a2-46a3-bc28-422534c2b8ca"
+				searchtimeout="30000ms"
+				capname="form"
+				addcaps="form,nativewindow"
+				isrooted="True"
+				usecache="True">
+					<item
+					name="Yes"
+					id="ef2e5a3f-7759-4d5c-a57d-74302d6e305c"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,nativewindow">
+						/form[@title='Server Options' and @processname='NformViewer' and @class='#32770']/button[@text='&amp;Yes']
+					</item>
+					<item
+					name="No"
+					id="f8cad1a7-b933-48c1-82ad-b97be90837de"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,nativewindow">
+						/form[@title='Server Options' and @processname='NformViewer' and @class='#32770']/button[@text='&amp;No']
+					</item>
+					<basepath>
+						/form[@title='Server Options' and @processname='NformViewer' and @class='#32770']
+					</basepath>
+					<icon>
+						iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAATpJREFU
+OE9jYBh04NjpY/8VVz0H4++vn/9HdqBXU89/xbat/7O7pqCIo3hiyqa9cAOWLlr6//ljiCHXrl/7
+b9i2FCwXNW8vbgMoChLD1Jb/lqFR/0E0VhxbDBYHWQLyimVmMapLQJJBk7b+T972HCeGGwD0imEu
+xDA4AElmz9r7v+Xw+/9OlUv/c4RCsIBr9f/qXffA4jADjh0/9v/5/WuYBrQs2/t/6eX3/4Mq56AY
+MOf4c7A4zAC4rdmV2f+j2qrBJoEk56w79v/Y/e//915//z+qdul/p9wpYD4MYxigCFQEihqYAUvX
+bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
+/g6Mnilw22GuAAXk1n3naJSAKEp9lGoGANguDmDQlTsrAAAAAElFTkSuQmCC
+					</icon>
+				</appfolder>
 			</folder>
 			<folder
 			name="SMTPServerWindow"
