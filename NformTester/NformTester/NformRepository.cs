@@ -29228,6 +29228,7 @@ namespace NformTester
             RepoItemInfo _deleteInfo;
             RepoItemInfo _movedownInfo;
             RepoItemInfo _moveupInfo;
+            RepoItemInfo _newgroupInfo;
 
             /// <summary>
             /// Creates a new FormLogical_Group_Properties  folder.
@@ -29249,6 +29250,7 @@ namespace NformTester
                 _deleteInfo = new RepoItemInfo(this, "Delete", "container[@controlname='m_logGroupsGrp']/container[@controlname='m_navViewBtns']/container/button[@controlname='m_button6']", 30000, null, "7b348964-aba7-4ff2-849c-3d88ed830c56");
                 _movedownInfo = new RepoItemInfo(this, "MoveDown", "container[@controlname='m_logGroupsGrp']/container[@controlname='m_udlrBtnsGrpBox']/button[@controlname='m_moveDownBtn']", 30000, null, "4470453c-a591-4c13-89a7-6b330937eac4");
                 _moveupInfo = new RepoItemInfo(this, "MoveUp", "container[@controlname='m_logGroupsGrp']/container[@controlname='m_udlrBtnsGrpBox']/button[@controlname='m_moveUpBtn']", 30000, null, "82d832ba-9c2e-41d8-9473-e2981ecdb1a9");
+                _newgroupInfo = new RepoItemInfo(this, "NewGroup", "container[@controlname='m_logGroupsGrp']/tree/rawtext[@rawtext='New Group']", 30000, null, "f15e88de-8859-4e8e-9eaa-26bce5f74d97");
             }
 
             /// <summary>
@@ -29584,6 +29586,30 @@ namespace NformTester
                 get
                 {
                     return _moveupInfo;
+                }
+            }
+
+            /// <summary>
+            /// The NewGroup item.
+            /// </summary>
+            [RepositoryItem("f15e88de-8859-4e8e-9eaa-26bce5f74d97")]
+            public virtual Ranorex.RawText NewGroup
+            {
+                get
+                {
+                    return _newgroupInfo.CreateAdapter<Ranorex.RawText>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NewGroup item info.
+            /// </summary>
+            [RepositoryItemInfo("f15e88de-8859-4e8e-9eaa-26bce5f74d97")]
+            public virtual RepoItemInfo NewGroupInfo
+            {
+                get
+                {
+                    return _newgroupInfo;
                 }
             }
         }

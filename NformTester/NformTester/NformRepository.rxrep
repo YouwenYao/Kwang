@@ -9625,6 +9625,14 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					addcaps="button,control,nativewindow">
 						/form[@controlname='LxLogGroupCfgDlg']/container[@controlname='m_logGroupsGrp']/container[@controlname='m_udlrBtnsGrpBox']/button[@controlname='m_moveUpBtn']
 					</item>
+					<item
+					name="NewGroup"
+					id="f15e88de-8859-4e8e-9eaa-26bce5f74d97"
+					searchtimeout="30000ms"
+					capname="rawtext"
+					addcaps="unknown,rawtext">
+						/form[@controlname='LxLogGroupCfgDlg']/container[@controlname='m_logGroupsGrp']/tree/rawtext[@rawtext='New Group']
+					</item>
 					<basepath>
 						/form[@controlname='LxLogGroupCfgDlg']
 					</basepath>

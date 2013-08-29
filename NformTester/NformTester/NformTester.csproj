@@ -280,6 +280,10 @@
       <id>ea5931b2-4f24-4e53-8502-131b63a3c978</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST1146_CreationOfNewLogicalGroupToViewTree.xlsx">
+      <id>86d6befa-98cc-462c-bbd8-bcc85f5e4e2f</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\TST1149_DisablingUsersOwnAccount.xlsx">
       <id>76b98dbd-c7a6-471d-90c7-1638f2f5e51d</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
