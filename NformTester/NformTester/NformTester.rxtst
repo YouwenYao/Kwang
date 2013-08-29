@@ -1024,6 +1024,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST593_WithoutAllActionRightsCanNotDeleteActionSet"
+					id="d347903d-e095-4f84-b2e1-9492aa080ce4">
+						<testmodule
+						name="TestCaseDriver"
+						id="3b7691d7-ddc5-4ef8-a7f9-341794f664d4"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.030._Views2"
@@ -1558,13 +1567,13 @@ reportlevel="Info;20">
 			<testcase
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
-			id="16b2d828-575c-4faf-8f7d-74b92c41fc12"/>
-			<testcase
 			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
 			<testcase
 			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
 			<testcase
-			id="d6bef00f-077b-46be-a485-6adfeea94ec6"/>
+			id="d347903d-e095-4f84-b2e1-9492aa080ce4"/>
+			<testcase
+			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
