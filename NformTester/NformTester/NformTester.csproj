@@ -720,6 +720,10 @@
       <id>03e18365-42dc-4e0e-bbb1-4ee538826538</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST981_ConfigureUserAndGroupsUserProfile.xlsx">
+      <id>44e09bf2-abb2-4b87-8998-62db14fbd02b</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\TST983_UsersGroupManagement.xlsx">
       <id>6523db6d-bc38-46bc-b2d3-c3d1f4ae7e6b</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
