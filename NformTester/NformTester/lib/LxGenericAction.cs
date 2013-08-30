@@ -887,6 +887,18 @@ namespace NformTester.lib
 			
 			if(objType.Name.ToString() == "Tree")
 			{
+				
+				String Xpos = " ";
+				String Ypos = " ";	
+				String sPoint ="0;0";
+				
+				if((!(item.getArg3Text().Trim().Equals("")))&&(!(item.getArg4Text().Trim().Equals(""))))
+				{
+					Xpos = item.getArg3Text();
+					Ypos = item.getArg4Text();
+					sPoint =Xpos+";"+Ypos;
+				}
+				
 				int treeLevel = Convert.ToInt32(item.getArgText());
 				string strTreelevel = "";
 				string strTreelevelCkb = "";
@@ -902,8 +914,9 @@ namespace NformTester.lib
 				
 				if(targetTreeItemInfo.Exists())
 				{
-					Ranorex.TreeItem targetTreeItem = targetTreeItemInfo.CreateAdapter<Ranorex.TreeItem>(true);            	            	
-            		targetTreeItem.Click();
+					Ranorex.TreeItem targetTreeItem = targetTreeItemInfo.CreateAdapter<Ranorex.TreeItem>(true); 
+					
+					targetTreeItem.Click(sPoint);
 				}
 				else
 				{
@@ -911,7 +924,7 @@ namespace NformTester.lib
 				                                                   objComponetInfo.Path + strTreelevelCkb +"[@accessiblename='"+ item.getArg2Text() +"']", 
 				                                                   10000, null, System.Guid.NewGuid().ToString());
 					Ranorex.CheckBox targetTreeItemCkb = targetTreeItemInfo.CreateAdapter<Ranorex.CheckBox>(true);      
-					targetTreeItemCkb.Click();
+					targetTreeItemCkb.Click(sPoint);
 				}						
 				
             	

@@ -280,6 +280,10 @@
       <id>ea5931b2-4f24-4e53-8502-131b63a3c978</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST1146_CreationOfNewLogicalGroupToViewTree.xlsx">
+      <id>86d6befa-98cc-462c-bbd8-bcc85f5e4e2f</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\TST1149_DisablingUsersOwnAccount.xlsx">
       <id>76b98dbd-c7a6-471d-90c7-1638f2f5e51d</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -558,6 +562,10 @@
     </None>
     <None Include="Keywordscripts\TST589_UsersCanEditAnActionSetsIfTheyHaveRightsToAllActionTypesWithinTheSet.xlsx">
       <id>53f8c37b-91ab-4110-acc7-cc54fc1aecb2</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST593_WithoutAllActionRightsCanNotDeleteActionSet.xlsx">
+      <id>62d39dea-4f8e-4dfe-9c22-269c25554404</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="keywordscripts\TST594_ActionSet_DeletewithRightsToAllActionTypes.xlsx">
