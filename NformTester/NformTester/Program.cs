@@ -33,27 +33,17 @@ namespace NformTester
     class Program
     {
     	/// <summary>
-        /// Result of backup database. Used by restore database of every script.
-        /// </summary>
-    	public static bool BackupResult = false;
-    	
-    	/// <summary>
-        /// Result of backup database. Used by restore database of every script.
-        /// </summary>
-    	public static LxDBOper myLxDBOper = new LxDBOper();
-    	
-    	/// <summary>
         /// Get all info from app.config.
         /// </summary>
     	private static IDictionary<string, string> GetConfigs ()
 		{
 			var configs = new Dictionary<string, string> ();
-			int len = ConfigurationSettings.AppSettings.Count;
+			int len = ConfigurationManager.AppSettings.Count;
 			for (int i = 0; i < len; i++)
 			{
 				configs.Add (
-					ConfigurationSettings.AppSettings.GetKey (i),
-					ConfigurationSettings.AppSettings[i]);
+					ConfigurationManager.AppSettings.GetKey (i),
+					ConfigurationManager.AppSettings[i]);
 			}
 
 			return configs;
@@ -90,30 +80,7 @@ namespace NformTester
 	           //start Nform service
 	           Console.WriteLine("Start Nform service...");
 			   strRst = RunCommand("sc start Nform");	
-             }
-             
-           // If RestoreDB is Y, program will restore Database for Nform before scripts are executed.
-           if(RestoreDB.Equals("Y"))
-           {
-           	 	//stop Nform service
-				Console.WriteLine("Stop Nform service...");
-				string strRst = RunCommand("sc stop Nform");
-				
-				//Backup Database operation. Just do once before run all scripts.
-	            myLxDBOper.SetDbType();
-	            myLxDBOper.BackUpDataBase();	
-	           if(myLxDBOper.GetBackUpResult() == false)
-	            {
-	               Console.WriteLine("Back up database is faild!");
-	            }
-	            else
-	            {
-	            	Console.WriteLine("Back up database is successful!");
-	            }
-	            //start Nform service
-	            Console.WriteLine("Start Nform service...");
-				strRst = RunCommand("sc start Nform");	     
-           }
+             }                        
          
         	Keyboard.AbortKey = System.Windows.Forms.Keys.Pause;
             int error = 0;

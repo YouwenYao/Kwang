@@ -8,6 +8,8 @@
  */
 using System;
 using System.Reflection;
+using System.Collections.Generic;
+using System.Configuration;
 
 using Ranorex;
 using Ranorex.Core;
@@ -72,6 +74,7 @@ namespace NformTester.lib
 		/// Arguments of this command
 		/// </summary>
 		public string m_Arg6;
+		
 		
 		/// <summary>
 		/// Get the repository instance
@@ -153,11 +156,11 @@ namespace NformTester.lib
 		public string getArg6Text()
 		{
 			return parseToValue(m_Arg6);
-		}
-		
+		}				
+    	
 		//**********************************************************************
 		/// <summary>
-		/// Replace the name with value refer to ini file
+		/// Replace the name with value refer to app.config
 		/// </summary>
 		public string parseToValue(string name)
         {
@@ -165,15 +168,27 @@ namespace NformTester.lib
 			{
 				return "";
 			}
+			LxSetup mainOp = LxSetup.getInstance();
+			var configs = mainOp.configs;
             string addr = name;
             if (name.Substring(0, 1) == "$" && name.Substring(name.Length - 1, 1) == "$")
             {
                 string key = name.Substring(1, name.Length - 2);
                 LxIniFile confFile = new LxIniFile(System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(),
                                                  "Devices.ini"));
-                string def= null;
                 string result = null;
                 
+                if(configs.ContainsKey(key))
+                {
+                	result = configs[key];
+                }
+                else
+                {
+                	result = configs["Default"];
+                }
+                
+                /*
+                string def = null;
                 if(key.IndexOf("SNMP")!=-1)
                 {
                 	def = confFile.GetString("SNMPDevices","Default","10.146.83.50");
@@ -209,8 +224,13 @@ namespace NformTester.lib
                 	def = confFile.GetString("TryToRunTimes","Default","3");
                 	result = confFile.GetString("TryToRunTimes",key,def);
                 }
-                
+                */
+               
                 addr = result;
+                
+                confFile = new LxIniFile(System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(),
+                                                 "UsedDevices.ini"));
+                confFile.WriteString("AvailableDevices",key,result);
             }
 
             return addr.Replace("\"","");
@@ -222,6 +242,7 @@ namespace NformTester.lib
 		/// object in repository
 		/// </summary>
 		public RepoItemInfo getComponentInfo()
+		
 		{
 			string windowsName = m_WindowName;
 			string componentName = m_Component;

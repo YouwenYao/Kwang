@@ -14,7 +14,8 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using System.Xml;
 using System.Text.RegularExpressions;
-
+using System.Collections.Generic;
+using System.Configuration;
 using System.Windows.Forms;
 
 namespace NformTester.lib
@@ -72,6 +73,11 @@ namespace NformTester.lib
 		public int m_iRowEnd = 0;
 		
 		/// <summary>
+		/// Configs in app.config
+		/// </summary>
+		public  IDictionary<string, string> configs ;
+		
+		/// <summary>
 		/// Get method for ProcessId
 		/// </summary>
 		public int ProcessId {
@@ -102,6 +108,7 @@ namespace NformTester.lib
 		{
 			m_Runlist.Clear();
 			m_Runlist = getRunlist();
+			configs = GetConfigs();
 		}
 		
 		//**********************************************************************
@@ -116,6 +123,34 @@ namespace NformTester.lib
 			} // end if
 			return m_instance;
 		} // end getInstance
+		
+		//**********************************************************************
+		/// <summary>
+		/// Replace the name with value refer to app.config
+		/// </summary>
+		private string parseToValue(string name)
+        {
+			LxSetup mainOp = LxSetup.getInstance();
+			var configs = mainOp.configs;
+			
+            string addr = name;
+            if (name.Substring(0, 1) == "$" && name.Substring(name.Length - 1, 1) == "$")
+            {
+                string key = name.Substring(1, name.Length - 2);
+                string result = null;
+                if(configs.ContainsKey(key))
+                {
+                	result = configs[key];
+                }
+                else
+                {
+                	result = configs["Default"];
+                }
+           		addr = result;
+            }
+
+            return addr.Replace("\"","");
+		}
 		
 		//**********************************************************************
 		/// <summary>
@@ -152,9 +187,26 @@ namespace NformTester.lib
 				}
 			}
 			if(m_iRowStart == 1)
-        		m_iProcessId = Host.Local.RunApplication(m_strApplicationName);
+				m_iProcessId = Host.Local.RunApplication(parseToValue(m_strApplicationName));
 		}
 		
+		/// <summary>
+        /// Get all info from app.config.
+        /// </summary>
+    	private static IDictionary<string, string> GetConfigs ()
+		{
+			var configs = new Dictionary<string, string> ();
+			int len = ConfigurationManager.AppSettings.Count;
+			for (int i = 0; i < len; i++)
+			{
+				configs.Add (
+					ConfigurationManager.AppSettings.GetKey (i),
+					ConfigurationManager.AppSettings[i]);
+			}
+
+			return configs;
+		}
+    	
 		//**********************************************************************
 		/// <summary>
 		/// Read the command from scripts

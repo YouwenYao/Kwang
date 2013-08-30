@@ -12,12 +12,15 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
+using System.Windows.Forms;
 using WinForms = System.Windows.Forms;
 
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
+
+using NformTester.lib;
 
 namespace NformTester
 {

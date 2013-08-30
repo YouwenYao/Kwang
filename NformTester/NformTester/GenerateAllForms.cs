@@ -508,11 +508,11 @@ namespace NformTester
             Delay.SpeedFactor = 1.0;
             
 			
-			generateFormValDependList("test");
+			//generateFormValDependList("test");
 			
 			// replaceAllValDependList("test");
 			
-        	MessageBox.Show("Finished!");
+        	//MessageBox.Show("Finished!");
         }
     }
 }

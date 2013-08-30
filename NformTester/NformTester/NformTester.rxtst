@@ -22,15 +22,6 @@ reportlevel="Info;20">
 			name="100._Install_and_Uninstall1"
 			id="60f17151-19bc-4c5a-9b92-8826dafc4935">
 				<testcase
-				name="TST932_InstallNformFullPackage"
-				id="11ce54d4-ddca-4bca-9177-fc528198fa58">
-					<testmodule
-					name="TestCaseDriver"
-					id="b3d54874-198f-4842-8956-5cf7c391b8c2"
-					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
-					type="UserCode"/>
-				</testcase>
-				<testcase
 				name="TST931_InstallViewerOnly"
 				id="c135c466-1094-446b-9be0-cb60cf77662c">
 					<testmodule
@@ -45,6 +36,15 @@ reportlevel="Info;20">
 					<testmodule
 					name="TestCaseDriver"
 					id="835bcc93-1fc4-4259-9f8e-a0448f51537e"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="TST932_InstallNformFullPackage"
+				id="11ce54d4-ddca-4bca-9177-fc528198fa58">
+					<testmodule
+					name="TestCaseDriver"
+					id="b3d54874-198f-4842-8956-5cf7c391b8c2"
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
@@ -1016,6 +1016,15 @@ reportlevel="Info;20">
 						type="UserCode"/>
 					</testcase>
 					<testcase
+					name="TST1078_VerifyDontFailAddingActionSet"
+					id="a8556878-6074-423a-8308-70397e7ad7c5">
+						<testmodule
+						name="TestCaseDriver"
+						id="1a61affe-30ed-410a-a29a-17334b13e741"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
 					name="TST709_ConfigureForwardTrapWithOtherPortNumber"
 					id="c64ca2d8-c1f8-4e9c-b79f-085b58f70f3a">
 						<testmodule
@@ -1030,6 +1039,24 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="3b7691d7-ddc5-4ef8-a7f9-341794f664d4"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST544_ConfigureShutDownAction"
+					id="f8a35f82-6c88-42a1-aa25-af328dd51c55">
+						<testmodule
+						name="TestCaseDriver"
+						id="63e34877-fd79-4766-b8ff-2fab194e3a4a"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST496_EditMultilink1.5Client"
+					id="f2e8a674-05e5-4218-b7a2-8839c486cbc7">
+						<testmodule
+						name="TestCaseDriver"
+						id="b3253527-438a-45bd-a5f9-fad2bba74e26"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -1154,6 +1181,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST1148_CreateNewLogicalGroupForAView"
+					id="bb64cf93-af23-4301-9648-5b0bd6e34bd3">
+						<testmodule
+						name="TestCaseDriver"
+						id="fd90e2c8-66c3-4d90-baa5-592b8be0c584"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.040._Users_and_Groups2"
@@ -1236,6 +1272,15 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="5e43bc38-1923-4739-a5fa-4518dcb15235"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST556_ModifyRightsForNewActionFeaturesOfPowerUsers"
+					id="1a89833c-f60b-43f9-a390-b39cfea919b2">
+						<testmodule
+						name="TestCaseDriver"
+						id="b39fca30-0eda-44b2-90ff-b6fbeec1d70a"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -1337,6 +1382,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST2746_CheckGUIForGlobalStatusPolling"
+					id="a6c08b3f-6d09-42f5-ba80-52414a588437">
+						<testmodule
+						name="TestCaseDriver"
+						id="e557410f-faf3-4acc-b44e-ba34f5dd1f67"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.070._Change_Password2"
@@ -1378,6 +1432,15 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="f19c1c80-e38c-4bab-8068-065c06488970"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST1124_VerifyExternalTabUserOption"
+					id="23426a82-657f-4b01-a9f8-2293170a2d39">
+						<testmodule
+						name="TestCaseDriver"
+						id="758570f2-1068-4c0c-88ad-f57cedf32e88"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -1567,13 +1630,13 @@ reportlevel="Info;20">
 			<testcase
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
+			id="16b2d828-575c-4faf-8f7d-74b92c41fc12"/>
+			<testcase
 			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
 			<testcase
 			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
 			<testcase
-			id="d347903d-e095-4f84-b2e1-9492aa080ce4"/>
-			<testcase
-			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
+			id="d6bef00f-077b-46be-a485-6adfeea94ec6"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
