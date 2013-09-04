@@ -1475,6 +1475,15 @@ reportlevel="Info;20">
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
+				<testcase
+				name="TST1106_ExportActionHistoryForApplicationAlarms"
+				id="2c77fd2c-0491-4d9f-95a3-c279826c26f4">
+					<testmodule
+					name="TestCaseDriver"
+					id="16d4d8a2-81ee-484e-a8e7-d7e351ee8d51"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
 			</testcase>
 			<testcase
 			name="800._Help2"
@@ -1586,11 +1595,9 @@ reportlevel="Info;20">
 			<testcase
 			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
 			<testcase
-			id="64d6f7ed-643a-4648-9121-b2dc1ea70268"/>
+			id="2c77fd2c-0491-4d9f-95a3-c279826c26f4"/>
 			<testcase
-			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
-			<testcase
-			id="f891b5e2-c2e1-4980-8182-8a66f43b7a34"/>
+			id="97d8e90e-39f2-4c80-b3df-7ff4e4941dfa"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
