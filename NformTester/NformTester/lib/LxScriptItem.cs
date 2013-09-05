@@ -164,14 +164,13 @@ namespace NformTester.lib
 		/// </summary>
 		public string parseToValue(string name)
         {
-
             if (name.Equals(""))
             {
                 return "";
             }
+
 			LxSetup mainOp = LxSetup.getInstance();
 			var configs = mainOp.configs;
-			
             string addr = name;
             if (name.Substring(0, 1) == "$" && name.Substring(name.Length - 1, 1) == "$")
             {

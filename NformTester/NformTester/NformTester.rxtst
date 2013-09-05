@@ -1034,6 +1034,15 @@ reportlevel="Info;20">
 						type="UserCode"/>
 					</testcase>
 					<testcase
+					name="TST593_WithoutAllActionRightsCanNotDeleteActionSet"
+					id="d347903d-e095-4f84-b2e1-9492aa080ce4">
+						<testmodule
+						name="TestCaseDriver"
+						id="3b7691d7-ddc5-4ef8-a7f9-341794f664d4"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
 					name="TST544_ConfigureShutDownAction"
 					id="f8a35f82-6c88-42a1-aa25-af328dd51c55">
 						<testmodule
@@ -1160,6 +1169,15 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="0d74a8a2-3815-411d-90bb-90dc906d6761"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST1146_CreationOfNewLogicalGroupToViewTree"
+					id="d6bef00f-077b-46be-a485-6adfeea94ec6">
+						<testmodule
+						name="TestCaseDriver"
+						id="2f88a886-77ef-422a-a1d5-f1acd2ee45b4"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -1609,6 +1627,7 @@ reportlevel="Info;20">
 	default="TestRun">
 		<testconfiguration
 		name="TestRun"/>
+
 	</testconfigurations>
 	<references>
 		<reference>
