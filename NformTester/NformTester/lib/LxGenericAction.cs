@@ -98,29 +98,30 @@ namespace NformTester.lib
 			
             
 			bool finalResult = true;
-				foreach(LxScriptItem item in stepList)
-					{
-						bool resultFlag = true;
-						try 
-						{
-							resultFlag = executeCommand(item);
-							wrongCount = 0;
-						}
-						catch(Exception e) 
-						{
-							wrongCount++;
-							resultFlag = false;
-							finalResult = false;
-							LxLog.Error("Error",e.Message.ToString());
-						}
+			foreach(LxScriptItem item in stepList)
+			{
+				bool resultFlag = true;
+				try 
+				{
+					resultFlag = executeCommand(item);
+					wrongCount = 0;
+				}
+				catch(Exception e) 
+				{
+					wrongCount++;
+					resultFlag = false;
+					finalResult = false;
+					LxLog.Error("Error",e.Message.ToString());
+				}
 						
-						// Log each step is pass or not
-						mainOp.opXls.writeCell(Convert.ToInt32(item.m_Index)+1,14,resultFlag==true?"Pass":"Fail");
-						LxLog.Info("Info",item.m_Index+" "+item.m_Component+" "+item.m_Action+" "+ (resultFlag==true?"Success":"Failure"));
+				// Log each step is pass or not
+				mainOp.opXls.writeCell(Convert.ToInt32(item.m_Index)+1,14,resultFlag==true?"Pass":"Fail");
+				LxLog.Info("Info",item.m_Index+" "+item.m_Component+" "+item.m_Action+" "+ (resultFlag==true?"Success":"Failure"));
 						
-		           //If this script fails three times continuously, break this execution.
-			           if(wrongCount==wrongTime) break;
-					}
+		         //If this script fails three times continuously, break this execution.
+			     if(wrongCount==wrongTime) 
+			     	break;
+			}
 				
 			return finalResult;
 		}
@@ -183,6 +184,7 @@ namespace NformTester.lib
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Obtain_setting_from_device.Check();
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Next.Click();
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Finish.Click();
+				Delay.Milliseconds(5000);
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device_Results.OK.Click();
 				repo.NFormApp.ManagedDevicesWindow.FormManaged_Devices.Close.Click();				
 			}
@@ -197,6 +199,7 @@ namespace NformTester.lib
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Device_type.SelectedItemText = item.getArg5Text();
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Device_protocol.SelectedItemText = item.getArg6Text();
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Finish.Click();
+				Delay.Milliseconds(5000);
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device_Results.OK.Click();
 				repo.NFormApp.ManagedDevicesWindow.FormManaged_Devices.Close.Click();				
 			}

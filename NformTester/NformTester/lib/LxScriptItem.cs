@@ -164,6 +164,11 @@ namespace NformTester.lib
 		/// </summary>
 		public string parseToValue(string name)
         {
+
+            if (name.Equals(""))
+            {
+                return "";
+            }
 			LxSetup mainOp = LxSetup.getInstance();
 			var configs = mainOp.configs;
 			

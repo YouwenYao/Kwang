@@ -164,6 +164,10 @@ namespace NformTester.driver
             LxTearDown.closeApp(mainOp.ProcessId);		//  ********* 4. clean up for next running *********
 			
             RestoreDB(RestoreDB_Flag);
+            if(!result)
+            {
+				throw new Ranorex.ValidationException("The test case running failed!", null);  
+            }
         }
         
     }

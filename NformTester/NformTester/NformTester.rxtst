@@ -1608,12 +1608,7 @@ reportlevel="Info;20">
 	<testconfigurations
 	default="TestRun">
 		<testconfiguration
-		name="TestRun">
-			<testcase
-			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
-			<testcase
-			id="15542ef7-bf90-431d-8e26-f8eb1c05a42e"/>
-		</testconfiguration>
+		name="TestRun"/>
 	</testconfigurations>
 	<references>
 		<reference>

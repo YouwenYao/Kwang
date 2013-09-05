@@ -9,6 +9,7 @@
 using System;
 using System.Collections;
 using System.Diagnostics;
+using System.IO;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -158,6 +159,11 @@ namespace NformTester.lib
 		/// </summary>
 		public void runApp()
 		{
+			if(!File.Exists(m_strExcelDirve))
+			{
+				runOverOneCase(getTestCaseName());
+				throw new Ranorex.ElementNotFoundException("The file " + m_strExcelDirve + " not found", null);   
+			}
 			opXls = new LxXlsOper();
         	opXls.open(m_strExcelDirve);
         	m_strApplicationName = opXls.readCell(2,2);
