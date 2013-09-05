@@ -1554,6 +1554,15 @@ reportlevel="Info;20">
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
+				<testcase
+				name="TST846_VerifyAlarmStatusWhichAcknowledgedByUser"
+				id="2123206c-90ec-4dbb-9a4f-f7f714a9f4f5">
+					<testmodule
+					name="TestCaseDriver"
+					id="19327857-4dae-4a98-94b5-9a9abe1108e8"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
 			</testcase>
 			<testcase
 			name="1000._Database2"
@@ -1595,9 +1604,9 @@ reportlevel="Info;20">
 			<testcase
 			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
 			<testcase
-			id="2c77fd2c-0491-4d9f-95a3-c279826c26f4"/>
+			id="2123206c-90ec-4dbb-9a4f-f7f714a9f4f5"/>
 			<testcase
-			id="97d8e90e-39f2-4c80-b3df-7ff4e4941dfa"/>
+			id="a5e9adfd-9aee-44b1-a5b7-3963bd48c29d"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

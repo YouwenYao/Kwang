@@ -652,6 +652,10 @@
       <id>c8c82198-869a-4484-9ab4-f4a0fff674f2</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST846_VerifyAlarmStatusWhichAcknowledgedByUser.xlsx">
+      <id>cb1fc257-bed1-4c5b-bb88-c0a3da8d2a64</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\TST923_CheckFunctionalityOfGadgetSetupDialogFilterByDeviceType.xlsx">
       <id>6e252692-4c8c-45bd-9be6-13f3d3f00e14</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
