@@ -540,6 +540,10 @@
       <id>2d06011e-962f-47c6-a070-fa8d1ed65e77</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST565_VerifyTabOrderOnShutdownClientWindow.xlsx">
+      <id>aeb6a8fd-3a6b-435a-af54-855d97fe3a13</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\TST568_CheckNewActionsTypeInActionSetWindowForPowerUsersRights.xlsx">
       <id>1381d5e0-16f1-4e11-82b8-deef25d93fa7</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

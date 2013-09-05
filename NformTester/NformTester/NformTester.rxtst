@@ -1069,6 +1069,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST565_VerifyTabOrderOnShutdownClientWindow"
+					id="0cbf8b2b-401e-4b7f-adad-4a110d49b945">
+						<testmodule
+						name="TestCaseDriver"
+						id="f28215e1-a7ab-4c2c-a9cb-a104ea746dde"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.030._Views2"
@@ -1602,11 +1611,13 @@ reportlevel="Info;20">
 			<testcase
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
+			id="0cbf8b2b-401e-4b7f-adad-4a110d49b945"/>
+			<testcase
 			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
 			<testcase
-			id="2123206c-90ec-4dbb-9a4f-f7f714a9f4f5"/>
+			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
 			<testcase
-			id="a5e9adfd-9aee-44b1-a5b7-3963bd48c29d"/>
+			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
