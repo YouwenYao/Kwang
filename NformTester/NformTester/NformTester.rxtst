@@ -1025,15 +1025,6 @@ reportlevel="Info;20">
 						type="UserCode"/>
 					</testcase>
 					<testcase
-					name="TST1078_VerifyDontFailAddingActionSet"
-					id="a8556878-6074-423a-8308-70397e7ad7c5">
-						<testmodule
-						name="TestCaseDriver"
-						id="1a61affe-30ed-410a-a29a-17334b13e741"
-						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
-						type="UserCode"/>
-					</testcase>
-					<testcase
 					name="TST544_ConfigureShutDownAction"
 					id="f8a35f82-6c88-42a1-aa25-af328dd51c55">
 						<testmodule
@@ -1088,29 +1079,11 @@ reportlevel="Info;20">
 						type="UserCode"/>
 					</testcase>
 					<testcase
-					name="TST544_ConfigureShutDownAction"
-					id="f8a35f82-6c88-42a1-aa25-af328dd51c55">
-						<testmodule
-						name="TestCaseDriver"
-						id="63e34877-fd79-4766-b8ff-2fab194e3a4a"
-						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
-						type="UserCode"/>
-					</testcase>
-					<testcase
 					name="TST1327_VerifyAutomaticSendToRecipientSeverBeCheckedByDefault"
 					id="3b16f124-c160-4c63-b697-959d437accf7">
 						<testmodule
 						name="TestCaseDriver"
 						id="ed60bd91-d309-40d3-9f56-8b71ba70e54f"
-						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
-						type="UserCode"/>
-					</testcase>
-					<testcase
-					name="TST496_EditMultilink1.5Client"
-					id="f2e8a674-05e5-4218-b7a2-8839c486cbc7">
-						<testmodule
-						name="TestCaseDriver"
-						id="b3253527-438a-45bd-a5f9-fad2bba74e26"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>

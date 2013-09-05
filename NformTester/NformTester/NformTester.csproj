@@ -293,13 +293,12 @@
       <id>ea5931b2-4f24-4e53-8502-131b63a3c978</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-<<<<<<< HEAD
     <None Include="Keywordscripts\TST1146_CreationOfNewLogicalGroupToViewTree.xlsx">
       <id>86d6befa-98cc-462c-bbd8-bcc85f5e4e2f</id>
-=======
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\TST1148_CreateNewLogicalGroupForAView.xlsx">
       <id>54d85963-e68a-4e25-9405-c257f63990ea</id>
->>>>>>> ff43a3e7f96f058720b69f55eb9c12f6b9dd11ad
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\TST1149_DisablingUsersOwnAccount.xlsx">
@@ -562,13 +561,12 @@
       <id>83f60574-9352-420b-a2ef-bd5e5b556983</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-<<<<<<< HEAD
     <None Include="Keywordscripts\TST562_VerifyShutdownClientLicenseCount.xlsx">
       <id>8c8a750f-b70c-49ef-827e-2543b6c7ee9b</id>
-=======
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\TST556_ModifyRightsForNewActionFeaturesOfPowerUsers.xlsx">
       <id>2d06011e-962f-47c6-a070-fa8d1ed65e77</id>
->>>>>>> ff43a3e7f96f058720b69f55eb9c12f6b9dd11ad
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\TST568_CheckNewActionsTypeInActionSetWindowForPowerUsersRights.xlsx">
