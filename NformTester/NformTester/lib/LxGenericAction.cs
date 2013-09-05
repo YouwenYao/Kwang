@@ -317,6 +317,7 @@ namespace NformTester.lib
 			    }
 			    btn.Click();
 		        Validate.AreEqual(Resultflag,true);	
+		      
 			}
 		}
 		

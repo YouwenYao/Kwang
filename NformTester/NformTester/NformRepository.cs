@@ -18557,6 +18557,7 @@ namespace NformTester
         public partial class ServerOptionsWindowFolder : RepoGenBaseFolder
         {
             NformRepositoryFolders.FormServerOptionsAppFolder _formserveroptions;
+            NformRepositoryFolders.FormConfirmDeleteSendE_mailAppFolder _formconfirmdeletesende_mail;
 
             /// <summary>
             /// Creates a new ServerOptionsWindow  folder.
@@ -18565,6 +18566,7 @@ namespace NformTester
                     base("ServerOptionsWindow", "", parentFolder, 0, false, "436fb81c-ae0f-443b-a350-7bf138de72e5", "")
             {
                 _formserveroptions = new NformRepositoryFolders.FormServerOptionsAppFolder(parentFolder);
+                _formconfirmdeletesende_mail = new NformRepositoryFolders.FormConfirmDeleteSendE_mailAppFolder(parentFolder);
             }
 
             /// <summary>
@@ -18574,6 +18576,15 @@ namespace NformTester
             public virtual NformRepositoryFolders.FormServerOptionsAppFolder FormServerOptions
             {
                 get { return _formserveroptions; }
+            }
+
+            /// <summary>
+            /// The FormConfirmDeleteSendE_mail folder.
+            /// </summary>
+            [RepositoryFolder("ee4fea69-43a2-46a3-bc28-422534c2b8ca")]
+            public virtual NformRepositoryFolders.FormConfirmDeleteSendE_mailAppFolder FormConfirmDeleteSendE_mail
+            {
+                get { return _formconfirmdeletesende_mail; }
             }
         }
 
@@ -21995,6 +22006,100 @@ namespace NformTester
                 get
                 {
                     return _download_directory_for_updatesInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The FormConfirmDeleteSendE_mailAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("ee4fea69-43a2-46a3-bc28-422534c2b8ca")]
+        public partial class FormConfirmDeleteSendE_mailAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _yesInfo;
+            RepoItemInfo _noInfo;
+
+            /// <summary>
+            /// Creates a new FormConfirmDeleteSendE_mail  folder.
+            /// </summary>
+            public FormConfirmDeleteSendE_mailAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("FormConfirmDeleteSendE_mail", "/form[@title='Server Options' and @processname='NformViewer' and @class='#32770']", parentFolder, 30000, true, "ee4fea69-43a2-46a3-bc28-422534c2b8ca", "")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "ee4fea69-43a2-46a3-bc28-422534c2b8ca");
+                _yesInfo = new RepoItemInfo(this, "Yes", "button[@text='&Yes']", 30000, null, "ef2e5a3f-7759-4d5c-a57d-74302d6e305c");
+                _noInfo = new RepoItemInfo(this, "No", "button[@text='&No']", 30000, null, "f8cad1a7-b933-48c1-82ad-b97be90837de");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("ee4fea69-43a2-46a3-bc28-422534c2b8ca")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("ee4fea69-43a2-46a3-bc28-422534c2b8ca")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Yes item.
+            /// </summary>
+            [RepositoryItem("ef2e5a3f-7759-4d5c-a57d-74302d6e305c")]
+            public virtual Ranorex.Button Yes
+            {
+                get
+                {
+                    return _yesInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Yes item info.
+            /// </summary>
+            [RepositoryItemInfo("ef2e5a3f-7759-4d5c-a57d-74302d6e305c")]
+            public virtual RepoItemInfo YesInfo
+            {
+                get
+                {
+                    return _yesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The No item.
+            /// </summary>
+            [RepositoryItem("f8cad1a7-b933-48c1-82ad-b97be90837de")]
+            public virtual Ranorex.Button No
+            {
+                get
+                {
+                    return _noInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The No item info.
+            /// </summary>
+            [RepositoryItemInfo("f8cad1a7-b933-48c1-82ad-b97be90837de")]
+            public virtual RepoItemInfo NoInfo
+            {
+                get
+                {
+                    return _noInfo;
                 }
             }
         }
