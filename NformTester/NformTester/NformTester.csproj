@@ -472,6 +472,10 @@
       <id>b0727378-8011-456f-84c8-88fa1e6d1a12</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST492_ActionViewShutdownClient.xlsx">
+      <id>c7946e26-5010-472f-8b20-d92b9e56f0d2</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\TST494_UserCanNotConfigureWriteDataActionWithoutPermission.xlsx">
       <id>5fcf3a0f-32db-471f-b13c-d95a73134f3f</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
