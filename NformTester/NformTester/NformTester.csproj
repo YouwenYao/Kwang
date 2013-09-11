@@ -388,6 +388,10 @@
       <id>ce3315a5-6063-4f8e-9061-d19c762dbb1a</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST2747_CheckGUIForStatusPollingOnDeviceProperties.xlsx">
+      <id>6d4c53dc-7aab-4aa6-9bd2-6002bdf85679</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST2748_DeviceStatusPollingAndGolbalStatusPolling.xlsx">
       <id>b11d8a1e-94da-4d3a-af9a-bfea7cc46713</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

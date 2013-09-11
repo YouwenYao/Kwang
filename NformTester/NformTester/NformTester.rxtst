@@ -813,6 +813,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST2747_CheckGUIForStatusPollingOnDeviceProperties"
+					id="ffdaba7d-0a54-41e8-900c-95e5ab0a688e">
+						<testmodule
+						name="TestCaseDriver"
+						id="3cb1ff3c-290d-4696-a151-87240589d844"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.020._Actions2"
@@ -1616,7 +1625,18 @@ reportlevel="Info;20">
 	<testconfigurations
 	default="TestRun">
 		<testconfiguration
-		name="TestRun"/>
+		name="TestRun">
+			<testcase
+			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
+			<testcase
+			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
+			<testcase
+			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
+			<testcase
+			id="bf8d89e3-a747-4a38-bac2-d669014b54a6"/>
+			<testcase
+			id="ffdaba7d-0a54-41e8-900c-95e5ab0a688e"/>
+		</testconfiguration>
 	</testconfigurations>
 	<references>
 		<reference>

@@ -98,29 +98,30 @@ namespace NformTester.lib
 			
             
 			bool finalResult = true;
-				foreach(LxScriptItem item in stepList)
-					{
-						bool resultFlag = true;
-						try 
-						{
-							resultFlag = executeCommand(item);
-							wrongCount = 0;
-						}
-						catch(Exception e) 
-						{
-							wrongCount++;
-							resultFlag = false;
-							finalResult = false;
-							LxLog.Error("Error",e.Message.ToString());
-						}
+			foreach(LxScriptItem item in stepList)
+			{
+				bool resultFlag = true;
+				try 
+				{
+					resultFlag = executeCommand(item);
+					wrongCount = 0;
+				}
+				catch(Exception e) 
+				{
+					wrongCount++;
+					resultFlag = false;
+					finalResult = false;
+					LxLog.Error("Error",e.Message.ToString());
+				}
 						
-						// Log each step is pass or not
-						mainOp.opXls.writeCell(Convert.ToInt32(item.m_Index)+1,14,resultFlag==true?"Pass":"Fail");
-						LxLog.Info("Info",item.m_Index+" "+item.m_Component+" "+item.m_Action+" "+ (resultFlag==true?"Success":"Failure"));
+				// Log each step is pass or not
+				mainOp.opXls.writeCell(Convert.ToInt32(item.m_Index)+1,14,resultFlag==true?"Pass":"Fail");
+				LxLog.Info("Info",item.m_Index+" "+item.m_Component+" "+item.m_Action+" "+ (resultFlag==true?"Success":"Failure"));
 						
-		           //If this script fails three times continuously, break this execution.
-			           if(wrongCount==wrongTime) break;
-					}
+		         //If this script fails three times continuously, break this execution.
+			     if(wrongCount==wrongTime) 
+			     	break;
+			}
 				
 			return finalResult;
 		}
@@ -183,6 +184,7 @@ namespace NformTester.lib
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Obtain_setting_from_device.Check();
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Next.Click();
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Finish.Click();
+				Delay.Milliseconds(5000);
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device_Results.OK.Click();
 				repo.NFormApp.ManagedDevicesWindow.FormManaged_Devices.Close.Click();				
 			}
@@ -197,6 +199,7 @@ namespace NformTester.lib
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Device_type.SelectedItemText = item.getArg5Text();
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Device_protocol.SelectedItemText = item.getArg6Text();
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Finish.Click();
+				Delay.Milliseconds(5000);
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device_Results.OK.Click();
 				repo.NFormApp.ManagedDevicesWindow.FormManaged_Devices.Close.Click();				
 			}
@@ -260,27 +263,28 @@ namespace NformTester.lib
 		{	
 			//MessageBox.Show(item.getComponent().ToString());
 			// The component is lable
-//			if(item.getComponent().ToString().IndexOf("{Text:") != -1)
-//			{
-//				Ranorex.NativeWindow nativeWnd = item.getComponentInfo().CreateAdapter<Ranorex.NativeWindow>(false);
-//				string lableText = nativeWnd.WindowText;
-//				
-//				if(item.getArg2Text() == "Equal")
-//				{string abc = item.getArg3Text();
-//					Validate.AreEqual(lableText, item.getArg3Text());
-//				}
-//				if(item.getArg2Text() == "Contains")
-//				{
-//					int iFlag = lableText.IndexOf(item.getArg3Text());
-//					Validate.IsTrue(iFlag != -1);
-//				}	
-//				if(item.getArg2Text() == "NotContains")
-//				{
-//					int iFlag = lableText.IndexOf(item.getArg3Text());
-//					Validate.IsTrue(iFlag == -1);
-//				}				
-//				return;
-//			}
+			string testtemp = item.getComponent().ToString();
+			if(item.getComponent().ToString().IndexOf("Lbl") != -1)
+			{
+				Ranorex.NativeWindow nativeWnd = item.getComponentInfo().CreateAdapter<Ranorex.NativeWindow>(false);
+				string lableText = nativeWnd.WindowText;
+				
+				if(item.getArg2Text() == "Equal")
+				{string abc = item.getArg3Text();
+					Validate.AreEqual(lableText, item.getArg3Text());
+				}
+				if(item.getArg2Text() == "Contains")
+				{
+					int iFlag = lableText.IndexOf(item.getArg3Text());
+					Validate.IsTrue(iFlag != -1);
+				}	
+				if(item.getArg2Text() == "NotContains")
+				{
+					int iFlag = lableText.IndexOf(item.getArg3Text());
+					Validate.IsTrue(iFlag == -1);
+				}				
+				return;
+			}
 
 			if(item.getArg2Text() == "Equal")
 			{
@@ -357,6 +361,12 @@ namespace NformTester.lib
 			if(item.m_Type == "C" && item.m_WindowName == "CopyDataToFile") 
 			{				
 				CopyDataToFile(item);
+				return true;
+			}
+			
+			if(item.m_Type == "C" && item.m_WindowName == "AppStart") 
+			{				
+				AppStart(item);
 				return true;
 			}
 					
@@ -636,6 +646,16 @@ namespace NformTester.lib
 			}
         }
 		
+		//**********************************************************************
+		/// <summary>
+		/// Start any application.
+		/// </summary>
+		public static void AppStart(LxScriptItem item)
+		{
+			string strApplicationName = item.getArgText();		
+			Host.Local.RunApplication(strApplicationName);
+        }
+		
 		private static void Write_text(string file_path, string copydata)
 		{
 			if(System.IO.File.Exists(file_path))
@@ -871,6 +891,18 @@ namespace NformTester.lib
 			
 			if(objType.Name.ToString() == "Tree")
 			{
+				
+				String Xpos = " ";
+				String Ypos = " ";	
+				String sPoint ="0;0";
+				
+				if((!(item.getArg3Text().Trim().Equals("")))&&(!(item.getArg4Text().Trim().Equals(""))))
+				{
+					Xpos = item.getArg3Text();
+					Ypos = item.getArg4Text();
+					sPoint =Xpos+";"+Ypos;
+				}
+				
 				int treeLevel = Convert.ToInt32(item.getArgText());
 				string strTreelevel = "";
 				string strTreelevelCkb = "";
@@ -886,8 +918,9 @@ namespace NformTester.lib
 				
 				if(targetTreeItemInfo.Exists())
 				{
-					Ranorex.TreeItem targetTreeItem = targetTreeItemInfo.CreateAdapter<Ranorex.TreeItem>(true);            	            	
-            		targetTreeItem.Click();
+					Ranorex.TreeItem targetTreeItem = targetTreeItemInfo.CreateAdapter<Ranorex.TreeItem>(true); 
+					
+					targetTreeItem.Click(sPoint);
 				}
 				else
 				{
@@ -895,7 +928,7 @@ namespace NformTester.lib
 				                                                   objComponetInfo.Path + strTreelevelCkb +"[@accessiblename='"+ item.getArg2Text() +"']", 
 				                                                   10000, null, System.Guid.NewGuid().ToString());
 					Ranorex.CheckBox targetTreeItemCkb = targetTreeItemInfo.CreateAdapter<Ranorex.CheckBox>(true);      
-					targetTreeItemCkb.Click();
+					targetTreeItemCkb.Click(sPoint);
 				}						
 				
             	
