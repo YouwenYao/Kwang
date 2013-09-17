@@ -2910,7 +2910,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,nativewindow">
-						/form[@title='Confirm License Delete']/button[@text='&#26159;(&amp;Y)' or @text='Yes']
+						/form[@title='Confirm License Delete']/button[@text='&#26159;(&amp;Y)' or @text='&amp;Yes']
 					</item>
 					<item
 					name="No"

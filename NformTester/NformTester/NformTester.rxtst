@@ -1096,6 +1096,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST510_VerifyCountOnRemainingLicenseAndShutdownClients"
+					id="dff6718a-6648-43f7-8352-1186480493cd">
+						<testmodule
+						name="TestCaseDriver"
+						id="45ef9d26-1c79-4e4d-8d7d-f6844f309c6c"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.030._Views2"
@@ -1633,9 +1642,9 @@ reportlevel="Info;20">
 			<testcase
 			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
 			<testcase
-			id="bf8d89e3-a747-4a38-bac2-d669014b54a6"/>
+			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
 			<testcase
-			id="ffdaba7d-0a54-41e8-900c-95e5ab0a688e"/>
+			id="dff6718a-6648-43f7-8352-1186480493cd"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

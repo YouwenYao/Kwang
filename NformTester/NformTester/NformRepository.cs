@@ -9216,7 +9216,7 @@ namespace NformTester
                     base("FormConfirm_License_Delete", "/form[@title='Confirm License Delete']", parentFolder, 30000, true, "59e3fef5-2eac-4eda-b75b-2e1d789f8de4", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "59e3fef5-2eac-4eda-b75b-2e1d789f8de4");
-                _yesInfo = new RepoItemInfo(this, "Yes", "button[@text='是(&Y)' or @text='Yes']", 30000, null, "c20eee86-1b3e-446d-94c6-84f2be8d1224");
+                _yesInfo = new RepoItemInfo(this, "Yes", "button[@text='是(&Y)' or @text='&Yes']", 30000, null, "c20eee86-1b3e-446d-94c6-84f2be8d1224");
                 _noInfo = new RepoItemInfo(this, "No", "button[@text='否(&N)' or @text='No']", 30000, null, "907c94de-25cf-44a7-8c19-31e08034f5f5");
             }
 
