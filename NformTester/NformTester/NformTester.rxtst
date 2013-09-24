@@ -804,6 +804,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST2770_ToCheckSortOrderForDisplayingTheDataPoints"
+					id="5671bfae-dd6b-47f5-9563-f14fabf2d9bd">
+						<testmodule
+						name="TestCaseDriver"
+						id="3f58dc03-2edb-456a-a738-98bf98da5ac3"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.020._Actions2"
@@ -880,6 +889,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST721_ConfigureShutdownclientAction"
+					id="1265dec6-c93b-4e41-8431-faae72ec3273">
+						<testmodule
+						name="TestCaseDriver"
+						id="f09ae077-1e75-451a-a781-4faa57fe3ba0"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.030._Views2"
@@ -939,6 +957,33 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="af10a949-ea9f-42a9-9b70-5848ea91f816"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST831_RightsCanBeInvokedAndRevokedForConfigureDevices"
+					id="34b69e6c-d967-42dc-abe4-ad5742288e65">
+						<testmodule
+						name="TestCaseDriver"
+						id="32c20fd4-03d5-463d-a36f-16fd0b9fe15a"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST499_UserShouldConfigureSETActionsUsingENABLEDISABLE"
+					id="8737cd40-a73d-4844-ae2a-c1a9c61f40f8">
+						<testmodule
+						name="TestCaseDriver"
+						id="686f32a9-a581-49fd-9f56-7c4cb63c9ddd"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST993_UserWithAdministrativeRightsCanEditUserAccountPropertiesAndPreference"
+					id="d54d0596-ae8e-4617-a390-a9285889ff13">
+						<testmodule
+						name="TestCaseDriver"
+						id="e1b4ba1f-f6e1-4a60-8af8-543f50fd037b"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -1003,6 +1048,15 @@ reportlevel="Info;20">
 					<testmodule
 					name="TestCaseDriver"
 					id="c3d59ad6-6802-4b9d-8548-b0fddf910a5d"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="TST1141_ExportDataLogHistoryForDevicesWithTheUser_definedFilenameAndLocation"
+				id="313719b0-8a6c-4b60-8986-65c1ff95845b">
+					<testmodule
+					name="TestCaseDriver"
+					id="561d1873-5530-4a03-a85e-9861fc3fa145"
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
@@ -1075,18 +1129,7 @@ reportlevel="Info;20">
 	<testconfigurations
 	default="TestRun">
 		<testconfiguration
-		name="TestRun">
-			<testcase
-			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
-			<testcase
-			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
-			<testcase
-			id="812896e9-750b-4a0e-af89-1ea254109456"/>
-			<testcase
-			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
-			<testcase
-			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
-		</testconfiguration>
+		name="TestRun"/>
 	</testconfigurations>
 	<references>
 		<reference>

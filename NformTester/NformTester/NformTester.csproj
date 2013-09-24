@@ -224,6 +224,10 @@
       <id>ea5931b2-4f24-4e53-8502-131b63a3c978</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST1141_ExportDataLogHistoryForDevicesWithTheUser_definedFilenameAndLocation.xlsx">
+      <id>ff97fc25-6d3e-441c-8b09-84c169eb7286</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST1172_EditDeviceAlarmName.xlsx">
       <id>3913c813-3ca3-4c5e-b1c9-6b9967dcb3fe</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -312,6 +316,10 @@
       <id>a12783e9-d7a7-4785-a488-780327b870f5</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST2770_ToCheckSortOrderForDisplayingTheDataPoints.xlsx">
+      <id>314c0a57-c3bd-445e-a9e2-76aa66af0d2e</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST2798_ConfigurationOnDeviceMaintenanceWindow.xlsx">
       <id>dea4bd97-9694-42c2-b6cc-557385d0719b</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -362,6 +370,10 @@
     </None>
     <None Include="keywordscripts\TST498_CheckConfigureDisplayTrendLineInPlotting.xlsx">
       <id>fb3235a4-8ad3-45b3-95d7-6c4fef6dab8c</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST499_UserShouldConfigureSETActionsUsingENABLEDISABLE.xlsx">
+      <id>8084a845-8c6e-48e6-94b1-f764a04012c2</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\TST514_CheckDefaultRightsForActionsFeaturesOfPowerUsersGroup.xlsx">
@@ -440,6 +452,10 @@
       <id>dcc1d8db-4707-4c27-85ba-c879a551339c</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST721_ConfigureShutdownclientAction.xlsx">
+      <id>55d2a02c-8bdb-437d-b0e6-1242b1508c22</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST762_CheckGUIOfPeriodComboBoxes.xlsx">
       <id>e15d246d-8e87-4c8f-829a-d7d9f7bdda63</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -462,6 +478,10 @@
     </None>
     <None Include="Keywordscripts\TST809_VerifyDeviceGadgetInformation.xlsx">
       <id>43b03315-f525-454f-829e-07f78ddb7531</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST831_RightsCanBeInvokedAndRevokedForConfigureDevices.xlsx">
+      <id>ff93c7ab-a89e-4ea2-af71-11d9d699ab06</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="keywordscripts\TST931_InstallViewerOnly.xlsx">
@@ -526,6 +546,10 @@
     </None>
     <None Include="keywordscripts\TST990_CreateNewUser.xlsx">
       <id>550b342e-f276-496b-9ec0-de308eebb3f9</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST993_UserWithAdministrativeRightsCanEditUserAccountPropertiesAndPreference.xlsx">
+      <id>8a2d7a7d-1d32-4c18-8a39-a1202426b54d</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="mds\bbmd_p1.cfg">
