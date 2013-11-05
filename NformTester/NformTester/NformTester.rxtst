@@ -813,6 +813,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="TST2747_CheckGUIForStatusPollingOnDeviceProperties"
+					id="ffdaba7d-0a54-41e8-900c-95e5ab0a688e">
+						<testmodule
+						name="TestCaseDriver"
+						id="3cb1ff3c-290d-4696-a151-87240589d844"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.020._Actions2"
@@ -1093,6 +1102,33 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="8b412986-6ea9-4a7b-ab58-41a56634c04e"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST565_VerifyTabOrderOnShutdownClientWindow"
+					id="0cbf8b2b-401e-4b7f-adad-4a110d49b945">
+						<testmodule
+						name="TestCaseDriver"
+						id="f28215e1-a7ab-4c2c-a9cb-a104ea746dde"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST492_ActionViewShutdownClient"
+					id="d07cda12-a6da-411c-831b-9c226525f69c">
+						<testmodule
+						name="TestCaseDriver"
+						id="2cb720a8-5c20-4602-8c89-0882d029069c"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST510_VerifyCountOnRemainingLicenseAndShutdownClients"
+					id="dff6718a-6648-43f7-8352-1186480493cd">
+						<testmodule
+						name="TestCaseDriver"
+						id="45ef9d26-1c79-4e4d-8d7d-f6844f309c6c"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -1642,6 +1678,15 @@ reportlevel="Info;20">
 					<testmodule
 					name="TestCaseDriver"
 					id="7d2e32f1-49d8-4fea-8d98-5a615686f365"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="TST846_VerifyAlarmStatusWhichAcknowledgedByUser"
+				id="2123206c-90ec-4dbb-9a4f-f7f714a9f4f5">
+					<testmodule
+					name="TestCaseDriver"
+					id="19327857-4dae-4a98-94b5-9a9abe1108e8"
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>

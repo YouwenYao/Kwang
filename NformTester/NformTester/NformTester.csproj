@@ -413,6 +413,10 @@
       <id>ce3315a5-6063-4f8e-9061-d19c762dbb1a</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST2747_CheckGUIForStatusPollingOnDeviceProperties.xlsx">
+      <id>6d4c53dc-7aab-4aa6-9bd2-6002bdf85679</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TST2748_DeviceStatusPollingAndGolbalStatusPolling.xlsx">
       <id>b11d8a1e-94da-4d3a-af9a-bfea7cc46713</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -497,6 +501,10 @@
       <id>b0727378-8011-456f-84c8-88fa1e6d1a12</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST492_ActionViewShutdownClient.xlsx">
+      <id>c7946e26-5010-472f-8b20-d92b9e56f0d2</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\TST494_UserCanNotConfigureWriteDataActionWithoutPermission.xlsx">
       <id>5fcf3a0f-32db-471f-b13c-d95a73134f3f</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -515,6 +523,10 @@
     </None>
     <None Include="Keywordscripts\TST503_TabOrderOnReadDateActionProperties.xlsx">
       <id>24e7f5a3-73ff-4efb-b8d9-f5eae52b08ef</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST510_VerifyCountOnRemainingLicenseAndShutdownClients.xlsx">
+      <id>78d130b5-4972-4c45-a382-1222725b075d</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\TST514_CheckDefaultRightsForActionsFeaturesOfPowerUsersGroup.xlsx">
@@ -567,6 +579,10 @@
     </None>
     <None Include="Keywordscripts\TST556_ModifyRightsForNewActionFeaturesOfPowerUsers.xlsx">
       <id>2d06011e-962f-47c6-a070-fa8d1ed65e77</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST565_VerifyTabOrderOnShutdownClientWindow.xlsx">
+      <id>aeb6a8fd-3a6b-435a-af54-855d97fe3a13</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\TST568_CheckNewActionsTypeInActionSetWindowForPowerUsersRights.xlsx">
@@ -695,6 +711,10 @@
     </None>
     <None Include="Keywordscripts\TST836_ExportActionHistoryForAll_Greater50MB.xlsx">
       <id>e9802634-d4ff-45ab-a4c8-0cd52712d950</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\TST846_VerifyAlarmStatusWhichAcknowledgedByUser.xlsx">
+      <id>cb1fc257-bed1-4c5b-bb88-c0a3da8d2a64</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\TST923_CheckFunctionalityOfGadgetSetupDialogFilterByDeviceType.xlsx">
