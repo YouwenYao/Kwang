@@ -1646,8 +1646,8 @@ reportlevel="Info;20">
 					id="16d4d8a2-81ee-484e-a8e7-d7e351ee8d51"
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
-					</testcase>
-					<testcase
+				</testcase>
+				<testcase
 				name="TST1141_ExportDataLogHistoryForDevicesWithTheUser_definedFilenameAndLocation"
 				id="313719b0-8a6c-4b60-8986-65c1ff95845b">
 					<testmodule
@@ -1779,7 +1779,12 @@ reportlevel="Info;20">
 	<testconfigurations
 	default="TestRun">
 		<testconfiguration
-		name="TestRun"/>
+		name="TestRun">
+			<testcase
+			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
+			<testcase
+			id="15542ef7-bf90-431d-8e26-f8eb1c05a42e"/>
+		</testconfiguration>
 	</testconfigurations>
 	<references>
 		<reference>

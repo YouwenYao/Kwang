@@ -60,7 +60,10 @@ namespace NformTester.lib
 		{
 			try 
 			{
-				Host.Local.CloseApplication(processId);
+				if(processId!=0)
+				{
+					Host.Local.CloseApplication(processId);
+				}
 			}
 			catch(Exception e) 
 			{

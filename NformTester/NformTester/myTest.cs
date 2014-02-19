@@ -13,6 +13,7 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using System.Windows.Forms;
+using System.Collections;
 using WinForms = System.Windows.Forms;
 
 using Ranorex;
@@ -49,7 +50,17 @@ namespace NformTester
             Mouse.DefaultMoveTime = 300;
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
+            Hashtable testaaa = new Hashtable();
+            testaaa["a1"] = 123;
+            testaaa["a2"] = 456;
+            MessageBox.Show(Convert.ToString(testaaa["a1"]));
             
+            if(testaaa["a2"] == null)
+            	MessageBox.Show("a2");
+            if(testaaa["a3"] == null)
+            	MessageBox.Show("a3");
+            
+             //Host.Local.RunApplication("");
            // NformRepository repo = NformRepository.Instance;
             //repo.NFormApp.AddDeviceWizard.FormAdd_Device.Row0_CellStart_IP_address. = "abceee";
             

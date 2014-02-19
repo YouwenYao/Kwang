@@ -48,6 +48,12 @@ namespace NformTester.lib
 		/// </summary>
 		public static Hashtable m_ActionMap = new Hashtable();
 		
+		
+		/// <summary>
+		/// Define a hashtable to include all managed application process
+		/// </summary>
+		public static Hashtable m_AppProcess = new Hashtable();
+		
 		//**********************************************************************
 		/// <summary>
 		/// Constructer.
@@ -364,9 +370,15 @@ namespace NformTester.lib
 				return true;
 			}
 			
-			if(item.m_Type == "C" && item.m_WindowName == "AppStart") 
+			if(item.m_Type == "C" && item.m_WindowName == "LaunchApplication") 
 			{				
 				AppStart(item);
+				return true;
+			}
+			
+			if(item.m_Type == "C" && item.m_WindowName == "CloseApplication") 
+			{				
+				AppClose(item);
 				return true;
 			}
 					
@@ -648,12 +660,24 @@ namespace NformTester.lib
 		
 		//**********************************************************************
 		/// <summary>
-		/// Start any application.
+		/// Start application.
 		/// </summary>
 		public static void AppStart(LxScriptItem item)
 		{
-			string strApplicationName = item.getArgText();		
-			Host.Local.RunApplication(strApplicationName);
+			string strApplicationName = parseToValue(item.m_Component);
+			m_AppProcess[item.m_Action] = Host.Local.RunApplication(strApplicationName);
+        }
+		
+		//**********************************************************************
+		/// <summary>
+		/// Close application.
+		/// </summary>
+		public static void AppClose(LxScriptItem item)
+		{
+			if(m_AppProcess[item.m_Action] != null)	
+			{
+				Host.Local.CloseApplication(Convert.ToInt32(m_AppProcess[item.m_Action]));
+			}
         }
 		
 		private static void Write_text(string file_path, string copydata)
@@ -984,5 +1008,45 @@ namespace NformTester.lib
           string result = confFile.GetString(GroupName, key, def);
           return result;
         }	
+		
+		//**********************************************************************
+		/// <summary>
+		/// Replace the name with value refer to app.config
+		/// </summary>
+		public static string parseToValue(string name)
+        {
+            if (name.Equals(""))
+            {
+                return "";
+            }
+
+			LxSetup mainOp = LxSetup.getInstance();
+			var configs = mainOp.configs;
+            string addr = name;
+            if (name.Substring(0, 1) == "$" && name.Substring(name.Length - 1, 1) == "$")
+            {
+                string key = name.Substring(1, name.Length - 2);
+                LxIniFile confFile = new LxIniFile(System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(),
+                                                 "Devices.ini"));
+                string result = null;
+                
+                if(configs.ContainsKey(key))
+                {
+                	result = configs[key];
+                }
+                else
+                {
+                	result = configs["Default"];
+                }                              
+               
+                addr = result;
+                
+                confFile = new LxIniFile(System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(),
+                                                 "UsedDevices.ini"));
+                confFile.WriteString("AvailableDevices",key,result);
+            }
+
+            return addr.Replace("\"","");
+        }
 	}
 }	
