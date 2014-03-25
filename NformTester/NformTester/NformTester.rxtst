@@ -1,6 +1,6 @@
 ﻿<testsuite
 name="NformTester"
-rxversion="4.0.1.21107"
+rxversion="4.0.3.22982"
 id="0ac6aa29-2786-479e-9a76-72fed1f11051"
 reportfilename="%S_%Y%M%D_%T.rxlog"
 reporttemplatefolder=""
@@ -51,7 +51,17 @@ reportlevel="Info;20">
 			</testcase>
 			<testcase
 			name="200._Upgrade1"
-			id="ecd2c08e-2de9-4969-a3f6-28ad4a5d914d"/>
+			id="ecd2c08e-2de9-4969-a3f6-28ad4a5d914d">
+				<testcase
+				name="TST_Upgrade_200.30.20"
+				id="b53a4f3b-958f-4985-b0e6-f48b82736796">
+					<testmodule
+					name="TestCaseDriver"
+					id="1f427266-9ecf-400e-87ff-a689d8aeae0b"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+			</testcase>
 			<testcase
 			name="300._Software_Assurance1"
 			id="be03642c-e3ab-414c-890c-937b7f1c7b41"/>
@@ -1783,7 +1793,11 @@ reportlevel="Info;20">
 			<testcase
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
-			id="15542ef7-bf90-431d-8e26-f8eb1c05a42e"/>
+			id="5ae57d1d-408c-4120-b1b0-aaca22ffc46a"/>
+			<testcase
+			id="b53a4f3b-958f-4985-b0e6-f48b82736796"/>
+			<testcase
+			id="ecd2c08e-2de9-4969-a3f6-28ad4a5d914d"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

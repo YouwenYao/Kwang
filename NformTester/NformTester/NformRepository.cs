@@ -21,7 +21,7 @@ namespace NformTester
     /// <summary>
     /// The class representing the NformRepository element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "4.0.1")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "4.0.3")]
     [RepositoryFolder("6a87c9de-ee82-4df6-9a1d-880f145582e5")]
     public partial class NformRepository : RepoGenBaseFolder
     {
@@ -29,6 +29,7 @@ namespace NformTester
         NformRepositoryFolders.NFormAppFolder _nformapp;
         NformRepositoryFolders.ExternalAppFolder _externalapp;
         NformRepositoryFolders.ExplorerAppFolder _explorer;
+        NformRepositoryFolders.List1000AppFolder _list1000;
 
         /// <summary>
         /// Gets the singleton class instance representing the NformRepository element repository.
@@ -48,6 +49,7 @@ namespace NformTester
             _nformapp = new NformRepositoryFolders.NFormAppFolder(this);
             _externalapp = new NformRepositoryFolders.ExternalAppFolder(this);
             _explorer = new NformRepositoryFolders.ExplorerAppFolder(this);
+            _list1000 = new NformRepositoryFolders.List1000AppFolder(this);
         }
 
 #region Variables
@@ -104,12 +106,21 @@ namespace NformTester
         {
             get { return _explorer; }
         }
+
+        /// <summary>
+        /// The List1000 folder.
+        /// </summary>
+        [RepositoryFolder("261454ea-ca79-4237-be4a-7446dfeab2e5")]
+        public virtual NformRepositoryFolders.List1000AppFolder List1000
+        {
+            get { return _list1000; }
+        }
     }
 
     /// <summary>
     /// Inner folder classes.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "4.0.1")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "4.0.3")]
     public partial class NformRepositoryFolders
     {
         /// <summary>
@@ -14192,6 +14203,10 @@ namespace NformTester
             RepoItemInfo _sampling_interval_downInfo;
             RepoItemInfo _sampling_interval_txtInfo;
             RepoItemInfo _timeoutInfo;
+            RepoItemInfo _openInfo;
+            RepoItemInfo _devicesrow0Info;
+            RepoItemInfo _newvaluerow0Info;
+            RepoItemInfo _panelInfo;
 
             /// <summary>
             /// Creates a new FormReadWrite_Data_Action_Properties  folder.
@@ -14219,6 +14234,10 @@ namespace NformTester
                 _sampling_interval_downInfo = new RepoItemInfo(this, "Sampling_interval_down", "container[@controlname='m_samplingIntervalNbx']/container/container/button[@accessiblename='Down']", 30000, null, "bfe9cc42-a94a-4b8b-86f3-10701f9f5b89");
                 _sampling_interval_txtInfo = new RepoItemInfo(this, "Sampling_interval_txt", "container[@controlname='m_samplingIntervalNbx']/container/text[@controlname='upDownEdit']", 30000, null, "c4123275-4b7c-4c5e-a9d7-20e744de747f");
                 _timeoutInfo = new RepoItemInfo(this, "Timeout", "container[@controlname='m_durationNbx']/container/combobox[@accessiblename='Timeout (sec):']", 30000, null, "9ddb273b-166b-4741-847d-83a0beacd276");
+                _openInfo = new RepoItemInfo(this, "Open", "container[@controlname='m_mgdDevGrp']/combobox/button[@accessiblename='Open']", 30000, null, "2063e60b-10a4-4bff-921a-f5ad8a04d933");
+                _devicesrow0Info = new RepoItemInfo(this, "DevicesRow0", "container[@controlname='m_dataPtsGrp']/table/row[@accessiblename='Row 0']/cell[@accessiblename='Devices Row 0']", 30000, null, "35869157-4082-483b-ab13-dcee574f2d03");
+                _newvaluerow0Info = new RepoItemInfo(this, "NewValueRow0", "container[@controlname='m_dataPtsGrp']/table/row[@accessiblename='Row 0']/cell[@accessiblename='New Value Row 0']", 30000, null, "67aba448-5fea-4c56-b2d6-d0986af9b3ba");
+                _panelInfo = new RepoItemInfo(this, "Panel", "container[@controlname='m_dataPtsGrp']/table/container[@caption='']", 30000, null, "b8938f8e-655f-4d96-85f5-ea9df04ab1ee");
             }
 
             /// <summary>
@@ -14698,6 +14717,102 @@ namespace NformTester
                 get
                 {
                     return _timeoutInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Open item.
+            /// </summary>
+            [RepositoryItem("2063e60b-10a4-4bff-921a-f5ad8a04d933")]
+            public virtual Ranorex.Button Open
+            {
+                get
+                {
+                    return _openInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Open item info.
+            /// </summary>
+            [RepositoryItemInfo("2063e60b-10a4-4bff-921a-f5ad8a04d933")]
+            public virtual RepoItemInfo OpenInfo
+            {
+                get
+                {
+                    return _openInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DevicesRow0 item.
+            /// </summary>
+            [RepositoryItem("35869157-4082-483b-ab13-dcee574f2d03")]
+            public virtual Ranorex.Cell DevicesRow0
+            {
+                get
+                {
+                    return _devicesrow0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DevicesRow0 item info.
+            /// </summary>
+            [RepositoryItemInfo("35869157-4082-483b-ab13-dcee574f2d03")]
+            public virtual RepoItemInfo DevicesRow0Info
+            {
+                get
+                {
+                    return _devicesrow0Info;
+                }
+            }
+
+            /// <summary>
+            /// The NewValueRow0 item.
+            /// </summary>
+            [RepositoryItem("67aba448-5fea-4c56-b2d6-d0986af9b3ba")]
+            public virtual Ranorex.Cell NewValueRow0
+            {
+                get
+                {
+                    return _newvaluerow0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NewValueRow0 item info.
+            /// </summary>
+            [RepositoryItemInfo("67aba448-5fea-4c56-b2d6-d0986af9b3ba")]
+            public virtual RepoItemInfo NewValueRow0Info
+            {
+                get
+                {
+                    return _newvaluerow0Info;
+                }
+            }
+
+            /// <summary>
+            /// The Panel item.
+            /// </summary>
+            [RepositoryItem("b8938f8e-655f-4d96-85f5-ea9df04ab1ee")]
+            public virtual Ranorex.Container Panel
+            {
+                get
+                {
+                    return _panelInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Panel item info.
+            /// </summary>
+            [RepositoryItemInfo("b8938f8e-655f-4d96-85f5-ea9df04ab1ee")]
+            public virtual RepoItemInfo PanelInfo
+            {
+                get
+                {
+                    return _panelInfo;
                 }
             }
         }
@@ -17827,6 +17942,8 @@ namespace NformTester
             RepoItemInfo _okInfo;
             RepoItemInfo _closeInfo;
             RepoItemInfo _helpInfo;
+            RepoItemInfo _hostnameoripaddressrow0Info;
+            RepoItemInfo _portnumberrow0Info;
 
             /// <summary>
             /// Creates a new FormForward_Trap_Action_Properties  folder.
@@ -17845,6 +17962,8 @@ namespace NformTester
                 _okInfo = new RepoItemInfo(this, "OK", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']", 30000, null, "7981f60e-ced9-4a06-9c4e-84dc1397362e");
                 _closeInfo = new RepoItemInfo(this, "Close", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "f9de0fb0-f445-4e44-9b00-e0741d30f8d3");
                 _helpInfo = new RepoItemInfo(this, "Help", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']", 30000, null, "7f8bc6c5-2bbb-4f3e-af53-4f3467995bb2");
+                _hostnameoripaddressrow0Info = new RepoItemInfo(this, "HostnameOrIPAddressRow0", "container[@controlname='m_trapTargetsGrp']/table/row[@accessiblename='Row 0']/cell[@accessiblename~'^Hostname\\ or\\ IP\\ address:\\ R']", 30000, null, "0d9ad440-bfa4-4fd5-8ca1-5326d97d5b71");
+                _portnumberrow0Info = new RepoItemInfo(this, "PortNumberRow0", "container[@controlname='m_trapTargetsGrp']/table/row[@accessiblename='Row 0']/cell[@accessiblename='Port number: Row 0']", 30000, null, "e47c386a-eb2c-488e-990b-41dbd04ec098");
             }
 
             /// <summary>
@@ -18108,6 +18227,54 @@ namespace NformTester
                 get
                 {
                     return _helpInfo;
+                }
+            }
+
+            /// <summary>
+            /// The HostnameOrIPAddressRow0 item.
+            /// </summary>
+            [RepositoryItem("0d9ad440-bfa4-4fd5-8ca1-5326d97d5b71")]
+            public virtual Ranorex.Cell HostnameOrIPAddressRow0
+            {
+                get
+                {
+                    return _hostnameoripaddressrow0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The HostnameOrIPAddressRow0 item info.
+            /// </summary>
+            [RepositoryItemInfo("0d9ad440-bfa4-4fd5-8ca1-5326d97d5b71")]
+            public virtual RepoItemInfo HostnameOrIPAddressRow0Info
+            {
+                get
+                {
+                    return _hostnameoripaddressrow0Info;
+                }
+            }
+
+            /// <summary>
+            /// The PortNumberRow0 item.
+            /// </summary>
+            [RepositoryItem("e47c386a-eb2c-488e-990b-41dbd04ec098")]
+            public virtual Ranorex.Cell PortNumberRow0
+            {
+                get
+                {
+                    return _portnumberrow0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PortNumberRow0 item info.
+            /// </summary>
+            [RepositoryItemInfo("e47c386a-eb2c-488e-990b-41dbd04ec098")]
+            public virtual RepoItemInfo PortNumberRow0Info
+            {
+                get
+                {
+                    return _portnumberrow0Info;
                 }
             }
         }
@@ -35627,6 +35794,100 @@ namespace NformTester
                 get
                 {
                     return _administratorliebertrnformunregistInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The List1000AppFolder folder.
+        /// </summary>
+        [RepositoryFolder("261454ea-ca79-4237-be4a-7446dfeab2e5")]
+        public partial class List1000AppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _cooling12642022171264202217Info;
+            RepoItemInfo _returnInfo;
+
+            /// <summary>
+            /// Creates a new List1000  folder.
+            /// </summary>
+            public List1000AppFolder(RepoGenBaseFolder parentFolder) :
+                    base("List1000", "/list[@controlid='1000']", parentFolder, 30000, true, "261454ea-ca79-4237-be4a-7446dfeab2e5", "")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "261454ea-ca79-4237-be4a-7446dfeab2e5");
+                _cooling12642022171264202217Info = new RepoItemInfo(this, "Cooling12642022171264202217", "listitem[@text~'^Cooling_126\\.4\\.202\\.217\\ \\(12']", 30000, null, "a0656fea-d8f6-4d12-ba74-55e2b6987306");
+                _returnInfo = new RepoItemInfo(this, "Return", "listitem[@text='Return']", 30000, null, "ed754126-e3c1-4840-b673-cdf6546efb37");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("261454ea-ca79-4237-be4a-7446dfeab2e5")]
+            public virtual Ranorex.List Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.List>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("261454ea-ca79-4237-be4a-7446dfeab2e5")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Cooling12642022171264202217 item.
+            /// </summary>
+            [RepositoryItem("a0656fea-d8f6-4d12-ba74-55e2b6987306")]
+            public virtual Ranorex.ListItem Cooling12642022171264202217
+            {
+                get
+                {
+                    return _cooling12642022171264202217Info.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Cooling12642022171264202217 item info.
+            /// </summary>
+            [RepositoryItemInfo("a0656fea-d8f6-4d12-ba74-55e2b6987306")]
+            public virtual RepoItemInfo Cooling12642022171264202217Info
+            {
+                get
+                {
+                    return _cooling12642022171264202217Info;
+                }
+            }
+
+            /// <summary>
+            /// The Return item.
+            /// </summary>
+            [RepositoryItem("ed754126-e3c1-4840-b673-cdf6546efb37")]
+            public virtual Ranorex.ListItem Return
+            {
+                get
+                {
+                    return _returnInfo.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Return item info.
+            /// </summary>
+            [RepositoryItemInfo("ed754126-e3c1-4840-b673-cdf6546efb37")]
+            public virtual RepoItemInfo ReturnInfo
+            {
+                get
+                {
+                    return _returnInfo;
                 }
             }
         }

@@ -837,6 +837,10 @@
       <id>8a2d7a7d-1d32-4c18-8a39-a1202426b54d</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\TST_Upgrade_200.30.20.xlsx">
+      <id>68b2bff4-fef2-4c20-89dd-c6cca11262a9</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="mds\bbmd_p1.cfg">
       <id>ab257d48-6218-4eee-b7bb-e19fd95ee4c7</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

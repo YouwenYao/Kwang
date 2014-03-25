@@ -150,6 +150,9 @@ namespace NformTester.lib
 				case "Del_Device":
 				Del_Device(item);
 				break;
+				case "Add_Action":
+				Add_Action(item);
+				break;
 				default:
 				break;		
 			}
@@ -327,6 +330,91 @@ namespace NformTester.lib
 			}
 		}
 		
+		/// <summary>
+		/// Form action: Add Actions
+		/// </summary>
+		/// <param name="item"></param>
+		/// <returns></returns>
+		/// 
+		public static void Add_Action(LxScriptItem item)
+		{
+			repo.NFormApp.NformG2Window.FormMain.Configure.Click();
+			repo.NFormApp.NformG2Window.FormMain.Actions.Click();
+			
+			//Action Set
+			repo.NFormApp.ActionSetsWindow.FormAction_Sets.Add.Click();
+			repo.NFormApp.ActionSetsWindow.FormAction_Set_Properties.Name.PressKeys("Action Test 1");
+			repo.NFormApp.ActionSetsWindow.FormAction_Set_Properties.Description.PressKeys("Action Test 1 Desc");
+			
+			//E-mail
+			repo.NFormApp.ActionSetsWindow.FormAction_Set_Properties.Add.Click();
+			repo.NFormApp.ActionSetsWindow.FormSelect_Action_Type.E_mail.Click();
+			repo.NFormApp.ActionSetsWindow.FormSelect_Action_Type.OK.Click();
+			repo.NFormApp.ActionSetsWindow.FormE_mail_Action_Properties.Name.PressKeys("E-mail action test 1");
+			repo.NFormApp.ActionSetsWindow.FormE_mail_Action_Properties.Description.PressKeys("E-mail action test 1 desc");
+			repo.NFormApp.ActionSetsWindow.FormE_mail_Action_Properties.Other_recipients.PressKeys("test@test.com");
+			repo.NFormApp.ActionSetsWindow.FormE_mail_Action_Properties.Subject.PressKeys("E-mail action test 1 subject");
+			repo.NFormApp.ActionSetsWindow.FormE_mail_Action_Properties.Message_body.PressKeys("E-mail action test 1 body");
+			repo.NFormApp.ActionSetsWindow.FormE_mail_Action_Properties.OK.Click();
+			
+			//Run command
+			repo.NFormApp.ActionSetsWindow.FormAction_Set_Properties.Add.Click();
+			repo.NFormApp.ActionSetsWindow.FormSelect_Action_Type.Run_command.Click();
+			repo.NFormApp.ActionSetsWindow.FormSelect_Action_Type.OK.Click();
+			repo.NFormApp.ActionSetsWindow.FormRun_Command_Action_Properties.Name.PressKeys("Run Command test 1");
+			repo.NFormApp.ActionSetsWindow.FormRun_Command_Action_Properties.Description.PressKeys("Run command test 1 desc");
+			repo.NFormApp.ActionSetsWindow.FormRun_Command_Action_Properties.File.PressKeys("D:\\RunCommandActiontest.txt");
+			repo.NFormApp.ActionSetsWindow.FormRun_Command_Action_Properties.OK.Click();
+			
+			//Forward Trap
+			repo.NFormApp.ActionSetsWindow.FormAction_Set_Properties.Add.Click();
+			repo.NFormApp.ActionSetsWindow.FormSelect_Action_Type.Forward_trap.Click();
+			repo.NFormApp.ActionSetsWindow.FormSelect_Action_Type.OK.Click();
+			repo.NFormApp.ActionSetsWindow.FormForward_Trap_Action_Properties.Name.PressKeys("Forward Trap Action test 1");
+			repo.NFormApp.ActionSetsWindow.FormForward_Trap_Action_Properties.Description.PressKeys("Foward Trap Action test 1 desc");
+			repo.NFormApp.ActionSetsWindow.FormForward_Trap_Action_Properties.HostnameOrIPAddressRow0.PressKeys("126.4.100.100");
+			repo.NFormApp.ActionSetsWindow.FormForward_Trap_Action_Properties.PortNumberRow0.PressKeys("162");
+			repo.NFormApp.ActionSetsWindow.FormForward_Trap_Action_Properties.OK.Click();
+			
+			//Read Data - this may not work since managed device is dymanic and hard to 
+			repo.NFormApp.ActionSetsWindow.FormAction_Set_Properties.Add.Click();
+			repo.NFormApp.ActionSetsWindow.FormSelect_Action_Type.Read_data.Click();
+			repo.NFormApp.ActionSetsWindow.FormSelect_Action_Type.OK.Click();
+			repo.NFormApp.ActionSetsWindow.FormReadWrite_Data_Action_Properties.Name.PressKeys("Read data action test 1");
+			repo.NFormApp.ActionSetsWindow.FormReadWrite_Data_Action_Properties.Description.PressKeys("Read data action test 1 desc");
+			repo.NFormApp.ActionSetsWindow.FormReadWrite_Data_Action_Properties.Managed_devices.Click();
+			repo.List1000.Cooling12642022171264202217.Click();	//this may not work.
+			repo.NFormApp.ActionSetsWindow.FormReadWrite_Data_Action_Properties.Cell_Row_0.Click();
+			repo.NFormApp.ActionSetsWindow.FormReadWrite_Data_Action_Properties.OK.Click();
+			
+			//Write Data - this may not work since managed device is dymanic and hard to 
+			repo.NFormApp.ActionSetsWindow.FormAction_Set_Properties.Add.Click();
+			repo.NFormApp.ActionSetsWindow.FormSelect_Action_Type.Write_data.Click();
+			repo.NFormApp.ActionSetsWindow.FormSelect_Action_Type.OK.Click();
+			repo.NFormApp.ActionSetsWindow.FormReadWrite_Data_Action_Properties.Name.PressKeys("Write Data Action Test 1");
+			repo.NFormApp.ActionSetsWindow.FormReadWrite_Data_Action_Properties.Description.PressKeys("Write Data Action Test 1 Desc");
+			repo.NFormApp.ActionSetsWindow.FormReadWrite_Data_Action_Properties.Managed_devices.Click();
+			repo.List1000.Cooling12642022171264202217.Click();	//this may not work.
+			repo.NFormApp.ActionSetsWindow.FormReadWrite_Data_Action_Properties.Cell_Row_0.Click();
+			repo.NFormApp.ActionSetsWindow.FormReadWrite_Data_Action_Properties.NewValueRow0.Click();
+			repo.NFormApp.ActionSetsWindow.FormReadWrite_Data_Action_Properties.Panel.Click();
+			repo.List1000.Return.Click();		//this may not work
+			repo.NFormApp.ActionSetsWindow.FormReadWrite_Data_Action_Properties.OK.Click();
+			/*
+			//Write file - this may not work due to Recording Format field is not populated by script.
+			repo.NFormApp.ActionSetsWindow.FormAction_Set_Properties.Add.Click();
+			repo.NFormApp.ActionSetsWindow.FormSelect_Action_Type.Write_file.Click();
+			repo.NFormApp.ActionSetsWindow.FormSelect_Action_Type.OK.Click();
+			repo.NFormApp.ActionSetsWindow.FormWrite_File_Action_Properties.Name.PressKeys("Write File Action Test 1");
+			repo.NFormApp.ActionSetsWindow.FormWrite_File_Action_Properties.Description.PressKeys("Write File Action Test 1 Desc");
+			repo.NFormApp.ActionSetsWindow.FormWrite_File_Action_Properties.File.PressKeys("D:\\WriteFileActionTest1.txt");
+			repo.NFormApp.ActionSetsWindow.FormWrite_File_Action_Properties.MTaskMenu.Click();	//this may not work
+			repo.NformViewer.TimeReceivedUTC.Click();		//this may not work.
+			repo.NFormApp.ActionSetsWindow.FormWrite_File_Action_Properties.OK.Click();
+			*/
+			repo.NFormApp.ActionSetsWindow.FormAction_Set_Properties.OK.Click();
+			repo.NFormApp.ActionSetsWindow.FormAction_Sets.Close.Click();
+		}
 
 		
 		//**********************************************************************
