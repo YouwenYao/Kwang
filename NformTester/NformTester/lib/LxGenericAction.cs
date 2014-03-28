@@ -343,7 +343,7 @@ namespace NformTester.lib
 			
 			//Action Set
 			repo.NFormApp.ActionSetsWindow.FormAction_Sets.Add.Click();
-			repo.NFormApp.ActionSetsWindow.FormAction_Set_Properties.Name.PressKeys("Action Test 1");
+			repo.NFormApp.ActionSetsWindow.FormAction_Set_Properties.Name.PressKeys("Action Test 2");
 			repo.NFormApp.ActionSetsWindow.FormAction_Set_Properties.Description.PressKeys("Action Test 1 Desc");
 			
 			//E-mail
@@ -366,6 +366,17 @@ namespace NformTester.lib
 			repo.NFormApp.ActionSetsWindow.FormRun_Command_Action_Properties.File.PressKeys("D:\\RunCommandActiontest.txt");
 			repo.NFormApp.ActionSetsWindow.FormRun_Command_Action_Properties.OK.Click();
 			
+			//Write file - this may not work due to Recording Format field is not populated by script.
+			repo.NFormApp.ActionSetsWindow.FormAction_Set_Properties.Add.Click();
+			repo.NFormApp.ActionSetsWindow.FormSelect_Action_Type.Write_file.Click();
+			repo.NFormApp.ActionSetsWindow.FormSelect_Action_Type.OK.Click();
+			repo.NFormApp.ActionSetsWindow.FormWrite_File_Action_Properties.Name.PressKeys("Write File Action Test 1");
+			repo.NFormApp.ActionSetsWindow.FormWrite_File_Action_Properties.Description.PressKeys("Write File Action Test 1 Desc");
+			repo.NFormApp.ActionSetsWindow.FormWrite_File_Action_Properties.File.PressKeys("D:\\WriteFileActionTest1.txt");
+			repo.NFormApp.ActionSetsWindow.FormWrite_File_Action_Properties.Record_foramt.Click();
+			repo.NFormApp.ActionSetsWindow.FormWrite_File_Action_Properties.Record_foramt.PressKeys("text");
+			repo.NFormApp.ActionSetsWindow.FormWrite_File_Action_Properties.OK.Click();
+			
 			//Forward Trap
 			repo.NFormApp.ActionSetsWindow.FormAction_Set_Properties.Add.Click();
 			repo.NFormApp.ActionSetsWindow.FormSelect_Action_Type.Forward_trap.Click();
@@ -383,10 +394,11 @@ namespace NformTester.lib
 			repo.NFormApp.ActionSetsWindow.FormReadWrite_Data_Action_Properties.Name.PressKeys("Read data action test 1");
 			repo.NFormApp.ActionSetsWindow.FormReadWrite_Data_Action_Properties.Description.PressKeys("Read data action test 1 desc");
 			repo.NFormApp.ActionSetsWindow.FormReadWrite_Data_Action_Properties.Managed_devices.Click();
-			repo.List1000.Cooling12642022171264202217.Click();	//this may not work.
-			repo.NFormApp.ActionSetsWindow.FormReadWrite_Data_Action_Properties.Cell_Row_0.Click();
+			repo.NFormApp.ActionSetsWindow.FormReadWrite_Data_Action_Properties.Managed_devices.Items[0].Click();
+			repo.NFormApp.ActionSetsWindow.FormReadWrite_Data_Action_Properties.Device_datapoint_table.Rows[1].Cells[0].Click();
 			repo.NFormApp.ActionSetsWindow.FormReadWrite_Data_Action_Properties.OK.Click();
 			
+			/*
 			//Write Data - this may not work since managed device is dymanic and hard to 
 			repo.NFormApp.ActionSetsWindow.FormAction_Set_Properties.Add.Click();
 			repo.NFormApp.ActionSetsWindow.FormSelect_Action_Type.Write_data.Click();
@@ -397,20 +409,10 @@ namespace NformTester.lib
 			repo.List1000.Cooling12642022171264202217.Click();	//this may not work.
 			repo.NFormApp.ActionSetsWindow.FormReadWrite_Data_Action_Properties.Cell_Row_0.Click();
 			repo.NFormApp.ActionSetsWindow.FormReadWrite_Data_Action_Properties.NewValueRow0.Click();
+			repo.NFormApp.ActionSetsWindow.FormReadWrite_Data_Action_Properties.Selected_datapoint_table.Click();
+			repo.NFormApp.ActionSetsWindow.FormReadWrite_Data_Action_Properties.Selected_datapoint_table.Rows[1].Click();
 			repo.NFormApp.ActionSetsWindow.FormReadWrite_Data_Action_Properties.Panel.Click();
-			repo.List1000.Return.Click();		//this may not work
 			repo.NFormApp.ActionSetsWindow.FormReadWrite_Data_Action_Properties.OK.Click();
-			/*
-			//Write file - this may not work due to Recording Format field is not populated by script.
-			repo.NFormApp.ActionSetsWindow.FormAction_Set_Properties.Add.Click();
-			repo.NFormApp.ActionSetsWindow.FormSelect_Action_Type.Write_file.Click();
-			repo.NFormApp.ActionSetsWindow.FormSelect_Action_Type.OK.Click();
-			repo.NFormApp.ActionSetsWindow.FormWrite_File_Action_Properties.Name.PressKeys("Write File Action Test 1");
-			repo.NFormApp.ActionSetsWindow.FormWrite_File_Action_Properties.Description.PressKeys("Write File Action Test 1 Desc");
-			repo.NFormApp.ActionSetsWindow.FormWrite_File_Action_Properties.File.PressKeys("D:\\WriteFileActionTest1.txt");
-			repo.NFormApp.ActionSetsWindow.FormWrite_File_Action_Properties.MTaskMenu.Click();	//this may not work
-			repo.NformViewer.TimeReceivedUTC.Click();		//this may not work.
-			repo.NFormApp.ActionSetsWindow.FormWrite_File_Action_Properties.OK.Click();
 			*/
 			repo.NFormApp.ActionSetsWindow.FormAction_Set_Properties.OK.Click();
 			repo.NFormApp.ActionSetsWindow.FormAction_Sets.Close.Click();

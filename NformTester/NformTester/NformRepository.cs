@@ -14207,6 +14207,9 @@ namespace NformTester
             RepoItemInfo _devicesrow0Info;
             RepoItemInfo _newvaluerow0Info;
             RepoItemInfo _panelInfo;
+            RepoItemInfo _newvaluerow1Info;
+            RepoItemInfo _cellrow7Info;
+            RepoItemInfo _newvaluerow2Info;
 
             /// <summary>
             /// Creates a new FormReadWrite_Data_Action_Properties  folder.
@@ -14238,6 +14241,9 @@ namespace NformTester
                 _devicesrow0Info = new RepoItemInfo(this, "DevicesRow0", "container[@controlname='m_dataPtsGrp']/table/row[@accessiblename='Row 0']/cell[@accessiblename='Devices Row 0']", 30000, null, "35869157-4082-483b-ab13-dcee574f2d03");
                 _newvaluerow0Info = new RepoItemInfo(this, "NewValueRow0", "container[@controlname='m_dataPtsGrp']/table/row[@accessiblename='Row 0']/cell[@accessiblename='New Value Row 0']", 30000, null, "67aba448-5fea-4c56-b2d6-d0986af9b3ba");
                 _panelInfo = new RepoItemInfo(this, "Panel", "container[@controlname='m_dataPtsGrp']/table/container[@caption='']", 30000, null, "b8938f8e-655f-4d96-85f5-ea9df04ab1ee");
+                _newvaluerow1Info = new RepoItemInfo(this, "NewValueRow1", "container[@controlname='m_dataPtsGrp']/table/row[@accessiblename='Row 1']/cell[@accessiblename='New Value Row 1']", 30000, null, "b08ad016-b743-46e2-bb9e-5e8956c09818");
+                _cellrow7Info = new RepoItemInfo(this, "CellRow7", "container[@controlname='m_mgdDevGrp']/table/row[@accessiblename='Row 7']/cell[@accessiblename=' Row 7']", 30000, null, "5aada3a3-7181-4216-a7f2-ca2cd93b401b");
+                _newvaluerow2Info = new RepoItemInfo(this, "NewValueRow2", "container[@controlname='m_dataPtsGrp']/table/row[@accessiblename='Row 2']/cell[@accessiblename='New Value Row 2']", 30000, null, "ef7cf326-39e7-4180-98fb-6cb95cca8781");
             }
 
             /// <summary>
@@ -14813,6 +14819,78 @@ namespace NformTester
                 get
                 {
                     return _panelInfo;
+                }
+            }
+
+            /// <summary>
+            /// The NewValueRow1 item.
+            /// </summary>
+            [RepositoryItem("b08ad016-b743-46e2-bb9e-5e8956c09818")]
+            public virtual Ranorex.Cell NewValueRow1
+            {
+                get
+                {
+                    return _newvaluerow1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NewValueRow1 item info.
+            /// </summary>
+            [RepositoryItemInfo("b08ad016-b743-46e2-bb9e-5e8956c09818")]
+            public virtual RepoItemInfo NewValueRow1Info
+            {
+                get
+                {
+                    return _newvaluerow1Info;
+                }
+            }
+
+            /// <summary>
+            /// The CellRow7 item.
+            /// </summary>
+            [RepositoryItem("5aada3a3-7181-4216-a7f2-ca2cd93b401b")]
+            public virtual Ranorex.Cell CellRow7
+            {
+                get
+                {
+                    return _cellrow7Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellRow7 item info.
+            /// </summary>
+            [RepositoryItemInfo("5aada3a3-7181-4216-a7f2-ca2cd93b401b")]
+            public virtual RepoItemInfo CellRow7Info
+            {
+                get
+                {
+                    return _cellrow7Info;
+                }
+            }
+
+            /// <summary>
+            /// The NewValueRow2 item.
+            /// </summary>
+            [RepositoryItem("ef7cf326-39e7-4180-98fb-6cb95cca8781")]
+            public virtual Ranorex.Cell NewValueRow2
+            {
+                get
+                {
+                    return _newvaluerow2Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NewValueRow2 item info.
+            /// </summary>
+            [RepositoryItemInfo("ef7cf326-39e7-4180-98fb-6cb95cca8781")]
+            public virtual RepoItemInfo NewValueRow2Info
+            {
+                get
+                {
+                    return _newvaluerow2Info;
                 }
             }
         }
@@ -35807,6 +35885,7 @@ namespace NformTester
             RepoItemInfo _selfInfo;
             RepoItemInfo _cooling12642022171264202217Info;
             RepoItemInfo _returnInfo;
+            RepoItemInfo _enabledInfo;
 
             /// <summary>
             /// Creates a new List1000  folder.
@@ -35817,6 +35896,7 @@ namespace NformTester
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "261454ea-ca79-4237-be4a-7446dfeab2e5");
                 _cooling12642022171264202217Info = new RepoItemInfo(this, "Cooling12642022171264202217", "listitem[@text~'^Cooling_126\\.4\\.202\\.217\\ \\(12']", 30000, null, "a0656fea-d8f6-4d12-ba74-55e2b6987306");
                 _returnInfo = new RepoItemInfo(this, "Return", "listitem[@text='Return']", 30000, null, "ed754126-e3c1-4840-b673-cdf6546efb37");
+                _enabledInfo = new RepoItemInfo(this, "Enabled", "listitem[@text='enabled']", 30000, null, "20726aa1-5719-4c7c-af5f-2ff1f8c88ff4");
             }
 
             /// <summary>
@@ -35888,6 +35968,30 @@ namespace NformTester
                 get
                 {
                     return _returnInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Enabled item.
+            /// </summary>
+            [RepositoryItem("20726aa1-5719-4c7c-af5f-2ff1f8c88ff4")]
+            public virtual Ranorex.ListItem Enabled
+            {
+                get
+                {
+                    return _enabledInfo.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Enabled item info.
+            /// </summary>
+            [RepositoryItemInfo("20726aa1-5719-4c7c-af5f-2ff1f8c88ff4")]
+            public virtual RepoItemInfo EnabledInfo
+            {
+                get
+                {
+                    return _enabledInfo;
                 }
             }
         }
